@@ -1,0 +1,3156 @@
+doctype html
+html(lang="ja")
+  head
+    // Global site tag (gtag.js) - Google Analytics
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+      dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-37361015-2');
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="Blefeld,Wardolf")
+    meta(name="description" content="WardolfのBlofeldのマニュアルです。")
+    title blofeld|spindey.com
+    link(rel="stylesheet" href="css/normalize.css")
+    link(rel="stylesheet" href="css/style.css")
+  body
+    h1.heading blofeld
+    h2.heading.switch
+      | 基本操作
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | 電源
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist 電源スイッチ
+      h3.heading.switch
+        | 音量
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p マスターボリューム
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              span.controllerKnob System Volume
+      h3.heading.switch
+        | プログラムの選択
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Playボタンを押してPlay modeにする
+            li.contentOperationOrderlist マルチモードの場合は「Shift+Sound/Multi」を押す
+            li.contentOperationOrderlist セレクションダイヤルでプログラムを選択
+        p ディスプレイパラメーターダイヤルでバンク変更可能
+      h3.heading.switch
+        | カテゴリーサーチ
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Playボタンを押してPlay modeにする
+            li.contentOperationOrderlist ディスプレイパラメーターダイヤルでカテゴリーを選択
+            li.contentOperationOrderlist セレクションダイヤルでプログラムを選択
+        p カテゴリーサーチをoffにする
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist ディスプレイパラメーターダイヤルでオフにする
+        p カテゴリーサーチではプログラムナンバーの変更は行わない
+      h3.heading.switch
+        | パラメーターのエディット
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p ロータリーコントロールノブでパラメーターを調整する
+      h3.heading.switch
+        | パラメーターコントロールのエディット
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p Global Menu内のAuto EditをONにすることを推奨
+        p
+          | 基本的なプログラミングは、パラメーターマトリクスで行う
+          br
+          |  パラメーターの変更はロータリーコントロールノブで行う
+          br
+          |  エディット階層の変更はマトリックス左のナビゲーションボタン、ディスプレイパラメーターダイヤル
+          br
+          |  メニューページのブラウズはセレクションダイヤル
+        p 5つのエディット階層 Oscilators Filetrs Modulation Effects Arpeggiator
+        p ディスプレイパラメーターをエディットする際、パネルパラメーターを調整可能
+      h3.heading.switch
+        | パラメーターを変更せずにチェックする
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | パラメーターマトリクスから任意のボタンを長押し
+              br
+              | [全ての4つのパラメーターがディスプレイに表示される]
+            li.contentOperationOrderlist ボタンを押しながら必要であればパラメーター変更可能
+            li.contentOperationOrderlist ボタンを離すとチェック終了
+      h3.heading.switch
+        | 保存されたプログラムとエディットされたプログラムを比較(コンペアサウンド)
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shift+Utilityを押す
+            li.contentOperationOrderlist セレクションダイヤルでCompare Soundページを参照
+            li.contentOperationOrderlist Shift+Utilityを押して、エディットされたプログラムとエディット前のプログラムを切り替える(頭文字cが任意のプログラムナンバーの末尾に付く)
+            li.contentOperationOrderlist Shift+Utilityを押すと、エディットされたプログラムに戻る
+        p
+          | コンペア機能が有効の状態で新規プログラムを選択すると、コンペア機能は自動的に停止する
+          br
+          |  コンペア機能が有効の状態ではパラメーターのエディットはできない
+      h3.heading.switch
+        | エディットされたプログラムのリコール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist  Shift+Utilityを押す
+            li.contentOperationOrderlist セレクションダイヤルでメニューページのRecall Soundを選択
+            li.contentOperationOrderlist Shift+Utilityで、全てのエディットをリコール
+      h3.heading.switch
+        | プログラムの保存
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shift+Utilityを押す
+            li.contentOperationOrderlist セレクションダイヤルでメニューページStore Sound1/3を表示
+            li.contentOperationOrderlist
+              | プログラムネームをエディットする
+              br
+              | 左側のディスプレイパラメータダイヤルで任意の文字列を選択
+              br
+              | 設定の変更は右側のディスプレイパラメータダイヤルを使って指定
+              br
+              | プログラムネームは16文字まで設定可能
+            li.contentOperationOrderlist セレクションダイヤルでメニューページStore Sound2/3を表示
+            li.contentOperationOrderlist カテゴリーを選択し、あとで選びやすくする
+            li.contentOperationOrderlist セレクションダイヤルでメニューページStore Sound3/3を表示
+            li.contentOperationOrderlist
+              | 左側のディスプレイパラメータダイヤルを使ってデスティネーションバンク(A,B,C・・・)を選択
+              br
+              | 右側のディスプレイパラメータダイヤルでデスティネーションでデスティネーションプログラムナンバーを選択
+              br
+              |  (デフォルトナンバーは、現在選択されているプログラムだが、エディットされたプログラムは他のロケーションに保存することも可能)
+            li.contentOperationOrderlist
+              | Shift+Utilityを押してそのロケーションに保存
+              br
+              | 保存しない場合は、Shift+Utility以外のボタンを押す
+      h3.heading.switch
+        | プログラムのコピー(マルチプログラムを保存する)
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist マルチモードを有効にする
+            li.contentOperationOrderlist Shift+Utilityを押して、マルチ保存(Multi Store)ページを開く
+            li.contentOperationOrderlist 以下はプログラムの保存と同じ
+    h2.heading.switch
+      | マルチモード
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | マルチモード
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | Blofeldは16パートのマルチモードを搭載している
+          br
+          |             マルチモードの各サウンドはPartと呼ばれる
+      h3.heading.switch
+        | Play Sound ModeとMulti Modeを切り替え
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shift+Sound/Multiを押す
+        p Multiモードでは、ディスプレイ上段に、現在選択されているPartが表示される
+        p 1024個のサウンドプログラムの他に、128個のマルチプログラムが追加されている
+      h3.heading.switch
+        | マルチプログラムの選択
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist セレクションダイヤル
+      h3.heading.switch
+        | マルチプログラム全体の設定
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            td マルチボリューム
+            td
+              | 選択されたマルチプログラムの全体的な音量を決定
+              br
+              | 最小：0
+              br
+              | 最大127
+          tr
+            td テンポ
+            td
+              | 選択されたマルチプログラムの全てのインストゥルメントに適用するグローバルテンポを設定する
+              br
+              |  これはアルペジエーターやLFO、エフェクト、その他の全てのテンポ設定に適用される
+              br
+              | 最小：40
+              br
+              | 最大300
+      h3.heading.switch
+        | マルチプログラムのパート選択
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Playボタンを押しながらセレクションダイヤルで任意のパートを選択
+              br
+              | [ディスプレイ左上に現在選択されているパートが表示される]
+      h3.heading.switch
+        | マルチプログラムのエディット
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Playボタンを押す
+            li.contentOperationOrderlist セレクションダイヤルで任意のマルチモードパラメーターを選択
+        table
+          tr
+            td Bank
+            td A～Hのバンクから選択
+          tr
+            td Sound
+            td 1～128の任意のプログラムを選択
+          tr
+            td Cat. Filter
+            td 任意のカテゴリーからサウンドを選択
+          tr
+            td Volume
+            td
+              | 選択されたパートの出力音量を設定
+              br
+              | 最小：0
+              br
+              | 最大127
+          tr
+            td Pan
+            td
+              | 選択されたインストゥルメントのパンニング位置を設定　left64は一番左、right63は一番右、centerは真ん中
+              br
+              |  ステレオエフェクトが有効な場合は、両チャンネルから音が出る
+          tr
+            td Channel
+            td
+              | 選択されたインストゥルメントのMIDIチャンネルを設定
+              br
+              | StatusがPlayに設定されていると、このMIDIチャンネルは、任意のパートに対してMIDIメッセージを送受信する
+              br
+              |  global：Globalメニューで設定されたインストゥルメントが、任意のMIDIチャンネルで送受信される　パフォーマンス用
+              br
+              |  omni：Globalメニューで設定されたインストゥルメントが全てのMIDIチャンネルで総順される　送受信確認用
+              br
+              |  1～16：任意のMIDIチャンネルで送受信される　外部シーケンサーからのマルチトラック再生時に最適
+          tr
+            td Status
+            td
+              | 選択されたパートの送受信状態
+              br
+              |  mute：選択されたパートは無効
+              br
+              |  play：選択されたパートはMIDI経由で演奏可能な状態
+          tr
+            td Transpose
+            td
+              | インストゥルメントを半音単位で移調
+              br
+              | 例：-12で1オクターブ下
+              br
+              | 最小：-48
+              br
+              | 最大+48
+          tr
+            td Detune
+            td
+              | インストゥルメントを半音の1/64ステップで音階を変更
+              br
+              | 最小：-64
+              br
+              | 最大+63
+          tr
+            td Low Vel
+            td
+              | 演奏されたインストゥルメントのベロシティレンジに制限を加える
+              br
+              |  設定値以下を無効にする　オフにしたい場合は設定値を1にする
+              br
+              | 最小：1
+              br
+              | 最大127
+          tr
+            td High Vel
+            td
+              | 演奏されたインストゥルメントのベロシティレンジに制限を加える
+              br
+              |  設定値以下を有効にする　オフにしたい場合は設定値を127にする
+              br
+              | 最小：1
+              br
+              | 最大127
+          tr
+            td Low Key
+            td
+              | 音声生成のキーレンジに制限を加える
+              br
+              |  設定値以下を無効にする　フルキーボードを使用する場合は設定値をC-2にする
+          tr
+            td High Key
+            td
+              | 音声生成のキーレンジに制限を加える
+              br
+              |  設定値以下を有効にする　フルキーボードを使用する場合は設定値をG-8にする
+          tr
+            td MIDI
+            td
+              | receive：入力されるMIDIデータを受信する
+              br
+              |  ignore：入力されるMIDIデータを無視する
+          tr
+            td USB
+            td
+              | receive：入力されるMIDIデータを受信する
+              br
+              |  ignore：入力されるMIDIデータを無視する
+          tr
+            td Local
+            td
+              | receive：キーボードから入力されるMIDIデータを受信する
+              br
+              |  ignore：キーボードから入力されるMIDIデータを無視する
+          tr
+            td Pitch Bend
+            td
+              | receive：Pitch Bendからのメッセージを受信する
+              br
+              |  ignore：Pitch Bendからのメッセージを無視する
+          tr
+            td Mod Wheel
+            td
+              | receive：Mod Wheelからのメッセージを受信する
+              br
+              |  ignore：Mod Wheelからのメッセージを無視する
+          tr
+            td Pressure
+            td
+              | receive：アフタータッチのメッセージを受信する
+              br
+              |  ignore：アフタータッチのメッセージを無視する
+          tr
+            td Sustain
+            td
+              | receive：サステインペダルからのメッセージを受信する
+              br
+              |  ignore：サステインペダルからのメッセージを無視する
+          tr
+            td Edit
+            td
+              | receive：入力されるパラメータエディットデータを受信する
+              br
+              |  ignore：入力されるパラメータエディットデータを無視する
+          tr
+            td Prg Change
+            td
+              | receive：入力されるプログラムチェンジメッセージを受信する
+              br
+              |  ignore：入力されるプログラムチェンジメッセージを無視する
+      h3.heading.switch
+        | レイヤーサウンドを作る
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | 例：2つのパートを有効にし、サウンドナンバーを含め、それぞれのパラメータを同じ設定にする
+          br
+          |  次に一方のインストゥルメントを1オクターブトランスポーズする
+          br
+          |  または、一方をDetune-05に、もう一方をdetune+5に設定する
+    h2.heading.switch
+      | オシレーター
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | オシレーターパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p Shape
+        table
+          tr
+            td Silence
+            td 選択されたオシレーターは無効になり、同時発音数が増える
+          tr
+            td Pulse
+            td
+              | Pulse波を選択
+              br
+              | Pulse Width50%は、基本周波数の奇数ハーモニクス成分のみが含まれる
+              br
+              |               Pulsewidth,、PWMパラメーターで波形のパルス幅を変更可能
+              br
+              |               モジュレーションディスティネーションO1PW、O2PW、O3PWではゲイン機能を使える
+              br
+              |               BrillianceパラメーターはPulse波形に明るさを加えるパラメーター
+          tr
+            td Saw
+            td
+              | Saw波を選択
+              br
+              |                   パラメーターは特になし
+              br
+              | BrillianceパラメーターはSaw波形に明るさを加えるパラメーター
+          tr
+            td Triangle
+            td
+              | Triangle波形を選択
+              br
+              | 他のパラメーターは存在しない
+          tr
+            td Sine
+            td
+              | Sine波形を選択
+              br
+              | 他のパラメーターは存在しない
+          tr
+            td Alt 1
+            td
+          tr
+            td Alt 2
+            td
+          tr
+            td Wavetable
+            td 68種類のウェーブテーブルを作り出せる
+          tr
+            td Samples
+            td 60メガの内蔵サンプルメモリからサンプル/マルチサンプルを演奏する
+          p オシレーターは使用していない場合は、OFFにすることで同時発音数を確保できる
+        p semitone
+        p
+          | 音階を半音単位で設定　標準設定は0
+          br
+          | 最小：-12
+          br
+          | 最大+12
+        p Detune
+        p
+          | semitoneの1/128ステップでオシレーターの音階を調整
+          br
+          | 最小：-64
+          br
+          | 最大+63
+        p level
+        p
+          | 選択されたオシレーターの音量レベルを調整
+          br
+          | 最小：0
+          br
+          | 最大127
+      h3.heading.switch
+        | オシレーターエディットメニュー
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Utilityボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Utilityボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        table
+          tr
+            td Octave
+            td
+              | オシレーターの基本ピッチをオクターブステップで設定する
+              br
+              |                   オシレーターのリファレンスピッチはA3(ノートナンバー64)
+          tr
+            td Balance
+            td
+              | 選択されたオシレーター信号がFilter1/Filter2の入力段に送られる際の比率を設定
+              br
+              |                   F1 64に設定されると信号はFilter1にのみ送られる
+              br
+              |                   F2 63に設定されると信号はFilter2にのみ送られる
+              br
+              |                   高い設定値ではFilter2に送られる信号比率が増加し、Filter1に送られる信号比率は減少する
+              br
+              |                   Middleにすると同等になる
+          tr
+            td Pulsewidth
+            td
+              | パルス波形の幅を設定
+              br
+              |                   設定値0ではパルスレシオ1%以下で、設定値127では50%に等しくなる
+              br
+              |                   ウェーブテーブルの開始点はPulsewidthノブで設定可能
+              br
+              |                   Pulse、Wavetableのときのみ有効
+          tr
+            td PWM Source
+            td
+              | パルス幅変調、もしくはウェーブテーブル変調のソースを選択する
+              br
+              |                   パルス幅変調の一般的なソースはエンベロープ、LFO
+              br
+              |                   モジュレーションホイールやアフタータッチなども独特の効果
+          tr
+            td PWM Amount
+            td
+              | Pulsewidthに適用される変調の度合い
+              br
+              |                   Pulse、Wavetableのときのみ有効
+          tr
+            td Limit WT
+            td
+              | on：ウェーブテーブルのアナログ波形をマスキングする
+              br
+              |                   off：ウェーブテーブルのアナログ波形を演奏する
+          tr
+            td Brilliance
+            td Saw、Pulse、Wavetable等のオシレーターモデルの明るさを設定
+          tr
+            td FM Source
+            td 選択されたオシレーターの周波数変調ソースを選択する
+          tr
+            td FM Amount
+            td FM Sourceによって選択されたオシレータに適用されたFM変調の度合いを設定
+          tr
+            td Keytrack
+            td
+              | MIDIノートナンバーに対して、選択されたオシレーターのピッチを選択
+              br
+              |                   KeytrackのリファレンスノートはE3(ノートナンバー64)
+          tr
+            td bend Range
+            td MIDIピッチベンドメッセージ経由のピッチベンドの強さをセミトーンステップで半音毎に設定
+          tr
+            td Sync to O3
+            td
+              | Osc2のみ設定可能
+              br
+              |                   on：オシレーターシンク有効
+              br
+              |                   off：オシレーターシンク無効
+      h3.heading.switch
+        | オシレーターコモン
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Utilityボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Utilityボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        table
+          tr
+            td Allocation
+            td
+              | Poly：各ノートが固有のボイスをトリガーする
+              br
+              |                     Mono：一番後で演奏されたノートのみ出力
+          tr
+            td Unison
+            td
+              | 1つのノートが演奏された際に、トリガーされるボイス数
+              br
+              |                     off：1音1ボイス(標準)
+              br
+              |                     dual：1音2ボイス
+              br
+              |                     3～6：1音複数トリガー
+          tr
+            td Uni Detune
+            td
+              | ユニゾンボイスのデチューンを設定
+              br
+              |                     音を太くする際に使用される
+              br
+              |                     最小値：0
+              br
+              |                     最大値127
+          tr
+            td Glide
+            td
+              | on：グライド効果をオンにする
+              br
+              |                     off：グライド効果をオフにする
+          tr
+            td Rate
+            td
+              | グライド効果の時間を設定
+              br
+              |                     最小値：0
+              br
+              |                     最大値127
+          tr
+            td Mode
+            td
+              | グライド効果の動作モード
+              br
+              |                     Portamento：持続的なピッチ変化が全ての音に適用
+              br
+              |                     Fingered P：レガートで演奏された音のみに適用
+              br
+              |                     Glissando：設定されたセミトーン単位でグリッサンド効果が適用される
+              br
+              |                     Fingered：グリッサンド効果に似ているが、ピッチ変化はレガートで演奏されたときのみ適用
+          tr
+            td Pitch Source
+            td
+              | 全オシレーターに対して、ピッチモジュレーションのソースを設定
+              br
+              |                     ピッチモジュレーションのソースは一般的なものはLFO、強弱はモジュレーションホイール/アフタータッチで調整
+          tr
+            td Pitch Amount
+            td 全オシレーターのピッチモジュレーションの度合いを設定
+    h2.heading.switch
+      | リングモジュレーション
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | リングモジュレーション
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Utilityボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Utilityボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        table
+          tr
+            td Level
+            td Oscillator1と2間のリングモジュレーションレベルを調整
+          tr
+            td Balance Ring Mod
+            td
+              | リングモジュレーション信号がFilter1と2に送られる比率を調整
+              br
+              | F1 64の場合はFilter1のみに送られる
+              br
+              | middleは同等
+              |                    F2 63の場合はFilter2のみに送られる
+    h2.heading.switch
+      | ノイズ
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | ノイズ
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Utilityボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Utilityボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        table
+          tr
+            td Level
+            td ノイズジェネレーターの音量レベルを調整
+          tr
+            td Balance Noise
+            td
+              | ノイズ信号がFilter1/Filter2の入力団に送られる比率を調整
+              br
+              | F1 64の場合はFilter1のみに送られる
+              br
+              | middleは同等
+              |                     F2 63の場合はFilter2のみに送られる
+          tr
+            td Colour
+            td
+              | ノイズ信号の色付け
+              br
+              | 0ではホワイトノイズを生成
+              br
+              | +で低周波が加わっていく
+              br
+              | -で高周波成分が除去されていく
+    h2.heading.switch
+      | フィルター
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | フィルターセクションパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p Cutoff
+        table
+          tr
+            td low passフィルター選択時
+            td カットオフ周波数より上の周波数帯はすべてカットされる
+          tr
+            td high passフィルター選択時
+            td カットオフ周波数より下の周波数帯はすべてカットされる
+          tr
+            td band passフィルター選択時
+            td カットオフ周波数付近の周波数帯のみ通過
+          tr
+            td notchフィルター選択時
+            td カットオフ周波数付近の周波数帯をカット
+          tr
+            td combフィルター選択時
+            td
+              | comb+ カットオフ周波数付近の帯域が強調される
+              br
+              | comb-カットオフ周波数付近の帯域がカットされる
+        p Resonance
+        p
+          | カットオフ周波数帯付近の帯域を強調
+          br
+          | 低い設定値0～80：明るさを加える
+          br
+          | 高い設定地80～113：カットオフ周波数付近がブースト
+          br
+          | 113以上：フィルター自身がサイン波で自己発振しはじめる
+        p Type
+        table
+          tr
+            td Bypass
+            td フィルターをバイパス
+          tr
+            td LP 24dB/LP 12dB Low Pass
+            td 24dBの方がフィルターが顕著
+          tr
+            td LP 24dB/LP 12dB High Pass
+            td 低周波部分をカット
+          tr
+            td Notch 24dB/Notch 12dB
+            td カットオフ帯域の周波数をカット
+          tr
+            td Comb+/Comb- Filter
+            td 出力に入力のディレイ信号を加える
+          tr
+            td PPG LP Lowpass
+            td 24dBスロープのレゾナンスローパスフィルター
+        p Env Amount
+        p カットオフ周波数のフィルターエンベロープのかかり具合の設定
+      h3.heading.switch
+        | フィルターエディットメニュー
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Globalボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Globalボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        p Filter1/Filter2
+        table
+          tr
+            td Keytrack
+            td
+              | カットオフ周波数がMIDIノートナンバーで決定される
+              br
+              | リファレンスノートはC3、ノートナンバーは64
+              br
+              | +100%設定で1スケールに対応
+              br
+              | 設定値-200%～+196%
+          tr
+            td Env Velocity
+            td カットオフ周波数のフィルターエンベロープのかかり具合をキーベロシティに基づいて設定
+          tr
+            td Mod Source
+            td 任意のフィルターに対して、カットオフモジュレーションのソースを選択
+          tr
+            td Mod Amount
+            td
+              | 任意のフィルターに対してカットオフモジュレーションのかかる度合いを設定
+              br
+              | 設定値-64～+63
+          tr
+            td FM Source
+            td 任意のフィルターに対するFMソースを選択
+          tr
+            td FM Amount
+            td 選択されたソースが適用されたフィルターに対するFMのかかる度合いを設定
+          tr
+            td Drive
+            td 信号に加えられるサチュレーションのかかり具合を調整
+          tr
+            td Drive Curve
+            td
+              | ドライブのキャラクターを設定
+              ul
+                li Clipping
+                li Tube
+                li Hard
+                li Medium
+                li Soft
+                li Pickup1
+                li Pickup2
+                li Rectifier
+                li Square
+                li Binary
+                li Overflow
+                li Sine Shaper
+                li Osc 1 Mod
+          tr
+            td Pan
+            td
+              | ステレオの定位を設定
+              br
+              | Left 64に設定すると左
+              br
+              | right63に設定すると右
+              br
+              | centerに設定すると中央
+          tr
+            td Pan Source
+            td 任意のフィルターに対してパンニングモジュレーションソースを設定
+          tr
+            td Pan Amount
+            td 任意のフィルターに対してパンニングモジュレーションのかかり具合を設定
+      h3.heading.switch
+        | フィルターコモン
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Globalボタンを短く押す
+              br
+              |                         Auto Editがoffの場合：Globalボボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルを回して任意のメニューページまでスクロールする
+        p Filter Routing
+        p
+          | フィルター間の信号の流れを管理できる
+          br
+          |            Blofeldには2基の独立したフィルターとパンニングユニットが搭載されている
+          br
+          |            parallel、serialに切り替え可能
+          br
+          |        パンニングユニットを通った後は2つの信号はミックスされ、Amplifierセクション、FXセクションに送られる
+    h2.heading.switch
+      | Envelope
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | Filter、およびAmp Envelopeのパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | エンベロープのRate、Timeモジュレーションでサウンドパラメーターを設定可能
+          br
+          |     各サウンドプログラムに対して4つの独立したプログラマブルエンベロープを利用可能
+        table
+          tr
+            td Filter Env
+            td フィルターコントロールのみに固定されているが、他のモジュレーションにも利用可能
+          tr
+            td Amp Env
+            td 音量ボリュームのコントロールに固定されている
+          tr
+            td Env3/Env4
+            td 2つの追加エンベロープは、他の追加モジュレーション機能として自由に利用可能
+        p Filter EnvとAmp Envはほとんど同じ
+        table
+          tr
+            td Attack
+            td 設定値0～127
+          tr
+            td Decay
+            td 設定値0～127
+          tr
+            td Sustain
+            td 設定値0～127
+          tr
+            td Release
+            td 設定値0～127
+      h3.heading.switch
+        | Envelope Edit Menu
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Sound/Multiボタンを短く押す
+              br
+              | Auto Editがoffの場合：Sound/Multiボタンを少し長めに押す
+            li.contentOperationOrderlist
+              | セレクションダイヤルで、任意のメニューページまでスクロール
+              br
+              | [ディスプレイ上段にEnvelope Edit Menuが表示される]
+        p Filter Envelope
+        table
+          tr
+            td Trigger
+            td
+              | normal設定：ノート毎にフィルターエンベロープが開始
+              br
+              | single設定：使用中のプログラムのボイスすべてが単一のエンベロープを使用しているように聞こえる
+              br
+              |                     singleはモノフォニックボイスのときのみ有効
+          tr
+            td Mode
+            td 設定値：ADSR/ADS1DS2R/One Shot/Loop S1S2/Loop All
+          tr
+            td Attack Level
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Decay2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Sustain2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+        p Amp Envelope
+        table
+          tr
+            td Trigger
+            td
+              | normal設定：ノート毎にフィルターエンベロープが開始
+              br
+              | single設定：使用中のプログラムのボイスすべてが単一のエンベロープを使用しているように聞こえる
+              br
+              |                     singleはモノフォニックボイスのときのみ有効
+          tr
+            td Mode
+            td 設定値　ADSR/ADS1DS2R/One Shot/Loop S1S2/Loop All
+          tr
+            td Allocation
+            td Oscillator Edit MenuのAllocationと同じ
+          tr
+            td Attack Level
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Decay2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Sustain2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+        p Envelope 3/4
+        table
+          tr
+            td Trigger
+            td
+              | normal設定：ノート毎にフィルターエンベロープが開始
+              br
+              | single設定：使用中のプログラムのボイスすべてが単一のエンベロープを使用しているように聞こえる
+              br
+              |                     singleはモノフォニックボイスのときのみ有効
+          tr
+            td Mode
+            td 設定値　ADSR/ADS1DS2R/One Shot/Loop S1S2/Loop All
+          tr
+            td Attack
+            td 設定値：0～127
+          tr
+            td Attack Level
+            td 設定値：0～127
+          tr
+            td Decay
+            td 設定値：0～127
+          tr
+            td Sustain
+            td 設定値：0～127
+          tr
+            td Decay2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Sustain2
+            td
+              | 設定値：0～127
+              br
+              | エンベロープタイプADS1DS2R/One Shot/Loop S1S2/Loop Allのときのみ有効
+          tr
+            td Release
+            td 設定値：0～127
+    h2.heading.switch
+      | LFO
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | LFOのパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | LFO1/2はパラメーターコントロールからエディット
+          br
+          | LFO3はLFO Edit Menuからエディット
+        table
+          tr
+            td Shape1
+            td
+              | Sine
+              br
+              | Triangle
+              br
+              | Square
+              br
+              | Saw
+              br
+              | Random
+              br
+              | S&H
+          tr
+            td Speed1
+            td
+              | LFO1の周波数を設定
+              br
+              | 設定値：0～127
+              br
+              |             LFO　ClockedパラメータがOnのとき、speedを音楽的な値で調整可能
+              br
+              | 設定値：1280bar～1/48
+          tr
+            td Shape2
+            td
+              | Sine
+              br
+              | Triangle
+              br
+              | Square
+              br
+              | Saw
+              br
+              | Random
+              br
+              | S&H
+          tr
+            td Speed2
+            td
+              | LFO1の周波数を設定
+              br
+              | 設定値：0～127
+              br
+              |             LFO　ClockedパラメータがOnのとき、speedを音楽的な値で調整可能
+              br
+              | 設定値：1280bar～1/48
+      h3.heading.switch
+        | LFO Edit Menu
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Sound/Muliボタン(LFO)を短く押す
+              br
+              | Auto Editがoffの場合：Sound/Muliボタン(LFO)を少し長めに押す
+            li.contentOperationOrderlist
+              | セレクションダイヤルで、任意のメニューページまでスクロール
+              br
+              | [ディスプレイ上段にLFO Edit Menuが表示される]
+        table
+          tr
+            td Shape
+            td
+              | 設定値：Sine
+              br
+              | Triangle
+              br
+              | Square
+              br
+              | Saw
+              br
+              | Random
+              br
+              | S&H
+          tr
+            td Speed
+            td
+              | LFO1の周波数を設定
+              br
+              | 設定値：0～127
+              br
+              |                    LFO ClockedパラメータがOnのとき、speedを音楽的な値で調整可能
+              br
+              | 設定値：1280bar～1/48
+          tr
+            td Sync
+            td
+              | on：全ボイスのLFOサイクルは1つのLFOに同期して作用する
+              br
+              |                off：LFOは独立してかかる
+          tr
+            td Clocked
+            td
+              | 設定値：off/on
+              br
+              |                on：Tempoに同期
+              br
+              | LFO Speedを設定すると出音は音楽的になる
+          tr
+            td Start Phase
+            td
+              | 新規にノートが開始されるときのLFOのイニシャルフェイズを設定
+              br
+              |                設定値：Free、0°～360°
+              br
+              |                Free：新規ノートが始まってもリスタートしないでフリーに発振し続ける
+          tr
+            td Keytrack
+            td
+              | MIDIノートナンバーに対してLFOスピードを設定する
+              br
+              | リファレンスノートはE3、ノートナンバーは64
+              br
+              | 設定値：-200%~+196%
+          tr
+            td Delay
+            td
+              | 設定値：0~127
+              br
+              |                   Fadeが+00~+63：LFO信号出力は0になり、このタイム設定を過ぎるとフェードインしてきて最大値に至る
+              br
+              |                    Fadeが-64~-1：LFO信号出力は最大になり、このタイム設定を過ぎるとフェードアウトしてきて0に至る
+          tr
+            td Fade
+            td LFOがフェードイン/フェードアウトするスピードを設定
+    h2.heading.switch
+      | モジュレーション
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | モジュレーションマトリクスのパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            td Select
+            td
+              | モジュレーションスロットの選択
+              br
+              | 設定値1～16
+          tr
+            td Source
+            td モジュレーションソースを設定
+          tr
+            td Amount
+            td
+              | デスティネーションに適用されるモジュレーション量を設定
+              br
+              | 設定値-64～+63
+          tr
+            td Destination
+            td
+      h3.heading.switch
+        | モジュレーションマトリクスエディットメニュー
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Sound/Multiボタンを短く押す
+              br
+              | Auto Editがoffの場合：Sound/Multiボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルで、任意のメニューページまでスクロール
+        table
+          tr
+            td Source
+            td モジュレーションデスティネーションを設定
+          tr
+            td Destination
+            td モジュレーションデスティネーションを設定
+          tr
+            td Amount
+            td
+              | デスティネーションに適用されるモジュレーション量を設定
+              br
+              | 設定値-64～+63
+          tr
+            td Modifier
+            td 設定値1～4
+          tr
+            td Source A
+            td 最初のソース信号を選択
+          tr
+            td Source B
+            td
+              | 複数の信号を使う場合、二番目のソース信号を選択
+              br
+              | 選択肢はSource Aと同じだが、offの代わりにconstantがある
+          tr
+            td Operation
+            td 選択された入力されたソースに対して行われる操作を設定
+          tr
+            td Constant
+            td
+              | コンスタントパラメーターを必要とするモディファイア機能の値を設定
+              br
+              | 設定値0～127
+        p モディファイアの機能
+        table
+          tr
+            th Setting
+            th Description
+          tr
+            td +
+            td Addition
+          tr
+            td -
+            td Subtraction
+          tr
+            td *
+            td Multiplication
+          tr
+            td XOR
+            td Exclusive OR function
+          tr
+            td OR
+            td OR function
+          tr
+            td AND
+            td AND function
+          tr
+            td min
+            td Minimum value
+          tr
+            td MAX
+            td Maximum value
+    h2.heading.switch
+      | Amp
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | Amplifier Edit Menu
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：shiftボタンを短く押す
+              br
+              | Auto Editがoffの場合：shiftボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルで、任意のメニューページまでスクロール
+        table
+          tr
+            td Volume
+            td
+              | サウンドプログラムのマスターボリューム
+              br
+              |         設定値：0～127
+          tr
+            td Velocity
+            td
+              | ボリュームが変化する度合い
+              br
+              |             設定値：-64～+63
+          tr
+            td Mod Source
+            td ボリュームモジュレーションのソースを設定
+          tr
+            td Mod Amount
+            td
+              | ボリュームモジュレーションの量を設定
+              br
+              | 設定値0～127
+    h2.heading.switch
+      | エフェクト
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | エフェクトのパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | blofeldには2つのエフェクトユニットが搭載されている
+          br
+          |                 1つはサウンドプログラムに含まれている
+          br
+          | もう1つはグローバルエフェクトとして適用可能
+        table
+          tr
+            td Mix 1
+            td
+              | オリジナル音声信号とエフェクト出力の比率を設定
+              br
+              | 0ではドライ信号のみ出力
+              br
+              | 高い設定値ではエフェクト信号の比率が増加していく
+              br
+              | 127ではエフェクト信号のみを出力
+          tr
+            td Mix 2
+            td Mix 1と同様
+      h3.heading.switch
+        | Effect Edit Menu
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Shiftボタンを短く押す
+              br
+              | Auto Editがoffの場合：Shiftボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルで、任意のメニューページまでスクロール
+        table
+          tr
+            td Type
+            td
+              | Bypass
+              br
+              | Chorus
+              br
+              | Flanger
+              br
+              | Overdrive
+              br
+              | Triple FX
+              br
+              | Delay
+              br
+              | Clk.Delay
+              br
+              | Reverb
+          tr
+            td Mix
+            td
+              | オリジナル音声信号とエフェクト出力の比率を設定
+              br
+              | 0ではドライ信号のみ出力
+              br
+              | 高い設定値ではエフェクト信号の比率が増加していく
+              br
+              | 127ではエフェクト信号のみを出力
+          tr
+            td Effect Bypass
+            td エフェクトユニットを無効にする
+        p Chorus
+        table
+          tr
+            td Speed
+            td
+              | コーラスエフェクトのLFOスピードを設定
+              br
+              | 設定値0～127
+          tr
+            td Depth
+            td
+              | コーラスエフェクトのモジュレーションのかかり具合を設定
+              br
+              | 設定値0～127
+        p Flanger
+        table
+          tr
+            td Speed
+            td
+              | フランジャーエフェクトのLFOスピードを設定
+              br
+              | 設定値0～127
+          tr
+            td Depth
+            td
+              | フランジャーエフェクトのモジュレーションのかかり具合を設定
+              br
+              | 設定値0～127
+          tr
+            td Feedback
+            td
+              | フランジャーエフェクトのフィードバック量を設定
+              br
+              | 設定値0～127
+          tr
+            td Polarity
+            td
+              | フィードバック信号をそのままフランジャーにフィードバックするか、位相を反転させてからフィードバックするかの設定
+              br
+              | 設定値positive/negative
+        p Phaser
+        table
+          tr
+            td Speed
+            td
+              | フェイザーエフェクトのLFOスピードを設定
+              br
+              | 設定値0～127
+          tr
+            td Depth
+            td
+              | フェイザーエフェクトのモジュレーションのかかり具合を設定
+              br
+              | 設定値0～127
+          tr
+            td Center
+            td
+              | オールパスフィルターの相対的ディレイレングスを設定
+              br
+              | 低い設定値：ハイピッチのフェイザーエフェクト
+              br
+              | 高い設定値：オールフィルター全域をカバー
+              br
+              | 設定値0～127
+          tr
+            td Spacing
+            td
+              | オールパスフィルターの相対的周波数を設定
+              br
+              | 0：従来のクラシックフェイザー
+              br
+              | 高い設定値：オールパスフィルター全域をカバー
+              br
+              | 設定値0～127
+          tr
+            td Feedback
+            td
+              | ディレイ信号のフィードバック量を設定
+              br
+              | 設定値0～127
+          tr
+            td Polarity
+            td
+              | フィードバック信号をそのままフランジャーにフィードバックするか、位相を反転させてからフィードバックするかの設定
+              br
+              | 設定値positive/negative
+        p Overdrive
+        table
+          tr
+            td Drive
+            td
+              | 生成されるディストーション量を設定
+              br
+              | 設定値0～127
+          tr
+            td Drive Curve
+            td
+              | Clipping
+              br
+              | Tube
+              br
+              | Hard
+              br
+              | Medium
+              br
+              | Soft
+              br
+              | Pickup1
+              br
+              | Pickup2
+              br
+              | Rectifier
+              br
+              | Square
+              br
+              | Binary
+              br
+              | Overflow
+              br
+              | Sine Shaper
+          tr
+            td Post Gain
+            td
+              | ディストーション信号の出力レベルを設定
+              br
+              | 設定値0～127
+          tr
+            td Cutoff
+            td
+              | オーバードライブエフェクト成分の高周波帯域をカットする
+              br
+              | 設定値0～127
+        p Triple FX
+        table
+          tr
+            td Over Drive
+            td
+              | 生成されるディストーション量を設定
+              br
+              | 設定値0～127
+          tr
+            td Drive Curve
+            td
+              | Clipping
+              br
+              | Tube
+              br
+              | Hard
+              br
+              | Medium
+              br
+              | Soft
+              br
+              | Pickup1
+              br
+              | Pickup2
+              br
+              | Rectifier
+              br
+              | Square
+              br
+              | Binary
+              br
+              | Overflow
+              br
+              | Sine Shaper
+              br
+              | Osc 1 Mod
+          tr
+            td Sample & Hold
+            td
+              | 出力されるサンプルレートを設定
+              br
+              | 設定値0～127
+          tr
+            td Chorus Mix
+            td
+              | コーラスエフェクトのミックスレベルを設定
+              br
+              | 設定値0～127
+          tr
+            td Speed
+            td
+              | コーラスエフェクトのLFOスピードを設定
+              br
+              | 設定値0～127
+          tr
+            td Depth
+            td
+              | コーラスエフェクトのモジュレーションのかかり具合を設定
+              br
+              | 設定値0～127
+        p Delay
+        table
+          tr
+            td Length
+            td
+              | ディレイタップのレングスを設定
+              br
+              | 設定値0～29
+          tr
+            td Spread
+            td
+              | 左右ディレイ出力をディレイタイムの半分まで広げられる
+              br
+              | 設定値-64～+63
+          tr
+            td Feedback
+            td
+              | ディレイ信号のフィードバック量を設定
+              br
+              | 設定値0～127
+          tr
+            td Polarity
+            td
+              | フィードバック信号をそのままフランジャーにフィードバックするか、位相を反転させてからフィードバックするかの設定
+              br
+              | 設定値positive/negative
+          tr
+            td Cutoff
+            td
+              | ディレイエフェクト成分をカットする
+              br
+              | 設定値0～127
+        p Clk.Delay(Clocked Delay)
+        table
+          tr
+            td Length
+            td
+              | ディレイタップのレングスを音符単位で設定
+              br
+              | 設定値：1/96～10bars
+          tr
+            td Spread
+            td
+              | 左右ディレイ出力をディレイタイムの半分まで広げられる
+              br
+              | 設定値-64～+63
+          tr
+            td Feedback
+            td
+              | ディレイ信号のフィードバック量を設定
+              br
+              | 設定値0～127
+          tr
+            td Polarity
+            td
+              | フィードバック信号をそのままフランジャーにフィードバックするか、位相を反転させてからフィードバックするかの設定
+              br
+              | 設定値positive/negative
+          tr
+            td Cutoff
+            td
+              | ディレイエフェクト成分をカットする
+              br
+              | 設定値0～127
+        p Reverb
+        table
+          tr
+            td HighPass
+            td
+              | エフェクト成分の低周波数との分岐点に当たる周波数を指定
+              br
+              | 設定値0～127
+          tr
+            td LowPass
+            td
+              | エフェクト成分の高周波数との分岐点に当たる周波数を指定
+              br
+              | 設定値0～127
+          tr
+            td Deffusion
+            td
+              | ルームの素材をシミュレートする
+              br
+              | 低い設定値では固い素材
+              br
+              | 高い設定値では柔らかい素材
+              br
+              | 設定値0～127
+          tr
+            td Size
+            td
+              | ルームの大きさをシミュレート
+              br
+              | 設定値0～127
+          tr
+            td Shape
+            td
+              | リバーブ成分のキャラクターを設定
+              br
+              | 設定値0～127
+          tr
+            td Decay
+            td
+              | 反射音のレングスを設定
+              br
+              | 設定値0～127
+          tr
+            td Damping
+            td
+              | ルームシミュレーションのリバーブ高周波成分をカットするタイミングの設定
+              br
+              | 設定値0～127
+    h2.heading.switch
+      | Arpeggiator
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | Arpeggiator
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p 最大16個のノートを保存できるノートリストが搭載されている
+      h3.heading.switch
+        | アルペジエーターの停止
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | アルペジエーターの停止
+          br
+          |                     方法1.Shift+Playボタン
+          br
+          |                     方法2.Modeをoff/on/One Shotに設定する
+          br
+          |                     方法3.シーケンサーからAll Note Offメッセージを送信
+      h3.heading.switch
+        | アルペジエーターのパラメーターコントロール
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Shiftボタンを短く押す
+              br
+              | Auto Editがoffの場合：Shiftボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルで、任意のメニューページまでスクロール
+        table
+          tr
+            td Mode
+            td
+              | off：アルペジーターオフ
+              br
+              |            on：アルペジエーターオン(キーボードを押している間だけ演奏)
+              br
+              |            One Shot：アルペジエーターオン(一度だけ演奏)
+              br
+              |            Hold：アルペジエーターオン(キーボードを離した後も演奏)
+          tr
+            td Clock
+            td
+              | アルペジオの音符のリズムパターンをステップ毎に設定
+              br
+              |     設定値：1/96～64bars
+          tr
+            td Tempo
+            td
+              | アルペジエーターとClk.Delayの基本テンポをBPMで指定
+              br
+              | 設定値40～300
+          tr
+            td Pattern
+            td
+              | アルペジオの音符のリズムパターンを設定
+              br
+              |         設定値：off/User/1～15
+              br
+              |         off：現在のClock設定に基づいて持続的なシーケンスを演奏
+              br
+              |         User：ユーザーのオリジナルパターンを生成(サウンドとともに保存可能)
+              br
+              |         1～15：15種類のプリセット
+          tr
+            td Direction
+            td
+              | 再生方向の設定
+              br
+              |     Up：上方向
+              br
+              |     Down：下方向
+              br
+              |     Alt Up：上方法に進み、一番上に達すると、下方向に進む
+              br
+              |         Alt Down： 下方法に進み、一番下に達すると、上方向に進む
+          tr
+            td Octave
+            td
+              | オクターブ単位のシングルノートレンジを設定
+              br
+              |     設定値：1～10
+          tr
+            td Length
+            td
+              | アルペジオノートのレングスを設定
+              br
+              |     生成された全ノートはレガートで演奏される
+              br
+              |     Arpeggiator Lengthは無効になる
+          tr
+            td Overlap
+            td
+              | on：同一ノート間でNote Onメッセージが送られた直後にNote Offメッセージが送られる
+              br
+              |         off：同一ノート間でNote Onメッセージが送られた直前にNote Offメッセージが送られる
+          tr
+            td Timing Factor
+            td
+              | アルペジオタイミングがアルペジオステップにかかる度合いを設定
+              br
+              |     0：アルペジオタイミングを無視し、シャッフルしない
+              br
+              |     1～127：アルペジオタイミングの設定でシャッフルさせる
+          tr
+            td Velocity
+            td
+              | Each Note：アルペジオ内の各ノートは演奏されたベロシティで演奏
+              br
+              |     First Note：アルペジオ内の各ノートは最後に演奏されたノートのベロシティに追従して演奏
+              br
+              |     Fix32/Fix64/Fix100/Fix127：すべてのノートは選択されたベロシティで演奏
+          tr
+            td Pat. Length
+            td
+              | リズムパターンのレングスを設定
+              br
+              |     設定値：0～16
+          tr
+            td Pat. Reset
+            td
+              | リズムパターンがリセットされたときに、ノートリストもリスタートされるかどうかを設定
+              br
+              |     off：ノートリストはリスタートされない
+              br
+              |     on：ノートリストがリスタートする
+      h3.heading.switch
+        | Arpeggiator Step Data Pages
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist
+              | Auto EditがOnの場合：Shiftボタンを短く押す
+              br
+              | Auto Editがoffの場合：Shiftボタンを少し長めに押す
+            li.contentOperationOrderlist セレクションダイヤルで、任意のメニューページまでスクロール
+        table
+          tr
+            td Step
+            td
+              | normal：ステップを変更せずに演奏
+              br
+              |                pause：一時停止
+              br
+              |                previous：1つ前のステップと同じノートを演奏
+              br
+              |                first：ノートリスト冒頭のノートを演奏
+              br
+              |                    last：ノートリストの最後のノートを演奏
+              br
+              |                first+last：ノートリストの冒頭と最後のノートを演奏
+              br
+              |                    chord：ノートリストのすべてのノートを演奏
+              br
+              |                    random：ノートリストのノートをランダムに演奏
+          tr
+            td Accent
+            td
+              | 特定のノートにアクセントを付ける
+              br
+              |                silent：ステップが有効になっても発音しない
+              br
+              |                *1：任意のステップのベロシティは変更されない
+              br
+              |                分数形式(/4,/3,/2)または積算形式(*2,*3,*4)：ベロシティは設定された通りに上昇するか下降する
+              br
+          tr
+            td Glide
+            td 設定値：off/on
+          tr
+            td Timing
+            td
+              | ステップのタイミングを前後にずらす
+              br
+              | 設定値：random/-3～+3
+          tr
+            td Length
+            td
+              | 特定のステップのノートレングスを変更
+              br
+              |                設定値：legato/-3～+3
+    h2.heading.switch
+      | Global Parameter
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | Global Menu
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shiftボタンを押しながらGlobalボタンを押す
+            li.contentOperationOrderlist セレクションダイヤルで任意のメニューページまでスクロール
+        p メニューパラメーターはディスプレイパラメーターダイヤルで変更
+        .tableScroll
+          table
+            tr
+              td Contrast
+              td
+                | ディスプレイのコントラストを設定
+                br
+                |                設定値：0～127
+            tr
+              td Popup Time
+              td パラメーターエディットを行った時など、変更したネームや値がディスプレイに表示される時間を設定
+            tr
+              td Auto Edit
+              td
+                | エディット時の動作を設定
+                br
+                |                off：パラメーターマトリクスボタンを押すと、任意のボタンが有効になるが、任意のエディットメニューにはアクセスしない
+                br
+                |                ボタンをしばらく押し続けるとエディットメニューにアクセスできる(慣れてきたらoff推奨)
+                br
+                |                    on：パラメーターマトリクスボタンを押すと、任意のボタンが有効になるが、任意のエディットメニューがディスプレイに表示される
+            tr
+              td Master Tune
+              td
+                | 全体的なピッチをHz単位で設定
+                br
+                |                MIDIノートA3でデフォルト440Hzになっている
+                br
+                |                設定値：430～450
+            tr
+              td Transpose
+              td
+                | すべてのサウンドプログラムに対して、グローバルなトランスポーズを行う
+                br
+                | 設定値：-12～+12
+            tr
+              td MIDIChannel
+              td
+                | 送受信するMIDIチャンネルを設定
+                br
+                | 設定値：omni,1～16
+                br
+                | omniを設定すると、チャンネル1でのみ送受信可能になる(送受信テスト時のみ使用)
+            tr
+              td Device ID
+              td
+                | MIDI SysEx Dataを送受信する時のデバイスIDを設定
+                br
+                |                    Blofeldを1台しか使わない場合は0のままにしておく
+            tr
+              td Velo Curve
+              td
+                | 接続されたMIDIキーボードのベロシティパフォーマンスを設定
+                br
+                |                設定値：linear/square/cubic/exponential/root/rix32～127
+            tr
+              td Clock
+              td
+                | internal：入力されるMIDIクロックメッセージに反応しない
+                br
+                | MIDIクロックメッセージの送信も行わない
+                br
+                |                auto(推奨設定)：外部ドラムマシンやシーケンサーから送信されたMIDIクロックメッセージに自動的に同期する
+                br
+                |                MIDIクロックメッセージが入力されていない場合は内部テンポベースで動作
+            tr
+              td Ctrl Send
+              td
+                | off：データ送信する
+                br
+                |                    Ctl：コントローラーメッセージのみ送信
+                br
+                |                    SysEx：すべてのサウンドパラメーターをシステムエクスクルーシブメッセージとして送信
+                br
+                |                Ctl+SysEx(推奨設定)：専用のコントローラーメッセージ信号を含むサウンドパラメーターを、コントローラーメッセージとして送信
+            tr
+              td Ctrl Receive
+              td
+                | off：サウンドパラメーターチェンジメッセージを受信しない
+                br
+                |                on：コントローラー信号、システムエクスクルーシブ信号に関わらず、サウンドパラメーターチェンジ信号を受信する
+            tr
+              td ControlW・・・Z
+              td
+                | 任意のMIDI CC信号をサウンドのモジュレーションソースとして使用する際に使う
+                br
+                |                設定にはY,X,Y,Zの4つのコントロールを使う
+                br
+                |                設定値：0～120
+      h3.heading.switch
+        | MIDI Dump Functions
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p ダンプ機能で、メモリの内容をMIDI(受信のみ)、USB(送受信)でやりとりする
+        p Playモードでダンプ有効
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shiftボタン+Utilityボタン
+            li.contentOperationOrderlist セレクションダイヤルで任意のダンプファンクションまでスクロール
+            li.contentOperationOrderlist
+              | Bump Sound：現在のサウンドプログラムを送信
+              br
+              |                     Dump Sound Bank：現在のサウンドバンクを送信
+              br
+              |                     Dump All Sounds：全サウンドを送信
+              br
+              |                     Dump All：全サウンド、およびグローバルパラメーターを送信
+            li.contentOperationOrderlist Shift+Utilityでダンプ実行
+        p Multiモードでダンプ有効
+        .contentOperationBox
+          p.contentOperationCaption 操作
+          ul.contentOperationOrderlistGroup
+            li.contentOperationOrderlist Shiftボタン+Utilityボタン
+            li.contentOperationOrderlist セレクションダイヤルで任意のダンプファンクションまでスクロール
+            li.contentOperationOrderlist
+              | Dump Multi：現在のマルチプログラムを送信
+              br
+              |                     Dump Arrangement：すべてのサウンドプログラムを含む、すべてのマルチプログラムを送信
+              br
+              |                     Dump All Multis：全マルチプログラムを送信
+            li.contentOperationOrderlist Shift+Utilityでダンプ実行
+      h3.heading.switch
+        | システムエクスクルーシブの受信
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        p
+          | システムエクスクルーシブの受信時の注意事項
+          br
+          |             プログラムがエディットモードでないことを確認
+          br
+          |             Device IDの送信側と受信側の設定があっていることを確認
+          br
+          |             受信したサウンドプログラムはバッファに保存されるので、電源を切る前に保存が必要
+    h2.heading.switch
+      | 情報
+      span.swithCondition.contentClosed
+    section.h2content.hide
+      h3.heading.switch
+        | Wavetableのリスト
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            th No.
+            th Wavetable
+          tr
+            td 1
+            td Alt 1
+          tr
+            td 2
+            td Alt 2
+          tr
+            td 3
+            td Resonant
+          tr
+            td 4
+            td Resonant2
+          tr
+            td 5
+            td MalletSyn
+          tr
+            td 6
+            td Sqr-Sweep
+          tr
+            td 7
+            td Belish
+          tr
+            td 8
+            td Pul-Sweep
+          tr
+            td 9
+            td Saw-Sweep
+          tr
+            td 10
+            td MellowSaw
+          tr
+            td 11
+            td Feedback
+          tr
+            td 12
+            td Add Harm
+          tr
+            td 13
+            td Reso 3 HP
+          tr
+            td 14
+            td Wind Syn
+          tr
+            td 15
+            td HighHarm
+          tr
+            td 16
+            td Clipper
+          tr
+            td 17
+            td OrganSyn
+          tr
+            td 18
+            td SquareSaw
+          tr
+            td 19
+            td Formant1
+          tr
+            td 20
+            td Polated
+          tr
+            td 21
+            td Transient
+          tr
+            td 22
+            td ElectricP
+          tr
+            td 23
+            td Robotic
+          tr
+            td 24
+            td StrongHrm
+          tr
+            td 25
+            td PercOrgan
+          tr
+            td 26
+            td ClipSweep
+          tr
+            td 27
+            td ResoHarms
+          tr
+            td 28
+            td 2 Echoes
+          tr
+            td 29
+            td Formant2
+          tr
+            td 30
+            td FmntVocal
+          tr
+            td 31
+            td MicroSyn
+          tr
+            td 32
+            td MicroPWM
+          tr
+            td 33
+            td Glassy
+          tr
+            td 34
+            td SquareHP
+          tr
+            td 35
+            td SawSync1
+          tr
+            td 36
+            td SawSync2
+          tr
+            td 37
+            td SawSync3
+          tr
+            td 38
+            td PulSync1
+          tr
+            td 39
+            td PulSync2
+          tr
+            td 40
+            td PulSync3
+          tr
+            td 41
+            td SinSync1
+          tr
+            td 42
+            td SinSync2
+          tr
+            td 43
+            td SinSync3
+          tr
+            td 44
+            td PWM Pulse
+          tr
+            td 45
+            td PWM Saw
+          tr
+            td 46
+            td Fuzz Wave
+          tr
+            td 47
+            td Distorted
+          tr
+            td 48
+            td HeavyFuzz
+          tr
+            td 49
+            td Fuzz Sync
+          tr
+            td 50
+            td K+Strong1
+          tr
+            td 51
+            td K+Strong2
+          tr
+            td 52
+            td K+Strong3
+          tr
+            td 53
+            td 1-2-3-4-5
+          tr
+            td 54
+            td 19/twenty
+          tr
+            td 55
+            td Wavetrip1
+          tr
+            td 56
+            td Wavetrip2
+          tr
+            td 57
+            td Wavetrip3
+          tr
+            td 58
+            td Wavetrip4
+          tr
+            td 59
+            td MaleVoice
+          tr
+            td 60
+            td Low Piano
+          tr
+            td 61
+            td ResoSweep
+          tr
+            td 62
+            td Xmas Bell
+          tr
+            td 63
+            td FM Piano
+          tr
+            td 64
+            td Fat Organ
+          tr
+            td 65
+            td vibes
+          tr
+            td 66
+            td Chorus 2
+          tr
+            td 67
+            td True PWM
+          tr
+            td 68
+            td UpperWaves
+      h3.heading.switch
+        | FM Source
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            th FM Source
+            th Description
+          tr
+            td off
+            td No modulation
+          tr
+            td Osc1
+            td Oscillator 1 Signal
+          tr
+            td Osc2
+            td Oscillator 2 Signal
+          tr
+            td Osc3
+            td Oscillator 3 Signal
+          tr
+            td Noise
+            td Noise Generator Signal
+          tr
+            td LFO1
+            td LFO 1 Signal
+          tr
+            td LFO2
+            td LFO 2 Signal
+          tr
+            td LFO3
+            td LFO 3 Signal
+          tr
+            td FilterEnv
+            td Filter Envelope Signal
+          tr
+            td AmpEnv
+            td Amplifier Envelope Signal
+          tr
+            td Env3
+            td Envelope 3 Signal
+          tr
+            td Env4
+            td Envelope 4 Signal
+      h3.heading.switch
+        | Modulation Source
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            th Modulation Source
+            th Description
+          tr
+            td off
+            td No modulation
+          tr
+            td LFO1
+            td LFO 1 Signal
+          tr
+            td LFO1*MW
+            td LFO 1 Signal
+          tr
+            td LFO2
+            td LFO 2 Signal
+          tr
+            td LFO2*Prs.
+            td LFO 2 Signal
+          tr
+            td LFO3
+            td LFO 3 Signal
+          tr
+            td FilterEnv
+            td Filter Envelope Signal
+          tr
+            td AmpEnv
+            td Amplifier Envelope Signal
+          tr
+            td Env3
+            td Envelope 3 Signal
+          tr
+            td Env4
+            td Envelope 4 Signal
+          tr
+            td Keytrack
+            td MIDI note number
+          tr
+            td Velocity
+            td MIDI Velocity
+          tr
+            td Rel. Velo
+            td MIDI note release velocity
+          tr
+            td Pressure
+            td MIDI channel pressure
+          tr
+            td Poly Prs.
+            td MIDI polyphonic pressure
+          tr
+            td Pitchbend
+            td MIDI pitchbend signal
+          tr
+            td Modwheel
+            td MIDI modulation wheel (contr.#1)
+          tr
+            td Sust. Ctr
+            td MIDI sustain pedal (controller #64)
+          tr
+            td Foot Ctr
+            td MIDI foot control (controller #4)
+          tr
+            td BreathCtr
+            td MIDI breath control (controller #2)
+          tr
+            td Control W,X,Y,Z
+            td assignable MIDI controller W to Z
+          tr
+            td Unisono V
+            td All Unisono voices
+          tr
+            td Modifier #1...#4
+            td Result of Modifier #1...#4
+          tr
+            td minimum
+            td constant for minimum modulation(equals 0)
+          tr
+            td MAXIMUM
+            td constant for minimum modulation(equals +1)
+      h3.heading.switch
+        | Modulation Destinations
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        table
+          tr
+            th Modulation Destinations
+            th Description
+          tr
+            td Pitch
+            td Global pitch of all three Oscillators at once
+          tr
+            td O1 Pitch,O2 Pitch,O3 Pitch
+            td Pitch of Oscillator 1...3
+          tr
+            td O1 PW,O2 PW,O3 PW
+            td Pulse width of Oscillator 1...3
+          tr
+            td O1 FM,O2 FM,O3 FM
+            td FM Amount modulation of Oscillator 1...3
+          tr
+            td O1 Level,O2 Level,O3 Level
+            td Level of Oscillator 1...3
+          tr
+            td O1 Bal.,O2 Bal.,O3 Bal.
+            td Filter 1/2 Balance of Oscillator 1...3
+          tr
+            td Ring Level
+            td Mixer Ring modulation level
+          tr
+            td Ping Bal.
+            td Filter 1/2 Balance of Noise
+          tr
+            td Noise Level
+            td Mixer level of Noise
+          tr
+            td Noise Bal.
+            td Filter 1/2 Balance of Noise
+          tr
+            td F1 Cutoff,F2 Cutoff
+            td Cutoff of Filter 1...2
+          tr
+            td F1 Reson.,F2 Reson.
+            td Resonance of Filter 1...2
+          tr
+            td F1 FM,F2 FM
+            td FM Amount modulation of Filter 1...2
+          tr
+            td F1 Drive,F2 Drive
+            td Drive of Filter 1...2
+          tr
+            td F1 Pan,F2 Pan
+            td Pan of Filter 1...2
+          tr
+            td Volume
+            td Amplifier output volume
+          tr
+            td LFO1-,LFO20,LFO3-Speed
+            td Speed of LFO 1...3
+          tr
+            td FE Attack
+            td Attack rate of Filter Envelope
+          tr
+            td FE Decay
+            td Decay(and Decay 2)rate of Amp Envelope
+          tr
+            td FE Sust.
+            td Sustain (and Sustain2)level of Filter Envelope
+          tr
+            td FE Rel.
+            td Release rate of Filter Envelope
+          tr
+            td AE Attack
+            td Attack rate of Amp Envelope
+          tr
+            td AE Decay
+            td Decay (and Decay2)rate of Amp Envelope
+          tr
+            td AE Sust.
+            td Sustain (and Sustain2)level of Amp Envelope
+          tr
+            td AE Rel.
+            td Release rate of Amp Envelope
+          tr
+            td E3 Attack
+            td Attack rate of Envelope 3
+          tr
+            td E3 Decay
+            td Decay (and Decay2)rate of Envelope 3
+          tr
+            td E3 Sust.
+            td Sustain (and Sustain2)level of Envelope 3
+          tr
+            td E3 Rel.
+            td Release rate of Envelope 3
+          tr
+            td E4 Attack
+            td Attack rate of Envelope 4
+          tr
+            td E4 Decay
+            td Decay (and Decay2)rate of Envelope 4
+          tr
+            td E4 Sust.
+            td Sustain (and Sustain2)level of Envelope 4
+          tr
+            td E4 Rel.
+            td Release rate of Envelope 4
+          tr
+            td M1 Amount
+            td Modulation amount of M1
+          tr
+            td M2 Amount
+            td Modulation amount of M2
+          tr
+            td M3 Amount
+            td Modulation amount of M3
+          tr
+            td M4 Amount
+            td Modulation amount of M4
+      h3.heading.switch
+        | Controller Numbers
+        span.swithCondition.contentClosed
+      section.h3content.hide
+        .tableScroll
+          table
+            tr
+              th Ctrl#
+              th Controller Range
+              th Controller name or Sound Parameter
+              th Value Range
+            tr
+              td 0
+              td -not used-
+              td Bank Select MSB
+              td -not used-
+            tr
+              td 1
+              td 0...127
+              td Modulation Wheel*
+              td 0...127
+            tr
+              td 2
+              td 0...127
+              td Breath Control*
+              td 0...127
+            tr
+              td 3
+              td -not used-
+              td undefined
+              td -not used-
+            tr
+              td 4
+              td 0...127
+              td Foot Control*
+              td 0...127
+            tr
+              td 5
+              td 0...127
+              td Glide Rate
+              td 0...127
+            tr
+              td 6
+              td -not used-
+              td Data Entry
+              td -not used-
+            tr
+              td 7
+              td 0...127
+              td Channel Volume*
+              td 0...127
+            tr
+              td 8
+              td -not used-
+              td Balance
+              td -not used-
+            tr
+              td 9
+              td -not used-
+              td undefined
+              td -not used-
+            tr
+              td 10
+              td 0...127
+              td Pan*
+              td L64...R63
+            tr
+              td 11
+              td -not used-
+              td Expression
+              td -not used-
+            tr
+              td 12
+              td 0...9
+              td Arp Range
+              td 1...10 octaves
+            tr
+              td 13
+              td 0...15
+              td Arp Length
+              td 1...16 steps
+            tr
+              td 14
+              td 0...3
+              td Arp Active
+              td off,on,one shot,hold
+            tr
+              td 15
+              td 0...5
+              td LFO 1 Shape
+              td sine,triangle,square,sawtooth,random,S&H
+            tr
+              td 16
+              td 0...127
+              td LFO 1 Speed
+              td 0...127 or 256 bars...1/96
+            tr
+              td 17
+              td 0...1
+              td LFO 1 Sync
+              td off,on
+            tr
+              td 18
+              td 0...127
+              td LFO 1 Delay
+              td 0...127
+            tr
+              td 19
+              td 0...5
+              td LFO 2 Shape
+              td sine,triangle,square,sawtooth,random,S&H
+            tr
+              td 20
+              td 0...127
+              td LFO 2 Speed
+              td 0...127 or 256 bars...1/96
+            tr
+              td 21
+              td 0...1
+              td LFO 2 Sync
+              td off,on
+            tr
+              td 22
+              td 0...127
+              td LFO 2 Delay
+              td 0...127
+            tr
+              td 23
+              td 0...5
+              td LFO 3 Shape
+              td sine,triangle,square,sawtooth,random,S&H
+            tr
+              td 24
+              td 0...127
+              td LFO 3 Speed
+              td 0...127 or 256 bars...1/96
+            tr
+              td 25
+              td 0...1
+              td LFO 3 Sync
+              td off,on
+            tr
+              td 26
+              td 0...127
+              td LFO 3 Delay
+              td 0...127
+            tr
+              td 27
+              td 16,28,40...112
+              td Osc 1 Octave
+              td 128'...1/2'
+            tr
+              td 28
+              td 52...76
+              td Osc 1 Semitone
+              td -12...+12
+            tr
+              td 29
+              td 0...127
+              td Osc 1 Detune
+              td 0...127
+            tr
+              td 30
+              td 0...127
+              td Osc 1 FM
+              td 0...127
+            tr
+              td 31
+              td 0...5
+              td Osc 1 Shape
+              td pulse,saw,triangle,sine,alt 1,alt 2
+            tr
+              td 32
+              td 0...n
+              td Bank Select LSB*
+              td Bank A...
+            tr
+              td 33
+              td 0...127
+              td Osc 1 PW
+              td 0...127
+            tr
+              td 34
+              td 0...127
+              td Osc 1 PWM
+              td -64...+63
+            tr
+              td 35
+              td 16,28,40...112
+              td OSC 2 Octave
+              td 128'...1/2'
+            tr
+              td 36
+              td 52...76
+              td Osc 2 Semitone
+              td -12...+12
+            tr
+              td 37
+              td 0...127
+              td Osc 2 Detune
+              td -64...+63
+            tr
+              td 38
+              td 0...127
+              td Osc 2 FM
+              td 0...127
+            tr
+              td 39
+              td 0...5
+              td Osc 2 Shape
+              td pulse,saw,triangle,sine,alt 1,alt 2
+            tr
+              td 40
+              td 0...127
+              td Osc 2 PW
+              td 0...127
+            tr
+              td 41
+              td 0...127
+              td Osc 2 PWM
+              td -64...+63
+            tr
+              td 42
+              td 16,28,40...112
+              td Osc 3 Octave
+              td 128'...1/2'
+            tr
+              td 43
+              td 52...76
+              td Osc 3 Semitone
+              td -12...+12
+            tr
+              td 44
+              td 0...127
+              td Osc 3 Detune
+              td -64...+63
+            tr
+              td 45
+              td 0...127
+              td Osc 3 FM
+              td 0...127
+            tr
+              td 46
+              td 0...5
+              td Osc 3 Shape
+              td pulse,saw,triangle,sine,alt 1,alt 2
+            tr
+              td 47
+              td 0...127
+              td Osc 3 PW
+              td 0...127
+            tr
+              td 48
+              td 0...127
+              td Osc 3 PWM
+              td -64...+63
+            tr
+              td 49
+              td 0...1
+              td Sync
+              td off,on
+            tr
+              td 50
+              td 0...127
+              td Pitchmod
+              td -64...+63
+            tr
+              td 51
+              td 0...9
+              td Glide Mode
+              td siehe "Glide Mode"
+            tr
+              td 52
+              td 0...127
+              td Osc 1 Level
+              td 0...127
+            tr
+              td 53
+              td 0...127
+              td Osc 1 Balance
+              td
+                | F1
+                br
+                | 64...mid...F2
+                br
+                | 63
+            tr
+              td 54
+              td 0...127
+              td Ringmod Level
+              td 0...127
+            tr
+              td 55
+              td 0...127
+              td Ringmod Balance
+              td
+                | F1
+                br
+                | 64...mid...F2
+                br
+                | 63
+            tr
+              td 56
+              td 0...127
+              td Osc 2 Level
+              td 0...127
+            tr
+              td 57
+              td 0...127
+              td Osc 2 Balance
+              td
+                | F1
+                br
+                | 64...mid...F2
+                br
+                | 63
+            tr
+              td 58
+              td 0...127
+              td Osc 3 Level
+              td 0...127
+            tr
+              td 59
+              td 0...127
+              td Osc 3 Balance
+              td
+                | F1
+                br
+                | 64...mid...F2
+                br
+                | 63
+            tr
+              td 60
+              td 0...127
+              td Noise Level
+              td 0...127
+            tr
+              td 61
+              td 0...127
+              td Noise Balance
+              td
+                | F1
+                br
+                | 64...mid...F2
+                br
+                | 63
+            tr
+              td 62
+              td 0...127
+              td Noise Colour
+              td 0...127
+            tr
+              td 63
+              td -not used-
+              td undefined
+              td -not used-
+            tr
+              td 64
+              td 0...127
+              td Sustain Pedal*
+              td off/on
+            tr
+              td 65
+              td 0...127
+              td Glide Active
+              td off/on
+            tr
+              td 66
+              td 0...127
+              td Sostenuto
+              td off/on
+            tr
+              td 67
+              td 0...127
+              td Routing
+              td serial/parallel
+            tr
+              td 68
+              td 0...127
+              td Filter 1 Type
+              td See Filter types
+            tr
+              td 69
+              td 0...127
+              td Filter 1 Cutoff
+              td 0...127
+            tr
+              td 70
+              td 0...127
+              td Filter 1 Resonance
+              td 0...127
+            tr
+              td 71
+              td 0...127
+              td Filter 1 Drive
+              td 0...127
+            tr
+              td 72
+              td 0...127
+              td Filter 1 Keytrack
+              td -200%...+197%
+            tr
+              td 73
+              td 0...127
+              td Filter 1 Env. Amount
+              td -64...+63
+            tr
+              td 74
+              td 0...127
+              td Filter 1 Env. Velocity
+              td -64...+63
+            tr
+              td 75
+              td 0...127
+              td Filter 1 CutoffMod
+              td -64...+63
+            tr
+              td 76
+              td 0...127
+              td Filter 1 FM
+              td off,1...127
+            tr
+              td 77
+              td 0...127
+              td Filter 1 Pan
+              td L64...center...R63
+            tr
+              td 78
+              td 0...127
+              td Filter 1 Panmod
+              td -64...+63
+            tr
+              td 79
+              td 0...127
+              td Filter 2 Type
+              td See Filter types
+            tr
+              td 80
+              td 0...127
+              td Filter 2 Cutoff
+              td 0...127
+            tr
+              td 81
+              td 0...127
+              td Filter 2 Resonance
+              td 0...127
+            tr
+              td 82
+              td 0...127
+              td Filter 2 Drive
+              td 0...127
+            tr
+              td 83
+              td 0...127
+              td Filter 2 Keytrack
+              td -200%...+197%
+            tr
+              td 84
+              td 0...127
+              td Filter 2 Env. Amount
+              td -64...+63
+            tr
+              td 85
+              td 0...127
+              td Filter 2 Env. Velocity
+              td -64...+63
+            tr
+              td 86
+              td 0...127
+              td Filter 2 CutoffMod
+              td -64...+63
+            tr
+              td 87
+              td 0...127
+              td Filter 2 FM
+              td off,1...127
+            tr
+              td 88
+              td 0...127
+              td Filter 2 Pan
+              td L64...center...R63
+            tr
+              td 89
+              td 0...127
+              td Filter 2 Panmod
+              td -64...+63
+            tr
+              td 90
+              td 0...127
+              td Amp Volume
+              td 0...127
+            tr
+              td 91
+              td 0...127
+              td Amp Velocity
+              td -64...+63
+            tr
+              td 92
+              td 0...127
+              td Amp Mod
+              td -64...+63
+            tr
+              td 93
+              td 0...127
+              td FX 1 Mix
+              td 0...127
+            tr
+              td 94
+              td 0...127
+              td FX 2 Mix
+              td 0...127
+            tr
+              td 95
+              td 0...127
+              td FEAttack
+              td 0...127
+            tr
+              td 96
+              td 0...127
+              td FE Decay
+              td 0...127
+            tr
+              td 97
+              td 0...127
+              td FE Sustain
+              td 0...127
+            tr
+              td 98
+              td 0...127
+              td FE Decay 2
+              td 0...127
+            tr
+              td 99
+              td 0...127
+              td FE Sustain 2
+              td 0...127
+            tr
+              td 100
+              td 0...127
+              td FE Release
+              td 0...127
+            tr
+              td 101
+              td 0...127
+              td AE Attack
+              td 0...127
+            tr
+              td 102
+              td 0...127
+              td AE Decay
+              td 0...127
+            tr
+              td 103
+              td 0...127
+              td AE Sustain
+              td 0...127
+            tr
+              td 104
+              td 0...127
+              td AE Decay 2
+              td 0...127
+            tr
+              td 105
+              td 0...127
+              td AE Sustaon 2
+              td 0...127
+            tr
+              td 106
+              td 0...127
+              td AE Release
+              td 0...127
+            tr
+              td 107
+              td 0...127
+              td E3 Attack
+              td 0...127
+            tr
+              td 108
+              td 0...127
+              td E3 Decay
+              td 0...127
+            tr
+              td 109
+              td 0...127
+              td E3 Sustain
+              td 0...127
+            tr
+              td 110
+              td 0...127
+              td E3 Decay 2
+              td 0...127
+            tr
+              td 111
+              td 0...127
+              td E3 Sustain 2
+              td 0...127
+            tr
+              td 112
+              td 0...127
+              td E3 Release
+              td 0...127
+            tr
+              td 113
+              td 0...127
+              td E4 Attack
+              td 0...127
+            tr
+              td 114
+              td 0...127
+              td E4 Decay
+              td 0...127
+            tr
+              td 115
+              td 0...127
+              td E4 Sustain
+              td 0...127
+            tr
+              td 116
+              td 0...127
+              td E4 Decay 2
+              td 0...127
+            tr
+              td 117
+              td 0...127
+              td E4 Sustain 2
+              td 0...127
+            tr
+              td 118
+              td 0...127
+              td E4 Release
+              td 0...127
+            tr
+              td 119
+              td -not used-
+              td undefined
+              td -not used-
+            tr
+              td 120
+              td 0...127
+              td All Sound Off*
+              td immediate silence
+            tr
+              td 121
+              td 0
+              td Reset All Controllers*
+              td resets all controllers
+            tr
+              td 122
+              td 0...127
+              td Local Control
+              td Local Control Off/On
+            tr
+              td 123
+              td 0
+              td All Notes Off*
+              td release all voices
+            tr
+              td 124
+              td -not used-
+              td Omni Mode Off
+              td -not used-
+            tr
+              td 125
+              td -not used-
+              td Omni Mode On
+              td -not used-
+            tr
+              td 126
+              td -not used-
+              td Poly Mode On/Off
+              td -not used-
+            tr
+              td 127
+              td -not used-
+              td Poly Mode On
+              td -not used-
+    footer
+      a(href="https://spindey.com") spindey.com
+    script(src="js/main.js")

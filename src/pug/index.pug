@@ -1,0 +1,67 @@
+doctype html
+html(lang="ja")
+  head
+    // Global site tag (gtag.js) - Google Analytics
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+      dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-37361015-2');
+    title spindey.com
+    //
+      <link rel="manifest" href="manifest.json">
+      <script>
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceWorker.js')
+      .then(
+      function (registration) {
+      if (typeof registration.update == 'function') {
+      registration.update();
+      }
+      })
+      .catch(function (error) {
+      console.log("Error Log: " + error);
+      });
+      }
+      </script>
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="機材,マニュアル")
+    meta(name="description" content="DTM機材のマニュアルサイトです。")
+    title spindey.com
+    link(rel="stylesheet" href="css/normalize.css")
+    link(href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet")
+    link(rel="stylesheet" href="css/style.css" type="text/css")
+  body
+    header
+      h1
+        a(href="https://spindey.com") spindey.com
+    .container
+      p.introduce
+        | このサイトは、DTM機材の添付マニュアルが自分によって分かりにくかったため、自分用に作成したマニュアルサイトです。
+        br
+        | ご覧になる場合は、機材を片手にスマホで見やすいよう最適化しておりますので、スマホでの閲覧をおすすめ致します。
+      ul.equipmentGrouop
+        li.equipmentItem.background_e2s
+          a(href="/equipment/electribe2sampler.html") electribe2 sampler
+        li.equipmentItem.background_drumbrute
+          a(href="/equipment/drumbrute.html") drumbrute
+        li.equipmentItem.background_xr20
+          a(href="/equipment/xr20.html") xr20
+        li.equipmentItem.background_blofeld
+          a(href="/equipment/blofeld.html") blofeld
+        li.equipmentItem.background_circuit
+          a(href="/equipment/circuit.html") circuit
+        li.equipmentItem.background_circuitmonostation
+          a(href="/equipment/circuitmonostation.html") circuit monostation
+        li.equipmentItem.background_twitch
+          a(href="/equipment/twitch.html") Twitch
+        li.equipmentItem.background_micron
+          a(href="/equipment/micron.html") micron
+        li.equipmentItem.background_digitakt
+          a(href="/equipment/digitakt.html") digitakt
+    footer
+      a(href="https://spindey.com") spindey.com
