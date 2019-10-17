@@ -1,22 +1,10 @@
+- var pagename='Keystep|spindey.com'
+- var description='ArturiaのKeystepのマニュアルです。'
+- var keywords='Keystep,Arturia'
+
 doctype html
 html(lang="ja")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    meta(name="keywords" content="Keystep,Arturia")
-    meta(name="description" content="ArturiaのKeystepのマニュアルです。")
-    title Keystep|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading Keystep
     h2.heading.switch
@@ -1558,6 +1546,4 @@ html(lang="ja")
     |     Play CC 0-127 PlayボタンにアサインするMIDI CCナンバー
     |     8.10.6. その他の設定
     |     LED Brightness：KeyStepのLED輝度 (LEDの明るさ) をこのパラメーターで調節できる
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug

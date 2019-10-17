@@ -1,22 +1,10 @@
+- var pagename='electribe2 sampler|spindey.com'
+- var description='KORGのELECTRIBE2 SAMPLERのマニュアルです。'
+- var keywords='ELECTRIBE2,SAMPLER,KORG'
+
 doctype html
 html(lang="ja")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    meta(name="keywords" content="ELECTRIBE2,SAMPLER,KORG")
-    meta(name="description" content="KORGのELECTRIBE2 SAMPLERのマニュアルです。")
-    title electribe2 sampler|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading electribe2 sampler
     //
@@ -6940,6 +6928,4 @@ html(lang="ja")
         span.swithCondition.contentClosed
       section.h3content.hide
         p 同じパターン内の他の小節へのコピー機能が無い
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug

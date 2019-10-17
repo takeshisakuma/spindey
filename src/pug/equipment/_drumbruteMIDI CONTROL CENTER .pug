@@ -1,20 +1,10 @@
+- var pagename='drumbrute midi control center|spindey.com'
+- var description='Arturiaのdrumbrute midi control centerのマニュアルです。'
+- var keywords='drumbrute midi control center,Arturia'
+
 doctype html
 html(lang="en")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    title drumbrute midi control center|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading drumbrute midi control center
     h2.heading.switch  8.1.4. シーケンスのバックアップ
@@ -658,6 +648,4 @@ html(lang="en")
     p
       | DrumBruteを再生している時、MIDIコントロールセンター・ソフトウェアには、パターンを選択する ために追加の手順の必要なく、バンクを切り替える設定がある
     p MIDI Control Centerを使用してタップテンポの設定に必要なタップ数を設定することができる
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug

@@ -1,22 +1,10 @@
+- var pagename='XR20|spindey.com'
+- var description='AKAIのXR20のマニュアルです。'
+- var keywords='XR20,AKAI'
+
 doctype html
 html(lang="ja")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    meta(name="keywords" content="XR20,AKAI")
-    meta(name="description" content="AKAIのXR20のマニュアルです。")
-    title XR20|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading XR20
     h2.heading.switch
@@ -6889,6 +6877,4 @@ html(lang="ja")
           |  通常は、ボイスが借用されるほど複雑なビートパ ターンを作るようなことはないが、もしこの問題が出た場合は、タム類など を同じグループにまとめる
           br
           |  そうすれば1ボイスでタム類をすべて再生できるようになる
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug

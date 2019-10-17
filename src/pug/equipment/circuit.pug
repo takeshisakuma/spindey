@@ -1,22 +1,10 @@
+- var pagename='circuit|spindey.com'
+- var description='NOVATIONのCIRCUITのマニュアルです。'
+- var keywords='Circuit,NOVATION'
+
 doctype html
 html(lang="ja")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    meta(name="keywords" content="Circuit,NOVATION")
-    meta(name="description" content="NOVATIONのCIRCUITのマニュアルです。")
-    title circuit|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading Circuit
     h2.heading.switch
@@ -2003,6 +1991,4 @@ html(lang="ja")
               br
               | (パッド32)
             td 内部テンポクロックによってのみ定義され、外部クロックの影響を受けない
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug

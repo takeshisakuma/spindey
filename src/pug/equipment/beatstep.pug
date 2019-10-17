@@ -1,22 +1,10 @@
+- var pagename='Beatstep|spindey.com'
+- var description='ArturiaのBeatstepのマニュアルです。'
+- var keywords='Beatstep,Arturia'
+
 doctype html
 html(lang="ja")
-  head
-    // Global site tag (gtag.js) - Google Analytics
-    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2")
-    script.
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width,initial-scale=1")
-    meta(name="keywords" content="Beatstep,Arturia")
-    meta(name="description" content="ArturiaのBeatstepのマニュアルです。")
-    title Beatstep|spindey.com
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="/css/style.css")
+  include ../_include/_head.pug
   body
     h1.heading Beatstep
     |     BeatStep firmware
@@ -989,6 +977,4 @@ html(lang="ja")
         td Note# 43
         td Gate
         td Global
-    footer
-      a(href="https://spindey.com") spindey.com
-    script(src="/js/main.js")
+    include ../_include/_footer.pug
