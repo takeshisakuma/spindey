@@ -1,0 +1,25 @@
+.swithCondition {
+  background-color: white;
+  border: 0.1rem #333 solid;
+  border-radius: 1rem;
+  color: #e74c3c;
+  content: "+";
+  margin-top: -16px;
+  position: absolute;
+  right: 1rem;
+  text-align: center;
+  top: 50%;
+  width: 2rem;
+}
+
+.swithCondition::before {
+  color: #e74c3c;
+  content: "-";
+  vertical-align: middle;
+}
+
+.swithCondition.contentClosed::before {
+  color: #e74c3c;
+  content: "+";
+  vertical-align: middle;
+}

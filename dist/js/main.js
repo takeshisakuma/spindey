@@ -1,11 +1,11 @@
 "use strict";
-var menu = document.getElementsByClassName('switch');
+var menu = document.getElementsByClassName("switch");
 function show() {
     var hideContent = this.nextElementSibling;
-    hideContent.classList.toggle('hide');
+    hideContent.classList.toggle("hide");
     var switchCondition = this.children[0];
     console.log(switchCondition);
-    switchCondition.classList.toggle('contentClosed');
+    switchCondition.classList.toggle("contentClosed");
 }
 /*
 const show = () => {
@@ -17,6 +17,6 @@ const show = () => {
 }
 */
 for (var i = 0; i < menu.length; i++) {
-    menu[i].addEventListener('click', show);
+    menu[i].addEventListener("click", show);
 }
 //# sourceMappingURL=main.js.map

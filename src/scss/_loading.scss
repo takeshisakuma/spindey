@@ -1,0 +1,90 @@
+.loadingLayer {
+  background-color: #eee;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  transition: all 1s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.loadingLayer.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.loadingIconBox {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 40vh;
+}
+
+.loadingIcon {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 40%;
+}
+
+@mixin loadingBar {
+  display: block;
+  background-color: #1C5880;
+  width: 16%;
+  height: 50%;
+  top: 25%;
+  position: absolute;
+  transform: scaleY(1)
+}
+
+@keyframes loadingbarAnimation {
+  0% {
+    transform: scaleY(1);
+  }
+
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.loadingBar1 {
+  @include loadingBar;
+  animation: loadingbarAnimation 1.4s infinite ease-in-out;
+  left: 0%;
+}
+
+.loadingBar2 {
+  @include loadingBar;
+  animation: loadingbarAnimation 1.4s 0.1s infinite ease-in-out;
+  left: 21%;
+}
+
+.loadingBar3 {
+  @include loadingBar;
+  animation: loadingbarAnimation 1.4s 0.2s infinite ease-in-out;
+  left: 42%;
+}
+
+.loadingBar4 {
+  @include loadingBar;
+  animation: loadingbarAnimation 1.4s 0.3s infinite ease-in-out;
+  left: 64%;
+}
+
+.loadingBar5 {
+  @include loadingBar;
+  animation: loadingbarAnimation 1.4s 0.4s infinite ease-in-out;
+  left: 86%;
+}

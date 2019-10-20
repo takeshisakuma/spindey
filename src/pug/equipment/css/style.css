@@ -1,222 +1,243 @@
 @charset "utf-8";
 
-html{
-    overflow-y: scroll;
+html {
+  overflow-y: scroll;
 }
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-    line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.5;
 }
-header{}
-footer{
-    text-align: center;
-    padding: 20px 0 20px 0;
+
+header {}
+
+footer {
+  text-align: center;
+  padding: 20px 0 20px 0;
 }
-footer a{
-    text-decoration: none;
-    color: black;
+
+footer a {
+  text-decoration: none;
+  color: #333;
 
 }
 
-h1.heading{
-    text-align: center;
-    font-size: 20px;
+h1.heading {
+  text-align: center;
+  font-size: 20px;
 }
 
 h2.heading {
-    color: white;
-    border:1px solid black;
-    padding:16px 48px 16px 16px;
-    background-color: #333333;
-    margin: 0;
-    font-size: 20px;
-    position: relative;
+  color: white;
+  border: 1px solid #333;
+  padding: 16px 48px 16px 16px;
+  background-color: #333333;
+  margin: 0;
+  font-size: 20px;
+  position: relative;
 }
 
 h3.heading {
-    color: black;
-    padding:16px 48px 16px 16px;
-    margin: 0;
-    background-color: grey;
-    font-size: 20px;
-    position: relative;
-    border-bottom: 1px solid black;
+  color: #333;
+  padding: 16px 48px 16px 16px;
+  margin: 0;
+  background-color: grey;
+  font-size: 20px;
+  position: relative;
+  border-bottom: 1px solid #333;
 }
+
 h4.heading {
-    color: lawngreen;
-    border:1px solid black;
-    padding:10px;
-    margin: 0;
+  color: lawngreen;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 0;
 }
+
 h5.heading {
-    color: purple;
-    border:1px solid black;
-    padding:10px;
-    margin: 0;
-}
-.swithCondition{
-    content:"+";
-    position: absolute;
-    color: red;
-    right: 1rem;
-    background-color: white;
-    width: 2rem;
-    border:0.1rem black solid;
-    border-radius: 1rem;
-    text-align: center;
-    top: 50%;
-    margin-top: -16px;
+  color: purple;
+  border: 1px solid#333;
+  padding: 10px;
+  margin: 0;
 }
 
-.swithCondition::before{
-    content: "-";
-    color: red;
-    vertical-align: middle;
+.swithCondition {
+  content: "+";
+  position: absolute;
+  color: #e74c3c;
+  right: 1rem;
+  background-color: white;
+  width: 2rem;
+  border: 0.1rem #333 solid;
+  border-radius: 1rem;
+  text-align: center;
+  top: 50%;
+  margin-top: -16px;
+}
+
+.swithCondition::before {
+  content: "-";
+  color: #e74c3c;
+  vertical-align: middle;
 
 }
 
-.swithCondition.contentClosed::before{
-content: "+";
-    color: red;
-    vertical-align: middle;
+.swithCondition.contentClosed::before {
+  content: "+";
+  color: #e74c3c;
+  vertical-align: middle;
 }
+
 table {
-    border-collapse: collapse;
-    margin-top: 10px;
-    width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
 }
+
 th {
-    border: 2px solid black;
-    padding: 10px;
+  border: 2px solid #333;
+  padding: 10px;
 }
+
 td {
-    border: 2px solid black;
-    padding: 10px;
+  border: 2px solid #333;
+  padding: 10px;
 }
 
 
-.tableScroll{
-    overflow: auto;
-    white-space: nowrap;
+.tableScroll {
+  overflow: auto;
+  white-space: nowrap;
 }
-.scroll::-webkit-scrollbar{
-    height: 5px;
+
+.scroll::-webkit-scrollbar {
+  height: 5px;
 }
-.scroll::-webkit-scrollbar-track{
-    background: #F1F1F1;
+
+.scroll::-webkit-scrollbar-track {
+  background: #F1F1F1;
 }
+
 .scroll::-webkit-scrollbar-thumb {
-    background: #BCBCBC;
+  background: #BCBCBC;
 }
 
 
 
 section {
-    padding: 0;
+  padding: 0;
 
 }
 
 .h3content {
-    padding: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
 
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 
 
 /* 操作手順ボックスここから */
-.contentOperationBox{
-    position: relative;
+.contentOperationBox {
+  position: relative;
 
-    margin-top: 1rem;
-    padding: 0 1rem 1rem 1rem;
-    border: 0.2rem solid #333333;
+  margin-top: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  border: 0.2rem solid #333333;
 }
 
-.contentOperationCaption{
-    position: absolute;
-    top: 0;
-    left: 0;
+.contentOperationCaption {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    font-size: 1rem;
-    padding: 0 1rem;
-    margin: 0;
-    background-color: white;
-    -webkit-transform: translateY(-50%) translateX(1em);
-    transform: translateY(-50%) translateX(1em);
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0;
+  background-color: white;
+  -webkit-transform: translateY(-50%) translateX(1em);
+  transform: translateY(-50%) translateX(1em);
 }
-ul.contentOperationOrderlistGroup{
-    padding-left: 0;
-    list-style-type: none;
-    margin-bottom: 0;
-}
-.contentOperationOrderlist{
-position: relative;
-    margin-top: 1.4rem;
-    line-height: 1.6rem;
 
+ul.contentOperationOrderlistGroup {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
 }
-.contentOperationOrderlist::before{
-    content:"↓";
-    position: absolute;
-    top: -1.6rem;
-    left:0.6rem;
 
+.contentOperationOrderlist {
+  position: relative;
+  margin-top: 1.4rem;
+  line-height: 1.6rem;
 
 }
-.contentOperationOrderlist:first-child::before{
-    content:none;
+
+.contentOperationOrderlist::before {
+  content: "↓";
+  position: absolute;
+  top: -1.6rem;
+  left: 0.6rem;
+
+
 }
+
+.contentOperationOrderlist:first-child::before {
+  content: none;
+}
+
 /* 操作手順ボックスここまで */
 
 /* ボタンここから */
-.controllerKnob{
-    position: relative;
-    padding-left: 1.6rem;
-}
-.controllerKnob:before{
-    content:"";
-    background-image: url(../img/knob.svg);
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
-    left: 0.4rem;
-    top:0;
+.controllerKnob {
+  position: relative;
+  padding-left: 1.6rem;
 }
 
-.controllerButton{
-    padding:0.2rem;
-    border: 0.1rem solid #333333;
-    border-radius: 0.2rem;
-    margin: 0 0.2rem;
-    font-size: 0.6rem;
-    vertical-align:middle;
-    white-space: nowrap;
+.controllerKnob:before {
+  content: "";
+  background-image: url(../img/knob.svg);
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-size: 1rem;
+  left: 0.4rem;
+  top: 0;
 }
 
-.controllerPage{
-    position: relative;
-    padding-left: 1.6rem;
+.controllerButton {
+  padding: 0.2rem;
+  border: 0.1rem solid #333333;
+  border-radius: 0.2rem;
+  margin: 0 0.2rem;
+  font-size: 0.6rem;
+  vertical-align: middle;
+  white-space: nowrap;
 }
-.controllerPage:before{
-    content:"";
-    background-image: url(../img/page.svg);
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    background-size: 1rem;
-    left: 0.4rem;
-    top:0;
+
+.controllerPage {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.controllerPage:before {
+  content: "";
+  background-image: url(../img/page.svg);
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-size: 1rem;
+  left: 0.4rem;
+  top: 0;
 }
 
 
-.imageZone{
-    text-align: center;
+.imageZone {
+  text-align: center;
 }
-.imageZone img{
-    max-width: 100%;
+
+.imageZone img {
+  max-width: 100%;
 }

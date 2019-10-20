@@ -1,0 +1,32 @@
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+th {
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+td {
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+.tableScroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #bcbcbc;
+}

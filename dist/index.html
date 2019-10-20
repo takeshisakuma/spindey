@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-      dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'UA-37361015-2');
-    </script>
-    <title>spindey.com</title>
-    <!--
-    <link rel="manifest" href="manifest.json">
-    <script>
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('serviceWorker.js')
-    .then(
-    function (registration) {
-    if (typeof registration.update == 'function') {
-    registration.update();
-    }
-    })
-    .catch(function (error) {
-    console.log("Error Log: " + error);
-    });
-    }
-    </script>
-    -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="keywords" content="機材,マニュアル">
-    <meta name="description" content="DTM機材のマニュアルサイトです。">
-    <title>spindey.com</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-  </head>
+  <html lang="ja">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics-->
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-37361015-2');
+      </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="keywords" content="機材,マニュアル">
+      <meta name="description" content="DTM機材のマニュアルサイトです。">
+      <title>spindey.com</title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+      <script src="/js/main.js" defer=""></script>
+    </head>
+  </html>
   <body>
-    <header>
-      <h1><a href="https://spindey.com">spindey.com</a></h1>
-    </header>
-    <div class="container">
-      <p class="introduce">このサイトは、DTM機材の添付マニュアルが自分によって分かりにくかったため、自分用に作成したマニュアルサイトです。<br>ご覧になる場合は、機材を片手にスマホで見やすいよう最適化しておりますので、スマホでの閲覧をおすすめ致します。</p>
-      <ul class="equipmentGrouop">
-        <li class="equipmentItem background_e2s"><a href="/equipment/electribe2sampler.html">electribe2 sampler</a></li>
-        <li class="equipmentItem background_drumbrute"><a href="/equipment/drumbrute.html">drumbrute</a></li>
-        <li class="equipmentItem background_xr20"><a href="/equipment/xr20.html">xr20</a></li>
-        <li class="equipmentItem background_blofeld"><a href="/equipment/blofeld.html">blofeld</a></li>
-        <li class="equipmentItem background_circuit"><a href="/equipment/circuit.html">circuit</a></li>
-        <li class="equipmentItem background_circuitmonostation"><a href="/equipment/circuitmonostation.html">circuit monostation</a></li>
-        <li class="equipmentItem background_twitch"><a href="/equipment/twitch.html">Twitch</a></li>
-        <li class="equipmentItem background_micron"><a href="/equipment/micron.html">micron</a></li>
-        <li class="equipmentItem background_digitakt"><a href="/equipment/digitakt.html">digitakt</a></li>
-      </ul>
+    <header class="topHeader"><a href="/">
+        <h1><img src="/img/logo/spindey.svg"></h1></a></header>
+    <main class="topMain">
+      <div class="topContainer">
+        <p class="top__introduce">このサイトは、DTM機材の添付マニュアルが自分にとって分かりにくかったため、自分用に作成したマニュアルサイトです。<br>ご覧になる場合は、機材を片手にスマホで見やすいよう最適化しておりますので、スマホでの閲覧をおすすめ致します。</p>
+        <ul class="top__categoryGroup">
+          <li class="top__categoryMember">
+            <p class="top__categoty__heading">sampler & greevebox</p>
+            <ul class="top__equipmentGroup"><a class="top__equipmentlink" href="/equipment/electribe2sampler.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/e2s.jpg"></div>
+                  <p class="top__equipmentName">electrive 2 sampler</p>
+                </li></a><a class="top__equipmentlink" href="/equipment/digitakt.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/digitakt.jpg"></div>
+                  <p class="top__equipmentName">digitakt</p>
+                </li></a><a class="top__equipmentlink" href="/equipment/circuit.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/circuit.jpg"></div>
+                  <p class="top__equipmentName">circuit</p>
+                </li></a><a class="top__equipmentlink nolink" href="/equipment/mpclive.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/nowmaking.jpg"></div>
+                  <p class="top__equipmentName">MPC live</p>
+                </li></a></ul>
+          </li>
+          <li class="top__categoryMember">
+            <p class="top__categoty__heading">synthesizer</p>
+            <ul class="top__equipmentGroup"><a class="top__equipmentlink" href="/equipment/circuitmonostation.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/circuitmonostation.jpg"></div>
+                  <p class="top__equipmentName">Circuit monostation</p>
+                </li></a><a class="top__equipmentlink" href="/equipment/blofeld.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/blofeld.jpg"></div>
+                  <p class="top__equipmentName">blofeld</p>
+                </li></a><a class="top__equipmentlink" href="/equipment/micron.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img class="top__equipmentPicture" src="/img/photo/micron.jpg"></div>
+                  <p class="top__equipmentName">micron</p>
+                </li></a></ul>
+          </li>
+          <li class="top__categoryMember">
+            <p class="top__categoty__heading">rythm machine</p>
+            <ul class="top__equipmentGroup"><a class="top__equipmentlink" href="/equipment/xr20.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/xr20.jpg"></div>
+                  <p class="top__equipmentName">XR20</p>
+                </li></a><a class="top__equipmentlink" href="/equipment/drumbrute.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/drumbrute.jpg"></div>
+                  <p class="top__equipmentName">drum brute</p>
+                </li></a></ul>
+          </li>
+          <li class="top__categoryMember">
+            <p class="top__categoty__heading">midi controller</p>
+            <ul class="top__equipmentGroup"><a class="top__equipmentlink" href="/equipment/twitch.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/twitch.jpg"></div>
+                  <p class="top__equipmentName">twitch</p>
+                </li></a><a class="top__equipmentlink nolink" href="/equipment/keystep.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/nowmaking.jpg"></div>
+                  <p class="top__equipmentName">keystep</p>
+                </li></a><a class="top__equipmentlink nolink" href="/equipment/beatstep.html">
+                <li class="top__equipmentMember">
+                  <div class="top__equipmentPicture"><img src="/img/photo/nowmaking.jpg"></div>
+                  <p class="top__equipmentName">beatstep</p>
+                </li></a></ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer><a href="/">spindey.com</a></footer>
+    <div class="loadingLayer" id="js-loadingLayer">
+      <div class="loadingIconBox">
+        <div class="loadingBar1"></div>
+        <div class="loadingBar2"></div>
+        <div class="loadingBar3"></div>
+        <div class="loadingBar4"></div>
+        <div class="loadingBar5"></div>
+      </div>
     </div>
-    <footer><a href="https://spindey.com">spindey.com</a></footer>
   </body>
 </html>

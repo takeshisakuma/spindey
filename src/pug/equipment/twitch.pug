@@ -7,1099 +7,1100 @@ html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading Twitch
-    h2.heading.switch
-      | Performance Pads
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | パフォーマンスパッド機能
+    main
+      h2.heading.switch
+        | Performance Pads
         span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 各パフォーマンスパッド機能は、選択したモードによって変わる:
-          br
-          |                 以下のTOUCHSTRIPの説明はすべて、SWIPE Transportコントロールがパフォーマンスモード（消灯）のときのもの
-          br
-          |                 SWIPEがナッジモード（点灯）またはスクラッチモード（点滅）のとき、TOUCHSTRIPはすべてのパフォーマンスモードでトラックをナッジまたはスクラッチする
-      h3.heading.switch
-        | ホットキューモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td ホットキューモードを有効
-            td HOT CUEを押す(点灯)
-          tr
-            td キューポイントを追加(最大8)
-            td ボタン1〜8を押す
-          tr
-            td キューポイントの削除
-            td HIFTを押しながらボタン1〜8を押す
-      h3.heading.switch
-        | サンプラーモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td サンプラーモードを有効化
-            td 「HOT CUE」を2回押す(点滅)
-          tr
-            td サンプルにロードされたサンプルをトリガー
-            td ボタン1〜6
-          tr
-            td バンクA、B、C、Dの切り替え
-            td TOUCHSTRIP
-      h3.heading.switch
-        | スライサーモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | beatgridが有効のときのみ使用可能
-          br
-          |                 指定された範囲は、8つに分割され、パフォーマンスパッドに割り当てられる
-          br
-          |                 スライサーのクォンタイズを設定するには、TOUCHSTRIPを使用する
-          br
-          |                 クォンタイズは4つの方法で設定可能：1/8、1/4、1/2、1
-          br
-          |                 Shiftを押しながらタッチストリップを操作して範囲を指定する
-          br
-          |                 範囲は、2ビート、4ビート、8ビート、16ビート、32ビート、または64ビートのいずれかに設定できる
-        p
-          | SLICERボタンを押してスライサーモードになる
-          br
-          |                 波形が4分音符ごとに8個分分割されて、それぞれがパッドに自動的にアサインされる
-          br
-          |                 トラックを自動で細かく切り分けてパッドを叩いて並び順を自由に変更できる
-          br
-          |                 実際は8個分のCUEポイントが自動的に設定されるような仕様になっていて、パッドを叩かなければそのまま再生され、次の2小節分が4分音符ごとにパッドに設定される
-          br
-          |                 AUTO LOOPボタンを2回押してループ範囲を指定してからSLICERボタンを押すとループした範囲をスライスする
-        table
-          tr
-            td スライサーモード1(点灯)
-            td パッドから離すと通常の再生に戻る
-          tr
-            td スライサーモード2(点滅)
-            td スライスのループ再生
-      h3.heading.switch
-        | オートループモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p ワンプッシュで決まった拍数だけループ
-        table
-          tr
-            td オートループモードに入る(再生中のみ機能する)
-            td 「AUTO LOOP」ボタンを押す
-          tr
-            td オートループのオン/オフ切り替え
-            td
-              | ボタン1〜8
-              br
-              | 各パッドはループ再生させる長さが異なる
-          tr
-            td ループ範囲の変更
-            td タッチストリップ
-          tr
-            td ループポイントをトラックに記憶させる
-            td AUTO LOOPをもう一度押して点滅させる
-          tr
-            td ループ再生の長さの変更
-            td TOUCH STRIPで二本の指で広げる操作(ピンチ)
-        p ループ再生はパッドを押したところから開始
-      h3.heading.switch
-        | ストアドループモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p バーチャルデッキにロードされたトラックのために、以前に保存して保存したループを有効にしたり再ループしたりすることができる
-        table
-          tr
-            td ストアドループモードにする
-            td AUTO LOOPを2回押す
-      h3.heading.switch
-        | ループロールモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td ループロールモードに入る
-            td LOOP ROLLボタンを押す
-          tr
-            td ループロールをトリガーする
-            td
-              | ボタン1～8を押す
-              br
-              | パッドによってロールする長さが違う
-          tr
-            td ループ範囲の変更
-            td TOUCHSTRIP
-        p ロール再生している間も曲が進行しているのでパッドを離すと押していた時間分だけトラックも進んでいる
-        p ループの長さ：Auto Loopセクションの画面に表示されているAuto Loop Rangeによって決まる
-        p オートループとの違い：キーを押している間のみループする、解除後はループを行っていた時間進んだ位置から再生が復帰する
-      h3.heading.switch
-        | マニュアルループモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 手動ループの作成、ループの長さの編集、バーチャルデッキにロードされたトラックの使用可能なループスロットへのループの保存を行う
-        table
-          tr
-            td マニュアルループモードの有効化
-            td 「ループロール」を2回押す
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 始点と終点を手動で設定
-            li.contentOperationOrderlist manual loopボタンでモードに入る
-            li.contentOperationOrderlist inボタン
-            li.contentOperationOrderlist outボタン
-            li.contentOperationOrderlist exitボタンでモード脱出
-      h3.heading.switch
-        | ループの保存
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | [PC操作]手動/自動ループタブの「保存」ボタンをクリックするか、利用可能なループスロットの「+」をクリックする
-          br
-          |                 ループはファイルに保存され、次回ロードされたときに呼び出される
-      h3.heading.switch
-        | オートループモードとストアドループモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | オートループモードとストアドループモードは、2つのパフォーマンスパッドモード
-          br
-          |                 コントローラーのAUTO LOOPボタンを押すか、もう一度押すとストアドループモードになる
-        table
-          tr
-            th TWITCH Control
-            th Auto Loop Mode
-            th Stored Loop Mode
-          tr
-            td Pad1
-            td 1/8 Bar Auto Loop
-            td Stored Loop 1 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad2
-            td 1/4 Bar Auto Loop
-            td Stored Loop 2 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad3
-            td 1/2 Bar Auto Loop
-            td Stored Loop 3 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad4
-            td 1 Bar Auto Loop
-            td Stored Loop 4 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad5
-            td 2 Bar Auto Loop
-            td Stored Loop 5 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad6
-            td 4 Bar Auto Loop
-            td Stored Loop 6 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad7
-            td 8 Bar Auto Loop
-            td Stored Loop 7 On/Off(Press with SHIFT to Reloop)
-          tr
-            td Pad8
-            td 16 Bar Auto Loop
-            td Stored Loop 8 On/Off(Press with SHIFT to Reloop)
-          tr
-            td TOUCHSTRIP
-            td Shift Auto Loop Range
-            td Scrub/Scratch Mode
-      h3.heading.switch
-        | ループロールモードとマニュアルループモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p コントローラーのLOOP ROLLボタンを押してパフォーマンスパッドのループロールモードを有効にするか、もう一度押すとマニュアルループモードが有効になる
-        p マニュアルループの開始点と終了点を編集する最良の方法は、TOUCHSTRIPを使用すること
-        table
-          tr
-            th TWITCH Control
-            th Loop Roll Mode
-            th Manual Loop Mode
-          tr
-            td Pad1
-            td 1/8 Bar Loop Roll
-            td 無し
-          tr
-            td Pad2
-            td 1/4 Bar Loop Roll
-            td Reloop/Exit
-          tr
-            td Pad3
-            td 1/2 Bar Loop Roll
-            td Save Loop to available Loop Slot
-          tr
-            td Pad4
-            td 1 Bar Loop Roll
-            td Shift up through available Loop Slots
-          tr
-            td Pad5
-            td 2 Bar Loop Roll
-            td
-              | Set loop in point(loop not active),press again to edit start of loop point(Loop active)
-          tr
-            td Pad6
-            td 4 Bar Loop Roll
-            td
-              | Set end of loop point(If loop in point set),press again to edit of loop point(Loop active)
-          tr
-            td Pad7
-            td 8 Bar Loop Roll
-            td 選択されたループのON/OFF
-          tr
-            td Pad8
-            td 16 Bar Loop Roll
-            td Shift down through available Loop Slots
-          tr
-            td TOUCHSTRIP
-            td Shift Auto Loop Range
-            td Scrub/Scratch Mode
-    h2.heading.switch
-      | DJ-FX
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | DJ-FXの設定
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 「FX」をクリックしてFXパネルを開く
-          br
-          |                 「1」、「2」、「M」を選択して、選択したエフェクトバンクをデッキまたはマスターアウトプットに割り当てる
-      h3.heading.switch
-        | シングルFXモードとマルチFXモードの違い
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p DJ-FXには2つの利用可能なモードがある
-        table
-          tr
-            th モード
-            th エフェクト数
-            th パラメータ数
-          tr
-            td シングルFXモード
-            td 最大1
-            td 複数
-          tr
-            td マルチFXモード
-            td 最大3
-            td 「FX Depth」1つだけ
-      h3.heading.switch
-        | Single FX Mode
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「●」ボタンで設定
-        table
-          tr
-            th TWITCH MASTER FX
-            th Single FX Modes
-            th Shift Function
-          tr
-            td Depthノブ
-            td FX Parameter 3の調整
-            td 無し
-          tr
-            td NOD/Xノブ
-            td FX Parameter 5の調整
-            td 無し
-          tr
-            td BEATSノブ
-            td Adjust Beats Multiplier
-            td Adjust Beats Multiplier
-          tr
-            td AUXボタン
-            td FX Parameter 2の調整
-            td エフェクトの選択
-          tr
-            td DECK Aボタン
-            td FX Parameter 4の調整
-            td エフェクトの選択
-          tr
-            td DECK Bボタン
-            td
-              | Tap to the desired FX tempo.
-              br
-              | To return to AUTO mode,press and hold
-            td シングル/マルチFXモードの切り替え
-          tr
-            td FX SELECTボタン
-            td Assign FX controls to FX UNIT 1
-            td Assign FX UNIT to deck 1
-          tr
-            td FX SELECTボタン
-            td Assign FX controls to FX UNIT 2
-            td Assign FX UNIT to deck 2
-          tr
-            td ON/OFFボタン
-            td Assign FX controls to Master Output
-            td Assign FX UNIT to Master Output
-      h3.heading.switch
-        | Multi FX Mode
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「●●●」ボタンで設定
-        table
-          tr
-            th TWITCH MASTER FX
-            th Multi FX Modes
-            th Shift Function
-          tr
-            td Depthノブ
-            td スロット2のFXパラメーターの調整
-            td 無し
-          tr
-            td MOD/Xノブ
-            td スロット3のFXパラメーターの調整
-            td 無し
-          tr
-            td BEATSノブ
-            td Adjust Beats Multiplier
-            td Adjust Beats Multiplier
-          tr
-            td AUXボタン
-            td スロット2のエフェクトのON/OFF
-            td スロット2のエフェクト選択
-          tr
-            td DECK Aボタン
-            td スロット3のエフェクトのON/OFF
-            td スロット3のエフェクト選択
-          tr
-            td DECK Bボタン
-            td
-              | Tap to the desired FX tempo.
-              br
-              | オートモードに戻るには、押してホールドする
-            td シングル/マルチFXモードの切り替え
-          tr
-            td FX SELECTボタン
-            td Assign FX controls to FX UNIT 1
-            td Assign FX UNIT to deck 1
-          tr
-            td FX SELECTボタン
-            td Assign FX controls to FX UNIT 2
-            td Assign FX UNIT to deck 2
-          tr
-            td ON/OFFボタン
-            td Assign FX controls to Master Output
-            td Assign FX UNIT to Master Output
-      h3.heading.switch
-        | Fader FX
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .tableScroll
+      section.h2content.hide
+        h3.heading.switch
+          | パフォーマンスパッド機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 各パフォーマンスパッド機能は、選択したモードによって変わる:
+            br
+            |                 以下のTOUCHSTRIPの説明はすべて、SWIPE Transportコントロールがパフォーマンスモード（消灯）のときのもの
+            br
+            |                 SWIPEがナッジモード（点灯）またはスクラッチモード（点滅）のとき、TOUCHSTRIPはすべてのパフォーマンスモードでトラックをナッジまたはスクラッチする
+        h3.heading.switch
+          | ホットキューモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
           table
             tr
-              th TWITCH FADER FX
-              th Single FX Mode
-              th Multi FX Mode
+              td ホットキューモードを有効
+              td HOT CUEを押す(点灯)
+            tr
+              td キューポイントを追加(最大8)
+              td ボタン1〜8を押す
+            tr
+              td キューポイントの削除
+              td HIFTを押しながらボタン1〜8を押す
+        h3.heading.switch
+          | サンプラーモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td サンプラーモードを有効化
+              td 「HOT CUE」を2回押す(点滅)
+            tr
+              td サンプルにロードされたサンプルをトリガー
+              td ボタン1〜6
+            tr
+              td バンクA、B、C、Dの切り替え
+              td TOUCHSTRIP
+        h3.heading.switch
+          | スライサーモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | beatgridが有効のときのみ使用可能
+            br
+            |                 指定された範囲は、8つに分割され、パフォーマンスパッドに割り当てられる
+            br
+            |                 スライサーのクォンタイズを設定するには、TOUCHSTRIPを使用する
+            br
+            |                 クォンタイズは4つの方法で設定可能：1/8、1/4、1/2、1
+            br
+            |                 Shiftを押しながらタッチストリップを操作して範囲を指定する
+            br
+            |                 範囲は、2ビート、4ビート、8ビート、16ビート、32ビート、または64ビートのいずれかに設定できる
+          p
+            | SLICERボタンを押してスライサーモードになる
+            br
+            |                 波形が4分音符ごとに8個分分割されて、それぞれがパッドに自動的にアサインされる
+            br
+            |                 トラックを自動で細かく切り分けてパッドを叩いて並び順を自由に変更できる
+            br
+            |                 実際は8個分のCUEポイントが自動的に設定されるような仕様になっていて、パッドを叩かなければそのまま再生され、次の2小節分が4分音符ごとにパッドに設定される
+            br
+            |                 AUTO LOOPボタンを2回押してループ範囲を指定してからSLICERボタンを押すとループした範囲をスライスする
+          table
+            tr
+              td スライサーモード1(点灯)
+              td パッドから離すと通常の再生に戻る
+            tr
+              td スライサーモード2(点滅)
+              td スライスのループ再生
+        h3.heading.switch
+          | オートループモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ワンプッシュで決まった拍数だけループ
+          table
+            tr
+              td オートループモードに入る(再生中のみ機能する)
+              td 「AUTO LOOP」ボタンを押す
+            tr
+              td オートループのオン/オフ切り替え
+              td
+                | ボタン1〜8
+                br
+                | 各パッドはループ再生させる長さが異なる
+            tr
+              td ループ範囲の変更
+              td タッチストリップ
+            tr
+              td ループポイントをトラックに記憶させる
+              td AUTO LOOPをもう一度押して点滅させる
+            tr
+              td ループ再生の長さの変更
+              td TOUCH STRIPで二本の指で広げる操作(ピンチ)
+          p ループ再生はパッドを押したところから開始
+        h3.heading.switch
+          | ストアドループモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p バーチャルデッキにロードされたトラックのために、以前に保存して保存したループを有効にしたり再ループしたりすることができる
+          table
+            tr
+              td ストアドループモードにする
+              td AUTO LOOPを2回押す
+        h3.heading.switch
+          | ループロールモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ループロールモードに入る
+              td LOOP ROLLボタンを押す
+            tr
+              td ループロールをトリガーする
+              td
+                | ボタン1～8を押す
+                br
+                | パッドによってロールする長さが違う
+            tr
+              td ループ範囲の変更
+              td TOUCHSTRIP
+          p ロール再生している間も曲が進行しているのでパッドを離すと押していた時間分だけトラックも進んでいる
+          p ループの長さ：Auto Loopセクションの画面に表示されているAuto Loop Rangeによって決まる
+          p オートループとの違い：キーを押している間のみループする、解除後はループを行っていた時間進んだ位置から再生が復帰する
+        h3.heading.switch
+          | マニュアルループモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 手動ループの作成、ループの長さの編集、バーチャルデッキにロードされたトラックの使用可能なループスロットへのループの保存を行う
+          table
+            tr
+              td マニュアルループモードの有効化
+              td 「ループロール」を2回押す
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 始点と終点を手動で設定
+              li.contentOperationOrderlist manual loopボタンでモードに入る
+              li.contentOperationOrderlist inボタン
+              li.contentOperationOrderlist outボタン
+              li.contentOperationOrderlist exitボタンでモード脱出
+        h3.heading.switch
+          | ループの保存
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | [PC操作]手動/自動ループタブの「保存」ボタンをクリックするか、利用可能なループスロットの「+」をクリックする
+            br
+            |                 ループはファイルに保存され、次回ロードされたときに呼び出される
+        h3.heading.switch
+          | オートループモードとストアドループモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | オートループモードとストアドループモードは、2つのパフォーマンスパッドモード
+            br
+            |                 コントローラーのAUTO LOOPボタンを押すか、もう一度押すとストアドループモードになる
+          table
+            tr
+              th TWITCH Control
+              th Auto Loop Mode
+              th Stored Loop Mode
+            tr
+              td Pad1
+              td 1/8 Bar Auto Loop
+              td Stored Loop 1 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad2
+              td 1/4 Bar Auto Loop
+              td Stored Loop 2 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad3
+              td 1/2 Bar Auto Loop
+              td Stored Loop 3 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad4
+              td 1 Bar Auto Loop
+              td Stored Loop 4 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad5
+              td 2 Bar Auto Loop
+              td Stored Loop 5 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad6
+              td 4 Bar Auto Loop
+              td Stored Loop 6 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad7
+              td 8 Bar Auto Loop
+              td Stored Loop 7 On/Off(Press with SHIFT to Reloop)
+            tr
+              td Pad8
+              td 16 Bar Auto Loop
+              td Stored Loop 8 On/Off(Press with SHIFT to Reloop)
+            tr
+              td TOUCHSTRIP
+              td Shift Auto Loop Range
+              td Scrub/Scratch Mode
+        h3.heading.switch
+          | ループロールモードとマニュアルループモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p コントローラーのLOOP ROLLボタンを押してパフォーマンスパッドのループロールモードを有効にするか、もう一度押すとマニュアルループモードが有効になる
+          p マニュアルループの開始点と終了点を編集する最良の方法は、TOUCHSTRIPを使用すること
+          table
+            tr
+              th TWITCH Control
+              th Loop Roll Mode
+              th Manual Loop Mode
+            tr
+              td Pad1
+              td 1/8 Bar Loop Roll
+              td 無し
+            tr
+              td Pad2
+              td 1/4 Bar Loop Roll
+              td Reloop/Exit
+            tr
+              td Pad3
+              td 1/2 Bar Loop Roll
+              td Save Loop to available Loop Slot
+            tr
+              td Pad4
+              td 1 Bar Loop Roll
+              td Shift up through available Loop Slots
+            tr
+              td Pad5
+              td 2 Bar Loop Roll
+              td
+                | Set loop in point(loop not active),press again to edit start of loop point(Loop active)
+            tr
+              td Pad6
+              td 4 Bar Loop Roll
+              td
+                | Set end of loop point(If loop in point set),press again to edit of loop point(Loop active)
+            tr
+              td Pad7
+              td 8 Bar Loop Roll
+              td 選択されたループのON/OFF
+            tr
+              td Pad8
+              td 16 Bar Loop Roll
+              td Shift down through available Loop Slots
+            tr
+              td TOUCHSTRIP
+              td Shift Auto Loop Range
+              td Scrub/Scratch Mode
+      h2.heading.switch
+        | DJ-FX
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | DJ-FXの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 「FX」をクリックしてFXパネルを開く
+            br
+            |                 「1」、「2」、「M」を選択して、選択したエフェクトバンクをデッキまたはマスターアウトプットに割り当てる
+        h3.heading.switch
+          | シングルFXモードとマルチFXモードの違い
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p DJ-FXには2つの利用可能なモードがある
+          table
+            tr
+              th モード
+              th エフェクト数
+              th パラメータ数
+            tr
+              td シングルFXモード
+              td 最大1
+              td 複数
+            tr
+              td マルチFXモード
+              td 最大3
+              td 「FX Depth」1つだけ
+        h3.heading.switch
+          | Single FX Mode
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「●」ボタンで設定
+          table
+            tr
+              th TWITCH MASTER FX
+              th Single FX Modes
               th Shift Function
             tr
-              td Selectノブ
-              td Ajust Beats Multiplier/Push to Select Effect
-              td Ajust Beats Multiplier/Push to Select Effect
-              td エフェクトの選択/スロット1のエフェクトの選択
+              td Depthノブ
+              td FX Parameter 3の調整
+              td 無し
+            tr
+              td NOD/Xノブ
+              td FX Parameter 5の調整
+              td 無し
+            tr
+              td BEATSノブ
+              td Adjust Beats Multiplier
+              td Adjust Beats Multiplier
+            tr
+              td AUXボタン
+              td FX Parameter 2の調整
+              td エフェクトの選択
+            tr
+              td DECK Aボタン
+              td FX Parameter 4の調整
+              td エフェクトの選択
+            tr
+              td DECK Bボタン
+              td
+                | Tap to the desired FX tempo.
+                br
+                | To return to AUTO mode,press and hold
+              td シングル/マルチFXモードの切り替え
+            tr
+              td FX SELECTボタン
+              td Assign FX controls to FX UNIT 1
+              td Assign FX UNIT to deck 1
+            tr
+              td FX SELECTボタン
+              td Assign FX controls to FX UNIT 2
+              td Assign FX UNIT to deck 2
             tr
               td ON/OFFボタン
-              td エフェクトのON/OFF
-              td スロット1のエフェクトのON/OFF
-              td エフェクトの選択/スロット1のエフェクトの選択
-            tr
-              td Channel Fader
-              td FXパラメーターの調整
-              td スロット1のFXパラメーターの調整
-              td
-            tr
-              td ON/OFFボタン
+              td Assign FX controls to Master Output
               td Assign FX UNIT to Master Output
-              td Assign FX UNIT to Master Output
-              td
-      h3.heading.switch
-        | FXの種類
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th Pack
-            th Effect
-            th Single/Multi
-          tr
-            td(rowspan="22") Base
-            td Delay
-            td(rowspan="12") Multi
-          tr
-            td Echo
-          tr
-            td Reverb
-          tr
-            td Phraser
-          tr
-            td Flanger
-          tr
-            td LPF
-          tr
-            td LFO Filter
-          tr
-            td HPF
-          tr
-            td Combo Filter
-          tr
-            td Pan Delay
-          tr
-            td Distortion
-          tr
-            td Version Echo
-          tr
-            td Delay
-            td(rowspan="10") Single
-          tr
-            td Echo
-          tr
-            td Reverb
-          tr
-            td Phaser
-          tr
-            td Flanger
-          tr
-            td LPF
-          tr
-            td HPF
-          tr
-            td Combo Filter
-          tr
-            td Distortion
-          tr
-            td Pan Delay
-          tr
-            td(rowspan="16") Wolf
-            td Epic Reverb
-            td(rowspan="10") Multi
-          tr
-            td Epic Verb Drop
-          tr
-            td Bit Crush
-          tr
-            td Tremolo
-          tr
-            td Transform
-          tr
-            td Repeater
-          tr
-            td Shredder
-          tr
-            td Braker
-          tr
-            td Brake Echo
-          tr
-            td Combo Fade Echo
-          tr
-            td Epic Reverb
-            td(rowspan="6") Single
-          tr
-            td Bit Crush
-          tr
-            td Tremolo
-          tr
-            td Repeater
-          tr
-            td Braker
-          tr
-            td Brake Echo
-          tr
-            td(rowspan="18") Back
-            td Tape Echo
-            td(rowspan="13") Multi
-          tr
-            td Combo Tape Echo
-          tr
-            td Twist Echo
-          tr
-            td Looper
-          tr
-            td Pitch Looper
-          tr
-            td Shuffler
-          tr
-            td Time Stretch
-          tr
-            td Time Freeze
-          tr
-            td Spiral Echo Up
-          tr
-            td Spiral Echo Down
-          tr
-            td Res LPF Auto
-          tr
-            td Res HPF Auto
-          tr
-            td Combo Auto Filter
-          tr
-            td Tape Echo
-            td(rowspan="5") Single
-          tr
-            td Looper
-          tr
-            td Time Stretch
-          tr
-            td Spiral Echo
-          tr
-            td Auto Filter
-          tr
-            td(rowspan="15") Chip
-            td Spiral Flanger
-            td(rowspan="10") Multi
-          tr
-            td Pitch Delay
-          tr
-            td Chiptunes
-          tr
-            td Short Circuit
-          tr
-            td Shifter Lofi
-          tr
-            td Side Delay
-          tr
-            td Crush Echo
-          tr
-            td Particle Delay
-          tr
-            td Noise Sweep
-          tr
-            td Noise Synth
-          tr
-            td Spiral Flanger
-            td(rowspan="5") Single
-          tr
-            td Pitch Delay
-          tr
-            td Crush Echo
-          tr
-            td Particle Delay
-          tr
-            td Noise Sweep
-          tr
-            td(rowspan="16") Jet
-            td Shepard Filter
-            td(rowspan="10") Multi
-          tr
-            td U.F.O.
-          tr
-            td Space Verb
-          tr
-            td Space Verb Lift
-          tr
-            td Space Verb Drop
-          tr
-            td Filter Echo
-          tr
-            td Filter Dub Echo
-          tr
-            td Filter Gate
-          tr
-            td Base Ducker
-          tr
-            td Noise Pulse
-          tr
-            td Shepard Filter
-            td(rowspan="5") Single
-          tr
-            td Filter Gate
-          tr
-            td Space Verb
-          tr
-            td Noise Pulse
-          tr
-            td Filter Echo
-      h3.heading.switch
-        | エフェクト設定
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th ボタン
-            th 機能
-            th Shift機能
-          tr
-            td MASTER FXセクションのFX SELECT
-            td FXコントロールをFXユニット1か2のどちらかにアサインする
-            td FXユニットをデッキ1か2にアサインする
-          tr
-            td MASTER FXセクションのAUX
-            td スロット2のエフェクトのON/OFF
-            td スロット2のエフェクトの選択
-          tr
-            td MASTER FXセクションのDepth
-            td スロット2のFXのパラメーターの調整
-            td
-          tr
-            td MASTER FXセクションのMod/X
-            td スロット3のFXパラメーターの調整
-            td
-          tr
-            td MASTER FXセクションのDeckAとDeckB
-            td スロット2/3のエフェクトのON/OFF
-            td スロット2/3のエフェクトの選択
-          tr
-            td MASTER FXセクションのBeats
-            td  Adjust Beats Multiplier
-            td  Adjust Beats Multiplier
-          tr
-            td MASTER FXセクションのon/off
-            td FXユニットをマスター出力にアサインする
-            td FXユニットをマスター出力にアサインする
-          tr
-            td Channel Fader
-            td
-              | スロット1のFXパラメーターの調整
-              br
-              | (フェーダーFX使用時)
-            td
-          tr
-            td Fader FXのOn/Off
-            td スロット1のエフェクトのON/OFF
-            td スロット1のエフェクトの選択
-          tr
-            td Fader FXのSelectノブ
-            td Adjust Beats Multiplier/Push to Select Effect
-            td スロット1のエフェクトの選択
-    h2.heading.switch
-      | Beat Jump
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | Beat Jump
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 再生位置をリアルタイムで前後に飛ばす機能
-          br
-          |                 「1小節早かった！」１小節分戻るボタンを押す
-          br
-          |                 「スタートボタン押すのが遅れてしまった！」1小節分進むボタンを押す
-          br
-          |                 移動する幅は拍数指定なので、１小節分なら４を選んでボタンを押す
-        p Beat Jumpを有効化するには, 「set up」画面の「DJ設定」タブの「Beat Jump操作ボタンを表示する」にチェック
-        p
-          | セットアップ画面を閉じると、各デッキの既存のオートループ値の下にビートジャンプコントロールが表示される
-          br
-          |                 このチェックボックスをオンにすると、デッキエリアのビートジャンプ機能がオンになり、サポートされているSerato DJハードウェアでビートジャンプを制御できる
-        p デッキのオートループ領域の変化を反映するように設計されている(8オートループサイズから4オートループサイズ+ビートジャンプコントロールまで)
-        p
-          | ループシフトコントロールを持つコントローラーは、セットアップ画面でビートジャンプを有効にすることでビートジャンプを実行できるようになった
-          br
-          |                 セットアップ画面でビートジャンプが無効になっている場合でも、通常のループシフトは使用できる
-        .tableScroll
+        h3.heading.switch
+          | Multi FX Mode
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「●●●」ボタンで設定
           table
             tr
-              th Performance Padの機能
-              th Pad5
-              th Pad6
-              th Pad7
-              th Pad8
+              th TWITCH MASTER FX
+              th Multi FX Modes
+              th Shift Function
             tr
-              td Beat Jump無効時
-              td Auto Loop/Loop Roll 5
-              td Auto Loop/Loop Roll 6
-              td Auto Loop/Loop Roll 7
-              td Auto Loop/Loop Roll 8
+              td Depthノブ
+              td スロット2のFXパラメーターの調整
+              td 無し
             tr
-              td Beat Jump有効時
-              td Beat Jump 左
-              td Beat Select 左
-              td Beat Select 右
-              td Beat Jump 右
-    h2.heading.switch
-      | 表示モード
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | デッキと波形の表示モードの切り替え
+              td MOD/Xノブ
+              td スロット3のFXパラメーターの調整
+              td 無し
+            tr
+              td BEATSノブ
+              td Adjust Beats Multiplier
+              td Adjust Beats Multiplier
+            tr
+              td AUXボタン
+              td スロット2のエフェクトのON/OFF
+              td スロット2のエフェクト選択
+            tr
+              td DECK Aボタン
+              td スロット3のエフェクトのON/OFF
+              td スロット3のエフェクト選択
+            tr
+              td DECK Bボタン
+              td
+                | Tap to the desired FX tempo.
+                br
+                | オートモードに戻るには、押してホールドする
+              td シングル/マルチFXモードの切り替え
+            tr
+              td FX SELECTボタン
+              td Assign FX controls to FX UNIT 1
+              td Assign FX UNIT to deck 1
+            tr
+              td FX SELECTボタン
+              td Assign FX controls to FX UNIT 2
+              td Assign FX UNIT to deck 2
+            tr
+              td ON/OFFボタン
+              td Assign FX controls to Master Output
+              td Assign FX UNIT to Master Output
+        h3.heading.switch
+          | Fader FX
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .tableScroll
+            table
+              tr
+                th TWITCH FADER FX
+                th Single FX Mode
+                th Multi FX Mode
+                th Shift Function
+              tr
+                td Selectノブ
+                td Ajust Beats Multiplier/Push to Select Effect
+                td Ajust Beats Multiplier/Push to Select Effect
+                td エフェクトの選択/スロット1のエフェクトの選択
+              tr
+                td ON/OFFボタン
+                td エフェクトのON/OFF
+                td スロット1のエフェクトのON/OFF
+                td エフェクトの選択/スロット1のエフェクトの選択
+              tr
+                td Channel Fader
+                td FXパラメーターの調整
+                td スロット1のFXパラメーターの調整
+                td
+              tr
+                td ON/OFFボタン
+                td Assign FX UNIT to Master Output
+                td Assign FX UNIT to Master Output
+                td
+        h3.heading.switch
+          | FXの種類
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th Pack
+              th Effect
+              th Single/Multi
+            tr
+              td(rowspan="22") Base
+              td Delay
+              td(rowspan="12") Multi
+            tr
+              td Echo
+            tr
+              td Reverb
+            tr
+              td Phraser
+            tr
+              td Flanger
+            tr
+              td LPF
+            tr
+              td LFO Filter
+            tr
+              td HPF
+            tr
+              td Combo Filter
+            tr
+              td Pan Delay
+            tr
+              td Distortion
+            tr
+              td Version Echo
+            tr
+              td Delay
+              td(rowspan="10") Single
+            tr
+              td Echo
+            tr
+              td Reverb
+            tr
+              td Phaser
+            tr
+              td Flanger
+            tr
+              td LPF
+            tr
+              td HPF
+            tr
+              td Combo Filter
+            tr
+              td Distortion
+            tr
+              td Pan Delay
+            tr
+              td(rowspan="16") Wolf
+              td Epic Reverb
+              td(rowspan="10") Multi
+            tr
+              td Epic Verb Drop
+            tr
+              td Bit Crush
+            tr
+              td Tremolo
+            tr
+              td Transform
+            tr
+              td Repeater
+            tr
+              td Shredder
+            tr
+              td Braker
+            tr
+              td Brake Echo
+            tr
+              td Combo Fade Echo
+            tr
+              td Epic Reverb
+              td(rowspan="6") Single
+            tr
+              td Bit Crush
+            tr
+              td Tremolo
+            tr
+              td Repeater
+            tr
+              td Braker
+            tr
+              td Brake Echo
+            tr
+              td(rowspan="18") Back
+              td Tape Echo
+              td(rowspan="13") Multi
+            tr
+              td Combo Tape Echo
+            tr
+              td Twist Echo
+            tr
+              td Looper
+            tr
+              td Pitch Looper
+            tr
+              td Shuffler
+            tr
+              td Time Stretch
+            tr
+              td Time Freeze
+            tr
+              td Spiral Echo Up
+            tr
+              td Spiral Echo Down
+            tr
+              td Res LPF Auto
+            tr
+              td Res HPF Auto
+            tr
+              td Combo Auto Filter
+            tr
+              td Tape Echo
+              td(rowspan="5") Single
+            tr
+              td Looper
+            tr
+              td Time Stretch
+            tr
+              td Spiral Echo
+            tr
+              td Auto Filter
+            tr
+              td(rowspan="15") Chip
+              td Spiral Flanger
+              td(rowspan="10") Multi
+            tr
+              td Pitch Delay
+            tr
+              td Chiptunes
+            tr
+              td Short Circuit
+            tr
+              td Shifter Lofi
+            tr
+              td Side Delay
+            tr
+              td Crush Echo
+            tr
+              td Particle Delay
+            tr
+              td Noise Sweep
+            tr
+              td Noise Synth
+            tr
+              td Spiral Flanger
+              td(rowspan="5") Single
+            tr
+              td Pitch Delay
+            tr
+              td Crush Echo
+            tr
+              td Particle Delay
+            tr
+              td Noise Sweep
+            tr
+              td(rowspan="16") Jet
+              td Shepard Filter
+              td(rowspan="10") Multi
+            tr
+              td U.F.O.
+            tr
+              td Space Verb
+            tr
+              td Space Verb Lift
+            tr
+              td Space Verb Drop
+            tr
+              td Filter Echo
+            tr
+              td Filter Dub Echo
+            tr
+              td Filter Gate
+            tr
+              td Base Ducker
+            tr
+              td Noise Pulse
+            tr
+              td Shepard Filter
+              td(rowspan="5") Single
+            tr
+              td Filter Gate
+            tr
+              td Space Verb
+            tr
+              td Noise Pulse
+            tr
+              td Filter Echo
+        h3.heading.switch
+          | エフェクト設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th ボタン
+              th 機能
+              th Shift機能
+            tr
+              td MASTER FXセクションのFX SELECT
+              td FXコントロールをFXユニット1か2のどちらかにアサインする
+              td FXユニットをデッキ1か2にアサインする
+            tr
+              td MASTER FXセクションのAUX
+              td スロット2のエフェクトのON/OFF
+              td スロット2のエフェクトの選択
+            tr
+              td MASTER FXセクションのDepth
+              td スロット2のFXのパラメーターの調整
+              td
+            tr
+              td MASTER FXセクションのMod/X
+              td スロット3のFXパラメーターの調整
+              td
+            tr
+              td MASTER FXセクションのDeckAとDeckB
+              td スロット2/3のエフェクトのON/OFF
+              td スロット2/3のエフェクトの選択
+            tr
+              td MASTER FXセクションのBeats
+              td  Adjust Beats Multiplier
+              td  Adjust Beats Multiplier
+            tr
+              td MASTER FXセクションのon/off
+              td FXユニットをマスター出力にアサインする
+              td FXユニットをマスター出力にアサインする
+            tr
+              td Channel Fader
+              td
+                | スロット1のFXパラメーターの調整
+                br
+                | (フェーダーFX使用時)
+              td
+            tr
+              td Fader FXのOn/Off
+              td スロット1のエフェクトのON/OFF
+              td スロット1のエフェクトの選択
+            tr
+              td Fader FXのSelectノブ
+              td Adjust Beats Multiplier/Push to Select Effect
+              td スロット1のエフェクトの選択
+      h2.heading.switch
+        | Beat Jump
         span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「View」ボタンを押すと順番に切り替わる
-        table
-          tr
-            td Verticalモード
-            td 波形を縦に表示するモード
-          tr
-            td Horizontalモード
-            td 波形を横に教示するモード
-          tr
-            td Extendedモード
-            td 波形を横幅いっぱいに表示するモード
-          tr
-            td Stackモード
-            td デッキと波形を横に並べて表示するモード
-          tr
-            td libraryモード
-            td デッキと波形を非表示にしてライブラリの領域を大きくしたモード
-      h3.heading.switch
-        | REC、FX、SP-6の表示モードの切り替え
+      section.h2content.hide
+        h3.heading.switch
+          | Beat Jump
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 再生位置をリアルタイムで前後に飛ばす機能
+            br
+            |                 「1小節早かった！」１小節分戻るボタンを押す
+            br
+            |                 「スタートボタン押すのが遅れてしまった！」1小節分進むボタンを押す
+            br
+            |                 移動する幅は拍数指定なので、１小節分なら４を選んでボタンを押す
+          p Beat Jumpを有効化するには, 「set up」画面の「DJ設定」タブの「Beat Jump操作ボタンを表示する」にチェック
+          p
+            | セットアップ画面を閉じると、各デッキの既存のオートループ値の下にビートジャンプコントロールが表示される
+            br
+            |                 このチェックボックスをオンにすると、デッキエリアのビートジャンプ機能がオンになり、サポートされているSerato DJハードウェアでビートジャンプを制御できる
+          p デッキのオートループ領域の変化を反映するように設計されている(8オートループサイズから4オートループサイズ+ビートジャンプコントロールまで)
+          p
+            | ループシフトコントロールを持つコントローラーは、セットアップ画面でビートジャンプを有効にすることでビートジャンプを実行できるようになった
+            br
+            |                 セットアップ画面でビートジャンプが無効になっている場合でも、通常のループシフトは使用できる
+          .tableScroll
+            table
+              tr
+                th Performance Padの機能
+                th Pad5
+                th Pad6
+                th Pad7
+                th Pad8
+              tr
+                td Beat Jump無効時
+                td Auto Loop/Loop Roll 5
+                td Auto Loop/Loop Roll 6
+                td Auto Loop/Loop Roll 7
+                td Auto Loop/Loop Roll 8
+              tr
+                td Beat Jump有効時
+                td Beat Jump 左
+                td Beat Select 左
+                td Beat Select 右
+                td Beat Jump 右
+      h2.heading.switch
+        | 表示モード
         span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「shift」+「View」ボタンで順番に切り替わる
-        table
-          tr
-            td Rec
-            td
-          tr
-            td FX
-            td
-          tr
-            td SP6
-            td
-      h3.heading.switch
-        | ライブラリパネルの表示モードの切り替え
+      section.h2content.hide
+        h3.heading.switch
+          | デッキと波形の表示モードの切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「View」ボタンを押すと順番に切り替わる
+          table
+            tr
+              td Verticalモード
+              td 波形を縦に表示するモード
+            tr
+              td Horizontalモード
+              td 波形を横に教示するモード
+            tr
+              td Extendedモード
+              td 波形を横幅いっぱいに表示するモード
+            tr
+              td Stackモード
+              td デッキと波形を横に並べて表示するモード
+            tr
+              td libraryモード
+              td デッキと波形を非表示にしてライブラリの領域を大きくしたモード
+        h3.heading.switch
+          | REC、FX、SP-6の表示モードの切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「shift」+「View」ボタンで順番に切り替わる
+          table
+            tr
+              td Rec
+              td
+            tr
+              td FX
+              td
+            tr
+              td SP6
+              td
+        h3.heading.switch
+          | ライブラリパネルの表示モードの切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「Area」ボタンで順番に切り替える
+          table
+            tr
+              td ファイル
+              td
+            tr
+              td ブラウズ
+              td
+            tr
+              td 準備
+              td
+                | プレイ予定のトラックをスタンバイさせておく
+                br
+                |                         再生すると自動的に削除される
+                br
+                |                         リストにして残しておきたい場合は新規スレートにドラッグする
+                br
+                |                         ライブラリから準備パネルに追加するには、「Shift」+「SCROLL」ノブを押す
+            tr
+              td 履歴
+              td
+      h2.heading.switch
+        | ビートグリッド
         span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「Area」ボタンで順番に切り替える
-        table
-          tr
-            td ファイル
-            td
-          tr
-            td ブラウズ
-            td
-          tr
-            td 準備
-            td
-              | プレイ予定のトラックをスタンバイさせておく
-              br
-              |                         再生すると自動的に削除される
-              br
-              |                         リストにして残しておきたい場合は新規スレートにドラッグする
-              br
-              |                         ライブラリから準備パネルに追加するには、「Shift」+「SCROLL」ノブを押す
-          tr
-            td 履歴
-            td
-    h2.heading.switch
-      | ビートグリッド
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | ビートグリッドとは
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | トラックのビートにグリッドを設定する
-          br
-          |                 曲解析時に、「Set Beat Grid」にチェックを入れておくと設定される
-          br
-          |                 BPMに揺れが有るトラックなどでは手動での補正が必要になる
-      h3.heading.switch
-        | ダウンビートマーカー
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | トラックの冒頭のビートグリッドのこと
-          br
-          |                 ビートの無いイントロが長く続く場合にうまく設定されない場合があるので手動で設定する
-          br
-          |                 [PC操作]「edit beatgrid」を押して編集
-        table
-          tr
-            td ダウンビートマーカーを設定する
-            td beatgridセクションの「Set/CLR」ボタンを押す
-          tr
-            td ダウンビートマーカーをクリアする
-            td 「Shift」+beatgridセクションの「Set/CLR」ボタンを押す
-          tr
-            td BPMの修正
-            td beatgridセクションの「ADJUST/SLIP」ボタンを押しながら、ビードグリッドを調整
-          tr
-            td グリッドを全体的に移動
-            td
-              | 最初にSHIFTを押しっぱなしにして, beatgridセクションの「ADJUST/SLIP」を押しっぱなしにすると、TOUCHSTRIPでSlipできるようになる
-      h3.heading.switch
-        | ワープビートマーカー
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | テンポが一定でないトラックにグリッドを設定する
-          br
-          |                 [PC操作]Altを押しながらクリックすると赤いグリッドが表示されるのでAltを押しながらドラッグする
-    h2.heading.switch
-      | サンプルプレーヤー(SP-6)
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+      section.h2content.hide
+        h3.heading.switch
+          | ビートグリッドとは
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | トラックのビートにグリッドを設定する
+            br
+            |                 曲解析時に、「Set Beat Grid」にチェックを入れておくと設定される
+            br
+            |                 BPMに揺れが有るトラックなどでは手動での補正が必要になる
+        h3.heading.switch
+          | ダウンビートマーカー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | トラックの冒頭のビートグリッドのこと
+            br
+            |                 ビートの無いイントロが長く続く場合にうまく設定されない場合があるので手動で設定する
+            br
+            |                 [PC操作]「edit beatgrid」を押して編集
+          table
+            tr
+              td ダウンビートマーカーを設定する
+              td beatgridセクションの「Set/CLR」ボタンを押す
+            tr
+              td ダウンビートマーカーをクリアする
+              td 「Shift」+beatgridセクションの「Set/CLR」ボタンを押す
+            tr
+              td BPMの修正
+              td beatgridセクションの「ADJUST/SLIP」ボタンを押しながら、ビードグリッドを調整
+            tr
+              td グリッドを全体的に移動
+              td
+                | 最初にSHIFTを押しっぱなしにして, beatgridセクションの「ADJUST/SLIP」を押しっぱなしにすると、TOUCHSTRIPでSlipできるようになる
+        h3.heading.switch
+          | ワープビートマーカー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | テンポが一定でないトラックにグリッドを設定する
+            br
+            |                 [PC操作]Altを押しながらクリックすると赤いグリッドが表示されるのでAltを押しながらドラッグする
+      h2.heading.switch
         | サンプルプレーヤー(SP-6)
         span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 「SP-6」スイッチを押し、デッキの下に6つのスロットを表示
-            li.contentOperationOrderlist スロットにデータをドラッグするとスタンバイ
-        p
-          | 1ショットサンプルから、1トラックまるごとも可能
-          br
-          |                 6スロット*4バンクで24サンプルスタンバイ可能
-        table
-          tr
-            td シンプルモード
-            td
-          tr
-            td アドバンスモード
-            td
-              | シンプルモードに加え
-              br
-              | 「cue1～」：再生時にどの部分を再生するか
-              br
-              |                         「音符」アイコン：キーロック
-    h2.heading.switch
-      | 録音機能
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+      section.h2content.hide
+        h3.heading.switch
+          | サンプルプレーヤー(SP-6)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 「SP-6」スイッチを押し、デッキの下に6つのスロットを表示
+              li.contentOperationOrderlist スロットにデータをドラッグするとスタンバイ
+          p
+            | 1ショットサンプルから、1トラックまるごとも可能
+            br
+            |                 6スロット*4バンクで24サンプルスタンバイ可能
+          table
+            tr
+              td シンプルモード
+              td
+            tr
+              td アドバンスモード
+              td
+                | シンプルモードに加え
+                br
+                | 「cue1～」：再生時にどの部分を再生するか
+                br
+                |                         「音符」アイコン：キーロック
+      h2.heading.switch
         | 録音機能
         span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 保存されたデータは「Recorded」というクレートに格納されていく
-          br
-          |                 ファイルの形式はセットアップ画面の「DJ Preference」タブ「Recording」の録音ファイルの形式が設定可能(16/24bit、AIFF/WAV)
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 「REC」スイッチを押すとスタンバイ
-            li.contentOperationOrderlist 録音デッキ内の「REC」を押すと録音開始/終了
-            li.contentOperationOrderlist タイム表示の右のテキストフィールドで名前をつけて「Save」ボタンで保存
-        table
-          tr
-            td レコーディングソース
-            td プレイを録音する場合は「Mix」を選択
-          tr
-            td Rec Location
-            td 録音したファイルの保存場所を設定
-    h2.heading.switch
-      | トラックの選択
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | ライブラリからの選曲
+      section.h2content.hide
+        h3.heading.switch
+          | 録音機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 保存されたデータは「Recorded」というクレートに格納されていく
+            br
+            |                 ファイルの形式はセットアップ画面の「DJ Preference」タブ「Recording」の録音ファイルの形式が設定可能(16/24bit、AIFF/WAV)
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 「REC」スイッチを押すとスタンバイ
+              li.contentOperationOrderlist 録音デッキ内の「REC」を押すと録音開始/終了
+              li.contentOperationOrderlist タイム表示の右のテキストフィールドで名前をつけて「Save」ボタンで保存
+          table
+            tr
+              td レコーディングソース
+              td プレイを録音する場合は「Mix」を選択
+            tr
+              td Rec Location
+              td 録音したファイルの保存場所を設定
+      h2.heading.switch
+        | トラックの選択
         span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Beowseセクションの「SCROLL」ノブを回す
-            li.contentOperationOrderlist 階層の移動は「FWD」ボタン/「Back」ボタン
-            li.contentOperationOrderlist 「LOAD A」/「LOAD B」でデッキにロードする
-      h3.heading.switch
-        | クレート
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
+      section.h2content.hide
+        h3.heading.switch
+          | ライブラリからの選曲
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Beowseセクションの「SCROLL」ノブを回す
+              li.contentOperationOrderlist 階層の移動は「FWD」ボタン/「Back」ボタン
+              li.contentOperationOrderlist 「LOAD A」/「LOAD B」でデッキにロードする
+        h3.heading.switch
           | クレート
-          br
-          |                 プレイリストのようなもの
-          br
-          |                 いくつでも作成可能
-          br
-          |                 サブクレートも作成可能
-        p ライブラリとクレートの繰り替え
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 「Scroll」ノブを押す
-        p
-          | クレートの新規作成
-          br
-          |                 +がついた左側のボタン
-        p
-          | スマートクレートの新規作成
-          br
-          |                 +がついた右側のボタン
-          br
-          |                 ジャンルやBPMなどの条件で自動的にリスト作成
-      h3.heading.switch
-        | 再生/停止
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 「Play/pause」ボタンで再生、停止
-          br
-          |                 「shift」+「Play/pause」ボタンでStutter play
-      h3.heading.switch
-        | ライブラリのソート
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 「Shift」+「Area」ボタン： 次のカラムでライブラリをソートする(#, Song, Artist, BPM, Album)
-      h3.heading.switch
-        | Cue
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 「Cue」ボタン(playの隣のcue)：Add/Trigger temporary cue
-          br
-          |                 「Shift」+「Cue」ボタン(playの隣のcue)：トラックの頭にジャンプ (2秒以上) 前のトラック (2秒未満)
-      h3.heading.switch
-        | インスタントダブルス
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 再生ポイントも2デッキとも同じ状態になるので二枚使いするときに便利な機能
-          br
-          |                 使う前に、設定画面のインスタントダブルスにチェックが入っているか確認
-          br
-          |                 「LOAD A」または「LOAD B」を二度押し(コピー先の方のLOAD)
-    h2.heading.switch
-      | テンポ調整
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | クレート
+            br
+            |                 プレイリストのようなもの
+            br
+            |                 いくつでも作成可能
+            br
+            |                 サブクレートも作成可能
+          p ライブラリとクレートの繰り替え
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 「Scroll」ノブを押す
+          p
+            | クレートの新規作成
+            br
+            |                 +がついた左側のボタン
+          p
+            | スマートクレートの新規作成
+            br
+            |                 +がついた右側のボタン
+            br
+            |                 ジャンルやBPMなどの条件で自動的にリスト作成
+        h3.heading.switch
+          | 再生/停止
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 「Play/pause」ボタンで再生、停止
+            br
+            |                 「shift」+「Play/pause」ボタンでStutter play
+        h3.heading.switch
+          | ライブラリのソート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 「Shift」+「Area」ボタン： 次のカラムでライブラリをソートする(#, Song, Artist, BPM, Album)
+        h3.heading.switch
+          | Cue
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 「Cue」ボタン(playの隣のcue)：Add/Trigger temporary cue
+            br
+            |                 「Shift」+「Cue」ボタン(playの隣のcue)：トラックの頭にジャンプ (2秒以上) 前のトラック (2秒未満)
+        h3.heading.switch
+          | インスタントダブルス
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 再生ポイントも2デッキとも同じ状態になるので二枚使いするときに便利な機能
+            br
+            |                 使う前に、設定画面のインスタントダブルスにチェックが入っているか確認
+            br
+            |                 「LOAD A」または「LOAD B」を二度押し(コピー先の方のLOAD)
+      h2.heading.switch
         | テンポ調整
         span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td キーロック(テンポ変更時にキーを変えない)のOn/Off
-            td 「Keylock」ボタン
-          tr
-            td テンポ同期(もう片方のデッキのテンポに同期)のON
-            td 「Sync/auto」ボタン
-          tr
-            td テンポ同期(もう片方のデッキのテンポに同期)のOFF
-            td 「shift」+「Sync/auto」ボタン
-          tr
-            td
-              | 絶対Pitchに戻す
-              br
-              | (相対モードの時)
-            td 「shift」+「Sync/auto」ボタンを2回押す
-          tr
-            td テンポの調整(小)
-            td 「Pitch」ノブを回す
-          tr
-            td テンポの調整(大)
-            td 「Pitch」ノブを押しながら回す
-          tr
-            td
-              | PITCHホイールを一時的に無効にしてゼロ位置を変更する
-              br
-              | (シンクモードの時)
-            td  「Shift」+「Pitch」ノブ
-        p セットアップ画面で「シンプルシンク」か「スマートシンク」のどちらを使うか設定可能
-        table
-          tr
-            td シンプルシンク
-            td BPM情報だけを合わせる
-          tr
-            td スマートシンク
-            td ビートグリッドを合わせる
-    h2.heading.switch
-      | ミックス
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+      section.h2content.hide
+        h3.heading.switch
+          | テンポ調整
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td キーロック(テンポ変更時にキーを変えない)のOn/Off
+              td 「Keylock」ボタン
+            tr
+              td テンポ同期(もう片方のデッキのテンポに同期)のON
+              td 「Sync/auto」ボタン
+            tr
+              td テンポ同期(もう片方のデッキのテンポに同期)のOFF
+              td 「shift」+「Sync/auto」ボタン
+            tr
+              td
+                | 絶対Pitchに戻す
+                br
+                | (相対モードの時)
+              td 「shift」+「Sync/auto」ボタンを2回押す
+            tr
+              td テンポの調整(小)
+              td 「Pitch」ノブを回す
+            tr
+              td テンポの調整(大)
+              td 「Pitch」ノブを押しながら回す
+            tr
+              td
+                | PITCHホイールを一時的に無効にしてゼロ位置を変更する
+                br
+                | (シンクモードの時)
+              td  「Shift」+「Pitch」ノブ
+          p セットアップ画面で「シンプルシンク」か「スマートシンク」のどちらを使うか設定可能
+          table
+            tr
+              td シンプルシンク
+              td BPM情報だけを合わせる
+            tr
+              td スマートシンク
+              td ビートグリッドを合わせる
+      h2.heading.switch
         | ミックス
         span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td channel gainの調整
-            td Trimノブ
-          tr
-            td 選択されたチャンネルをCue
-            td ヘッドフォンアイコン(A/B)のノブ(trimの下)
-          tr
-            td 高温域を調整
-            td highノブ
-          tr
-            td 中音域を調整
-            td midノブ
-          tr
-            td 低音域を調整
-            td lowノブ
-          tr
-            td 2つのデッキの出力サウンドをクロスフェードする
-            td Crossfader
-          tr
-            td
-              | チャンネルボリュームの調整
-              br
-              | (フェーダーFX未使用時)
-            td Channel Fader
-    h2.heading.switch
-      | タッチストリップ
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+      section.h2content.hide
+        h3.heading.switch
+          | ミックス
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td channel gainの調整
+              td Trimノブ
+            tr
+              td 選択されたチャンネルをCue
+              td ヘッドフォンアイコン(A/B)のノブ(trimの下)
+            tr
+              td 高温域を調整
+              td highノブ
+            tr
+              td 中音域を調整
+              td midノブ
+            tr
+              td 低音域を調整
+              td lowノブ
+            tr
+              td 2つのデッキの出力サウンドをクロスフェードする
+              td Crossfader
+            tr
+              td
+                | チャンネルボリュームの調整
+                br
+                | (フェーダーFX未使用時)
+              td Channel Fader
+      h2.heading.switch
         | タッチストリップ
         span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td スワイプモード(ナッジ)
-            td
-              | SWIPEボタンをオン(点灯)
-              br
-              | 再生スピードを一時的に早くしたり遅くしたりする
-          tr
-            td スクラッチ
-            td
-              | SWIPEボタンをオン(点滅)
-              br
-              | スクラッチ
-          tr
-            td ポーズスワイプモード
-            td
-              | トラック停止中にタッチストリップをスワイプして停止位置を調整(ロードしたトラックの頭出し)
-              br
-              | スワイプ、スクラッチモードにかかわらず、トラック停止中に自動で有効になる
-          tr
-            td ドロップモード
-            td
-              | DROPボタンをオン(点灯)
-              br
-              | 触れた部分が再生ポイントになる(ニードルドロップ)
-              br
-              | 指を離すと自動解除
-              br
-              | 指定した範囲を他のデッキへロードできる(LOAD Bを押すなど)
-          tr
-            td FF-RWDモード
-            td
-              | DROPボタンを2回押す(点滅)
-              br
-              | トラックの早送りと巻き戻しができる
-    h2.heading.switch
-      | 出力設定
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+      section.h2content.hide
+        h3.heading.switch
+          | タッチストリップ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td スワイプモード(ナッジ)
+              td
+                | SWIPEボタンをオン(点灯)
+                br
+                | 再生スピードを一時的に早くしたり遅くしたりする
+            tr
+              td スクラッチ
+              td
+                | SWIPEボタンをオン(点滅)
+                br
+                | スクラッチ
+            tr
+              td ポーズスワイプモード
+              td
+                | トラック停止中にタッチストリップをスワイプして停止位置を調整(ロードしたトラックの頭出し)
+                br
+                | スワイプ、スクラッチモードにかかわらず、トラック停止中に自動で有効になる
+            tr
+              td ドロップモード
+              td
+                | DROPボタンをオン(点灯)
+                br
+                | 触れた部分が再生ポイントになる(ニードルドロップ)
+                br
+                | 指を離すと自動解除
+                br
+                | 指定した範囲を他のデッキへロードできる(LOAD Bを押すなど)
+            tr
+              td FF-RWDモード
+              td
+                | DROPボタンを2回押す(点滅)
+                br
+                | トラックの早送りと巻き戻しができる
+      h2.heading.switch
         | 出力設定
         span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td ヘッドフォンでキュー出力とマスター出力を調整
-            td MASTERセクションの「Mix」ノブ
-          tr
-            td ヘッドフォン出力の調整
-            td MASTERセクションの「ヘッドフォンアイコン」ノブ
-          tr
-            td Booth出力の調整
-            td MASTERセクションの「Booth」ノブ
-          tr
-            td Master出力の調整
-            td MASTERセクションの「Master」ノブ
-          tr
-            td Mic/Aux レベルの調整
-            td mic/auxセクションのlevelノブ
-          tr
-            td ヘッドフォンでのCue Mic / Aux入力
-            td mic/auxセクションのヘッドフォンアイコン
-          tr
-            td Mic/Aux入力のON/OFF
-            td mic/auxセクションのon/off
-          tr
-            td マスター出力のオーディオレベルをモニターする
-            td LED Meter
+      section.h2content.hide
+        h3.heading.switch
+          | 出力設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ヘッドフォンでキュー出力とマスター出力を調整
+              td MASTERセクションの「Mix」ノブ
+            tr
+              td ヘッドフォン出力の調整
+              td MASTERセクションの「ヘッドフォンアイコン」ノブ
+            tr
+              td Booth出力の調整
+              td MASTERセクションの「Booth」ノブ
+            tr
+              td Master出力の調整
+              td MASTERセクションの「Master」ノブ
+            tr
+              td Mic/Aux レベルの調整
+              td mic/auxセクションのlevelノブ
+            tr
+              td ヘッドフォンでのCue Mic / Aux入力
+              td mic/auxセクションのヘッドフォンアイコン
+            tr
+              td Mic/Aux入力のON/OFF
+              td mic/auxセクションのon/off
+            tr
+              td マスター出力のオーディオレベルをモニターする
+              td LED Meter
     include ../_include/_footer.pug

@@ -1,2228 +1,2228 @@
 - var pagename='circuit mono station|spindey.com'
 - var description='NOVATIONのCircuit Monostationのマニュアルです。'
 - var keywords='Circuit monostation,NOVATION'
-
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading Circuit monostation
-    h2.heading.switch
-      | セッション
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | ロード
+    main
+      h2.heading.switch
+        | セッション
         span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Sessionsを押して、セッション ビューを開く
-            li.contentOperationOrderlist 1～32のパッドから選択
-        table
-          tr
-            td 薄い青
-            td 空のスロット
-          tr
-            td 明るい青
-            td
-              | ユーザーによって保存されたセッション、またはファクトリーデモセッションが含まれているスロット
-              br
-              | (明るい青がデフォルトの色となっているが、色を変更して保存されたセッションを区別することができる)
-          tr
-            td 白
-            td
-              | 現在選択されているセッション
-              br
-              | (1つのパッドのみが白く点灯)
-        table
-          tr
-            th ロードのタイミング
-            th テンポ
-          tr
-            td 停止中
-            td セッションが保存された際に使用されていたテンポで再生される
-          tr
-            td 再生中
-            td
-              | 現在設定されているテンポで 再生される
-              br
-              | テンポが一定に保たれた状態で、異なるセッションを連続して呼び出すことができる
-      h3.heading.switch
-        | 保存
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 最後に選択したセッションメモリに作業中のセッションを保存する
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist (Session ビューを開く必要はない)Saveを押すと、ボタンが白色に点滅する
-            li.contentOperationOrderlist 再度押すと、約1秒間緑色で素早く点滅し、保存の実行を確認する
-            li.contentOperationOrderlist 以前のバージョンは上書きされる
-        p 異なるセッションメモリに作業を保存したい場合(元のバージョンに変更を加えない)
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Session ビュー に切り替え、Save を押す
-            li.contentOperationOrderlist Save ボタンおよび現在選択されているセッションのパッドが白 色に点滅するので、別のメモリパッドを押す
-            li.contentOperationOrderlist 他の全てのパッドが暗くなり、選択されたパッドが 約1秒間緑色に素早く点滅し、保存の実行を確認する
-      h3.heading.switch
-        | セッションの保存、削除の有効化
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shift と Save ボタンを同時に押したまま Circuit Mono Station の電源を入れる
-      h3.heading.switch
-        | Session ビューで任意のパッドに別の色を割り当てる
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p この機能はライブパフォーマンスの 際に大変役立つ
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist
-              | 最初に Save を押した後、Oct ▼ および Oct ▲ ボタンが現在選択されているセッションのパッドの現在の色で点灯する
-              br
-              |                         変更していない場合は青く点灯する
-            li.contentOperationOrderlist Oct ▼ および Oct ▲ ボタンを押すことで 14色のパレットをスクロールできる
-            li.contentOperationOrderlist 使用したい色を見つけて再度Saveを押すと、上述のように緑色に点滅し保存プロセスが完了する
-        p
-          | 現在選択しているセッションメモリに必ず保存され、そのセッションのパッドは常に白く点灯するため、直ちに新しい色に切り替わらないが、別のセッションを選択するとすぐに色が変更される
-      h3.heading.switch
-        | セッション切替
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th モード
-            th 詳細
-          tr
-            td 停止モード
-            td
-              | Play ボタンを押すと、新しいセッションは常にパターンのステップ1から始まる
-              br
-              |                         パターンが組み合わされて構成され ているセッションの場合、最初のパターンのステップ1から始まる
-              br
-              |                         これは以前のセッションが停止された際のシーケンサーのステップ位置にかかわらず適用される動作となる
-              br
-              |                         直前のセッションのテンポは新しいセッションのテンポに置き換えられる
-          tr
-            td 再生モード
-            td
-              p
-                | 方法1. 単純にパッドを押して新しいセッションを選択する場合、現在のパターンがその最後のステップまで演奏される
+      section.h2content.hide
+        h3.heading.switch
+          | ロード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Sessionsを押して、セッション ビューを開く
+              li.contentOperationOrderlist 1～32のパッドから選択
+          table
+            tr
+              td 薄い青
+              td 空のスロット
+            tr
+              td 明るい青
+              td
+                | ユーザーによって保存されたセッション、またはファクトリーデモセッションが含まれているスロット
                 br
-                |                             (パターンの全てのチェーンではなく、現在のパターンのみ)
+                | (明るい青がデフォルトの色となっているが、色を変更して保存されたセッションを区別することができる)
+            tr
+              td 白
+              td
+                | 現在選択されているセッション
                 br
-                |                             そして新しいセッションに対するパッドが青/白に点滅し、次に再生されるセッションであることを示す
+                | (1つのパッドのみが白く点灯)
+          table
+            tr
+              th ロードのタイミング
+              th テンポ
+            tr
+              td 停止中
+              td セッションが保存された際に使用されていたテンポで再生される
+            tr
+              td 再生中
+              td
+                | 現在設定されているテンポで 再生される
                 br
-                |                             新しいセッションの再生がパターンのステップ1から開始され、セッションがチェーンで構成されている場合にはチェーン内の最初のパターンのステップ1から開始される
-              p
-                | 方法2. 新しいセッションを選択している間に Shift を長押しすると、次のステップで現在のパターンの再生が停止し、新しいセッションに即座に切り替わる
+                | テンポが一定に保たれた状態で、異なるセッションを連続して呼び出すことができる
+        h3.heading.switch
+          | 保存
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 最後に選択したセッションメモリに作業中のセッションを保存する
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist (Session ビューを開く必要はない)Saveを押すと、ボタンが白色に点滅する
+              li.contentOperationOrderlist 再度押すと、約1秒間緑色で素早く点滅し、保存の実行を確認する
+              li.contentOperationOrderlist 以前のバージョンは上書きされる
+          p 異なるセッションメモリに作業を保存したい場合(元のバージョンに変更を加えない)
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Session ビュー に切り替え、Save を押す
+              li.contentOperationOrderlist Save ボタンおよび現在選択されているセッションのパッドが白 色に点滅するので、別のメモリパッドを押す
+              li.contentOperationOrderlist 他の全てのパッドが暗くなり、選択されたパッドが 約1秒間緑色に素早く点滅し、保存の実行を確認する
+        h3.heading.switch
+          | セッションの保存、削除の有効化
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shift と Save ボタンを同時に押したまま Circuit Mono Station の電源を入れる
+        h3.heading.switch
+          | Session ビューで任意のパッドに別の色を割り当てる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p この機能はライブパフォーマンスの 際に大変役立つ
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist
+                | 最初に Save を押した後、Oct ▼ および Oct ▲ ボタンが現在選択されているセッションのパッドの現在の色で点灯する
                 br
-                |                             新しいセッションは、以前のセッションがパターンチェーン内で到達していた同じステップから再生される
-      h3.heading.switch
-        | セッションクリア
+                |                         変更していない場合は青く点灯する
+              li.contentOperationOrderlist Oct ▼ および Oct ▲ ボタンを押すことで 14色のパレットをスクロールできる
+              li.contentOperationOrderlist 使用したい色を見つけて再度Saveを押すと、上述のように緑色に点滅し保存プロセスが完了する
+          p
+            | 現在選択しているセッションメモリに必ず保存され、そのセッションのパッドは常に白く点灯するため、直ちに新しい色に切り替わらないが、別のセッションを選択するとすぐに色が変更される
+        h3.heading.switch
+          | セッション切替
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th モード
+              th 詳細
+            tr
+              td 停止モード
+              td
+                | Play ボタンを押すと、新しいセッションは常にパターンのステップ1から始まる
+                br
+                |                         パターンが組み合わされて構成され ているセッションの場合、最初のパターンのステップ1から始まる
+                br
+                |                         これは以前のセッションが停止された際のシーケンサーのステップ位置にかかわらず適用される動作となる
+                br
+                |                         直前のセッションのテンポは新しいセッションのテンポに置き換えられる
+            tr
+              td 再生モード
+              td
+                p
+                  | 方法1. 単純にパッドを押して新しいセッションを選択する場合、現在のパターンがその最後のステップまで演奏される
+                  br
+                  |                             (パターンの全てのチェーンではなく、現在のパターンのみ)
+                  br
+                  |                             そして新しいセッションに対するパッドが青/白に点滅し、次に再生されるセッションであることを示す
+                  br
+                  |                             新しいセッションの再生がパターンのステップ1から開始され、セッションがチェーンで構成されている場合にはチェーン内の最初のパターンのステップ1から開始される
+                p
+                  | 方法2. 新しいセッションを選択している間に Shift を長押しすると、次のステップで現在のパターンの再生が停止し、新しいセッションに即座に切り替わる
+                  br
+                  |                             新しいセッションは、以前のセッションがパターンチェーン内で到達していた同じステップから再生される
+        h3.heading.switch
+          | セッションクリア
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist セッションビューを開く
+              li.contentOperationOrderlist 削除したいセッションを選択して Clear を長押しすると明るい赤に点灯し、明るい白で示される現在選択中のセッションを除いて、全てのグリッドパッドが消灯する
+              li.contentOperationOrderlist このパッドを押すとセッションは削除され、パッドが約 1 秒素早く点滅する
+          p
+            | 現在選択されているセッションのみを削除することができる
+            br
+            |                 これにより、誤ったセッションを削除してしまうことを防ぐ
+      h2.heading.switch
+        | 鍵盤の設定
         span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist セッションビューを開く
-            li.contentOperationOrderlist 削除したいセッションを選択して Clear を長押しすると明るい赤に点灯し、明るい白で示される現在選択中のセッションを除いて、全てのグリッドパッドが消灯する
-            li.contentOperationOrderlist このパッドを押すとセッションは削除され、パッドが約 1 秒素早く点滅する
-        p
-          | 現在選択されているセッションのみを削除することができる
-          br
-          |                 これにより、誤ったセッションを削除してしまうことを防ぐ
-    h2.heading.switch
-      | 鍵盤の設定
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | オクターブ変更
+      section.h2content.hide
+        h3.heading.switch
+          | オクターブ変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Oct ▼ および Oct ▲ ボタンを押すたびに、現在選択しているシンセ鍵盤のピッチレンジが1オクターブずつ変更される
+          p
+            | デフォルトのオクターブから最大 5オクターブ上、または 6オクターブ下まで変更が可能
+            br
+            |                 デフォルトのオクターブの一番低いノートは標準のピアノ鍵盤の中央 C となる(そのスケールの別のルート音が選択されていない場合)
+        h3.heading.switch
+          | デュアルビュー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p リアルタイムにパラフォニック機能を生かしたい場合に最適
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Osc 1 と Osc 2 を一緒に押すと、両方のオシレーターを同時に使用できるようになる
+              li.contentOperationOrderlist Note を押すと、Note ビュー のグリッドに戻る
+        h3.heading.switch
+          | 拡大 Note ビュー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p リアルタイムにシンセノートの録音を行う際に非常に便利な表示
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shiftを押しながら Noteを押す
+              li.contentOperationOrderlist グリッドの下二行が、選択されたスケールの次に低い2オクターブの鍵盤に変化する
+              li.contentOperationOrderlist 再度 Note を押すと、拡大Noteビューを解除
+      h2.heading.switch
+        | スケールの設定
         span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Oct ▼ および Oct ▲ ボタンを押すたびに、現在選択しているシンセ鍵盤のピッチレンジが1オクターブずつ変更される
-        p
-          | デフォルトのオクターブから最大 5オクターブ上、または 6オクターブ下まで変更が可能
-          br
-          |                 デフォルトのオクターブの一番低いノートは標準のピアノ鍵盤の中央 C となる(そのスケールの別のルート音が選択されていない場合)
-      h3.heading.switch
-        | デュアルビュー
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p リアルタイムにパラフォニック機能を生かしたい場合に最適
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Osc 1 と Osc 2 を一緒に押すと、両方のオシレーターを同時に使用できるようになる
-            li.contentOperationOrderlist Note を押すと、Note ビュー のグリッドに戻る
-      h3.heading.switch
-        | 拡大 Note ビュー
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p リアルタイムにシンセノートの録音を行う際に非常に便利な表示
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shiftを押しながら Noteを押す
-            li.contentOperationOrderlist グリッドの下二行が、選択されたスケールの次に低い2オクターブの鍵盤に変化する
-            li.contentOperationOrderlist 再度 Note を押すと、拡大Noteビューを解除
-    h2.heading.switch
-      | スケールの設定
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | スケールのルート
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p パターンを作成した後、主音を変更することでパターンをトランスポーズすることができる
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Scaleボタンを押してから、パッド1～16を押す
-        table
-          tr
-            th パッド
-            th スケールのルートに設定する音階
-          tr
-            td 1
-            td -
-          tr
-            td 2
-            td C#
-          tr
-            td 3
-            td Eb
-          tr
-            td 4
-            td -
-          tr
-            td 5
-            td F#
-          tr
-            td 6
-            td Ab
-          tr
-            td 7
-            td Bb
-          tr
-            td 8
-            td -
-          tr
-            td 9
-            td C
-          tr
-            td 10
-            td D
-          tr
-            td 11
-            td E
-          tr
-            td 12
-            td F
-          tr
-            td 13
-            td G
-          tr
-            td 14
-            td A
-          tr
-            td 15
-            td B
-          tr
-            td 16
-            td -
-        p ルートは、再生中にも変更が可能
-      h3.heading.switch
-        | スケールの選択
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 別のスケールを選択すると、上二行のパッドの照明が変化する
-          br
-          |                 パッドの配置が 1オクターブ分の（Cから始まる）鍵盤のレイアウトをシミュレート
-          br
-          |                 二行目が白鍵、一行目が黒鍵を示す
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Scaleボタンを押してから、パッド17～32を押す
-        .tableScroll
+      section.h2content.hide
+        h3.heading.switch
+          | スケールのルート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p パターンを作成した後、主音を変更することでパターンをトランスポーズすることができる
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Scaleボタンを押してから、パッド1～16を押す
           table
             tr
               th パッド
-              th スケール名
-              th C
-              th C#
-              th D
-              th Eb
-              th E
-              th F
-              th F#
-              th G
-              th Ab
-              th A
-              th Bb
-              th B
+              th スケールのルートに設定する音階
+            tr
+              td 1
+              td -
+            tr
+              td 2
+              td C#
+            tr
+              td 3
+              td Eb
+            tr
+              td 4
+              td -
+            tr
+              td 5
+              td F#
+            tr
+              td 6
+              td Ab
+            tr
+              td 7
+              td Bb
+            tr
+              td 8
+              td -
+            tr
+              td 9
+              td C
+            tr
+              td 10
+              td D
+            tr
+              td 11
+              td E
+            tr
+              td 12
+              td F
+            tr
+              td 13
+              td G
+            tr
+              td 14
+              td A
+            tr
+              td 15
+              td B
+            tr
+              td 16
+              td -
+          p ルートは、再生中にも変更が可能
+        h3.heading.switch
+          | スケールの選択
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 別のスケールを選択すると、上二行のパッドの照明が変化する
+            br
+            |                 パッドの配置が 1オクターブ分の（Cから始まる）鍵盤のレイアウトをシミュレート
+            br
+            |                 二行目が白鍵、一行目が黒鍵を示す
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Scaleボタンを押してから、パッド17～32を押す
+          .tableScroll
+            table
+              tr
+                th パッド
+                th スケール名
+                th C
+                th C#
+                th D
+                th Eb
+                th E
+                th F
+                th F#
+                th G
+                th Ab
+                th A
+                th Bb
+                th B
+              tr
+                td 17
+                td ナチュラルマイナー
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+              tr
+                td 18
+                td メジャー
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+              tr
+                td 19
+                td ドリアン
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+              tr
+                td 20
+                td フリジアン
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+              tr
+                td 21
+                td ミクロリディアン
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+              tr
+                td 22
+                td メロディックマイナー(昇順)
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+              tr
+                td 23
+                td ハーモニックマイナー
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td
+                td ○
+              tr
+                td 24
+                td ビバップドリアン
+                td ○
+                td
+                td
+                td ○
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+              tr
+                td 25
+                td ブルース
+                td ○
+                td
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td ○
+                td
+                td
+                td ○
+                td
+              tr
+                td 26
+                td マイナーペンタトニック
+                td ○
+                td
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td
+                td ○
+                td
+              tr
+                td 27
+                td ハンガリアンマイナー
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td
+                td ○
+                td ○
+                td ○
+                td
+                td
+                td ○
+              tr
+                td 28
+                td ウクライナドリアン
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td ○
+                td
+              tr
+                td 29
+                td マルヴァ
+                td ○
+                td ○
+                td
+                td
+                td ○
+                td
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td ○
+              tr
+                td 30
+                td トディ
+                td ○
+                td ○
+                td
+                td ○
+                td
+                td
+                td ○
+                td ○
+                td ○
+                td
+                td
+                td ○
+              tr
+                td 31
+                td ホールトーン
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+                td ○
+                td
+              tr
+                td 32
+                td クロマチック
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+                td ○
+          p スケールは再生中にも変更が可能
+      h2.heading.switch
+        | 音色の選択
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | パッチの選択
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 64個保存可能
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Patchesボタンを押す
+              li.contentOperationOrderlist
+                | Oct ▼ および Oct ▲ ボタンでページ選択
+                br
+                | ページ 1 では、Oct ▼ は明るい 白に点灯し、Oct ▲ は暗い白に点灯
+              li.contentOperationOrderlist 1～32パッドで音色を選択
+        h3.heading.switch
+          | パッチのプレビュー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th 操作方法
+              th 発音
+            tr
+              td 1～32パッド
+              td する
+            tr
+              td shift+1～32パッド
+              td しない
+        h3.heading.switch
+          | イニシャルパッチ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist パッチビュー を開き、 Clearボタンを押したままいずれかのグリッドパッドを押す
+              li.contentOperationOrderlist イニシャルパッチが一時的にそのメモリに上書きされるが、次回電源投入時にはファクトリーパッチが保持される
+          p ShiftとPatches を一緒に押すことでも、イニシャルパッチロードすることができる
+        h3.heading.switch
+          | イニシャルパッチパラメータ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th セクション
+              th パラメータ
+              th 初期値
+            tr
+              td(rowspan="11") OSCILLATORS
+              td Osc 1 Fine
+              td 0(中央)
+            tr
+              td Osc 1 Range
+              td 8' (A3=440Hz)
+            tr
+              td Osc 1 Coarse
+              td 0(中央)
+            tr
+              td Osc 1 Waveform
+              td ノコギリ波
+            tr
+              td Osc 1 Shape(Pulse Width)
+              td 0
+            tr
+              td Osc 2 Fine
+              td 0(中央)
+            tr
+              td Osc 2 Range
+              td 8' (A3=440Hz)
+            tr
+              td Osc 2 Coarse
+              td 0(中央)
+            tr
+              td Osc 2 Waveform
+              td ノコギリ波
+            tr
+              td Osc 2 Shape(Pulse Width)
+              td 0
+            tr
+              td Osc 1/2 Sync
+              td Off
+            tr
+              td(rowspan="6") MIXER
+              td Osc 1 Level
+              td 100
+            tr
+              td Osc 2 Level
+              td 100
+            tr
+              td Sub Osc Level
+              td 0
+            tr
+              td Noise Level
+              td 0
+            tr
+              td Ring mod Level
+              td 0
+            tr
+              td 外部信号レベル
+              td 0
+            tr
+              td(rowspan="8") FILTER
+              td Slope
+              td 24dB
+            tr
+              td Shape
+              td LP
+            tr
+              td Frequency
+              td 255
+            tr
+              td Resonance
+              td 64
+            tr
+              td Overdrive
+              td 0
+            tr
+              td Noise Bypass
+              td Off
+            tr
+              td Oscillator 2 Bypass
+              td Off
+            tr
+              td Filter Key Tracking
+              td Off
+            tr
+              td(rowspan="2") Distortion
+              td Type
+              td I
+            tr
+              td Amount
+              td 0
+            tr
+              td(rowspan="3") LFO
+              td LFO Rate
+              td 75
+            tr
+              td LFO Wave
+              td 三角波
+            tr
+              td LFO Sync On/Off
+              td Off
+      h2.heading.switch
+        | 音色の調整
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | MASTER SECTION
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Volume
+              td  オーディオ出力のレベル全体をコントロール
+            tr
+              td Tempo
+              td
+                | シーケンスの BPM（テンポ）を設定可能
+                br
+                | Shift 長押しでSwing コントロール として再割り当てされる。これによりステップ間のタイミングが変化し、パターンの「印象」が変わる
+            tr
+              td Tap
+              td
+                | テンポを「手動」で設定可能
+                br
+                | Shift + Tapでスウィング同期ビューを開く
+        h3.heading.switch
+          | OSCILATOR Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | オシレーターセクションは、2つの主要な同一のオシレーターと、Oscillator 1に 常に周波数がロックされるサブオクターブオシレーターから構成されている
+            br
+            |                 主要なオシレーターである Osc 1 と Osc 2 は、2つで 1組となっており、制御を行うオシレーターは、Osc 1 および Osc2 ボタンで選択する
+            br
+            |                 1つのオシレーターを調整した後にもう一方のオシレーターを選択して制御を行うことで、同じコントロール部を使用しながら1つ目のオシレーターの設定に変更を加えることなく調整を行うことができる
+            br
+            |                 任意のサウンドを得るために、2つのオシレーター間でいつでもコントロールを再度割り当てることができる
+            br
+            |                 そのため、以下の説明は 2つのオシレーターに同様に適用される
+          table
+            tr
+              td Wave(Waveform)
+              td
+                | オシレーター波形を選択
+                ul
+                  li 正弦波
+                  li 三角波
+                  li 上昇型ノコギリ波
+                  li 矩形波/パルス波
+            tr
+              td Range
+              td
+                | オシレータの基本周波数(またはピッチ)を設定
+                br
+                |                         オクターブ内で Osc 1 または Osc 2によって選択されたオシレーターの基本ベースピッチ 範囲を選択する
+                br
+                |                         8’ は標準のコンサートピッチ(A3 = 440Hz)となっている
+                br
+                |                         伝統的なオルガンのストップに当たるものでキャリブレーションが行われ、16' では一番低い周波数を、2' では一番高い周波数を与える
+                br
+                |                         ストップの長さが 2倍になるごとに周 波数は半分になるため、キーボードのピッチを 1オクターブ低くする
+                br
+                |                         Range が 8' に設定されている場合、グリッド鍵盤は通常のNoteビューの下の段の一番左のパッドが中央 C(コンサートピッチ)となる
+            tr
+              td Coarse
+              td
+                | オシレータの基本周波数(またはピッチ)を設定
+                br
+                |                         選択されているオシレーターのピッチを± 1オクターブの範囲で調整
+            tr
+              td Fine
+              td
+                | オシレータの基本周波数(またはピッチ)を設定
+                br
+                |                         オシレーターのピッチを± 100セント(± 1半音)の範囲で調整
+            tr
+              td Pulse Width
+              td
+                | オシレーターの波形が 矩形/パルス波 に設定されている場合、波形のパルス幅またはデューティ比を変化させることによって、矩形波の音色の角の部分に変化を与えることができる
+                br
+                |                         矩形/パルス波が選択されている場合、Shift ボタンを押しながらオシレーターの Fine コントロールを調整することで波形のデューティー比(パルス幅)を手動で変更できる
+                br
+                |                         ノブを左右どちらかに振り切っている場合、非常に狭い正パルスまたは負パルスが生成され、ノブを動かすごとに音が薄く、甲高くなっていく
+                br
+                |                         パルス幅は、モジュレーションマトリックス内の様々なシンセソースによっても自動的にモジュレートされる
+            tr
+              td オシレーターシンク
+              td
+                | Shiftを押しながら Osc 2を押すことで有効化できる
+                br
+                |                         Osc 1を使用してOsc 2で生成される波形にさらなる倍音成分を加える
+                br
+                |                         Osc 2 の波形のフルサイクルが形成される前に Osc 1 の波形に Osc 2 の波形をリトリガーさせることによって行う
+                br
+                |                         Osc 1 の周波数の変化に比例してその性質も変化し、また基本周波数に対して音楽的に関連する場合とそうでない場合があるため、 2つのオシレーターの周波数の比によっても生成されるサウンドの性質が変化する
+            tr
+              td サブオシレーター
+              td
+                | 2つの主要なオシレーターに加え、サブオクターブオシレーターが備わっている
+                br
+                |                         サブオクターブオシレーターの出力を Osc 1 と Osc 2 の出力に追加することで、より豊かな低音を生成することができる
+                br
+                |                         サブオシレーターの周波数は常に Osc 1 の周波数に固定されており、ちょうど1オクターブ下となる
+                br
+                |                         サブオシレーターの波形は常に三角波
+                br
+                |                         サブオシレーターには独立したコントロールが無く、その出力はミキサーセクションに送られ、任意の度合でシンセサウンドに追加される
+            tr
+              td ノイズ
+              td
+                | Circuit Mono Station にはノイズジェネレーターも搭載されている
+                br
+                |                         ノイズとは、幅広い周波数から成る信号 で、ヒス音(ヒスノイズ)として知られるサウンドを指す
+                br
+                |                         これは、その他のエフェクトにおけるパーカッシ ブサウンドを生成するために使用できる
+                br
+                |                         ノイズジェネレーターにはミキサー対して独自の入力が存在し、これを単独で聞こえるようにするためには入力を上げ、その他のオシレーターの入力を下げる必要がある
+            tr
+              td リングモジュレーター
+              td
+                | 入力としてオシレーター 1 および オシレーター 2 から波形を取得し、複雑な出 力波形を生成する
+                br
+                |                         この波形はオシレーターの周波数、それらの合計および差異、そして、範囲が入力の シェイプと周波数に依存するその他の多くのハーモニクスから構成される
+                br
+                |                         これら2つのオシレーターの周波数をそれぞれの倍近くにするように設定すると、興味深い低周波数の「うなり」を与えることができる
+        h3.heading.switch
+          | LFO Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Rate
+              td
+                | LFO の周波数を調節
+                br
+                |                         周波数の範囲はゼロから約 200Hz
+            tr
+              td Wave
+              td
+                | 三角波、ノコギリ波、矩形波、サンプルアンドホールドなど使用可能な波形から選択
+                br
+                | LED によって、LFO のスピードと波形を視覚的に示す
+            tr
+              td Sync
+              td
+                | LFOのレートを現在のテンポクロック(内部または外部)に同期
+                br
+                | 35の異なる同期レート区分から選択でき、Rate コントロールで選択
+                br
+                |                         Syncを選択することで、Rate コントロールの機能が再度割り当てられる
+                br
+                |                         また、Rate コントロールによって選択されている同期レート値に基づいて、内部または外部 MIDI クロック のサブディビジョンに LFO の周波数をロックさせることができる
+        h3.heading.switch
+          | MIXER Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Osc 1
+              td オシレーター 1 の波形のレベルをコントロール
+            tr
+              td Osc 2
+              td オシレーター 2 の波形のレベルをコントロール
+            tr
+              td Sub
+              td サブオシレーターの信号レベルをコントロール
+            tr
+              td Noise
+              td サウンドに追加されるホワイトノイズのレベルをコントロール
+            tr
+              td Audio In
+              td
+                | リアパネルの AUDIO IN コネクタ 2 に入力されている信号のレベルをコントロール
+                br
+                |                         Shiftを押しながら 同じコントロールを調整することで、入力ステージのゲインを調整できる
+                br
+                |                         注意：全てのミキサーレベルコントロールのオートメーションは記録されますがAudio In のシフトされたゲイン機能はオートメートされない
+                br
+                |                         Circuit Mono Station のエンベロープ、フィルター、モジュレーションセクションを使用して扱うことができる
+                br
+                |                         Circuit Mono Station の出力を本体に戻すことも可能
+                br
+                |                         このリカーシブな接続によって他にはないエフェクトを生成することができる
+            tr
+              td Ring 1*2
+              td
+                | リングモジュレーター回路の出力レベルを設定
+                br
+                | リンクモジュレーターへの入力は Osc 1 と Osc 2
+        h3.heading.switch
+          | ENVELOPE Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Attack
+              td
+                | 音量がゼロの地点(例：ノートがトリガーされた瞬間)から最大値まで到達するのに要する時間
+                br
+                |                         アタックタイムが長い場合フェードイン効果が得られる
+                br
+                |                         スライダーが最も低い位置にある場合、ノートがトリガー された瞬間にただちに最大レベルに達する
+                br
+                |                         スライダーが最も高い位置にある場合、ノートが最大レ ベルに到達するまで 5秒以上かかり、真ん中の位置で約250ミリセカンドかかる
+            tr
+              td Decay
+              td
+                | 音が最大レベルから減少していき、アタック部分を通過後にサステインパラメータで設定されているレベルまで到達する際に要する時間
+                br
+                |                         スライダーが真ん中の位置にある場合、約150ミリ秒
+            tr
+              td Sustain
+              td
+                | 最初のアタックおよびディケイ部分(例：リアルタイムに演奏している場合、パッドを押し 続けている間)を通過した後のノートのボリュームを示す
+                br
+                |                         サステインレベルを低く設定すると、非常に短いパーカッションのような効果が得られます(アタックおよびディケイタイムが短い場合)
+                br
+                |                         サステイン値が低い場合、ノー トの頭が強調される効果がある
+                br
+                |                         スライダーを完全に下げることで、ディケイタイムを通過した後ただちにノートが聞こえなくなる
+            tr
+              td Release
+              td
+                | パッドから指が離された後に音量がゼロに到達するまでに要する時間
+                br
+                |                         リリースの値が高い場合、パッドから指が離された後も音が聞こえる状態になる(ボリュームは徐々に減少)
+                br
+                |                         スライダーが真ん中の位置ににある場合、リリースタイムは約360ミリ セカンドとなる
+                br
+                |                         パラメータ値とリリースタイムの関係はリニアではない
+        h3.heading.switch
+          | FILTER Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Shape
+              td ローパス(LP)、バンドパス(BP)、ハイパス(HP)から成る3種類のフィルター特性を選択
+            tr
+              td Slope
+              td
+                | 2つのフィルタースロープを切り替る
+                br
+                | パスバンド外のフィルターのスロープを 1オクターブ あたり 12dB または 24dB のいずれかに設定
+                br
+                |                         24dBの方がスロープが急になり、帯域外の周波数が急激に減衰
+            tr
+              td Frequency
+              td フィルターカットオフ周波数(LPまたはHP)、またはその中心周波数(BP)を制御する大型のロータリーノブ
+            tr
+              td Resonance
+              td フィルター特性にレゾナンス(フィルター周波数で増加されたレスポンス)を加える
+            tr
+              td Overdrive
+              td ミキサー出力にプリフィルターのディストーションを加える
+            tr
+              td Bypass
+              td
+                | デフォルトでは、フィルターがシンセのサウンドの全ての構成要素に影響を与えるが、Bypass ボタンを使用することで Osc 2 および Noise 信号へのエフェクトをオフにすることができる
+                br
+                |                         両方をまとめてバイパスしたりどちらか一方をバイパスすることが可能
+          p
+            | フィルターキートラッキング
+            br
+            |                 フィルターのカットオフ周波数に、演奏されているノートのピッチをトラッキングさせることができる
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist shiftとOsc を同時に押してKey Tracking ビューを開く
+          table
+            tr
+              th パッド
+              th 値
+            tr
+              td 1
+              td
+                | 0%(OFF)
+                br
+                | いかなるノートが演奏されてもフィルター周波数は 常に一定となる
+            tr
+              td 2
+              td 15%
+            tr
+              td 3
+              td 30%
+            tr
+              td 4
+              td 45%
+            tr
+              td 5
+              td 60%
+            tr
+              td 6
+              td 75%
+            tr
+              td 7
+              td 90$
+            tr
+              td 8
+              td
+                | 100%
+                br
+                | 周波数がノートの半音ごとに変化する
+          p
+            | フィルターは一対一の割合でピッ チ変化に対応するため、1オクターブ離れている 2つのノートが演奏された場合、フィルターのカットオフ周波 数も1オクターブごとに変化する
+        h3.heading.switch
+          | DISTORTION Section
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Type
+              td
+                | ディストーションはフィルターセクションの後の段階で加えられる
+                ul
+                  li Type I：Novation Bass Station II シンセで採用されているディストーション回路を使用
+                  li Type II：クラシックファズディストーション
+                  li Type III：Type I および II を組み合わせたもの
+            tr
+              td Level
+              td ディストーションの量を調節
+        h3.heading.switch
+          | MODULATION MATRIX
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Source
+              td
+                | マトリックスで使用できる4種類のモジュレーションソース
+                ul
+                  li Env：エンベロープジェネレーターの出力
+                  li LFO：LFO 出力
+                  li Seq：モジュレーションシーケンス
+                  li Vel：ベロシティ
+            tr
+              td Destination
+              td
+                p 6つのボタンで 8つのモジュレーションデスティネーションを選択可能
+                ul
+                  li Pitch：オシレーター 1 ピッチ
+                  li Pitch：オシレーター 2 ピッチ
+                  li PWM：オシレーター 1 パルス幅
+                  li PWM：オシレーター 2 パルス幅
+                  li Amp：VCA レベル
+                  li Filter：フィルター周波数
+                  li Dist：ポストフィルターディストーション量
+                  li Aux CV：AUX CV 出力での DC 電圧
+                p
+                  | Pitch お よび PWM (パルス幅モジュレーション)の 内部 LED は、トラックボタンによって現在選択されているオシレーターに対応している
+                  br
+                  |                             Pitch および PWM は、Osc 1 および Osc 2ボタンで現在選択されているオシレーターに対して有効
+                  br
+                  |                             PWM を有効にするためには、オシレーターの波形を「矩形/パルス波」に設定する必要がある
+            tr
+              td Depth
+              td
+                p
+                  | 選択されたソースによって選択されたデスティネーションに適用されるモジュレーションレベルを調節
+                  br
+                  |                             マトリックス設定はアディティブ（追加式）となっており、異なるDepth 設定で、いかなるソー スの組み合わせも、デスティネーションの組み合わせも適用可能
+                p
+                  | Depth コントロールは、選択されたソースがディストーションに対して行うコントロールの度合を決める
+                  br
+                  |                             これはソフトコントロールであり、Source および Destinationボタンの設定で現在定義されている特定のマトリックスルーティングのコントロールレベルを設定する
+                  br
+                  |                             32の各ルーティングには、独自 のレベルを指定できる
+                  br
+                  |                             現在選択されているソースはボタンの上の LED で示され、現在選択されている デスティネーションは、デスティネーションボタン内の LED で示される
+                  br
+                  |                             Pitch および PWM ボタン内の LED は、現在選択されているオシレーターのカラーで点灯する
+                  br
+                  |                             Depth コントロールの LED は、現在選択されているマトリックスルーティングのコントロールレベルに比例し た明るさで点灯する
+                p
+                  | Depth は、モジュレーションコントロール時に制御されているパラメータが変化する単位と なる値を効果的に定義する
+                  br
+                  |                             制御の範囲、という風に考えると良い
+                  br
+                  |                             また、 Depth は二極性のものであるため、制御の極性を変化させる
+                  br
+                  |                             同じ入力の場合、 Depth がプラスの値では制御されるパラメータの値が大きくなり、マイナスの値では制御さ れるパラメータの値が小さくなる
+                  br
+                  |                             注意：マトリックスルーティング内であらかじめソースと割り当て先が定義されている場合、Depth コントロールがゼロ以外の値に設定されない限りモジュレーションは 行われない
+                  br
+                  |                             上記には、1つ非常に重要な例外がある
+                  br
+                  |                             Env が Amp にルーティングされている場合、Depth コントロールはオン /オフスイッチとして動作する
+                  br
+                  |                             つまり、エンベロープは VCA レベルをコントロールするか、全くコントロールを行わないかのいずれかになる
+                  br
+                  |                             Depth がマイナス値の場合、特定のパラメータでは動作しない
+                p
+                  | LFO は二極のソースであり、LFO がソースとして選択されている場合、デスティネーション パラメータは、モジュレートされていない値の上下両方に動く
+                  br
+                  |                             これは、LFO がオシレーターのピッチをモジュレートするようルーティングされている場合 最も簡単に可視化される
+                  br
+                  |                             Depth をゼロにすることで、オシレーターは通常のピッチで鳴るが、 Depth をプラスの方向に増やした場合にはピッチが上昇し、そして通常の周波数より下に下降する
+                  br
+                  |                             LFO がノコギリ波のような非対称の波形に設定されている場合に、Depth の正と負の値の効果が最も 顕著となる
+                p
+                  | サイン波または三角波の LFO 波形を使用して適切なスピードの LFO モジュレーションを追加することで、心地よいビブラートを加えることができる
+                  br
+                  |                             ノコギリ波もしくは矩形波 では、より劇的で特殊なエフェクトを生成する
+                  br
+                  |                             エンベロープモジュレーションを追加することで、ノートが演奏された際にその持続時間にわたってオシレータピッチが変更されるような興味深いエフェクトを得ることができる
+                  br
+                  |                             パルス波では、LFO モジュレーションによる音響効果は、使用されている LFO 波形およびその速度 に応じて大きく異なる
+                  br
+                  |                             一方で、エンベロープモジュレーションを使用する場合は、ノートが演奏 されている間時間と共に変化するハーモニクス成分によって良い音色の効果を生成する
+                  br
+                  |                             LFO でフィルターの周波数をモジュレートすることで、ワウのようなエフェクトを表現することができる
+                  br
+                  |                             LFO を極めて遅い速度に設定した場合、サウンドのエッジが徐々に滑らかになるような効果が得られる
+                  br
+                  |                             フィルター周波数がエンベロープによってモジュレートされている場合、フィルターアクションはノートの持続時間にわたって変化する
+                  br
+                  |                             エンベロープを注意して調整することで、素晴らしいサウンドを得 ることができる
+                  br
+                  |                             例えば、フェードアウトの部分に対してノートのアタックの部分に異なるサウンドを生成するために、サウンドのスペクトル成分を生むことができる
+      h2.heading.switch
+        | ステップの編集
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | パターンの入力
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Osc 1 または Osc 2 ボタンでオシレーターを選択
+              li.contentOperationOrderlist パッチを選択
+              li.contentOperationOrderlist オシレーター 1 の Note ビュー に切り替える
+              li.contentOperationOrderlist 入力したいオクターブを表示
+              li.contentOperationOrderlist 入力したいステップのパッド(17～32)を押しながらアサインするノートに対応するパッド(1～16)を同時に押す
+        h3.heading.switch
+          | パラフォニックボイシング
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 2つのオシレーターがシンセの VCA、エンベロープジェネレーター、およびフィルターを共有して、異なるピッチで再生を行うが、エンベロープが「開いている」場合にのみ同時に聞こえる
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist shift + Scales を押す
+          table
+            tr
+              td パラフォニックモード 1
+              td
+                | オシレーター 1 のみが VCA をトリガーする
+                br
+                |                         ライブパフォーマンスやレコーディングで演奏する際に使用する
+                br
+                |                         有効時：Scales ボタンが、Shiftを押した際に暗い白に点灯
+                br
+                |                         鍵盤で演奏されるあらゆるノートが両方のオシレーターをトリガーするが、VCA はオシレーター 1 でのみトリガーされる
+                br
+                |                         Osc 1 および Osc 2 レベルコントロールが Mixer セクションで上げられている場合、それぞれのオシレーターがサウンド全体に対してどのような要素を担っているか聞くことができる
+                br
+                |                         また、各オシレーターのピッチと波形は個別に調節できる
+                br
+                |                         VCA をトリガーするものがオシレーター 1 であるため、オシレーター 1 のパターン内のノートがVCA をトリガーする際に十分な時間再生されている場合にのみオシレーター 2 が聞こえる。
+            tr
+              td パラフォニックモード 2
+              td
+                | オシレーター 2 に割り当てられているパターンを聞くときに使う
+                br
+                |                         有効時：Scales ボタンが明るい白に点灯
+                br
+                |                         オシレーター 2 がVCAとオシレーター 1 をトリガーするため、Osc 1 のミキサーレベルコントロールを下げて、オシレーター 2 のパターン内のノートを全て聞くことができる
+        h3.heading.switch
+          | ノートの削除
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 方法1
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 不要なノートに対応するステップパッドを押しながらパフォーマンスパッドを押す
+          p 方法2
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Clear ボタン
+        h3.heading.switch
+          | ノートの挿入
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 方法1
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist
+                | ノートを追加したいステップのパターンパッドを押しながら、任意のパフォーマンスパッドを押し、パターンパッドから指を離す
+                br
+                | (Record を押す必要はない)
+          p 方法2
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist
+                | 任意のパフォーマンスパッドを押しながら、ノートを追加したいステップのパターンパッドを押し、パフォーマンスパッドから指を離す
+                br
+                | (Record を押す必要はない)
+        h3.heading.switch
+          | ノートの変更時のゲート、ベロシティ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th 手順
+              th 値
+            tr
+              td ノートの削除の後に新規に挿入
+              td デフォルトのゲート値とベロシティ値が新しいノートに設定される
+            tr
+              td ノートの削除を行わず、変更したい音程のパッドを押す
+              td
+                | 元のノート のゲート値とベロシティ値を保持
+                br
+                | (各ステップには 1つのノートのみが割り当てられるため、これによって以前のノートが自動的にキャンセルされる)
+        h3.heading.switch
+          | ステップの複製(Duplicate)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shift + Clearを押しながら、コピー元のステップを押す
+              li.contentOperationOrderlist Shift + Clearを押したまま、コピー先のステップを押す
+              li.contentOperationOrderlist ノートデータを複数のステップにコピーしたい場合には、Shift および Clear ボタンを押したまま他のステップに対してペースト操作を繰り返す
+          p
+            | いずれかのトラックの Note ビュー(Mod Seqを含む)でも、Duplicate を使用して、様々な特性が追加されたノートをパターン内の異なるステップにコピーすることができる
+            br
+            |                 コピー先のステップ内の既存のノート情報は全て上書きされる
+      h2.heading.switch
+        | ベロシティ、ゲート、グライド
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ベロシティ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | ライブレコーディング中にパッドが叩かれた強さを記録する
+            br
+            |                 ベロシティパラメータが制御を行うものは、モジュレーションマトリックス内でルーティングされるものによって決定される
+            br
+            |                 マトリックスソースとして VCA を制御するために使用される場合(マトリックスソースとしてVelを、マトリックスデスティネーションとしてAmpを選択)は、ボリュームに直接関連し、他のモジュレーションマトリックスルーティングと同じように、Depth コントロールで調整することができる
+            br
+            |                 ライブレコーディング中にパフォーマンスパッドを演奏する際、ベロシティ値が各ステップに割り当てられる
+            br
+            |                 ベロシティ値は、ノートにではなくパターンステップに関連付けられる
+        h3.heading.switch
+          | ステップのベロシティ値を変更する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Velocityボタンを押し、Velocity ビューに切り替える
+              li.contentOperationOrderlist ボタンが現在選択されている オシレーターの色に点灯するので、任意のパッド(1～16)を押す
+          table
+            tr
+              th パッド
+              th ベロシティ値
+            tr
+              td 1
+              td 8
+            tr
+              td 2
+              td 16
+            tr
+              td 3
+              td 24
+            tr
+              td 4
+              td 32
+            tr
+              td 5
+              td 40
+            tr
+              td 6
+              td 48
+            tr
+              td 7
+              td 56
+            tr
+              td 8
+              td 64
+            tr
+              td 9
+              td 72
+            tr
+              td 10
+              td 80
+            tr
+              td 11
+              td 88
+            tr
+              td 12
+              td 96
+            tr
+              td 13
+              td 104
+            tr
+              td 14
+              td 112
+            tr
+              td 15
+              td 120
+            tr
+              td 16
+              td 127
+        h3.heading.switch
+          | 固定ベロシティ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ベロシティ値を96に固定する
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shiftを押したまま Velocity を押す
+              li.contentOperationOrderlist Shift を押している間 Velocity ボタンが白に点灯することで、固定ベロシティに設定されていることを確認できる
+          p ベロシティを固定に設定しても、既に録音しているノートのベロシティ値は変わらない
+        h3.heading.switch
+          | ゲート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | Gate はステップ内のノートの持続時間を表す
+            br
+            |                 ゲートパラメータは整数値だけでなく分数値も使用できる
+            br
+            |                 ステップは1/6 単位で、1/6から16の間で設定可能
+            br
+            |                 ゲート値はパフォーマンスパッドを演奏する際にそれぞれのノートに割り当てられる
+            br
+            |                 パフォーマンスパッドを短く叩くとゲート値は低くなり、パッドを長い間押したままにするとゲート値は上がる
+            br
+            |                 ゲート値が16の場合、そのステッ プ内のノートがパターン全体で鳴り続ける
+        h3.heading.switch
+          | ゲート値の変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist GateボタンでGate ビューを開く
+              li.contentOperationOrderlist グリッドの上二行にGate値、下二行にパターンステップが表示される
+              li.contentOperationOrderlist ゲート値の一番高い値のパッドを押すことによって1/6ずつゲートタイムを短縮できる
+        h3.heading.switch
+          | グライド
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | ステップにピッチグライド(ポルタメント)を加える
+            br
+            |                 オシレーターのパターンステップに個別に追加可能
+            br
+            |                 ステップにグライドを追加すると、ステップに割り当てられたノートは通常のピッチでは最初再生されない
+            br
+            |                 グライドタイム設定で決められた時間内で、通常のピッチに向かって昇降する
+            br
+            |                 最初のピッチは直前に再生されたノートのものとなるため、直前のノートがグライドが追加されたステップのノートより上か下かによってピッチが上がるのか下がるのかが決まる
+        h3.heading.switch
+          | グライド値の変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shiftと Gateを同時に押しGlide ビューを開く
+              li.contentOperationOrderlist パッド1～16を押す
+          table
+            tr
+              th パッド
+              th グライド値
+            tr
+              td 1
+              td OFF
+            tr
+              td 2
+              td 8
+            tr
+              td 3
+              td 16
+            tr
+              td 4
+              td 24
+            tr
+              td 5
+              td 32
+            tr
+              td 6
+              td 40
+            tr
+              td 7
+              td 48
+            tr
+              td 8
+              td 56
+            tr
+              td 9
+              td 64
+            tr
+              td 10
+              td 72
+            tr
+              td 11
+              td 80
+            tr
+              td 12
+              td 88
+            tr
+              td 13
+              td 96
+            tr
+              td 14
+              td 108
+            tr
+              td 15
+              td 116
+            tr
+              td 16
+              td 127
+          p
+            | グライドの効果の、ゲートやベロシティなどとの違い
+            br
+            |                 グライド値は、ステップごとの属性として個々のステップに割り当てられるのではく、オン、オフの切り替えを行う
+            br
+            |                 グライドがステップに追加されると、そのステップで「グライドオン」のコマンドとして機能する
+            br
+            |                 そのため、使用されているグライドの値は、そのポイントからパターン内の全てのステップに適用されるため、次のステップでその値が変更されない限り、パターン内の全てのノートでその効果が聞こえる
+            br
+            |                 したがって、特定のステップでのみグライドを使用したい場合には、そのステップで必要なグライドの量を割り当て、その後のパターンステップでグライドをゼロに設定する必要がある
+            br
+            |                 これは「グライドオフ」のコマンドとして機能する
+            br
+            |                 グライドタイムは、パターンが割り当てられていないステップを含む、パターン内のいずれのステップにも割り当てることができる
+          p
+            | 短いグライドを追加することで、ノートを「太く」することができる：
+            br
+            |                 グライドタイムが十分な短さである場合、実際のピッチ変化として聞こえることはないが、より大きな 「ボディ」を持つノートとして聞こえる
+      h2.heading.switch
+        | モジュレーションシーケンサー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Mod Seq
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | Mod Seqは、パターン内の各ステップのモジュレーションパラメータ値を記録できるトラック
+            br
+            |                 Osc 1 および Osc 2 のトラックと共にパターンに保存され、その他の点では単に追加のシーケンサートラックとして扱われる
+            br
+            |                 4つのソース(Seq)の1つとしてモジュレーションマトリックスで使用できる
+            br
+            |                 8つのマトリックスデスティネーション(割り当て先)のいずれかにルーティングを行い、オシレーターのピッチやパルス幅、VCA レベル、フィルター周波数などを変化させることができる
+          p Mod Seq は、モジュレーションマトリックスに割り当てられていない限りサウンドに影響を与えない
+        h3.heading.switch
+          | Mod値の変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Mod Seqを押して、モジュレーションシーケンサービューを開く
+          table
+            tr
+              th パッド
+              th Mod値
+            tr
+              td 1
+              td 8
+            tr
+              td 2
+              td 16
+            tr
+              td 3
+              td 24
+            tr
+              td 4
+              td 32
+            tr
+              td 5
+              td 40
+            tr
+              td 6
+              td 48
+            tr
+              td 7
+              td 56
+            tr
+              td 8
+              td 64
+            tr
+              td 9
+              td 72
+            tr
+              td 10
+              td 80
+            tr
+              td 11
+              td 88
+            tr
+              td 12
+              td 96
+            tr
+              td 13
+              td 104
+            tr
+              td 14
+              td 112
+            tr
+              td 15
+              td 120
+            tr
+              td 16
+              td 127
+        h3.heading.switch
+          | Mod値の削除
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Clearを押しながらステップを押す
+        h3.heading.switch
+          | Smoothモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Mod Seq値が8間隔のため発生する「ジャンプ」を解消(補間)する機能
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shift および Mod Seq を一緒に押して Smooth モードを開く
+          table
+            tr
+              th Smooth有効/無効
+              th Mod Seqボタンの状態
+            tr
+              td 有効
+              td Shift を押すと明るく白く点灯
+            tr
+              td 無効
+              td Shift を押すと暗くなる
+          p
+            | Smoothモードで適用されるグライドは固定レートであるため、テンポと同期レートが高い場合、次のパターンステップでのモジュレーションデプスが目標の値に達するまでの時間が無い
+      h2.heading.switch
+        | パターンの設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | パターン同期率を設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 同期レートの選択は外部のテンポクロックソースのスレイブとして同期を行う際に便利
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
+              li.contentOperationOrderlist 1行目(パッド1から8)でパターン同期率を設定
+          table
+            tr
+              th パッド
+              th 同期レート
+              th テンポの倍率
+            tr
+              td 1
+              td 1/4
+              td 1/4倍速
+            tr
+              td 2
+              td 1/4 T
+              td
+            tr
+              td 3
+              td 1/8
+              td 1/2倍速
+            tr
+              td 4
+              td 1/8 T
+              td
+            tr
+              td 5
+              td 1/16
+              td 1倍速
+            tr
+              td 6
+              td 1/16 T
+              td
+            tr
+              td 7
+              td 1/32
+              td 2倍速
+            tr
+              td 8
+              td 1/32 T
+              td
+          p パターンが再生されている間に同期レートが変更された場合の反映タイミング
+          table
+            tr
+              th 進行方向
+              th タイミング
+            tr
+              td 「前方」「後方」
+              td パターンの場合には修正されたテンポで再度開始される前に、再生中のパターンが最後まで再生される
+            tr
+              td 「ピンポン」
+              td パターン内の最初または最後のステップのうちより先に到 達する方のタイミングでテンポの変更が適用される
+            tr
+              td 「ランダム」
+              td パターン内のステップ数分が 再生され次第テンポが変化する
+          p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対 して独立して設定可能
+        h3.heading.switch
+          | パターンの進行方向
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
+              li.contentOperationOrderlist 13～16パッドで進行方向を指定
+          table
+            tr
+              th パッド
+              th 進行方向
+              th 詳細
+            tr
+              td 13
+              td 前方
+              td
+                | 開始ステップから最終ステップまで進行し、また頭から繰り返される
+            tr
+              td 14
+              td 後方
+              td 最終ステップから再生され、開始ステップまで戻っていき、繰り返される
+            tr
+              td 15
+              td ピンポン
+              td
+                | 開始ステップから最終ステップまで進行し、それから開始ステップまで戻っていく
+                br
+                |                         パターンの長さが2倍になり、再生方向が逆転するためパターン内の最後と最初のステップが2回再生される
+            tr
+              td 16
+              td ランダム
+              td
+                | パターン内の全てのステップ(定義された長さ内のもの)がランダムな順番で再生される
+                br
+                | ノートを持っていないステップも含まれる
+          p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対 して独立して設定可能
+        h3.heading.switch
+          | パターンの長さ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
+              li.contentOperationOrderlist 3,4行目(パッド17から32)でパターンの長さを設定
+          table
+            tr
+              th 最終/開始ステップ
+              th 操作
+            tr
+              td 最終ステップを指定する
+              td パッドを押す
+            tr
+              td 開始ステップを指定する
+              td shift押しながらパッドを押す
+          p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対して独立して設定可能
+      h2.heading.switch
+        | パターンの編集
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | パターンの保存
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 1つのセッション内に Osc 1 のパターンを 16 個、Osc 2 のパターンを 8個、モジュレーションシーケンサーのパターンを8個保存することができる
+            br
+            |                 パターンの保存は実質的には自動で行われる
+            br
+            |                 使用中のオシレーター用に現在選択されているパターンメモリは、作成中のパターンを保持する
+            br
+            |                 パターンが既に完成している状態であれば、特に追加の動作を行うことなくメモリに保持される
+            br
+            |                 ただし、次回起動時にそのパターンを使用したい場合には、32パターンの各セッ トを現在の Session の一部として保存する必要がある
+        h3.heading.switch
+          | パターンの再生
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th 再生開始位置
+              th 操作
+            tr
+              td パターンの開始ステップから再生
+              td Playボタン
+            tr
+              td 停止位置からの再生
+              td shift+play
+        h3.heading.switch
+          | インスタントパターン切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 現在のパターンが完了するまで待たずに、新しいパターンがすぐに再生を開始
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Play モードで Shiftを押しながらパターンを選択
+          p
+            | 直前のパターン内の再生カーソルの位置に関わらず、新しいパターンはステップ 1 から開始され、以前と同じタイミングで最初のステップを再生するため、パターンのテンポは常に保持される
+            br
+            |                 パターンの長さが奇数である場合や、異常な同期レートのためにパターンのタイミングがずれてしまった場合には、インスタントパターン切り替えを行うことで効率的にタイミングを直すことができる
+        h3.heading.switch
+          | パターンのクリア
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p パターンをクリアする
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist PatternsビューでClearを押しながら消去するパターンのパッドを押す
+              li.contentOperationOrderlist Clear とそのパターンのパッドが明るい赤色に点灯する
+        h3.heading.switch
+          | パターンの複製
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Patternsビューを開く
+              li.contentOperationOrderlist
+                | ShiftとClearを一緒に押しながら(Clear が明るい緑に点灯)コピーしたいパターンのパッドを押し(緑に点灯)、ペーストしたいメモリに対応するパッドを押す(赤色に点灯)
+          p
+            | 複数のメモリにパターンデータをコピーしたい場合、ShiftとClearを一緒に押したまま他のステップへのペースト作業を繰り返す
+            br
+            |                 Osc 1 と Osc 2 のパターンは相互にコピー可能
+            br
+            |                 Mod Seqパターンは他の Mod Seq パターンメモリにのみコピー可能
+        h3.heading.switch
+          | パターンチェーン
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | パターンをチェーン化することで最大256ステップのシーケンスを構成することができる
+            br
+            |                 トラックごとに行う
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist patternビューを開く
+              li.contentOperationOrderlist チェーン化を行う一番小さい数のパターンのパッドを押しながら、次に一番大きな数のパターンのパッドを押す
+              li.contentOperationOrderlist 選択したパッドがトラックカラーで明るく点灯し、それらが全てチェーン化されたシーケンスの一部を構成することを確認できる
+          p
+            | Osc 1、Osc 2、モジュレーションシーケンサーのパターンチェーンを互いに独立して作成したり、Osc 1 パター ンのみのチェーンを作成することもできる
+            br
+            |                 ただし、全てのトラックには「アクティブ」なパターンが含まれており、Osc 2 およびモジュレーションシーケンサーで選択されているパターンメモリ内のいかなるデータも再生されるため、Osc 1 を単独で使用する場合は、他の 2つのトラックが空のパターンメモリを再生する必要がある
+            br
+            |                 チェーン化するパターンはパターン番号が連番になっている必要がある
+        h3.heading.switch
+          | パターンオクターブ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p パターン全体のピッチをオクターブ単位で上下にシフト可能
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shift を押しながら Oct ▲ or Oct ▼ を押す
+          p
+            | パターンの再生モードおよび停止モードどちらの場合にも行える
+            br
+            |                 Pattern ビュー または Patches ビューでパターンオクターブを変更することはできない
+            br
+            |                 現在選択されているオシレーターのピッチのみを調整することができ、他のオシレーターのピッチは影響を受けない
+        h3.heading.switch
+          | ミューテート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | パターンまたはパターンチェーンを構成するノートをシャッフルする機能
+            br
+            |                 パターンレングス、同期レート、その他のパターンパラメータを保持しつつ、パターンのノートを異なるステップに再度割り当てる
+            br
+            |                 同じノートが再生されるが、再割り当ては シャッフルで行われるため、全体のパターンテンポは維持されつつ順序やタイミングが変化する
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Noteビューを開く
+              li.contentOperationOrderlist Shift と Pattern Settings ボタンを一緒に押す
+          p
+            | ノートは異なるステップに割り当てられ、パターンが新しい配置を使用して定義されたパターンレングスでループし続ける
+            br
+            |                 パターンチェーンが使用されている場合、チェーンを構成する各パターンは個別にミューテートされるが、パターンは通常のシーケンス内で引き続き再生される
+            br
+            |                 一旦実行してしまうとキャンセルして元のパターンまたはパターンチェーンに戻ることができない
+        h3.heading.switch
+          | パターンをリアルタイムに録音する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist パッチを選択する
+              li.contentOperationOrderlist オシレーター 1 の Note ビュー に切り替え、Play を押してパターンを再生
+              li.contentOperationOrderlist
+                | Record を押して演奏を行う
+                br
+                |                         録音中は、ステップカーソル(通常は白色)が赤色に変化してパターン内を移動し、パターンに変更を加えようとしていることを示す
+                br
+                |                         Osc 1 および Osc 2 のミキサーレベルコントロールも赤に変わる
+              li.contentOperationOrderlist 16ステップ分のパターンが完成すると、ノートが再生される
+              li.contentOperationOrderlist 必要なノートを演奏したら、再度 Play を押して録音とシーケンサーを停止させる
+          p オシレーター 2 のノートをシーケンスに追加する方法
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist ShiftとScalesを同時に押してパラフォニックモード 2 を選択
+              li.contentOperationOrderlist MIXER セクションで Osc 2 のレベルが上げられていることを確認する
+              li.contentOperationOrderlist オシレーター 2 の Note ビュー に切り替え、同じ方法で録音する
+              li.contentOperationOrderlist パラフォニックモード 2 では、Osc 1 と同じように演奏されているノートが聞こえる
+      h2.heading.switch
+        | テンポとスウィング
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | テンポの調整
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Tempo コントロールにわずかに触れる
+              li.contentOperationOrderlist パッドグリッド上に、青と白で 2～3桁で構成される BPM が表示される
+              li.contentOperationOrderlist Tempo コントロールを動かして調整
+              li.contentOperationOrderlist テンポ表示が 1.6 秒後に タイムアウトし、グリッド表示が直前のビューに戻る
+          p テンポの範囲
+          table
+            tr
+              th テンポクロックのソース
+              th 範囲
+            tr
+              td 内部テンポクロック
+              td 40～240 BPM(デフォルトは120 BPM)(小数部分は適用されない)
+            tr
+              td 外部 MIDI クロックソース
+              td 40 ～240 BPM(小数部分を含めて適用される)
+        h3.heading.switch
+          | タップテンポ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タップテンポはいつでも使用できる
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Tap ボタンで四分音符をタップする
+              li.contentOperationOrderlist 直近5回の平均(最低3回)でBPMが設定される
+        h3.heading.switch
+          | スウィング
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 奇数の長さを持つパターンでスウィングを変更すると、特に興味深いリズム効果が得られる
+            br
+            |                 スウィング(50%以外に設定されている場合)は、アナログクロック出力に適用されない
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Shiftを押しながらTempoを動かす
+              li.contentOperationOrderlist スウィングのパーセンテージの値が変化する
+          table
+            tr
+              th スウィング値
+              th 奇数の拍とその前の偶数の拍の間の間隔
+            tr
+              td 20～49%
+              td 短くなる
+            tr
+              td 50%
+              td
+                | デフォルト
+                br
+                |                         等間隔
+            tr
+              td 51～80%
+              td 長くなる
+        h3.heading.switch
+          | スウィング同期
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | Tempo コントロールでスウィング値を手動で設定することに加えて、広範囲のスウィング同期レートを設定できる
+            br
+            |                 これは「範囲」を定めるコントロールで、スウィングパラメータが代替ノートをシフトするテンポのインターバルを定義する
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist ShiftとTapを同時に押し、スウィング同期ビューを表示する
+          table
+            tr
+              th パッド
+              th スウィング同期レート
+            tr
+              td 1
+              td 1/4
+            tr
+              td 2
+              td 1/4 T
+            tr
+              td 3
+              td 1/8
+            tr
+              td 4
+              td 1/8 T
+            tr
+              td 5
+              td 1/16(デフォルト)
+            tr
+              td 6
+              td 1/16 T
+            tr
+              td 7
+              td 1/32
+            tr
+              td 8
+              td 1/32 T
+      h2.heading.switch
+        | ノブとスライダーのオートメーション
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | オートメーション
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p パターンを再生している際、任意のシンセコントロールを動かしてサウンドに変化を加えることができる
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Recordを押しながらノブやスライダーを動かす
+              li.contentOperationOrderlist Recordを離す
+          p
+            | 全てのロータリーおよびスライダーシンセコントロールはこの方法でオートメーションを記録することができる
+            br
+            |                 また、1つのシンセパラメータに各レコーディングデータを記録するための合計53のオートメーション「レーン」が備わっている
+            br
+            |                 Coarse および Fine Pitch といった割り当て可能なコントロールは、Osc 1 および Osc 2 で独立してオートメーションを記録でき、Pulse Width(Shift + Fine)も、両方のオシレーターに対してオートメーションを記録できる
+            br
+            |                 モジュレーションマトリックスには 32のオートメーションレーンが割り当てられており、Depthコントロールの動きは、現在のソース(4つのうちの1つ)およびデスティネーション(8つのうちの1つ)の割り当てとともに記録される
+            br
+            |                 ただし、全てのスイッチと Tempo/Swing または Volume コントロールのオートメーションは記録されない
+        h3.heading.switch
+          | シーケンス停止中にシンセコントロールの動きを記録する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Noteビューで Record を押し、変更を加えたいステップに対応するパッドを押し続けるとそのステップに含まれるノートが再生される
+              li.contentOperationOrderlist シンセコントロールを調整すると、オートメーションデータに新しい値が書き込まれる
+              li.contentOperationOrderlist 再度 Record を押す
+              li.contentOperationOrderlist シーケンスを走らせると、そのステップに加えられたノブ/スライダーのエフェクトが聞こえる
+        h3.heading.switch
+          | マクロのオートメーションデータを削除
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist Clearを押したまま該当するノブを20%以上回転させる
+              li.contentOperationOrderlist ノブ下の LED が赤く点灯し、確認できる
+          p シーケンサーの現在のステップだけでなく、パターン全体のマクロのオートメーションデータを消去する
+      h2.heading.switch
+        | システム設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | システム設定の開始/終了
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th 開始/終了
+              th 操作
+            tr
+              td 開始
+              td Shiftを押しながら Power ボタンを押して起動
+            tr
+              td 終了
+              td Playボタンを押す
+        h3.heading.switch
+          | MIDI 入出力
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist 電源を切った状態にする
+              li.contentOperationOrderlist Shiftを押しながら Power ボタンを押す
+              li.contentOperationOrderlist 1から32パッドを押す
+          table
+            tr
+              th パッド
+              th
+            tr
+              td 1
+              td
+                | MIDIチャンネル1を選択
+                br
+                | デフォルト設定では、Osc 1が設定されている
+            tr
+              td 2
+              td
+                | MIDIチャンネル2を選択
+                br
+                | デフォルト設定では、Osc 2が設定されている
+            tr
+              td 3
+              td MIDIチャンネル3を選択
+            tr
+              td 4
+              td MIDIチャンネル4を選択
+            tr
+              td 5
+              td MIDIチャンネル5を選択
+            tr
+              td 6
+              td MIDIチャンネル6を選択
+            tr
+              td 7
+              td MIDIチャンネル7を選択
+            tr
+              td 8
+              td MIDIチャンネル8を選択
+            tr
+              td 9
+              td MIDIチャンネル9を選択
+            tr
+              td 10
+              td MIDIチャンネル10を選択
+            tr
+              td 11
+              td MIDIチャンネル11を選択
+            tr
+              td 12
+              td MIDIチャンネル12を選択
+            tr
+              td 13
+              td MIDIチャンネル13を選択
+            tr
+              td 14
+              td MIDIチャンネル14を選択
+            tr
+              td 15
+              td MIDIチャンネル15を選択
+            tr
+              td 16
+              td グローバルデータの MIDI Tx/Rx
             tr
               td 17
-              td ナチュラルマイナー
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
+              td アナログクロックレート1 ppqn
             tr
               td 18
-              td メジャー
-              td ○
               td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
+                | アナログクロックレート2 ppqn
+                br
+                | デフォルト
             tr
               td 19
-              td ドリアン
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
+              td アナログクロックレート4 ppqn
             tr
               td 20
-              td フリジアン
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
+              td アナログクロックレート8 ppqn
             tr
               td 21
-              td ミクロリディアン
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
+              td アナログクロックレート24 ppqn
             tr
               td 22
-              td メロディックマイナー(昇順)
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
+              td 無し
             tr
               td 23
-              td ハーモニックマイナー
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td
-              td ○
+              td 無し
             tr
               td 24
-              td ビバップドリアン
-              td ○
-              td
-              td
-              td ○
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
+              td ポットピックアップのON/OFF
             tr
               td 25
-              td ブルース
-              td ○
-              td
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td ○
-              td
-              td
-              td ○
-              td
+              td MIDI Note RXのON/OFF切り替え
             tr
               td 26
-              td マイナーペンタトニック
-              td ○
-              td
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td
-              td ○
-              td
+              td MIDI Note TXのON/OFF切り替え
             tr
               td 27
-              td ハンガリアンマイナー
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td
-              td ○
-              td ○
-              td ○
-              td
-              td
-              td ○
+              td MIDI CC RXのON/OFF切り替え
             tr
               td 28
-              td ウクライナドリアン
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td ○
-              td
+              td MIDI CC TXのON/OFF切り替え
             tr
               td 29
-              td マルヴァ
-              td ○
-              td ○
-              td
-              td
-              td ○
-              td
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td ○
+              td 無し
             tr
               td 30
-              td トディ
-              td ○
-              td ○
-              td
-              td ○
-              td
-              td
-              td ○
-              td ○
-              td ○
-              td
-              td
-              td ○
+              td 無し
             tr
               td 31
-              td ホールトーン
-              td ○
               td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
-              td ○
-              td
+                | MIDI Clock RXのON/OFF切り替え
+                br
+                |                         オンの場合、Circuit Mono Station はクロックマスターとなり、リアパネルの USB および MIDI OUT コネクタ、そして、CLOCK OUT コネクタではアナログ形式で内部クロックを MIDI クロックとして使用できるようになる
             tr
               td 32
-              td クロマチック
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-              td ○
-        p スケールは再生中にも変更が可能
-    h2.heading.switch
-      | 音色の選択
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | パッチの選択
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 64個保存可能
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Patchesボタンを押す
-            li.contentOperationOrderlist
-              | Oct ▼ および Oct ▲ ボタンでページ選択
-              br
-              | ページ 1 では、Oct ▼ は明るい 白に点灯し、Oct ▲ は暗い白に点灯
-            li.contentOperationOrderlist 1～32パッドで音色を選択
-      h3.heading.switch
-        | パッチのプレビュー
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th 操作方法
-            th 発音
-          tr
-            td 1～32パッド
-            td する
-          tr
-            td shift+1～32パッド
-            td しない
-      h3.heading.switch
-        | イニシャルパッチ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist パッチビュー を開き、 Clearボタンを押したままいずれかのグリッドパッドを押す
-            li.contentOperationOrderlist イニシャルパッチが一時的にそのメモリに上書きされるが、次回電源投入時にはファクトリーパッチが保持される
-        p ShiftとPatches を一緒に押すことでも、イニシャルパッチロードすることができる
-      h3.heading.switch
-        | イニシャルパッチパラメータ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th セクション
-            th パラメータ
-            th 初期値
-          tr
-            td(rowspan="11") OSCILLATORS
-            td Osc 1 Fine
-            td 0(中央)
-          tr
-            td Osc 1 Range
-            td 8' (A3=440Hz)
-          tr
-            td Osc 1 Coarse
-            td 0(中央)
-          tr
-            td Osc 1 Waveform
-            td ノコギリ波
-          tr
-            td Osc 1 Shape(Pulse Width)
-            td 0
-          tr
-            td Osc 2 Fine
-            td 0(中央)
-          tr
-            td Osc 2 Range
-            td 8' (A3=440Hz)
-          tr
-            td Osc 2 Coarse
-            td 0(中央)
-          tr
-            td Osc 2 Waveform
-            td ノコギリ波
-          tr
-            td Osc 2 Shape(Pulse Width)
-            td 0
-          tr
-            td Osc 1/2 Sync
-            td Off
-          tr
-            td(rowspan="6") MIXER
-            td Osc 1 Level
-            td 100
-          tr
-            td Osc 2 Level
-            td 100
-          tr
-            td Sub Osc Level
-            td 0
-          tr
-            td Noise Level
-            td 0
-          tr
-            td Ring mod Level
-            td 0
-          tr
-            td 外部信号レベル
-            td 0
-          tr
-            td(rowspan="8") FILTER
-            td Slope
-            td 24dB
-          tr
-            td Shape
-            td LP
-          tr
-            td Frequency
-            td 255
-          tr
-            td Resonance
-            td 64
-          tr
-            td Overdrive
-            td 0
-          tr
-            td Noise Bypass
-            td Off
-          tr
-            td Oscillator 2 Bypass
-            td Off
-          tr
-            td Filter Key Tracking
-            td Off
-          tr
-            td(rowspan="2") Distortion
-            td Type
-            td I
-          tr
-            td Amount
-            td 0
-          tr
-            td(rowspan="3") LFO
-            td LFO Rate
-            td 75
-          tr
-            td LFO Wave
-            td 三角波
-          tr
-            td LFO Sync On/Off
-            td Off
-    h2.heading.switch
-      | 音色の調整
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | MASTER SECTION
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Volume
-            td  オーディオ出力のレベル全体をコントロール
-          tr
-            td Tempo
-            td
-              | シーケンスの BPM（テンポ）を設定可能
-              br
-              | Shift 長押しでSwing コントロール として再割り当てされる。これによりステップ間のタイミングが変化し、パターンの「印象」が変わる
-          tr
-            td Tap
-            td
-              | テンポを「手動」で設定可能
-              br
-              | Shift + Tapでスウィング同期ビューを開く
-      h3.heading.switch
-        | OSCILATOR Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | オシレーターセクションは、2つの主要な同一のオシレーターと、Oscillator 1に 常に周波数がロックされるサブオクターブオシレーターから構成されている
-          br
-          |                 主要なオシレーターである Osc 1 と Osc 2 は、2つで 1組となっており、制御を行うオシレーターは、Osc 1 および Osc2 ボタンで選択する
-          br
-          |                 1つのオシレーターを調整した後にもう一方のオシレーターを選択して制御を行うことで、同じコントロール部を使用しながら1つ目のオシレーターの設定に変更を加えることなく調整を行うことができる
-          br
-          |                 任意のサウンドを得るために、2つのオシレーター間でいつでもコントロールを再度割り当てることができる
-          br
-          |                 そのため、以下の説明は 2つのオシレーターに同様に適用される
-        table
-          tr
-            td Wave(Waveform)
-            td
-              | オシレーター波形を選択
-              ul
-                li 正弦波
-                li 三角波
-                li 上昇型ノコギリ波
-                li 矩形波/パルス波
-          tr
-            td Range
-            td
-              | オシレータの基本周波数(またはピッチ)を設定
-              br
-              |                         オクターブ内で Osc 1 または Osc 2によって選択されたオシレーターの基本ベースピッチ 範囲を選択する
-              br
-              |                         8’ は標準のコンサートピッチ(A3 = 440Hz)となっている
-              br
-              |                         伝統的なオルガンのストップに当たるものでキャリブレーションが行われ、16' では一番低い周波数を、2' では一番高い周波数を与える
-              br
-              |                         ストップの長さが 2倍になるごとに周 波数は半分になるため、キーボードのピッチを 1オクターブ低くする
-              br
-              |                         Range が 8' に設定されている場合、グリッド鍵盤は通常のNoteビューの下の段の一番左のパッドが中央 C(コンサートピッチ)となる
-          tr
-            td Coarse
-            td
-              | オシレータの基本周波数(またはピッチ)を設定
-              br
-              |                         選択されているオシレーターのピッチを± 1オクターブの範囲で調整
-          tr
-            td Fine
-            td
-              | オシレータの基本周波数(またはピッチ)を設定
-              br
-              |                         オシレーターのピッチを± 100セント(± 1半音)の範囲で調整
-          tr
-            td Pulse Width
-            td
-              | オシレーターの波形が 矩形/パルス波 に設定されている場合、波形のパルス幅またはデューティ比を変化させることによって、矩形波の音色の角の部分に変化を与えることができる
-              br
-              |                         矩形/パルス波が選択されている場合、Shift ボタンを押しながらオシレーターの Fine コントロールを調整することで波形のデューティー比(パルス幅)を手動で変更できる
-              br
-              |                         ノブを左右どちらかに振り切っている場合、非常に狭い正パルスまたは負パルスが生成され、ノブを動かすごとに音が薄く、甲高くなっていく
-              br
-              |                         パルス幅は、モジュレーションマトリックス内の様々なシンセソースによっても自動的にモジュレートされる
-          tr
-            td オシレーターシンク
-            td
-              | Shiftを押しながら Osc 2を押すことで有効化できる
-              br
-              |                         Osc 1を使用してOsc 2で生成される波形にさらなる倍音成分を加える
-              br
-              |                         Osc 2 の波形のフルサイクルが形成される前に Osc 1 の波形に Osc 2 の波形をリトリガーさせることによって行う
-              br
-              |                         Osc 1 の周波数の変化に比例してその性質も変化し、また基本周波数に対して音楽的に関連する場合とそうでない場合があるため、 2つのオシレーターの周波数の比によっても生成されるサウンドの性質が変化する
-          tr
-            td サブオシレーター
-            td
-              | 2つの主要なオシレーターに加え、サブオクターブオシレーターが備わっている
-              br
-              |                         サブオクターブオシレーターの出力を Osc 1 と Osc 2 の出力に追加することで、より豊かな低音を生成することができる
-              br
-              |                         サブオシレーターの周波数は常に Osc 1 の周波数に固定されており、ちょうど1オクターブ下となる
-              br
-              |                         サブオシレーターの波形は常に三角波
-              br
-              |                         サブオシレーターには独立したコントロールが無く、その出力はミキサーセクションに送られ、任意の度合でシンセサウンドに追加される
-          tr
-            td ノイズ
-            td
-              | Circuit Mono Station にはノイズジェネレーターも搭載されている
-              br
-              |                         ノイズとは、幅広い周波数から成る信号 で、ヒス音(ヒスノイズ)として知られるサウンドを指す
-              br
-              |                         これは、その他のエフェクトにおけるパーカッシ ブサウンドを生成するために使用できる
-              br
-              |                         ノイズジェネレーターにはミキサー対して独自の入力が存在し、これを単独で聞こえるようにするためには入力を上げ、その他のオシレーターの入力を下げる必要がある
-          tr
-            td リングモジュレーター
-            td
-              | 入力としてオシレーター 1 および オシレーター 2 から波形を取得し、複雑な出 力波形を生成する
-              br
-              |                         この波形はオシレーターの周波数、それらの合計および差異、そして、範囲が入力の シェイプと周波数に依存するその他の多くのハーモニクスから構成される
-              br
-              |                         これら2つのオシレーターの周波数をそれぞれの倍近くにするように設定すると、興味深い低周波数の「うなり」を与えることができる
-      h3.heading.switch
-        | LFO Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Rate
-            td
-              | LFO の周波数を調節
-              br
-              |                         周波数の範囲はゼロから約 200Hz
-          tr
-            td Wave
-            td
-              | 三角波、ノコギリ波、矩形波、サンプルアンドホールドなど使用可能な波形から選択
-              br
-              | LED によって、LFO のスピードと波形を視覚的に示す
-          tr
-            td Sync
-            td
-              | LFOのレートを現在のテンポクロック(内部または外部)に同期
-              br
-              | 35の異なる同期レート区分から選択でき、Rate コントロールで選択
-              br
-              |                         Syncを選択することで、Rate コントロールの機能が再度割り当てられる
-              br
-              |                         また、Rate コントロールによって選択されている同期レート値に基づいて、内部または外部 MIDI クロック のサブディビジョンに LFO の周波数をロックさせることができる
-      h3.heading.switch
-        | MIXER Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Osc 1
-            td オシレーター 1 の波形のレベルをコントロール
-          tr
-            td Osc 2
-            td オシレーター 2 の波形のレベルをコントロール
-          tr
-            td Sub
-            td サブオシレーターの信号レベルをコントロール
-          tr
-            td Noise
-            td サウンドに追加されるホワイトノイズのレベルをコントロール
-          tr
-            td Audio In
-            td
-              | リアパネルの AUDIO IN コネクタ 2 に入力されている信号のレベルをコントロール
-              br
-              |                         Shiftを押しながら 同じコントロールを調整することで、入力ステージのゲインを調整できる
-              br
-              |                         注意：全てのミキサーレベルコントロールのオートメーションは記録されますがAudio In のシフトされたゲイン機能はオートメートされない
-              br
-              |                         Circuit Mono Station のエンベロープ、フィルター、モジュレーションセクションを使用して扱うことができる
-              br
-              |                         Circuit Mono Station の出力を本体に戻すことも可能
-              br
-              |                         このリカーシブな接続によって他にはないエフェクトを生成することができる
-          tr
-            td Ring 1*2
-            td
-              | リングモジュレーター回路の出力レベルを設定
-              br
-              | リンクモジュレーターへの入力は Osc 1 と Osc 2
-      h3.heading.switch
-        | ENVELOPE Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Attack
-            td
-              | 音量がゼロの地点(例：ノートがトリガーされた瞬間)から最大値まで到達するのに要する時間
-              br
-              |                         アタックタイムが長い場合フェードイン効果が得られる
-              br
-              |                         スライダーが最も低い位置にある場合、ノートがトリガー された瞬間にただちに最大レベルに達する
-              br
-              |                         スライダーが最も高い位置にある場合、ノートが最大レ ベルに到達するまで 5秒以上かかり、真ん中の位置で約250ミリセカンドかかる
-          tr
-            td Decay
-            td
-              | 音が最大レベルから減少していき、アタック部分を通過後にサステインパラメータで設定されているレベルまで到達する際に要する時間
-              br
-              |                         スライダーが真ん中の位置にある場合、約150ミリ秒
-          tr
-            td Sustain
-            td
-              | 最初のアタックおよびディケイ部分(例：リアルタイムに演奏している場合、パッドを押し 続けている間)を通過した後のノートのボリュームを示す
-              br
-              |                         サステインレベルを低く設定すると、非常に短いパーカッションのような効果が得られます(アタックおよびディケイタイムが短い場合)
-              br
-              |                         サステイン値が低い場合、ノー トの頭が強調される効果がある
-              br
-              |                         スライダーを完全に下げることで、ディケイタイムを通過した後ただちにノートが聞こえなくなる
-          tr
-            td Release
-            td
-              | パッドから指が離された後に音量がゼロに到達するまでに要する時間
-              br
-              |                         リリースの値が高い場合、パッドから指が離された後も音が聞こえる状態になる(ボリュームは徐々に減少)
-              br
-              |                         スライダーが真ん中の位置ににある場合、リリースタイムは約360ミリ セカンドとなる
-              br
-              |                         パラメータ値とリリースタイムの関係はリニアではない
-      h3.heading.switch
-        | FILTER Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Shape
-            td ローパス(LP)、バンドパス(BP)、ハイパス(HP)から成る3種類のフィルター特性を選択
-          tr
-            td Slope
-            td
-              | 2つのフィルタースロープを切り替る
-              br
-              | パスバンド外のフィルターのスロープを 1オクターブ あたり 12dB または 24dB のいずれかに設定
-              br
-              |                         24dBの方がスロープが急になり、帯域外の周波数が急激に減衰
-          tr
-            td Frequency
-            td フィルターカットオフ周波数(LPまたはHP)、またはその中心周波数(BP)を制御する大型のロータリーノブ
-          tr
-            td Resonance
-            td フィルター特性にレゾナンス(フィルター周波数で増加されたレスポンス)を加える
-          tr
-            td Overdrive
-            td ミキサー出力にプリフィルターのディストーションを加える
-          tr
-            td Bypass
-            td
-              | デフォルトでは、フィルターがシンセのサウンドの全ての構成要素に影響を与えるが、Bypass ボタンを使用することで Osc 2 および Noise 信号へのエフェクトをオフにすることができる
-              br
-              |                         両方をまとめてバイパスしたりどちらか一方をバイパスすることが可能
-        p
-          | フィルターキートラッキング
-          br
-          |                 フィルターのカットオフ周波数に、演奏されているノートのピッチをトラッキングさせることができる
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist shiftとOsc を同時に押してKey Tracking ビューを開く
-        table
-          tr
-            th パッド
-            th 値
-          tr
-            td 1
-            td
-              | 0%(OFF)
-              br
-              | いかなるノートが演奏されてもフィルター周波数は 常に一定となる
-          tr
-            td 2
-            td 15%
-          tr
-            td 3
-            td 30%
-          tr
-            td 4
-            td 45%
-          tr
-            td 5
-            td 60%
-          tr
-            td 6
-            td 75%
-          tr
-            td 7
-            td 90$
-          tr
-            td 8
-            td
-              | 100%
-              br
-              | 周波数がノートの半音ごとに変化する
-        p
-          | フィルターは一対一の割合でピッ チ変化に対応するため、1オクターブ離れている 2つのノートが演奏された場合、フィルターのカットオフ周波 数も1オクターブごとに変化する
-      h3.heading.switch
-        | DISTORTION Section
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Type
-            td
-              | ディストーションはフィルターセクションの後の段階で加えられる
-              ul
-                li Type I：Novation Bass Station II シンセで採用されているディストーション回路を使用
-                li Type II：クラシックファズディストーション
-                li Type III：Type I および II を組み合わせたもの
-          tr
-            td Level
-            td ディストーションの量を調節
-      h3.heading.switch
-        | MODULATION MATRIX
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Source
-            td
-              | マトリックスで使用できる4種類のモジュレーションソース
-              ul
-                li Env：エンベロープジェネレーターの出力
-                li LFO：LFO 出力
-                li Seq：モジュレーションシーケンス
-                li Vel：ベロシティ
-          tr
-            td Destination
-            td
-              p 6つのボタンで 8つのモジュレーションデスティネーションを選択可能
-              ul
-                li Pitch：オシレーター 1 ピッチ
-                li Pitch：オシレーター 2 ピッチ
-                li PWM：オシレーター 1 パルス幅
-                li PWM：オシレーター 2 パルス幅
-                li Amp：VCA レベル
-                li Filter：フィルター周波数
-                li Dist：ポストフィルターディストーション量
-                li Aux CV：AUX CV 出力での DC 電圧
-              p
-                | Pitch お よび PWM (パルス幅モジュレーション)の 内部 LED は、トラックボタンによって現在選択されているオシレーターに対応している
+              td
+                | MIDI Clock TXのON/OFF切り替え
                 br
-                |                             Pitch および PWM は、Osc 1 および Osc 2ボタンで現在選択されているオシレーターに対して有効
+                |                         オンの場合、Circuit Mono Station はクロックスレーブとなり、以下の優先順位に従って外部から適用 されたクロックを使用する
+        h3.heading.switch
+          | 外部機器連携
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th 入力/出力
+              th 詳細
+            tr
+              td 出力
+              td
+                | 本体のほとんどの機能およびシンセパラメータはデフォルトでMIDI データを外部機器に伝送する
                 br
-                |                             PWM を有効にするためには、オシレーターの波形を「矩形/パルス波」に設定する必要がある
-          tr
-            td Depth
-            td
-              p
-                | 選択されたソースによって選択されたデスティネーションに適用されるモジュレーションレベルを調節
+                |                         MIDI データの伝送に加え、Circuit Mono Station には標準 CV + GATE 出力が搭載されている
                 br
-                |                             マトリックス設定はアディティブ（追加式）となっており、異なるDepth 設定で、いかなるソー スの組み合わせも、デスティネーションの組み合わせも適用可能
-              p
-                | Depth コントロールは、選択されたソースがディストーションに対して行うコントロールの度合を決める
+                |                         CV および GATE 出力は、リアパネルでそ れぞれ 3.5mm のジャックソケットとして備わっている
                 br
-                |                             これはソフトコントロールであり、Source および Destinationボタンの設定で現在定義されている特定のマトリックスルーティングのコントロールレベルを設定する
+            tr
+              td 入力
+              td
+                | Circuit Mono Stationは多くの場合DAW またはシーセンサーからの MIDI データによって制御が可能
                 br
-                |                             32の各ルーティングには、独自 のレベルを指定できる
+                |                         外部キーボードのピッチおよびモジュレーションホイールに対応していない
                 br
-                |                             現在選択されているソースはボタンの上の LED で示され、現在選択されている デスティネーションは、デスティネーションボタン内の LED で示される
+                |                         部 MIDI コントロールを 最初に有効化する必要がある
                 br
-                |                             Pitch および PWM ボタン内の LED は、現在選択されているオシレーターのカラーで点灯する
+                |                         送受信およびチャンネル選択を含む MIDI 設定は、 システム設定ビューで制御を行う
+          p
+            | パターンの再生中は常にノートデータが存在し、CV 出力はオシレーター 1 のピッチ値を伝送する
+            br
+            |                 これにより、外部シンセ(例：ユーロラックモジュールなど)のピッチを Osc 1 Range、Coarse および Fine コントロールで制御できる
+            br
+            |                 CV 出力は1V/ オクターブでスケールされ、0 V ～ 7 V: MIDI Note #24 (C1) = 0 V、MIDI Note #36 (C2) = +1 V の範囲を対象とする
+            br
+            |                 リニアスケーリングは、その他のノートのオクター ブ内で適用される
+          p
+            | GATE 出力は、+5V アンプのノートごとのパルスであり、その長さはノートの長さに等しく、上昇時間は 140170μs
+            br
+            |                 GATEパルスはCV 電圧よりも後に部分的に出力され、ノートがオンになる前に、外部機器がそのピッチを安定させることができるようになる
+            br
+            |                 Circuit Mono Station には AUX CV 出力 7 も備わっており、外部シンセモジュールに接続することができる
+            br
+            |                 AUX CV は、モジュレーションマトリックスの 8つのデスティネーションのうちの1つであり、任意のマトリックスソースを割り当てることができる
+            br
+            |                 電圧の範囲は、-5V～+5V
+            br
+            |                 複数のモジュレーションソースを使用している場合は、Depth コントロール 40を注意して調整する必要がある
+            br
+            |                 これはマトリックスのアディティブな性質がクリッピングを起こす可能性があるため
+        h3.heading.switch
+          | ポットピックアップ設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th ポットピック
+              th
+            tr
+              td OFF
+              td
+                | デフォルト
                 br
-                |                             Depth コントロールの LED は、現在選択されているマトリックスルーティングのコントロールレベルに比例し た明るさで点灯する
-              p
-                | Depth は、モジュレーションコントロール時に制御されているパラメータが変化する単位と なる値を効果的に定義する
+                |                         コントロールを動かすと保存されているパッチパラメータから引き継がれる
                 br
-                |                             制御の範囲、という風に考えると良い
+                |                         値は通常通りにノブの位置によって決まる
                 br
-                |                             また、 Depth は二極性のものであるため、制御の極性を変化させる
+                |                         ポットが動かされるとパラメータに突然変化が加えられる
+            tr
+              td ON
+              td
+                | パッチの保存したパラメータ値に物理的に関連した位置にコントロールを動かすことで、コントロールが有効になる
                 br
-                |                             同じ入力の場合、 Depth がプラスの値では制御されるパラメータの値が大きくなり、マイナスの値では制御さ れるパラメータの値が小さくなる
-                br
-                |                             注意：マトリックスルーティング内であらかじめソースと割り当て先が定義されている場合、Depth コントロールがゼロ以外の値に設定されない限りモジュレーションは 行われない
-                br
-                |                             上記には、1つ非常に重要な例外がある
-                br
-                |                             Env が Amp にルーティングされている場合、Depth コントロールはオン /オフスイッチとして動作する
-                br
-                |                             つまり、エンベロープは VCA レベルをコントロールするか、全くコントロールを行わないかのいずれかになる
-                br
-                |                             Depth がマイナス値の場合、特定のパラメータでは動作しない
-              p
-                | LFO は二極のソースであり、LFO がソースとして選択されている場合、デスティネーション パラメータは、モジュレートされていない値の上下両方に動く
-                br
-                |                             これは、LFO がオシレーターのピッチをモジュレートするようルーティングされている場合 最も簡単に可視化される
-                br
-                |                             Depth をゼロにすることで、オシレーターは通常のピッチで鳴るが、 Depth をプラスの方向に増やした場合にはピッチが上昇し、そして通常の周波数より下に下降する
-                br
-                |                             LFO がノコギリ波のような非対称の波形に設定されている場合に、Depth の正と負の値の効果が最も 顕著となる
-              p
-                | サイン波または三角波の LFO 波形を使用して適切なスピードの LFO モジュレーションを追加することで、心地よいビブラートを加えることができる
-                br
-                |                             ノコギリ波もしくは矩形波 では、より劇的で特殊なエフェクトを生成する
-                br
-                |                             エンベロープモジュレーションを追加することで、ノートが演奏された際にその持続時間にわたってオシレータピッチが変更されるような興味深いエフェクトを得ることができる
-                br
-                |                             パルス波では、LFO モジュレーションによる音響効果は、使用されている LFO 波形およびその速度 に応じて大きく異なる
-                br
-                |                             一方で、エンベロープモジュレーションを使用する場合は、ノートが演奏 されている間時間と共に変化するハーモニクス成分によって良い音色の効果を生成する
-                br
-                |                             LFO でフィルターの周波数をモジュレートすることで、ワウのようなエフェクトを表現することができる
-                br
-                |                             LFO を極めて遅い速度に設定した場合、サウンドのエッジが徐々に滑らかになるような効果が得られる
-                br
-                |                             フィルター周波数がエンベロープによってモジュレートされている場合、フィルターアクションはノートの持続時間にわたって変化する
-                br
-                |                             エンベロープを注意して調整することで、素晴らしいサウンドを得 ることができる
-                br
-                |                             例えば、フェードアウトの部分に対してノートのアタックの部分に異なるサウンドを生成するために、サウンドのスペクトル成分を生むことができる
-    h2.heading.switch
-      | ステップの編集
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | パターンの入力
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Osc 1 または Osc 2 ボタンでオシレーターを選択
-            li.contentOperationOrderlist パッチを選択
-            li.contentOperationOrderlist オシレーター 1 の Note ビュー に切り替える
-            li.contentOperationOrderlist 入力したいオクターブを表示
-            li.contentOperationOrderlist 入力したいステップのパッド(17～32)を押しながらアサインするノートに対応するパッド(1～16)を同時に押す
-      h3.heading.switch
-        | パラフォニックボイシング
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 2つのオシレーターがシンセの VCA、エンベロープジェネレーター、およびフィルターを共有して、異なるピッチで再生を行うが、エンベロープが「開いている」場合にのみ同時に聞こえる
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist shift + Scales を押す
-        table
-          tr
-            td パラフォニックモード 1
-            td
-              | オシレーター 1 のみが VCA をトリガーする
-              br
-              |                         ライブパフォーマンスやレコーディングで演奏する際に使用する
-              br
-              |                         有効時：Scales ボタンが、Shiftを押した際に暗い白に点灯
-              br
-              |                         鍵盤で演奏されるあらゆるノートが両方のオシレーターをトリガーするが、VCA はオシレーター 1 でのみトリガーされる
-              br
-              |                         Osc 1 および Osc 2 レベルコントロールが Mixer セクションで上げられている場合、それぞれのオシレーターがサウンド全体に対してどのような要素を担っているか聞くことができる
-              br
-              |                         また、各オシレーターのピッチと波形は個別に調節できる
-              br
-              |                         VCA をトリガーするものがオシレーター 1 であるため、オシレーター 1 のパターン内のノートがVCA をトリガーする際に十分な時間再生されている場合にのみオシレーター 2 が聞こえる。
-          tr
-            td パラフォニックモード 2
-            td
-              | オシレーター 2 に割り当てられているパターンを聞くときに使う
-              br
-              |                         有効時：Scales ボタンが明るい白に点灯
-              br
-              |                         オシレーター 2 がVCAとオシレーター 1 をトリガーするため、Osc 1 のミキサーレベルコントロールを下げて、オシレーター 2 のパターン内のノートを全て聞くことができる
-      h3.heading.switch
-        | ノートの削除
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 方法1
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 不要なノートに対応するステップパッドを押しながらパフォーマンスパッドを押す
-        p 方法2
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Clear ボタン
-      h3.heading.switch
-        | ノートの挿入
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 方法1
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist
-              | ノートを追加したいステップのパターンパッドを押しながら、任意のパフォーマンスパッドを押し、パターンパッドから指を離す
-              br
-              | (Record を押す必要はない)
-        p 方法2
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist
-              | 任意のパフォーマンスパッドを押しながら、ノートを追加したいステップのパターンパッドを押し、パフォーマンスパッドから指を離す
-              br
-              | (Record を押す必要はない)
-      h3.heading.switch
-        | ノートの変更時のゲート、ベロシティ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th 手順
-            th 値
-          tr
-            td ノートの削除の後に新規に挿入
-            td デフォルトのゲート値とベロシティ値が新しいノートに設定される
-          tr
-            td ノートの削除を行わず、変更したい音程のパッドを押す
-            td
-              | 元のノート のゲート値とベロシティ値を保持
-              br
-              | (各ステップには 1つのノートのみが割り当てられるため、これによって以前のノートが自動的にキャンセルされる)
-      h3.heading.switch
-        | ステップの複製(Duplicate)
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shift + Clearを押しながら、コピー元のステップを押す
-            li.contentOperationOrderlist Shift + Clearを押したまま、コピー先のステップを押す
-            li.contentOperationOrderlist ノートデータを複数のステップにコピーしたい場合には、Shift および Clear ボタンを押したまま他のステップに対してペースト操作を繰り返す
-        p
-          | いずれかのトラックの Note ビュー(Mod Seqを含む)でも、Duplicate を使用して、様々な特性が追加されたノートをパターン内の異なるステップにコピーすることができる
-          br
-          |                 コピー先のステップ内の既存のノート情報は全て上書きされる
-    h2.heading.switch
-      | ベロシティ、ゲート、グライド
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | ベロシティ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | ライブレコーディング中にパッドが叩かれた強さを記録する
-          br
-          |                 ベロシティパラメータが制御を行うものは、モジュレーションマトリックス内でルーティングされるものによって決定される
-          br
-          |                 マトリックスソースとして VCA を制御するために使用される場合(マトリックスソースとしてVelを、マトリックスデスティネーションとしてAmpを選択)は、ボリュームに直接関連し、他のモジュレーションマトリックスルーティングと同じように、Depth コントロールで調整することができる
-          br
-          |                 ライブレコーディング中にパフォーマンスパッドを演奏する際、ベロシティ値が各ステップに割り当てられる
-          br
-          |                 ベロシティ値は、ノートにではなくパターンステップに関連付けられる
-      h3.heading.switch
-        | ステップのベロシティ値を変更する
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Velocityボタンを押し、Velocity ビューに切り替える
-            li.contentOperationOrderlist ボタンが現在選択されている オシレーターの色に点灯するので、任意のパッド(1～16)を押す
-        table
-          tr
-            th パッド
-            th ベロシティ値
-          tr
-            td 1
-            td 8
-          tr
-            td 2
-            td 16
-          tr
-            td 3
-            td 24
-          tr
-            td 4
-            td 32
-          tr
-            td 5
-            td 40
-          tr
-            td 6
-            td 48
-          tr
-            td 7
-            td 56
-          tr
-            td 8
-            td 64
-          tr
-            td 9
-            td 72
-          tr
-            td 10
-            td 80
-          tr
-            td 11
-            td 88
-          tr
-            td 12
-            td 96
-          tr
-            td 13
-            td 104
-          tr
-            td 14
-            td 112
-          tr
-            td 15
-            td 120
-          tr
-            td 16
-            td 127
-      h3.heading.switch
-        | 固定ベロシティ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p ベロシティ値を96に固定する
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shiftを押したまま Velocity を押す
-            li.contentOperationOrderlist Shift を押している間 Velocity ボタンが白に点灯することで、固定ベロシティに設定されていることを確認できる
-        p ベロシティを固定に設定しても、既に録音しているノートのベロシティ値は変わらない
-      h3.heading.switch
-        | ゲート
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | Gate はステップ内のノートの持続時間を表す
-          br
-          |                 ゲートパラメータは整数値だけでなく分数値も使用できる
-          br
-          |                 ステップは1/6 単位で、1/6から16の間で設定可能
-          br
-          |                 ゲート値はパフォーマンスパッドを演奏する際にそれぞれのノートに割り当てられる
-          br
-          |                 パフォーマンスパッドを短く叩くとゲート値は低くなり、パッドを長い間押したままにするとゲート値は上がる
-          br
-          |                 ゲート値が16の場合、そのステッ プ内のノートがパターン全体で鳴り続ける
-      h3.heading.switch
-        | ゲート値の変更
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist GateボタンでGate ビューを開く
-            li.contentOperationOrderlist グリッドの上二行にGate値、下二行にパターンステップが表示される
-            li.contentOperationOrderlist ゲート値の一番高い値のパッドを押すことによって1/6ずつゲートタイムを短縮できる
-      h3.heading.switch
-        | グライド
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | ステップにピッチグライド(ポルタメント)を加える
-          br
-          |                 オシレーターのパターンステップに個別に追加可能
-          br
-          |                 ステップにグライドを追加すると、ステップに割り当てられたノートは通常のピッチでは最初再生されない
-          br
-          |                 グライドタイム設定で決められた時間内で、通常のピッチに向かって昇降する
-          br
-          |                 最初のピッチは直前に再生されたノートのものとなるため、直前のノートがグライドが追加されたステップのノートより上か下かによってピッチが上がるのか下がるのかが決まる
-      h3.heading.switch
-        | グライド値の変更
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shiftと Gateを同時に押しGlide ビューを開く
-            li.contentOperationOrderlist パッド1～16を押す
-        table
-          tr
-            th パッド
-            th グライド値
-          tr
-            td 1
-            td OFF
-          tr
-            td 2
-            td 8
-          tr
-            td 3
-            td 16
-          tr
-            td 4
-            td 24
-          tr
-            td 5
-            td 32
-          tr
-            td 6
-            td 40
-          tr
-            td 7
-            td 48
-          tr
-            td 8
-            td 56
-          tr
-            td 9
-            td 64
-          tr
-            td 10
-            td 72
-          tr
-            td 11
-            td 80
-          tr
-            td 12
-            td 88
-          tr
-            td 13
-            td 96
-          tr
-            td 14
-            td 108
-          tr
-            td 15
-            td 116
-          tr
-            td 16
-            td 127
-        p
-          | グライドの効果の、ゲートやベロシティなどとの違い
-          br
-          |                 グライド値は、ステップごとの属性として個々のステップに割り当てられるのではく、オン、オフの切り替えを行う
-          br
-          |                 グライドがステップに追加されると、そのステップで「グライドオン」のコマンドとして機能する
-          br
-          |                 そのため、使用されているグライドの値は、そのポイントからパターン内の全てのステップに適用されるため、次のステップでその値が変更されない限り、パターン内の全てのノートでその効果が聞こえる
-          br
-          |                 したがって、特定のステップでのみグライドを使用したい場合には、そのステップで必要なグライドの量を割り当て、その後のパターンステップでグライドをゼロに設定する必要がある
-          br
-          |                 これは「グライドオフ」のコマンドとして機能する
-          br
-          |                 グライドタイムは、パターンが割り当てられていないステップを含む、パターン内のいずれのステップにも割り当てることができる
-        p
-          | 短いグライドを追加することで、ノートを「太く」することができる：
-          br
-          |                 グライドタイムが十分な短さである場合、実際のピッチ変化として聞こえることはないが、より大きな 「ボディ」を持つノートとして聞こえる
-    h2.heading.switch
-      | モジュレーションシーケンサー
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | Mod Seq
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | Mod Seqは、パターン内の各ステップのモジュレーションパラメータ値を記録できるトラック
-          br
-          |                 Osc 1 および Osc 2 のトラックと共にパターンに保存され、その他の点では単に追加のシーケンサートラックとして扱われる
-          br
-          |                 4つのソース(Seq)の1つとしてモジュレーションマトリックスで使用できる
-          br
-          |                 8つのマトリックスデスティネーション(割り当て先)のいずれかにルーティングを行い、オシレーターのピッチやパルス幅、VCA レベル、フィルター周波数などを変化させることができる
-        p Mod Seq は、モジュレーションマトリックスに割り当てられていない限りサウンドに影響を与えない
-      h3.heading.switch
-        | Mod値の変更
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Mod Seqを押して、モジュレーションシーケンサービューを開く
-        table
-          tr
-            th パッド
-            th Mod値
-          tr
-            td 1
-            td 8
-          tr
-            td 2
-            td 16
-          tr
-            td 3
-            td 24
-          tr
-            td 4
-            td 32
-          tr
-            td 5
-            td 40
-          tr
-            td 6
-            td 48
-          tr
-            td 7
-            td 56
-          tr
-            td 8
-            td 64
-          tr
-            td 9
-            td 72
-          tr
-            td 10
-            td 80
-          tr
-            td 11
-            td 88
-          tr
-            td 12
-            td 96
-          tr
-            td 13
-            td 104
-          tr
-            td 14
-            td 112
-          tr
-            td 15
-            td 120
-          tr
-            td 16
-            td 127
-      h3.heading.switch
-        | Mod値の削除
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Clearを押しながらステップを押す
-      h3.heading.switch
-        | Smoothモード
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p Mod Seq値が8間隔のため発生する「ジャンプ」を解消(補間)する機能
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shift および Mod Seq を一緒に押して Smooth モードを開く
-        table
-          tr
-            th Smooth有効/無効
-            th Mod Seqボタンの状態
-          tr
-            td 有効
-            td Shift を押すと明るく白く点灯
-          tr
-            td 無効
-            td Shift を押すと暗くなる
-        p
-          | Smoothモードで適用されるグライドは固定レートであるため、テンポと同期レートが高い場合、次のパターンステップでのモジュレーションデプスが目標の値に達するまでの時間が無い
-    h2.heading.switch
-      | パターンの設定
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | パターン同期率を設定
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 同期レートの選択は外部のテンポクロックソースのスレイブとして同期を行う際に便利
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
-            li.contentOperationOrderlist 1行目(パッド1から8)でパターン同期率を設定
-        table
-          tr
-            th パッド
-            th 同期レート
-            th テンポの倍率
-          tr
-            td 1
-            td 1/4
-            td 1/4倍速
-          tr
-            td 2
-            td 1/4 T
-            td
-          tr
-            td 3
-            td 1/8
-            td 1/2倍速
-          tr
-            td 4
-            td 1/8 T
-            td
-          tr
-            td 5
-            td 1/16
-            td 1倍速
-          tr
-            td 6
-            td 1/16 T
-            td
-          tr
-            td 7
-            td 1/32
-            td 2倍速
-          tr
-            td 8
-            td 1/32 T
-            td
-        p パターンが再生されている間に同期レートが変更された場合の反映タイミング
-        table
-          tr
-            th 進行方向
-            th タイミング
-          tr
-            td 「前方」「後方」
-            td パターンの場合には修正されたテンポで再度開始される前に、再生中のパターンが最後まで再生される
-          tr
-            td 「ピンポン」
-            td パターン内の最初または最後のステップのうちより先に到 達する方のタイミングでテンポの変更が適用される
-          tr
-            td 「ランダム」
-            td パターン内のステップ数分が 再生され次第テンポが変化する
-        p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対 して独立して設定可能
-      h3.heading.switch
-        | パターンの進行方向
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
-            li.contentOperationOrderlist 13～16パッドで進行方向を指定
-        table
-          tr
-            th パッド
-            th 進行方向
-            th 詳細
-          tr
-            td 13
-            td 前方
-            td
-              | 開始ステップから最終ステップまで進行し、また頭から繰り返される
-          tr
-            td 14
-            td 後方
-            td 最終ステップから再生され、開始ステップまで戻っていき、繰り返される
-          tr
-            td 15
-            td ピンポン
-            td
-              | 開始ステップから最終ステップまで進行し、それから開始ステップまで戻っていく
-              br
-              |                         パターンの長さが2倍になり、再生方向が逆転するためパターン内の最後と最初のステップが2回再生される
-          tr
-            td 16
-            td ランダム
-            td
-              | パターン内の全てのステップ(定義された長さ内のもの)がランダムな順番で再生される
-              br
-              | ノートを持っていないステップも含まれる
-        p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対 して独立して設定可能
-      h3.heading.switch
-        | パターンの長さ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Pattern Settingsを押してPattern Settings ビューを開く
-            li.contentOperationOrderlist 3,4行目(パッド17から32)でパターンの長さを設定
-        table
-          tr
-            th 最終/開始ステップ
-            th 操作
-          tr
-            td 最終ステップを指定する
-            td パッドを押す
-          tr
-            td 開始ステップを指定する
-            td shift押しながらパッドを押す
-        p Pattern Settings は、Oscillator 1、Oscillator 2、モジュレーションシーケンサーに対して独立して設定可能
-    h2.heading.switch
-      | パターンの編集
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | パターンの保存
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 1つのセッション内に Osc 1 のパターンを 16 個、Osc 2 のパターンを 8個、モジュレーションシーケンサーのパターンを8個保存することができる
-          br
-          |                 パターンの保存は実質的には自動で行われる
-          br
-          |                 使用中のオシレーター用に現在選択されているパターンメモリは、作成中のパターンを保持する
-          br
-          |                 パターンが既に完成している状態であれば、特に追加の動作を行うことなくメモリに保持される
-          br
-          |                 ただし、次回起動時にそのパターンを使用したい場合には、32パターンの各セッ トを現在の Session の一部として保存する必要がある
-      h3.heading.switch
-        | パターンの再生
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th 再生開始位置
-            th 操作
-          tr
-            td パターンの開始ステップから再生
-            td Playボタン
-          tr
-            td 停止位置からの再生
-            td shift+play
-      h3.heading.switch
-        | インスタントパターン切り替え
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p 現在のパターンが完了するまで待たずに、新しいパターンがすぐに再生を開始
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Play モードで Shiftを押しながらパターンを選択
-        p
-          | 直前のパターン内の再生カーソルの位置に関わらず、新しいパターンはステップ 1 から開始され、以前と同じタイミングで最初のステップを再生するため、パターンのテンポは常に保持される
-          br
-          |                 パターンの長さが奇数である場合や、異常な同期レートのためにパターンのタイミングがずれてしまった場合には、インスタントパターン切り替えを行うことで効率的にタイミングを直すことができる
-      h3.heading.switch
-        | パターンのクリア
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p パターンをクリアする
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist PatternsビューでClearを押しながら消去するパターンのパッドを押す
-            li.contentOperationOrderlist Clear とそのパターンのパッドが明るい赤色に点灯する
-      h3.heading.switch
-        | パターンの複製
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Patternsビューを開く
-            li.contentOperationOrderlist
-              | ShiftとClearを一緒に押しながら(Clear が明るい緑に点灯)コピーしたいパターンのパッドを押し(緑に点灯)、ペーストしたいメモリに対応するパッドを押す(赤色に点灯)
-        p
-          | 複数のメモリにパターンデータをコピーしたい場合、ShiftとClearを一緒に押したまま他のステップへのペースト作業を繰り返す
-          br
-          |                 Osc 1 と Osc 2 のパターンは相互にコピー可能
-          br
-          |                 Mod Seqパターンは他の Mod Seq パターンメモリにのみコピー可能
-      h3.heading.switch
-        | パターンチェーン
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | パターンをチェーン化することで最大256ステップのシーケンスを構成することができる
-          br
-          |                 トラックごとに行う
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist patternビューを開く
-            li.contentOperationOrderlist チェーン化を行う一番小さい数のパターンのパッドを押しながら、次に一番大きな数のパターンのパッドを押す
-            li.contentOperationOrderlist 選択したパッドがトラックカラーで明るく点灯し、それらが全てチェーン化されたシーケンスの一部を構成することを確認できる
-        p
-          | Osc 1、Osc 2、モジュレーションシーケンサーのパターンチェーンを互いに独立して作成したり、Osc 1 パター ンのみのチェーンを作成することもできる
-          br
-          |                 ただし、全てのトラックには「アクティブ」なパターンが含まれており、Osc 2 およびモジュレーションシーケンサーで選択されているパターンメモリ内のいかなるデータも再生されるため、Osc 1 を単独で使用する場合は、他の 2つのトラックが空のパターンメモリを再生する必要がある
-          br
-          |                 チェーン化するパターンはパターン番号が連番になっている必要がある
-      h3.heading.switch
-        | パターンオクターブ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p パターン全体のピッチをオクターブ単位で上下にシフト可能
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shift を押しながら Oct ▲ or Oct ▼ を押す
-        p
-          | パターンの再生モードおよび停止モードどちらの場合にも行える
-          br
-          |                 Pattern ビュー または Patches ビューでパターンオクターブを変更することはできない
-          br
-          |                 現在選択されているオシレーターのピッチのみを調整することができ、他のオシレーターのピッチは影響を受けない
-      h3.heading.switch
-        | ミューテート
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | パターンまたはパターンチェーンを構成するノートをシャッフルする機能
-          br
-          |                 パターンレングス、同期レート、その他のパターンパラメータを保持しつつ、パターンのノートを異なるステップに再度割り当てる
-          br
-          |                 同じノートが再生されるが、再割り当ては シャッフルで行われるため、全体のパターンテンポは維持されつつ順序やタイミングが変化する
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Noteビューを開く
-            li.contentOperationOrderlist Shift と Pattern Settings ボタンを一緒に押す
-        p
-          | ノートは異なるステップに割り当てられ、パターンが新しい配置を使用して定義されたパターンレングスでループし続ける
-          br
-          |                 パターンチェーンが使用されている場合、チェーンを構成する各パターンは個別にミューテートされるが、パターンは通常のシーケンス内で引き続き再生される
-          br
-          |                 一旦実行してしまうとキャンセルして元のパターンまたはパターンチェーンに戻ることができない
-      h3.heading.switch
-        | パターンをリアルタイムに録音する
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist パッチを選択する
-            li.contentOperationOrderlist オシレーター 1 の Note ビュー に切り替え、Play を押してパターンを再生
-            li.contentOperationOrderlist
-              | Record を押して演奏を行う
-              br
-              |                         録音中は、ステップカーソル(通常は白色)が赤色に変化してパターン内を移動し、パターンに変更を加えようとしていることを示す
-              br
-              |                         Osc 1 および Osc 2 のミキサーレベルコントロールも赤に変わる
-            li.contentOperationOrderlist 16ステップ分のパターンが完成すると、ノートが再生される
-            li.contentOperationOrderlist 必要なノートを演奏したら、再度 Play を押して録音とシーケンサーを停止させる
-        p オシレーター 2 のノートをシーケンスに追加する方法
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist ShiftとScalesを同時に押してパラフォニックモード 2 を選択
-            li.contentOperationOrderlist MIXER セクションで Osc 2 のレベルが上げられていることを確認する
-            li.contentOperationOrderlist オシレーター 2 の Note ビュー に切り替え、同じ方法で録音する
-            li.contentOperationOrderlist パラフォニックモード 2 では、Osc 1 と同じように演奏されているノートが聞こえる
-    h2.heading.switch
-      | テンポとスウィング
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | テンポの調整
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Tempo コントロールにわずかに触れる
-            li.contentOperationOrderlist パッドグリッド上に、青と白で 2～3桁で構成される BPM が表示される
-            li.contentOperationOrderlist Tempo コントロールを動かして調整
-            li.contentOperationOrderlist テンポ表示が 1.6 秒後に タイムアウトし、グリッド表示が直前のビューに戻る
-        p テンポの範囲
-        table
-          tr
-            th テンポクロックのソース
-            th 範囲
-          tr
-            td 内部テンポクロック
-            td 40～240 BPM(デフォルトは120 BPM)(小数部分は適用されない)
-          tr
-            td 外部 MIDI クロックソース
-            td 40 ～240 BPM(小数部分を含めて適用される)
-      h3.heading.switch
-        | タップテンポ
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p タップテンポはいつでも使用できる
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Tap ボタンで四分音符をタップする
-            li.contentOperationOrderlist 直近5回の平均(最低3回)でBPMが設定される
-      h3.heading.switch
-        | スウィング
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 奇数の長さを持つパターンでスウィングを変更すると、特に興味深いリズム効果が得られる
-          br
-          |                 スウィング(50%以外に設定されている場合)は、アナログクロック出力に適用されない
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Shiftを押しながらTempoを動かす
-            li.contentOperationOrderlist スウィングのパーセンテージの値が変化する
-        table
-          tr
-            th スウィング値
-            th 奇数の拍とその前の偶数の拍の間の間隔
-          tr
-            td 20～49%
-            td 短くなる
-          tr
-            td 50%
-            td
-              | デフォルト
-              br
-              |                         等間隔
-          tr
-            td 51～80%
-            td 長くなる
-      h3.heading.switch
-        | スウィング同期
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | Tempo コントロールでスウィング値を手動で設定することに加えて、広範囲のスウィング同期レートを設定できる
-          br
-          |                 これは「範囲」を定めるコントロールで、スウィングパラメータが代替ノートをシフトするテンポのインターバルを定義する
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist ShiftとTapを同時に押し、スウィング同期ビューを表示する
-        table
-          tr
-            th パッド
-            th スウィング同期レート
-          tr
-            td 1
-            td 1/4
-          tr
-            td 2
-            td 1/4 T
-          tr
-            td 3
-            td 1/8
-          tr
-            td 4
-            td 1/8 T
-          tr
-            td 5
-            td 1/16(デフォルト)
-          tr
-            td 6
-            td 1/16 T
-          tr
-            td 7
-            td 1/32
-          tr
-            td 8
-            td 1/32 T
-    h2.heading.switch
-      | ノブとスライダーのオートメーション
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | オートメーション
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p パターンを再生している際、任意のシンセコントロールを動かしてサウンドに変化を加えることができる
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Recordを押しながらノブやスライダーを動かす
-            li.contentOperationOrderlist Recordを離す
-        p
-          | 全てのロータリーおよびスライダーシンセコントロールはこの方法でオートメーションを記録することができる
-          br
-          |                 また、1つのシンセパラメータに各レコーディングデータを記録するための合計53のオートメーション「レーン」が備わっている
-          br
-          |                 Coarse および Fine Pitch といった割り当て可能なコントロールは、Osc 1 および Osc 2 で独立してオートメーションを記録でき、Pulse Width(Shift + Fine)も、両方のオシレーターに対してオートメーションを記録できる
-          br
-          |                 モジュレーションマトリックスには 32のオートメーションレーンが割り当てられており、Depthコントロールの動きは、現在のソース(4つのうちの1つ)およびデスティネーション(8つのうちの1つ)の割り当てとともに記録される
-          br
-          |                 ただし、全てのスイッチと Tempo/Swing または Volume コントロールのオートメーションは記録されない
-      h3.heading.switch
-        | シーケンス停止中にシンセコントロールの動きを記録する
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Noteビューで Record を押し、変更を加えたいステップに対応するパッドを押し続けるとそのステップに含まれるノートが再生される
-            li.contentOperationOrderlist シンセコントロールを調整すると、オートメーションデータに新しい値が書き込まれる
-            li.contentOperationOrderlist 再度 Record を押す
-            li.contentOperationOrderlist シーケンスを走らせると、そのステップに加えられたノブ/スライダーのエフェクトが聞こえる
-      h3.heading.switch
-        | マクロのオートメーションデータを削除
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist Clearを押したまま該当するノブを20%以上回転させる
-            li.contentOperationOrderlist ノブ下の LED が赤く点灯し、確認できる
-        p シーケンサーの現在のステップだけでなく、パターン全体のマクロのオートメーションデータを消去する
-    h2.heading.switch
-      | システム設定
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
-        | システム設定の開始/終了
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th 開始/終了
-            th 操作
-          tr
-            td 開始
-            td Shiftを押しながら Power ボタンを押して起動
-          tr
-            td 終了
-            td Playボタンを押す
-      h3.heading.switch
-        | MIDI 入出力
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        .contentOperationBox
-          p.contentOperationCaption 操作
-          ul.contentOperationOrderlistGroup
-            li.contentOperationOrderlist 電源を切った状態にする
-            li.contentOperationOrderlist Shiftを押しながら Power ボタンを押す
-            li.contentOperationOrderlist 1から32パッドを押す
-        table
-          tr
-            th パッド
-            th
-          tr
-            td 1
-            td
-              | MIDIチャンネル1を選択
-              br
-              | デフォルト設定では、Osc 1が設定されている
-          tr
-            td 2
-            td
-              | MIDIチャンネル2を選択
-              br
-              | デフォルト設定では、Osc 2が設定されている
-          tr
-            td 3
-            td MIDIチャンネル3を選択
-          tr
-            td 4
-            td MIDIチャンネル4を選択
-          tr
-            td 5
-            td MIDIチャンネル5を選択
-          tr
-            td 6
-            td MIDIチャンネル6を選択
-          tr
-            td 7
-            td MIDIチャンネル7を選択
-          tr
-            td 8
-            td MIDIチャンネル8を選択
-          tr
-            td 9
-            td MIDIチャンネル9を選択
-          tr
-            td 10
-            td MIDIチャンネル10を選択
-          tr
-            td 11
-            td MIDIチャンネル11を選択
-          tr
-            td 12
-            td MIDIチャンネル12を選択
-          tr
-            td 13
-            td MIDIチャンネル13を選択
-          tr
-            td 14
-            td MIDIチャンネル14を選択
-          tr
-            td 15
-            td MIDIチャンネル15を選択
-          tr
-            td 16
-            td グローバルデータの MIDI Tx/Rx
-          tr
-            td 17
-            td アナログクロックレート1 ppqn
-          tr
-            td 18
-            td
-              | アナログクロックレート2 ppqn
-              br
-              | デフォルト
-          tr
-            td 19
-            td アナログクロックレート4 ppqn
-          tr
-            td 20
-            td アナログクロックレート8 ppqn
-          tr
-            td 21
-            td アナログクロックレート24 ppqn
-          tr
-            td 22
-            td 無し
-          tr
-            td 23
-            td 無し
-          tr
-            td 24
-            td ポットピックアップのON/OFF
-          tr
-            td 25
-            td MIDI Note RXのON/OFF切り替え
-          tr
-            td 26
-            td MIDI Note TXのON/OFF切り替え
-          tr
-            td 27
-            td MIDI CC RXのON/OFF切り替え
-          tr
-            td 28
-            td MIDI CC TXのON/OFF切り替え
-          tr
-            td 29
-            td 無し
-          tr
-            td 30
-            td 無し
-          tr
-            td 31
-            td
-              | MIDI Clock RXのON/OFF切り替え
-              br
-              |                         オンの場合、Circuit Mono Station はクロックマスターとなり、リアパネルの USB および MIDI OUT コネクタ、そして、CLOCK OUT コネクタではアナログ形式で内部クロックを MIDI クロックとして使用できるようになる
-          tr
-            td 32
-            td
-              | MIDI Clock TXのON/OFF切り替え
-              br
-              |                         オンの場合、Circuit Mono Station はクロックスレーブとなり、以下の優先順位に従って外部から適用 されたクロックを使用する
-      h3.heading.switch
-        | 外部機器連携
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th 入力/出力
-            th 詳細
-          tr
-            td 出力
-            td
-              | 本体のほとんどの機能およびシンセパラメータはデフォルトでMIDI データを外部機器に伝送する
-              br
-              |                         MIDI データの伝送に加え、Circuit Mono Station には標準 CV + GATE 出力が搭載されている
-              br
-              |                         CV および GATE 出力は、リアパネルでそ れぞれ 3.5mm のジャックソケットとして備わっている
-              br
-          tr
-            td 入力
-            td
-              | Circuit Mono Stationは多くの場合DAW またはシーセンサーからの MIDI データによって制御が可能
-              br
-              |                         外部キーボードのピッチおよびモジュレーションホイールに対応していない
-              br
-              |                         部 MIDI コントロールを 最初に有効化する必要がある
-              br
-              |                         送受信およびチャンネル選択を含む MIDI 設定は、 システム設定ビューで制御を行う
-        p
-          | パターンの再生中は常にノートデータが存在し、CV 出力はオシレーター 1 のピッチ値を伝送する
-          br
-          |                 これにより、外部シンセ(例：ユーロラックモジュールなど)のピッチを Osc 1 Range、Coarse および Fine コントロールで制御できる
-          br
-          |                 CV 出力は1V/ オクターブでスケールされ、0 V ～ 7 V: MIDI Note #24 (C1) = 0 V、MIDI Note #36 (C2) = +1 V の範囲を対象とする
-          br
-          |                 リニアスケーリングは、その他のノートのオクター ブ内で適用される
-        p
-          | GATE 出力は、+5V アンプのノートごとのパルスであり、その長さはノートの長さに等しく、上昇時間は 140170μs
-          br
-          |                 GATEパルスはCV 電圧よりも後に部分的に出力され、ノートがオンになる前に、外部機器がそのピッチを安定させることができるようになる
-          br
-          |                 Circuit Mono Station には AUX CV 出力 7 も備わっており、外部シンセモジュールに接続することができる
-          br
-          |                 AUX CV は、モジュレーションマトリックスの 8つのデスティネーションのうちの1つであり、任意のマトリックスソースを割り当てることができる
-          br
-          |                 電圧の範囲は、-5V～+5V
-          br
-          |                 複数のモジュレーションソースを使用している場合は、Depth コントロール 40を注意して調整する必要がある
-          br
-          |                 これはマトリックスのアディティブな性質がクリッピングを起こす可能性があるため
-      h3.heading.switch
-        | ポットピックアップ設定
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            th ポットピック
-            th
-          tr
-            td OFF
-            td
-              | デフォルト
-              br
-              |                         コントロールを動かすと保存されているパッチパラメータから引き継がれる
-              br
-              |                         値は通常通りにノブの位置によって決まる
-              br
-              |                         ポットが動かされるとパラメータに突然変化が加えられる
-          tr
-            td ON
-            td
-              | パッチの保存したパラメータ値に物理的に関連した位置にコントロールを動かすことで、コントロールが有効になる
-              br
-              |                         コントロールが「ヌル」ポイントに達するまで無効となり、パラメータレベルにおける急な変更が回避される
-      h3.heading.switch
-        | 外部クロック
-        span.swithCondition.contentClosed
-      section.h3content.hide
-        p
-          | 内部/外部クロック選択は システム設定ビューで行う
-          br
-          |                 外部クロックが選択されると、検出されたクロックソースとして有効なクロック信号が使用され、グリッド上に赤と白で「SYN」と示される
-          br
-          |                 外部MIDIクロックは、USB または MIDI IN ブレークアウトケーブルのいずれかを使用することで適用できる
-          br
-          |                 TRS MIDI IN とUSB ポートの両方が有効なクロック信号を受信した場合、TRS MIDI INが USB ポートよりも優先される
-          br
-          |                 外部クロックが解除された(あるいは範囲外となった)場合、再生が停止し、内部クロックに切り替わる
-          br
-          |                 Play ボタンが押される(キャンセルされる)まで、「SYN」ディスプレイは表示されたままになる
-          br
-          |                 キャンセルされると、ディスプレイにはセッションに保存されたBPM 値が表示され、Tempo コントロールを使用してテンポを調整できるようになる
-    h2.heading.switch
-      | シフト
-      span.swithCondition.contentClosed
-    section.h2content.hide
-      h3.heading.switch
+                |                         コントロールが「ヌル」ポイントに達するまで無効となり、パラメータレベルにおける急な変更が回避される
+        h3.heading.switch
+          | 外部クロック
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p
+            | 内部/外部クロック選択は システム設定ビューで行う
+            br
+            |                 外部クロックが選択されると、検出されたクロックソースとして有効なクロック信号が使用され、グリッド上に赤と白で「SYN」と示される
+            br
+            |                 外部MIDIクロックは、USB または MIDI IN ブレークアウトケーブルのいずれかを使用することで適用できる
+            br
+            |                 TRS MIDI IN とUSB ポートの両方が有効なクロック信号を受信した場合、TRS MIDI INが USB ポートよりも優先される
+            br
+            |                 外部クロックが解除された(あるいは範囲外となった)場合、再生が停止し、内部クロックに切り替わる
+            br
+            |                 Play ボタンが押される(キャンセルされる)まで、「SYN」ディスプレイは表示されたままになる
+            br
+            |                 キャンセルされると、ディスプレイにはセッションに保存されたBPM 値が表示され、Tempo コントロールを使用してテンポを調整できるようになる
+      h2.heading.switch
         | シフト
         span.swithCondition.contentClosed
-      section.h3content.hide
-        table
-          tr
-            td Shift+Scales
-            td パラフォニックモード1/2の切り替え
-          tr
-            td Shift+Note
-            td 拡大ビューを開く
-          tr
-            td Shift+Velocity
-            td パターン内の各ノートに固定ベロシティを割り当てる
-          tr
-            td Shift+Gate
-            td グライドビューを開き、各ステップにグライド値を割り当てる
-          tr
-            td Shift+Pattern Settings
-            td 現在のパターン内のステップをランダムに並び替える
-          tr
-            td Shift+Clear
-            td パターンやステップに対するコピーアンドペースト機能
-          tr
-            td Shift+Osc1
-            td フィルター周波数に再生中のノートのピッチをトラッキングさせる
-          tr
-            td Shift+Osc2
-            td Osc1の波形にOsc2の波形をトリガーさせる
-          tr
-            td Shift+Mod Seq
-            td モジュレーションシーケンストラックのアクションを変更
-          tr
-            td Shift+Tempo
-            td タイムシフトによってパターン内のノートを交互に入れ替える
-          tr
-            td Shift+Tap
-            td レンジパラメータをスウィングに適用する
-          tr
-            td Shift+Fine
-            td パルス波形のデューティーサイクルを変更
-          tr
-            td Shift+Oct▲、Oct▼
-            td レコーディング後にパターンのオクターブを変更
-          tr
-            td Shift+Audio In
-            td 外部オーディオ入力のゲインを調節
-          tr
-            td Shift+Patches
-            td イニシャルパッチをロードし、すべてのシンセパラメータをデフォルト状態にリセット
-          tr
-            td Shift+Patern(パターンビュー内)
-            td 現在のパターンが終わるまで待たずに、すぐに新しいパターンの再生
+      section.h2content.hide
+        h3.heading.switch
+          | シフト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Shift+Scales
+              td パラフォニックモード1/2の切り替え
+            tr
+              td Shift+Note
+              td 拡大ビューを開く
+            tr
+              td Shift+Velocity
+              td パターン内の各ノートに固定ベロシティを割り当てる
+            tr
+              td Shift+Gate
+              td グライドビューを開き、各ステップにグライド値を割り当てる
+            tr
+              td Shift+Pattern Settings
+              td 現在のパターン内のステップをランダムに並び替える
+            tr
+              td Shift+Clear
+              td パターンやステップに対するコピーアンドペースト機能
+            tr
+              td Shift+Osc1
+              td フィルター周波数に再生中のノートのピッチをトラッキングさせる
+            tr
+              td Shift+Osc2
+              td Osc1の波形にOsc2の波形をトリガーさせる
+            tr
+              td Shift+Mod Seq
+              td モジュレーションシーケンストラックのアクションを変更
+            tr
+              td Shift+Tempo
+              td タイムシフトによってパターン内のノートを交互に入れ替える
+            tr
+              td Shift+Tap
+              td レンジパラメータをスウィングに適用する
+            tr
+              td Shift+Fine
+              td パルス波形のデューティーサイクルを変更
+            tr
+              td Shift+Oct▲、Oct▼
+              td レコーディング後にパターンのオクターブを変更
+            tr
+              td Shift+Audio In
+              td 外部オーディオ入力のゲインを調節
+            tr
+              td Shift+Patches
+              td イニシャルパッチをロードし、すべてのシンセパラメータをデフォルト状態にリセット
+            tr
+              td Shift+Patern(パターンビュー内)
+              td 現在のパターンが終わるまで待たずに、すぐに新しいパターンの再生
     include ../_include/_footer.pug
