@@ -547,7 +547,7 @@ html(lang="ja")
           p
             | パターンに 16個以上のステップが含まれている場合は、[PAGE]キーを押して編集するパターンページを選択する
           p
-            | <PATTERN PAGE>のLEDが点灯していパターンページがアクティブでGRID RECORDINGモードを終了するには[REC]を押す
+            | &lt;PATTERN PAGE&gt;のLEDが点灯していパターンページがアクティブでGRID RECORDINGモードを終了するには[REC]を押す
           p
             | • トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトさせることができる
             br
@@ -722,9 +722,9 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p
-            | パターンに 16個以上のシーケンサーステップが含まれる場合、<PATTERN PAGE>のLEDで示される
+            | パターンに 16個以上のシーケンサーステップが含まれる場合、&lt;PATTERN PAGE&gt;のLEDで示される
             br
-            |                 パターンを再生すると、現在アクティブなパターンページが、<PATTERN PAGE>のLEDが点滅して示される
+            |                 パターンを再生すると、現在アクティブなパターンページが、&lt;PATTERN PAGE&gt;のLEDが点滅して示される
           table
             tr
               th パターンの再生を開始
@@ -2340,8 +2340,6 @@ html(lang="ja")
             br
             |                 MIDIトラックのパラメータは、 パターンと共に保存される
           p
-            | 編集するMIDIトラックを選択するには、[TRK]キーを押して[TRIG 9～16]キーのいずれかを押す
-          p
             | MIDIトラックは8つ
             br
             |                 MIDIトラックは、外部 MIDI搭載機器の制御に使用される
@@ -2355,6 +2353,12 @@ html(lang="ja")
             |                 任意の MIDIチャンネルをMIDIトラックに割り当てることができ、複数のトラックを同じチャンネルで共有できる
             br
             |                 複数のトラックが同じMIDIチャンネルに割り当てられている場合で、パラメータが競合する場合は、番号が最も小さいトラックが優先される
+          p
+            | 編集するMIDIトラックを選択する
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist [TRK]キーを押して[TRIG 9～16]キーのいずれかを押す
         h3.heading.switch
           | TRIG PARAMETERSページ
           span.swithCondition.contentClosed

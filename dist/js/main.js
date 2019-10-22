@@ -19,4 +19,11 @@ const show = () => {
 for (var i = 0; i < menu.length; i++) {
     menu[i].addEventListener("click", show);
 }
+var loaderLayer = document.getElementById("js-loadingLayer");
+var loadedTransiton = function () {
+    if (loaderLayer !== null) {
+        loaderLayer.classList.remove("active");
+    }
+};
+window.addEventListener("load", loadedTransiton);
 //# sourceMappingURL=main.js.map
