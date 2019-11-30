@@ -66,15 +66,26 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p Global Menu内のAuto EditをONにすることを推奨
-          p
-            | 基本的なプログラミングは、パラメーターマトリクスで行う
-            br
-            |  パラメーターの変更はロータリーコントロールノブで行う
-            br
-            |  エディット階層の変更はマトリックス左のナビゲーションボタン、ディスプレイパラメーターダイヤル
-            br
-            |  メニューページのブラウズはセレクションダイヤル
-          p 5つのエディット階層 Oscilators Filetrs Modulation Effects Arpeggiator
+          table
+            tr
+              td 基本的なプログラミング
+              td パラメーターマトリクスで行う
+            tr
+              td パラメーターの変更
+              td ロータリーコントロールノブで行う
+            tr
+              td エディット階層の変更
+              td マトリックス左のナビゲーションボタン、ディスプレイパラメーターダイヤル
+            tr
+              td メニューページのブラウズ
+              td セレクションダイヤル
+          p 5つのエディット階層
+            ul
+              li Oscilators
+              li Filetrs
+              li Modulation
+              li Effects
+              li Arpeggiator
           p ディスプレイパラメーターをエディットする際、パネルパラメーターを調整可能
         h3.heading.switch
           | パラメーターを変更せずにチェックする
@@ -196,7 +207,7 @@ html(lang="ja")
                 br
                 | 最小：0
                 br
-                | 最大127
+                | 最大：127
             tr
               td テンポ
               td
@@ -206,7 +217,7 @@ html(lang="ja")
                 br
                 | 最小：40
                 br
-                | 最大300
+                | 最大：300
         h3.heading.switch
           | マルチプログラムのパート選択
           span.swithCondition.contentClosed
@@ -244,7 +255,7 @@ html(lang="ja")
                 br
                 | 最小：0
                 br
-                | 最大127
+                | 最大：127
             tr
               td Pan
               td
@@ -280,7 +291,7 @@ html(lang="ja")
                 br
                 | 最小：-48
                 br
-                | 最大+48
+                | 最大：+48
             tr
               td Detune
               td
@@ -288,7 +299,7 @@ html(lang="ja")
                 br
                 | 最小：-64
                 br
-                | 最大+63
+                | 最大：+63
             tr
               td Low Vel
               td
@@ -298,7 +309,7 @@ html(lang="ja")
                 br
                 | 最小：1
                 br
-                | 最大127
+                | 最大：127
             tr
               td High Vel
               td
@@ -308,7 +319,7 @@ html(lang="ja")
                 br
                 | 最小：1
                 br
-                | 最大127
+                | 最大：127
             tr
               td Low Key
               td
@@ -338,7 +349,7 @@ html(lang="ja")
               td
                 | receive：キーボードから入力されるMIDIデータを受信する
                 br
-                |  ignore：キーボードから入力されるMIDIデータを無視する
+                | ignore：キーボードから入力されるMIDIデータを無視する
             tr
               td Pitch Bend
               td
@@ -724,12 +735,16 @@ html(lang="ja")
           p Resonance
           p
             | カットオフ周波数帯付近の帯域を強調
-            br
-            | 低い設定値0～80：明るさを加える
-            br
-            | 高い設定地80～113：カットオフ周波数付近がブースト
-            br
-            | 113以上：フィルター自身がサイン波で自己発振しはじめる
+          table
+            tr
+              td 低い設定値0～80
+              td 明るさを加える
+            tr
+              td 高い設定値80～113
+              td カットオフ周波数付近がブースト
+            tr
+              td 113以上
+              td フィルター自身がサイン波で自己発振しはじめる
           p Type
           table
             tr

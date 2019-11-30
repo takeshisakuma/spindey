@@ -16,17 +16,19 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p
-            | ポーズ中
-            br
-            | パッドをタップする
-            br
-            | パッドが点灯している場合、インストゥルメントが選択されていることを意味する
+            | ポーズ中に音色を選択する
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist パッドをタップする(パッドが点灯している場合、音色が選択されていることを意味する)
           p
-            | レコーディング中
-            br
-            | レコーディング中にノートを入力せずにインストゥルメントを選択するには、
-            span.controllerButton Shift
-            | を押しながら任意のパッドをタップ
+            | レコーディング中にノートを入力せずに音色を選択する
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton Shift
+                  | を押しながら任意のパッドをタップ
         h3.heading.switch
           | 音色
           span.swithCondition.contentClosed
@@ -311,7 +313,9 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p DrumBruteは、16パターンを4つのバンク、合計64パターンを使用することができる
-          p パターンのデフォルトの長さは16ステップだが、最長で64ステップまでの長さを設定可能
+          p パターンのデフォルトの長さは16ステップ
+            br
+            | 最長で64ステップまで設定可能
         h3.heading.switch
           | スポット・イレース
           span.swithCondition.contentClosed
@@ -327,15 +331,11 @@ html(lang="ja")
           | ステップ入力
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | ステップ・ボタンを押す
-            br
-            br
-            |  点灯しているステップ・ボタンには、イベントが含まれているが、暗いボタンにはイベントが含まれない
-            br
-            |  必要に応じてステップ・ボタンを使用してイベントのオン/オフを切替える
-            br
-            |  ステップ・モードでオフからオンに切り替えるとイベントは常に青色に点灯する
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ステップ・ボタンを押す
           p ボタンの点灯色
           table
             tr
@@ -349,14 +349,7 @@ html(lang="ja")
               td アクセント付
           p
             | インストゥルメント・トラック内の特定のステップのベロシティを素早く増やす
-            br
-            |  赤色に点灯したステップ・ボタンは、そのステップにアクセント・イベントが発生していることを示す
-          p
-            | ステップ・ボタンを使用してアクセント・イベントを入力する
-            br
-            |  アクセント・モードでオフからオンに切り替えるとイベントは赤く点灯する
-            br
-            |  青色のイベントは、そのステップにイベントがすでに存在しているが、アクセントになっていないことを示す
+
         h3.heading.switch
           | ステップ・リピート
           span.swithCondition.contentClosed
@@ -599,12 +592,18 @@ html(lang="ja")
               td ステップ17~32
               td 暗いLED
               td ピンク(白+赤)のLED
-          p
-            | 赤いLEDは、パターン内の現在のステップ・グループを示す
-            br
-            |  白いLEDはパターンの
-            span.controllerButton Last Step
-            | がそのステップ・グループにあることを意味する
+
+          table
+            tr
+              td 赤いLED
+              td パターン内の現在のステップ・グループを示す
+            tr
+              td 白いLED
+              td ターンの
+                span.controllerButton Last Step
+                | がそのステップ・グループにあることを意味する
+
+
       h2.heading.switch
         | パターン(コピー)
         span.swithCondition.contentClosed
@@ -614,11 +613,15 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p  パターン・データを最大16ステップまでコピーして、既存のパターンの最後に貼り付ける
-          p
-            span.controllerButton Shift
-            | を押しながら
-            span.controllerButton >>
-            | を押す
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton Shift
+                  | を押しながら
+                  span.controllerButton >>
+                  | を押す
           table
             tr
               td パターンに16以上のステップがある場合
@@ -807,16 +810,24 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p ソロ・モードに入る
-          p
-            span.controllerButton Solo
-            | を押す
-            br
-            |  グループにしたいパッドをタップし点灯させる
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton Solo
+                  | を押す
+                li.contentOperationOrderlist グループにしたいパッドをタップし点灯させる
+
           p
             | ソロ・グループのオン/オフを切り替える
-            br
-            span.controllerButton Solo
-            | を押す
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton Solo
+                  | を押す
+
           p ミュート・グループを設定するプロセスは同じ
           p
             | 共有チャンネル上のインストゥルメントを個別に、ミュート、またはソロにすることができる
@@ -996,12 +1007,16 @@ html(lang="ja")
             | • ノートイベントのステータス(ステップ・オン/オフ)
             br
             |  • ノートイベントのベロシティ(アクセントのオン/オフ)
-          p
-            | ランダムネスコントロールの範囲
-            br
-            | 最小値：0%　音楽に影響を与えない
-            br
-            |  最大値：100%　リズム、ベロシティ、パターン内のノートも完全にランダムになる
+
+          table
+            caption ランダムネスコントロールの範囲
+            tr
+              td 最小値：0%
+              td 音楽に影響を与えない
+            tr
+              td 最大値：100%
+              td リズム、ベロシティ、パターン内のノートも完全にランダムになる
+
           table
             caption ランダムネスのカレントトラック・ボタン
             tr

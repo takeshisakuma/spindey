@@ -1,0 +1,2652 @@
+- var pagename='KAOSS DJ|spindey.com'
+- var description='KORGのKAOSS DJのマニュアルです。'
+- var keywords='KAOSS DJ,KORG'
+doctype html
+html(lang="ja")
+  include ../_include/_head.pug
+  body
+    h1.heading KAOSS DJ
+    main.equipmentMain
+      h2.heading.switch
+        | トラックの再生
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | トラックに曲をロードして再生する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Browseノブを回してファイルを選択
+                  br
+                  | (フォルダの階層変更：Shiftボタンを押しながらBrowseノブを回す)
+                li.contentOperationOrderlist 「Load Aボタン」または「Load Bボタン」でトラックを各デッキにロード
+                li.contentOperationOrderlist 「Playボタン」でトラックを再生
+
+      h2.heading.switch
+        | MIX
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | 音声を出力する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 2つのデッキの音量を調節してミックスする
+
+          table
+            tr
+              td 各デッキから出力される音声レベルを調整
+              td Gainノブ、レベル・フェーダー
+            tr
+              td 音声を出力するデッキを切り替える
+              td クロス・フェーダー
+            tr
+              td スピーカーの音声レベルを調整
+              td Masterノブ
+
+        h3.heading.switch
+          | モニター出力を調節する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td A、Bデッキそれぞれのモニター出力をオン/オフ切り替え
+              td ヘッドホン・キュー・ボタン
+            tr
+              td ヘッドホン端子へのマスター・アウト・レベルとモニター・アウト・ レベルの出力バランスを調節
+              td モニターBalanceノブ
+            tr
+              td ヘッドホンの音量を調節
+              td Headphoneノブ
+
+        h3.heading.switch
+          | レベル・メーターに表示するレベルを切り替える
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shiftボタンを押しながら、ヘッドホン・キュー・ボタンを押す
+
+
+
+      h2.heading.switch
+        | 曲のテンポを変化させる
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Key Lock機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p テンポを変えても音程が変わらなくする
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shiftボタンを押しながらPlayボタンを押してKey LockのOn/Offを切り替える
+
+        h3.heading.switch
+          | 2つのデッキの曲のテンポを自動的に合わせる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Sync機能を使ってテンポを合わせる
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Syncボタンを押して、2つのデッキの再生速度と拍を合わせる
+
+
+        h3.heading.switch
+          | 曲のテンポを確認しながら再生速度を変える(大きく変化させる)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ピッチ・フェーダーでAまたはBのデッキの再生速度をもう一方のデッキに合わせる
+          table
+            tr
+              th フェーダーを上げる
+              td 再生速度が遅くなる
+            tr
+              th フェーダーを下げる
+              td 再生速度が速くなる
+
+
+
+        h3.heading.switch
+          | 曲のテンポを確認しながら再生速度を変える(微調整)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 2つのデッキの拍がずれているときは、タッチ・ホイールまたはタッチ・スライダーを使って拍のズレを修正
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押して、タッチ・スライダーをノーマル・モードに設定
+                li.contentOperationOrderlist タッチ・スライダーの中央を押して、タッチ・ホイールのスクラッチ・モードをオフにする
+
+          p タッチ・ホイール
+          table
+            tr
+              th 左回り
+              td 再生速度が減速
+            tr
+              th 右回り
+              td 再生速度が加速
+          p タッチ・スライダー
+          table
+            tr
+              th 左
+              td 遅くなる
+            tr
+              th 中央
+              td スクラッチOn/Oﬀの切り替え
+            tr
+              th 右
+              td 速くなる
+            tr
+              th タッチ・スライダー・モード・ボタン(無印のボタン)
+              td LED を消灯させるとノーマル・モード
+
+      h2.heading.switch
+        | スクラッチ、サーチ
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | スクラッチ、サーチ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押して、タッチ・スライダーをノーマル・モードに設定
+                li.contentOperationOrderlist タッチ・スライダー のセンターを押して、タッチ・ホイールのスクラッチ・モードをオンにする
+                li.contentOperationOrderlist タッチ・ホイールで再生位置を調整(スクラッチ)
+                  br
+                  | Shiftボタンを押しながら、タッチ・ホイールに触れると、触れる位置で再生位置を大きく調整可能
+          table
+            tr
+              th 左回り
+              td 再生位置を戻す
+            tr
+              th 右回り
+              td 再生位置をすすめる
+
+
+      h2.heading.switch
+        | CUE
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | CUE
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 頭出ししたい位置をあらかじめ設定しておき、呼び出してその位置から再生する
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 曲の頭出しをしたいところで一時停止し、Cueボタンを押すと、一時停止している位置にキュー・ポイントが設定される
+                li.contentOperationOrderlist 再生中にCueボタンを押し、そのまま押し続けるとと、キュー・ポイントに戻った後、 キュー・ポイントから再生
+                li.contentOperationOrderlist Cueボタンを押すのをやめると、キュー・ポイントに戻り、停止
+                  br
+                  | Shiftボタンを押しながらCueボタンを押すと曲の先頭から再生
+
+
+
+
+      section.h2content.hide
+        h3.heading.switch
+          | Hot.Cue
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Hot Cueは1トラックにつき3か所まで設定できる
+            br
+            | Hot Cueを設定した位置から瞬時に再生
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押しHot Cue LEDを点灯させて、タッチ・スライダーをHot Cueモードにする
+
+          p Hot Cueモード時の操作
+          table
+            tr
+              th Hot Cueを設定
+              td 再生中または一時停止中にタッチ・スライダーの右、左または中央を押す
+            tr
+              th Hot Cueポイントから再生
+              td Hot Cueを設定したタッチ・スライダー の右、左または中央を押す
+            tr
+              th Hot Cueポイントを消去
+              td Shiftボタンを押しながらタッチ・スライダーの右、左または中央を押す
+
+
+
+
+          p タッチ・スライダー
+          table
+            tr
+              th 左
+              td Hot Cue 1
+            tr
+              th 中央
+              td Hot Cue 2
+            tr
+              th 右
+              td Hot Cue 3
+            tr
+              th タッチ・スライダー・モード・ボタン(無印のボタン)
+              td LEDを点灯させてタッチ・スライダーをHot Cueモードにする
+
+
+
+
+
+      h2.heading.switch
+        | LOOPを使う
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | オート・ループ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 曲のビートに合わせて最適なループを作成
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押してLoop LEDを点灯させて、タッチ・スライダーを Loopモードにする
+
+
+          p タッチ・スライダー
+          table
+            tr
+              th 左
+              td 再生の長さを短く
+            tr
+              th 中央
+              td ループ再生を開始、停止
+            tr
+              th 右
+              td 再生の長さを長く
+            tr
+              th タッチ・スライダー・モード・ボタン(無印のボタン)
+              td LEDを点灯させてタッチ・スライダーをLoopモードにする
+
+
+
+
+
+
+
+        h3.heading.switch
+          | マニュアル・ループ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タッチ・スライダーを使って、自由にループを設定
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押してLoop LEDを点灯させて、タッチ・スライダーを Loopモードにする
+                li.contentOperationOrderlist 再生中にShiftボタンを押しながらタッチ・スライダーの左を押してLoop Inポイントを設定
+                li.contentOperationOrderlist Shiftボタンを押しながらタッチ・スライダーの右を押してLoop Outポイントを設定
+                  br
+                  | Loop InとLoop Outのポイントが設定されると、2つのポイント間を繰り返し再生
+                li.contentOperationOrderlist ループ再生中にタッチ・スライダーの中央を押すと、ループ再生が終了
+
+          p ループ再生中にShiftボタンを押しながらタッチ・スライダーの左または右を押すと、画面 がLoop InポイントまたはOutポイントに移動
+            br
+            | このとき、タッチ・ホイールで各ポイントの位置を微調整することができる
+
+        h3.heading.switch
+          | タッチ・スライダーについて
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タッチ・スライダー・モードがノーマル・モードのとき、Shiftボタンを押しながらタッチ・スラ イダーに触れると曲の指定位置に移動
+            br
+            | タッチ・スライダーの長さがロードされている曲の全体の長さに対応
+
+
+
+      h2.heading.switch
+        | エフェクト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Serato DJのエフェクター
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タッチ・パッドでSerato DJに内蔵しているエフェクターをコントロール
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを押してController LEDを点灯させて、タッチ・パッドをコ ントローラー・モードにする
+                li.contentOperationOrderlist Fxボタンでエフェクトをかけるデッキを選択
+                li.contentOperationOrderlist AデッキまたはBデッキのShiftボタンを押しながら、プログラム/バリュー・ノブを回して、 それぞれのデッキのエフェクトの種類を選ぶ
+                li.contentOperationOrderlist タッチ・パッドでエフェクトをコントロールすることができる
+          p TIP Holdボタンを押しながらタッチ・パッドにタッチすると、指を離してもエフェクトはオンのままになる
+            br
+            | もう一度Holdボタンを押すとホールドは解除
+
+
+
+        h3.heading.switch
+          | KAOSS DJのエフェクト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 本機に搭載しているカオス・エフェクトを、A、Bデッキをミックスした後にかけるマスター・エ フェクトとして使う
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist カオス・エフェクトのオン、オフ タッチ・パッド・モード・ボタンを押してKaoss Fx LEDを点灯させて、タッチ・パッドをKaoss Fxモードにする
+                  br
+                  | Kaoss Fxモードでは、マスター・アウトにのみ、エフェクトのオン/オフが適用される
+                  br
+                  | AデッキとBデッキそれぞれ別々のエフェクト・プログラムを選ぶことはできない
+                li.contentOperationOrderlist プログラム/バリュー・ノブを回して、使用するエフェクト・プログラムを選択
+                li.contentOperationOrderlist タッチ・パッドに触れるとエフェクトがかかる
+                li.contentOperationOrderlist タッチ・パッドから指を離すとエフェクトの効果が無くなる
+          p Holdボタンを押してオンにすると、指を離す直前のエフェクトの効果が保持される
+          p エフェクトのかかり具合(FX DEPTH)を調整する
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shiftボタンを押しながらタッチ・パッドに触れ、指を左右に動かす
+
+
+      h2.heading.switch
+        | エフェクトのBPM
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | エフェクトのBPMを設定する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ディレイなどのプログラムで使用されるテンポを設定
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Tapボタンを押して、BPMを表示する
+                li.contentOperationOrderlist プログラム/バリュー・ノブで値を変更することができる
+
+
+        h3.heading.switch
+          | タップ・テンポ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist  Tapボタンを押してディスプレイにBPMを表示した状態でTapボタンを数回叩くと、叩いた間隔でBPM値が設定される
+
+
+        h3.heading.switch
+          | オートBPM
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p オートBPM 曲のビートを自動検出し、BPM値を設定することができる
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ビートを検出するデッキのFxボタンを押してデッキを選択
+                li.contentOperationOrderlist 曲を再生している状態でTapボタンを長押す
+                  br
+                  | 再生している曲のビートを検出し、BPMが変化する
+                li.contentOperationOrderlist オートBPMを終了するときは、再度、Tapボタンを長押しする
+                  br
+                  | 終了した時点のBPM値に設定される
+          p BPMが検出できないときは、Tapボタンを数回曲のビートに合わせて押すと、そのビートをガイドとしてBPMを自動検出する
+            br
+            | オートBPMの特性上、正しいBPM値の1/2や2/3といった値や、細かな揺れが起こってしまうため、Tapボタンを使って補助を行うことができる
+          p ビート感がはっきりしない音楽の場合は、BPM値を検出できない
+            br
+            | 検出可能なBPMは 80～160
+          p 音声入力が無いときなどBPM検出ができない場合、オートBPM機能が終了しないまま プログラム選択画面に戻る
+            br
+            | 再度、BPM表示を行いたい場合は、Tapボタンを押す
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | スケール、キー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | スケール(音階)を設定する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p シンセ・プログラムなどで タッチ・パッドを使って演奏するときに割りあてるスケール(音階)を設定
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shiftボタンを押しながらHoldボタンを押すと、現在設定しているスケールの略称名が ディスプレイに表示される
+                li.contentOperationOrderlist プログラム/バリュー・ノブを回して、スケールを変える
+                li.contentOperationOrderlist 変更後、一定時間経過するとプログラム表示に戻る
+            p Shiftボタンを押すことで、すぐに プログラム表示に戻ることができる
+
+
+
+
+
+
+        h3.heading.switch
+          | キー(主音)を設定する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p シンセ・プログラムなどで使うスケールの基準となる音の高さを設定する
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shiftボタンを押しながらTapボタンを押すと、現在設定されているキーがディスプレイに表示される
+                li.contentOperationOrderlist プログラム/バリュー・ノブを回して、キーを変える
+                li.contentOperationOrderlist 変更後、一定時間経過するとプログラム表示に戻る
+          p Shiftボタンを押すことで、すぐに プログラム表示に戻ることができる
+            br
+            | 設定によっては、発音しなかったり、ノイズが出る場合がある
+
+
+
+
+
+      h2.heading.switch
+        | EQ
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | EQを使う
+          span.swithCondition.contentClosed
+        section.h3content.hide
+        p 各デッキの音質を調整
+        table
+          tr
+            th EQ Hiノブ
+            td 高音域の音量を調節
+          tr
+            th EQ Midノブ
+            td 中音域の音量を調節
+          tr
+            th EQ Loノブ
+            td 低音域の音量を調節
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | サンプラー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | サンプラー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タッチ・パッドでSerato DJのサンプラーをコントロール
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを長押ししてController LEDを青色に点灯させて、タッチ・ パッドをサンプラー・モードに切り替える
+                li.contentOperationOrderlist タッチ・パッドをタップしてサンプラーを再生
+
+          table
+            tr
+              th エフェクト1
+              td タッチパッドの左上の領域
+            tr
+              th エフェクト2
+              td タッチパッドの右上の領域
+            tr
+              th エフェクト3
+              td タッチパッドの左下の領域
+            tr
+              th エフェクト4
+              td タッチパッドの右下の領域
+
+          p サンプラーへのオーディオ・データのアサインや録音は、Serato DJを操作する必要がある
+
+
+
+
+      h2.heading.switch
+        | 起動モード
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | オーディオレス・モード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 外部オーディオ・インターフェイスを使用したいとき
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタン(Bデッキ)とヘッドホン・キュー・ボタン(Bデッキ)を押しながら、USBケーブルを差して起動
+
+          p 本機のオーディオ・インターフェイス機能は使用できません。本機のOut L/Rから音は出力されない
+          p すべてのコントローラーからMIDIメッセージを出力
+
+
+
+
+
+        h3.heading.switch
+          | オーディオ・リターン・モード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ミックス後のアウトプット音声を録音したいとき
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モードボタン(Bデッキ)とFXボタン(Bデッキ)を押しながら、USBケーブ ルを差して起動
+
+          p Out L/R端子へ出力される音声と同じ信号をコンピューター側へ返す
+          p 通常時はMic/Line In Aの音声を返す
+
+
+
+
+
+      h2.heading.switch
+        | MIIDメッセージ一覧
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | MIIDメッセージ一覧
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th コントローラー
+                th Number
+                th MIDI Channel(Deck-A)
+                th MIDI Channel(Deck-B)
+                th LED
+              tr
+                td ヘッドフォンノブ(オーディオレス・モード時)
+                td CC20
+                td 7
+                td 7
+                td ○
+              tr
+                td Balanceブ(オーディオレス・モード時)
+                td CC21
+                td 7
+                td 7
+                td ○
+              tr
+                td Masterノブ(オーディオレス・モード時)
+                td CC22
+                td 7
+                td 7
+                td ○
+              tr
+                td Browseノブ
+                td CC30
+                td 7
+                td 7
+                td -
+              tr
+                td タッチパッド・モード・ボタン(HOLD時)
+                td Note:34(A#1)
+                td 7
+                td 7
+                td -
+              tr
+                td プログラム/バリュー・ノブ
+                td CC:31
+                td 7
+                td 7
+                td -
+              tr
+                td Tapボタン
+                td Note:11(B-1)
+                td 7
+                td 7
+                td ○
+              tr
+                td Tapボタン(HOLD時)
+                td Note:33(A1)
+                td 7
+                td 7
+                td ○
+              tr
+                td Holdボタン
+                td -
+                td -
+                td -
+                td ○
+              tr
+                td タッチ・パッド(On/Off)
+                td Note:32(G1)
+                td 7
+                td 7
+                td -
+              tr
+                td タッチ・パッド(X)
+                td CC:12
+                td 7
+                td 7
+                td -
+              tr
+                td タッチ・パッド(Y)
+                td CC:13
+                td 7
+                td 7
+                td -
+              tr
+                td クロス・フェーダー
+                td CC:23
+                td 7
+                td 7
+                td -
+              tr
+                td タッチ・スライダー左(ノーマル・モード時)
+                td Note:21(A0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー中央(ノーマル・モード時)
+                td Note:22(Bb0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー右(ノーマル・モード時)
+                td Note:23(B0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダーの値(ノーマル・モード時)
+                td CC:33
+                td 8
+                td 9
+                td -
+              tr
+                td タッチ・スライダー左(Loopモード時)
+                td Note:15(D#0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー中央(Loopモード時)
+                td Note:16(E0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー右(Loopモード時)
+                td Note:17(F0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー左(Hot Cueモード時)
+                td Note:18(F#0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー中央(Hot Cueモード時)
+                td Note:19(G0)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・スライダー右(Hot Cueモード時)
+                td Note:20(G#0)
+                td 8
+                td 9
+                td ○
+              tr
+                td EQ(Hiノブ)
+                td CC:27
+                td 8
+                td 9
+                td ○
+              tr
+                td EQ(Midノブ)
+                td CC:28
+                td 8
+                td 9
+                td ○
+              tr
+                td EQ(Loノブ)
+                td CC:29
+                td 8
+                td 9
+                td ○
+              tr
+                td Gainノブ
+                td CC:26
+                td 8
+                td 9
+                td ○
+              tr
+                td ロード・ボタン
+                td Note:14(D0)
+                td 8
+                td 9
+                td -
+              tr
+                td ロード・ボタン(Hold時)
+                td Note:35(B1)
+                td 8
+                td 9
+                td -
+              tr
+                td Fxボタン
+                td Note:24(C1)
+                td 8
+                td 9
+                td ○
+              tr
+                td ヘッドホン・キュー・ボタン
+                td Note:25(C#1)
+                td 8
+                td 9
+                td ○
+              tr
+                td タッチ・ホイール(On/Off)
+                td Note:31(F#1)
+                td 8
+                td 9
+                td -
+              tr
+                td タッチ・ホイール(XY Value)
+                td CC:14
+                td 8
+                td 9
+                td -
+              tr
+                td ピッチ・フェーダー
+                td CC:25
+                td 8
+                td 9
+                td -
+              tr
+                td レベル・メーター(受信のみ)
+                td Note:60(C4)–67(G4)
+                td 8
+                td 9
+                td ○
+              tr
+                td Shiftボタン
+                td Note:26(D1)
+                td 8
+                td 9
+                td ○
+              tr
+                td Playボタン
+                td Note:27(D#1)
+                td 8
+                td 9
+                td ○
+              tr
+                td Syncボタン
+                td Note:29(E1)
+                td 8
+                td 9
+                td ○
+              tr
+                td Cueボタン
+                td Note:30(F1)
+                td 8
+                td 9
+                td ○
+              tr
+                td レベル・フェーダー
+                td CC:24
+                td 8
+                td 9
+                td -
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | エフェクト・プログラム・リスト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Filter
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 1
+                td Low Pass Filter
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 2
+                td High Pass Filter
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 3
+                td Band Pass Filter
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 4
+                td 72dB/oct LPF
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 5
+                td Morphing Filter
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 6
+                td Vowel Filter
+                td 1st & 2nd Formant
+                td 1st & 2nd Formant
+                td o
+                td x
+                td x
+              tr
+                td 7
+                td Mid Cut Filter
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 8
+                td Isolato
+                td Low – MidLo – MidHi – Hi
+                td Level
+                td o
+                td x
+                td x
+              tr
+                td 9
+                td Dist Isolator
+                td Low – MidLo – MidHi – Hi
+                td Distortion
+                td o
+                td x
+                td x
+              tr
+                td 10
+                td Center Cancel
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 11
+                td Radio
+                td Tone
+                td Level
+                td o
+                td x
+                td x
+              tr
+                td 12
+                td Telephone
+                td Tone
+                td Stereo – Mono
+                td o
+                td x
+                td x
+              tr
+                td 13
+                td Reverb
+                td Filter
+                td Cutoff
+                td o
+                td x
+                td x
+
+        h3.heading.switch
+          | Modulation
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 14
+                td Vinyl Break
+                td Stop Speed
+                td Scratch
+                td x
+                td x
+                td x
+              tr
+                td 15
+                td Break Reverb
+                td Stop Speed
+                td Scratch
+                td x
+                td x
+                td x
+              tr
+                td 16
+                td Jet
+                td Tone (Delay Time)
+                td Feedback
+                td o
+                td x
+                td x
+              tr
+                td 17
+                td Manual Phaser
+                td Cutoff
+                td Resonance
+                td o
+                td x
+                td x
+              tr
+                td 18
+                td Talk Filter
+                td 1st Formant
+                td 2nd Formant, Feedback
+                td x
+                td o
+                td x
+              tr
+                td 19
+                td Digi Talk
+                td 1st Formant
+                td 2nd Formant
+                td o
+                td x
+                td x
+
+              tr
+                td 20
+                td Decimator
+                td Cutoff
+                td Sampling Rate & Bit Depth
+                td o
+                td x
+                td x
+              tr
+                td 21
+                td Fuzz Distortion
+                td Tone
+                td Distortion
+                td o
+                td x
+                td x
+              tr
+                td 22
+                td Bass Distortion
+                td Distortion
+                td Low Boost
+                td o
+                td x
+                td x
+              tr
+                td 23
+                td Ring Mod HPF
+                td Ring Mod
+                td Frequency Cutoff
+                td o
+                td x
+                td x
+              tr
+                td 24
+                td Pitch Shift HPF
+                td Pitch
+                td Cutoff
+                td o
+                td x
+                td x
+              tr
+                td 25
+                td Mid Pitch Shift
+                td Pitch
+                td Shift Depth
+                td o
+                td x
+                td x
+
+
+
+
+
+
+        h3.heading.switch
+          | Dynamics
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 26
+                td Ducking Comp
+                td Ratio
+                td Threshold
+                td o
+                td x
+                td x
+              tr
+                td 27
+                td LowBoost Comp
+                td Comp Sensitivity
+                td Attack Nuance
+                td o
+                td x
+                td x
+              tr
+                td 28
+                td Hard Limiter
+                td Attack Nuance
+                td Threshold
+                td o
+                td x
+                td x
+
+
+
+
+
+
+        h3.heading.switch
+          | LFO
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 29
+                td LFO LPF
+                td LFO Speed
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td 30
+                td LFO HPF
+                td LFO Speed
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td 31
+                td Infinite Filter
+                td LFO Speed
+                td LFO Depth
+                td o
+                td o
+                td x
+              tr
+                td 32
+                td Jag Filter
+                td LFO Speed
+                td LFO Shape
+                td o
+                td o
+                td x
+              tr
+                td 33
+                td Yoi Yoi
+                td LFO Speed
+                td Yoi Level
+                td o
+                td o
+                td x
+              tr
+                td 34
+                td Flanger
+                td LFO Speed
+                td Feedback
+                td o
+                td o
+                td x
+              tr
+                td 35
+                td Flanger Filter
+                td LFO Speed
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 36
+                td Infinite Flanger
+                td LFO Speed
+                td Feedback
+                td o
+                td o
+                td x
+              tr
+                td 37
+                td Phaser
+                td LFO Speed
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td 38
+                td Mid Phaser
+                td LFO Speed
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td 39
+                td Step Phaser
+                td Cutoff
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td 40
+                td Auto Pan
+                td LFO Speed
+                td Auto Pan Depth
+                td o
+                td o
+                td x
+              tr
+                td 41
+                td Mid Auto Pan
+                td LFO Speed
+                td Auto Pan Depth
+                td o
+                td o
+                td x
+              tr
+                td 42
+                td Slicer
+                td LFO Speed
+                td Slicer Depth
+                td o
+                td o
+                td x
+              tr
+                td 43
+                td Mid Slicer
+                td LFO Speed
+                td Slicer Depth
+                td o
+                td o
+                td x
+              tr
+                td 44
+                td LPF Slicer
+                td LFO Speed
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 45
+                td HPF Slicer
+                td LFO Speed
+                td Cutoff
+                td o
+                td o
+                td x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Delay
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 46
+                td Delay
+                td Delay Time
+                td Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 47
+                td One Delay
+                td Delay Time
+                td Delay Tone
+                td x
+                td o
+                td x
+              tr
+                td 48
+                td Ping Pong Delay
+                td Delay Time
+                td Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 49
+                td Multi Tap Delay
+                td Delay Tone
+                td Feedback Level
+                td x
+                td x
+                td x
+              tr
+                td 50
+                td Modulation Delay
+                td Delay Time
+                td Feedback Level
+                td x
+                td x
+                td x
+              tr
+                td 51
+                td Tape Echo
+                td Delay Time
+                td Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 52
+                td Dub Echo
+                td Delay Time
+                td Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 53
+                td Feedback Echo
+                td Delay Time
+                td Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 54
+                td LPF Delay
+                td Delay Time
+                td Cutoff
+                td x
+                td o
+                td x
+              tr
+                td 55
+                td HPF Delay
+                td Delay Time
+                td Cutoff
+                td x
+                td o
+                td x
+              tr
+                td 56
+                td Phaser Delay
+                td Delay Time
+                td Resonance & Feedback Level
+                td x
+                td o
+                td x
+              tr
+                td 57
+                td Flanger Delay
+                td Delay Time
+                td Resonance & Feedback Level
+                td x
+                td o
+                td x
+
+
+
+        h3.heading.switch
+          | Reverb
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 58
+                td Hall Reverb
+                td Reverb Time
+                td Reverb Depth
+                td x
+                td x
+                td x
+              tr
+                td 59
+                td Room Reverb
+                td Reverb Time
+                td Reverb Depth
+                td x
+                td x
+                td x
+              tr
+                td 60
+                td Spring Reverb
+                td Reverb Time
+                td Reverb Depth
+                td x
+                td o
+                td x
+              tr
+                td 61
+                td Pump Reverb
+                td Reverb Tone
+                td Pump Depth
+                td x
+                td o
+                td x
+              tr
+                td 62
+                td Freeze Reverb
+                td Reverb Tone
+                td Mix Balance
+                td o
+                td x
+                td x
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Grain
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 63
+                td Grain Shifter
+                td Buffer Update Interval
+                td Duration
+                td o
+                td x
+                td x
+              tr
+                td 64
+                td Mid Grain
+                td Buffer Update Interval
+                td Duration
+                td o
+                td o
+                td x
+              tr
+                td 65
+                td Mix Grain
+                td Duration
+                td Mix Balance
+                td o
+                td o
+                td x
+
+
+
+
+        h3.heading.switch
+          | Looper
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 66
+                td KP2 Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 67
+                td LPF Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 68
+                td HPF Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 69
+                td High Looper
+                td Loop Length
+                td Lo Range Balance
+                td o
+                td o
+                td x
+              tr
+                td 70
+                td Iso Looper
+                td Loop Length
+                td Low – MidLo – MidHi – Hi
+                td o
+                td o
+                td x
+              tr
+                td 71
+                td Freeze Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 72
+                td Phaser Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 73
+                td Flanger Looper
+                td Loop Length
+                td Flanger Tone (Delay Time)
+                td o
+                td o
+                td x
+              tr
+                td 74
+                td Deci Looper
+                td Loop Length
+                td Sampling Rate & Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 75
+                td Slice Looper
+                td Loop Length
+                td Slice Position
+                td o
+                td o
+                td x
+              tr
+                td 76
+                td F/R Looper
+                td Loop Length
+                td Reverse – Forward
+                td o
+                td o
+                td x
+              tr
+                td 77
+                td KP3 Looper
+                td Loop Length
+                td Reverse – Forward
+                td o
+                td o
+                td x
+              tr
+                td 78
+                td Backing Looper
+                td Loop Length
+                td Reverse – Forward
+                td o
+                td o
+                td x
+              tr
+                td 79
+                td Shuttle Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 80
+                td RwDelay Looper
+                td Loop Length
+                td Cutoff
+                td o
+                td o
+                td x
+              tr
+                td 81
+                td OverDub Looper
+                td Loop Length
+                td Loop – Overdub
+                td o
+                td o
+                td x
+              tr
+                td 82
+                td Break Looper
+                td Loop Length
+                td Stop Speed
+                td o
+                td o
+                td x
+              tr
+                td 83
+                td KP3 RwLooper
+                td Loop Length
+                td Pitch
+                td o
+                td o
+                td x
+              tr
+                td 84
+                td Pitch Looper
+                td Loop Length
+                td Pitch
+                td o
+                td o
+                td x
+              tr
+                td 85
+                td Weird Looper
+                td Loop Length
+                td Pitch
+                td o
+                td o
+                td x
+              tr
+                td 86
+                td Looper & Noise
+                td Loop Length
+                td Noise Level
+                td o
+                td o
+                td x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Lead
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 87
+                td Unison Saw
+                td Note
+                td Reverb Depth
+                td o
+                td x
+                td o
+              tr
+                td 88
+                td KP3 Unison Saw
+                td Note
+                td Cutoff, Resonance
+                td x
+                td o
+                td o
+              tr
+                td 89
+                td Unison Lead
+                td Note
+                td Cutoff
+                td o
+                td o
+                td o
+              tr
+                td 90
+                td Pulse Verb
+                td Note
+                td Cutoff
+                td o
+                td o
+                td o
+              tr
+                td 91
+                td Paz Square
+                td Note
+                td Pitch EG Time
+                td o
+                td x
+                td o
+              tr
+                td 92
+                td 8bit Square
+                td Note
+                td Octave
+                td o
+                td x
+                td o
+              tr
+                td 93
+                td Ring Flutter
+                td Note
+                td Mod Detune Width
+                td o
+                td o
+                td o
+              tr
+                td 94
+                td Say Yay Synth
+                td Note
+                td Formant & Vibrato Depth
+                td o
+                td o
+                td o
+              tr
+                td 95
+                td Air Spectrum
+                td Note
+                td Decay & Release Time
+                td o
+                td o
+                td o
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Acoustic
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 96
+                td Ray EP
+                td Note
+                td Velocity
+                td o
+                td o
+                td o
+              tr
+                td 97
+                td Didgeridoo
+                td Note
+                td LFO Speed
+                td o
+                td o
+                td o
+
+
+
+
+        h3.heading.switch
+          | Bass
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td 98
+                td Slap Bass
+                td Note
+                td Decay Time (Mute)
+                td o
+                td x
+                td o
+              tr
+                td 99
+                td Unison Squ Bass
+                td Note
+                td Cutoff, Resonance
+                td x
+                td x
+                td o
+              tr
+                td a0
+                td Hoover Bass
+                td Note
+                td Octave
+                td o
+                td x
+                td o
+              tr
+                td a1
+                td Bad Bass
+                td Note
+                td LFO Depth
+                td o
+                td o
+                td o
+              tr
+                td a2
+                td Wobble Bass
+                td Note, LFO Speed
+                td Cutoff
+                td o
+                td o
+                td o
+              tr
+                td a3
+                td Fall Bass
+                td Note
+                td Cutoff, Drive
+                td o
+                td x
+                td o
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Chord
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td a4 Pulse Code
+                td Pulse Code
+                td Note
+                td Cutoff, Resonance
+                td o
+                td o
+                td o
+              tr
+                td a5
+                td Pump Chord
+                td Note
+                td Chord (Min – Maj)
+                td o
+                td o
+                td o
+              tr
+                td a6
+                td Scale Chord
+                td Note
+                td Reverb Depth
+                td o
+                td x
+                td o
+              tr
+                td a7
+                td Sine Chord
+                td Note
+                td Octave
+                td o
+                td o
+                td o
+              tr
+                td a8
+                td Pad Chord
+                td Note
+                td Filter Attack Time & EG Int.
+                td o
+                td x
+                td o
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Sound Effect
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Program Name
+                th X軸
+                th Y軸
+                th Fx Release
+                th BPM Sync
+                th Scale
+              tr
+                td a9
+                td Noise Filter
+                td Cutoff
+                td Resonance
+                td o
+                td o
+                td x
+              tr
+                td b0
+                td Pump Noise
+                td Cutoff
+                td Pump Depth
+                td o
+                td o
+                td x
+              tr
+                td b1
+                td Bubble SFX
+                td LFO Speed
+                td LFO Depth
+                td x
+                td o
+                td x
+              tr
+                td b2
+                td Resonator
+                td Cutoff
+                td LFO Depth & Speed
+                td o
+                td o
+                td x
+              tr
+                td b3
+                td Itch Noiz
+                td Note
+                td LFO Speed & Pitch Mod Int.
+                td o
+                td o
+                td o
+              tr
+                td b4
+                td Ring Mod SFX
+                td Pitch
+                td Mod LFO Intensity
+                td o
+                td o
+                td x
+              tr
+                td b5
+                td Beam Saber
+                td Mod Pitch
+                td Mod Depth
+                td o
+                td x
+                td x
+              tr
+                td b6
+                td Kaoss Drone
+                td Cutoff
+                td Feedback
+                td o
+                td x
+                td x
+              tr
+                td b7
+                td Sync Random
+                td Note
+                td Random Pitch Width
+                td o
+                td o
+                td o
+              tr
+                td b8
+                td Disco Siren
+                td LFO Speed
+                td Sound Character
+                td o
+                td o
+                td x
+              tr
+                td b9
+                td Rise/Fall
+                td Pitch
+                td Rise – Fall
+                td o
+                td o
+                td x
+              tr
+                td c0
+                td Sweep Sound
+                td Pitch, Pan
+                td LFO Speed
+                td o
+                td x
+                td x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | スケール・リスト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | キーがCのとき
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                th No.
+                th Scale Name
+                th C
+                th
+                th D
+                th
+                th E
+                th F
+                th
+                th G
+                th
+                th A
+                th
+                th B
+
+              tr
+                td 1
+                td Chromatic
+                td C
+                td D♭
+                td D
+                td E♭
+                td E
+                td F
+                td G♭
+                td G
+                td A♭
+                td A
+                td B♭
+                td B
+              tr
+                td 2
+                td Ionian
+                td C
+                td
+                td D
+                td
+                td E
+                td F
+                td
+                td G
+                td
+                td A
+                td
+                td B
+              tr
+                td 3
+                td Dorian
+                td C
+                td
+                td D
+                td E♭
+                td
+                td F
+                td
+                td G
+                td
+                td A
+                td B♭
+                td
+              tr
+                td 4
+                td Phrygian
+                td C
+                td D♭
+                td
+                td E♭
+                td
+                td F
+                td
+                td G
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 5
+                td Lydian
+                td C
+                td
+                td D
+                td
+                td E
+                td
+                td F♯
+                td G
+                td
+                td A
+                td
+                td B
+              tr
+                td 6
+                td Mixolydian
+                td C
+                td
+                td D
+                td
+                td E
+                td F
+                td
+                td G
+                td
+                td A
+                td B♭
+                td
+              tr
+                td 7
+                td Aeolian
+                td C
+                td
+                td D
+                td E♭
+                td
+                td F
+                td
+                td G
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 8
+                td Locrian
+                td C
+                td D♭
+                td
+                td E♭
+                td
+                td F
+                td G♭
+                td
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 9
+                td Harmonic minor
+                td C
+                td
+                td D
+                td E♭
+                td
+                td F
+                td
+                td G
+                td A♭
+                td
+                td
+                td B
+              tr
+                td 10
+                td Melodic minor
+                td C
+                td
+                td D
+                td E♭
+                td
+                td F
+                td
+                td G
+                td
+                td A
+                td
+                td B
+              tr
+                td 11
+                td Major Blues
+                td C
+                td
+                td D
+                td E♭
+                td E
+                td
+                td
+                td G
+                td
+                td A
+                td
+                td
+              tr
+                td 12
+                td minor Blues
+                td C,
+                td
+                td
+                td E♭
+                td
+                td F
+                td G♭
+                td G
+                td
+                td
+                td B♭
+                td
+              tr
+                td 13
+                td Diminished
+                td C
+                td
+                td D
+                td E♭
+                td
+                td F
+                td F♯
+                td
+                td G♯
+                td A
+                td
+                td B
+              tr
+                td 14
+                td Combination Diminished
+                td C
+                td D♭
+                td
+                td E♭
+                td E
+                td
+                td F♯
+                td G
+                td
+                td A
+                td B♭
+                td
+              tr
+                td 15
+                td Major Pentatonic
+                td C
+                td
+                td D
+                td
+                td E
+                td
+                td
+                td G
+                td
+                td A
+                td
+                td
+              tr
+                td 16
+                td minor Pentatonic
+                td C
+                td
+                td
+                td E♭
+                td
+                td F
+                td
+                td G
+                td
+                td
+                td B♭
+                td
+              tr
+                td 17
+                td Raga Bhairav
+                td C
+                td D♭
+                td
+                td
+                td E
+                td F
+                td
+                td G
+                td A♭
+                td
+                td
+                td B
+              tr
+                td 18
+                td Raga Gamanasrama
+                td C
+                td D♭
+                td
+                td
+                td E
+                td
+                td F♯
+                td G
+                td
+                td A
+                td
+                td B
+              tr
+                td 19
+                td Raga Todi
+                td C
+                td D♭
+                td
+                td E♭
+                td
+                td
+                td F♯
+                td G
+                td A♭
+                td
+                td
+                td B
+              tr
+                td 20
+                td Arabian
+                td C
+                td
+                td D
+                td
+                td E
+                td F
+                td G♭
+                td
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 21
+                td Spanish
+                td C
+                td D♭
+                td
+                td E♭
+                td E
+                td F
+                td
+                td G
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 22
+                td Gypsy
+                td C
+                td
+                td D
+                td E♭
+                td
+                td
+                td F♯
+                td G
+                td A♭
+                td
+                td
+                td B
+              tr
+                td 23
+                td Egyptian
+                td C
+                td
+                td D
+                td
+                td
+                td F
+                td
+                td G
+                td
+                td
+                td B♭
+                td
+              tr
+                td 24
+                td Hawaiian
+                td C
+                td
+                td D
+                td E♭
+                td
+                td
+                td
+                td G
+                td
+                td A
+                td
+                td
+              tr
+                td 25
+                td Bali Island Pelog
+                td C
+                td D♭
+                td
+                td E♭
+                td
+                td
+                td
+                td G
+                td A♭
+                td
+                td
+                td
+              tr
+                td 26
+                td Japanese Miyakobushi
+                td C
+                td D♭
+                td
+                td
+                td
+                td F
+                td
+                td G
+                td A♭
+                td
+                td
+                td
+              tr
+                td 27
+                td Ryukyu
+                td C
+                td
+                td
+                td
+                td E
+                td F
+                td
+                td G
+                td
+                td
+                td
+                td B
+              tr
+                td 28
+                td Chinese
+                td C
+                td
+                td
+                td
+                td E
+                td
+                td F♯
+                td G
+                td
+                td
+                td
+                td B
+              tr
+                td 29
+                td Bass Line
+                td C
+                td
+                td
+                td
+                td
+                td
+                td
+                td G
+                td
+                td
+                td B♭
+                td
+              tr
+                td 30
+                td Whole Tone
+                td C
+                td
+                td D
+                td
+                td E
+                td
+                td G♭
+                td
+                td A♭
+                td
+                td B♭
+                td
+              tr
+                td 31
+                td minor 3rd Interval
+                td C
+                td
+                td
+                td E♭
+                td
+                td
+                td G♭
+                td
+                td
+                td A
+                td
+                td
+              tr
+                td 32
+                td Major 3rd Interval
+                td C
+                td
+                td
+                td
+                td E
+                td
+                td
+                td
+                td A♭
+                td
+                td
+                td
+              tr
+                td 33
+                td 4th Interval
+                td C
+                td
+                td
+                td
+                td
+                td F
+                td
+                td
+                td
+                td
+                td B♭
+                td
+              tr
+                td 34
+                td 5th Interval
+                td C
+                td
+                td
+                td
+                td
+                td
+                td
+                td G
+                td
+                td
+                td
+                td
+              tr
+                td 35
+                td Octave
+                td C
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+                td
+
+    include ../_include/_footer.pug

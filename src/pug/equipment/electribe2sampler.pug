@@ -2407,10 +2407,15 @@ html(lang="ja")
             br
             | 空のターゲット・ステップのトリガー・パッドを押すと、ノート・ナンバーC4が入力される
             br
-            span.controllerButton Shift
-            | を押しながら
-            span.controllerKnob Value
-            | を回すと、小節単位でターゲット・ステップを変更可能
+          table
+            tr
+              td 小節単位でターゲット・ステップを変更
+              td
+                span.controllerButton Shift
+                | を押しながら
+                span.controllerKnob Value
+                | を回す
+
         h3.heading.switch
           | 音程
           span.swithCondition.contentClosed
@@ -2428,17 +2433,24 @@ html(lang="ja")
           p 設定値[----, C-1...G 09]
           p
             | 1つのターゲット・ステップには4つのノート・ナンバーが記録可能
-            br
-            span.controllerButton Shift
-            | を押しながら
-            span.controllerKnob Value
-            | を回すと、ノート・ナンバーをオクターブ単位で変更可能
-            br
-            | トリガー・パッドを押して、ターゲット・ステップを変更可能
-            br
+
+          table
+            tr
+              td ノート・ナンバーをオクターブ単位で変更
+              td
+                span.controllerButton Shift
+                | を押しながら
+                span.controllerKnob Value
+                | を回す
+            tr
+              td ターゲット・ステップを変更
+              td トリガー・パッドを押す
+          p
             | ディスプレイに“NOTE”を表示しているときは、ステップ・ボタンを押してもトリガーのオン、オフは変わらない
             br
             | トリガーがオフのステップのノート・ナンバーを変更してもトリガー をオンにするまでは発音しない
+
+
         h3.heading.switch
           | ゲート・タイム
           span.swithCondition.contentClosed
@@ -2455,12 +2467,7 @@ html(lang="ja")
                 span.controllerPage GATE TIME
           p 設定値[ 00...96, TIE]
           p
-            | ゲート・タイムを“96” に設定するとちょうど1ステップ間の長さのゲート・タイムになる
-            br
-            span.controllerButton Shift
-            | を押しながら
-            span.controllerKnob Value
-            | を回すと、ゲート・タイムを1単位で変更可能
+            | ゲート・タイムを"96"に設定すると1ステップ間の長さになる
             br
             |  “TIE”を指定すると、次のステップが同じノートの場合はオシレーターの発音やEG、モジュレーションがリトリガーしない
             br
@@ -2469,6 +2476,15 @@ html(lang="ja")
             | を表示しているときは、ステップ・キーを押してもトリガーのオン、オフは変わらない
             br
             | トリガーがオフのステップのゲート・タイムを変更してもトリガーをオンにするまでは発音しない
+          table
+            tr
+              td ゲート・タイムを1単位で変更
+              td
+                span.controllerButton Shift
+                | を押しながら
+                span.controllerKnob Value
+                | を回す
+
         h3.heading.switch
           | 発音の強さ
           span.swithCondition.contentClosed
@@ -2516,6 +2532,7 @@ html(lang="ja")
             span.controllerButton <
             span.controllerButton >
             | を押すと、現在選択中のパートの設定を確認可能
+
         h3.heading.switch
           | パートの音の確認
           span.swithCondition.contentClosed
@@ -2922,9 +2939,9 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 再生したいパターンを選択
               li.contentOperationOrderlist
-                | 「
+                |
                 span.controllerButton Play/Pause
-                | 」を押す
+                | を押す
           p パターンは先頭から再生を開始し、そのパターンの最後まで演奏すると先頭に戻り、繰り返し再生される
           p 停止
           .contentOperationBox
@@ -2951,12 +2968,10 @@ html(lang="ja")
             | エディットした内容を残しておきたいときは必ず保存が必要
             br
             |  保存を行わないで、他のパターンを選ぶとエディットした内容は保存されず元に戻る
-            br
-            | エディットした内容を残しておきたいときは必ず保存が必要
           p
             | メモリーへの保存実行中(
             span.controllerButton Write
-            | が点灯中)に電源を切るとデータが破壊される恐れがある
+            | 点灯中)に電源を切るとデータが破壊される恐れがある
         h3.heading.switch
           | パターンのコピー
           span.swithCondition.contentClosed
@@ -3045,9 +3060,7 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p
-            | 発音タイミングにズレを与えてシャッフルや跳ねた感じのノリを加える
-            br
-            |  偶数番目のステップの発音タイミングをパーセント(%)単位でずらす
+            |  偶数番目のステップの発音タイミングをパーセント(%)単位でずらして、シャッフル効果を加える
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3056,10 +3069,12 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage SWING
           p 設定値[–50 –25 +25 +50]
-          p
-            | Last Stepを奇数に設定したり、シーケンサー制御をするMFXタイプ(Seq Reverse、Seq Doubler、Odd Stepper、Even Stepper)を利用した場合は、偶数番目ではなく奇数番目のステッ プの発音タイミングがずれる場合がある
-            br
-            |  “+33%”に設定すると完全なシャッフルに近いタイミングで発音される
+          p "+33%"に設定すると完全なシャッフルに近いタイミングになる
+          p 偶数番目ではなく奇数番目のステップの発音タイミングがずれる場合の例
+          ul
+            li Last Stepが奇数になっている
+            li シーケンサー制御をするMFXタイプ(Seq Reverse、Seq Doubler、Odd Stepper、Even Stepper)を使っている
+
         h3.heading.switch
           | パターンのビートの設定
           span.swithCondition.contentClosed
@@ -3855,7 +3870,7 @@ html(lang="ja")
             | 設定値[Off, 1... 250]
             br
             | “Off”に設定するとパターン・チェンジを行わない
-          p パターンに対して設定する
+          p パターンチェインは、パターンに対して設定する
           p チェイン機能を使用する場合は、グローバル・パラメーターの CHAIN MODE をOnにする
         h3.heading.switch
           | パターンを何回繰り返すかの設定
@@ -5472,7 +5487,6 @@ html(lang="ja")
               li.contentOperationOrderlist トリガー・パッドなどを使って演奏
           p メトロノームを鳴らしながら録音することも可能
           p パターンが繰り返している間、録音は続く
-          p 録音を終了する
           table
             tr
               td 録音終了
@@ -5504,7 +5518,7 @@ html(lang="ja")
           | モーション・シーケンスとは
           span.swithCondition.contentClosed
         section.h3content.hide
-          p ノブやボタンによる音色変化を記録し、それを再現することができる機能
+          p ノブやボタンによる音色変化を記録、再生する
         h3.heading.switch
           | モーション・シーケンスが可能なノブ、ボタン
           span.swithCondition.contentClosed
@@ -5553,7 +5567,7 @@ html(lang="ja")
             br
             | 続けて記録したい場合は、再度
             span.controllerButton ●
-            | を押す必要がある
+            | を押す
         h3.heading.switch
           | モーション・シーケンスの削除
           span.swithCondition.contentClosed
@@ -5641,11 +5655,11 @@ html(lang="ja")
           p
             | 再生しているパターンにあわせて、ノブやトリガー・パッドを操作し、音の追加を行ったり、テンポを変更するなどの情報を記録
             br
-            |  またパターンを変更して演奏することもできる
+            |  パターンを変更して演奏することもできる
           p
             | イベント・レコーダーで記録した情報はパターンに記録されているデータには影響しない
             br
-            | また、パターンへの保存を行うこともできない
+            | パターンへの保存を行うこともできない
             br
             | CLOCK MODEがInternalのときに使用可能
           p
@@ -5865,12 +5879,7 @@ html(lang="ja")
                 span.controllerButton Exit
               td リサンプリングした音を保存しない
           p
-            | リサンプリングした場合、再生時の出力音量が聴感上小さくならないよう、サンプルの再生時の音量を上げている
-            br
-            |  ただし、ヘッドマージンが少なくなるため、ひずみを発生する場合がある
-            br
-            | その場合はプレイ・レベルを“Normal”に設定することで再生時の音量は録音時に比べ小さくなってしまうが、ヘッドマージンを確保することが可能
-            br
+            | リサンプリングしたサンプルにひずみが発生した場合、プレイ・レベルを“Normal”に設定すると解消できる場合がある
       h2.heading.switch
         | サンプル(編集)
         span.swithCondition.contentClosed

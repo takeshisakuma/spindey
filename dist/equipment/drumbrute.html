@@ -35,8 +35,22 @@
       <section class="h2content hide">
         <h3 class="heading switch">音色の選択<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ポーズ中<br>パッドをタップする<br>パッドが点灯している場合、インストゥルメントが選択されていることを意味する</p>
-          <p>レコーディング中<br>レコーディング中にノートを入力せずにインストゥルメントを選択するには、<span class="controllerButton">Shift</span>を押しながら任意のパッドをタップ</p>
+          <p>ポーズ中に音色を選択する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">パッドをタップする(パッドが点灯している場合、音色が選択されていることを意味する)</li>
+              </ul>
+            </p>
+          </div>
+          <p>レコーディング中にノートを入力せずに音色を選択する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist"><span class="controllerButton">Shift</span>を押しながら任意のパッドをタップ</li>
+              </ul>
+            </p>
+          </div>
         </section>
         <h3 class="heading switch">音色<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -238,7 +252,7 @@
         <h3 class="heading switch">パターンとは<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>DrumBruteは、16パターンを4つのバンク、合計64パターンを使用することができる</p>
-          <p>パターンのデフォルトの長さは16ステップだが、最長で64ステップまでの長さを設定可能</p>
+          <p>パターンのデフォルトの長さは16ステップ<br>最長で64ステップまで設定可能</p>
         </section>
         <h3 class="heading switch">スポット・イレース<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -252,7 +266,13 @@
         </section>
         <h3 class="heading switch">ステップ入力<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ステップ・ボタンを押す<br><br> 点灯しているステップ・ボタンには、イベントが含まれているが、暗いボタンにはイベントが含まれない<br> 必要に応じてステップ・ボタンを使用してイベントのオン/オフを切替える<br> ステップ・モードでオフからオンに切り替えるとイベントは常に青色に点灯する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">ステップ・ボタンを押す</li>
+              </ul>
+            </p>
+          </div>
           <p>ボタンの点灯色</p>
           <table>
             <tr>
@@ -268,8 +288,7 @@
               <td>アクセント付</td>
             </tr>
           </table>
-          <p>インストゥルメント・トラック内の特定のステップのベロシティを素早く増やす<br> 赤色に点灯したステップ・ボタンは、そのステップにアクセント・イベントが発生していることを示す</p>
-          <p>ステップ・ボタンを使用してアクセント・イベントを入力する<br> アクセント・モードでオフからオンに切り替えるとイベントは赤く点灯する<br> 青色のイベントは、そのステップにイベントがすでに存在しているが、アクセントになっていないことを示す</p>
+          <p>インストゥルメント・トラック内の特定のステップのベロシティを素早く増やす</p>
         </section>
         <h3 class="heading switch">ステップ・リピート<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -444,7 +463,16 @@
               <td>ピンク(白+赤)のLED</td>
             </tr>
           </table>
-          <p>赤いLEDは、パターン内の現在のステップ・グループを示す<br> 白いLEDはパターンの<span class="controllerButton">Last Step</span>がそのステップ・グループにあることを意味する</p>
+          <table>
+            <tr>
+              <td>赤いLED</td>
+              <td>パターン内の現在のステップ・グループを示す</td>
+            </tr>
+            <tr>
+              <td>白いLED</td>
+              <td>ターンの<span class="controllerButton">Last Step</span>がそのステップ・グループにあることを意味する</td>
+            </tr>
+          </table>
         </section>
       </section>
       <h2 class="heading switch">パターン(コピー)<span class="swithCondition contentClosed"></span></h2>
@@ -452,7 +480,13 @@
         <h3 class="heading switch">パターンの拡張(コピーして追加)<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p> パターン・データを最大16ステップまでコピーして、既存のパターンの最後に貼り付ける</p>
-          <p><span class="controllerButton">Shift</span>を押しながら<span class="controllerButton">>></span>を押す</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist"><span class="controllerButton">Shift</span>を押しながら<span class="controllerButton">>></span>を押す</li>
+              </ul>
+            </p>
+          </div>
           <table>
             <tr>
               <td>パターンに16以上のステップがある場合</td>
@@ -574,8 +608,22 @@
         <h3 class="heading switch">グループの作成<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>ソロ・モードに入る</p>
-          <p><span class="controllerButton">Solo</span>を押す<br> グループにしたいパッドをタップし点灯させる</p>
-          <p>ソロ・グループのオン/オフを切り替える<br><span class="controllerButton">Solo</span>を押す</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist"><span class="controllerButton">Solo</span>を押す</li>
+                <li class="contentOperationOrderlist">グループにしたいパッドをタップし点灯させる</li>
+              </ul>
+            </p>
+          </div>
+          <p>ソロ・グループのオン/オフを切り替える</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist"><span class="controllerButton">Solo</span>を押す</li>
+              </ul>
+            </p>
+          </div>
           <p>ミュート・グループを設定するプロセスは同じ</p>
           <p>共有チャンネル上のインストゥルメントを個別に、ミュート、またはソロにすることができる<br> そのチャンネルのインストゥルメントセレクト・ボタンを押すだけで他のインストゥルメントにアクセスできる</p>
         </section>
@@ -690,7 +738,17 @@
         <section class="h3content hide">
           <p>パターンに予測不能性を加える</p>
           <p>影響を受ける機能<br> • リズム・パターン<br>• ノートイベントのステータス(ステップ・オン/オフ)<br> • ノートイベントのベロシティ(アクセントのオン/オフ)</p>
-          <p>ランダムネスコントロールの範囲<br>最小値：0%　音楽に影響を与えない<br> 最大値：100%　リズム、ベロシティ、パターン内のノートも完全にランダムになる</p>
+          <table>
+            <caption>ランダムネスコントロールの範囲</caption>
+            <tr>
+              <td>最小値：0%</td>
+              <td>音楽に影響を与えない</td>
+            </tr>
+            <tr>
+              <td>最大値：100%</td>
+              <td>リズム、ベロシティ、パターン内のノートも完全にランダムになる</td>
+            </tr>
+          </table>
           <table>
             <caption>ランダムネスのカレントトラック・ボタン</caption>
             <tr>

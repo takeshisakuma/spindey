@@ -3287,7 +3287,7 @@ html(lang="ja")
                 span.controllerButton &lt;DEC
                 | ボタンまたは数字ボタンを使って、希望するクォンタイズ値にセットする
           p
-            | 1-4分音符、2-4分3連符、3=8分音符、4=8分3連符、5=16分音符、6-16分3連符、7-32分音 符、8-32分3連符、9~0=クォンタイズ・オフ、つまり1拍の1/96の分解能
+            | 1-4分音符、2-4分3連符、3=8分音符、4=8分3連符、5=16分音符、6-16分3連符、7-32分音 符、8-32分3連符、9~0=クォンタイズ・オフ(1拍の1/96の分解能)
           p
             | ユーザーの演奏をある拍のジャストな位置に移動させる機能
             br
@@ -3345,14 +3345,17 @@ html(lang="ja")
                 span.controllerPage BEAT(PAGE 7)
           p
             | 例：「3/4(4分の3拍子)」のパターンを作りたい時は「3」にセット
-            br
-            |  通常は「4/4(4分の4拍子)」がほとんどだが、変更する場合は
-            span.controllerKnob DATA
-            | などを回して設定を変更する
-            br
-            |  数値を変更すると
-            span.controllerButton REC
-            | が点滅するので、そのまま押すことで設定変更になる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | などを回して設定を変更する
+                li.contentOperationOrderlist
+                  span.controllerButton REC
+                  | が点滅するので、押して設定変更
+
         h3.heading.switch
           | 「音符」単位の設定
           span.swithCondition.contentClosed
@@ -3367,14 +3370,18 @@ html(lang="ja")
           p  例：「3/4(4分の3拍子)」のパターンを作りたい時は、ここで「4」にセットする
           p
             | 4分音符、8分音符、16分音符で設定可能
-            br
-            |  通常は「4/4(4分の4拍子)」がほとんどだが、別の数値に変更する場合は
-            span.controllerKnob DATA
-            | などを回して値を変更する
-            br
-            |  数値を変更すると
-            span.controllerButton REC
-            | が点滅するので、そのまま押すことで設定変更になる
+
+          p 別の数値に変更する場合(通常は「4/4(4分の4拍子)」がほとんど)
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | などを回して値を変更する
+                li.contentOperationOrderlist  数値を変更すると
+                  span.controllerButton REC
+                  | が点滅するので、そのまま押すことで設定変更になる
+
         h3.heading.switch
           | 録音するパターンの長さの設定
           span.swithCondition.contentClosed
@@ -3389,14 +3396,17 @@ html(lang="ja")
                 span.controllerPage PATT LEN(PAGE 9)
           p
             | PAGE7と8で、レコーディングするパターンの拍子(何分の何拍子か)が決定される
-            br
-            |  変更する場合は
-            span.controllerKnob DATA
-            | などを回して値を変更
-            br
-            |  数値を変更すると[REC]」ボタンが点滅するので、そのまま
-            span.controllerButton REC
-            | を押すことで設定変更になる
+          p
+            |  変更する場合
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | などを回して値を変更
+                li.contentOperationOrderlist 数値を変更すると[REC]」ボタンが点滅するので、そのまま
+                  span.controllerButton REC
+                  | を押すことで設定変更になる
       h2.heading.switch
         | パターン
         span.swithCondition.contentClosed
@@ -3844,16 +3854,19 @@ html(lang="ja")
             |  クオンタイズとスイングの設定はそのままレコーディングに反映される
           p
             | 重ねてレコーディングする音は、3個のドラムサウンドに限らず、ワンショット、シンセサウンドのどれでも可能
-            br
-            |  カテゴリーの選択は、
-            span.controllerButton DRUMS
-            | 、
-            span.controllerButton 1-SHOT
-            | 、
-            span.controllerButton SYNTH
-            | を押して行う
-            br
-            |  ボタンを押すと、各パッドのサウンドが切り替わる
+          p
+            |  カテゴリーの選択
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton DRUMS
+                  | 、
+                  span.controllerButton 1-SHOT
+                  | 、
+                  span.controllerButton SYNTH
+                  | を押して選択
+                li.contentOperationOrderlist ボタンを押すと、各パッドのサウンドが切り替わる
         h3.heading.switch
           | パターンのセーブ
           span.swithCondition.contentClosed
@@ -3887,7 +3900,7 @@ html(lang="ja")
           p
             | 方法1.
             br
-            | 選択したパターン内の、AもしくはBのメインパターンと、各FILL(フィル)パターンの消去。
+            | 選択したパターン内の、AもしくはBのメインパターンと、各FILL(フィル)パターンの消去
           p
             | 方法2.
             br
@@ -4068,26 +4081,34 @@ html(lang="ja")
             | 録音するパターンのオフセット
             br
             | レコーディングされたパターンの、ある特定パッドなどの演奏情報(ノートオンのタイミング)を前後にずらすことができる
-            br
-            |  「+(プラス)」の数値ではタイミングを後ろに、「-(マイナス)」の数値は前へシフトさせる
+          table
+            tr
+              td 「-(マイナス)」の数値
+              td タイミングを前にシフトさせる
+            tr
+              td 「+(プラス)」の数値
+              td タイミングを後ろにシフトさせる
           p
             | サブビートの値は4分音符あたり「96」
             br
-            |  つまり画面の「384」というサブ拍の数時は4拍分 (96x4 = 384)であることも意味している
+            | 画面の「384」というサブ拍の数時は4拍分 (96x4 = 384)の意味
             br
-            |  ある特定パッドのサウンドに対して処理可能
-            br
-            |  変更する場合は、まず、該当のサウンド のパッドを押す
-            br
-            |  すると画面にはパッド番号が表示されます。次に
-            span.controllerKnob DATA
-            |  などを回して値を変更する
-            br
-            |  数値を変更すると
-            span.controllerButton REC
-            | が点滅するので、そのまま
-            span.controllerButton REC
-            | を押すことで設定変更になる
+            | ある特定パッドのサウンドに対して処理可能
+          p
+            | 変更する場合
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 該当のサウンドのパッドを押す
+                li.contentOperationOrderlist 画面にパッド番号が表示される
+                li.contentOperationOrderlist span.controllerKnob DATA
+                  | などを回して値を変更する
+                li.contentOperationOrderlist 数値を変更すると
+                  span.controllerButton REC
+                  | が点滅するので、そのまま
+                  span.controllerButton REC
+                  | を押して設定変更
+
         h3.heading.switch
           | パターンネームの設定
           span.swithCondition.contentClosed
@@ -4157,19 +4178,19 @@ html(lang="ja")
                 span.controllerButton PAGE&gt;
                 | を使って、現在設定されているクォンタイズ値の分だけ進ませることができる
           p
-            | 現在のクォン タイズ値からこぼれたビート上にドラム・イベントがある場合は、通り過ぎたときにそのドラム音が聞こえる
+            | 現在のクォンタイズ値からこぼれたビート上にドラム・イベントがある場合は、通り過ぎたときにそのドラム音が聞こえる
             br
-            |                ただし、ディスプレイはそのドラムの位置には止まらない
+            | ただし、ディスプレイはそのドラムの位置には止まらない
             br
-            |                 スウィングがオンの場合は、ステップ・モードでもスウィングしながら進む
+            | スウィングがオンの場合は、ステップ・モードでもスウィングしながら進む
           p
             | 各ステップ(サブ拍)は、1拍の1/96の長さ
             br
-            |  つまり、分解能が最大のときには4分音 符を通過するのに96ステップかかる
+            | 分解能が最大のときには4分音符を通過するのに96ステップかかる
             br
             | 時間を節約するために、クォンタイズ値に設 定した音符を最小単位としてパターン内を移動できる
             br
-            |  (クォンタイズ値はレコーディングを行ったときと同じ値にしておくと良い)
+            | (クォンタイズ値はレコーディングを行ったときと同じ値にしておくと良い)
             br
             |  例：16分音符は24のサブ・ビートに分かれているので、クォンタイズの値を16分音符に設定しておけば、一度に24のサブ・ビート分だけ進むことになる
         h3.heading.switch
@@ -4201,9 +4222,9 @@ html(lang="ja")
                 br
                 |  新しいステップが挿入される
                 br
-                |  また、ステップが追加されたことにより、それに続くステップの番号が自動的に変わる
+                | また、ステップが追加されたことにより、それに続くステップの番号が自動的に変わる
                 br
-                |  (例: 以前のステップ05がステップ06に、ステップ06が07に変わる)
+                | (例: 以前のステップ05がステップ06に、ステップ06が07に変わる)
         h3.heading.switch
           | ステップの削除
           span.swithCondition.contentClosed
@@ -4220,16 +4241,16 @@ html(lang="ja")
                 span.controllerButton ERASE
                 | を押したままにするとディスプレイに「ERASE STEP?」と表示される
                 br
-                |                         そのまま
+                | そのまま
                 span.controllerButton REC
                 | を押すとステップが削除される
                 br
                 span.controllerButton ERASE
                 | から手を離すとキャンセル
                 br
-                |                         [ステップが削除されたことにより、それに続くステップの番号が自動的に変わる]
+                | [ステップが削除されたことにより、それに続くステップの番号が自動的に変わる]
                 br
-                |                         (例: 以前のステップ06が05に、ステップ07が06に変わる)
+                | (例: 以前のステップ06が05に、ステップ07が06に変わる)
               li.contentOperationOrderlist
                 span.controllerButton ERASE
                 | と
@@ -4246,43 +4267,47 @@ html(lang="ja")
           p
             | パターンの中にある4つのシーケンス (メイン・パターンとフィル・パターン)
             br
-            |  各パターン内は4つのシーケンスで構成されている
-          p
-            span.controllerButton A
-            |  &
-            span.controllerButton B
-            br
-            |  各パターンは、AとB、2つのメインパターンで構成されている
-            br
-            |  このボタン押して、A, Bどちらを演奏させるか選択する
-          p
-            | フィル [FILL]
-            br
-            |  メインパターン同様にフィル・パターンもAとBがある
-            br
-            |  このボタンを押すことで演奏中のメインパターンから 次に選択したメインパターンへ切り替わる 直前にそれぞれに対応したフィルパターンが演奏される
-          p
-            | メイン・パターン (A / B)
-            br
-            |  本体の
-            span.controllerButton A
-            | 、
-            span.controllerButton B
-            | それぞれのボタンで選択
-          p
-            | フィル・パターン(フィルパターン AB)
-            br
-            |  フィルパターンは
-            span.controllerButton FILL
-            | を押すことで、メイン・パターン(A/B)が切り替わる直前に演奏される
-            br
-            |  パターン AからBの時はA用のフィルパターン、パターンBからAの時はB用のフィルパターンが演奏される
-            br
-            |  フィル・パターンの長さ、ドラム・セット、名称はメイン・パターンと共通(例：Aが16 拍ならAフィルも16拍)
-            br
-            |  その他のパラメーターは独立している
-            br
-            |  AとB異なる2個のパターンをペアーにしている理由は、ライブ・パフォーマンスや即興演 奏をする際に、素早く異なるパターンを演奏するため
+            | 各パターン内は4つのシーケンスで構成されている
+
+          table
+            tr
+              td
+                span.controllerButton A
+                |  &
+                span.controllerButton B
+              td 各パターンは、AとB、2つのメインパターンで構成されている
+                br
+                | このボタン押して、A, Bどちらを演奏させるか選択する
+            tr
+              td フィル [FILL]
+              td
+                | メインパターン同様にフィル・パターンもAとBがある
+                br
+                | このボタンを押すことで演奏中のメインパターンから 次に選択したメインパターンへ切り替わる 直前にそれぞれに対応したフィルパターンが演奏される
+
+            tr
+              td メイン・パターン (A / B)
+              td
+                | 本体の
+                span.controllerButton A
+                | 、
+                span.controllerButton B
+                | それぞれのボタンで選択
+            tr
+              td フィル・パターン(フィルパターン AB)
+              td
+                | フィルパターンは
+                span.controllerButton FILL
+                | を押すことで、メイン・パターン(A/B)が切り替わる直前に演奏される
+                br
+                | パターン AからBの時はA用のフィルパターン、パターンBからAの時はB用のフィルパターンが演奏される
+                br
+                | フィル・パターンの長さ、ドラム・セット、名称はメイン・パターンと共通(例：Aが16 拍ならAフィルも16拍)
+                br
+                | その他のパラメーターは独立している
+                br
+                | AとB異なる2個のパターンをペアーにしている理由は、ライブ・パフォーマンスや即興演 奏をする際に、素早く異なるパターンを演奏するため
+
         h3.heading.switch
           | メイン・パターン(A/B)の再生
           span.swithCondition.contentClosed
@@ -4290,7 +4315,7 @@ html(lang="ja")
           p
             | メイン・パターン(A/B) の再生
             br
-            |  各パターンの中には「A」、「B」、2つのメイン・パターンがある
+            | 各パターンの中には「A」、「B」、2つのメイン・パターンがある
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4324,7 +4349,7 @@ html(lang="ja")
                 span.controllerKnob DATA
                 | あるいは
                 span.controllerButton &lt;DEC
-                |  /
+                | /
                 span.controllerButton INC&gt;
                 | で指定
               li.contentOperationOrderlist  コピー先のサブ・パターンをA/B あるいはFILLボタンを押して選択
@@ -4344,9 +4369,9 @@ html(lang="ja")
                 span.controllerButton B
                 | を押す
                 br
-                |  フィルパターンだけを消去することも可能
+                | フィルパターンだけを消去することも可能
                 br
-                |  その際は
+                | その際は
                 span.controllerButton A
                 | もしくは
                 span.controllerButton B
@@ -4365,7 +4390,7 @@ html(lang="ja")
                 span.controllerButton REC[DO IT]
                 | を押すと選択したパターンの消去が実行される
                 br
-                |                         そのまま
+                | そのまま
                 span.controllerButton ERASE
                 | を押さえ続けていると画面には「FILL ERASE」と表示される
               li.contentOperationOrderlist
@@ -4803,12 +4828,18 @@ html(lang="ja")
             | このモードは、ドラムサウンドでよりナチュラルな発音させたい場合、例えば、ハイハット・オー プンのサウンドが発音している時にハイハット・クローズのパッドを押してオープンの音を消すといった様な動作に使う
           p 一般的なMIDI音源やリズムマシーンなどでは「トリガーモード」とも呼ばれているもの
           p
-            | 各パッドのアサインモードを設定するには、まず、該当するパッドを押す
-            br
-            |  すると画面右上 にパッド番号、左側には「ASN MODE」が表示され、すぐ下に選択したモードが表示されるので、
-            span.controllerKnob DATA
-            | や数値ボタンを押して音量を設定する
-            br
+            | 各パッドのアサインモードを設定する
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 該当するパッドを押す
+                li.contentOperationOrderlist  画面右上 にパッド番号、左側には「ASN MODE」が表示され、すぐ下に選択したモードが表示される
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | や数値ボタンを押して音量を設定する
+
+
+          p
             |  それぞれのモードによってサウンドを演奏するトリガーの方法が変わる
           table
             tr
@@ -4870,19 +4901,22 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage NAME(PAGE 13)
           p
-            | ユーザー(USER)バンクのドラムセットのみ有効
-            br
-            |  (プリセット「PRESET」は変更出来ない)
-            span.controllerButton &lt;PAGE
-            | /
-            span.controllerButton PAGE&gt;
-            | でカーソルを移動し、
-            span.controllerKnob DATA
-            | や
-            span.controllerButton &lt;DEC
-            | /
-            span.controllerButton INC&gt;
-            | を押して設定
+            | ユーザー(USER)バンクのドラムセットのみ有効(プリセット「PRESET」は変更出来ない)
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton &lt;PAGE
+                  | /
+                  span.controllerButton PAGE&gt;
+                  | でカーソルを移動し、
+                  span.controllerKnob DATA
+                  | や
+                  span.controllerButton &lt;DEC
+                  | /
+                  span.controllerButton INC&gt;
+                  | を押して設定
       h2.heading.switch
         | 音色変化
         span.swithCondition.contentClosed
@@ -5009,7 +5043,7 @@ html(lang="ja")
             span.controllerButton PAGE&gt;
             | で移動 各インストゥルメント (DRUM/ISHOT/SYNTH)の切り替えはそれぞれ該当のボタンを押して、それぞれのパラメータを設定可能
           p
-            | 1つのドラムセット内で使えるエフェクトは「リバーブx 1種類 + EQ&コンプx1種類まで
+            | 1つのドラムセット内で使えるエフェクトは「リバーブx 1種類 + EQ&コンプx1種類」まで
             br
             |  各インストゥルメントに対して、別々のリバーブタイプやEQ&コンプのタイプを設定できるわけではない
             br
@@ -5041,12 +5075,17 @@ html(lang="ja")
             | DRUMと1SHOTサウンドは、パッドへ割り当てたサウンドごとにリバーブのかかり具合を設定できる
             br
             |  SYNTHはインストゥルメントに対してかかる
-            br
-            |  該当するパッドを押すと画面右上にパッド番号、左側にはセンド量が表示されますので、
-            span.controllerKnob DATA
-            | や数値ボタンを押して設定
-            br
-            |  数値を大きくするとリバーブの効果が大きくなりエフェクトが深くかかる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 該当するパッドを押すと画面右上にパッド番号、左側にはセンド量が表示される
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | や数値ボタンを押して設定
+                  br
+                  | 数値を大きくするとリバーブの効果が大きくなりエフェクトが深くかかる
+
         h3.heading.switch
           | リバーブの種類
           span.swithCondition.contentClosed
@@ -5190,7 +5229,6 @@ html(lang="ja")
           p
             | ステップ1
             br
-            br
             span.controllerButton PATTERN PLAY
             | を押しパターンプレイ・モードに入る
             br
@@ -5287,66 +5325,85 @@ html(lang="ja")
             | 通常の楽曲なら、イントロ、Aパート、Bパート、サビ、間奏、ブリッジ、エンディング等、各構成別に分けて1小節から8小節程のパターンを作り、それらを連結させてソングを作る
           p パターンの順序をプログラムしていくことも、リアル・タイムでパターンを選択し、その順序を記憶させて1つのソングを作ることも可能
           p
-            | XR20ではパターン(PATTERN)を繋ぎあわせて1つの「ソング」を作っていく 何番のパター ンをどの順番で、どのメインパターン(A, B)を選択し、どのタイミングでフィル(FILL)を入れたか、 といった様な内容の全てを記録することが出来る 記録方法には「リアルタイム」でパターンを選択&再生しながら作成してゆく方法と、サウンドをひとつずつ打ち込んでいく「ステップ」入力の2種類がある
+            | XR20ではパターン(PATTERN)を繋ぎあわせて1つの「ソング」を作っていく
+            br
+            | 何番のパターンをどの順番で、どのメインパターン(A, B)を選択し、どのタイミングでフィル(FILL)を入れたか、 といった様な内容の全てを記録することが出来る
+            br
+            | 記録方法には「リアルタイム」でパターンを選択&再生しながら作成してゆく方法と、サウンドをひとつずつ打ち込んでいく「ステップ」入力の2種類がある
         h3.heading.switch
           | ソングの再生
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | 停止している時に
-            span.controllerButton PLAY[PAUSE]
-            | を押すと、停止している位置からシーケンスを再生
-            br
-            |  再生中に
-            span.controllerButton PLAY[PAUSE]
-            | を押すと、シーケンスを一時停止
-            br
-            |  最初のステップに戻りたい時は、
-            span.controllerButton &lt;PAGE
-            | を押す
-            br
-            |  次のステップに進みたい時は、
-            span.controllerButton PAGE&gt;
-            | を押す
-          p
-            | シーケンスを最初(ステップ 00)から再生するには、
-            span.controllerButton PLAY
-            | を押す
-            br
-            |                 再生中に
-            span.controllerButton &lt;PAGE
-            | を押すと、現在選択されているステップ(上段に表示の数値)を再生しなおす
-            br
-            |                 再生中
-            span.controllerButton PAGE&gt;
-            | を押すと次のステップへ ジャンプして再生
+          table
+            tr
+              td 停止している位置からシーケンスを再生
+              td 停止している時に
+                span.controllerButton PLAY[PAUSE]
+                | を押す
+            tr
+              td シーケンスを一時停止
+              td 再生中に
+                span.controllerButton PLAY[PAUSE]
+                | を押す
+            tr
+              td 最初のステップに戻る
+              td
+                span.controllerButton &lt;PAGE
+                | を押す
+            tr
+              td 次のステップに進む
+              td
+                span.controllerButton PAGE&gt;
+                | を押す
+            tr
+              td シーケンスを最初(ステップ 00)から再生する
+              td
+                span.controllerButton PLAY
+                | を押す
+            tr
+              td 現在選択されているステップ(上段に表示の数値)を再生しなおす
+              td 再生中に
+                span.controllerButton &lt;PAGE
+                | を押す
+            tr
+              td 次のステップへ ジャンプして再生
+              td 再生中に
+                span.controllerButton PAGE&gt;
+                | を押す
+
         h3.heading.switch
           | ソングの停止
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            span.controllerButton STOP
-            | を押すとシーケンスを停止して先頭に戻る
+          table
+            tr
+              td シーケンスを停止して先頭に戻る
+              td
+                span.controllerButton STOP
+                | を押す
         h3.heading.switch
           | ソングのセーブ
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            span.controllerButton SAVE/COPY
-            | を押したままにする
-            br
-            span.controllerKnob DATA
-            | あるいは
-            span.controllerButton &lt;DEC
-            | /
-            span.controllerButton INC&gt;
-            | で保存先の番号を指定
-            br
-            |  「
-            span.controllerButton REC[DO IT]
-            | を押して保存(
-            span.controllerButton SAVE/COPY
-            | から手を放すとキャンセル)
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton SAVE/COPY
+                  | を押したままにする
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | あるいは
+                  span.controllerButton &lt;DEC
+                  | /
+                  span.controllerButton INC&gt;
+                  | で保存先の番号を指定
+                li.contentOperationOrderlist
+                  span.controllerButton REC[DO IT]
+                  | を押して保存(
+                  span.controllerButton SAVE/COPY
+                  | から手を放すとキャンセル)
+
         h3.heading.switch
           | ソングへ追加(パターン)
           span.swithCondition.contentClosed
@@ -5355,65 +5412,67 @@ html(lang="ja")
             | 選択されているパターンとそのサブ・パターンを、指定選択されているソングに付け加える
             br
             |  254ステップを超えることはできない
-          p
-            span.controllerButton SAVE/COPY
-            | を押したまま
-            span.controllerButton PAGE&gt;
-            | を押す[「APPND TO..」が表示される]
-            br
-            | ↓
-            br
-            |  追加先を指定
-            br
-            | ↓
-            br
-            span.controllerButton REC
-            | を押して実行
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton SAVE/COPY
+                  | を押したまま
+                  span.controllerButton PAGE&gt;
+                  | を押す
+                li.contentOperationOrderlist 「APPND TO..」が表示される
+                li.contentOperationOrderlist 追加先を指定
+                li.contentOperationOrderlist
+                  span.controllerButton REC
+                  | を押して実行
         h3.heading.switch
           | ソングへ追加(ソング)
           span.swithCondition.contentClosed
         section.h3content.hide
           p 現在選択中のソングを、指定先のソングの後ろへ付け足す
-          p
-            | ソングモードで
-            span.controllerButton SAVE/COPY
-            | を押したまま
-            span.controllerKnob DATA
-            | を回して、追加先のソング番号を選択
-            br
-            | ↓
-            br
-            span.controllerButton SAVE/COPY
-            | は離さずにそのまま
-            span.controllerButton &lt;PAGE
-            | もしくは
-            span.controllerButton PAGE&gt;
-            | を押して画面に「APPND TO SONG」と表示させる
-            br
-            | ↓
-            br
-            |  そのまま
-            span.controllerButton REC
-            | を押すと追加が実行される
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ソングモードで
+                  span.controllerButton SAVE/COPY
+                  | を押したまま
+                  span.controllerKnob DATA
+                  | を回して、追加先のソング番号を選択
+                li.contentOperationOrderlist
+                  span.controllerButton SAVE/COPY
+                  | は離さずにそのまま
+                  span.controllerButton &lt;PAGE
+                  | もしくは
+                  span.controllerButton PAGE&gt;
+                  | を押して画面に「APPND TO SONG」と表示させる
+                li.contentOperationOrderlist
+                  span.controllerButton REC
+                  | を押すと追加が実行される
+
           p 追加先のソング番号を現在選択中のソング番号に指定した場合、現在選択中のソング内容がそのまま後ろに付け足される
         h3.heading.switch
           | ソングの消去
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | ソングモードで
-            span.controllerButton ERASE
-            | を押したままにする
-            br
-            |  ディスプレイに「SONG ERASE?」と表示され、
-            span.controllerButton REC
-            | が点滅するので、そのまま
-            span.controllerButton REC
-            | を押すとソングの消去を、
-            span.controllerButton REC
-            | を押さずに
-            span.controllerButton ERASE
-            | から手を放すとキャンセルになる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ソングモードで
+                  span.controllerButton ERASE
+                  | を押したままにする
+                li.contentOperationOrderlist ディスプレイに「SONG ERASE?」と表示され、
+                  span.controllerButton REC
+                  | が点滅するので、そのまま
+                  span.controllerButton REC
+                  | を押す
+                  br
+                  span.controllerButton REC
+                  | を押さずに
+                  span.controllerButton ERASE
+                  | から手を放すとキャンセルになる
+
           p
             | 消去の注意点
             br
@@ -5505,24 +5564,32 @@ html(lang="ja")
                 span.controllerButton REC
                 | が消灯し、ソングのステップエディット・モードが解除される]
           p
-            | 左の3桁の数字は、現在のソング・ステップを表している 右の3桁の数字は、現在選択(演奏)されているパターンの拍数を表しているディスプレイの2段目に表示されている数字は、現在のステップで選択されているパターン番号 すぐ隣に表示されている「A, B, FILL」は選択されているパターンのサブ・パターン
+            | 左の3桁の数字は、現在のソング・ステップを表している右の3桁の数字は、現在選択(演奏)されているパターンの拍数を表している
+            br
+            | ディスプレイの2段目に表示されている数字は、現在のステップで選択されているパターン番号
+            br
+            | すぐ隣に表示されている「A, B, FILL」は選択されているパターンのサブ・パターン
         h3.heading.switch
           | ソングに名前をつける
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            span.controllerKnob RECORD SETUP
-            | を押す
-            br
-            | ↓
-            br
-            |  画面左上の表示は「NO NAME」(すぐ下2段目には「NAME」と表示)され、ソングネーム入力 モードになる
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerKnob RECORD SETUP
+                  | を押す
+                li.contentOperationOrderlist 画面左上の表示は「NO NAME」(すぐ下2段目には「NAME」と表示)され、ソングネーム入力モードになる
+
           p
             | ステップエディット・モード時(RECTボタンが赤く点灯)、
             span.controllerButton STEP EDIT
             | もしくは
             span.controllerButton REC
             | を押してこのモードを抜けると、ディスプレイの上段にソング・ネームが表示される
+
           p
             | 「NO NAME」の「N」の下にカーソル(アンダーバー)があり、
             span.controllerButton &lt;PAGE
@@ -5535,6 +5602,8 @@ html(lang="ja")
             |  /
             span.controllerButton INC&gt;
             | 、あるいは数値ボタンを使用して 文字を選択
+
+
           p ソングモードに入っていれば、ステップエディットモードの状態でもソングネームの入力モードに入ることが出来る
         h3.heading.switch
           | ソングのステップ入力
@@ -5739,26 +5808,28 @@ html(lang="ja")
           | システム・セットアップ
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            span.controllerButton SYSTEM SETUP
-            | を押して、MDオプション、ノート・アサイン、クロック設定、ディスプレイ の明るさ等のシステム設定や初期設定を行う
-            br
-            |  システム・セットアップに入ると、ディスプレイに、SYSTEM と SETUPが表示される
-            br
-            span.controllerButton &lt;PAGE
-            | /
-            span.controllerButton PAGE&gt;
-            | を押すと、別の設定をするページに移動することが出来る
-            br
-            |  選択したページの設定値を変更するときは、
-            span.controllerKnob DATA
-            | あるいは
-            span.controllerButton &lt;DEC
-            | /
-            span.controllerButton INC&gt;
-            | を使用
-            br
-            | システム・セットアップを終了するには、システム・セットアップ・ボタンをもう一度押す
+          p MDオプション、ノート・アサイン、クロック設定、ディスプレイ の明るさ等のシステム設定や初期設定を行う
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  span.controllerButton SYSTEM SETUP
+                  | を押す(ディスプレイに、SYSTEM と SETUPが表示)
+                li.contentOperationOrderlist
+                  span.controllerButton &lt;PAGE
+                  | /
+                  span.controllerButton PAGE&gt;
+                  | を押すと、別の設定をするページに移動
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | あるいは
+                  span.controllerButton &lt;DEC
+                  | /
+                  span.controllerButton INC&gt;
+                  | で選択したページの設定値を変更
+                li.contentOperationOrderlist システム・セットアップ・ボタンを押してシステム・セットアップを終了
+
         h3.heading.switch
           | システムセットアップの保存
           span.swithCondition.contentClosed
@@ -5887,7 +5958,9 @@ html(lang="ja")
             span.controllerButton SYNTH
             | で選択し、「ON」もしくは「OFF」の設定
           p
-            |  XR20を単体のドラムマシーンとして使用し、かつXR20が外部システム同期のマスターになる場合は、このページの設定で3つのインストゥルメントの設定を「OFF」にし、更に PAGE6の「CLOCKOUT」を「ON」にすることで、XR20背面の[MIDI OUT端子からは、MIDI ノートを出力せずに、クロックのみを出力するようになる
+            |  XR20を単体のドラムマシーンとして使用し、かつXR20が外部システム同期のマスターになる場合
+            br
+            | このページの設定で3つのインストゥルメントの設定を「OFF」にし、更に PAGE6の「CLOCKOUT」を「ON」にすることで、XR20背面の[MIDI OUT端子からは、MIDI ノートを出力せずに、クロックのみを出力するようになる
         h3.heading.switch
           | パッドのMIDIノートナンバー設定
           span.swithCondition.contentClosed
@@ -5904,20 +5977,20 @@ html(lang="ja")
             | パッドを叩くことでMIDI OUT端子から出力されるMIDIノート・ナンバーの割り当てをこのページで設定
             br
             |  パッド・ナンバー ドラムサウンド(DRUM)、ワンショット(ISHOT)、それ ぞれに対して個別に設定することができる
-          p
-            | 1. DRUM]ボタン/
-            span.controllerButton 1SHOT
-            | を押す
-            br
-            |  2. 変更したいパッドを押す
-            br
-            |  3.
-            span.controllerKnob DATA
-            | や
-            span.controllerButton &lt;DEC
-            | /
-            span.controllerButton INC&gt;
-            | 、もしくは数値キーで直接MIDIノートナンバーを入力
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist  [DRUM]ボタン/
+                  span.controllerButton 1SHOT
+                  | を押す
+                li.contentOperationOrderlist 変更したいパッドを押す
+                li.contentOperationOrderlist
+                  span.controllerKnob DATA
+                  | や
+                  span.controllerButton &lt;DEC
+                  | /
+                  span.controllerButton INC&gt;
+                  | 、もしくは数値キーで直接MIDIノートナンバーを入力
           p
             | ※ シンセサウンド (SYNTH)はMIDIノートナンバーの割り当てを変更できない
             br
@@ -5941,12 +6014,13 @@ html(lang="ja")
             | 外部からのクロック受信設定 外部のDAWやシーケンサーにXR20を同期させる(スレーブにする)設定をこのページで行う
             br
             |  外部MIDI機器のMIDI OUT端子からXR20の[MIDI IN」端子へ接続し、このページでの設定 を「ON」にするとXR20は外部からのMIDIクロックによる同期が可能になる
-            br
-            |  XR20のパターンやソングを、外部のシーケンサーやDAWアプリケーションなどのテンポ に同期させる際に「ON」にする
-            br
-            |  XR20をMIDI音源モジュールとしてのみ使用したい場合などには「OFF」にするとよい
-          p
-            | XR20をスレーブ同期させる場合はPAGE6の「CLOCK OUT」の設定を「OFF」にする
+          table
+            tr
+              td  XR20をMIDI音源モジュールとしてのみ使用したい
+              td CLOCK INをON
+            tr
+              td XR20をスレーブ同期させる
+              td CLOCK OUTをOFF
         h3.heading.switch
           | 外部へのクロック送信設定
           span.swithCondition.contentClosed
@@ -5959,11 +6033,13 @@ html(lang="ja")
                 span.controllerButton SYSTEM SETUP
               li.contentOperationOrderlist
                 span.controllerPage CLOCK OUT(PAGE 6)
-          p
-            | XR20の[MIDI OUT]端子から外部MIDI機器のMIDI IN端子へ接続し、このページでの設定を 「ON」にすると、XR20からのMIDIクロックで外部接続のMIDI機器の同期が可能になる
-            br
-            |  XR20のテンポに、外部のシーケンサーやDAWアプリケーションなど同期させる際に「ON」にする
-          p 注意: XR20を同期のマスターとして使用する場合はPAGE 「CLOCK IN」の設定を「OFF」にする
+          table
+            tr
+              td XR20のテンポに、外部のシーケンサーやDAWアプリケーションなど同期させる
+              td CLOCK OUTをON
+            tr
+              td XR20を同期のマスターとして使用する場合は
+              td CLOCK INをOFF
         h3.heading.switch
           | MIDIスルーの設定
           span.swithCondition.contentClosed

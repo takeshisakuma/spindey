@@ -2847,7 +2847,13 @@
             </ul>
           </div>
           <p>設定値[1.01... 4.16]</p>
-          <p>「トリガー・パッド」を押して直接ステップを指定すると、同時にトリガーのオン/オフも切り替わる<br>このエディット対象になるステップのことを「ターゲット・ステップ」と呼ぶ<br>このときターゲット・ステップに対応するステップ・ボタンが点灯<br>パターンのレングスが2以上の場合は、ステップ・ボタンを押して指定可能<br>空のターゲット・ステップのトリガー・パッドを押すと、ノート・ナンバーC4が入力される<br><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回すと、小節単位でターゲット・ステップを変更可能</p>
+          <p>「トリガー・パッド」を押して直接ステップを指定すると、同時にトリガーのオン/オフも切り替わる<br>このエディット対象になるステップのことを「ターゲット・ステップ」と呼ぶ<br>このときターゲット・ステップに対応するステップ・ボタンが点灯<br>パターンのレングスが2以上の場合は、ステップ・ボタンを押して指定可能<br>空のターゲット・ステップのトリガー・パッドを押すと、ノート・ナンバーC4が入力される<br></p>
+          <table>
+            <tr>
+              <td>小節単位でターゲット・ステップを変更</td>
+              <td><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回す</td>
+            </tr>
+          </table>
         </section>
         <h3 class="heading switch">音程<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -2861,7 +2867,18 @@
             </ul>
           </div>
           <p>設定値[----, C-1...G 09]</p>
-          <p>1つのターゲット・ステップには4つのノート・ナンバーが記録可能<br><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回すと、ノート・ナンバーをオクターブ単位で変更可能<br>トリガー・パッドを押して、ターゲット・ステップを変更可能<br>ディスプレイに“NOTE”を表示しているときは、ステップ・ボタンを押してもトリガーのオン、オフは変わらない<br>トリガーがオフのステップのノート・ナンバーを変更してもトリガー をオンにするまでは発音しない</p>
+          <p>1つのターゲット・ステップには4つのノート・ナンバーが記録可能</p>
+          <table>
+            <tr>
+              <td>ノート・ナンバーをオクターブ単位で変更</td>
+              <td><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回す</td>
+            </tr>
+            <tr>
+              <td>ターゲット・ステップを変更</td>
+              <td>トリガー・パッドを押す</td>
+            </tr>
+          </table>
+          <p>ディスプレイに“NOTE”を表示しているときは、ステップ・ボタンを押してもトリガーのオン、オフは変わらない<br>トリガーがオフのステップのノート・ナンバーを変更してもトリガー をオンにするまでは発音しない</p>
         </section>
         <h3 class="heading switch">ゲート・タイム<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -2875,7 +2892,13 @@
             </ul>
           </div>
           <p>設定値[ 00...96, TIE]</p>
-          <p>ゲート・タイムを“96” に設定するとちょうど1ステップ間の長さのゲート・タイムになる<br><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回すと、ゲート・タイムを1単位で変更可能<br> “TIE”を指定すると、次のステップが同じノートの場合はオシレーターの発音やEG、モジュレーションがリトリガーしない<br>ディスプレイに<span class="controllerPage">GATE TIME</span>を表示しているときは、ステップ・キーを押してもトリガーのオン、オフは変わらない<br>トリガーがオフのステップのゲート・タイムを変更してもトリガーをオンにするまでは発音しない</p>
+          <p>ゲート・タイムを"96"に設定すると1ステップ間の長さになる<br> “TIE”を指定すると、次のステップが同じノートの場合はオシレーターの発音やEG、モジュレーションがリトリガーしない<br>ディスプレイに<span class="controllerPage">GATE TIME</span>を表示しているときは、ステップ・キーを押してもトリガーのオン、オフは変わらない<br>トリガーがオフのステップのゲート・タイムを変更してもトリガーをオンにするまでは発音しない</p>
+          <table>
+            <tr>
+              <td>ゲート・タイムを1単位で変更</td>
+              <td><span class="controllerButton">Shift</span>を押しながら<span class="controllerKnob">Value</span>を回す</td>
+            </tr>
+          </table>
         </section>
         <h3 class="heading switch">発音の強さ<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -3283,7 +3306,7 @@
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
               <li class="contentOperationOrderlist">再生したいパターンを選択</li>
-              <li class="contentOperationOrderlist">「<span class="controllerButton">Play/Pause</span>」を押す</li>
+              <li class="contentOperationOrderlist"><span class="controllerButton">Play/Pause</span>を押す</li>
             </ul>
           </div>
           <p>パターンは先頭から再生を開始し、そのパターンの最後まで演奏すると先頭に戻り、繰り返し再生される</p>
@@ -3305,8 +3328,8 @@
               <li class="contentOperationOrderlist"><span class="controllerButton">Write</span></li>
             </ul>
           </div>
-          <p>エディットした内容を残しておきたいときは必ず保存が必要<br> 保存を行わないで、他のパターンを選ぶとエディットした内容は保存されず元に戻る<br>エディットした内容を残しておきたいときは必ず保存が必要</p>
-          <p>メモリーへの保存実行中(<span class="controllerButton">Write</span>が点灯中)に電源を切るとデータが破壊される恐れがある</p>
+          <p>エディットした内容を残しておきたいときは必ず保存が必要<br> 保存を行わないで、他のパターンを選ぶとエディットした内容は保存されず元に戻る</p>
+          <p>メモリーへの保存実行中(<span class="controllerButton">Write</span>点灯中)に電源を切るとデータが破壊される恐れがある</p>
         </section>
         <h3 class="heading switch">パターンのコピー<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -3359,7 +3382,7 @@
         </section>
         <h3 class="heading switch">パターンのSWINGの設定<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>発音タイミングにズレを与えてシャッフルや跳ねた感じのノリを加える<br> 偶数番目のステップの発音タイミングをパーセント(%)単位でずらす</p>
+          <p> 偶数番目のステップの発音タイミングをパーセント(%)単位でずらして、シャッフル効果を加える</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -3368,7 +3391,12 @@
             </ul>
           </div>
           <p>設定値[–50 –25 +25 +50]</p>
-          <p>Last Stepを奇数に設定したり、シーケンサー制御をするMFXタイプ(Seq Reverse、Seq Doubler、Odd Stepper、Even Stepper)を利用した場合は、偶数番目ではなく奇数番目のステッ プの発音タイミングがずれる場合がある<br> “+33%”に設定すると完全なシャッフルに近いタイミングで発音される</p>
+          <p>"+33%"に設定すると完全なシャッフルに近いタイミングになる</p>
+          <p>偶数番目ではなく奇数番目のステップの発音タイミングがずれる場合の例</p>
+          <ul>
+            <li>Last Stepが奇数になっている</li>
+            <li>シーケンサー制御をするMFXタイプ(Seq Reverse、Seq Doubler、Odd Stepper、Even Stepper)を使っている</li>
+          </ul>
         </section>
         <h3 class="heading switch">パターンのビートの設定<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -4152,7 +4180,7 @@
             </ul>
           </div>
           <p>設定値[Off, 1... 250]<br>“Off”に設定するとパターン・チェンジを行わない</p>
-          <p>パターンに対して設定する</p>
+          <p>パターンチェインは、パターンに対して設定する</p>
           <p>チェイン機能を使用する場合は、グローバル・パラメーターの CHAIN MODE をOnにする</p>
         </section>
         <h3 class="heading switch">パターンを何回繰り返すかの設定<span class="swithCondition contentClosed"></span></h3>
@@ -5730,7 +5758,6 @@
           </div>
           <p>メトロノームを鳴らしながら録音することも可能</p>
           <p>パターンが繰り返している間、録音は続く</p>
-          <p>録音を終了する</p>
           <table>
             <tr>
               <td>録音終了</td>
@@ -5757,7 +5784,7 @@
       <section class="h2content hide">
         <h3 class="heading switch">モーション・シーケンスとは<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ノブやボタンによる音色変化を記録し、それを再現することができる機能</p>
+          <p>ノブやボタンによる音色変化を記録、再生する</p>
         </section>
         <h3 class="heading switch">モーション・シーケンスが可能なノブ、ボタン<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -5796,7 +5823,7 @@
               <td>発音のタイミングでノブの情報を読み取り記憶する</td>
             </tr>
           </table>
-          <p>モーション・シーケンス記録中は<span class="controllerButton">●</span>が点滅する<br> モーション・シーケンスの記録を開始してから、パターンが1周すると自動的にRECが解除され、記録したモーションの再生動作に切り替わる<br>続けて記録したい場合は、再度<span class="controllerButton">●</span>を押す必要がある</p>
+          <p>モーション・シーケンス記録中は<span class="controllerButton">●</span>が点滅する<br> モーション・シーケンスの記録を開始してから、パターンが1周すると自動的にRECが解除され、記録したモーションの再生動作に切り替わる<br>続けて記録したい場合は、再度<span class="controllerButton">●</span>を押す</p>
         </section>
         <h3 class="heading switch">モーション・シーケンスの削除<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -5868,8 +5895,8 @@
               <li class="contentOperationOrderlist"><span class="controllerButton">Exit</span>を押して、記録を終了</li>
             </ul>
           </div>
-          <p>再生しているパターンにあわせて、ノブやトリガー・パッドを操作し、音の追加を行ったり、テンポを変更するなどの情報を記録<br> またパターンを変更して演奏することもできる</p>
-          <p>イベント・レコーダーで記録した情報はパターンに記録されているデータには影響しない<br>また、パターンへの保存を行うこともできない<br>CLOCK MODEがInternalのときに使用可能</p>
+          <p>再生しているパターンにあわせて、ノブやトリガー・パッドを操作し、音の追加を行ったり、テンポを変更するなどの情報を記録<br> パターンを変更して演奏することもできる</p>
+          <p>イベント・レコーダーで記録した情報はパターンに記録されているデータには影響しない<br>パターンへの保存を行うこともできない<br>CLOCK MODEがInternalのときに使用可能</p>
           <p>記録すると、KORG/electribe samplerフォルダにe_[番号].e2sevというファイルを書き出す<br>ファイルの最大数は100</p>
         </section>
         <h3 class="heading switch">再生する<span class="swithCondition contentClosed"></span></h3>
@@ -5992,7 +6019,7 @@
               <td>リサンプリングした音を保存しない</td>
             </tr>
           </table>
-          <p>リサンプリングした場合、再生時の出力音量が聴感上小さくならないよう、サンプルの再生時の音量を上げている<br> ただし、ヘッドマージンが少なくなるため、ひずみを発生する場合がある<br>その場合はプレイ・レベルを“Normal”に設定することで再生時の音量は録音時に比べ小さくなってしまうが、ヘッドマージンを確保することが可能<br></p>
+          <p>リサンプリングしたサンプルにひずみが発生した場合、プレイ・レベルを“Normal”に設定すると解消できる場合がある</p>
         </section>
       </section>
       <h2 class="heading switch">サンプル(編集)<span class="swithCondition contentClosed"></span></h2>

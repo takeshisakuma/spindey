@@ -3316,32 +3316,35 @@ html(lang="ja")
             |                 この手順は、Elektron C6ソフトウェア転送ツールを使用する場合のみに行う
             br
             |                 Elektron Transferを使用する場合、Transferから Digitaktのディレクトリに新しい転送先ディレクトリを作成できる
-            br
-            |                 メイン画面で、矢印キーの[RIGHT]を押して右側のメニューを表示す
-            br
-            |                 CREATE DIRを選択して[YES] を押すと、新しいディレクトリが作成される
-            br
-            |                 名前を付ける画面が表示される
-            br
-            |                 新しい転送先ディレクトリに適切な 名前を付ける
-            br
-            |                 [YES]を押すと新しいディレクトリが開く
-            br
-            |                 このディレクトリは、最初は空
-            br
-            |                 矢印キー の[LEFT]を押して左側のメニューを開く
-            br
-            |                 UPLOAD HEREをハイライトして[YES]を押す
-            br
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist メイン画面で、矢印キーの[RIGHT]を押して右側のメニューを表示す
+              li.contentOperationOrderlist CREATE DIRを選択して[YES] を押すと、新しいディレクトリが作成される
+              li.contentOperationOrderlist 名前を付ける画面が表示される
+              li.contentOperationOrderlist 新しい転送先ディレクトリに適切な 名前を付ける
+              li.contentOperationOrderlist [YES]を押すと新しいディレクトリが開く
+              li.contentOperationOrderlist このディレクトリは、最初は空
+              li.contentOperationOrderlist 矢印キー の[LEFT]を押して左側のメニューを開く
+              li.contentOperationOrderlist UPLOAD HEREをハイライトして[YES]を押す
+
+          p
             |                 コンピュータから送信されたサンプルは、新しい転送先ディレクトリに書き込まれる
             br
             |                 新規または既存のディレクトリも、左側のメニューにアクセスして同様の方法で転送先ディレクトリに設定できる
             br
             |                 ただし、書き込み保護されている FACTORY ディレクトリは設定できない
-            br
-            |                 ディレクトリは削除または名前を変更することもできる
-            br
-            |                 ディレクトリをハイライトし、右側のメニューを表示してDELETE DIRまたは RENAMEを選択する
+          table
+            tr
+              td ディレクトリの削除
+              td ディレクトリをハイライトし、右側のメニューを表示してDELETE DIRを選択
+            tr
+              td ディレクトリの名前を変更
+              td ディレクトリをハイライトし、右側のメニューを表示してRENAMEを選択
+
+
+
         h3.heading.switch
           | SAMPLES/Digitaktからコンピュータへのサンプルの転送
           span.swithCondition.contentClosed
