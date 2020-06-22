@@ -41,7 +41,7 @@
               <td>メニューやサブメニュー間を移動する</td>
             </tr>
             <tr>
-              <th>EVEL/DATA ノブ</th>
+              <th>LEVEL/DATA ノブ</th>
               <td>メニューやリストを素早くスクロール</td>
             </tr>
             <tr>
@@ -56,7 +56,16 @@
         </section>
         <h3 class="heading switch">パラメータ編集<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>DATA ENTRYノブは、トラックパラメータの値の変更に使用する<br>                DATA ENTRYノブを押しながら回すと、大きな単位でパラメータを調整できる</p>
+          <table>
+            <tr>
+              <th>トラックパラメータの値の変更</th>
+              <td>DATA ENTRYノブを回す</td>
+            </tr>
+            <tr>
+              <th>トラックパラメータの値を大きく変更</th>
+              <td>DATA ENTRYノブを押しながら回す</td>
+            </tr>
+          </table>
           <table>
             <tr>
               <th>パラメータをデフォルト値にリセット</th>
@@ -80,7 +89,18 @@
             </tr>
             <tr>
               <th>パラメータ値のジャンプ</th>
-              <td>特定のパラメータの編集中に、[FUNC]を押すと、パラメータ値が適切な位置にジャンプする<br>                        例：ディレイ時間では、値の倍増や半減<br>                        例：サンプルチューニングは、オクターブ全体分ジャンプ</td>
+              <td>特定のパラメータの編集中に、[FUNC]を押すと、パラメータ値が適切な位置にジャンプする
+                <table>
+                  <tr>
+                    <th>ディレイ時間</th>
+                    <td>値の倍増や半減</td>
+                  </tr>
+                  <tr>
+                    <th>サンプルチューニング</th>
+                    <td>オクターブ全体分ジャンプ</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <th>パターン内のオーディオトラック内の同じパラメーターを一括変更</th>
@@ -96,7 +116,7 @@
               <td>メニューをスクロールする</td>
             </tr>
             <tr>
-              <th>[FUNC]キーと[UP]または [DOWN]キー</th>
+              <th>[FUNC]キー+[UP]キー<br>or<br>[FUNC]キー+[DOWN]キー</th>
               <td>カーソルが 1つのメニューページ分移動</td>
             </tr>
           </table>
@@ -146,31 +166,31 @@
       </section>
       <h2 class="heading switch">データ構成<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
-        <h3 class="heading switch">プロジェクト、パターン、キット、サウンド、サンプル<span class="swithCondition contentClosed"></span></h3>
+        <h3 class="heading switch">プロジェクト<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <table>
             <tr>
               <th>プロジェクト</th>
-              <td>プロジェクトには、128個のパターンが含まれる<br>                        全般設定と状態はプロジェクトに保存される<br>                        プロジェクトはSETTINGSメニューで保存、ロード、管理する<br>                        最大64MB(約11分間)のサンプルをロードできる</td>
+              <td>SETTINGSメニューで保存、ロード、管理する<br>最大64MB(約11分間)のサンプルをロードできる</td>
             </tr>
+            <tr>
+              <th>プロジェクトに含まれるもの</th>
+              <td>
+                <ul>
+                  <li>128個のパターン</li>
+                  <li>全般設定と状態</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">パターン<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
             <tr>
               <th>パターン</th>
               <td>パターンは主なデータコンテナー<br>                        各バンクに16個のパターンを使用できる<br>                        パターンには最大8個のサウンド(各オーディオトラックに1つずつ)と、トリガーやパラメータロックなどのシーケンサーデータを格納できる<br>                        TRIGページの設定やBPM、長さ、スイング、拍子記号のデフォルト設定も含まれている<br>                        パターンには、8つのMIDIトラックのすべてのパラメータ設定も含まれる</td>
             </tr>
-            <tr>
-              <th>キット</th>
-              <td>キットは8つのサウンドの集合<br></td>
-            </tr>
-            <tr>
-              <th>サウンド</th>
-              <td>サウンドは、8つのオーディオトラックのいずれかに割り当てることができる<br>                        サウンドは、サンプルと、PARAMETERページのすべての設定(SRC、FLTR、AMP、LFO)を合わせたもの<br>                        各オーディオトラックには1つのサウンドを含めることができる<br>                        サウンドは+Driveサウンドライブラリに保存される<br>                        SOUND MANAGERを使用して、サウンドを管理できる<br>                        サウンドは、+Driveサウンドライブラリと、アクティブなプロジェクトのサウンドプールのどちらからもロードできる<br><br>                        +Driveからパターンにインポートしたサウンドはアクティブのパターンの一部になるので、サウンドを変更しても、保存されているサウンドやキットには影響しない<br>                        アクティブなパターンのサウンドにのみ影響する<br>                        アクティブなパターンから+Driveにサウンドをエクスポート(および保存)できる<br></td>
-            </tr>
-            <tr>
-              <th>サンプル</th>
-              <td>最大127個のサンプルスロットを使用して、プロジェクトに64MB(約11分間)までサンプルをロードできる<br>                        サンプルは+Driveサンプルバンクに保存される<br>                        その他のサンプルは、Elektron転送ソフトウェアを使用して、コンピューターからDigitaktに転送できる<br>                        また、Digitaktで直接サンプリングすることもできる<br>                        サウンドやパターンで使用されているサンプルは、名前を変更したり移動したりしても、意図したとおりに動作する<br>                        これは、ファイルごとに固有の値を追加するハッシュ関数を使用しているためで、この値は、ファイル名やデータ構造内のファイルの場所には依存しない<br>                        ただし、サンプルを削除した場合は、サウンドやパターンには含まれなくなる<br>                        +Driveからサンプルを削除した場合は、サウンドやパターンには含まれなくなる<br>                        サンプルは、ロックするためにプロジェクトにインポートする必要がある</td>
-            </tr>
-          </table>
-          <table>
             <tr>
               <th>パターンに含まれるもの</th>
               <td>
@@ -192,6 +212,15 @@
                 </ul>
               </td>
             </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">キット<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <th>キット</th>
+              <td>キットは8つのサウンドの集合<br></td>
+            </tr>
             <tr>
               <th>キットに含まれるもの</th>
               <td>
@@ -201,6 +230,15 @@
                 </ul>
               </td>
             </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">サウンド<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <th>サウンド</th>
+              <td>サウンドは、8つのオーディオトラックのいずれかに割り当てることができる<br>                        サウンドは、サンプルと、PARAMETERページのすべての設定(SRC、FLTR、AMP、LFO)を合わせたもの<br>                        各オーディオトラックには1つのサウンドを含めることができる<br>                        サウンドは+Driveサウンドライブラリに保存される<br>                        SOUND MANAGERを使用して、サウンドを管理できる<br>                        サウンドは、+Driveサウンドライブラリと、アクティブなプロジェクトのサウンドプールのどちらからもロードできる<br><br>                        +Driveからパターンにインポートしたサウンドはアクティブのパターンの一部になるので、サウンドを変更しても、保存されているサウンドやキットには影響しない<br>                        アクティブなパターンのサウンドにのみ影響する<br>                        アクティブなパターンから+Driveにサウンドをエクスポート(および保存)できる<br></td>
+            </tr>
             <tr>
               <th>サウンドに含まれるもの</th>
               <td>
@@ -209,6 +247,15 @@
                 </ul>
               </td>
             </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">サンプル<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <th>サンプル</th>
+              <td>最大127個のサンプルスロットを使用して、プロジェクトに64MB(約11分間)までサンプルをロードできる<br>サンプルは+Driveサンプルバンクに保存される<br>その他のサンプルは、Elektron転送ソフトウェアを使用して、コンピューターからDigitaktに転送できる<br>また、Digitaktで直接サンプリングすることもできる<br>サンプルは、ロックするためにプロジェクトにインポートする必要がある</td>
+            </tr>
             <tr>
               <th>サンプルに含まれるもの</th>
               <td>
@@ -216,6 +263,14 @@
                   <li>16ビット、48kHz、モノラルオーディオファイル</li>
                 </ul>
               </td>
+            </tr>
+            <tr>
+              <th>使用中のサンプルの名前変更、移動</th>
+              <td>名前変更や移動をしても意図したとおりに動作する<br>これは、ファイルごとに固有の値を追加するハッシュ関数を使用しているためで、この値は、ファイル名やデータ構造内のファイルの場所には依存しない</td>
+            </tr>
+            <tr>
+              <th>使用中のサンプルの削除</th>
+              <td>サウンドやパターンには含まれなくなる<br>+Driveからサンプルを削除した場合は、サウンドやパターンには含まれなくなる</td>
             </tr>
           </table>
         </section>
@@ -241,13 +296,13 @@
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
               <li class="contentOperationOrderlist">[TEMPO]キーを押してTEMPOメニューを開く</li>
-              <li class="contentOperationOrderlist">[FUNC]と[YES]を押すと、GLOBALテンポモードとPATTERNテンポモードが切り替わる</li>
+              <li class="contentOperationOrderlist">[FUNC]と[YES]を押すと、GLOBAL Tempo ModeとPATTERN Tempo Mode(デフォルト)が切り替わる</li>
             </ul>
           </div>
           <table>
             <tr>
               <th>テンポを変更する</th>
-              <td>EVEL/DATAノブを使用する</td>
+              <td>LEVEL/DATAノブを使用する</td>
             </tr>
             <tr>
               <th>テンポを変更する(8BPMずつ)</th>
@@ -425,7 +480,7 @@
           </div>
           <p>パターンに 16個以上のステップが含まれている場合は、[PAGE]キーを押して編集するパターンページを選択する</p>
           <p>&lt;PATTERN PAGE&gt;のLEDが点灯していパターンページがアクティブでGRID RECORDINGモードを終了するには[REC]を押す</p>
-          <p>• トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトさせることができる<br>                GRID RECORDINGモードで、[FUNC]を押したまま[LEFT]か[RIGHT]矢印キーを押すと、トリガーがシフトする</p>
+          <p>トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトする<br>GRID RECORDINGモードで、[FUNC]を押したまま[LEFT]か[RIGHT]矢印キーを押す</p>
         </section>
         <h3 class="heading switch">LIVE RECORDINGモード<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -2367,7 +2422,7 @@
           <table>
             <tr>
               <th>IMPORT SOUND</th>
-              <td>サウンドを+Driveからアクティブなパターンにインポート(コピー)する<br>                        一覧をスクロールするには LEVEL/DATA ノブを回すか、[UP]/[DOWN]を押す<br>                        [YES]キーでサウンドを選択し、[TRACK 1～8]でを割り当てるトラックを選択する</td>
+              <td>サウンドを+Driveからアクティブなパターンにインポート(コピー)する<br>一覧をスクロールするには LEVEL/DATA ノブを回すか、[UP]/[DOWN]を押す<br>[YES]キーでサウンドを選択し、[TRACK 1～8]でを割り当てるトラックを選択する</td>
             </tr>
             <tr>
               <th>EXPORT SOUND</th>
@@ -3011,7 +3066,7 @@
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Level/Dataノブか、[UP][DOWN]矢印キーでカーソルを移動</li>
+              <li class="contentOperationOrderlist">LEVEL/DATAノブか、[UP][DOWN]矢印キーでカーソルを移動</li>
               <li class="contentOperationOrderlist">[LEFT]/[RIGHT]矢印キーか、[YES]を押して項目にチェック/チェック解除</li>
               <li class="contentOperationOrderlist">チェックすると下に「ERASE SELECTED DATA」が表示されるので、選択して「YES」を押す</li>
             </ul>
@@ -3092,7 +3147,7 @@
                   </tr>
                   <tr>
                     <th>2X</th>
-                    <td>BPMの2倍でパターンが再生される<br>                                    ステップシーケンサーの基本解像度を32音まで増やす場合に便利</td>
+                    <td>BPMの2倍でパターンが再生される<br>ステップシーケンサーの基本解像度を32音まで増やす場合に便利</td>
                   </tr>
                 </table>
               </td>
@@ -3112,7 +3167,7 @@
         </section>
         <h3 class="heading switch">LENGTH PER TRACKモード<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>このモードでは、パターンのトラックに個々の長さを割り当てることができる<br>                LENGTH PER TRACKモードでは、TRACKとPATTERNの2つの列がある<br>                TRACK列には、トラックのステップの長さを設定する<br>                これは、LENGTH PER PATTERNモードでのパターン長の設定と同様<br>                この設定は、アクティブなトラックのみに適用される<br>                スケール設定を編集するトラックを選択するには、[TRK]キーを押す</p>
+          <p>このモードでは、パターンのトラックに個々の長さを割り当てることができる<br>LENGTH PER TRACKモードでは、TRACKとPATTERNの2つの列がある<br>TRACK列には、トラックのステップの長さを設定する<br>これは、LENGTH PER PATTERNモードでのパターン長の設定と同様<br>この設定は、アクティブなトラックのみに適用される<br>スケール設定を編集するトラックを選択するには、[TRK]キーを押す</p>
           <table>
             <tr>
               <th>LENGTH</th>
@@ -3124,11 +3179,11 @@
             </tr>
             <tr>
               <th>CH.LEN</th>
-              <td>キューイングされたパターンやチェーンされたパターンが再生を開始する前にアクティブなパターンをどの位長く再生するかを制御する<br>                        この設定は、例えばM.LENをINFに設定している場合に重要<br>                        CH.LEN設定を行わないと、パターンは無限に再生され、次のパターンがキューイングされない<br>                        例：CH.LENを64に設定すると、パターンは64個のステップを持つパターンと同様に再生され、キューイングやチェーンが行われる</td>
+              <td>キューイングされたパターンやチェーンされたパターンが再生を開始する前にアクティブなパターンをどの位長く再生するかを制御する<br>この設定は、例えばM.LENをINFに設定している場合に重要<br>CH.LEN設定を行わないと、パターンは無限に再生され、次のパターンがキューイングされない<br>例：CH.LENを64に設定すると、パターンは64個のステップを持つパターンと同様に再生され、キューイングやチェーンが行われる</td>
             </tr>
             <tr>
               <th>M.LEN</th>
-              <td>すべてのトラックを再開する前に、パターンでステップを再生する回数を制御する<br>                        INF設定にすると、パターンのトラックが無限にループし、再開されない<br>                        この設定は、チェーンされたパターンが再生を開始するまでに、アクティブなパターンをどの位長く再生するかにも影響する<br>                        CH.LENパラメータでこの設定を上書きできる<br></td>
+              <td>すべてのトラックを再開する前に、パターンでステップを再生する回数を制御する<br>INF設定にすると、パターンのトラックが無限にループし、再開されない<br>この設定は、チェーンされたパターンが再生を開始するまでに、アクティブなパターンをどの位長く再生するかにも影響する<br>CH.LENパラメータでこの設定を上書きできる<br></td>
             </tr>
           </table>
         </section>
@@ -3137,7 +3192,7 @@
       <section class="h2content hide">
         <h3 class="heading switch">STARTUPメニューへのアクセス<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>異なる選択肢を選択するには、対応する[TRIG]キーを押す</p>
+          <p>他の選択肢を選択するには、対応する[TRIG]キーを押す</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -3147,7 +3202,8 @@
         </section>
         <h3 class="heading switch">TEST MODE<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>テストのため、本体のすべての出力で短い音が鳴る<br>                Digitaktに発生した問題がハードウェアが原因である可能性がある場合は、この自己診断テストを実行する<br>                デバイスが問題なく動作している場合、エラーは表示されない</p>
+          <p>Digitaktに発生した問題がハードウェアが原因である可能性がある場合に実行</p>
+          <p>テストのため、本体のすべての出力で短い音が鳴る<br>デバイスが問題なく動作している場合、エラーは表示されない</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -3177,13 +3233,27 @@
         </section>
         <h3 class="heading switch">FACTORY RESET<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>Digitaktで工場出荷時リセットを実行すると、アクティブなRAMプロジェクト(パターン、グローバルデータを含む)上書きおよび再初期化する<br>                +Driveのプロジェクトスロット1も、ファクトリープリセットパターン、サウンド、設定に上書きされ、再初期化される<br>                サウンドバンクAは工場出荷時に設定されたサウンドで上書きされる<br>                アクティブなプロジェクトを保存しておく場合は、+Driveのプロジェクトスロットの1より大きい数値のスロットに保存してから、工場出荷時リセットを実行する</p>
+          <table>
+            <tr>
+              <th>アクティブなRAMプロジェクト(パターン、グローバルデータを含む)</th>
+              <td>上書きおよび再初期化</td>
+            </tr>
+            <tr>
+              <th>+Driveのプロジェクトスロット1</th>
+              <td>ファクトリープリセットパターン、サウンド、設定に上書きされ、再初期化される</td>
+            </tr>
+            <tr>
+              <th>サウンドバンクA</th>
+              <td>工場出荷時に設定されたサウンドで上書きされる</td>
+            </tr>
+          </table>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
               <li class="contentOperationOrderlist">[TRIG 3]キーを押して工場出荷時リセットを実行</li>
             </ul>
           </div>
+          <p>アクティブなプロジェクトを保存しておく場合は、+Driveのプロジェクトスロットの1より大きい数値のスロットに保存してから、工場出荷時リセットを実行する</p>
         </section>
         <h3 class="heading switch">OS UPGRADE<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -3477,6 +3547,36 @@
               <td> ダイレクトサンプリングプロセスでキャンセル</td>
             </tr>
           </table>
+        </section>
+      </section>
+      <h2 class="heading switch">サンプルパック<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">サンプルの転送<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">Digitaktをコンピューターに接続(USB A to Bケーブル)<br>(Digitaktはコンピューターのデスクトップにアイコンとして表示されない)</li>
+                <li class="contentOperationOrderlist">Digitaktで、SETTINGSを押し、MIDI CONFIG &gt; PORT CONFIGに移動して、USBからの入力またはMIDI + USBを設定</li>
+                <li class="contentOperationOrderlist">コンピューターで、Elektron Transferを開き、Elektron Transfer開始画面でDigitaktのUSB MIDIポートを選択</li>
+                <li class="contentOperationOrderlist">サンプルをElektron Transferメインウィンドウにドラッグアンドドロップして、Digitaktの+ドライブストレージに転送<br>転送アプリケーションウィンドウの一番下で、Digitaktのターゲットフォルダーを変更できる(デフォルトは/ transfers-YYMMDD)</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <h3 class="heading switch">サンプルをDIGITAKTプロジェクトにロードする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">Digitaktで、[SETTINGS]を押してから、SAMPLESメニューを開く</li>
+                <li class="contentOperationOrderlist">サンプルをDigitaktに転送したときに作成したディレクトリを開き、ロードするサンプルに移動</li>
+                <li class="contentOperationOrderlist">サンプルをハイライトし、[YES]を押してチェック<br>任意のサンプルをプレビュー(アクティブなトラックの音声で再生)し、ハイライトして[FUNC] + [YES]を押す<br>サンプルを約10秒をプレビューできる</li>
+                <li class="contentOperationOrderlist"> [RIGHT]矢印キーを押して、画面の右側にメニューを表示</li>
+                <li class="contentOperationOrderlist">LOAD TO PROJECTを選択して、[YES]を押す<br>選択した(チェックされた)サンプルは、アクティブなプロジェクトの127個のサンプルスロットのうち、最初に使用可能な空のスロットに表示される</li>
+              </ul>
+            </p>
+          </div>
         </section>
       </section>
     </main>

@@ -7,6 +7,43 @@ html(lang="ja")
   body
     h1.heading Digitakt
     main.equipmentMain
+      //-h2.heading.switch
+        | OS1.2
+        span.swithCondition.contentClosed
+      //-section.h2content.hide
+        h3.heading.switch
+          | OS1.2
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ステップ録音モード(シーケンサーにステップごとにノートやコードを入力できる)
+            br
+            | シーケンス内の定義済みポイントを提供するジャンプモード/機能
+            br
+            | シーケンスに追加できるトリガー確率
+            br
+            | トリガープレビュー機能(トリガーがトラックに到達する前に個々のトリガーを確認できる)
+            br
+            | オーディオとMIDIトラックの両方について、シーケンサーの1つのステップ（パラメーターロックを含む）をプレビューする
+            br
+            | クラス準拠のオーディオインターフェイスとして機能し、USB経由でオーディオをストリーミング
+            br
+            | 新しい再生モード（poly、poly with mono LFOs、mono、mono legato）追加
+            br
+            | サンプルスロットをランダムに一緒にロールできるようになり、サンプルプールはより適切な構成で更新されました。
+            br
+            | 未使用のサンプルは削除が簡単になりました。
+            br
+            | 同期メニューのクロック送信および受信設定からトランスポートを分離
+            br
+            | TRIGページにLENパラメータのスナップ値を追加
+            br
+            | LENGTHパラメータのスナップ値を追加
+            br
+            | アクティブシーケンサーステップがCHROMATICモードで表示されるようになった
+            br
+            | USBオーディオのオーディオルーティングオプションを[設定]→ [オーディオルーティング]メニューに移動
+
+
       h2.heading.switch
         | ユーザーインターフェース
         span.swithCondition.contentClosed
@@ -20,7 +57,7 @@ html(lang="ja")
               th [UP]、[DOWN]、[LEFT]、[RIGHT]の矢印キー
               td メニューやサブメニュー間を移動する
             tr
-              th EVEL/DATA ノブ
+              th LEVEL/DATA ノブ
               td メニューやリストを素早くスクロール
             tr
               th [YES]
@@ -32,10 +69,15 @@ html(lang="ja")
           | パラメータ編集
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | DATA ENTRYノブは、トラックパラメータの値の変更に使用する
-            br
-            |                 DATA ENTRYノブを押しながら回すと、大きな単位でパラメータを調整できる
+
+          table
+            tr
+              th トラックパラメータの値の変更
+              td DATA ENTRYノブを回す
+            tr
+              th トラックパラメータの値を大きく変更
+              td DATA ENTRYノブを押しながら回す
+
           table
             tr
               th パラメータをデフォルト値にリセット
@@ -56,10 +98,13 @@ html(lang="ja")
               th パラメータ値のジャンプ
               td
                 | 特定のパラメータの編集中に、[FUNC]を押すと、パラメータ値が適切な位置にジャンプする
-                br
-                |                         例：ディレイ時間では、値の倍増や半減
-                br
-                |                         例：サンプルチューニングは、オクターブ全体分ジャンプ
+                table
+                  tr
+                    th ディレイ時間
+                    td 値の倍増や半減
+                  tr
+                    th サンプルチューニング
+                    td オクターブ全体分ジャンプ
             tr
               th パターン内のオーディオトラック内の同じパラメーターを一括変更
               td [TRK]を押したままにしてパラメータ設定を変更する
@@ -72,7 +117,11 @@ html(lang="ja")
               th LEVEL/DATAノブ
               td メニューをスクロールする
             tr
-              th [FUNC]キーと[UP]または [DOWN]キー
+              th [FUNC]キー+[UP]キー
+                br
+                | or
+                br
+                | [FUNC]キー+[DOWN]キー
               td カーソルが 1つのメニューページ分移動
         h3.heading.switch
           | NAMING画面
@@ -129,20 +178,30 @@ html(lang="ja")
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
-          | プロジェクト、パターン、キット、サウンド、サンプル
+          | プロジェクト
           span.swithCondition.contentClosed
         section.h3content.hide
           table
             tr
               th プロジェクト
               td
-                | プロジェクトには、128個のパターンが含まれる
+                | SETTINGSメニューで保存、ロード、管理する
                 br
-                |                         全般設定と状態はプロジェクトに保存される
-                br
-                |                         プロジェクトはSETTINGSメニューで保存、ロード、管理する
-                br
-                |                         最大64MB(約11分間)のサンプルをロードできる
+                | 最大64MB(約11分間)のサンプルをロードできる
+            tr
+              th プロジェクトに含まれるもの
+              td
+                ul
+                  li 128個のパターン
+                  li 全般設定と状態
+
+
+
+        h3.heading.switch
+          | パターン
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
             tr
               th パターン
               td
@@ -156,10 +215,52 @@ html(lang="ja")
                 br
                 |                         パターンには、8つのMIDIトラックのすべてのパラメータ設定も含まれる
             tr
+              th パターンに含まれるもの
+              td
+                ul
+                  li キット
+                  li 8つのMIDIトラックのすべてのパラメータ設定
+                  li トリガーやパラメータロックなどのシーケンサーデータ
+                  li
+                    | TRIG PARAMETERページの設定
+                    br
+                    |                                 BPM、長さ、スイング、拍子記号設定
+                  li TRIGページのトリガーの全般設定(デフォルトノートピッチ、ベロシティなど)
+                  li SRC、FLTR、AMP、LFOページのパラメータ設定
+                  li DELAY、REVERB、MASTERページの設定
+                  li クォンタイゼーション設定
+                  li すべてのトラックのノート
+                  li すべてのトラックのロックトリガー
+                  li パラメータロック
+                  li サンプルロック
+                  li サウンドロック
+                  li トラックの長さと拍子記号
+
+
+        h3.heading.switch
+          | キット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
               th キット
               td
                 | キットは8つのサウンドの集合
                 br
+
+            tr
+              th キットに含まれるもの
+              td
+                ul
+                  li 8つのオーディオトラックのサウンド
+                  li オーディオトラックのLEVEL設定
+
+
+        h3.heading.switch
+          | サウンド
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
             tr
               th サウンド
               td
@@ -182,64 +283,48 @@ html(lang="ja")
                 br
                 |                         アクティブなパターンから+Driveにサウンドをエクスポート(および保存)できる
                 br
-            tr
-              th サンプル
-              td
-                | 最大127個のサンプルスロットを使用して、プロジェクトに64MB(約11分間)までサンプルをロードできる
-                br
-                |                         サンプルは+Driveサンプルバンクに保存される
-                br
-                |                         その他のサンプルは、Elektron転送ソフトウェアを使用して、コンピューターからDigitaktに転送できる
-                br
-                |                         また、Digitaktで直接サンプリングすることもできる
-                br
-                |                         サウンドやパターンで使用されているサンプルは、名前を変更したり移動したりしても、意図したとおりに動作する
-                br
-                |                         これは、ファイルごとに固有の値を追加するハッシュ関数を使用しているためで、この値は、ファイル名やデータ構造内のファイルの場所には依存しない
-                br
-                |                         ただし、サンプルを削除した場合は、サウンドやパターンには含まれなくなる
-                br
-                |                         +Driveからサンプルを削除した場合は、サウンドやパターンには含まれなくなる
-                br
-                |                         サンプルは、ロックするためにプロジェクトにインポートする必要がある
-          table
-            tr
-              th パターンに含まれるもの
-              td
-                ul
-                  li キット
-                  li 8つのMIDIトラックのすべてのパラメータ設定
-                  li トリガーやパラメータロックなどのシーケンサーデータ
-                  li
-                    | TRIG PARAMETERページの設定
-                    br
-                    |                                 BPM、長さ、スイング、拍子記号設定
-                  li TRIGページのトリガーの全般設定(デフォルトノートピッチ、ベロシティなど)
-                  li SRC、FLTR、AMP、LFOページのパラメータ設定
-                  li DELAY、REVERB、MASTERページの設定
-                  li クォンタイゼーション設定
-                  li すべてのトラックのノート
-                  li すべてのトラックのロックトリガー
-                  li パラメータロック
-                  li サンプルロック
-                  li サウンドロック
-                  li トラックの長さと拍子記号
-            tr
-              th キットに含まれるもの
-              td
-                ul
-                  li 8つのオーディオトラックのサウンド
-                  li オーディオトラックのLEVEL設定
+
             tr
               th サウンドに含まれるもの
               td
                 ul
                   li +Driveからリンクされているサンプル、およびオーディオトラックのSRC、FLTR、AMP、LFO PARAMETERページ設定
+
+
+
+        h3.heading.switch
+          | サンプル
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th サンプル
+              td
+                | 最大127個のサンプルスロットを使用して、プロジェクトに64MB(約11分間)までサンプルをロードできる
+                br
+                | サンプルは+Driveサンプルバンクに保存される
+                br
+                | その他のサンプルは、Elektron転送ソフトウェアを使用して、コンピューターからDigitaktに転送できる
+                br
+                | また、Digitaktで直接サンプリングすることもできる
+                br
+                | サンプルは、ロックするためにプロジェクトにインポートする必要がある
             tr
               th サンプルに含まれるもの
               td
                 ul
                   li 16ビット、48kHz、モノラルオーディオファイル
+            tr
+              th 使用中のサンプルの名前変更、移動
+              td 名前変更や移動をしても意図したとおりに動作する
+                br
+                | これは、ファイルごとに固有の値を追加するハッシュ関数を使用しているためで、この値は、ファイル名やデータ構造内のファイルの場所には依存しない
+            tr
+              th 使用中のサンプルの削除
+              td サウンドやパターンには含まれなくなる
+                br
+                | +Driveからサンプルを削除した場合は、サウンドやパターンには含まれなくなる
+
         h3.heading.switch
           | +Driveサウンドライブラリとサウンドプール
           span.swithCondition.contentClosed
@@ -278,11 +363,11 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TEMPO]キーを押してTEMPOメニューを開く
-              li.contentOperationOrderlist [FUNC]と[YES]を押すと、GLOBALテンポモードとPATTERNテンポモードが切り替わる
+              li.contentOperationOrderlist [FUNC]と[YES]を押すと、GLOBAL Tempo ModeとPATTERN Tempo Mode(デフォルト)が切り替わる
           table
             tr
               th テンポを変更する
-              td EVEL/DATAノブを使用する
+              td LEVEL/DATAノブを使用する
             tr
               th テンポを変更する(8BPMずつ)
               td ノブを押しながら回す
@@ -549,9 +634,9 @@ html(lang="ja")
           p
             | &lt;PATTERN PAGE&gt;のLEDが点灯していパターンページがアクティブでGRID RECORDINGモードを終了するには[REC]を押す
           p
-            | • トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトさせることができる
+            | トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトする
             br
-            |                 GRID RECORDINGモードで、[FUNC]を押したまま[LEFT]か[RIGHT]矢印キーを押すと、トリガーがシフトする
+            | GRID RECORDINGモードで、[FUNC]を押したまま[LEFT]か[RIGHT]矢印キーを押す
         h3.heading.switch
           | LIVE RECORDINGモード
           span.swithCondition.contentClosed
@@ -3019,9 +3104,9 @@ html(lang="ja")
               td
                 | サウンドを+Driveからアクティブなパターンにインポート(コピー)する
                 br
-                |                         一覧をスクロールするには LEVEL/DATA ノブを回すか、[UP]/[DOWN]を押す
+                | 一覧をスクロールするには LEVEL/DATA ノブを回すか、[UP]/[DOWN]を押す
                 br
-                |                         [YES]キーでサウンドを選択し、[TRACK 1～8]でを割り当てるトラックを選択する
+                | [YES]キーでサウンドを選択し、[TRACK 1～8]でを割り当てるトラックを選択する
             tr
               th EXPORT SOUND
               td
@@ -3767,7 +3852,7 @@ html(lang="ja")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
-              li.contentOperationOrderlist Level/Dataノブか、[UP][DOWN]矢印キーでカーソルを移動
+              li.contentOperationOrderlist LEVEL/DATAノブか、[UP][DOWN]矢印キーでカーソルを移動
               li.contentOperationOrderlist [LEFT]/[RIGHT]矢印キーか、[YES]を押して項目にチェック/チェック解除
               li.contentOperationOrderlist
                 | チェックすると下に「ERASE SELECTED DATA」が表示されるので、選択して「YES」を押す
@@ -3865,7 +3950,7 @@ html(lang="ja")
                     td
                       | BPMの2倍でパターンが再生される
                       br
-                      |                                     ステップシーケンサーの基本解像度を32音まで増やす場合に便利
+                      | ステップシーケンサーの基本解像度を32音まで増やす場合に便利
           p
             | パターンの長さを拡張すると、トリガーは自動的にコピーされる
             br
@@ -3886,15 +3971,15 @@ html(lang="ja")
           p
             | このモードでは、パターンのトラックに個々の長さを割り当てることができる
             br
-            |                 LENGTH PER TRACKモードでは、TRACKとPATTERNの2つの列がある
+            | LENGTH PER TRACKモードでは、TRACKとPATTERNの2つの列がある
             br
-            |                 TRACK列には、トラックのステップの長さを設定する
+            | TRACK列には、トラックのステップの長さを設定する
             br
-            |                 これは、LENGTH PER PATTERNモードでのパターン長の設定と同様
+            | これは、LENGTH PER PATTERNモードでのパターン長の設定と同様
             br
-            |                 この設定は、アクティブなトラックのみに適用される
+            | この設定は、アクティブなトラックのみに適用される
             br
-            |                 スケール設定を編集するトラックを選択するには、[TRK]キーを押す
+            | スケール設定を編集するトラックを選択するには、[TRK]キーを押す
           table
             tr
               th LENGTH
@@ -3909,21 +3994,21 @@ html(lang="ja")
               td
                 | キューイングされたパターンやチェーンされたパターンが再生を開始する前にアクティブなパターンをどの位長く再生するかを制御する
                 br
-                |                         この設定は、例えばM.LENをINFに設定している場合に重要
+                | この設定は、例えばM.LENをINFに設定している場合に重要
                 br
-                |                         CH.LEN設定を行わないと、パターンは無限に再生され、次のパターンがキューイングされない
+                | CH.LEN設定を行わないと、パターンは無限に再生され、次のパターンがキューイングされない
                 br
-                |                         例：CH.LENを64に設定すると、パターンは64個のステップを持つパターンと同様に再生され、キューイングやチェーンが行われる
+                | 例：CH.LENを64に設定すると、パターンは64個のステップを持つパターンと同様に再生され、キューイングやチェーンが行われる
             tr
               th M.LEN
               td
                 | すべてのトラックを再開する前に、パターンでステップを再生する回数を制御する
                 br
-                |                         INF設定にすると、パターンのトラックが無限にループし、再開されない
+                | INF設定にすると、パターンのトラックが無限にループし、再開されない
                 br
-                |                         この設定は、チェーンされたパターンが再生を開始するまでに、アクティブなパターンをどの位長く再生するかにも影響する
+                | この設定は、チェーンされたパターンが再生を開始するまでに、アクティブなパターンをどの位長く再生するかにも影響する
                 br
-                |                         CH.LENパラメータでこの設定を上書きできる
+                | CH.LENパラメータでこの設定を上書きできる
                 br
       h2.heading.switch
         | STARTUPメニュー
@@ -3933,7 +4018,7 @@ html(lang="ja")
           | STARTUPメニューへのアクセス
           span.swithCondition.contentClosed
         section.h3content.hide
-          p 異なる選択肢を選択するには、対応する[TRIG]キーを押す
+          p 他の選択肢を選択するには、対応する[TRIG]キーを押す
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3943,11 +4028,11 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p
+            | Digitaktに発生した問題がハードウェアが原因である可能性がある場合に実行
+          p
             | テストのため、本体のすべての出力で短い音が鳴る
             br
-            |                 Digitaktに発生した問題がハードウェアが原因である可能性がある場合は、この自己診断テストを実行する
-            br
-            |                 デバイスが問題なく動作している場合、エラーは表示されない
+            | デバイスが問題なく動作している場合、エラーは表示されない
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3972,18 +4057,26 @@ html(lang="ja")
           | FACTORY RESET
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | Digitaktで工場出荷時リセットを実行すると、アクティブなRAMプロジェクト(パターン、グローバルデータを含む)上書きおよび再初期化する
-            br
-            |                 +Driveのプロジェクトスロット1も、ファクトリープリセットパターン、サウンド、設定に上書きされ、再初期化される
-            br
-            |                 サウンドバンクAは工場出荷時に設定されたサウンドで上書きされる
-            br
-            |                 アクティブなプロジェクトを保存しておく場合は、+Driveのプロジェクトスロットの1より大きい数値のスロットに保存してから、工場出荷時リセットを実行する
+          table
+            tr
+              th アクティブなRAMプロジェクト(パターン、グローバルデータを含む)
+              td 上書きおよび再初期化
+            tr
+              th +Driveのプロジェクトスロット1
+              td ファクトリープリセットパターン、サウンド、設定に上書きされ、再初期化される
+            tr
+              th サウンドバンクA
+              td 工場出荷時に設定されたサウンドで上書きされる
+
+
+
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRIG 3]キーを押して工場出荷時リセットを実行
+          p アクティブなプロジェクトを保存しておく場合は、+Driveのプロジェクトスロットの1より大きい数値のスロットに保存してから、工場出荷時リセットを実行する
+
+
         h3.heading.switch
           | OS UPGRADE
           span.swithCondition.contentClosed
@@ -4267,4 +4360,53 @@ html(lang="ja")
             tr
               th [SAMPLING]+[NO]
               td  ダイレクトサンプリングプロセスでキャンセル
+
+
+      h2.heading.switch
+        | サンプルパック
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | サンプルの転送
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist
+                  | Digitaktをコンピューターに接続(USB A to Bケーブル)
+                  br
+                  | (Digitaktはコンピューターのデスクトップにアイコンとして表示されない)
+                li.contentOperationOrderlist Digitaktで、SETTINGSを押し、MIDI CONFIG &gt; PORT CONFIGに移動して、USBからの入力またはMIDI + USBを設定
+                li.contentOperationOrderlist コンピューターで、Elektron Transferを開き、Elektron Transfer開始画面でDigitaktのUSB MIDIポートを選択
+                li.contentOperationOrderlist
+                  | サンプルをElektron Transferメインウィンドウにドラッグアンドドロップして、Digitaktの+ドライブストレージに転送
+                  br
+                  | 転送アプリケーションウィンドウの一番下で、Digitaktのターゲットフォルダーを変更できる(デフォルトは/ transfers-YYMMDD)
+
+        h3.heading.switch
+          | サンプルをDIGITAKTプロジェクトにロードする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Digitaktで、[SETTINGS]を押してから、SAMPLESメニューを開く
+                li.contentOperationOrderlist サンプルをDigitaktに転送したときに作成したディレクトリを開き、ロードするサンプルに移動
+                li.contentOperationOrderlist
+                  | サンプルをハイライトし、[YES]を押してチェック
+                  br
+                  | 任意のサンプルをプレビュー(アクティブなトラックの音声で再生)し、ハイライトして[FUNC] + [YES]を押す
+                  br
+                  | サンプルを約10秒をプレビューできる
+                li.contentOperationOrderlist  [RIGHT]矢印キーを押して、画面の右側にメニューを表示
+                li.contentOperationOrderlist
+                  | LOAD TO PROJECTを選択して、[YES]を押す
+                  br
+                  | 選択した(チェックされた)サンプルは、アクティブなプロジェクトの127個のサンプルスロットのうち、最初に使用可能な空のスロットに表示される
+
+
+
+
+
     include ../_include/_footer.pug

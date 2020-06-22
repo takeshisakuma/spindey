@@ -55,7 +55,7 @@ html(lang="ja")
               td A、Bデッキそれぞれのモニター出力をオン/オフ切り替え
               td ヘッドホン・キュー・ボタン
             tr
-              td ヘッドホン端子へのマスター・アウト・レベルとモニター・アウト・ レベルの出力バランスを調節
+              td ヘッドホン端子へのマスター・アウト・レベルとモニター・アウト・レベルの出力バランスを調節
               td モニターBalanceノブ
             tr
               td ヘッドホンの音量を調節
@@ -73,7 +73,7 @@ html(lang="ja")
 
 
       h2.heading.switch
-        | 曲のテンポを変化させる
+        | 曲のBPM
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
@@ -87,7 +87,7 @@ html(lang="ja")
                 li.contentOperationOrderlist Shiftボタンを押しながらPlayボタンを押してKey LockのOn/Offを切り替える
 
         h3.heading.switch
-          | 2つのデッキの曲のテンポを自動的に合わせる
+          | 2つのデッキのBPMを自動的に合わせる
           span.swithCondition.contentClosed
         section.h3content.hide
           p Sync機能を使ってテンポを合わせる
@@ -98,7 +98,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | 曲のテンポを確認しながら再生速度を変える(大きく変化させる)
+          | BPMを大きく変化させる
           span.swithCondition.contentClosed
         section.h3content.hide
           div.contentOperationBox
@@ -116,7 +116,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | 曲のテンポを確認しながら再生速度を変える(微調整)
+          | BPMを微調整
           span.swithCondition.contentClosed
         section.h3content.hide
           p 2つのデッキの拍がずれているときは、タッチ・ホイールまたはタッチ・スライダーを使って拍のズレを修正
@@ -161,7 +161,7 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押して、タッチ・スライダーをノーマル・モードに設定
-                li.contentOperationOrderlist タッチ・スライダー のセンターを押して、タッチ・ホイールのスクラッチ・モードをオンにする
+                li.contentOperationOrderlist タッチ・スライダーのセンターを押して、タッチ・ホイールのスクラッチ・モードをオンにする
                 li.contentOperationOrderlist タッチ・ホイールで再生位置を調整(スクラッチ)
                   br
                   | Shiftボタンを押しながら、タッチ・ホイールに触れると、触れる位置で再生位置を大きく調整可能
@@ -172,6 +172,19 @@ html(lang="ja")
             tr
               th 右回り
               td 再生位置をすすめる
+
+        h3.heading.switch
+          | 曲の指定位置に移動
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチ・スライダー・モードをノーマル・モードにする
+                li.contentOperationOrderlist Shiftボタンを押しながらタッチ・スライダーに触れる
+                  br
+                  | (タッチ・スライダーの長さがロードされている曲の全体の長さに対応)
 
 
       h2.heading.switch
@@ -188,15 +201,11 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist 曲の頭出しをしたいところで一時停止し、Cueボタンを押すと、一時停止している位置にキュー・ポイントが設定される
-                li.contentOperationOrderlist 再生中にCueボタンを押し、そのまま押し続けるとと、キュー・ポイントに戻った後、 キュー・ポイントから再生
+                li.contentOperationOrderlist 再生中にCueボタンを押し、そのまま押し続けるとと、キュー・ポイントに戻った後、キュー・ポイントから再生
                 li.contentOperationOrderlist Cueボタンを押すのをやめると、キュー・ポイントに戻り、停止
                   br
                   | Shiftボタンを押しながらCueボタンを押すと曲の先頭から再生
 
-
-
-
-      section.h2content.hide
         h3.heading.switch
           | Hot.Cue
           span.swithCondition.contentClosed
@@ -218,7 +227,7 @@ html(lang="ja")
               td 再生中または一時停止中にタッチ・スライダーの右、左または中央を押す
             tr
               th Hot Cueポイントから再生
-              td Hot Cueを設定したタッチ・スライダー の右、左または中央を押す
+              td Hot Cueを設定したタッチ・スライダーの右、左または中央を押す
             tr
               th Hot Cueポイントを消去
               td Shiftボタンを押しながらタッチ・スライダーの右、左または中央を押す
@@ -257,7 +266,7 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押してLoop LEDを点灯させて、タッチ・スライダーを Loopモードにする
+                li.contentOperationOrderlist タッチ・スライダー・モード・ボタンを押してLoop LEDを点灯させて、タッチ・スライダーをLoopモードにする
 
 
           p タッチ・スライダー
@@ -296,17 +305,11 @@ html(lang="ja")
                   | Loop InとLoop Outのポイントが設定されると、2つのポイント間を繰り返し再生
                 li.contentOperationOrderlist ループ再生中にタッチ・スライダーの中央を押すと、ループ再生が終了
 
-          p ループ再生中にShiftボタンを押しながらタッチ・スライダーの左または右を押すと、画面 がLoop InポイントまたはOutポイントに移動
+          p ループ再生中にShiftボタンを押しながらタッチ・スライダーの左または右を押すと、画面がLoop InポイントまたはOutポイントに移動
             br
             | このとき、タッチ・ホイールで各ポイントの位置を微調整することができる
 
-        h3.heading.switch
-          | タッチ・スライダーについて
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          p タッチ・スライダー・モードがノーマル・モードのとき、Shiftボタンを押しながらタッチ・スラ イダーに触れると曲の指定位置に移動
-            br
-            | タッチ・スライダーの長さがロードされている曲の全体の長さに対応
+
 
 
 
@@ -315,16 +318,16 @@ html(lang="ja")
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
-          | Serato DJのエフェクター
+          | Serato DJのエフェクト
           span.swithCondition.contentClosed
         section.h3content.hide
-          p タッチ・パッドでSerato DJに内蔵しているエフェクターをコントロール
+          p タッチ・パッドでSerato DJのエフェクトをコントロール
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを押してController LEDを点灯させて、タッチ・パッドをコ ントローラー・モードにする
+                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを押してController LEDを点灯させて、タッチ・パッドをコントローラー・モードにする
                 li.contentOperationOrderlist Fxボタンでエフェクトをかけるデッキを選択
-                li.contentOperationOrderlist AデッキまたはBデッキのShiftボタンを押しながら、プログラム/バリュー・ノブを回して、 それぞれのデッキのエフェクトの種類を選ぶ
+                li.contentOperationOrderlist AデッキまたはBデッキのShiftボタンを押しながら、プログラム/バリュー・ノブを回して、それぞれのデッキのエフェクトの種類を選ぶ
                 li.contentOperationOrderlist タッチ・パッドでエフェクトをコントロールすることができる
           p TIP Holdボタンを押しながらタッチ・パッドにタッチすると、指を離してもエフェクトはオンのままになる
             br
@@ -336,11 +339,11 @@ html(lang="ja")
           | KAOSS DJのエフェクト
           span.swithCondition.contentClosed
         section.h3content.hide
-          p 本機に搭載しているカオス・エフェクトを、A、Bデッキをミックスした後にかけるマスター・エ フェクトとして使う
+          p KAOSS DJのエフェクトを、A、Bデッキをミックスした後にかけるマスター・エフェクトとして使う
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist カオス・エフェクトのオン、オフ タッチ・パッド・モード・ボタンを押してKaoss Fx LEDを点灯させて、タッチ・パッドをKaoss Fxモードにする
+                li.contentOperationOrderlist カオス・エフェクトのオン、オフ、タッチ・パッド・モード・ボタンを押してKaoss Fx LEDを点灯させて、タッチ・パッドをKaoss Fxモードにする
                   br
                   | Kaoss Fxモードでは、マスター・アウトにのみ、エフェクトのオン/オフが適用される
                   br
@@ -379,7 +382,7 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist  Tapボタンを押してディスプレイにBPMを表示した状態でTapボタンを数回叩くと、叩いた間隔でBPM値が設定される
+                li.contentOperationOrderlist Tapボタンを押してディスプレイにBPMを表示した状態でTapボタンを数回叩くと、叩いた間隔でBPM値が設定される
 
 
         h3.heading.switch
@@ -403,7 +406,7 @@ html(lang="ja")
           p ビート感がはっきりしない音楽の場合は、BPM値を検出できない
             br
             | 検出可能なBPMは 80～160
-          p 音声入力が無いときなどBPM検出ができない場合、オートBPM機能が終了しないまま プログラム選択画面に戻る
+          p 音声入力が無いときなどBPM検出ができない場合、オートBPM機能が終了しないままプログラム選択画面に戻る
             br
             | 再度、BPM表示を行いたい場合は、Tapボタンを押す
 
@@ -429,7 +432,7 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist Shiftボタンを押しながらHoldボタンを押すと、現在設定しているスケールの略称名が ディスプレイに表示される
+                li.contentOperationOrderlist Shiftボタンを押しながらHoldボタンを押すと、現在設定しているスケールの略称名がディスプレイに表示される
                 li.contentOperationOrderlist プログラム/バリュー・ノブを回して、スケールを変える
                 li.contentOperationOrderlist 変更後、一定時間経過するとプログラム表示に戻る
             p Shiftボタンを押すことで、すぐに プログラム表示に戻ることができる
@@ -467,17 +470,17 @@ html(lang="ja")
           | EQを使う
           span.swithCondition.contentClosed
         section.h3content.hide
-        p 各デッキの音質を調整
-        table
-          tr
-            th EQ Hiノブ
-            td 高音域の音量を調節
-          tr
-            th EQ Midノブ
-            td 中音域の音量を調節
-          tr
-            th EQ Loノブ
-            td 低音域の音量を調節
+          p 各デッキの音質を調整
+          table
+            tr
+              th EQ Hiノブ
+              td 高音域の音量を調節
+            tr
+              th EQ Midノブ
+              td 中音域の音量を調節
+            tr
+              th EQ Loノブ
+              td 低音域の音量を調節
 
 
 
@@ -502,7 +505,7 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを長押ししてController LEDを青色に点灯させて、タッチ・ パッドをサンプラー・モードに切り替える
+                li.contentOperationOrderlist タッチ・パッド・モード・ボタンを長押ししてController LEDを青色に点灯させて、タッチ・パッドをサンプラー・モードに切り替える
                 li.contentOperationOrderlist タッチ・パッドをタップしてサンプラーを再生
 
           table
@@ -538,7 +541,9 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist タッチ・スライダー・モード・ボタン(Bデッキ)とヘッドホン・キュー・ボタン(Bデッキ)を押しながら、USBケーブルを差して起動
 
-          p 本機のオーディオ・インターフェイス機能は使用できません。本機のOut L/Rから音は出力されない
+          p KAOSS DJのオーディオ・インターフェイス機能は使用できない
+            br
+            | KAOSS DJのOut L/Rから音は出力されない
           p すべてのコントローラーからMIDIメッセージを出力
 
 
