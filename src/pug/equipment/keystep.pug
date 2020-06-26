@@ -15,15 +15,15 @@ html(lang="ja")
           | スリムキー・キーボード
           span.swithCondition.contentClosed
         section.h3content.hide
-          | スリムキー・キーボードはベロシティとプレッシャー (アフタータッチ) センスの両方に対応している
-          | ベロシティカーブとアフタータッチのレスポンスはMIDI Control Centerで設定できる
+          p スリムキー・キーボードはベロシティとプレッシャー (アフタータッチ) センスの両方に対応している
+          p ベロシティカーブとアフタータッチのレスポンスはMIDI Control Centerで設定できる
         h3.heading.switch
           | キーボードのMIDIチャンネル選択
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepのMIDIチャンネルを外部機器と合わせたい場合、この方法が簡単
-          | Shiftボタンを押しながら、設定したいMIDIチャンネルに対応するキーボードのキーを押す
-          | MIDIチャンネルを変更すると、それに合わせてKbd Play MIDIチャンネルも変わる
+          p KeyStepのMIDIチャンネルを外部機器と合わせたい場合、この方法が簡単
+          p Shiftボタンを押しながら、設定したいMIDIチャンネルに対応するキーボードのキーを押す
+          p MIDIチャンネルを変更すると、それに合わせてKbd Play MIDIチャンネルも変わる
 
         h3.heading.switch
           | フロントパネル
@@ -32,18 +32,27 @@ html(lang="ja")
           table
             tr
               td Seq / Arpトグルスイッチ
-              td このスイッチをSeqにセットするとシーケンスの演奏やレコーディングができる
-                br
-                | この場合、このセクションの各ノブはシーケンスの選択 (Seq /Arp Modeノブ)、演奏時の音符指定 (Time Divノブ) として機能する
-                br
-                | トグルスイッチをArpにセットした場合は、各ノブはアルペジオパターンの選択と演奏時の音符指定として機能する
+              td
+                table
+                  tr
+                    th Seqにセット
+                    td シーケンスの演奏やレコーディングができる
+                  tr
+                    th Arpにセット
+                    td 各ノブはアルペジオパターンの選択と演奏時の音符指定として機能する
+
+
             tr
               td Seq / Arp Modeノブ
-              td このノブでシーケンサー/アルペジエイターの動作モードを選択する
-                br
-                | シーケンサーモードでは8種類のシーケンスの選択に使用する
-                br
-                | アルペジエイターモードでは、キーボードでコードを押さえた時のパターン選択に使用する
+              td
+                p シーケンサー/アルペジエイターの動作モードを選択
+                table
+                  tr
+                    th シーケンサーモード
+                    td 8種類のシーケンスの選択に使用する
+                  tr
+                    th アルペジエイターモード
+                    td キーボードでコードを押さえた時のパターン選択に使用する
             tr
               td Time Divノブ
               td Time Div (タイムディビジョン) ノブで、シーケンスやアルペジオの演奏時の音の細かさ (音符) を指定する
@@ -95,12 +104,13 @@ html(lang="ja")
                 | この時、KeyStepからMIDIのオールノートオフコマンドを送る
             tr
               td Hold / Chordボタン
-              td Holdボタンを使用すると、演奏中のアルペジオに音を追加できる(最大32音まで)
-                br
-                | また、Shiftボタンを押しながらHoldボタンを押すと、コードモードのオン/オフが切り変わる
+              td
+                p Holdボタンを使用すると、演奏中のアルペジオに音を追加できる(最大32音まで)
+
+                p Shiftボタンを押しながらHoldボタンを押すと、コードモードのオン/オフが切り変わる
             tr
               td Shiftボタン
-              td Shiftボタンは、上述のコードモードやキーボードでMIDIチャンネルを変更するなど、ボタンの1つの機能を使用する時に押す
+              td コードモードやキーボードでMIDIチャンネルを変更するなど、ボタンの1つの機能を使用する時に押す
                 br
                 | また、スウィングとゲートタイムの設定を変更して、演奏中のシーケンスのノリをリアルタイムに変化させる際にもShiftボタンを使用する
                 br
@@ -223,7 +233,7 @@ html(lang="ja")
                 | Holdボタンがオンの場合、アルペジオの和音を押さえた時の最低でも1音を放していない状態で別のキーを押すと、アルペジオに音を追加できる
             tr
               th サステインペダル
-              td モーメンタリータイプのフットスイッチをお持ちでしたら、リアパネルのSustainジャックに接続する
+              td モーメンタリータイプのフットスイッチを使う場合、リアパネルのSustainジャックに接続する
                 br
                 | フットスイッチの動作が逆になってしまっている場合は、KeyStepの電源を一旦切り、再び電源に接続し直す
                 br
@@ -324,7 +334,7 @@ html(lang="ja")
           | アルペジエイターを使う
           span.swithCondition.contentClosed
         section.h3content.hide
-          | リアパネルの同期設定スイッチがインターナル (Internal) 以外にセットされていて、外部クロックを入力していない場合、アルペジエイターをは動作しない
+          p リアパネルの同期設定スイッチがインターナル (Internal) 以外にセットされていて、外部クロックを入力していない場合、アルペジエイターをは動作しない
 
           table
             tr
@@ -355,17 +365,17 @@ html(lang="ja")
           | テンポの設定
           span.swithCondition.contentClosed
         section.h3content.hide
-          | RateノブまたはTapボタンを使用してアルペジオのスピード (テンポ) を調節する
-          br
-          | アルペジエイターをスタートさせる前に、Tapボタンを数回叩いて欲しいテンポに設定しておくこともできる
-          br
-          | MIDI Control Centerでは、テンポが実際に変わるのに必要なTapボタンを叩く回数を設定できる
-          br
-          | また、Rateノブを回した時の反応方法も設定できる
-          br
-          | 注意：TapボタンとRateノブは、KeyStepが外部シンク信号に同期している場合は動作しない
-          br
-          | Shiftボタンを押しながらRateノブを回すと、テンポを1BPM単位で微調整でき、小数点以下のBPMを00にできる
+          p RateノブまたはTapボタンを使用してアルペジオのスピード (テンポ) を調節する
+            br
+            | アルペジエイターをスタートさせる前に、Tapボタンを数回叩いて欲しいテンポに設定しておくこともできる
+            br
+            | MIDI Control Centerでは、テンポが実際に変わるのに必要なTapボタンを叩く回数を設定できる
+            br
+            | また、Rateノブを回した時の反応方法も設定できる
+            br
+            | 注意：TapボタンとRateノブは、KeyStepが外部シンク信号に同期している場合は動作しない
+            br
+            | Shiftボタンを押しながらRateノブを回すと、テンポを1BPM単位で微調整でき、小数点以下のBPMを00にできる
 
           p 例：RateノブかTapボタンで設定したテンポが123.12BPMだった場合
             br
@@ -379,26 +389,26 @@ html(lang="ja")
           | タイムディビジョン
           span.swithCondition.contentClosed
         section.h3content.hide
-          | Time Divエンコーダーで、テンポに対するアルペジオの音符を変更できる
-          br
-          | 1/4は4分音符 (1ステップで1拍)、1/8は8分音符 (2ステップで1拍) というようになる
-          br
-          | 1/4Tや1/8TなどのTは三連符を指す
+          p Time Divエンコーダーで、テンポに対するアルペジオの音符を変更できる
+            br
+            | 1/4は4分音符 (1ステップで1拍)、1/8は8分音符 (2ステップで1拍) というようになる
+            br
+            | 1/4Tや1/8TなどのTは三連符を指す
         h3.heading.switch
           | ホールドボタン
           span.swithCondition.contentClosed
         section.h3content.hide
-          | Holdボタンがオン (点灯) の場合、鍵盤から手を放してもアルペジオがそのまま演奏し続ける
-          br
-          | その後、鍵盤で別の音や和音を押さえると、その瞬間に押さえた音にアルペジオの演奏が変わる
-          br
-          | 鍵盤で押さえた音のうち、最低でも1つの音を放していない間は、最大32音までアルペジオに音を追加できる
-          br
-          | 音を追加した場合、その間に最も近いタイムディビジョンの位置で追加した音が発音される
-          br
-          | このことは音域の広いアルペジオでも同様
-          br
-          | 鍵盤から完全に手を放しても、次に別の音やコードを押さえるまでアルペジオ演奏が続く
+          p Holdボタンがオン (点灯) の場合、鍵盤から手を放してもアルペジオがそのまま演奏し続ける
+            br
+            | その後、鍵盤で別の音や和音を押さえると、その瞬間に押さえた音にアルペジオの演奏が変わる
+            br
+            | 鍵盤で押さえた音のうち、最低でも1つの音を放していない間は、最大32音までアルペジオに音を追加できる
+            br
+            | 音を追加した場合、その間に最も近いタイムディビジョンの位置で追加した音が発音される
+            br
+            | このことは音域の広いアルペジオでも同様
+            br
+            | 鍵盤から完全に手を放しても、次に別の音やコードを押さえるまでアルペジオ演奏が続く
 
       h2.heading.switch
         | SHIFTボタンを使用する機能
@@ -408,20 +418,20 @@ html(lang="ja")
           | Shift
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepの各ボタンや鍵盤にはそれ本来の機能のほかに、もう1つの機能があり、それはShiftボタンを押しながら各ボタンや鍵盤を押すと発動する
-          br
-          | これらの機能名は各ボタンの下や鍵盤の上に青文字でプリントされている
+          p KeyStepの各ボタンや鍵盤にはそれ本来の機能のほかに、もう1つの機能があり、それはShiftボタンを押しながら各ボタンや鍵盤を押すと発動する
+            br
+            | これらの機能名は各ボタンの下や鍵盤の上に青文字でプリントされている
 
 
         h3.heading.switch
           | コードモード
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 複雑なコードでもワンフィンガーで弾ける
-          br
-          | 鍵盤で弾いた音に応じてコードが自動的にトランスポーズする
-          br
-          | 注意：以下の手順を実際に行うと、それ以前にメモリーされていたコードを消去して、新しいコードがメモリーされる
+          p 複雑なコードでもワンフィンガーで弾ける
+            br
+            | 鍵盤で弾いた音に応じてコードが自動的にトランスポーズする
+            br
+            | 注意：以下の手順を実際に行うと、それ以前にメモリーされていたコードを消去して、新しいコードがメモリーされる
 
           p コードメモリー機能
           div.contentOperationBox
@@ -450,7 +460,7 @@ html(lang="ja")
 
           table
             tr
-              th コードモードに入ったり、抜けたりする
+              th コードモードに入る/抜ける
               td Shiftボタンを押しながらHoldボタンを押す
 
           p メモリーしたコードはKeyStepの電源を切ると消去される
@@ -460,29 +470,29 @@ html(lang="ja")
           | コードモードとシーケンサー
           span.swithCondition.contentClosed
         section.h3content.hide
-          | コードモードとシーケンサーは同時使用できるが、一定の条件がある
+          p コードモードとシーケンサーは同時使用できるが、一定の条件がある
 
         h3.heading.switch
           | シーケンスのレコーディングとコードモード
           span.swithCondition.contentClosed
         section.h3content.hide
-          | コードモードでのコードはシーケンサーでは別々の音としてレコーディングされる
-          br
-          | 例：6音のコードをシーケンサーにレコーディングした場合、1ステップに最大8音までレコーディングできるうち、6音を消費する
+          p コードモードでのコードはシーケンサーでは別々の音としてレコーディングされる
+            br
+            | 例：6音のコードをシーケンサーにレコーディングした場合、1ステップに最大8音までレコーディングできるうち、6音を消費する
 
         h3.heading.switch
           | シーケンスのプレイバックとコードモード
           span.swithCondition.contentClosed
         section.h3content.hide
-          | シーケンスのプレイバック中、鍵盤はTranspose (トランスポーズ) または Kbd Play (キーボードプレイ)のどちらかのモードで動作する
-          br
-          | 鍵盤がトランスポーズモードの場合、鍵盤の各キーはシーケンスのトランスポーズ用に使用できる
-          br
-          | この場合コードモードは使用できない
-          br
-          | これは、鍵盤を弾いたときにコードとトランスポーズすべきなのか、シーケンスをトランスポーズすべきなのかが判断不能だから
-          br
-          | 鍵盤がキーボードプレイモードの場合、コードモードで接続先の音源を発音させることができる
+          p シーケンスのプレイバック中、鍵盤はTranspose (トランスポーズ) または Kbd Play (キーボードプレイ)のどちらかのモードで動作する
+            br
+            | 鍵盤がトランスポーズモードの場合、鍵盤の各キーはシーケンスのトランスポーズ用に使用できる
+            br
+            | この場合コードモードは使用できない
+            br
+            | これは、鍵盤を弾いたときにコードとトランスポーズすべきなのか、シーケンスをトランスポーズすべきなのかが判断不能だから
+            br
+            | 鍵盤がキーボードプレイモードの場合、コードモードで接続先の音源を発音させることができる
         h3.heading.switch
           | コードモードとアルペジエイター
           span.swithCondition.contentClosed
@@ -502,9 +512,9 @@ html(lang="ja")
           | キーボードのMIDIチャンネル
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 鍵盤の上には "Keyboard MIDI CH" というタイトルで数字がプリントされている
-          br
-          | この数字は、鍵盤に割り当てることができる1〜16のMIDIチャンネル
+          p 鍵盤の上には "Keyboard MIDI CH" というタイトルで数字がプリントされている
+            br
+            | この数字は、鍵盤に割り当てることができる1〜16のMIDIチャンネル
 
           p MIDIチャンネルの変更
 
@@ -515,20 +525,16 @@ html(lang="ja")
 
 
           p MIDIチャンネルを変更すると、Kbd Play MIDIチャンネルも一緒に変更される
-        h3.heading.switch
-          | Seq / Arp のプレイバック機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
 
         h3.heading.switch
           | ゲート
           span.swithCondition.contentClosed
         section.h3content.hide
-          | Seq/Arpで発音する音のゲート(Gate)タイムは、次の音が発音されるまでの間に、その音が実際に発音する時間的な長さを指す
-          br
-          | 最短10%
-          br
-          | 最長は90%
+          p Seq/Arpで発音する音のゲート(Gate)タイムは、次の音が発音されるまでの間に、その音が実際に発音する時間的な長さを指す
+            br
+            | 最短10%
+            br
+            | 最長は90%
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -544,9 +550,9 @@ html(lang="ja")
           | スウィング
           span.swithCondition.contentClosed
         section.h3content.hide
-          | スウィングは選択したシーケンスやアルペジオに"シャッフル"感を付けられる機能
-          br
-          | シーケンスの音の発音タイミングをズラす(前の音を少し長めの発音にし、次の音は少し短めにする)
+          p スウィングは選択したシーケンスやアルペジオに"シャッフル"感を付けられる機能
+            br
+            | シーケンスの音の発音タイミングをズラす(前の音を少し長めの発音にし、次の音は少し短めにする)
 
           p Off (スウィングなし, 50%) から53%、最大75%までの範囲の11種類の設定から選べる
 
@@ -571,15 +577,15 @@ html(lang="ja")
           | トランスポーズ / キーボードプレイ
           span.swithCondition.contentClosed
         section.h3content.hide
-          | トランスポーズとキーボードプレイはどちらか1つだけ選べる相互排他的なモード
-          br
-          | どちらかのモードに切り替えるには、Shiftボタンを押しながらオクターブシフトボタン (Oct- / Oct+) のどちらかを押す
+          p トランスポーズとキーボードプレイはどちらか1つだけ選べる相互排他的なモード
+            br
+            | どちらかのモードに切り替えるには、Shiftボタンを押しながらオクターブシフトボタン (Oct- / Oct+) のどちらかを押す
 
         h3.heading.switch
           | トランスポーズ
           span.swithCondition.contentClosed
         section.h3content.hide
-          | このモードがオンの場合、鍵盤のキーを押すと演奏中のシーケンスがトランスポーズ (移調))する
+          p このモードがオンの場合、鍵盤のキーを押すと演奏中のシーケンスがトランスポーズ (移調))する
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -639,7 +645,7 @@ html(lang="ja")
           | Seq/Arpを先頭からリスタートする
           span.swithCondition.contentClosed
         section.h3content.hide
-          | ライブパフォーマンスなどで、シーケンスやアルペジオの前半部だけリピートさせたり、最初の数音だけを何度もリピートさせるといったことができる
+          p ライブパフォーマンスなどで、シーケンスやアルペジオの前半部だけリピートさせたり、最初の数音だけを何度もリピートさせるといったことができる
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -704,31 +710,31 @@ html(lang="ja")
           | シーケンス
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepは8種類のシーケンスをメモリーでき、各シーケンスは最長64ステップまで使用できる
-          br
-          | シーケンサーは和音も入力できるポリフォニックで、1ステップにつき最大8音まで入力できる
-          br
-          | フロントパネルで操作できないが、MIDI Control Centerで使用できるパラメーターもある
-          br
-          | MIDI Control Centerを使用すればシーケンスのセーブや入れ替えもできる
+          p KeyStepは8種類のシーケンスをメモリーでき、各シーケンスは最長64ステップまで使用できる
+            br
+            | シーケンサーは和音も入力できるポリフォニックで、1ステップにつき最大8音まで入力できる
+            br
+            | フロントパネルで操作できないが、MIDI Control Centerで使用できるパラメーターもある
+            br
+            | MIDI Control Centerを使用すればシーケンスのセーブや入れ替えもできる
 
         h3.heading.switch
           | ステップシーケンサーとは？
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepのシーケンサーは1ステップに最大8音まで入力できる
-          br
-          | KeyStepのシーケンサーが一般的なステップシーケンサーよりも優れている点は他にもあり、鍵盤のキーを押してシーケンスをトランスポーズさせることができる
-          br
-          | シーケンスをループさせている間に、フィルターやエンベロープ、ピッチなどのセッティングを手動で調節することができる
-          br
-          | KeyStepでは8種類までのシーケンスをどこにでも持ち歩ける
+          p KeyStepのシーケンサーは1ステップに最大8音まで入力できる
+            br
+            | KeyStepのシーケンサーが一般的なステップシーケンサーよりも優れている点は他にもあり、鍵盤のキーを押してシーケンスをトランスポーズさせることができる
+            br
+            | シーケンスをループさせている間に、フィルターやエンベロープ、ピッチなどのセッティングを手動で調節することができる
+            br
+            | KeyStepでは8種類までのシーケンスをどこにでも持ち歩ける
 
         h3.heading.switch
           | シーケンスを作成する
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 本体リアパネルの同期設定がインターナル (Internal) 以外にセットされていて、外部クロック信号を入力していない場合、シーケンサーは動作しない
+          p 本体リアパネルの同期設定がインターナル (Internal) 以外にセットされていて、外部クロック信号を入力していない場合、シーケンサーは動作しない
 
           p シーケンスを作成するには、次の3つの操作が必要になる：
           ul
@@ -741,8 +747,6 @@ html(lang="ja")
           | ステップタイム・レコーディング
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 最も基本的なレベルで、シーケンスを作成するのに必要なこと：
-
           div.contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -772,11 +776,11 @@ html(lang="ja")
           | 休符を入れる
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 音と音の隙間のことを"レスト"(休符)とも言う
-          br
-          | Tapボタンの下に"Rest / Tie"とプリントされている
-          br
-          | レストを入れるにはTapボタンを使うことになるが、タイを入れる時にもTapボタンを使用する
+          p 音と音の隙間のことを"レスト"(休符)とも言う
+            br
+            | Tapボタンの下に"Rest / Tie"とプリントされている
+            br
+            | レストを入れるにはTapボタンを使うことになるが、タイを入れる時にもTapボタンを使用する
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -794,11 +798,11 @@ html(lang="ja")
           | タイで音をつなげる
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 次のステップまで音をつなげて長く伸ばすこともできる
-          br
-          | まずRecordボタンを押して点灯させ、次の手順を行う
-          br
-          | (以下の操作を行うと、入っていたシーケンスが消去される)
+          p 次のステップまで音をつなげて長く伸ばすこともできる
+            br
+            | まずRecordボタンを押して点灯させ、次の手順を行う
+            br
+            | (以下の操作を行うと、入っていたシーケンスが消去される)
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -875,11 +879,11 @@ html(lang="ja")
           | 音の入れ替え (リプレース)
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 上述の通り、リアルタイムで鍵盤を弾くと、その音がその時の直近のステップに入力される
-          br
-          | そのステップにすでに音が入っていた場合は、新たに弾いた音に入れ替わる
-          br
-          | これを利用して、ちょうど良いタイミングで鍵盤を弾いて、シーケンスの一部のステップの音を入れ替えることも可能
+          p 上述の通り、リアルタイムで鍵盤を弾くと、その音がその時の直近のステップに入力される
+            br
+            | そのステップにすでに音が入っていた場合は、新たに弾いた音に入れ替わる
+            br
+            | これを利用して、ちょうど良いタイミングで鍵盤を弾いて、シーケンスの一部のステップの音を入れ替えることも可能
         h3.heading.switch
           | リスタート
           span.swithCondition.contentClosed
@@ -901,16 +905,16 @@ html(lang="ja")
           | Time Div とレコーディング
           span.swithCondition.contentClosed
         section.h3content.hide
-          | タイムディビジョンの設定はレコーディング中にシーケンスの途中で変更できないがレコーディング中にテンポを一時的に変更するために設定を変えることは可能
-          br
-          | リアルタイムで弾くのが難しいフレーズをレコーディングする場合、タイムディビジョンの設定をレコーディング中だけ一時的に変更 (1/8の代わりに1/4に等) し、テンポを遅くしてレコーディングすることもできる
+          p タイムディビジョンの設定はレコーディング中にシーケンスの途中で変更できないがレコーディング中にテンポを一時的に変更するために設定を変えることは可能
+            br
+            | リアルタイムで弾くのが難しいフレーズをレコーディングする場合、タイムディビジョンの設定をレコーディング中だけ一時的に変更 (1/8の代わりに1/4に等) し、テンポを遅くしてレコーディングすることもできる
 
 
         h3.heading.switch
           | Time Div と Rate
           span.swithCondition.contentClosed
         section.h3content.hide
-          | シーケンスのレコーディング中はRecordボタンが設定したタイムディビジョンの周期で点滅する
+          p シーケンスのレコーディング中はRecordボタンが設定したタイムディビジョンの周期で点滅する
 
           p 例えば、Time Divを1/4に設定した場合、RecordボタンはTapボタンと同じ周期で点滅する
             br
@@ -921,7 +925,7 @@ html(lang="ja")
           | シーケンスの長さを調節する
           span.swithCondition.contentClosed
         section.h3content.hide
-          | RecordボタンとMIDIチャンネル設定時に使用する鍵盤のキーで、シーケンスの長さを1〜64ステップの範囲で調節できる
+          p RecordボタンとMIDIチャンネル設定時に使用する鍵盤のキーで、シーケンスの長さを1〜64ステップの範囲で調節できる
 
           p 方法は、Recordボタンを押しながら欲しいシーケンスの長さになるMIDIチャンネルの数字に対応した鍵盤のキーを押す
             br
@@ -953,18 +957,18 @@ html(lang="ja")
           | ノートデータのベロシティ
           span.swithCondition.contentClosed
         section.h3content.hide
-          | デフォルト設定では、鍵盤を弾いた時のベロシティもシーケンスにレコーディングされるが、MIDI Control Centerを使って各ノートデータのベロシティを同じ値にそろえることができる
-          br
-          | また、特定のベロシティの値に変更することもできる
-          br
-          | シーケンスがうるさすぎたり、音が小さすぎたりする場合は、MIDI Control Centerでシーケンスのベロシティをエディットすることもできる
+          p デフォルト設定では、鍵盤を弾いた時のベロシティもシーケンスにレコーディングされるが、MIDI Control Centerを使って各ノートデータのベロシティを同じ値にそろえることができる
+            br
+            | また、特定のベロシティの値に変更することもできる
+            br
+            | シーケンスがうるさすぎたり、音が小さすぎたりする場合は、MIDI Control Centerでシーケンスのベロシティをエディットすることもできる
 
 
         h3.heading.switch
           | レコーディングされないもの
           span.swithCondition.contentClosed
         section.h3content.hide
-          | シーケンサーにレコーディングされないデータのタイプ
+          p シーケンサーにレコーディングされないデータのタイプ
           ul
             li ノートデータのデュレーション (ゲートタイム) 鍵盤のキーを複数ステップにまたがって押すとタイでつながった音になる
             li タイムディビジョンの変更
@@ -979,9 +983,9 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
 
-          | シーケンスの終端にノートやタイでつながったノート、レストを追加 (アペンド) してシーケンスを長くすることができる
-          br
-          | 注意：以下の操作を行うと、元のシーケンスが消去されたり、別の音に入れ替わったりする
+          p シーケンスの終端にノートやタイでつながったノート、レストを追加 (アペンド) してシーケンスを長くすることができる
+            br
+            | 注意：以下の操作を行うと、元のシーケンスが消去されたり、別の音に入れ替わったりする
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1020,11 +1024,10 @@ html(lang="ja")
           | クリアラスト
           span.swithCondition.contentClosed
         section.h3content.hide
-          |クリアラスト (Clear Last) はシーケンスの最終ステップをカットする機能
-          br
-          | この機能はシーケンサーが演奏中でもレコーディング中でも、停止中でも使用できる
+          p クリアラスト (Clear Last) はシーケンスの最終ステップをカットする機能
+            br
+            | この機能はシーケンサーが演奏中でもレコーディング中でも、停止中でも使用できる
 
-          p 手順は次の通り：
           div.contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1039,11 +1042,11 @@ html(lang="ja")
           | シーケンスのセーブ
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepには8種類のシーケンスをメモリーできる
-          br
-          | MIDI Control Centerを使えば、無限にシーケンスをストックできるので、頻繁にバックアップを取っておくことをお勧めする
-          br
-          | シーケンスをコンピュータにセーブしておけば、ライブやレコーディングなどで必要なシーケンスをピックアップして使用することができる
+          p KeyStepには8種類のシーケンスをメモリーできる
+            br
+            | MIDI Control Centerを使えば、無限にシーケンスをストックできる
+            br
+            | シーケンスをコンピュータにセーブしておけば、ライブやレコーディングなどで必要なシーケンスをピックアップして使用することができる
       h2.heading.switch
         | アルペジエイター
         span.swithCondition.contentClosed
@@ -1052,7 +1055,7 @@ html(lang="ja")
           | アルペジエイターの機能
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepのアルペジエイターは、鍵盤で弾いた音に対して色々なアルペジオを作り出せる
+          p KeyStepのアルペジエイターは、鍵盤で弾いた音に対して色々なアルペジオを作り出せる
 
         h3.heading.switch
           | アルペジエイターをスタートさせる
@@ -1070,13 +1073,6 @@ html(lang="ja")
               li.contentOperationOrderlist Play/Pauseボタンを押す
               li.contentOperationOrderlist 鍵盤でコードなどを押す
 
-          p 上記の操作でアルペジエイターがスタートして、鍵盤で押さえた音を1つずつ順番に発音していく
-            br
-            | 発音する順番はArpモードで選択する
-            br
-            | ここからはアルペジオの各モードを紹介するが、すべて鍵盤で4音を押さえた状態を例にしている
-            br
-            | HoldボタンやOct-/Oct+ボタンを駆使して最大32音までのアルペジオを作ることができる
         h3.heading.switch
           | Arpモード
           span.swithCondition.contentClosed
@@ -1087,55 +1083,53 @@ html(lang="ja")
               td 内容
             tr
               th Up
-              td Arp ModeエンコーダーをUpにセットすると、アルペジエイターは鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏する
+              td アルペジエイターは鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏する
                 br
                 | 最高音に達した後は再び最低音からスタートする
             tr
-              th Down
-              td Arp ModeエンコーダーをDwnにセットすると、鍵盤で押さえた音の最高音から最低音に向かってアルペジオ演奏する
+              th Down(Dwn)
+              td 鍵盤で押さえた音の最高音から最低音に向かってアルペジオ演奏する
                 br
                 | 最低音に達した後は再び最高音からスタートする
             tr
-              th Inclusive
-              td Arp ModeエンコーダーをIncにセットすると、鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をし、最高音から最低音に向かっていく
+              th Inclusive(Inc)
+              td 鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をし、最高音から最低音に向かっていく
                 br
-                | この時、最高音と最低音をリピートする
+                | 最高音と最低音をリピートする
             tr
-              th Exclusive
-              td Arp ModeエンコーダーをExcにセットすると、鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をし、最高音から最低音に向かっていく
+              th Exclusive(Exc)
+              td 鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をし、最高音から最低音に向かっていく
                 br
-                | この時、最高音と最低音はリピートしない
+                | 最高音と最低音はリピートしない
             tr
-              th Random
-              td Arp ModeエンコーダーをRandにセットすると、鍵盤で押さえた音を1つずつランダムに発音する
+              th Random(Rand)
+              td 鍵盤で押さえた音を1つずつランダムに発音する
                 br
                 | MIDI Control Centerを使うと、ランダムのタイプを選択できる
                 br
                 | (完全なランダム、周期性のあるランダム、ブラウン運動)
             tr
               th Order
-              td Arp ModeエンコーダーをOrderにセットすると、鍵盤で押さえた順番でアルペジオ演奏する
+              td 鍵盤で押さえた順番でアルペジオ演奏する
             tr
               th Up x2
-              td Arp ModeエンコーダーをUp x2にセットすると、鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をするがUpモードとは違い、各音を2回ずつ発音する
+              td 鍵盤で押さえた音の最低音から最高音に向かってアルペジオ演奏をするがUpモードとは違い、各音を2回ずつ発音する
             tr
-              th Down x2
-              td Arp ModeエンコーダーをDwn x2にセットすると、鍵盤で押さえた音の最高音から最低音に向かってアルペジオ演奏をする
+              th Down(Dwn) x2
+              td 鍵盤で押さえた音の最高音から最低音に向かってアルペジオ演奏をする
                 br
                 | Downモードとは違い、各音を2回ずつ発音する
         h3.heading.switch
           | アルペジオのオクターブ移動
           span.swithCondition.contentClosed
         section.h3content.hide
-          | どのArpモードでもオクターブ移動をするアルペジオを簡単に作成できる
-          br
-          | Shiftボタンを押しながら、Oct+またはOct-ボタンを押すだけで設定できる
-          br
-          | そうして鍵盤でコードなどを押さえると、最初の1周は鍵盤で弾いたオクターブで、2周目はその1オクターブ上または下でアルペジオ演奏をし、3周目は元のオクターブに戻るのを、鍵盤を押さえている間繰り返す
-          br
-          | Shiftボタンを押しながらOct+またはOctボタンを複数回押すこともでき、その場合は複数オクターブにまたがってアルペジオ演奏をする
-          br
-          | この方法で最大4オクターブ上または下に移動するアルペジオを作成できる
+          p Shiftボタンを押しながら、Oct+またはOct-ボタンを押すだけで設定できる
+            br
+            | そうして鍵盤でコードなどを押さえると、最初の1周は鍵盤で弾いたオクターブで、2周目はその1オクターブ上または下でアルペジオ演奏をし、3周目は元のオクターブに戻るのを、鍵盤を押さえている間繰り返す
+            br
+            | Shiftボタンを押しながらOct+またはOctボタンを複数回押すこともでき、その場合は複数オクターブにまたがってアルペジオ演奏をする
+            br
+            | この方法で最大4オクターブ上または下に移動するアルペジオを作成できる
 
           p アルペジオのオクターブ移動がオンになっているかどうかの確認
             br
@@ -1146,7 +1140,7 @@ html(lang="ja")
           | 幅広い音域のアルペジオを作成する
           span.swithCondition.contentClosed
         section.h3content.hide
-          | Holdボタンを押すと鍵盤から手を放してもアルペジオがそのまま続く
+          p Holdボタンを押すと鍵盤から手を放してもアルペジオがそのまま続く
 
           p Holdボタンのもう1つの用途
             br
@@ -1166,7 +1160,7 @@ html(lang="ja")
           | 32音まで追加
           span.swithCondition.contentClosed
         section.h3content.hide
-          | アルペジオは最大32音まで追加できる
+          p アルペジオは最大32音まで追加できる
 
           p ポイント：音を追加するには、最初に押さえたキーの最低でも1音は押さえたままにする
           div.contentOperationBox
@@ -1217,18 +1211,18 @@ html(lang="ja")
           | シンク機能
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepは様々な外部機器を同期演奏させるマスタークロックとして使用できるほか、色々なクロックソースに合わせて同期する (スレーブ) こともできる
-          br
-          | シンク機能は本体リアパネルのスイッチで設定する
-          br
-          | このスイッチは誤って別の設定に変わってしまわないように、一段凹んだ面にある
-          br
-          | スイッチを操作する際はペンや小さなドライバー等を使用する
+          p KeyStepは様々な外部機器を同期演奏させるマスタークロックとして使用できるほか、色々なクロックソースに合わせて同期する (スレーブ) こともできる
+            br
+            | シンク機能は本体リアパネルのスイッチで設定する
+            br
+            | このスイッチは誤って別の設定に変わってしまわないように、一段凹んだ面にある
+            br
+            | スイッチを操作する際はペンや小さなドライバー等を使用する
         h3.heading.switch
-          | 同期のマスターとして
+          | 同期のマスターにする
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 本体リアパネルのスイッチをインターナル (Internal) にセットすると、KeyStepは同期クロックのマスターとして動作する
+          p 本体リアパネルのスイッチをインターナル (Internal) にセットすると、KeyStepは同期クロックのマスターとして動作する
 
           p この場合次のような動作をする：
           ul
@@ -1241,7 +1235,7 @@ html(lang="ja")
           | 同期のスレーブとして
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 本体リアパネルのスイッチをUSB, MIDI, Sync Inのいずれかにセットすると、KeyStepは外部クロックに合わせて動作する (スレーブ)
+          p 本体リアパネルのスイッチをUSB, MIDI, Sync Inのいずれかにセットすると、KeyStepは外部クロックに合わせて動作する (スレーブ)
 
           p スレーブモードの場合、次のような動作をする：
           ul
@@ -1254,7 +1248,7 @@ html(lang="ja")
           | Sync In/Outのタイプ
           span.swithCondition.contentClosed
         section.h3content.hide
-          | MIDI Control CenterではSync In/Outそれぞれの端子で入力/出力するクロック信号を、以下のタイプから選択できる：
+          p MIDI Control CenterではSync In/Outそれぞれの端子で入力/出力するクロック信号
           ul
             li 1 step (Gate)
             li 1 step (Clock) ※デフォルト設定
@@ -1265,8 +1259,7 @@ html(lang="ja")
           | クロック信号のコネクター
           span.swithCondition.contentClosed
         section.h3content.hide
-          | これまで、同期演奏のためのクロック信号の接続に、色々なタイプのコネクターが使われてきた
-          | 下表は、ビンテージ機器とのクロック信号の接続に使用できるコネクターのタイプ
+          p ビンテージ機器とのクロック信号の接続に使用できるコネクターのタイプ
           table
             tr
               th コネクターのタイプ
@@ -1290,31 +1283,31 @@ html(lang="ja")
           | USB, MIDI, Sync,CV/Gate
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepはUSB, MIDI, Sync,CV/Gateに対応していて、これらのコネクターがキャンディバーのようにコンパクトなリアパネルのスペースにすべて装備され、各種外部機器へダイレクトに接続できる
+          p KeyStepはUSB, MIDI, Sync,CV/Gateに対応している
 
 
         h3.heading.switch
           | ピッチとゲートの動作の仕組みは？
           span.swithCondition.contentClosed
         section.h3content.hide
-          | KeyStepの鍵盤を弾くと、弾いたキーの情報が瞬時にコントロール電圧 (CV) とゲート信号に変換され、リアパネルのそれぞれのアウトから出力される
-          br
-          | この時出力されるのがピッチとゲートオープン/クローズの信号
-          br
-          | ピッチCVはMIDIノートナンバーと対応し、ゲートのオープン/クローズ (オン/オフ) はノートオンとノートオフと対応する
-          br
-          | ベロシティ情報はModアウトから出力される
-          br
-          | 内蔵シーケンサーは鍵盤での演奏をレコーディングし、鍵盤で直接外部機器を演奏しているのと同じように、シーケンスの情報をCV/Gate端子で接続した外部機器に出力する
-          br
-          | KeyStepがKbd Playモードの場合、シーケンスの情報がCV/Gate端子から出力され、鍵盤演奏の情報は外部MIDI機器に送信される
+          p KeyStepの鍵盤を弾くと、弾いたキーの情報がコントロール電圧(CV)とゲート信号に変換され、リアパネルのそれぞれのアウトから出力される
+            br
+            | この時出力されるのがピッチとゲートオープン/クローズの信号
+            br
+            | ピッチCVはMIDIノートナンバーと対応し、ゲートのオープン/クローズ (オン/オフ) はノートオンとノートオフと対応する
+            br
+            | ベロシティ情報はModアウトから出力される
+            br
+            | 内蔵シーケンサーは鍵盤での演奏をレコーディングし、鍵盤で直接外部機器を演奏しているのと同じように、シーケンスの情報をCV/Gate端子で接続した外部機器に出力する
+            br
+            | KeyStepがKbd Playモードの場合、シーケンスの情報がCV/Gate端子から出力され、鍵盤演奏の情報は外部MIDI機器に送信される
         h3.heading.switch
-          | DAWからCV/Gate信号を送れる？
+          | DAWからCV/Gate信号の送信
           span.swithCondition.contentClosed
         section.h3content.hide
-          | DAWのMIDIトラックからのノートデータをKeyStepのCV/Gate端子に送信することができる
-          br
-          | DAWのMIDIトラックのMIDIチャンネルと、KeyStepのMIDIチャンネルを合わせることで可能になる
+          p DAWのMIDIトラックからのノートデータをKeyStepのCV/Gate端子に送信することができる
+            br
+            | DAWのMIDIトラックのMIDIチャンネルと、KeyStepのMIDIチャンネルを合わせることで可能になる
 
           p この場合の注意事項2つ
             br
@@ -1332,33 +1325,33 @@ html(lang="ja")
           | Modアウトの動作の仕組み
           span.swithCondition.contentClosed
         section.h3content.hide
-          | ModアウトからはKeyStep内部の3種類の信号ソース(Modストリップ, アフタータッチ, ベロシティ)のいずれか1つがコントロール電圧 (CV) として出力される
-          br
-          | この端子を使用して外部機器のボリュームやフィルターのカットオフ、その他をコントロールできる
-          br
-          | KeyStepのどの信号ソースをModアウトから出力するかは、MIDI Control Centerで設定できる
+          p ModアウトからはKeyStep内部の3種類の信号ソース(Modストリップ, アフタータッチ, ベロシティ)のいずれか1つがコントロール電圧 (CV) として出力される
+            br
+            | この端子を使用して外部機器のボリュームやフィルターのカットオフ、その他をコントロールできる
+            br
+            | KeyStepのどの信号ソースをModアウトから出力するかは、MIDI Control Centerで設定できる
         h3.heading.switch
-          | DAWでModアウトをコントロールできるか
+          | DAWでModアウトをコントロールする
           span.swithCondition.contentClosed
         section.h3content.hide
-          | MIDI Control CenterでModアウトに出力する信号ソース(ベロシティ, アフタータッチ, MIDIコンティニュアスコントローラー (CC))を選択できる
-          | MIDI CCを選択した場合はCCナンバーを指定できる
+          p MIDI Control CenterでModアウトに出力する信号ソース(ベロシティ, アフタータッチ, MIDIコンティニュアスコントローラー (CC))を選択できる
+          p MIDI CCを選択した場合はCCナンバーを指定できる
         h3.heading.switch
           | 各アウトの接続先 (シグナルルーティング)
           span.swithCondition.contentClosed
         section.h3content.hide
-          | 一般的には、ピッチ (CV) アウトはオシレーター (VCO) に接続する
-          br
-          | GateアウトはVCAのトリガーインプットに接続し、ModアウトはVCAかフィルターVCFに接続する (スプリッターかパッチベイで両方に接続することも可能)
-          br
-          | このような接続なら結果が予測しやすくなるが、これがルールというわけではなく、入力側(接続先)で受けられる信号であれば、信号をどこにでも接続できる
+          p 一般的には、ピッチ (CV) アウトはオシレーター (VCO) に接続する
+            br
+            | GateアウトはVCAのトリガーインプットに接続し、ModアウトはVCAかフィルターVCFに接続する (スプリッターかパッチベイで両方に接続することも可能)
+            br
+            | このような接続なら結果が予測しやすくなるが、これがルールというわけではなく、入力側(接続先)で受けられる信号であれば、信号をどこにでも接続できる
         h3.heading.switch
           | CV/Gate/Modの仕様
           span.swithCondition.contentClosed
         section.h3content.hide
-          | アナログシンセサイザーの中にはあまり一般的ではない規格を採用しているものもあり、KeyStepのCV/Gate/Mod信号が必ずしも完璧に対応できないものもある
-          br
-          | KeyStepはできるだけフレキシブルに使えるように設計しており、MIDI Control CenterでCV/GateとMod端子を色々な特性に設定できるようになっている
+          p アナログシンセサイザーの中にはあまり一般的ではない規格を採用しているものもあり、KeyStepのCV/Gate/Mod信号が必ずしも完璧に対応できないものもある
+            br
+            | KeyStepはできるだけフレキシブルに使えるように設計しており、MIDI Control CenterでCV/GateとMod端子を色々な特性に設定できるようになっている
 
           p KeyStepのCV, Gate, Modアウトから出力できる信号のレンジ：
           ul
