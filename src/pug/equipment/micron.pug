@@ -171,7 +171,7 @@ html(lang="ja")
             |                 セットアップにパートが無い場合は、現在選択されているパターンが、自動的にパートAにアサインされる
             br
             |                 セットアップに１つ以上のパートがある場合は、次の方法でパターンを追加することができる
-          tsble
+          table
             tr
               td 1. send to part(パートに入れる)
               td
@@ -254,48 +254,50 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist エディットしたいパターンで、コントロール・ノブを押してエディット・モードに入る
               li.contentOperationOrderlist コントロール・ノブを回して、エディット・オプション「Pattern program(パターン・プログラムの設定)」を選択
-          p
-            | まず、パターンがノートを再生するプログラムを選択しておく
-            br
-            |                 ここでプログラムのカテゴリーを変更したい場合 は [patterns]ボタンを押したままの状態で、カテゴリーが印字されている白鍵を押す
-            br
-            |                 パターンに使用するプログラムを、プログラム・モードから選択する場合は、 [programs]ボタンを押してプログラム・モードに入り、必要なプログラムを探す
-            br
-            |                 求めているプログラムが見つかったら、 [programs]ボタンを押しながら [patterns], ボタンを押して、設定を完了する
-          |             table>(tr>td)*
+
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist まず、パターンがノートを再生するプログラムを選択しておく
+                br
+                | ここでプログラムのカテゴリーを変更したい場合 は [patterns]ボタンを押したままの状態で、カテゴリーが印字されている白鍵を押す
+              li.contentOperationOrderlist パターンに使用するプログラムを、プログラム・モードから選択する場合は、 [programs]ボタンを押してプログラム・モードに入り、必要なプログラムを探す
+                br
+                | 求めているプログラムが見つかったら、 [programs]ボタンを押しながら [patterns], ボタンを押して、設定を完了する
+
         h3.heading.switch
           | 新規のpattern作成
           span.swithCondition.contentClosed
         section.h3content.hide
-          p
-            | 1. [patterns] ボタンを押し、ディスプレイに"* Empty pattern"という名前のパターンが表示されるまで左側へノブを回す
+          .contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist [patterns] ボタンを押し、ディスプレイに"* Empty pattern"という名前のパターンが表示されるまで左側へノブを回す
+                br
+                | (出荷時にストアされている "* Empty pattern"というパターンは何もデータが入っていない「空のパターン」)
+              li.contentOperationOrderlist 次にコントロールノブを押し、ディスプレイに"Store a copy～"の表示が画面に現れるまで右側へスクロールさせ、ここでもう一度コントロールノブを押す
+                br
+                | ここで 空の状態のパターンをリネームし別途保存する事が出来るので、ここでこれから作成するパターンに対して新しい名前を付ける
+                br
+                | ("*Empty pattern" プログラムは次に同様の作業をスムーズに行うためにも残しておいたほうがよい)
+              li.contentOperationOrderlist 左側へスクロールさせ、ディスプレイに"Record pattern～"を表示させる
+                br
+                | メトロノームのクリック音が聞こえ始めている
+                br
+                | (テンポは後述の方法で変更可能)
+              li.contentOperationOrderlist 演奏する
+              li.contentOperationOrderlist 演奏のキリのいいところで[store]ボタンを押す
+                br
+                | これで今演奏されたものが新しいパターンとして保存される
+                br
+                | 次に"Pattern program"の画面にスクロールし、新しく作ったパターンに対してのプログラム(音色)を変更することができる
+
+
+          p プログラムをセットする他の方法
             br
-            |                 (出荷時にストアされている "* Empty pattern"というパターンは何もデータが入っていない「空のパター ン」です)
+            | [programs]ボタンを押したまま[patterns]ボタンを押す
             br
-            |                 2. 次にコントロールノブを押し、ディスプレイに"Store a copy～"の表示が画面に現れるまで右側へスクロールさせ、ここでもう一度コントロールノブを押す
-            br
-            |                 ここで 空の状態のパターンをリネームし別途保存する事が出来るので、ここでこれから作成するパターンに対して新しい名前を付ける
-            br
-            |                 ("*Empty pattern" プログラムは次に同様の作業をスムーズに行うためにも残しておいたほうがよい)
-            br
-            |                 3. 左側へスクロールさせ、ディスプレイに"Record pattern～"を表示させる
-            br
-            |                 メトロノームのクリック音が聞こえ始めている
-            br
-            |                 (テンポは後述の方法で変更可能)
-            br
-            |                 4. 演奏する
-            br
-            |                 5. 演奏のキリのいいところで[store]ボタンを押す
-            |                 これで今演奏されたものが新しいパターンとして保存される
-            br
-            |                 次に"Pattern program"の画面にスクロールし、新しく作ったパターンに対してのプログラム(音色)を変更することができる
-            br
-            |                 プログラムをセットする他の方法もある
-            br
-            |                 [programs]ボタンを押したまま[patterns]ボタンを押す
-            br
-            |                 これによりprograms で選択していた音色がそのままパターンで使用されるプログラム(音色)として選択される
+            | これによりprograms で選択していた音色がそのままパターンで使用されるプログラム(音色)として選択される
         h3.heading.switch
           | パターンの長さ
           span.swithCondition.contentClosed
@@ -1158,7 +1160,7 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist コントロールノブを押し、左に回して"Revert to stored～"の画面にスクロールさせる
-                li.contentOperationOrderlist ここでコントロールノブ を押すとストアしている方を聴く事が出来る
+                li.contentOperationOrderlist ここでコントロールノブを押すとストアしている方を聴く事が出来る
                 li.contentOperationOrderlist 更にディスプレイには"Unrevert to edited～"と表示されるので、ここでもう一度コントロールノブを押すとエディットしている方に戻ることが出来る
         h3.heading.switch
           | Parts(パート)
@@ -2528,34 +2530,33 @@ html(lang="ja")
                 | 可変範囲：bypass, chorus, theta flanger, thru-0 flanger, super phaser, string phaser,40-band vocoder
                 br
                 |                         パラメーター構成の異なる、複数のエフェクトの中から1つを選択する
-                br
-                |                         詳しくは、「FX1 Effects」の項を参照
+
             tr
               td FX1 Param (Effects Parameters)
               td
                 | 可変範囲：エフェクトタイプに依存
                 br
                 |                         これらのパラメーターは、選択されたエフェクトタイプに応じて異なる
-                br
-                |                         詳しくは 、「FX1 Effects」の項を参照
+
             tr
               td FX2 Type(Effects 2 Type)
               td
                 | 可変範囲： bypass, mono delay, stereo delay, split L/R delay, hall reverb, plate reverb, room reverb
                 br
                 |                         パラメーター構成の異なる、複数のエフェクトの中から1 つを選択する
-                br
-                |                         詳しくは、「FX2 Effects」の項を参照
+
             tr
               td FX2 Param (Effects Parameters)
               td
                 | 可変範囲：エフェクトタイプに依存
                 br
                 |                         これらのパラメーターは、選択されたエフェクトタイプに応じて異なる
-                br
-                |                         詳しくは、「FX2 Effects」の項を参照
-          |             FX1 Effects
-          br
+        h3.heading.switch
+          |  FX1 Effects
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
           p
             | Chorus (コーラス)
             br
@@ -2873,10 +2874,11 @@ html(lang="ja")
                 | アナリシスへの入力信号を、どれだけ出力信号にミックスするかを設定する
                 br
                 |                         可変範囲：0～100%
-          p
-            | FX2 Effects
-            br
-            |                 エフェクト2モジュールは、6種類のディレイとリバーブ・エフェクトを備いて、その中から1つを選択して使用することができる
+        h3.heading.switch
+          |  FX2 Effects
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p エフェクト2モジュールは、6種類のディレイとリバーブ・エフェクトを備いて、その中から1つを選択して使用することができる
           p
             | Mono Delay
             br
@@ -3136,29 +3138,36 @@ html(lang="ja")
             tr
               td Loop
               td
-                | 通常エンベロープは、アタック、ディケイ、サスティン、リリースの各段階を通過していく
-                br
-                |                         エンベロープをループさせて、特定の段階を何度も繰り返したい場合などにLoopパラメーターを使用する
-                br
-                |                         設定範囲: off, attack/decay, entire envelope, while note held
-                br
-                |                         このパラメーターをattack/decayに設定すると、エンベロープはアタック/ディケイ段は普通に通過するが、その後アタックの初めに折り返して、鍵盤が押されている限りアタック段とディケイ段をループする
-                br
-                |                         このとき、エンベロープがFreerunモードになっていれば、鍵盤を放した後もループ状態が続く
-                br
-                |                         このような設定は、通常はフィ ルターエンベロープやピッチ／モジュレーションエンベロープのみで使用するといい
-                br
-                |                         アンプエンベロープで このような無限ループを設定すると、複数の鍵盤を同時に押さえてボイスを使い切るまでは、音を止めることができなくなるので、ご注意する
-                br
-                |                         entire envelopeに設定すると、鍵盤が押さえられている間、エンベロープはアタック、ディケイ、サスティンの各段階を繰り返す
-                br
-                |                         鍵盤を放したときはアタック、ディケイ、リリースの各段階を繰り返す
-                br
-                |                         また、Freerun パラメーターが有効のときは、サスティンを飛ばして、アタック、ディケイ、リリースの各段階を繰り返す
-                br
-                |                         Loopパラメーターをwhile note heldに設定すると、鍵盤が押されている間はentire envelopeと同じ動作をするが、鍵盤が放されるとエンベロープはリリース段に移行して終了する
-                br
-                |                         エンベロープが Freerunモードのときに、離鍵に反応するのは、この設定だけ
+                p 通常エンベロープは、アタック、ディケイ、サスティン、リリースの各段階を通過していく
+                  br
+                  | エンベロープをループさせて、特定の段階を何度も繰り返したい場合などにLoopパラメーターを使用する
+
+                table
+                  tr
+                    th off
+                    td
+                  tr
+                    th attack/decay
+                    td エンベロープはアタック/ディケイ段は普通に通過するが、その後アタックの初めに折り返して、鍵盤が押されている限りアタック段とディケイ段をループする
+                      br
+                      | このとき、エンベロープがFreerunモードになっていれば、鍵盤を放した後もループ状態が続く
+                      br
+                      | このような設定は、通常はフィ ルターエンベロープやピッチ／モジュレーションエンベロープのみで使用するといい
+                      br
+                      | アンプエンベロープで このような無限ループを設定すると、複数の鍵盤を同時に押さえてボイスを使い切るまでは、音を止めることができなくなるので、ご注意する
+                  tr
+                    th entire envelope
+                    td 鍵盤が押さえられている間、エンベロープはアタック、ディケイ、サスティンの各段階を繰り返す
+                      br
+                      | 鍵盤を放したときはアタック、ディケイ、リリースの各段階を繰り返す
+                      br
+                      | Freerun パラメーターが有効のときは、サスティンを飛ばして、アタック、ディケイ、リリースの各段階を繰り返す
+                  tr
+                    th while note held
+                    td 鍵盤が押されている間はentire envelopeと同じ動作をするが、鍵盤が放されるとエンベロープはリリース段に移行して終了する
+                      br
+                      | エンベロープが Freerunモードのときに、離鍵に反応するのは、この設定だけ
+
             tr
               td Sus Pedal (Sustain Pedal)
               td
@@ -3185,21 +3194,25 @@ html(lang="ja")
                     td
                       | 0.010～1000Hzの可変範囲を利用する
                       br
-                      |                                     この場合、LFOは可変範 囲内でどんな値にも設定できる
+                      | この場合、LFOは可変範 囲内でどんな値にも設定できる
                   tr
                     td follow tempo(LFOの周期が[tap]ボタンで設定したテンポに同期しているとき)
                     td
                       | x 16～ x 1/16の可変範囲を利用する
                       br
-                      |                                     この場合は、テンポの変化に伴って LFOのレートも変化する
+                      | この場合は、テンポの変化に伴って LFOのレートも変化する
                       br
-                      |                                     ただし、 テンポとLFOのレートとの間には、周期の相関関係がある
-                      br
-                      |                                     x1(等倍)を選ぶと、LFOはテンポに応じて4分音 符につき1サイクルの周期となる
-                      br
-                      |                                     x2 を選ぶと8分音符につき1サイクル、x16のときは 64 分音符につき1 サイクルとなる
-                      br
-                      |                                     さらに x1/16のときは、 1サイクルが4分音符×16を1単位とした周期となる
+                      | ただし、 テンポとLFOのレートとの間には、周期の相関関係がある
+                      table
+                        tr
+                          th x1(等倍)
+                          td LFOはテンポに応じて4分音 符につき1サイクルの周期となる
+                        tr
+                          th x2
+                          td LFOは8分音符につき1サイクル、x16のときは 64 分音符につき1 サイクルとなる
+                        tr
+                          th x1/16
+                          td LFOは1サイクルが4分音符×16を1単位とした周期となる
             tr
               td Reset
               td
@@ -3851,40 +3864,45 @@ html(lang="ja")
             tr
               td Local Control (ローカル・コントロール)
               td
-                | 可変範囲：on, off, off + send ptns.
-                br
-                |                         初期設定値：on
-                br
-                |                         Micronをシーケンサーと併用するときは、鍵盤のローカルコントロールをoffにするのが最良の方法
-                br
-                |                         こうしておけばMicronの鍵盤と内部のサウンドエンジンが切り離される
-                br
-                |                         通常シーケンサーからは、入力されたMIDIデータがそのまま“エコー出力”される
-                br
-                |                         仮にローカルコントロールがonのままだとすると、同じ音が2度打ち(鍵盤を弾いたときの音と、MIDI入力から返されたときの音が重なる現象)されることになる
-                br
-                |                         off + send ptnsモードでパターン・データの全て(ノート情報、ベロシティー、コントロールチェンジ情報)をそう送信することが出来る
+
+                table
+                  tr
+                    th on(初期値)
+                    td シーケンサーと併用するときにonにしておくと、同じ音が2度打ち(鍵盤を弾いたときの音と、MIDI入力から返されたときの音が重なる現象)されることになる
+                  tr
+                    th off
+                    td Micronをシーケンサーと併用するときは、鍵盤のローカルコントロールをoffにするのが最良
+                      br
+                      | こうしておけばMicronの鍵盤と内部のサウンドエンジンが切り離される
+                      br
+                      | 通常シーケンサーからは、入力されたMIDIデータがそのまま“エコー出力”される
+                  tr
+                    th off + send ptns
+                    td パターン・データの全て(ノート情報、ベロシティー、コントロールチェンジ情報)をそう送信することが出来る
+
             tr
               td MIDI Setup Mode (MIDIセットアップモード)
               td
                 p この設定はセットアップに影響する
                 table
                   tr
-                    td single-channel
+                    th single-channel
                     td MicronがMIDIデータを1つのMIDIチャンネルで送受信する
                   tr
-                    td multi-channel
+                    th multi-channel
                     td 各パートやビートのMIDIデータが別々なMIDIチャンネルで送受信されている
             tr
               td MIDI channel(MIDIチャンネル)
               td
-                | ここで選択出来るオプションがMIDI Setup Modeの設定による
-                br
-                |                         ● MIDI Setup Modeが“single-channel”に設定した場合、MIDIチャンネルを選択することが出来る
-                br
-                |                         ● MIDI Setup Modeが“multi-channel” 最初のパートのMIDIチャンネルを選択することが出来る
-                br
-                |                         これにより"MIDI: Channel"で設定したMIDIチャンネルがPart AのMIDIチャンネルに、Part Bはその次のMIDIチャンネルに、といった状態になる
+                p ここで選択出来るオプションがMIDI Setup Modeの設定による
+                table
+                  tr
+                    th MIDI Setup Modeが"single-channel"
+                    td MIDIチャンネルを選択することが出来る
+                  tr
+                    th MIDI Setup Modeが"multi-channel"
+                    td 最初のパートのMIDIチャンネルを選択することが出来る
+                p これにより"MIDI: Channel"で設定したMIDIチャンネルがPart AのMIDIチャンネルに、Part Bはその次のMIDIチャンネルに、といった状態になる
             tr
               td MIDI sync (MIDIシンク)
               td
@@ -4054,38 +4072,41 @@ html(lang="ja")
           | Send MIDI sysex～(MIDI sysexを送信する)
           span.swithCondition.contentClosed
         section.h3content.hide
+          p
+            | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップ・デー タを送信することができる
+            br
+            | これは、セットアップ・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する、ということを意味する
+
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist エディットしたいセットアップで、コントロールノブを押してエディットモードに入る
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Send MIDI sysex～(MIDI sysexを送信する)」を選択
-          p
-            | このオプションを選択すると、Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップ・デー タを送信することができる
-            br
-            |                 これは、セットアップ・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する、ということを意味する
+
         h3.heading.switch
           | Send syx bundle～(syx バンドルを送信する)
           span.swithCondition.contentClosed
         section.h3content.hide
+          p
+            | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップとそ のセットアップのプログラム、パターン、リズムを送信する
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist エディットしたいセットアップで、コントロールノブを押してエディットモードに入る
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Send syx bundle～(syx バンドルを送信する)」を選択
-          p
-            | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップとそ のセットアップのプログラム、パターン、リズムを送信する
+
         h3.heading.switch
           | 外部のMIDIシーケンサーからmicronの"program/setup/pattern/rhythm"を切り替える時に送る情報
           span.swithCondition.contentClosed
         section.h3content.hide
           p
             br
-            |                 最初に、MIDI BankとProgram(Patch)Numberについての知識が必要
+            | 最初に、MIDI BankとProgram(Patch)Numberについての知識が必要
             br
             |                 Programの場合、まず[programs]ボタ ンを数秒押し続けるとディスプレイ上にはバンクとパッチナンバー(プログラムナンバー)が表示される
             br
             |                 この操作は他のモード(setup/pattern/rhythm)でも同様
-            br
+          p
             |                 例：Programにおいては[programs]ボタンを数秒押し続けた時、画面は "Bank x, Patch xxx"(xは数値)
             br
             |                 という様な表示をしている
@@ -4105,13 +4126,13 @@ html(lang="ja")
             br
             |                 よって次の様な考え方で BankNumber に入力する数値を算出していく
             br
-            |                 上記の表示を例にとって説明していきく
+            |                 上記の表示を例にとって説明していく
             br
             |                 まず"Bank"の 次にきている数値は"201"
             br
             |                 この数時を128 で割り、その答えの数(整数)が "Control#00(MSB)"に入力する数値になる
             br
-            |                 上記の場合は１となりますので入力する数値は1になる
+            |                 上記の場合は１となるので入力する数値は1になる
             br
             |                 この数値をAとする
             br
@@ -4271,17 +4292,23 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
           p
-            | この３つの方法はパターンやリズムに対しても同様に行うことが出来る
-          ul
-            li 方法1：Setupモードに入りコントロールノブを押す
-              br
-              | "Part x program"(「x」 の部分はパートナンバー)の画面にしコントロールノブを押したあと、そこで好みのプログラムに差し換えられる
-            li 方法2：まず [programs]ボタンを押し、目的の音色をみつけたらコントロールノブを押す
-              br
-              | そして"Send to setup～"の画面のところでコントロールノブを押し込むと"Send to Part x"(「x」の部分はパートナンバ ー)になるので目的のPartを選びセットする
-            li 方法3：[programs] ボタンを押し、目的の音色をみつけたら[programs]ボタンを押しながら [setups] ボタンを押す
-              br
-              | これによりエディット中、一番最後に確認していたPartに対してプログラムがセットされる
+            | パターンやリズムに対しても同様に行うことが出来る
+          table
+            tr
+              th 方法A
+              td Setupモードに入りコントロールノブを押す
+                br
+                | "Part x program"(「x」 の部分はパートナンバー)の画面にしコントロールノブを押したあと、そこで好みのプログラムに差し換えられる
+            tr
+              th 方法B
+              td まず [programs]ボタンを押し、目的の音色をみつけたらコントロールノブを押す
+                br
+                | そして"Send to setup～"の画面のところでコントロールノブを押し込むと"Send to Part x"(「x」の部分はパートナンバ ー)になるので目的のPartを選びセットする
+            tr
+              th 方法C
+              td [programs] ボタンを押し、目的の音色をみつけたら[programs]ボタンを押しながら [setups] ボタンを押す
+                br
+                | これによりエディット中、一番最後に確認していたPartに対してプログラムがセットされる
 
       h2.heading.switch
         | テンポ
@@ -4291,10 +4318,16 @@ html(lang="ja")
           | テンポを設定する
           span.swithCondition.contentClosed
         section.h3content.hide
-          ul
-            li 方法1： [tap]ボタンを4分音符の感覚でタップする
-            li 方法2： [tap]ボタンを押したままコントロールノブを回せば正確な数値でテンポをセットできる
-            li 方法3： PCとmicronをMIDIで繋ぎ、PCのシーケンサー側からMIDI ClockからMIDIタイミングメッセージを送信する
+          table
+            tr
+              th 方法A
+              td [tap]ボタンを4分音符の感覚でタップする
+            tr
+              th 方法B
+              td [tap]ボタンを押したままコントロールノブを回せば正確な数値でテンポをセットできる
+            tr
+              th 方法C
+              td PCとmicronをMIDIで繋ぎ、PCのシーケンサー側からMIDI ClockからMIDIタイミングメッセージを送信する
           p
             | micronはシーケンサーに入力されているテンポに追従する
 
@@ -4319,1204 +4352,1204 @@ html(lang="ja")
         h3.heading.switch
           | bass
           span.swithCondition.contentClosed
-          section.h3content.hide
-            table
-              tr
-                td AcidAndOilBass
-              tr
-                td Alien Womb
-              tr
-                td Analogue Seq
-              tr
-                td Anti-Static
-              tr
-                td Big Bass Pedal
-              tr
-                td Black & Knobby
-              tr
-                td Bottlecap
-              tr
-                td Cellar Bass
-              tr
-                td Closet Bass
-              tr
-                td DemolitionBass
-              tr
-                td Down And Dirty
-              tr
-                td Expressive
-              tr
-                td GrapSquishyBaz
-              tr
-                td Growl Bass
-              tr
-                td Hacker Bass
-              tr
-                td Hood Bass
-              tr
-                td J00p1t3r
-              tr
-                td JacoInTheBox
-              tr
-                td Junkie Bass
-              tr
-                td Knock-Knock
-              tr
-                td Lectro Bass
-              tr
-                td Low I.Q.
-              tr
-                td Machinery Bass
-              tr
-                td Mini Twin Bass
-              tr
-                td Mini-01
-              tr
-                td Noize Bass
-              tr
-                td Old Favorite
-              tr
-                td P-Bass D-Luxe
-              tr
-                td PantherModerns
-              tr
-                td Parabola Bass
-              tr
-                td PimBass
-              tr
-                td Purr Bass
-              tr
-                td Rave Bass
-              tr
-                td Rhythmo
-              tr
-                td RubberBulletBs
-              tr
-                td Spit Bass
-              tr
-                td Studio Bass
-              tr
-                td Sub Bass
-              tr
-                td Suppr Mini
-              tr
-                td Syncombass
-              tr
-                td TB Or Not TB
-              tr
-                td TaurusBassPdls
-              tr
-                td Thumper
-              tr
-                td TomSawyerBass
-              tr
-                td U-Bahn Jam
-              tr
-                td Vlad Bass
-              tr
-                td What's down?
-          h3.heading.switch
-            | lead
-            span.swithCondition.contentClosed
-            section.h3content.hide
-              table
+        section.h3content.hide
+          table
+            tr
+              td AcidAndOilBass
+            tr
+              td Alien Womb
+            tr
+              td Analogue Seq
+            tr
+              td Anti-Static
+            tr
+              td Big Bass Pedal
+            tr
+              td Black & Knobby
+            tr
+              td Bottlecap
+            tr
+              td Cellar Bass
+            tr
+              td Closet Bass
+            tr
+              td DemolitionBass
+            tr
+              td Down And Dirty
+            tr
+              td Expressive
+            tr
+              td GrapSquishyBaz
+            tr
+              td Growl Bass
+            tr
+              td Hacker Bass
+            tr
+              td Hood Bass
+            tr
+              td J00p1t3r
+            tr
+              td JacoInTheBox
+            tr
+              td Junkie Bass
+            tr
+              td Knock-Knock
+            tr
+              td Lectro Bass
+            tr
+              td Low I.Q.
+            tr
+              td Machinery Bass
+            tr
+              td Mini Twin Bass
+            tr
+              td Mini-01
+            tr
+              td Noize Bass
+            tr
+              td Old Favorite
+            tr
+              td P-Bass D-Luxe
+            tr
+              td PantherModerns
+            tr
+              td Parabola Bass
+            tr
+              td PimBass
+            tr
+              td Purr Bass
+            tr
+              td Rave Bass
+            tr
+              td Rhythmo
+            tr
+              td RubberBulletBs
+            tr
+              td Spit Bass
+            tr
+              td Studio Bass
+            tr
+              td Sub Bass
+            tr
+              td Suppr Mini
+            tr
+              td Syncombass
+            tr
+              td TB Or Not TB
+            tr
+              td TaurusBassPdls
+            tr
+              td Thumper
+            tr
+              td TomSawyerBass
+            tr
+              td U-Bahn Jam
+            tr
+              td Vlad Bass
+            tr
+              td What's down?
+        h3.heading.switch
+          | lead
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Adrastea
+            tr
+              td AquamarineLead
+            tr
+              td Bambam Lead
+            tr
+              td Cars Sync
+            tr
+              td CoolMellowLead
+            tr
+              td Executioner
+            tr
+              td Flatulent Duck
+            tr
+              td Frogstar IV
+            tr
+              td Fuzzy Buzzy
+            tr
+              td Infamous Lead
+            tr
+              td LazyAnalogLead
+            tr
+              td LeadOfSixSines
+            tr
+              td Lucky Porta m2
+            tr
+              td Lunar Orbit
+            tr
+              td Mahavishnoid
+            tr
+              td Mecha-Canary
+            tr
+              td Micron Flute
+            tr
+              td Mini 5th
+            tr
+              td Mini Classic
+            tr
+              td Odyssee Lead
+            tr
+              td Porta Lead
+            tr
+              td Rosemary'sBaby
+            tr
+              td Sandpaper Lead
+            tr
+              td ScreaminWarpLd
+            tr
+              td Seven Days
+            tr
+              td Shortwave
+            tr
+              td Sizzler
+            tr
+              td SpankTone Lead
+            tr
+              td StixMiniMogue
+            tr
+              td Suboscillators
+            tr
+              td SunsetMiniLead
+            tr
+              td Tarkus Carcass
+            tr
+              td Trantor Lead
+            tr
+              td Triad m2 Faze
+            tr
+              td Tweakedriver
+            tr
+              td U CrazyDiamond
+            tr
+              td Wakeman Mogue
+            tr
+              td Wakemini
+            tr
+              td Warperheim
+            tr
+              td Whisler's Mon
+            tr
+              td Wichita Falls
+            tr
+              td Wowza
+            tr
+              td Zippy the 5th
+        h3.heading.switch
+          | pad
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 16-PoleDeepPad
+            tr
+              td 2-PoleDarkPad
+            tr
+              td 4-PoleSoftPad
+            tr
+              td 8-PoleWarmPad
+            tr
+              td Aeon Choir
+            tr
+              td AnotherLongDay
+            tr
+              td AstrogySweep
+            tr
+              td Auto Player
+            tr
+              td Backing Vox
+            tr
+              td Bad Acid
+            tr
+              td Blue Doll
+            tr
+              td Brainpounder
+            tr
+              td Cauldron Pad
+            tr
+              td Choirbox
+            tr
+              td Classic Vox
+            tr
+              td Clusters
+            tr
+              td Concert Pad
+            tr
+              td Dagon Visitors
+            tr
+              td Deep Space
+            tr
+              td Dirty Dreamer
+            tr
+              td Dream Pad
+            tr
+              td Dutch Choir
+            tr
+              td DynaAahOohVox
+            tr
+              td ELen8R
+            tr
+              td EMotion Pad
+            tr
+              td Ecology
+            tr
+              td Electronique
+            tr
+              td Ensemble
+            tr
+              td Exhalation
+            tr
+              td Fat2Compose
+            tr
+              td FilterSweep101
+            tr
+              td Ghostly
+            tr
+              td Ghosty Voice
+            tr
+              td Golem Emerges
+            tr
+              td Gritter Pad
+            tr
+              td Hollow Pad
+            tr
+              td Home Forgotten
+            tr
+              td I Comprehend
+            tr
+              td I Understand
+            tr
+              td Infrastructure
+            tr
+              td Intruder
+            tr
+              td Ionian Sweep
+            tr
+              td Ionic Voyage
+            tr
+              td Ionizer
+            tr
+              td Joan d'Arc Pad
+            tr
+              td Journey West
+            tr
+              td Jurassic
+            tr
+              td JustForJustin
+            tr
+              td Kirumamoru
+            tr
+              td Landing Pad
+            tr
+              td Liquid Sweep
+            tr
+              td Lost Children
+            tr
+              td Maresh
+            tr
+              td Massive Pad
+            tr
+              td Materialize
+            tr
+              td Matrox
+            tr
+              td Maximus
+            tr
+              td Melancholy Pad
+            tr
+              td Metal Moths
+            tr
+              td MiddleBandVoko
+            tr
+              td Moartal
+            tr
+              td Mod,Vangelian
+            tr
+              td Moody Sweep
+            tr
+              td Moonbase Pad
+            tr
+              td Morten'J
+            tr
+              td Movie Pad
+            tr
+              td My Friends
+            tr
+              td New Horizons
+            tr
+              td Nitrogenius
+            tr
+              td Not From Here
+            tr
+              td Oberpad
+            tr
+              td PPGees
+            tr
+              td PartyBack299
+            tr
+              td Phase Pad
+            tr
+              td PhobosianSweep
+            tr
+              td Pheumatic Pad
+            tr
+              td Pretty Panner
+            tr
+              td Regurgipad
+            tr
+              td Remember Me
+            tr
+              td Repeater
+            tr
+              td Pipley
+            tr
+              td Rounder
+            tr
+              td Royal Pad
+            tr
+              td Safe Launding
+            tr
+              td Sandy Sweep
+            tr
+              td Scarlet Lights
+            tr
+              td Scary Bouncer
+            tr
+              td Shader
+            tr
+              td Shady Business
+            tr
+              td Silkworm
+            tr
+              td Silver Lining
+            tr
+              td Soft Cake
+            tr
+              td Soft Pad
+            tr
+              td SoftSweetPad
+            tr
+              td Softballs
+            tr
+              td Solar Wire
+            tr
+              td Some Trouble
+            tr
+              td Soundtracker
+            tr
+              td Soupy Jupiter
+            tr
+              td Spectral Sweep
+            tr
+              td Spectral Warp
+            tr
+              td Star Gate
+            tr
+              td Steam Volve
+            tr
+              td StonehengeDown
+            tr
+              td Sweet OB Sweep
+            tr
+              td Syn Choir
+            tr
+              td Take My Pulse
+            tr
+              td Tempopansweep
+            tr
+              td Triumphant Pad
+            tr
+              td Twenty Acres
+            tr
+              td Undercity
+            tr
+              td Undergrowth
+            tr
+              td Unhappy
+            tr
+              td Uvula
+            tr
+              td Vanilla Pad
+            tr
+              td Venusian Sweep
+            tr
+              td Vindicarum
+            tr
+              td Vocoded Ents
+            tr
+              td Vocojam
+            tr
+              td Voices
+            tr
+              td Vox Layer
+            tr
+              td Voxy Synth
+            tr
+              td WahWehWuhWoo
+            tr
+              td Waterpiano
+            tr
+              td Welcome Back
+            tr
+              td What's that?
+            tr
+              td Whisper
+        h3.heading.switch
+          | string
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td AheadOfItsTime
+            tr
+              td AquarianString
+            tr
+              td Buzzy Strings
+            tr
+              td DarkOberstrings
+            tr
+              td Eight Strings
+            tr
+              td Fast1stViolin
+            tr
+              td J Strings
+            tr
+              td JP Strings
+            tr
+              td Nervoso Strngs
+            tr
+              td Profit Strings
+            tr
+              td Rusty Strings
+            tr
+              td SilkyVerySilky
+            tr
+              td SoleenaStrings
+            tr
+              td String Dream
+            tr
+              td Sweet Dreams
+            tr
+              td The Yoyo-Ma's
+            tr
+              td VelocityStrngs
+            tr
+              td Violacoder
+        h3.heading.switch
+          | brass
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ABitOffTheTop
+            tr
+              td AnalogHorns ff
+            tr
+              td Bass Trombone
+            tr
+              td Brassic Class
+            tr
+              td Caterpillar
+            tr
+              td CrispBrassPad
+            tr
+              td Fast n Brassy
+            tr
+              td Fat Brassy 5th
+            tr
+              td FilmNoirTrumpt
+            tr
+              td Fr.Horn Chorus
+            tr
+              td Greco Fr. Horn
+            tr
+              td J Brass
+            tr
+              td Kugel Flugel
+            tr
+              td Lonly Brass
+            tr
+              td Nice Brass Pad
+            tr
+              td OB Puff Brass
+            tr
+              td PolyWannaBrass
+            tr
+              td Prog Brass
+            tr
+              td Regal Horns
+            tr
+              td SteelAndBrass
+            tr
+              td Syn Hornz
+            tr
+              td T-Bone Steak
+            tr
+              td TWumpet
+            tr
+              td UnpolishdBrass
+            tr
+              td WowThat'sBrass
+            tr
+              td Zoik Brass
+        h3.heading.switch
+          | keys
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 60's Organ
+            tr
+              td 6WivesOfRickW.
+            tr
+              td ArEmEye Piano
+            tr
+              td Bach Overdrive
+            tr
+              td Circus
+            tr
+              td Clavitude
+            tr
+              td Clavy
+            tr
+              td Dusty Organ
+            tr
+              td EP～ OK!
+            tr
+              td ElecHarpsi8'4'
+            tr
+              td Funky 70s Clav
+            tr
+              td Glass Keys
+            tr
+              td Glasspipe
+            tr
+              td GroovyAuto-Wah
+            tr
+              td Harpsiwarp
+            tr
+              td Heavy On The 5
+            tr
+              td Key Clavi
+            tr
+              td LektrikEelClav
+            tr
+              td Miami Vyce
+            tr
+              td Oktoberfest!
+            tr
+              td Organ P
+            tr
+              td OttowaRezoClav
+            tr
+              td PhantmOfTheIon
+            tr
+              td Plastic Keys
+            tr
+              td Rendezvous6:02
+            tr
+              td Rock Organ
+            tr
+              td RockWheelOrgan
+            tr
+              td Sheriff Piano
+            tr
+              td Stereo EP m2
+            tr
+              td Stockbaroquer
+            tr
+              td Stops On m2
+            tr
+              td StreetsOfParis
+            tr
+              td Syn Wurly
+            tr
+              td TurboPhiliOrgn
+            tr
+              td Vintage Piano
+            tr
+              td Zorgan
+        h3.heading.switch
+          | comp
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 1and2andComp
+            tr
+              td Ai-ya!
+            tr
+              td Amsterdam DJ
+            tr
+              td Animator
+            tr
+              td Baba O'Riley
+            tr
+              td Beefy Sync
                 tr
-                  td Adrastea
+                  td Bellsichord
                 tr
-                  td AquamarineLead
+                  td Bioinformatics
                 tr
-                  td Bambam Lead
+                  td Boing Bongs
                 tr
-                  td Cars Sync
+                  td Bone Kalimba
                 tr
-                  td CoolMellowLead
+                  td Boss Battle
                 tr
-                  td Executioner
+                  td Breathy Tone
                 tr
-                  td Flatulent Duck
+                  td Carillon
                 tr
-                  td Frogstar IV
+                  td Chords2Rock
                 tr
-                  td Fuzzy Buzzy
+                  td Classic Decay
                 tr
-                  td Infamous Lead
+                  td CompJazzGuitar
                 tr
-                  td LazyAnalogLead
+                  td Crystallizer
                 tr
-                  td LeadOfSixSines
+                  td Deutche Bahn
                 tr
-                  td Lucky Porta m2
+                  td Dude!
                 tr
-                  td Lunar Orbit
+                  td DynaEtno Bell
                 tr
-                  td Mahavishnoid
+                  td E-Sitar Layer
                 tr
-                  td Mecha-Canary
+                  td Electric Jello
                 tr
-                  td Micron Flute
+                  td Electrorail
                 tr
-                  td Mini 5th
+                  td Elp Time
                 tr
-                  td Mini Classic
+                  td FM Slider 2
                 tr
-                  td Odyssee Lead
+                  td Flatron
                 tr
-                  td Porta Lead
+                  td Formant WEH
                 tr
-                  td Rosemary'sBaby
+                  td Froggy
                 tr
-                  td Sandpaper Lead
+                  td Funky Slide
                 tr
-                  td ScreaminWarpLd
+                  td Get Funky!
                 tr
-                  td Seven Days
+                  td Glass + Steel
                 tr
-                  td Shortwave
+                  td HappyCarribean
                 tr
-                  td Sizzler
+                  td Harptronic
                 tr
-                  td SpankTone Lead
+                  td Hollow Machine
                 tr
-                  td StixMiniMogue
+                  td Howlercomp m2
                 tr
-                  td Suboscillators
+                  td Ice Tongs
                 tr
-                  td SunsetMiniLead
+                  td InHarmonics
                 tr
-                  td Tarkus Carcass
+                  td IntroTheValley
                 tr
-                  td Trantor Lead
+                  td ItsJamicaMon!
                 tr
-                  td Triad m2 Faze
+                  td JP Journey
                 tr
-                  td Tweakedriver
+                  td Joggin'
                 tr
-                  td U CrazyDiamond
+                  td Jump
                 tr
-                  td Wakeman Mogue
+                  td Kitchen Sync
                 tr
-                  td Wakemini
+                  td Laryngitis
                 tr
-                  td Warperheim
+                  td Laser Surgery
                 tr
-                  td Whisler's Mon
+                  td Latenight Comp
                 tr
-                  td Wichita Falls
+                  td Looker
                 tr
-                  td Wowza
+                  td Machete Beat
                 tr
-                  td Zippy the 5th
-            h3.heading.switch
-              | pad
-              span.swithCondition.contentClosed
-              section.h3content.hide
-                table
-                  tr
-                    td 16-PoleDeepPad
-                  tr
-                    td 2-PoleDarkPad
-                  tr
-                    td 4-PoleSoftPad
-                  tr
-                    td 8-PoleWarmPad
-                  tr
-                    td Aeon Choir
-                  tr
-                    td AnotherLongDay
-                  tr
-                    td AstrogySweep
-                  tr
-                    td Auto Player
-                  tr
-                    td Backing Vox
-                  tr
-                    td Bad Acid
-                  tr
-                    td Blue Doll
-                  tr
-                    td Brainpounder
-                  tr
-                    td Cauldron Pad
-                  tr
-                    td Choirbox
-                  tr
-                    td Classic Vox
-                  tr
-                    td Clusters
-                  tr
-                    td Concert Pad
-                  tr
-                    td Dagon Visitors
-                  tr
-                    td Deep Space
-                  tr
-                    td Dirty Dreamer
-                  tr
-                    td Dream Pad
-                  tr
-                    td Dutch Choir
-                  tr
-                    td DynaAahOohVox
-                  tr
-                    td ELen8R
-                  tr
-                    td EMotion Pad
-                  tr
-                    td Ecology
-                  tr
-                    td Electronique
-                  tr
-                    td Ensemble
-                  tr
-                    td Exhalation
-                  tr
-                    td Fat2Compose
-                  tr
-                    td FilterSweep101
-                  tr
-                    td Ghostly
-                  tr
-                    td Ghosty Voice
-                  tr
-                    td Golem Emerges
-                  tr
-                    td Gritter Pad
-                  tr
-                    td Hollow Pad
-                  tr
-                    td Home Forgotten
-                  tr
-                    td I Comprehend
-                  tr
-                    td I Understand
-                  tr
-                    td Infrastructure
-                  tr
-                    td Intruder
-                  tr
-                    td Ionian Sweep
-                  tr
-                    td Ionic Voyage
-                  tr
-                    td Ionizer
-                  tr
-                    td Joan d'Arc Pad
-                  tr
-                    td Journey West
-                  tr
-                    td Jurassic
-                  tr
-                    td JustForJustin
-                  tr
-                    td Kirumamoru
-                  tr
-                    td Landing Pad
-                  tr
-                    td Liquid Sweep
-                  tr
-                    td Lost Children
-                  tr
-                    td Maresh
-                  tr
-                    td Massive Pad
-                  tr
-                    td Materialize
-                  tr
-                    td Matrox
-                  tr
-                    td Maximus
-                  tr
-                    td Melancholy Pad
-                  tr
-                    td Metal Moths
-                  tr
-                    td MiddleBandVoko
-                  tr
-                    td Moartal
-                  tr
-                    td Mod,Vangelian
-                  tr
-                    td Moody Sweep
-                  tr
-                    td Moonbase Pad
-                  tr
-                    td Morten'J
-                  tr
-                    td Movie Pad
-                  tr
-                    td My Friends
-                  tr
-                    td New Horizons
-                  tr
-                    td Nitrogenius
-                  tr
-                    td Not From Here
-                  tr
-                    td Oberpad
-                  tr
-                    td PPGees
-                  tr
-                    td PartyBack299
-                  tr
-                    td Phase Pad
-                  tr
-                    td PhobosianSweep
-                  tr
-                    td Pheumatic Pad
-                  tr
-                    td Pretty Panner
-                  tr
-                    td Regurgipad
-                  tr
-                    td Remember Me
-                  tr
-                    td Repeater
-                  tr
-                    td Pipley
-                  tr
-                    td Rounder
-                  tr
-                    td Royal Pad
-                  tr
-                    td Safe Launding
-                  tr
-                    td Sandy Sweep
-                  tr
-                    td Scarlet Lights
-                  tr
-                    td Scary Bouncer
-                  tr
-                    td Shader
-                  tr
-                    td Shady Business
-                  tr
-                    td Silkworm
-                  tr
-                    td Silver Lining
-                  tr
-                    td Soft Cake
-                  tr
-                    td Soft Pad
-                  tr
-                    td SoftSweetPad
-                  tr
-                    td Softballs
-                  tr
-                    td Solar Wire
-                  tr
-                    td Some Trouble
-                  tr
-                    td Soundtracker
-                  tr
-                    td Soupy Jupiter
-                  tr
-                    td Spectral Sweep
-                  tr
-                    td Spectral Warp
-                  tr
-                    td Star Gate
-                  tr
-                    td Steam Volve
-                  tr
-                    td StonehengeDown
-                  tr
-                    td Sweet OB Sweep
-                  tr
-                    td Syn Choir
-                  tr
-                    td Take My Pulse
-                  tr
-                    td Tempopansweep
-                  tr
-                    td Triumphant Pad
-                  tr
-                    td Twenty Acres
-                  tr
-                    td Undercity
-                  tr
-                    td Undergrowth
-                  tr
-                    td Unhappy
-                  tr
-                    td Uvula
-                  tr
-                    td Vanilla Pad
-                  tr
-                    td Venusian Sweep
-                  tr
-                    td Vindicarum
-                  tr
-                    td Vocoded Ents
-                  tr
-                    td Vocojam
-                  tr
-                    td Voices
-                  tr
-                    td Vox Layer
-                  tr
-                    td Voxy Synth
-                  tr
-                    td WahWehWuhWoo
-                  tr
-                    td Waterpiano
-                  tr
-                    td Welcome Back
-                  tr
-                    td What's that?
-                  tr
-                    td Whisper
-              h3.heading.switch
-                | string
-                span.swithCondition.contentClosed
-                section.h3content.hide
-                  table
-                    tr
-                      td AheadOfItsTime
-                    tr
-                      td AquarianString
-                    tr
-                      td Buzzy Strings
-                    tr
-                      td DarkOberstrings
-                    tr
-                      td Eight Strings
-                    tr
-                      td Fast1stViolin
-                    tr
-                      td J Strings
-                    tr
-                      td JP Strings
-                    tr
-                      td Nervoso Strngs
-                    tr
-                      td Profit Strings
-                    tr
-                      td Rusty Strings
-                    tr
-                      td SilkyVerySilky
-                    tr
-                      td SoleenaStrings
-                    tr
-                      td String Dream
-                    tr
-                      td Sweet Dreams
-                    tr
-                      td The Yoyo-Ma's
-                    tr
-                      td VelocityStrngs
-                    tr
-                      td Violacoder
-                h3.heading.switch
-                  | brass
-                  span.swithCondition.contentClosed
-                  section.h3content.hide
-                    table
-                      tr
-                        td ABitOffTheTop
-                      tr
-                        td AnalogHorns ff
-                      tr
-                        td Bass Trombone
-                      tr
-                        td Brassic Class
-                      tr
-                        td Caterpillar
-                      tr
-                        td CrispBrassPad
-                      tr
-                        td Fast n Brassy
-                      tr
-                        td Fat Brassy 5th
-                      tr
-                        td FilmNoirTrumpt
-                      tr
-                        td Fr.Horn Chorus
-                      tr
-                        td Greco Fr. Horn
-                      tr
-                        td J Brass
-                      tr
-                        td Kugel Flugel
-                      tr
-                        td Lonly Brass
-                      tr
-                        td Nice Brass Pad
-                      tr
-                        td OB Puff Brass
-                      tr
-                        td PolyWannaBrass
-                      tr
-                        td Prog Brass
-                      tr
-                        td Regal Horns
-                      tr
-                        td SteelAndBrass
-                      tr
-                        td Syn Hornz
-                      tr
-                        td T-Bone Steak
-                      tr
-                        td TWumpet
-                      tr
-                        td UnpolishdBrass
-                      tr
-                        td WowThat'sBrass
-                      tr
-                        td Zoik Brass
-                  h3.heading.switch
-                    | keys
-                    span.swithCondition.contentClosed
-                    section.h3content.hide
-                      table
-                        tr
-                          td 60's Organ
-                        tr
-                          td 6WivesOfRickW.
-                        tr
-                          td ArEmEye Piano
-                        tr
-                          td Bach Overdrive
-                        tr
-                          td Circus
-                        tr
-                          td Clavitude
-                        tr
-                          td Clavy
-                        tr
-                          td Dusty Organ
-                        tr
-                          td EP～ OK!
-                        tr
-                          td ElecHarpsi8'4'
-                        tr
-                          td Funky 70s Clav
-                        tr
-                          td Glass Keys
-                        tr
-                          td Glasspipe
-                        tr
-                          td GroovyAuto-Wah
-                        tr
-                          td Harpsiwarp
-                        tr
-                          td Heavy On The 5
-                        tr
-                          td Key Clavi
-                        tr
-                          td LektrikEelClav
-                        tr
-                          td Miami Vyce
-                        tr
-                          td Oktoberfest!
-                        tr
-                          td Organ P
-                        tr
-                          td OttowaRezoClav
-                        tr
-                          td PhantmOfTheIon
-                        tr
-                          td Plastic Keys
-                        tr
-                          td Rendezvous6:02
-                        tr
-                          td Rock Organ
-                        tr
-                          td RockWheelOrgan
-                        tr
-                          td Sheriff Piano
-                        tr
-                          td Stereo EP m2
-                        tr
-                          td Stockbaroquer
-                        tr
-                          td Stops On m2
-                        tr
-                          td StreetsOfParis
-                        tr
-                          td Syn Wurly
-                        tr
-                          td TurboPhiliOrgn
-                        tr
-                          td Vintage Piano
-                        tr
-                          td Zorgan
-                    h3.heading.switch
-                      | comp
-                      span.swithCondition.contentClosed
-                      section.h3content.hide
-                        table
-                          tr
-                            td 1and2andComp
-                          tr
-                            td Ai-ya!
-                          tr
-                            td Amsterdam DJ
-                          tr
-                            td Animator
-                          tr
-                            td Baba O'Riley
-                          tr
-                            td Beefy Sync
-                          tr
-                            td Bellsichord
-                          tr
-                            td Bioinformatics
-                          tr
-                            td Boing Bongs
-                          tr
-                            td Bone Kalimba
-                          tr
-                            td Boss Battle
-                          tr
-                            td Breathy Tone
-                          tr
-                            td Carillon
-                          tr
-                            td Chords2Rock
-                          tr
-                            td Classic Decay
-                          tr
-                            td CompJazzGuitar
-                          tr
-                            td Crystallizer
-                          tr
-                            td Deutche Bahn
-                          tr
-                            td Dude!
-                          tr
-                            td DynaEtno Bell
-                          tr
-                            td E-Sitar Layer
-                          tr
-                            td Electric Jello
-                          tr
-                            td Electrorail
-                          tr
-                            td Elp Time
-                          tr
-                            td FM Slider 2
-                          tr
-                            td Flatron
-                          tr
-                            td Formant WEH
-                          tr
-                            td Froggy
-                          tr
-                            td Funky Slide
-                          tr
-                            td Get Funky!
-                          tr
-                            td Glass + Steel
-                          tr
-                            td HappyCarribean
-                          tr
-                            td Harptronic
-                          tr
-                            td Hollow Machine
-                          tr
-                            td Howlercomp m2
-                          tr
-                            td Ice Tongs
-                          tr
-                            td InHarmonics
-                          tr
-                            td IntroTheValley
-                          tr
-                            td ItsJamicaMon!
-                          tr
-                            td JP Journey
-                          tr
-                            td Joggin'
-                          tr
-                            td Jump
-                          tr
-                            td Kitchen Sync
-                          tr
-                            td Laryngitis
-                          tr
-                            td Laser Surgery
-                          tr
-                            td Latenight Comp
-                          tr
-                            td Looker
-                          tr
-                            td Machete Beat
-                          tr
-                            td Marimbaphone
-                          tr
-                            td Massiva
-                          tr
-                            td Metallic Body
-                          tr
-                            td Mind Bell
-                          tr
-                            td Mustard Planet
-                          tr
-                            td Norelko
-                          tr
-                            td OB Sensible
-                          tr
-                            td Opeator
-                          tr
-                            td Orbital Frame
-                          tr
-                            td Out of Style
-                          tr
-                            td Owbercomper
-                          tr
-                            td pawnShopAnteek
-                          tr
-                            td Pluck You
-                          tr
-                            td Plucky Arp
-                          tr
-                            td Plucky Duck
-                          tr
-                            td Plucky K
-                          tr
-                            td PolyWannaComp
-                          tr
-                            td Princely One
-                          tr
-                            td Pulsar
-                          tr
-                            td Pulse Decay
-                          tr
-                            td Punchy Harp
-                          tr
-                            td RememberMyJuno
-                          tr
-                            td Resonant Comp
-                          tr
-                            td Ringmon Bell
-                          tr
-                            td RingmodMyBell
-                          tr
-                            td Romulan Bells
-                          tr
-                            td RoomfulOfZoik
-                          tr
-                            td Rotwang
-                          tr
-                            td Rubber Synth
-                          tr
-                            td Rustscraper
-                          tr
-                            td S-Bahn Jelly
-                          tr
-                            td Sambalby?
-                          tr
-                            td Seek Seque
-                          tr
-                            td Self-Oscillate
-                          tr
-                            td Silver Sweep
-                          tr
-                            td Simple
-                          tr
-                            td Sine Drops
-                          tr
-                            td Sitary
-                          tr
-                            td Spank Tone
-                          tr
-                            td Splak
-                          tr
-                            td SpringCleaning
-                          tr
-                            td Stargazing
-                          tr
-                            td Strawberry
-                          tr
-                            td Surface
-                          tr
-                            td SwirlyToyPiano
-                          tr
-                            td Symphonic Eh
-                          tr
-                            td Symphonic Weh
-                          tr
-                            td Synclav
-                          tr
-                            td Tabulate
-                          tr
-                            td TechnoToyTump
-                          tr
-                            td TellMeAStory
-                          tr
-                            td The 80s
-                          tr
-                            td The Dancer
-                          tr
-                            td threefinity
-                          tr
-                            td Tiny Bell
-                          tr
-                            td TouchPhaseComp
-                          tr
-                            td Toy Steel Drum
-                          tr
-                            td Troll Scat
-                          tr
-                            td Unapologetic
-                          tr
-                            td Unminstakable
-                          tr
-                            td VelocityContrl
-                          tr
-                            td Warped Steeplr
-                          tr
-                            td Wet Comper
-                          tr
-                            td Whisker Comper
-                          tr
-                            td WontGetFooled
-                      h3.heading.switch
-                        | drum
-                        span.swithCondition.contentClosed
-                        section.h3content.hide
-                          table
-                            tr
-                              td BD 808 Kick
-                            tr
-                              td BD 909 Kick
-                            tr
-                              td BD Bang On!
-                            tr
-                              td BD CR Kick
-                            tr
-                              td DB CleanRhythm
-                            tr
-                              td BD Club Kick
-                            tr
-                              td BD Cool
-                            tr
-                              td BD CowboyJungl
-                            tr
-                              td BD Distresser
-                            tr
-                              td BD EL Distorto
-                            tr
-                              td BD ElectroKick
-                            tr
-                              td BD Excalade
-                            tr
-                              td BD Filter Kick
-                            tr
-                              td BD Future Kick
-                            tr
-                              td BD Hardcore
-                            tr
-                              td BD Harsh Real
-                            tr
-                              td BD Hello Buck!
-                            tr
-                              td BD Hi-Techkick
-                            tr
-                              td BD Jungle Kick
-                            tr
-                              td BD KHO Beats
-                            tr
-                              td BD Kick Me 2
-                            tr
-                              td BD Kick PS
-                            tr
-                              td BD Kick SAEFF
-                            tr
-                              td BD Math
-                            tr
-                              td BD Metal Machn
-                            tr
-                              td BD Mipmap
-                            tr
-                              td BD Osc Kick
-                            tr
-                              td BD Pitch E-Kik
-                            tr
-                              td BD Rattler!
-                            tr
-                              td CY China Cymbl
-                            tr
-                              td CY FM Gong
-                            tr
-                              td CY FM Ride Cym
-                            tr
-                              td CY Ping Ride
-                            tr
-                              td HH CR Hat
-                            tr
-                              td HH CR Hat Clos
-                            tr
-                              td HH CleanRythm
-                            tr
-                              td HH ClosedE-Hat
-                            tr
-                              td HH CowboyJungl
-                            tr
-                              td HH E-HiHats Op
-                            tr
-                              td HH Elect Hat
-                            tr
-                              td HH ElectroClsd
-                            tr
-                              td HH FM Hat
-                            tr
-                              td HH Hardcore
-                            tr
-                              td HH Harsh Real
-                            tr
-                              td HH Hi Head
-                            tr
-                              td HH HiHat4PS Cl
-                            tr
-                              td HH HiHat4PS Op
-                            tr
-                              td HH Hihat
-                            tr
-                              td HH Jungle Clsd
-                            tr
-                              td HH KHO Beats
-                            tr
-                              td HH Metal Machn
-                            tr
-                              td HH Real Hat
-                            tr
-                              td PR Agogo
-                            tr
-                              td PR Avedis
-                            tr
-                              td PR Bell0DaCow
-                            tr
-                              td PR Bio Rhythm
-                            tr
-                              td PR BlastrFight
-                            tr
-                              td PR Blibzkrieg
-                            tr
-                              td PR Blipper 1
-                            tr
-                              td PR Blipper 2
-                            tr
-                              td PR CR Guiro
-                            tr
-                              td PR CR Hi Bongo
-                            tr
-                              td PR Clae
-                            tr
-                              td PR Clap Happy
-                            tr
-                              td PR Clave
-                            tr
-                              td PR Conga
-                            tr
-                              td PR Cowbell
-                            tr
-                              td PR Cricket
-                            tr
-                              td PR ElectBongo
-                            tr
-                              td PR Finger Bell
-                            tr
-                              td PR Full Stop
-                            tr
-                              td PR Gene Splice
-                            tr
-                              td PR Krafty
-                            tr
-                              td PR Noiz Chew
-                            tr
-                              td PR Pacific Rim
-                            tr
-                              td PR Picky, Pick
-                            tr
-                              td PR Pit-Pat
-                            tr
-                              td PR Plucked Can
-                            tr
-                              td PR Popcorn
-                            tr
-                              td PR RobotShufle
-                            tr
-                              td PR Shake it!
-                            tr
-                              td PR Shaker
-                            tr
-                              td PR Shush
-                            tr
-                              td PR Squirch
-                            tr
-                              td PR StringedPot
-                            tr
-                              td PR Tabla
-                            tr
-                              td PR Tin Tapper
-                            tr
-                              td PR TipOfDaBlip
-                            tr
-                              td PR_Tunnel Pong
-                            tr
-                              td PR Vibra
-                            tr
-                              td PR Watery
-                            tr
-                              td PR Woodblock
-                            tr
-                              td SD 909 Snare
-                            tr
-                              td SD BrightSnare
-                            tr
-                              td SD Burst Snare
-                            tr
-                              td SD CR Snare
-                            tr
-                              td SD CleanRhythm
-                            tr
-                              td SD Cotton Snar
-                            tr
-                              td SD CowboyJungl
-                            tr
-                              td SD DumpsterSnr
-                            tr
-                              td SD ElectroSnar
-                            tr
-                              td SD Hardcore
-                            tr
-                              td SD Harsh Real
-                            tr
-                              td SD Jungle Snar
-                            tr
-                              td SD KHO Beats
-                            tr
-                              td SD Metal Machn
-                            tr
-                              td SD Metallic Sn
-                            tr
-                              td SD SimmonsySnr
-                            tr
-                              td SD Sizzlin'Snr
-                            tr
-                              td SD SlideySnare
-                            tr
-                              td SD SnappySnare
-                            tr
-                              td SD Snarez
-                            tr
-                              td SD Synare
-                            tr
-                              td SD Thin Snare
-                            tr
-                              td SD Zap Snare
-                            tr
-                              td TM SimmonsyTom
-                            tr
-                              td TM Toms
-                            tr
-                              td TM Zimmonz
-                        h3.heading.switch
-                          | sfx
-                          span.swithCondition.contentClosed
-                          section.h3content.hide
-                            table
-                              tr
-                                td * 101 Vocoder
-                              tr
-                                td * Deep Vocoder
-                              tr
-                                td * ExtIn-Dly+FM
-                              tr
-                                td * Extzin-Filter
-                              tr
-                                td * ExtIn-Flt+Pn
-                              tr
-                                td * ExtIn-Gate
-                              tr
-                                td * Goblin Talk
-                              tr
-                                td * Hobbitronix
-                              tr
-                                td * Sing 'Coder
-                              tr
-                                td Airlock Door
-                              tr
-                                td AsteroidsD-Lux
-                              tr
-                                td Bombs Away
-                              tr
-                                td Bromide
-                              tr
-                                td Close one!
-                              tr
-                                td Cyber Washer
-                              tr
-                                td Da Ring
-                              tr
-                                td Dead Pack,Man
-                              tr
-                                td Default
-                              tr
-                                td Dog vs.Cat
-                              tr
-                                td Fly-By
-                              tr
-                                td Frankenstein
-                              tr
-                                td From Venus
-                              tr
-                                td Gizmo
-                              tr
-                                td Hatching
-                              tr
-                                td Helicopter
-                              tr
-                                td Herge
-                              tr
-                                td Howling Dogs
-                              tr
-                                td Insane Dentist
-                              tr
-                                td Landing
-                              tr
-                                td Last Breath
-                              tr
-                                td Lava Stream
-                              tr
-                                td Mad Science
-                              tr
-                                td Modularized
-                              tr
-                                td Ocean->Sliders
-                              tr
-                                td Panning Zaps
-                              tr
-                                td ReverseBellFX
-                              tr
-                                td Seaform
-                              tr
-                                td Space Jalopy
-                              tr
-                                td StartTheMachin
-                              tr
-                                td Swamp Gas
-                              tr
-                                td The FM Police
-                              tr
-                                td The Lab
-                              tr
-                                td Thunderstorm
-                              tr
-                                td Trance Tube
-                              tr
-                                td UFO Blastoff
-                              tr
-                                td Whazzat?
-                              tr
-                                td Wheely Windy
-                              tr
-                                td Wind
-                              tr
-                                td Windy City
-                              tr
-                                td X-Mod
+                  td Marimbaphone
+                tr
+                  td Massiva
+                tr
+                  td Metallic Body
+                tr
+                  td Mind Bell
+                tr
+                  td Mustard Planet
+                tr
+                  td Norelko
+                tr
+                  td OB Sensible
+                tr
+                  td Opeator
+                tr
+                  td Orbital Frame
+                tr
+                  td Out of Style
+                tr
+                  td Owbercomper
+                tr
+                  td pawnShopAnteek
+                tr
+                  td Pluck You
+                tr
+                  td Plucky Arp
+                tr
+                  td Plucky Duck
+                tr
+                  td Plucky K
+                tr
+                  td PolyWannaComp
+                tr
+                  td Princely One
+                tr
+                  td Pulsar
+                tr
+                  td Pulse Decay
+                tr
+                  td Punchy Harp
+                tr
+                  td RememberMyJuno
+                tr
+                  td Resonant Comp
+                tr
+                  td Ringmon Bell
+                tr
+                  td RingmodMyBell
+                tr
+                  td Romulan Bells
+                tr
+                  td RoomfulOfZoik
+                tr
+                  td Rotwang
+                tr
+                  td Rubber Synth
+                tr
+                  td Rustscraper
+                tr
+                  td S-Bahn Jelly
+                tr
+                  td Sambalby?
+                tr
+                  td Seek Seque
+                tr
+                  td Self-Oscillate
+                tr
+                  td Silver Sweep
+                tr
+                  td Simple
+                tr
+                  td Sine Drops
+                tr
+                  td Sitary
+                tr
+                  td Spank Tone
+                tr
+                  td Splak
+                tr
+                  td SpringCleaning
+                tr
+                  td Stargazing
+                tr
+                  td Strawberry
+                tr
+                  td Surface
+                tr
+                  td SwirlyToyPiano
+                tr
+                  td Symphonic Eh
+                tr
+                  td Symphonic Weh
+                tr
+                  td Synclav
+                tr
+                  td Tabulate
+                tr
+                  td TechnoToyTump
+                tr
+                  td TellMeAStory
+                tr
+                  td The 80s
+                tr
+                  td The Dancer
+                tr
+                  td threefinity
+                tr
+                  td Tiny Bell
+                tr
+                  td TouchPhaseComp
+                tr
+                  td Toy Steel Drum
+                tr
+                  td Troll Scat
+                tr
+                  td Unapologetic
+                tr
+                  td Unminstakable
+                tr
+                  td VelocityContrl
+                tr
+                  td Warped Steeplr
+                tr
+                  td Wet Comper
+                tr
+                  td Whisker Comper
+                tr
+                  td WontGetFooled
+        h3.heading.switch
+          | drum
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td BD 808 Kick
+            tr
+              td BD 909 Kick
+            tr
+              td BD Bang On!
+            tr
+              td BD CR Kick
+            tr
+              td DB CleanRhythm
+            tr
+              td BD Club Kick
+            tr
+              td BD Cool
+            tr
+              td BD CowboyJungl
+            tr
+              td BD Distresser
+            tr
+              td BD EL Distorto
+            tr
+              td BD ElectroKick
+            tr
+              td BD Excalade
+            tr
+              td BD Filter Kick
+            tr
+              td BD Future Kick
+            tr
+              td BD Hardcore
+            tr
+              td BD Harsh Real
+            tr
+              td BD Hello Buck!
+            tr
+              td BD Hi-Techkick
+            tr
+              td BD Jungle Kick
+            tr
+              td BD KHO Beats
+            tr
+              td BD Kick Me 2
+            tr
+              td BD Kick PS
+            tr
+              td BD Kick SAEFF
+            tr
+              td BD Math
+            tr
+              td BD Metal Machn
+            tr
+              td BD Mipmap
+            tr
+              td BD Osc Kick
+            tr
+              td BD Pitch E-Kik
+            tr
+              td BD Rattler!
+            tr
+              td CY China Cymbl
+            tr
+              td CY FM Gong
+            tr
+              td CY FM Ride Cym
+            tr
+              td CY Ping Ride
+            tr
+              td HH CR Hat
+            tr
+              td HH CR Hat Clos
+            tr
+              td HH CleanRythm
+            tr
+              td HH ClosedE-Hat
+            tr
+              td HH CowboyJungl
+            tr
+              td HH E-HiHats Op
+            tr
+              td HH Elect Hat
+            tr
+              td HH ElectroClsd
+            tr
+              td HH FM Hat
+            tr
+              td HH Hardcore
+            tr
+              td HH Harsh Real
+            tr
+              td HH Hi Head
+            tr
+              td HH HiHat4PS Cl
+            tr
+              td HH HiHat4PS Op
+            tr
+              td HH Hihat
+            tr
+              td HH Jungle Clsd
+            tr
+              td HH KHO Beats
+            tr
+              td HH Metal Machn
+            tr
+              td HH Real Hat
+            tr
+              td PR Agogo
+            tr
+              td PR Avedis
+            tr
+              td PR Bell0DaCow
+            tr
+              td PR Bio Rhythm
+            tr
+              td PR BlastrFight
+            tr
+              td PR Blibzkrieg
+            tr
+              td PR Blipper 1
+            tr
+              td PR Blipper 2
+            tr
+              td PR CR Guiro
+            tr
+              td PR CR Hi Bongo
+            tr
+              td PR Clae
+            tr
+              td PR Clap Happy
+            tr
+              td PR Clave
+            tr
+              td PR Conga
+            tr
+              td PR Cowbell
+            tr
+              td PR Cricket
+            tr
+              td PR ElectBongo
+            tr
+              td PR Finger Bell
+            tr
+              td PR Full Stop
+            tr
+              td PR Gene Splice
+            tr
+              td PR Krafty
+            tr
+              td PR Noiz Chew
+            tr
+              td PR Pacific Rim
+            tr
+              td PR Picky, Pick
+            tr
+              td PR Pit-Pat
+            tr
+              td PR Plucked Can
+            tr
+              td PR Popcorn
+            tr
+              td PR RobotShufle
+            tr
+              td PR Shake it!
+            tr
+              td PR Shaker
+            tr
+              td PR Shush
+            tr
+              td PR Squirch
+            tr
+              td PR StringedPot
+            tr
+              td PR Tabla
+            tr
+              td PR Tin Tapper
+            tr
+              td PR TipOfDaBlip
+            tr
+              td PR_Tunnel Pong
+            tr
+              td PR Vibra
+            tr
+              td PR Watery
+            tr
+              td PR Woodblock
+            tr
+              td SD 909 Snare
+            tr
+              td SD BrightSnare
+            tr
+              td SD Burst Snare
+            tr
+              td SD CR Snare
+            tr
+              td SD CleanRhythm
+            tr
+              td SD Cotton Snar
+            tr
+              td SD CowboyJungl
+            tr
+              td SD DumpsterSnr
+            tr
+              td SD ElectroSnar
+            tr
+              td SD Hardcore
+            tr
+              td SD Harsh Real
+            tr
+              td SD Jungle Snar
+            tr
+              td SD KHO Beats
+            tr
+              td SD Metal Machn
+            tr
+              td SD Metallic Sn
+            tr
+              td SD SimmonsySnr
+            tr
+              td SD Sizzlin'Snr
+            tr
+              td SD SlideySnare
+            tr
+              td SD SnappySnare
+            tr
+              td SD Snarez
+            tr
+              td SD Synare
+            tr
+              td SD Thin Snare
+            tr
+              td SD Zap Snare
+            tr
+              td TM SimmonsyTom
+            tr
+              td TM Toms
+            tr
+              td TM Zimmonz
+        h3.heading.switch
+          | sfx
+        span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td * 101 Vocoder
+            tr
+              td * Deep Vocoder
+            tr
+              td * ExtIn-Dly+FM
+            tr
+              td * Extzin-Filter
+            tr
+              td * ExtIn-Flt+Pn
+            tr
+              td * ExtIn-Gate
+            tr
+              td * Goblin Talk
+            tr
+              td * Hobbitronix
+            tr
+              td * Sing 'Coder
+            tr
+              td Airlock Door
+            tr
+              td AsteroidsD-Lux
+            tr
+              td Bombs Away
+            tr
+              td Bromide
+            tr
+              td Close one!
+            tr
+              td Cyber Washer
+            tr
+              td Da Ring
+            tr
+              td Dead Pack,Man
+            tr
+              td Default
+            tr
+              td Dog vs.Cat
+            tr
+              td Fly-By
+            tr
+              td Frankenstein
+            tr
+              td From Venus
+            tr
+              td Gizmo
+            tr
+              td Hatching
+            tr
+              td Helicopter
+            tr
+              td Herge
+            tr
+              td Howling Dogs
+            tr
+              td Insane Dentist
+            tr
+              td Landing
+            tr
+              td Last Breath
+            tr
+              td Lava Stream
+            tr
+              td Mad Science
+            tr
+              td Modularized
+            tr
+              td Ocean->Sliders
+            tr
+              td Panning Zaps
+            tr
+              td ReverseBellFX
+            tr
+              td Seaform
+            tr
+              td Space Jalopy
+            tr
+              td StartTheMachin
+            tr
+              td Swamp Gas
+            tr
+              td The FM Police
+            tr
+              td The Lab
+            tr
+              td Thunderstorm
+            tr
+              td Trance Tube
+            tr
+              td UFO Blastoff
+            tr
+              td Whazzat?
+            tr
+              td Wheely Windy
+            tr
+              td Wind
+            tr
+              td Windy City
+            tr
+              td X-Mod
       h2.heading.switch
         | ショートカット
         span.swithCondition.contentClosed

@@ -174,7 +174,7 @@
             </ul>
           </div>
           <p>コントロール・ノブを押すことで、現在選択しているパターンを、[setups]モードで選択したセットアップのパートに入れることができる<br>                セットアップにパートが無い場合は、現在選択されているパターンが、自動的にパートAにアサインされる<br>                セットアップに１つ以上のパートがある場合は、次の方法でパターンを追加することができる</p>
-          <tsble>
+          <table>
             <tr>
               <td>1. send to part(パートに入れる)</td>
               <td>セットアップのパートでパターンを使用する<br>                        パートではプログラムとパターン の両方を使用することができる<br>                        パートのプログラムが“pattern’s pgm”に設定されている場合はパターン・モ ードのプログラムでパターンは再生される<br>                        そうなっていない場合は、セットアップで使用されているプログラムでパターンは再生される</td>
@@ -197,7 +197,7 @@
               <td>5. add part(パートを追加)</td>
               <td>新しいパートとしてパターンが追加される<br>                        パート・パラメーターは初期値に設定される</td>
             </tr>
-          </tsble>
+          </table>
         </section>
         <h3 class="heading switch">新しいセットアップを作成<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -220,13 +220,27 @@
               <li class="contentOperationOrderlist">コントロール・ノブを回して、エディット・オプション「Pattern program(パターン・プログラムの設定)」を選択</li>
             </ul>
           </div>
-          <p>まず、パターンがノートを再生するプログラムを選択しておく<br>                ここでプログラムのカテゴリーを変更したい場合 は [patterns]ボタンを押したままの状態で、カテゴリーが印字されている白鍵を押す<br>                パターンに使用するプログラムを、プログラム・モードから選択する場合は、 [programs]ボタンを押してプログラム・モードに入り、必要なプログラムを探す<br>                求めているプログラムが見つかったら、 [programs]ボタンを押しながら [patterns], ボタンを押して、設定を完了する</p>            table>(tr>td)*
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">まず、パターンがノートを再生するプログラムを選択しておく<br>ここでプログラムのカテゴリーを変更したい場合 は [patterns]ボタンを押したままの状態で、カテゴリーが印字されている白鍵を押す</li>
+              <li class="contentOperationOrderlist">パターンに使用するプログラムを、プログラム・モードから選択する場合は、 [programs]ボタンを押してプログラム・モードに入り、必要なプログラムを探す<br>求めているプログラムが見つかったら、 [programs]ボタンを押しながら [patterns], ボタンを押して、設定を完了する</li>
+            </ul>
+          </div>
         </section>
         <h3 class="heading switch">新規のpattern作成<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>1. [patterns] ボタンを押し、ディスプレイに"* Empty pattern"という名前のパターンが表示されるまで左側へノブを回す<br>                (出荷時にストアされている "* Empty pattern"というパターンは何もデータが入っていない「空のパター ン」です)<br>                2. 次にコントロールノブを押し、ディスプレイに"Store a copy～"の表示が画面に現れるまで右側へスクロールさせ、ここでもう一度コントロールノブを押す<br>                ここで 空の状態のパターンをリネームし別途保存する事が出来るので、ここでこれから作成するパターンに対して新しい名前を付ける<br>                ("*Empty pattern" プログラムは次に同様の作業をスムーズに行うためにも残しておいたほうがよい)<br>                3. 左側へスクロールさせ、ディスプレイに"Record pattern～"を表示させる<br>                メトロノームのクリック音が聞こえ始めている<br>                (テンポは後述の方法で変更可能)<br>                4. 演奏する<br>                5. 演奏のキリのいいところで[store]ボタンを押す
-                            これで今演奏されたものが新しいパターンとして保存される<br>                次に"Pattern program"の画面にスクロールし、新しく作ったパターンに対してのプログラム(音色)を変更することができる<br>                プログラムをセットする他の方法もある<br>                [programs]ボタンを押したまま[patterns]ボタンを押す<br>                これによりprograms で選択していた音色がそのままパターンで使用されるプログラム(音色)として選択される
-          </p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">[patterns] ボタンを押し、ディスプレイに"* Empty pattern"という名前のパターンが表示されるまで左側へノブを回す<br>(出荷時にストアされている "* Empty pattern"というパターンは何もデータが入っていない「空のパターン」)</li>
+              <li class="contentOperationOrderlist">次にコントロールノブを押し、ディスプレイに"Store a copy～"の表示が画面に現れるまで右側へスクロールさせ、ここでもう一度コントロールノブを押す<br>ここで 空の状態のパターンをリネームし別途保存する事が出来るので、ここでこれから作成するパターンに対して新しい名前を付ける<br>("*Empty pattern" プログラムは次に同様の作業をスムーズに行うためにも残しておいたほうがよい)</li>
+              <li class="contentOperationOrderlist">左側へスクロールさせ、ディスプレイに"Record pattern～"を表示させる<br>メトロノームのクリック音が聞こえ始めている<br>(テンポは後述の方法で変更可能)</li>
+              <li class="contentOperationOrderlist">演奏する</li>
+              <li class="contentOperationOrderlist">演奏のキリのいいところで[store]ボタンを押す<br>これで今演奏されたものが新しいパターンとして保存される<br>次に"Pattern program"の画面にスクロールし、新しく作ったパターンに対してのプログラム(音色)を変更することができる</li>
+            </ul>
+          </div>
+          <p>プログラムをセットする他の方法<br>[programs]ボタンを押したまま[patterns]ボタンを押す<br>これによりprograms で選択していた音色がそのままパターンで使用されるプログラム(音色)として選択される</p>
         </section>
         <h3 class="heading switch">パターンの長さ<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -850,7 +864,7 @@
             <p class="contentOperationCaption">操作
               <ul class="contentOperationOrderlistGroup">
                 <li class="contentOperationOrderlist">コントロールノブを押し、左に回して"Revert to stored～"の画面にスクロールさせる</li>
-                <li class="contentOperationOrderlist">ここでコントロールノブ を押すとストアしている方を聴く事が出来る</li>
+                <li class="contentOperationOrderlist">ここでコントロールノブを押すとストアしている方を聴く事が出来る</li>
                 <li class="contentOperationOrderlist">更にディスプレイには"Unrevert to edited～"と表示されるので、ここでもう一度コントロールノブを押すとエディットしている方に戻ることが出来る</li>
               </ul>
             </p>
@@ -1647,21 +1661,24 @@
             </tr>
             <tr>
               <td>FX1 Type(Effects 1 Type)</td>
-              <td>可変範囲：bypass, chorus, theta flanger, thru-0 flanger, super phaser, string phaser,40-band vocoder<br>                        パラメーター構成の異なる、複数のエフェクトの中から1つを選択する<br>                        詳しくは、「FX1 Effects」の項を参照</td>
+              <td>可変範囲：bypass, chorus, theta flanger, thru-0 flanger, super phaser, string phaser,40-band vocoder<br>                        パラメーター構成の異なる、複数のエフェクトの中から1つを選択する</td>
             </tr>
             <tr>
               <td>FX1 Param (Effects Parameters)</td>
-              <td>可変範囲：エフェクトタイプに依存<br>                        これらのパラメーターは、選択されたエフェクトタイプに応じて異なる<br>                        詳しくは 、「FX1 Effects」の項を参照</td>
+              <td>可変範囲：エフェクトタイプに依存<br>                        これらのパラメーターは、選択されたエフェクトタイプに応じて異なる</td>
             </tr>
             <tr>
               <td>FX2 Type(Effects 2 Type)</td>
-              <td>可変範囲： bypass, mono delay, stereo delay, split L/R delay, hall reverb, plate reverb, room reverb<br>                        パラメーター構成の異なる、複数のエフェクトの中から1 つを選択する<br>                        詳しくは、「FX2 Effects」の項を参照</td>
+              <td>可変範囲： bypass, mono delay, stereo delay, split L/R delay, hall reverb, plate reverb, room reverb<br>                        パラメーター構成の異なる、複数のエフェクトの中から1 つを選択する</td>
             </tr>
             <tr>
               <td>FX2 Param (Effects Parameters)</td>
-              <td>可変範囲：エフェクトタイプに依存<br>                        これらのパラメーターは、選択されたエフェクトタイプに応じて異なる<br>                        詳しくは、「FX2 Effects」の項を参照</td>
+              <td>可変範囲：エフェクトタイプに依存<br>                        これらのパラメーターは、選択されたエフェクトタイプに応じて異なる</td>
             </tr>
-          </table>            FX1 Effects<br>
+          </table>
+        </section>
+        <h3 class="heading switch"> FX1 Effects<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
           <p>Chorus (コーラス)<br>                コーラス効果は、入力信号のピッチをLFOで変調し、原音とミックスすることで得られる<br>                軽くかけたときは、複数 の奏者が同時に演奏しているように錯覚する<br>                Feedbackや Depthを上げていくと、よりキラキラしたウェットなサ ウンドとなる</p>
           <table>
             <tr>
@@ -1834,7 +1851,10 @@
               <td>アナリシスへの入力信号を、どれだけ出力信号にミックスするかを設定する<br>                        可変範囲：0～100%</td>
             </tr>
           </table>
-          <p>FX2 Effects<br>                エフェクト2モジュールは、6種類のディレイとリバーブ・エフェクトを備いて、その中から1つを選択して使用することができる</p>
+        </section>
+        <h3 class="heading switch"> FX2 Effects<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>エフェクト2モジュールは、6種類のディレイとリバーブ・エフェクトを備いて、その中から1つを選択して使用することができる</p>
           <p>Mono Delay<br>                ディレイは、入力された音声信号を、指定した時間遅らせて出力する動作を繰り返す<br>                モノ・ディレイは、エフェクト・モジュールに入る前段でモノにしており、出力はとてもシンプルになる<br>                モノ・ディレイの最大ディレイ・タイムは、ステレオ・ディレイ、L/R ディレイの2倍になる</p>
           <table>
             <tr>
@@ -1968,7 +1988,27 @@
             </tr>
             <tr>
               <td>Loop</td>
-              <td>通常エンベロープは、アタック、ディケイ、サスティン、リリースの各段階を通過していく<br>                        エンベロープをループさせて、特定の段階を何度も繰り返したい場合などにLoopパラメーターを使用する<br>                        設定範囲: off, attack/decay, entire envelope, while note held<br>                        このパラメーターをattack/decayに設定すると、エンベロープはアタック/ディケイ段は普通に通過するが、その後アタックの初めに折り返して、鍵盤が押されている限りアタック段とディケイ段をループする<br>                        このとき、エンベロープがFreerunモードになっていれば、鍵盤を放した後もループ状態が続く<br>                        このような設定は、通常はフィ ルターエンベロープやピッチ／モジュレーションエンベロープのみで使用するといい<br>                        アンプエンベロープで このような無限ループを設定すると、複数の鍵盤を同時に押さえてボイスを使い切るまでは、音を止めることができなくなるので、ご注意する<br>                        entire envelopeに設定すると、鍵盤が押さえられている間、エンベロープはアタック、ディケイ、サスティンの各段階を繰り返す<br>                        鍵盤を放したときはアタック、ディケイ、リリースの各段階を繰り返す<br>                        また、Freerun パラメーターが有効のときは、サスティンを飛ばして、アタック、ディケイ、リリースの各段階を繰り返す<br>                        Loopパラメーターをwhile note heldに設定すると、鍵盤が押されている間はentire envelopeと同じ動作をするが、鍵盤が放されるとエンベロープはリリース段に移行して終了する<br>                        エンベロープが Freerunモードのときに、離鍵に反応するのは、この設定だけ</td>
+              <td>
+                <p>通常エンベロープは、アタック、ディケイ、サスティン、リリースの各段階を通過していく<br>エンベロープをループさせて、特定の段階を何度も繰り返したい場合などにLoopパラメーターを使用する</p>
+                <table>
+                  <tr>
+                    <th>off</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>attack/decay</th>
+                    <td>エンベロープはアタック/ディケイ段は普通に通過するが、その後アタックの初めに折り返して、鍵盤が押されている限りアタック段とディケイ段をループする<br>このとき、エンベロープがFreerunモードになっていれば、鍵盤を放した後もループ状態が続く<br>このような設定は、通常はフィ ルターエンベロープやピッチ／モジュレーションエンベロープのみで使用するといい<br>アンプエンベロープで このような無限ループを設定すると、複数の鍵盤を同時に押さえてボイスを使い切るまでは、音を止めることができなくなるので、ご注意する</td>
+                  </tr>
+                  <tr>
+                    <th>entire envelope</th>
+                    <td>鍵盤が押さえられている間、エンベロープはアタック、ディケイ、サスティンの各段階を繰り返す<br>鍵盤を放したときはアタック、ディケイ、リリースの各段階を繰り返す<br>Freerun パラメーターが有効のときは、サスティンを飛ばして、アタック、ディケイ、リリースの各段階を繰り返す</td>
+                  </tr>
+                  <tr>
+                    <th>while note held</th>
+                    <td>鍵盤が押されている間はentire envelopeと同じ動作をするが、鍵盤が放されるとエンベロープはリリース段に移行して終了する<br>エンベロープが Freerunモードのときに、離鍵に反応するのは、この設定だけ</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>Sus Pedal (Sustain Pedal)</td>
@@ -1998,11 +2038,26 @@
                 <table>
                   <tr>
                     <td>fixed rate</td>
-                    <td>0.010～1000Hzの可変範囲を利用する<br>                                    この場合、LFOは可変範 囲内でどんな値にも設定できる</td>
+                    <td>0.010～1000Hzの可変範囲を利用する<br>この場合、LFOは可変範 囲内でどんな値にも設定できる</td>
                   </tr>
                   <tr>
                     <td>follow tempo(LFOの周期が[tap]ボタンで設定したテンポに同期しているとき)</td>
-                    <td>x 16～ x 1/16の可変範囲を利用する<br>                                    この場合は、テンポの変化に伴って LFOのレートも変化する<br>                                    ただし、 テンポとLFOのレートとの間には、周期の相関関係がある<br>                                    x1(等倍)を選ぶと、LFOはテンポに応じて4分音 符につき1サイクルの周期となる<br>                                    x2 を選ぶと8分音符につき1サイクル、x16のときは 64 分音符につき1 サイクルとなる<br>                                    さらに x1/16のときは、 1サイクルが4分音符×16を1単位とした周期となる</td>
+                    <td>x 16～ x 1/16の可変範囲を利用する<br>この場合は、テンポの変化に伴って LFOのレートも変化する<br>ただし、 テンポとLFOのレートとの間には、周期の相関関係がある
+                      <table>
+                        <tr>
+                          <th>x1(等倍)</th>
+                          <td>LFOはテンポに応じて4分音 符につき1サイクルの周期となる</td>
+                        </tr>
+                        <tr>
+                          <th>x2</th>
+                          <td>LFOは8分音符につき1サイクル、x16のときは 64 分音符につき1 サイクルとなる</td>
+                        </tr>
+                        <tr>
+                          <th>x1/16</th>
+                          <td>LFOは1サイクルが4分音符×16を1単位とした周期となる</td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                 </table>
               </td>
@@ -2640,7 +2695,22 @@
             </tr>
             <tr>
               <td>Local Control (ローカル・コントロール)</td>
-              <td>可変範囲：on, off, off + send ptns.<br>                        初期設定値：on<br>                        Micronをシーケンサーと併用するときは、鍵盤のローカルコントロールをoffにするのが最良の方法<br>                        こうしておけばMicronの鍵盤と内部のサウンドエンジンが切り離される<br>                        通常シーケンサーからは、入力されたMIDIデータがそのまま“エコー出力”される<br>                        仮にローカルコントロールがonのままだとすると、同じ音が2度打ち(鍵盤を弾いたときの音と、MIDI入力から返されたときの音が重なる現象)されることになる<br>                        off + send ptnsモードでパターン・データの全て(ノート情報、ベロシティー、コントロールチェンジ情報)をそう送信することが出来る</td>
+              <td>
+                <table>
+                  <tr>
+                    <th>on(初期値)</th>
+                    <td>シーケンサーと併用するときにonにしておくと、同じ音が2度打ち(鍵盤を弾いたときの音と、MIDI入力から返されたときの音が重なる現象)されることになる</td>
+                  </tr>
+                  <tr>
+                    <th>off</th>
+                    <td>Micronをシーケンサーと併用するときは、鍵盤のローカルコントロールをoffにするのが最良<br>こうしておけばMicronの鍵盤と内部のサウンドエンジンが切り離される<br>通常シーケンサーからは、入力されたMIDIデータがそのまま“エコー出力”される</td>
+                  </tr>
+                  <tr>
+                    <th>off + send ptns</th>
+                    <td>パターン・データの全て(ノート情報、ベロシティー、コントロールチェンジ情報)をそう送信することが出来る</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>MIDI Setup Mode (MIDIセットアップモード)</td>
@@ -2648,11 +2718,11 @@
                 <p>この設定はセットアップに影響する</p>
                 <table>
                   <tr>
-                    <td>single-channel</td>
+                    <th>single-channel</th>
                     <td>MicronがMIDIデータを1つのMIDIチャンネルで送受信する</td>
                   </tr>
                   <tr>
-                    <td>multi-channel</td>
+                    <th>multi-channel</th>
                     <td>各パートやビートのMIDIデータが別々なMIDIチャンネルで送受信されている</td>
                   </tr>
                 </table>
@@ -2660,7 +2730,20 @@
             </tr>
             <tr>
               <td>MIDI channel(MIDIチャンネル)</td>
-              <td>ここで選択出来るオプションがMIDI Setup Modeの設定による<br>                        ● MIDI Setup Modeが“single-channel”に設定した場合、MIDIチャンネルを選択することが出来る<br>                        ● MIDI Setup Modeが“multi-channel” 最初のパートのMIDIチャンネルを選択することが出来る<br>                        これにより"MIDI: Channel"で設定したMIDIチャンネルがPart AのMIDIチャンネルに、Part Bはその次のMIDIチャンネルに、といった状態になる</td>
+              <td>
+                <p>ここで選択出来るオプションがMIDI Setup Modeの設定による</p>
+                <table>
+                  <tr>
+                    <th>MIDI Setup Modeが"single-channel"</th>
+                    <td>MIDIチャンネルを選択することが出来る</td>
+                  </tr>
+                  <tr>
+                    <th>MIDI Setup Modeが"multi-channel"</th>
+                    <td>最初のパートのMIDIチャンネルを選択することが出来る</td>
+                  </tr>
+                </table>
+                <p>これにより"MIDI: Channel"で設定したMIDIチャンネルがPart AのMIDIチャンネルに、Part Bはその次のMIDIチャンネルに、といった状態になる</p>
+              </td>
             </tr>
             <tr>
               <td>MIDI sync (MIDIシンク)</td>
@@ -2809,6 +2892,7 @@
         </section>
         <h3 class="heading switch">Send MIDI sysex～(MIDI sysexを送信する)<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
+          <p>Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップ・デー タを送信することができる<br>これは、セットアップ・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する、ということを意味する</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -2816,10 +2900,10 @@
               <li class="contentOperationOrderlist">コントロールノブを回して、エディットオプション「Send MIDI sysex～(MIDI sysexを送信する)」を選択</li>
             </ul>
           </div>
-          <p>このオプションを選択すると、Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップ・デー タを送信することができる<br>                これは、セットアップ・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する、ということを意味する</p>
         </section>
         <h3 class="heading switch">Send syx bundle～(syx バンドルを送信する)<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
+          <p>Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップとそ のセットアップのプログラム、パターン、リズムを送信する</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -2827,12 +2911,12 @@
               <li class="contentOperationOrderlist">コントロールノブを回して、エディットオプション「Send syx bundle～(syx バンドルを送信する)」を選択</li>
             </ul>
           </div>
-          <p>Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップとそ のセットアップのプログラム、パターン、リズムを送信する</p>
         </section>
         <h3 class="heading switch">外部のMIDIシーケンサーからmicronの"program/setup/pattern/rhythm"を切り替える時に送る情報<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p><br>                最初に、MIDI BankとProgram(Patch)Numberについての知識が必要<br>                Programの場合、まず[programs]ボタ ンを数秒押し続けるとディスプレイ上にはバンクとパッチナンバー(プログラムナンバー)が表示される<br>                この操作は他のモード(setup/pattern/rhythm)でも同様<br>                例：Programにおいては[programs]ボタンを数秒押し続けた時、画面は "Bank x, Patch xxx"(xは数値)<br>                という様な表示をしている<br>                シーケンサーに入力する際にこの Bank の数値を"Control#32"に入力する<br>                プログラム(パッチ)チェンジの数値は"Patch"の後に表示されている数値を入力する<br>                この際にお使い のシーケンサーがProgram changeの数値が0-127で扱うのか1-128なのかに注意してセットする<br>                patternやsetup、rhythmなどはこの数値を算出する為の考え方にもうひと工夫必要<br>                同じようにボタンを長押しすると、画面はおそらく以下の様な表示がされている<br>                "Bank 201, Patch 105"
-                            この場合、 シーケンサー上で"Control#32"に 201 という数値は入力出来ない<br>                よって次の様な考え方で BankNumber に入力する数値を算出していく<br>                上記の表示を例にとって説明していきく<br>                まず"Bank"の 次にきている数値は"201"<br>                この数時を128 で割り、その答えの数(整数)が "Control#00(MSB)"に入力する数値になる<br>                上記の場合は１となりますので入力する数値は1になる<br>                この数値をAとする<br>                そして "201"から"128 x A"の数を引いた数(整数の余り)が "Control#32(LSB)"に入力する数値となる<br>                この場合、「201 - 128 x 1 = 73」となり、73となる<br>                実際にシーケンサーに打ち込むのは以下の様になる<br>                Control#00 (MSB) = 1 Control#32 (LSB) = 73 Program Change = 105 (Pg#は入力する数値に注意)
+          <p><br>最初に、MIDI BankとProgram(Patch)Numberについての知識が必要<br>                Programの場合、まず[programs]ボタ ンを数秒押し続けるとディスプレイ上にはバンクとパッチナンバー(プログラムナンバー)が表示される<br>                この操作は他のモード(setup/pattern/rhythm)でも同様</p>
+          <p>                例：Programにおいては[programs]ボタンを数秒押し続けた時、画面は "Bank x, Patch xxx"(xは数値)<br>                という様な表示をしている<br>                シーケンサーに入力する際にこの Bank の数値を"Control#32"に入力する<br>                プログラム(パッチ)チェンジの数値は"Patch"の後に表示されている数値を入力する<br>                この際にお使い のシーケンサーがProgram changeの数値が0-127で扱うのか1-128なのかに注意してセットする<br>                patternやsetup、rhythmなどはこの数値を算出する為の考え方にもうひと工夫必要<br>                同じようにボタンを長押しすると、画面はおそらく以下の様な表示がされている<br>                "Bank 201, Patch 105"
+                            この場合、 シーケンサー上で"Control#32"に 201 という数値は入力出来ない<br>                よって次の様な考え方で BankNumber に入力する数値を算出していく<br>                上記の表示を例にとって説明していく<br>                まず"Bank"の 次にきている数値は"201"<br>                この数時を128 で割り、その答えの数(整数)が "Control#00(MSB)"に入力する数値になる<br>                上記の場合は１となるので入力する数値は1になる<br>                この数値をAとする<br>                そして "201"から"128 x A"の数を引いた数(整数の余り)が "Control#32(LSB)"に入力する数値となる<br>                この場合、「201 - 128 x 1 = 73」となり、73となる<br>                実際にシーケンサーに打ち込むのは以下の様になる<br>                Control#00 (MSB) = 1 Control#32 (LSB) = 73 Program Change = 105 (Pg#は入力する数値に注意)
           </p>
           <p>注意：Programやpattern/rhythm/setupが切替る条件はConfigモード内の"MIDI:Setup mode"画面での設定によってその動作が異なる</p>
           <table>
@@ -2956,23 +3040,41 @@
         </section>
         <h3 class="heading switch">Setup Part内のプログラムを変更する<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>この３つの方法はパターンやリズムに対しても同様に行うことが出来る</p>
-          <ul>
-            <li>方法1：Setupモードに入りコントロールノブを押す<br>"Part x program"(「x」 の部分はパートナンバー)の画面にしコントロールノブを押したあと、そこで好みのプログラムに差し換えられる</li>
-            <li>方法2：まず [programs]ボタンを押し、目的の音色をみつけたらコントロールノブを押す<br>そして"Send to setup～"の画面のところでコントロールノブを押し込むと"Send to Part x"(「x」の部分はパートナンバ ー)になるので目的のPartを選びセットする</li>
-            <li>方法3：[programs] ボタンを押し、目的の音色をみつけたら[programs]ボタンを押しながら [setups] ボタンを押す<br>これによりエディット中、一番最後に確認していたPartに対してプログラムがセットされる</li>
-          </ul>
+          <p>パターンやリズムに対しても同様に行うことが出来る</p>
+          <table>
+            <tr>
+              <th>方法A</th>
+              <td>Setupモードに入りコントロールノブを押す<br>"Part x program"(「x」 の部分はパートナンバー)の画面にしコントロールノブを押したあと、そこで好みのプログラムに差し換えられる</td>
+            </tr>
+            <tr>
+              <th>方法B</th>
+              <td>まず [programs]ボタンを押し、目的の音色をみつけたらコントロールノブを押す<br>そして"Send to setup～"の画面のところでコントロールノブを押し込むと"Send to Part x"(「x」の部分はパートナンバ ー)になるので目的のPartを選びセットする</td>
+            </tr>
+            <tr>
+              <th>方法C</th>
+              <td>[programs] ボタンを押し、目的の音色をみつけたら[programs]ボタンを押しながら [setups] ボタンを押す<br>これによりエディット中、一番最後に確認していたPartに対してプログラムがセットされる</td>
+            </tr>
+          </table>
         </section>
       </section>
       <h2 class="heading switch">テンポ<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
         <h3 class="heading switch">テンポを設定する<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <ul>
-            <li>方法1： [tap]ボタンを4分音符の感覚でタップする</li>
-            <li>方法2： [tap]ボタンを押したままコントロールノブを回せば正確な数値でテンポをセットできる</li>
-            <li>方法3： PCとmicronをMIDIで繋ぎ、PCのシーケンサー側からMIDI ClockからMIDIタイミングメッセージを送信する</li>
-          </ul>
+          <table>
+            <tr>
+              <th>方法A</th>
+              <td>[tap]ボタンを4分音符の感覚でタップする</td>
+            </tr>
+            <tr>
+              <th>方法B</th>
+              <td>[tap]ボタンを押したままコントロールノブを回せば正確な数値でテンポをセットできる</td>
+            </tr>
+            <tr>
+              <th>方法C</th>
+              <td>PCとmicronをMIDIで繋ぎ、PCのシーケンサー側からMIDI ClockからMIDIタイミングメッセージを送信する</td>
+            </tr>
+          </table>
           <p>micronはシーケンサーに入力されているテンポに追従する</p>
         </section>
       </section>
@@ -2992,1794 +3094,1786 @@
       </section>
       <h2 class="heading switch">音色<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
-        <h3 class="heading switch">bass<span class="swithCondition contentClosed"></span>
-          <section class="h3content hide">
-            <table>
-              <tr>
-                <td>AcidAndOilBass</td>
-              </tr>
-              <tr>
-                <td>Alien Womb</td>
-              </tr>
-              <tr>
-                <td>Analogue Seq</td>
-              </tr>
-              <tr>
-                <td>Anti-Static</td>
-              </tr>
-              <tr>
-                <td>Big Bass Pedal</td>
-              </tr>
-              <tr>
-                <td>Black & Knobby</td>
-              </tr>
-              <tr>
-                <td>Bottlecap</td>
-              </tr>
-              <tr>
-                <td>Cellar Bass</td>
-              </tr>
-              <tr>
-                <td>Closet Bass</td>
-              </tr>
-              <tr>
-                <td>DemolitionBass</td>
-              </tr>
-              <tr>
-                <td>Down And Dirty</td>
-              </tr>
-              <tr>
-                <td>Expressive</td>
-              </tr>
-              <tr>
-                <td>GrapSquishyBaz</td>
-              </tr>
-              <tr>
-                <td>Growl Bass</td>
-              </tr>
-              <tr>
-                <td>Hacker Bass</td>
-              </tr>
-              <tr>
-                <td>Hood Bass</td>
-              </tr>
-              <tr>
-                <td>J00p1t3r</td>
-              </tr>
-              <tr>
-                <td>JacoInTheBox</td>
-              </tr>
-              <tr>
-                <td>Junkie Bass</td>
-              </tr>
-              <tr>
-                <td>Knock-Knock</td>
-              </tr>
-              <tr>
-                <td>Lectro Bass</td>
-              </tr>
-              <tr>
-                <td>Low I.Q.</td>
-              </tr>
-              <tr>
-                <td>Machinery Bass</td>
-              </tr>
-              <tr>
-                <td>Mini Twin Bass</td>
-              </tr>
-              <tr>
-                <td>Mini-01</td>
-              </tr>
-              <tr>
-                <td>Noize Bass</td>
-              </tr>
-              <tr>
-                <td>Old Favorite</td>
-              </tr>
-              <tr>
-                <td>P-Bass D-Luxe</td>
-              </tr>
-              <tr>
-                <td>PantherModerns</td>
-              </tr>
-              <tr>
-                <td>Parabola Bass</td>
-              </tr>
-              <tr>
-                <td>PimBass</td>
-              </tr>
-              <tr>
-                <td>Purr Bass</td>
-              </tr>
-              <tr>
-                <td>Rave Bass</td>
-              </tr>
-              <tr>
-                <td>Rhythmo</td>
-              </tr>
-              <tr>
-                <td>RubberBulletBs</td>
-              </tr>
-              <tr>
-                <td>Spit Bass</td>
-              </tr>
-              <tr>
-                <td>Studio Bass</td>
-              </tr>
-              <tr>
-                <td>Sub Bass</td>
-              </tr>
-              <tr>
-                <td>Suppr Mini</td>
-              </tr>
-              <tr>
-                <td>Syncombass</td>
-              </tr>
-              <tr>
-                <td>TB Or Not TB</td>
-              </tr>
-              <tr>
-                <td>TaurusBassPdls</td>
-              </tr>
-              <tr>
-                <td>Thumper</td>
-              </tr>
-              <tr>
-                <td>TomSawyerBass</td>
-              </tr>
-              <tr>
-                <td>U-Bahn Jam</td>
-              </tr>
-              <tr>
-                <td>Vlad Bass</td>
-              </tr>
-              <tr>
-                <td>What's down?</td>
-              </tr>
-            </table>
-          </section>
-          <h3 class="heading switch">lead<span class="swithCondition contentClosed"></span>
-            <section class="h3content hide">
-              <table>
+        <h3 class="heading switch">bass<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>AcidAndOilBass</td>
+            </tr>
+            <tr>
+              <td>Alien Womb</td>
+            </tr>
+            <tr>
+              <td>Analogue Seq</td>
+            </tr>
+            <tr>
+              <td>Anti-Static</td>
+            </tr>
+            <tr>
+              <td>Big Bass Pedal</td>
+            </tr>
+            <tr>
+              <td>Black & Knobby</td>
+            </tr>
+            <tr>
+              <td>Bottlecap</td>
+            </tr>
+            <tr>
+              <td>Cellar Bass</td>
+            </tr>
+            <tr>
+              <td>Closet Bass</td>
+            </tr>
+            <tr>
+              <td>DemolitionBass</td>
+            </tr>
+            <tr>
+              <td>Down And Dirty</td>
+            </tr>
+            <tr>
+              <td>Expressive</td>
+            </tr>
+            <tr>
+              <td>GrapSquishyBaz</td>
+            </tr>
+            <tr>
+              <td>Growl Bass</td>
+            </tr>
+            <tr>
+              <td>Hacker Bass</td>
+            </tr>
+            <tr>
+              <td>Hood Bass</td>
+            </tr>
+            <tr>
+              <td>J00p1t3r</td>
+            </tr>
+            <tr>
+              <td>JacoInTheBox</td>
+            </tr>
+            <tr>
+              <td>Junkie Bass</td>
+            </tr>
+            <tr>
+              <td>Knock-Knock</td>
+            </tr>
+            <tr>
+              <td>Lectro Bass</td>
+            </tr>
+            <tr>
+              <td>Low I.Q.</td>
+            </tr>
+            <tr>
+              <td>Machinery Bass</td>
+            </tr>
+            <tr>
+              <td>Mini Twin Bass</td>
+            </tr>
+            <tr>
+              <td>Mini-01</td>
+            </tr>
+            <tr>
+              <td>Noize Bass</td>
+            </tr>
+            <tr>
+              <td>Old Favorite</td>
+            </tr>
+            <tr>
+              <td>P-Bass D-Luxe</td>
+            </tr>
+            <tr>
+              <td>PantherModerns</td>
+            </tr>
+            <tr>
+              <td>Parabola Bass</td>
+            </tr>
+            <tr>
+              <td>PimBass</td>
+            </tr>
+            <tr>
+              <td>Purr Bass</td>
+            </tr>
+            <tr>
+              <td>Rave Bass</td>
+            </tr>
+            <tr>
+              <td>Rhythmo</td>
+            </tr>
+            <tr>
+              <td>RubberBulletBs</td>
+            </tr>
+            <tr>
+              <td>Spit Bass</td>
+            </tr>
+            <tr>
+              <td>Studio Bass</td>
+            </tr>
+            <tr>
+              <td>Sub Bass</td>
+            </tr>
+            <tr>
+              <td>Suppr Mini</td>
+            </tr>
+            <tr>
+              <td>Syncombass</td>
+            </tr>
+            <tr>
+              <td>TB Or Not TB</td>
+            </tr>
+            <tr>
+              <td>TaurusBassPdls</td>
+            </tr>
+            <tr>
+              <td>Thumper</td>
+            </tr>
+            <tr>
+              <td>TomSawyerBass</td>
+            </tr>
+            <tr>
+              <td>U-Bahn Jam</td>
+            </tr>
+            <tr>
+              <td>Vlad Bass</td>
+            </tr>
+            <tr>
+              <td>What's down?</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">lead<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>Adrastea</td>
+            </tr>
+            <tr>
+              <td>AquamarineLead</td>
+            </tr>
+            <tr>
+              <td>Bambam Lead</td>
+            </tr>
+            <tr>
+              <td>Cars Sync</td>
+            </tr>
+            <tr>
+              <td>CoolMellowLead</td>
+            </tr>
+            <tr>
+              <td>Executioner</td>
+            </tr>
+            <tr>
+              <td>Flatulent Duck</td>
+            </tr>
+            <tr>
+              <td>Frogstar IV</td>
+            </tr>
+            <tr>
+              <td>Fuzzy Buzzy</td>
+            </tr>
+            <tr>
+              <td>Infamous Lead</td>
+            </tr>
+            <tr>
+              <td>LazyAnalogLead</td>
+            </tr>
+            <tr>
+              <td>LeadOfSixSines</td>
+            </tr>
+            <tr>
+              <td>Lucky Porta m2</td>
+            </tr>
+            <tr>
+              <td>Lunar Orbit</td>
+            </tr>
+            <tr>
+              <td>Mahavishnoid</td>
+            </tr>
+            <tr>
+              <td>Mecha-Canary</td>
+            </tr>
+            <tr>
+              <td>Micron Flute</td>
+            </tr>
+            <tr>
+              <td>Mini 5th</td>
+            </tr>
+            <tr>
+              <td>Mini Classic</td>
+            </tr>
+            <tr>
+              <td>Odyssee Lead</td>
+            </tr>
+            <tr>
+              <td>Porta Lead</td>
+            </tr>
+            <tr>
+              <td>Rosemary'sBaby</td>
+            </tr>
+            <tr>
+              <td>Sandpaper Lead</td>
+            </tr>
+            <tr>
+              <td>ScreaminWarpLd</td>
+            </tr>
+            <tr>
+              <td>Seven Days</td>
+            </tr>
+            <tr>
+              <td>Shortwave</td>
+            </tr>
+            <tr>
+              <td>Sizzler</td>
+            </tr>
+            <tr>
+              <td>SpankTone Lead</td>
+            </tr>
+            <tr>
+              <td>StixMiniMogue</td>
+            </tr>
+            <tr>
+              <td>Suboscillators</td>
+            </tr>
+            <tr>
+              <td>SunsetMiniLead</td>
+            </tr>
+            <tr>
+              <td>Tarkus Carcass</td>
+            </tr>
+            <tr>
+              <td>Trantor Lead</td>
+            </tr>
+            <tr>
+              <td>Triad m2 Faze</td>
+            </tr>
+            <tr>
+              <td>Tweakedriver</td>
+            </tr>
+            <tr>
+              <td>U CrazyDiamond</td>
+            </tr>
+            <tr>
+              <td>Wakeman Mogue</td>
+            </tr>
+            <tr>
+              <td>Wakemini</td>
+            </tr>
+            <tr>
+              <td>Warperheim</td>
+            </tr>
+            <tr>
+              <td>Whisler's Mon</td>
+            </tr>
+            <tr>
+              <td>Wichita Falls</td>
+            </tr>
+            <tr>
+              <td>Wowza</td>
+            </tr>
+            <tr>
+              <td>Zippy the 5th</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">pad<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>16-PoleDeepPad</td>
+            </tr>
+            <tr>
+              <td>2-PoleDarkPad</td>
+            </tr>
+            <tr>
+              <td>4-PoleSoftPad</td>
+            </tr>
+            <tr>
+              <td>8-PoleWarmPad</td>
+            </tr>
+            <tr>
+              <td>Aeon Choir</td>
+            </tr>
+            <tr>
+              <td>AnotherLongDay</td>
+            </tr>
+            <tr>
+              <td>AstrogySweep</td>
+            </tr>
+            <tr>
+              <td>Auto Player</td>
+            </tr>
+            <tr>
+              <td>Backing Vox</td>
+            </tr>
+            <tr>
+              <td>Bad Acid</td>
+            </tr>
+            <tr>
+              <td>Blue Doll</td>
+            </tr>
+            <tr>
+              <td>Brainpounder</td>
+            </tr>
+            <tr>
+              <td>Cauldron Pad</td>
+            </tr>
+            <tr>
+              <td>Choirbox</td>
+            </tr>
+            <tr>
+              <td>Classic Vox</td>
+            </tr>
+            <tr>
+              <td>Clusters</td>
+            </tr>
+            <tr>
+              <td>Concert Pad</td>
+            </tr>
+            <tr>
+              <td>Dagon Visitors</td>
+            </tr>
+            <tr>
+              <td>Deep Space</td>
+            </tr>
+            <tr>
+              <td>Dirty Dreamer</td>
+            </tr>
+            <tr>
+              <td>Dream Pad</td>
+            </tr>
+            <tr>
+              <td>Dutch Choir</td>
+            </tr>
+            <tr>
+              <td>DynaAahOohVox</td>
+            </tr>
+            <tr>
+              <td>ELen8R</td>
+            </tr>
+            <tr>
+              <td>EMotion Pad</td>
+            </tr>
+            <tr>
+              <td>Ecology</td>
+            </tr>
+            <tr>
+              <td>Electronique</td>
+            </tr>
+            <tr>
+              <td>Ensemble</td>
+            </tr>
+            <tr>
+              <td>Exhalation</td>
+            </tr>
+            <tr>
+              <td>Fat2Compose</td>
+            </tr>
+            <tr>
+              <td>FilterSweep101</td>
+            </tr>
+            <tr>
+              <td>Ghostly</td>
+            </tr>
+            <tr>
+              <td>Ghosty Voice</td>
+            </tr>
+            <tr>
+              <td>Golem Emerges</td>
+            </tr>
+            <tr>
+              <td>Gritter Pad</td>
+            </tr>
+            <tr>
+              <td>Hollow Pad</td>
+            </tr>
+            <tr>
+              <td>Home Forgotten</td>
+            </tr>
+            <tr>
+              <td>I Comprehend</td>
+            </tr>
+            <tr>
+              <td>I Understand</td>
+            </tr>
+            <tr>
+              <td>Infrastructure</td>
+            </tr>
+            <tr>
+              <td>Intruder</td>
+            </tr>
+            <tr>
+              <td>Ionian Sweep</td>
+            </tr>
+            <tr>
+              <td>Ionic Voyage</td>
+            </tr>
+            <tr>
+              <td>Ionizer</td>
+            </tr>
+            <tr>
+              <td>Joan d'Arc Pad</td>
+            </tr>
+            <tr>
+              <td>Journey West</td>
+            </tr>
+            <tr>
+              <td>Jurassic</td>
+            </tr>
+            <tr>
+              <td>JustForJustin</td>
+            </tr>
+            <tr>
+              <td>Kirumamoru</td>
+            </tr>
+            <tr>
+              <td>Landing Pad</td>
+            </tr>
+            <tr>
+              <td>Liquid Sweep</td>
+            </tr>
+            <tr>
+              <td>Lost Children</td>
+            </tr>
+            <tr>
+              <td>Maresh</td>
+            </tr>
+            <tr>
+              <td>Massive Pad</td>
+            </tr>
+            <tr>
+              <td>Materialize</td>
+            </tr>
+            <tr>
+              <td>Matrox</td>
+            </tr>
+            <tr>
+              <td>Maximus</td>
+            </tr>
+            <tr>
+              <td>Melancholy Pad</td>
+            </tr>
+            <tr>
+              <td>Metal Moths</td>
+            </tr>
+            <tr>
+              <td>MiddleBandVoko</td>
+            </tr>
+            <tr>
+              <td>Moartal</td>
+            </tr>
+            <tr>
+              <td>Mod,Vangelian</td>
+            </tr>
+            <tr>
+              <td>Moody Sweep</td>
+            </tr>
+            <tr>
+              <td>Moonbase Pad</td>
+            </tr>
+            <tr>
+              <td>Morten'J</td>
+            </tr>
+            <tr>
+              <td>Movie Pad</td>
+            </tr>
+            <tr>
+              <td>My Friends</td>
+            </tr>
+            <tr>
+              <td>New Horizons</td>
+            </tr>
+            <tr>
+              <td>Nitrogenius</td>
+            </tr>
+            <tr>
+              <td>Not From Here</td>
+            </tr>
+            <tr>
+              <td>Oberpad</td>
+            </tr>
+            <tr>
+              <td>PPGees</td>
+            </tr>
+            <tr>
+              <td>PartyBack299</td>
+            </tr>
+            <tr>
+              <td>Phase Pad</td>
+            </tr>
+            <tr>
+              <td>PhobosianSweep</td>
+            </tr>
+            <tr>
+              <td>Pheumatic Pad</td>
+            </tr>
+            <tr>
+              <td>Pretty Panner</td>
+            </tr>
+            <tr>
+              <td>Regurgipad</td>
+            </tr>
+            <tr>
+              <td>Remember Me</td>
+            </tr>
+            <tr>
+              <td>Repeater</td>
+            </tr>
+            <tr>
+              <td>Pipley</td>
+            </tr>
+            <tr>
+              <td>Rounder</td>
+            </tr>
+            <tr>
+              <td>Royal Pad</td>
+            </tr>
+            <tr>
+              <td>Safe Launding</td>
+            </tr>
+            <tr>
+              <td>Sandy Sweep</td>
+            </tr>
+            <tr>
+              <td>Scarlet Lights</td>
+            </tr>
+            <tr>
+              <td>Scary Bouncer</td>
+            </tr>
+            <tr>
+              <td>Shader</td>
+            </tr>
+            <tr>
+              <td>Shady Business</td>
+            </tr>
+            <tr>
+              <td>Silkworm</td>
+            </tr>
+            <tr>
+              <td>Silver Lining</td>
+            </tr>
+            <tr>
+              <td>Soft Cake</td>
+            </tr>
+            <tr>
+              <td>Soft Pad</td>
+            </tr>
+            <tr>
+              <td>SoftSweetPad</td>
+            </tr>
+            <tr>
+              <td>Softballs</td>
+            </tr>
+            <tr>
+              <td>Solar Wire</td>
+            </tr>
+            <tr>
+              <td>Some Trouble</td>
+            </tr>
+            <tr>
+              <td>Soundtracker</td>
+            </tr>
+            <tr>
+              <td>Soupy Jupiter</td>
+            </tr>
+            <tr>
+              <td>Spectral Sweep</td>
+            </tr>
+            <tr>
+              <td>Spectral Warp</td>
+            </tr>
+            <tr>
+              <td>Star Gate</td>
+            </tr>
+            <tr>
+              <td>Steam Volve</td>
+            </tr>
+            <tr>
+              <td>StonehengeDown</td>
+            </tr>
+            <tr>
+              <td>Sweet OB Sweep</td>
+            </tr>
+            <tr>
+              <td>Syn Choir</td>
+            </tr>
+            <tr>
+              <td>Take My Pulse</td>
+            </tr>
+            <tr>
+              <td>Tempopansweep</td>
+            </tr>
+            <tr>
+              <td>Triumphant Pad</td>
+            </tr>
+            <tr>
+              <td>Twenty Acres</td>
+            </tr>
+            <tr>
+              <td>Undercity</td>
+            </tr>
+            <tr>
+              <td>Undergrowth</td>
+            </tr>
+            <tr>
+              <td>Unhappy</td>
+            </tr>
+            <tr>
+              <td>Uvula</td>
+            </tr>
+            <tr>
+              <td>Vanilla Pad</td>
+            </tr>
+            <tr>
+              <td>Venusian Sweep</td>
+            </tr>
+            <tr>
+              <td>Vindicarum</td>
+            </tr>
+            <tr>
+              <td>Vocoded Ents</td>
+            </tr>
+            <tr>
+              <td>Vocojam</td>
+            </tr>
+            <tr>
+              <td>Voices</td>
+            </tr>
+            <tr>
+              <td>Vox Layer</td>
+            </tr>
+            <tr>
+              <td>Voxy Synth</td>
+            </tr>
+            <tr>
+              <td>WahWehWuhWoo</td>
+            </tr>
+            <tr>
+              <td>Waterpiano</td>
+            </tr>
+            <tr>
+              <td>Welcome Back</td>
+            </tr>
+            <tr>
+              <td>What's that?</td>
+            </tr>
+            <tr>
+              <td>Whisper</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">string<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>AheadOfItsTime</td>
+            </tr>
+            <tr>
+              <td>AquarianString</td>
+            </tr>
+            <tr>
+              <td>Buzzy Strings</td>
+            </tr>
+            <tr>
+              <td>DarkOberstrings</td>
+            </tr>
+            <tr>
+              <td>Eight Strings</td>
+            </tr>
+            <tr>
+              <td>Fast1stViolin</td>
+            </tr>
+            <tr>
+              <td>J Strings</td>
+            </tr>
+            <tr>
+              <td>JP Strings</td>
+            </tr>
+            <tr>
+              <td>Nervoso Strngs</td>
+            </tr>
+            <tr>
+              <td>Profit Strings</td>
+            </tr>
+            <tr>
+              <td>Rusty Strings</td>
+            </tr>
+            <tr>
+              <td>SilkyVerySilky</td>
+            </tr>
+            <tr>
+              <td>SoleenaStrings</td>
+            </tr>
+            <tr>
+              <td>String Dream</td>
+            </tr>
+            <tr>
+              <td>Sweet Dreams</td>
+            </tr>
+            <tr>
+              <td>The Yoyo-Ma's</td>
+            </tr>
+            <tr>
+              <td>VelocityStrngs</td>
+            </tr>
+            <tr>
+              <td>Violacoder</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">brass<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>ABitOffTheTop</td>
+            </tr>
+            <tr>
+              <td>AnalogHorns ff</td>
+            </tr>
+            <tr>
+              <td>Bass Trombone</td>
+            </tr>
+            <tr>
+              <td>Brassic Class</td>
+            </tr>
+            <tr>
+              <td>Caterpillar</td>
+            </tr>
+            <tr>
+              <td>CrispBrassPad</td>
+            </tr>
+            <tr>
+              <td>Fast n Brassy</td>
+            </tr>
+            <tr>
+              <td>Fat Brassy 5th</td>
+            </tr>
+            <tr>
+              <td>FilmNoirTrumpt</td>
+            </tr>
+            <tr>
+              <td>Fr.Horn Chorus</td>
+            </tr>
+            <tr>
+              <td>Greco Fr. Horn</td>
+            </tr>
+            <tr>
+              <td>J Brass</td>
+            </tr>
+            <tr>
+              <td>Kugel Flugel</td>
+            </tr>
+            <tr>
+              <td>Lonly Brass</td>
+            </tr>
+            <tr>
+              <td>Nice Brass Pad</td>
+            </tr>
+            <tr>
+              <td>OB Puff Brass</td>
+            </tr>
+            <tr>
+              <td>PolyWannaBrass</td>
+            </tr>
+            <tr>
+              <td>Prog Brass</td>
+            </tr>
+            <tr>
+              <td>Regal Horns</td>
+            </tr>
+            <tr>
+              <td>SteelAndBrass</td>
+            </tr>
+            <tr>
+              <td>Syn Hornz</td>
+            </tr>
+            <tr>
+              <td>T-Bone Steak</td>
+            </tr>
+            <tr>
+              <td>TWumpet</td>
+            </tr>
+            <tr>
+              <td>UnpolishdBrass</td>
+            </tr>
+            <tr>
+              <td>WowThat'sBrass</td>
+            </tr>
+            <tr>
+              <td>Zoik Brass</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">keys<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>60's Organ</td>
+            </tr>
+            <tr>
+              <td>6WivesOfRickW.</td>
+            </tr>
+            <tr>
+              <td>ArEmEye Piano</td>
+            </tr>
+            <tr>
+              <td>Bach Overdrive</td>
+            </tr>
+            <tr>
+              <td>Circus</td>
+            </tr>
+            <tr>
+              <td>Clavitude</td>
+            </tr>
+            <tr>
+              <td>Clavy</td>
+            </tr>
+            <tr>
+              <td>Dusty Organ</td>
+            </tr>
+            <tr>
+              <td>EP～ OK!</td>
+            </tr>
+            <tr>
+              <td>ElecHarpsi8'4'</td>
+            </tr>
+            <tr>
+              <td>Funky 70s Clav</td>
+            </tr>
+            <tr>
+              <td>Glass Keys</td>
+            </tr>
+            <tr>
+              <td>Glasspipe</td>
+            </tr>
+            <tr>
+              <td>GroovyAuto-Wah</td>
+            </tr>
+            <tr>
+              <td>Harpsiwarp</td>
+            </tr>
+            <tr>
+              <td>Heavy On The 5</td>
+            </tr>
+            <tr>
+              <td>Key Clavi</td>
+            </tr>
+            <tr>
+              <td>LektrikEelClav</td>
+            </tr>
+            <tr>
+              <td>Miami Vyce</td>
+            </tr>
+            <tr>
+              <td>Oktoberfest!</td>
+            </tr>
+            <tr>
+              <td>Organ P</td>
+            </tr>
+            <tr>
+              <td>OttowaRezoClav</td>
+            </tr>
+            <tr>
+              <td>PhantmOfTheIon</td>
+            </tr>
+            <tr>
+              <td>Plastic Keys</td>
+            </tr>
+            <tr>
+              <td>Rendezvous6:02</td>
+            </tr>
+            <tr>
+              <td>Rock Organ</td>
+            </tr>
+            <tr>
+              <td>RockWheelOrgan</td>
+            </tr>
+            <tr>
+              <td>Sheriff Piano</td>
+            </tr>
+            <tr>
+              <td>Stereo EP m2</td>
+            </tr>
+            <tr>
+              <td>Stockbaroquer</td>
+            </tr>
+            <tr>
+              <td>Stops On m2</td>
+            </tr>
+            <tr>
+              <td>StreetsOfParis</td>
+            </tr>
+            <tr>
+              <td>Syn Wurly</td>
+            </tr>
+            <tr>
+              <td>TurboPhiliOrgn</td>
+            </tr>
+            <tr>
+              <td>Vintage Piano</td>
+            </tr>
+            <tr>
+              <td>Zorgan</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">comp<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>1and2andComp</td>
+            </tr>
+            <tr>
+              <td>Ai-ya!</td>
+            </tr>
+            <tr>
+              <td>Amsterdam DJ</td>
+            </tr>
+            <tr>
+              <td>Animator</td>
+            </tr>
+            <tr>
+              <td>Baba O'Riley</td>
+            </tr>
+            <tr>
+              <td>Beefy Sync
                 <tr>
-                  <td>Adrastea</td>
+                  <td>Bellsichord</td>
                 </tr>
                 <tr>
-                  <td>AquamarineLead</td>
+                  <td>Bioinformatics</td>
                 </tr>
                 <tr>
-                  <td>Bambam Lead</td>
+                  <td>Boing Bongs</td>
                 </tr>
                 <tr>
-                  <td>Cars Sync</td>
+                  <td>Bone Kalimba</td>
                 </tr>
                 <tr>
-                  <td>CoolMellowLead</td>
+                  <td>Boss Battle</td>
                 </tr>
                 <tr>
-                  <td>Executioner</td>
+                  <td>Breathy Tone</td>
                 </tr>
                 <tr>
-                  <td>Flatulent Duck</td>
+                  <td>Carillon</td>
                 </tr>
                 <tr>
-                  <td>Frogstar IV</td>
+                  <td>Chords2Rock</td>
                 </tr>
                 <tr>
-                  <td>Fuzzy Buzzy</td>
+                  <td>Classic Decay</td>
                 </tr>
                 <tr>
-                  <td>Infamous Lead</td>
+                  <td>CompJazzGuitar</td>
                 </tr>
                 <tr>
-                  <td>LazyAnalogLead</td>
+                  <td>Crystallizer</td>
                 </tr>
                 <tr>
-                  <td>LeadOfSixSines</td>
+                  <td>Deutche Bahn</td>
                 </tr>
                 <tr>
-                  <td>Lucky Porta m2</td>
+                  <td>Dude!</td>
                 </tr>
                 <tr>
-                  <td>Lunar Orbit</td>
+                  <td>DynaEtno Bell</td>
                 </tr>
                 <tr>
-                  <td>Mahavishnoid</td>
+                  <td>E-Sitar Layer</td>
                 </tr>
                 <tr>
-                  <td>Mecha-Canary</td>
+                  <td>Electric Jello</td>
                 </tr>
                 <tr>
-                  <td>Micron Flute</td>
+                  <td>Electrorail</td>
                 </tr>
                 <tr>
-                  <td>Mini 5th</td>
+                  <td>Elp Time</td>
                 </tr>
                 <tr>
-                  <td>Mini Classic</td>
+                  <td>FM Slider 2</td>
                 </tr>
                 <tr>
-                  <td>Odyssee Lead</td>
+                  <td>Flatron</td>
                 </tr>
                 <tr>
-                  <td>Porta Lead</td>
+                  <td>Formant WEH</td>
                 </tr>
                 <tr>
-                  <td>Rosemary'sBaby</td>
+                  <td>Froggy</td>
                 </tr>
                 <tr>
-                  <td>Sandpaper Lead</td>
+                  <td>Funky Slide</td>
                 </tr>
                 <tr>
-                  <td>ScreaminWarpLd</td>
+                  <td>Get Funky!</td>
                 </tr>
                 <tr>
-                  <td>Seven Days</td>
+                  <td>Glass + Steel</td>
                 </tr>
                 <tr>
-                  <td>Shortwave</td>
+                  <td>HappyCarribean</td>
                 </tr>
                 <tr>
-                  <td>Sizzler</td>
+                  <td>Harptronic</td>
                 </tr>
                 <tr>
-                  <td>SpankTone Lead</td>
+                  <td>Hollow Machine</td>
                 </tr>
                 <tr>
-                  <td>StixMiniMogue</td>
+                  <td>Howlercomp m2</td>
                 </tr>
                 <tr>
-                  <td>Suboscillators</td>
+                  <td>Ice Tongs</td>
                 </tr>
                 <tr>
-                  <td>SunsetMiniLead</td>
+                  <td>InHarmonics</td>
                 </tr>
                 <tr>
-                  <td>Tarkus Carcass</td>
+                  <td>IntroTheValley</td>
                 </tr>
                 <tr>
-                  <td>Trantor Lead</td>
+                  <td>ItsJamicaMon!</td>
                 </tr>
                 <tr>
-                  <td>Triad m2 Faze</td>
+                  <td>JP Journey</td>
                 </tr>
                 <tr>
-                  <td>Tweakedriver</td>
+                  <td>Joggin'</td>
                 </tr>
                 <tr>
-                  <td>U CrazyDiamond</td>
+                  <td>Jump</td>
                 </tr>
                 <tr>
-                  <td>Wakeman Mogue</td>
+                  <td>Kitchen Sync</td>
                 </tr>
                 <tr>
-                  <td>Wakemini</td>
+                  <td>Laryngitis</td>
                 </tr>
                 <tr>
-                  <td>Warperheim</td>
+                  <td>Laser Surgery</td>
                 </tr>
                 <tr>
-                  <td>Whisler's Mon</td>
+                  <td>Latenight Comp</td>
                 </tr>
                 <tr>
-                  <td>Wichita Falls</td>
+                  <td>Looker</td>
                 </tr>
                 <tr>
-                  <td>Wowza</td>
+                  <td>Machete Beat</td>
                 </tr>
                 <tr>
-                  <td>Zippy the 5th</td>
+                  <td>Marimbaphone</td>
                 </tr>
-              </table>
-            </section>
-            <h3 class="heading switch">pad<span class="swithCondition contentClosed"></span>
-              <section class="h3content hide">
-                <table>
-                  <tr>
-                    <td>16-PoleDeepPad</td>
-                  </tr>
-                  <tr>
-                    <td>2-PoleDarkPad</td>
-                  </tr>
-                  <tr>
-                    <td>4-PoleSoftPad</td>
-                  </tr>
-                  <tr>
-                    <td>8-PoleWarmPad</td>
-                  </tr>
-                  <tr>
-                    <td>Aeon Choir</td>
-                  </tr>
-                  <tr>
-                    <td>AnotherLongDay</td>
-                  </tr>
-                  <tr>
-                    <td>AstrogySweep</td>
-                  </tr>
-                  <tr>
-                    <td>Auto Player</td>
-                  </tr>
-                  <tr>
-                    <td>Backing Vox</td>
-                  </tr>
-                  <tr>
-                    <td>Bad Acid</td>
-                  </tr>
-                  <tr>
-                    <td>Blue Doll</td>
-                  </tr>
-                  <tr>
-                    <td>Brainpounder</td>
-                  </tr>
-                  <tr>
-                    <td>Cauldron Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Choirbox</td>
-                  </tr>
-                  <tr>
-                    <td>Classic Vox</td>
-                  </tr>
-                  <tr>
-                    <td>Clusters</td>
-                  </tr>
-                  <tr>
-                    <td>Concert Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Dagon Visitors</td>
-                  </tr>
-                  <tr>
-                    <td>Deep Space</td>
-                  </tr>
-                  <tr>
-                    <td>Dirty Dreamer</td>
-                  </tr>
-                  <tr>
-                    <td>Dream Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Dutch Choir</td>
-                  </tr>
-                  <tr>
-                    <td>DynaAahOohVox</td>
-                  </tr>
-                  <tr>
-                    <td>ELen8R</td>
-                  </tr>
-                  <tr>
-                    <td>EMotion Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Ecology</td>
-                  </tr>
-                  <tr>
-                    <td>Electronique</td>
-                  </tr>
-                  <tr>
-                    <td>Ensemble</td>
-                  </tr>
-                  <tr>
-                    <td>Exhalation</td>
-                  </tr>
-                  <tr>
-                    <td>Fat2Compose</td>
-                  </tr>
-                  <tr>
-                    <td>FilterSweep101</td>
-                  </tr>
-                  <tr>
-                    <td>Ghostly</td>
-                  </tr>
-                  <tr>
-                    <td>Ghosty Voice</td>
-                  </tr>
-                  <tr>
-                    <td>Golem Emerges</td>
-                  </tr>
-                  <tr>
-                    <td>Gritter Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Hollow Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Home Forgotten</td>
-                  </tr>
-                  <tr>
-                    <td>I Comprehend</td>
-                  </tr>
-                  <tr>
-                    <td>I Understand</td>
-                  </tr>
-                  <tr>
-                    <td>Infrastructure</td>
-                  </tr>
-                  <tr>
-                    <td>Intruder</td>
-                  </tr>
-                  <tr>
-                    <td>Ionian Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Ionic Voyage</td>
-                  </tr>
-                  <tr>
-                    <td>Ionizer</td>
-                  </tr>
-                  <tr>
-                    <td>Joan d'Arc Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Journey West</td>
-                  </tr>
-                  <tr>
-                    <td>Jurassic</td>
-                  </tr>
-                  <tr>
-                    <td>JustForJustin</td>
-                  </tr>
-                  <tr>
-                    <td>Kirumamoru</td>
-                  </tr>
-                  <tr>
-                    <td>Landing Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Liquid Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Lost Children</td>
-                  </tr>
-                  <tr>
-                    <td>Maresh</td>
-                  </tr>
-                  <tr>
-                    <td>Massive Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Materialize</td>
-                  </tr>
-                  <tr>
-                    <td>Matrox</td>
-                  </tr>
-                  <tr>
-                    <td>Maximus</td>
-                  </tr>
-                  <tr>
-                    <td>Melancholy Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Metal Moths</td>
-                  </tr>
-                  <tr>
-                    <td>MiddleBandVoko</td>
-                  </tr>
-                  <tr>
-                    <td>Moartal</td>
-                  </tr>
-                  <tr>
-                    <td>Mod,Vangelian</td>
-                  </tr>
-                  <tr>
-                    <td>Moody Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Moonbase Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Morten'J</td>
-                  </tr>
-                  <tr>
-                    <td>Movie Pad</td>
-                  </tr>
-                  <tr>
-                    <td>My Friends</td>
-                  </tr>
-                  <tr>
-                    <td>New Horizons</td>
-                  </tr>
-                  <tr>
-                    <td>Nitrogenius</td>
-                  </tr>
-                  <tr>
-                    <td>Not From Here</td>
-                  </tr>
-                  <tr>
-                    <td>Oberpad</td>
-                  </tr>
-                  <tr>
-                    <td>PPGees</td>
-                  </tr>
-                  <tr>
-                    <td>PartyBack299</td>
-                  </tr>
-                  <tr>
-                    <td>Phase Pad</td>
-                  </tr>
-                  <tr>
-                    <td>PhobosianSweep</td>
-                  </tr>
-                  <tr>
-                    <td>Pheumatic Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Pretty Panner</td>
-                  </tr>
-                  <tr>
-                    <td>Regurgipad</td>
-                  </tr>
-                  <tr>
-                    <td>Remember Me</td>
-                  </tr>
-                  <tr>
-                    <td>Repeater</td>
-                  </tr>
-                  <tr>
-                    <td>Pipley</td>
-                  </tr>
-                  <tr>
-                    <td>Rounder</td>
-                  </tr>
-                  <tr>
-                    <td>Royal Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Safe Launding</td>
-                  </tr>
-                  <tr>
-                    <td>Sandy Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Scarlet Lights</td>
-                  </tr>
-                  <tr>
-                    <td>Scary Bouncer</td>
-                  </tr>
-                  <tr>
-                    <td>Shader</td>
-                  </tr>
-                  <tr>
-                    <td>Shady Business</td>
-                  </tr>
-                  <tr>
-                    <td>Silkworm</td>
-                  </tr>
-                  <tr>
-                    <td>Silver Lining</td>
-                  </tr>
-                  <tr>
-                    <td>Soft Cake</td>
-                  </tr>
-                  <tr>
-                    <td>Soft Pad</td>
-                  </tr>
-                  <tr>
-                    <td>SoftSweetPad</td>
-                  </tr>
-                  <tr>
-                    <td>Softballs</td>
-                  </tr>
-                  <tr>
-                    <td>Solar Wire</td>
-                  </tr>
-                  <tr>
-                    <td>Some Trouble</td>
-                  </tr>
-                  <tr>
-                    <td>Soundtracker</td>
-                  </tr>
-                  <tr>
-                    <td>Soupy Jupiter</td>
-                  </tr>
-                  <tr>
-                    <td>Spectral Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Spectral Warp</td>
-                  </tr>
-                  <tr>
-                    <td>Star Gate</td>
-                  </tr>
-                  <tr>
-                    <td>Steam Volve</td>
-                  </tr>
-                  <tr>
-                    <td>StonehengeDown</td>
-                  </tr>
-                  <tr>
-                    <td>Sweet OB Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Syn Choir</td>
-                  </tr>
-                  <tr>
-                    <td>Take My Pulse</td>
-                  </tr>
-                  <tr>
-                    <td>Tempopansweep</td>
-                  </tr>
-                  <tr>
-                    <td>Triumphant Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Twenty Acres</td>
-                  </tr>
-                  <tr>
-                    <td>Undercity</td>
-                  </tr>
-                  <tr>
-                    <td>Undergrowth</td>
-                  </tr>
-                  <tr>
-                    <td>Unhappy</td>
-                  </tr>
-                  <tr>
-                    <td>Uvula</td>
-                  </tr>
-                  <tr>
-                    <td>Vanilla Pad</td>
-                  </tr>
-                  <tr>
-                    <td>Venusian Sweep</td>
-                  </tr>
-                  <tr>
-                    <td>Vindicarum</td>
-                  </tr>
-                  <tr>
-                    <td>Vocoded Ents</td>
-                  </tr>
-                  <tr>
-                    <td>Vocojam</td>
-                  </tr>
-                  <tr>
-                    <td>Voices</td>
-                  </tr>
-                  <tr>
-                    <td>Vox Layer</td>
-                  </tr>
-                  <tr>
-                    <td>Voxy Synth</td>
-                  </tr>
-                  <tr>
-                    <td>WahWehWuhWoo</td>
-                  </tr>
-                  <tr>
-                    <td>Waterpiano</td>
-                  </tr>
-                  <tr>
-                    <td>Welcome Back</td>
-                  </tr>
-                  <tr>
-                    <td>What's that?</td>
-                  </tr>
-                  <tr>
-                    <td>Whisper</td>
-                  </tr>
-                </table>
-              </section>
-              <h3 class="heading switch">string<span class="swithCondition contentClosed"></span>
-                <section class="h3content hide">
-                  <table>
-                    <tr>
-                      <td>AheadOfItsTime</td>
-                    </tr>
-                    <tr>
-                      <td>AquarianString</td>
-                    </tr>
-                    <tr>
-                      <td>Buzzy Strings</td>
-                    </tr>
-                    <tr>
-                      <td>DarkOberstrings</td>
-                    </tr>
-                    <tr>
-                      <td>Eight Strings</td>
-                    </tr>
-                    <tr>
-                      <td>Fast1stViolin</td>
-                    </tr>
-                    <tr>
-                      <td>J Strings</td>
-                    </tr>
-                    <tr>
-                      <td>JP Strings</td>
-                    </tr>
-                    <tr>
-                      <td>Nervoso Strngs</td>
-                    </tr>
-                    <tr>
-                      <td>Profit Strings</td>
-                    </tr>
-                    <tr>
-                      <td>Rusty Strings</td>
-                    </tr>
-                    <tr>
-                      <td>SilkyVerySilky</td>
-                    </tr>
-                    <tr>
-                      <td>SoleenaStrings</td>
-                    </tr>
-                    <tr>
-                      <td>String Dream</td>
-                    </tr>
-                    <tr>
-                      <td>Sweet Dreams</td>
-                    </tr>
-                    <tr>
-                      <td>The Yoyo-Ma's</td>
-                    </tr>
-                    <tr>
-                      <td>VelocityStrngs</td>
-                    </tr>
-                    <tr>
-                      <td>Violacoder</td>
-                    </tr>
-                  </table>
-                </section>
-                <h3 class="heading switch">brass<span class="swithCondition contentClosed"></span>
-                  <section class="h3content hide">
-                    <table>
-                      <tr>
-                        <td>ABitOffTheTop</td>
-                      </tr>
-                      <tr>
-                        <td>AnalogHorns ff</td>
-                      </tr>
-                      <tr>
-                        <td>Bass Trombone</td>
-                      </tr>
-                      <tr>
-                        <td>Brassic Class</td>
-                      </tr>
-                      <tr>
-                        <td>Caterpillar</td>
-                      </tr>
-                      <tr>
-                        <td>CrispBrassPad</td>
-                      </tr>
-                      <tr>
-                        <td>Fast n Brassy</td>
-                      </tr>
-                      <tr>
-                        <td>Fat Brassy 5th</td>
-                      </tr>
-                      <tr>
-                        <td>FilmNoirTrumpt</td>
-                      </tr>
-                      <tr>
-                        <td>Fr.Horn Chorus</td>
-                      </tr>
-                      <tr>
-                        <td>Greco Fr. Horn</td>
-                      </tr>
-                      <tr>
-                        <td>J Brass</td>
-                      </tr>
-                      <tr>
-                        <td>Kugel Flugel</td>
-                      </tr>
-                      <tr>
-                        <td>Lonly Brass</td>
-                      </tr>
-                      <tr>
-                        <td>Nice Brass Pad</td>
-                      </tr>
-                      <tr>
-                        <td>OB Puff Brass</td>
-                      </tr>
-                      <tr>
-                        <td>PolyWannaBrass</td>
-                      </tr>
-                      <tr>
-                        <td>Prog Brass</td>
-                      </tr>
-                      <tr>
-                        <td>Regal Horns</td>
-                      </tr>
-                      <tr>
-                        <td>SteelAndBrass</td>
-                      </tr>
-                      <tr>
-                        <td>Syn Hornz</td>
-                      </tr>
-                      <tr>
-                        <td>T-Bone Steak</td>
-                      </tr>
-                      <tr>
-                        <td>TWumpet</td>
-                      </tr>
-                      <tr>
-                        <td>UnpolishdBrass</td>
-                      </tr>
-                      <tr>
-                        <td>WowThat'sBrass</td>
-                      </tr>
-                      <tr>
-                        <td>Zoik Brass</td>
-                      </tr>
-                    </table>
-                  </section>
-                  <h3 class="heading switch">keys<span class="swithCondition contentClosed"></span>
-                    <section class="h3content hide">
-                      <table>
-                        <tr>
-                          <td>60's Organ</td>
-                        </tr>
-                        <tr>
-                          <td>6WivesOfRickW.</td>
-                        </tr>
-                        <tr>
-                          <td>ArEmEye Piano</td>
-                        </tr>
-                        <tr>
-                          <td>Bach Overdrive</td>
-                        </tr>
-                        <tr>
-                          <td>Circus</td>
-                        </tr>
-                        <tr>
-                          <td>Clavitude</td>
-                        </tr>
-                        <tr>
-                          <td>Clavy</td>
-                        </tr>
-                        <tr>
-                          <td>Dusty Organ</td>
-                        </tr>
-                        <tr>
-                          <td>EP～ OK!</td>
-                        </tr>
-                        <tr>
-                          <td>ElecHarpsi8'4'</td>
-                        </tr>
-                        <tr>
-                          <td>Funky 70s Clav</td>
-                        </tr>
-                        <tr>
-                          <td>Glass Keys</td>
-                        </tr>
-                        <tr>
-                          <td>Glasspipe</td>
-                        </tr>
-                        <tr>
-                          <td>GroovyAuto-Wah</td>
-                        </tr>
-                        <tr>
-                          <td>Harpsiwarp</td>
-                        </tr>
-                        <tr>
-                          <td>Heavy On The 5</td>
-                        </tr>
-                        <tr>
-                          <td>Key Clavi</td>
-                        </tr>
-                        <tr>
-                          <td>LektrikEelClav</td>
-                        </tr>
-                        <tr>
-                          <td>Miami Vyce</td>
-                        </tr>
-                        <tr>
-                          <td>Oktoberfest!</td>
-                        </tr>
-                        <tr>
-                          <td>Organ P</td>
-                        </tr>
-                        <tr>
-                          <td>OttowaRezoClav</td>
-                        </tr>
-                        <tr>
-                          <td>PhantmOfTheIon</td>
-                        </tr>
-                        <tr>
-                          <td>Plastic Keys</td>
-                        </tr>
-                        <tr>
-                          <td>Rendezvous6:02</td>
-                        </tr>
-                        <tr>
-                          <td>Rock Organ</td>
-                        </tr>
-                        <tr>
-                          <td>RockWheelOrgan</td>
-                        </tr>
-                        <tr>
-                          <td>Sheriff Piano</td>
-                        </tr>
-                        <tr>
-                          <td>Stereo EP m2</td>
-                        </tr>
-                        <tr>
-                          <td>Stockbaroquer</td>
-                        </tr>
-                        <tr>
-                          <td>Stops On m2</td>
-                        </tr>
-                        <tr>
-                          <td>StreetsOfParis</td>
-                        </tr>
-                        <tr>
-                          <td>Syn Wurly</td>
-                        </tr>
-                        <tr>
-                          <td>TurboPhiliOrgn</td>
-                        </tr>
-                        <tr>
-                          <td>Vintage Piano</td>
-                        </tr>
-                        <tr>
-                          <td>Zorgan</td>
-                        </tr>
-                      </table>
-                    </section>
-                    <h3 class="heading switch">comp<span class="swithCondition contentClosed"></span>
-                      <section class="h3content hide">
-                        <table>
-                          <tr>
-                            <td>1and2andComp</td>
-                          </tr>
-                          <tr>
-                            <td>Ai-ya!</td>
-                          </tr>
-                          <tr>
-                            <td>Amsterdam DJ</td>
-                          </tr>
-                          <tr>
-                            <td>Animator</td>
-                          </tr>
-                          <tr>
-                            <td>Baba O'Riley</td>
-                          </tr>
-                          <tr>
-                            <td>Beefy Sync</td>
-                          </tr>
-                          <tr>
-                            <td>Bellsichord</td>
-                          </tr>
-                          <tr>
-                            <td>Bioinformatics</td>
-                          </tr>
-                          <tr>
-                            <td>Boing Bongs</td>
-                          </tr>
-                          <tr>
-                            <td>Bone Kalimba</td>
-                          </tr>
-                          <tr>
-                            <td>Boss Battle</td>
-                          </tr>
-                          <tr>
-                            <td>Breathy Tone</td>
-                          </tr>
-                          <tr>
-                            <td>Carillon</td>
-                          </tr>
-                          <tr>
-                            <td>Chords2Rock</td>
-                          </tr>
-                          <tr>
-                            <td>Classic Decay</td>
-                          </tr>
-                          <tr>
-                            <td>CompJazzGuitar</td>
-                          </tr>
-                          <tr>
-                            <td>Crystallizer</td>
-                          </tr>
-                          <tr>
-                            <td>Deutche Bahn</td>
-                          </tr>
-                          <tr>
-                            <td>Dude!</td>
-                          </tr>
-                          <tr>
-                            <td>DynaEtno Bell</td>
-                          </tr>
-                          <tr>
-                            <td>E-Sitar Layer</td>
-                          </tr>
-                          <tr>
-                            <td>Electric Jello</td>
-                          </tr>
-                          <tr>
-                            <td>Electrorail</td>
-                          </tr>
-                          <tr>
-                            <td>Elp Time</td>
-                          </tr>
-                          <tr>
-                            <td>FM Slider 2</td>
-                          </tr>
-                          <tr>
-                            <td>Flatron</td>
-                          </tr>
-                          <tr>
-                            <td>Formant WEH</td>
-                          </tr>
-                          <tr>
-                            <td>Froggy</td>
-                          </tr>
-                          <tr>
-                            <td>Funky Slide</td>
-                          </tr>
-                          <tr>
-                            <td>Get Funky!</td>
-                          </tr>
-                          <tr>
-                            <td>Glass + Steel</td>
-                          </tr>
-                          <tr>
-                            <td>HappyCarribean</td>
-                          </tr>
-                          <tr>
-                            <td>Harptronic</td>
-                          </tr>
-                          <tr>
-                            <td>Hollow Machine</td>
-                          </tr>
-                          <tr>
-                            <td>Howlercomp m2</td>
-                          </tr>
-                          <tr>
-                            <td>Ice Tongs</td>
-                          </tr>
-                          <tr>
-                            <td>InHarmonics</td>
-                          </tr>
-                          <tr>
-                            <td>IntroTheValley</td>
-                          </tr>
-                          <tr>
-                            <td>ItsJamicaMon!</td>
-                          </tr>
-                          <tr>
-                            <td>JP Journey</td>
-                          </tr>
-                          <tr>
-                            <td>Joggin'</td>
-                          </tr>
-                          <tr>
-                            <td>Jump</td>
-                          </tr>
-                          <tr>
-                            <td>Kitchen Sync</td>
-                          </tr>
-                          <tr>
-                            <td>Laryngitis</td>
-                          </tr>
-                          <tr>
-                            <td>Laser Surgery</td>
-                          </tr>
-                          <tr>
-                            <td>Latenight Comp</td>
-                          </tr>
-                          <tr>
-                            <td>Looker</td>
-                          </tr>
-                          <tr>
-                            <td>Machete Beat</td>
-                          </tr>
-                          <tr>
-                            <td>Marimbaphone</td>
-                          </tr>
-                          <tr>
-                            <td>Massiva</td>
-                          </tr>
-                          <tr>
-                            <td>Metallic Body</td>
-                          </tr>
-                          <tr>
-                            <td>Mind Bell</td>
-                          </tr>
-                          <tr>
-                            <td>Mustard Planet</td>
-                          </tr>
-                          <tr>
-                            <td>Norelko</td>
-                          </tr>
-                          <tr>
-                            <td>OB Sensible</td>
-                          </tr>
-                          <tr>
-                            <td>Opeator</td>
-                          </tr>
-                          <tr>
-                            <td>Orbital Frame</td>
-                          </tr>
-                          <tr>
-                            <td>Out of Style</td>
-                          </tr>
-                          <tr>
-                            <td>Owbercomper</td>
-                          </tr>
-                          <tr>
-                            <td>pawnShopAnteek</td>
-                          </tr>
-                          <tr>
-                            <td>Pluck You</td>
-                          </tr>
-                          <tr>
-                            <td>Plucky Arp</td>
-                          </tr>
-                          <tr>
-                            <td>Plucky Duck</td>
-                          </tr>
-                          <tr>
-                            <td>Plucky K</td>
-                          </tr>
-                          <tr>
-                            <td>PolyWannaComp</td>
-                          </tr>
-                          <tr>
-                            <td>Princely One</td>
-                          </tr>
-                          <tr>
-                            <td>Pulsar</td>
-                          </tr>
-                          <tr>
-                            <td>Pulse Decay</td>
-                          </tr>
-                          <tr>
-                            <td>Punchy Harp</td>
-                          </tr>
-                          <tr>
-                            <td>RememberMyJuno</td>
-                          </tr>
-                          <tr>
-                            <td>Resonant Comp</td>
-                          </tr>
-                          <tr>
-                            <td>Ringmon Bell</td>
-                          </tr>
-                          <tr>
-                            <td>RingmodMyBell</td>
-                          </tr>
-                          <tr>
-                            <td>Romulan Bells</td>
-                          </tr>
-                          <tr>
-                            <td>RoomfulOfZoik</td>
-                          </tr>
-                          <tr>
-                            <td>Rotwang</td>
-                          </tr>
-                          <tr>
-                            <td>Rubber Synth</td>
-                          </tr>
-                          <tr>
-                            <td>Rustscraper</td>
-                          </tr>
-                          <tr>
-                            <td>S-Bahn Jelly</td>
-                          </tr>
-                          <tr>
-                            <td>Sambalby?</td>
-                          </tr>
-                          <tr>
-                            <td>Seek Seque</td>
-                          </tr>
-                          <tr>
-                            <td>Self-Oscillate</td>
-                          </tr>
-                          <tr>
-                            <td>Silver Sweep</td>
-                          </tr>
-                          <tr>
-                            <td>Simple</td>
-                          </tr>
-                          <tr>
-                            <td>Sine Drops</td>
-                          </tr>
-                          <tr>
-                            <td>Sitary</td>
-                          </tr>
-                          <tr>
-                            <td>Spank Tone</td>
-                          </tr>
-                          <tr>
-                            <td>Splak</td>
-                          </tr>
-                          <tr>
-                            <td>SpringCleaning</td>
-                          </tr>
-                          <tr>
-                            <td>Stargazing</td>
-                          </tr>
-                          <tr>
-                            <td>Strawberry</td>
-                          </tr>
-                          <tr>
-                            <td>Surface</td>
-                          </tr>
-                          <tr>
-                            <td>SwirlyToyPiano</td>
-                          </tr>
-                          <tr>
-                            <td>Symphonic Eh</td>
-                          </tr>
-                          <tr>
-                            <td>Symphonic Weh</td>
-                          </tr>
-                          <tr>
-                            <td>Synclav</td>
-                          </tr>
-                          <tr>
-                            <td>Tabulate</td>
-                          </tr>
-                          <tr>
-                            <td>TechnoToyTump</td>
-                          </tr>
-                          <tr>
-                            <td>TellMeAStory</td>
-                          </tr>
-                          <tr>
-                            <td>The 80s</td>
-                          </tr>
-                          <tr>
-                            <td>The Dancer</td>
-                          </tr>
-                          <tr>
-                            <td>threefinity</td>
-                          </tr>
-                          <tr>
-                            <td>Tiny Bell</td>
-                          </tr>
-                          <tr>
-                            <td>TouchPhaseComp</td>
-                          </tr>
-                          <tr>
-                            <td>Toy Steel Drum</td>
-                          </tr>
-                          <tr>
-                            <td>Troll Scat</td>
-                          </tr>
-                          <tr>
-                            <td>Unapologetic</td>
-                          </tr>
-                          <tr>
-                            <td>Unminstakable</td>
-                          </tr>
-                          <tr>
-                            <td>VelocityContrl</td>
-                          </tr>
-                          <tr>
-                            <td>Warped Steeplr</td>
-                          </tr>
-                          <tr>
-                            <td>Wet Comper</td>
-                          </tr>
-                          <tr>
-                            <td>Whisker Comper</td>
-                          </tr>
-                          <tr>
-                            <td>WontGetFooled</td>
-                          </tr>
-                        </table>
-                      </section>
-                      <h3 class="heading switch">drum<span class="swithCondition contentClosed"></span>
-                        <section class="h3content hide">
-                          <table>
-                            <tr>
-                              <td>BD 808 Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD 909 Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Bang On!</td>
-                            </tr>
-                            <tr>
-                              <td>BD CR Kick</td>
-                            </tr>
-                            <tr>
-                              <td>DB CleanRhythm</td>
-                            </tr>
-                            <tr>
-                              <td>BD Club Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Cool</td>
-                            </tr>
-                            <tr>
-                              <td>BD CowboyJungl</td>
-                            </tr>
-                            <tr>
-                              <td>BD Distresser</td>
-                            </tr>
-                            <tr>
-                              <td>BD EL Distorto</td>
-                            </tr>
-                            <tr>
-                              <td>BD ElectroKick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Excalade</td>
-                            </tr>
-                            <tr>
-                              <td>BD Filter Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Future Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Hardcore</td>
-                            </tr>
-                            <tr>
-                              <td>BD Harsh Real</td>
-                            </tr>
-                            <tr>
-                              <td>BD Hello Buck!</td>
-                            </tr>
-                            <tr>
-                              <td>BD Hi-Techkick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Jungle Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD KHO Beats</td>
-                            </tr>
-                            <tr>
-                              <td>BD Kick Me 2</td>
-                            </tr>
-                            <tr>
-                              <td>BD Kick PS</td>
-                            </tr>
-                            <tr>
-                              <td>BD Kick SAEFF</td>
-                            </tr>
-                            <tr>
-                              <td>BD Math</td>
-                            </tr>
-                            <tr>
-                              <td>BD Metal Machn</td>
-                            </tr>
-                            <tr>
-                              <td>BD Mipmap</td>
-                            </tr>
-                            <tr>
-                              <td>BD Osc Kick</td>
-                            </tr>
-                            <tr>
-                              <td>BD Pitch E-Kik</td>
-                            </tr>
-                            <tr>
-                              <td>BD Rattler!</td>
-                            </tr>
-                            <tr>
-                              <td>CY China Cymbl</td>
-                            </tr>
-                            <tr>
-                              <td>CY FM Gong</td>
-                            </tr>
-                            <tr>
-                              <td>CY FM Ride Cym</td>
-                            </tr>
-                            <tr>
-                              <td>CY Ping Ride</td>
-                            </tr>
-                            <tr>
-                              <td>HH CR Hat</td>
-                            </tr>
-                            <tr>
-                              <td>HH CR Hat Clos</td>
-                            </tr>
-                            <tr>
-                              <td>HH CleanRythm</td>
-                            </tr>
-                            <tr>
-                              <td>HH ClosedE-Hat</td>
-                            </tr>
-                            <tr>
-                              <td>HH CowboyJungl</td>
-                            </tr>
-                            <tr>
-                              <td>HH E-HiHats Op</td>
-                            </tr>
-                            <tr>
-                              <td>HH Elect Hat</td>
-                            </tr>
-                            <tr>
-                              <td>HH ElectroClsd</td>
-                            </tr>
-                            <tr>
-                              <td>HH FM Hat</td>
-                            </tr>
-                            <tr>
-                              <td>HH Hardcore</td>
-                            </tr>
-                            <tr>
-                              <td>HH Harsh Real</td>
-                            </tr>
-                            <tr>
-                              <td>HH Hi Head</td>
-                            </tr>
-                            <tr>
-                              <td>HH HiHat4PS Cl</td>
-                            </tr>
-                            <tr>
-                              <td>HH HiHat4PS Op</td>
-                            </tr>
-                            <tr>
-                              <td>HH Hihat</td>
-                            </tr>
-                            <tr>
-                              <td>HH Jungle Clsd</td>
-                            </tr>
-                            <tr>
-                              <td>HH KHO Beats</td>
-                            </tr>
-                            <tr>
-                              <td>HH Metal Machn</td>
-                            </tr>
-                            <tr>
-                              <td>HH Real Hat</td>
-                            </tr>
-                            <tr>
-                              <td>PR Agogo</td>
-                            </tr>
-                            <tr>
-                              <td>PR Avedis</td>
-                            </tr>
-                            <tr>
-                              <td>PR Bell0DaCow</td>
-                            </tr>
-                            <tr>
-                              <td>PR Bio Rhythm</td>
-                            </tr>
-                            <tr>
-                              <td>PR BlastrFight</td>
-                            </tr>
-                            <tr>
-                              <td>PR Blibzkrieg</td>
-                            </tr>
-                            <tr>
-                              <td>PR Blipper 1</td>
-                            </tr>
-                            <tr>
-                              <td>PR Blipper 2</td>
-                            </tr>
-                            <tr>
-                              <td>PR CR Guiro</td>
-                            </tr>
-                            <tr>
-                              <td>PR CR Hi Bongo</td>
-                            </tr>
-                            <tr>
-                              <td>PR Clae</td>
-                            </tr>
-                            <tr>
-                              <td>PR Clap Happy</td>
-                            </tr>
-                            <tr>
-                              <td>PR Clave</td>
-                            </tr>
-                            <tr>
-                              <td>PR Conga</td>
-                            </tr>
-                            <tr>
-                              <td>PR Cowbell</td>
-                            </tr>
-                            <tr>
-                              <td>PR Cricket</td>
-                            </tr>
-                            <tr>
-                              <td>PR ElectBongo</td>
-                            </tr>
-                            <tr>
-                              <td>PR Finger Bell</td>
-                            </tr>
-                            <tr>
-                              <td>PR Full Stop</td>
-                            </tr>
-                            <tr>
-                              <td>PR Gene Splice</td>
-                            </tr>
-                            <tr>
-                              <td>PR Krafty</td>
-                            </tr>
-                            <tr>
-                              <td>PR Noiz Chew</td>
-                            </tr>
-                            <tr>
-                              <td>PR Pacific Rim</td>
-                            </tr>
-                            <tr>
-                              <td>PR Picky, Pick</td>
-                            </tr>
-                            <tr>
-                              <td>PR Pit-Pat</td>
-                            </tr>
-                            <tr>
-                              <td>PR Plucked Can</td>
-                            </tr>
-                            <tr>
-                              <td>PR Popcorn</td>
-                            </tr>
-                            <tr>
-                              <td>PR RobotShufle</td>
-                            </tr>
-                            <tr>
-                              <td>PR Shake it!</td>
-                            </tr>
-                            <tr>
-                              <td>PR Shaker</td>
-                            </tr>
-                            <tr>
-                              <td>PR Shush</td>
-                            </tr>
-                            <tr>
-                              <td>PR Squirch</td>
-                            </tr>
-                            <tr>
-                              <td>PR StringedPot</td>
-                            </tr>
-                            <tr>
-                              <td>PR Tabla</td>
-                            </tr>
-                            <tr>
-                              <td>PR Tin Tapper</td>
-                            </tr>
-                            <tr>
-                              <td>PR TipOfDaBlip</td>
-                            </tr>
-                            <tr>
-                              <td>PR_Tunnel Pong</td>
-                            </tr>
-                            <tr>
-                              <td>PR Vibra</td>
-                            </tr>
-                            <tr>
-                              <td>PR Watery</td>
-                            </tr>
-                            <tr>
-                              <td>PR Woodblock</td>
-                            </tr>
-                            <tr>
-                              <td>SD 909 Snare</td>
-                            </tr>
-                            <tr>
-                              <td>SD BrightSnare</td>
-                            </tr>
-                            <tr>
-                              <td>SD Burst Snare</td>
-                            </tr>
-                            <tr>
-                              <td>SD CR Snare</td>
-                            </tr>
-                            <tr>
-                              <td>SD CleanRhythm</td>
-                            </tr>
-                            <tr>
-                              <td>SD Cotton Snar</td>
-                            </tr>
-                            <tr>
-                              <td>SD CowboyJungl</td>
-                            </tr>
-                            <tr>
-                              <td>SD DumpsterSnr</td>
-                            </tr>
-                            <tr>
-                              <td>SD ElectroSnar</td>
-                            </tr>
-                            <tr>
-                              <td>SD Hardcore</td>
-                            </tr>
-                            <tr>
-                              <td>SD Harsh Real</td>
-                            </tr>
-                            <tr>
-                              <td>SD Jungle Snar</td>
-                            </tr>
-                            <tr>
-                              <td>SD KHO Beats</td>
-                            </tr>
-                            <tr>
-                              <td>SD Metal Machn</td>
-                            </tr>
-                            <tr>
-                              <td>SD Metallic Sn</td>
-                            </tr>
-                            <tr>
-                              <td>SD SimmonsySnr</td>
-                            </tr>
-                            <tr>
-                              <td>SD Sizzlin'Snr</td>
-                            </tr>
-                            <tr>
-                              <td>SD SlideySnare</td>
-                            </tr>
-                            <tr>
-                              <td>SD SnappySnare</td>
-                            </tr>
-                            <tr>
-                              <td>SD Snarez</td>
-                            </tr>
-                            <tr>
-                              <td>SD Synare</td>
-                            </tr>
-                            <tr>
-                              <td>SD Thin Snare</td>
-                            </tr>
-                            <tr>
-                              <td>SD Zap Snare</td>
-                            </tr>
-                            <tr>
-                              <td>TM SimmonsyTom</td>
-                            </tr>
-                            <tr>
-                              <td>TM Toms</td>
-                            </tr>
-                            <tr>
-                              <td>TM Zimmonz</td>
-                            </tr>
-                          </table>
-                        </section>
-                        <h3 class="heading switch">sfx<span class="swithCondition contentClosed"></span>
-                          <section class="h3content hide">
-                            <table>
-                              <tr>
-                                <td>* 101 Vocoder</td>
-                              </tr>
-                              <tr>
-                                <td>* Deep Vocoder</td>
-                              </tr>
-                              <tr>
-                                <td>* ExtIn-Dly+FM</td>
-                              </tr>
-                              <tr>
-                                <td>* Extzin-Filter</td>
-                              </tr>
-                              <tr>
-                                <td>* ExtIn-Flt+Pn</td>
-                              </tr>
-                              <tr>
-                                <td>* ExtIn-Gate</td>
-                              </tr>
-                              <tr>
-                                <td>* Goblin Talk</td>
-                              </tr>
-                              <tr>
-                                <td>* Hobbitronix</td>
-                              </tr>
-                              <tr>
-                                <td>* Sing 'Coder</td>
-                              </tr>
-                              <tr>
-                                <td>Airlock Door</td>
-                              </tr>
-                              <tr>
-                                <td>AsteroidsD-Lux</td>
-                              </tr>
-                              <tr>
-                                <td>Bombs Away</td>
-                              </tr>
-                              <tr>
-                                <td>Bromide</td>
-                              </tr>
-                              <tr>
-                                <td>Close one!</td>
-                              </tr>
-                              <tr>
-                                <td>Cyber Washer</td>
-                              </tr>
-                              <tr>
-                                <td>Da Ring</td>
-                              </tr>
-                              <tr>
-                                <td>Dead Pack,Man</td>
-                              </tr>
-                              <tr>
-                                <td>Default</td>
-                              </tr>
-                              <tr>
-                                <td>Dog vs.Cat</td>
-                              </tr>
-                              <tr>
-                                <td>Fly-By</td>
-                              </tr>
-                              <tr>
-                                <td>Frankenstein</td>
-                              </tr>
-                              <tr>
-                                <td>From Venus</td>
-                              </tr>
-                              <tr>
-                                <td>Gizmo</td>
-                              </tr>
-                              <tr>
-                                <td>Hatching</td>
-                              </tr>
-                              <tr>
-                                <td>Helicopter</td>
-                              </tr>
-                              <tr>
-                                <td>Herge</td>
-                              </tr>
-                              <tr>
-                                <td>Howling Dogs</td>
-                              </tr>
-                              <tr>
-                                <td>Insane Dentist</td>
-                              </tr>
-                              <tr>
-                                <td>Landing</td>
-                              </tr>
-                              <tr>
-                                <td>Last Breath</td>
-                              </tr>
-                              <tr>
-                                <td>Lava Stream</td>
-                              </tr>
-                              <tr>
-                                <td>Mad Science</td>
-                              </tr>
-                              <tr>
-                                <td>Modularized</td>
-                              </tr>
-                              <tr>
-                                <td>Ocean->Sliders</td>
-                              </tr>
-                              <tr>
-                                <td>Panning Zaps</td>
-                              </tr>
-                              <tr>
-                                <td>ReverseBellFX</td>
-                              </tr>
-                              <tr>
-                                <td>Seaform</td>
-                              </tr>
-                              <tr>
-                                <td>Space Jalopy</td>
-                              </tr>
-                              <tr>
-                                <td>StartTheMachin</td>
-                              </tr>
-                              <tr>
-                                <td>Swamp Gas</td>
-                              </tr>
-                              <tr>
-                                <td>The FM Police</td>
-                              </tr>
-                              <tr>
-                                <td>The Lab</td>
-                              </tr>
-                              <tr>
-                                <td>Thunderstorm</td>
-                              </tr>
-                              <tr>
-                                <td>Trance Tube</td>
-                              </tr>
-                              <tr>
-                                <td>UFO Blastoff</td>
-                              </tr>
-                              <tr>
-                                <td>Whazzat?</td>
-                              </tr>
-                              <tr>
-                                <td>Wheely Windy</td>
-                              </tr>
-                              <tr>
-                                <td>Wind</td>
-                              </tr>
-                              <tr>
-                                <td>Windy City</td>
-                              </tr>
-                              <tr>
-                                <td>X-Mod</td>
-                              </tr>
-                            </table>
-                          </section>
-                        </h3>
-                      </h3>
-                    </h3>
-                  </h3>
-                </h3>
-              </h3>
-            </h3>
-          </h3>
-        </h3>
+                <tr>
+                  <td>Massiva</td>
+                </tr>
+                <tr>
+                  <td>Metallic Body</td>
+                </tr>
+                <tr>
+                  <td>Mind Bell</td>
+                </tr>
+                <tr>
+                  <td>Mustard Planet</td>
+                </tr>
+                <tr>
+                  <td>Norelko</td>
+                </tr>
+                <tr>
+                  <td>OB Sensible</td>
+                </tr>
+                <tr>
+                  <td>Opeator</td>
+                </tr>
+                <tr>
+                  <td>Orbital Frame</td>
+                </tr>
+                <tr>
+                  <td>Out of Style</td>
+                </tr>
+                <tr>
+                  <td>Owbercomper</td>
+                </tr>
+                <tr>
+                  <td>pawnShopAnteek</td>
+                </tr>
+                <tr>
+                  <td>Pluck You</td>
+                </tr>
+                <tr>
+                  <td>Plucky Arp</td>
+                </tr>
+                <tr>
+                  <td>Plucky Duck</td>
+                </tr>
+                <tr>
+                  <td>Plucky K</td>
+                </tr>
+                <tr>
+                  <td>PolyWannaComp</td>
+                </tr>
+                <tr>
+                  <td>Princely One</td>
+                </tr>
+                <tr>
+                  <td>Pulsar</td>
+                </tr>
+                <tr>
+                  <td>Pulse Decay</td>
+                </tr>
+                <tr>
+                  <td>Punchy Harp</td>
+                </tr>
+                <tr>
+                  <td>RememberMyJuno</td>
+                </tr>
+                <tr>
+                  <td>Resonant Comp</td>
+                </tr>
+                <tr>
+                  <td>Ringmon Bell</td>
+                </tr>
+                <tr>
+                  <td>RingmodMyBell</td>
+                </tr>
+                <tr>
+                  <td>Romulan Bells</td>
+                </tr>
+                <tr>
+                  <td>RoomfulOfZoik</td>
+                </tr>
+                <tr>
+                  <td>Rotwang</td>
+                </tr>
+                <tr>
+                  <td>Rubber Synth</td>
+                </tr>
+                <tr>
+                  <td>Rustscraper</td>
+                </tr>
+                <tr>
+                  <td>S-Bahn Jelly</td>
+                </tr>
+                <tr>
+                  <td>Sambalby?</td>
+                </tr>
+                <tr>
+                  <td>Seek Seque</td>
+                </tr>
+                <tr>
+                  <td>Self-Oscillate</td>
+                </tr>
+                <tr>
+                  <td>Silver Sweep</td>
+                </tr>
+                <tr>
+                  <td>Simple</td>
+                </tr>
+                <tr>
+                  <td>Sine Drops</td>
+                </tr>
+                <tr>
+                  <td>Sitary</td>
+                </tr>
+                <tr>
+                  <td>Spank Tone</td>
+                </tr>
+                <tr>
+                  <td>Splak</td>
+                </tr>
+                <tr>
+                  <td>SpringCleaning</td>
+                </tr>
+                <tr>
+                  <td>Stargazing</td>
+                </tr>
+                <tr>
+                  <td>Strawberry</td>
+                </tr>
+                <tr>
+                  <td>Surface</td>
+                </tr>
+                <tr>
+                  <td>SwirlyToyPiano</td>
+                </tr>
+                <tr>
+                  <td>Symphonic Eh</td>
+                </tr>
+                <tr>
+                  <td>Symphonic Weh</td>
+                </tr>
+                <tr>
+                  <td>Synclav</td>
+                </tr>
+                <tr>
+                  <td>Tabulate</td>
+                </tr>
+                <tr>
+                  <td>TechnoToyTump</td>
+                </tr>
+                <tr>
+                  <td>TellMeAStory</td>
+                </tr>
+                <tr>
+                  <td>The 80s</td>
+                </tr>
+                <tr>
+                  <td>The Dancer</td>
+                </tr>
+                <tr>
+                  <td>threefinity</td>
+                </tr>
+                <tr>
+                  <td>Tiny Bell</td>
+                </tr>
+                <tr>
+                  <td>TouchPhaseComp</td>
+                </tr>
+                <tr>
+                  <td>Toy Steel Drum</td>
+                </tr>
+                <tr>
+                  <td>Troll Scat</td>
+                </tr>
+                <tr>
+                  <td>Unapologetic</td>
+                </tr>
+                <tr>
+                  <td>Unminstakable</td>
+                </tr>
+                <tr>
+                  <td>VelocityContrl</td>
+                </tr>
+                <tr>
+                  <td>Warped Steeplr</td>
+                </tr>
+                <tr>
+                  <td>Wet Comper</td>
+                </tr>
+                <tr>
+                  <td>Whisker Comper</td>
+                </tr>
+                <tr>
+                  <td>WontGetFooled</td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">drum<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>BD 808 Kick</td>
+            </tr>
+            <tr>
+              <td>BD 909 Kick</td>
+            </tr>
+            <tr>
+              <td>BD Bang On!</td>
+            </tr>
+            <tr>
+              <td>BD CR Kick</td>
+            </tr>
+            <tr>
+              <td>DB CleanRhythm</td>
+            </tr>
+            <tr>
+              <td>BD Club Kick</td>
+            </tr>
+            <tr>
+              <td>BD Cool</td>
+            </tr>
+            <tr>
+              <td>BD CowboyJungl</td>
+            </tr>
+            <tr>
+              <td>BD Distresser</td>
+            </tr>
+            <tr>
+              <td>BD EL Distorto</td>
+            </tr>
+            <tr>
+              <td>BD ElectroKick</td>
+            </tr>
+            <tr>
+              <td>BD Excalade</td>
+            </tr>
+            <tr>
+              <td>BD Filter Kick</td>
+            </tr>
+            <tr>
+              <td>BD Future Kick</td>
+            </tr>
+            <tr>
+              <td>BD Hardcore</td>
+            </tr>
+            <tr>
+              <td>BD Harsh Real</td>
+            </tr>
+            <tr>
+              <td>BD Hello Buck!</td>
+            </tr>
+            <tr>
+              <td>BD Hi-Techkick</td>
+            </tr>
+            <tr>
+              <td>BD Jungle Kick</td>
+            </tr>
+            <tr>
+              <td>BD KHO Beats</td>
+            </tr>
+            <tr>
+              <td>BD Kick Me 2</td>
+            </tr>
+            <tr>
+              <td>BD Kick PS</td>
+            </tr>
+            <tr>
+              <td>BD Kick SAEFF</td>
+            </tr>
+            <tr>
+              <td>BD Math</td>
+            </tr>
+            <tr>
+              <td>BD Metal Machn</td>
+            </tr>
+            <tr>
+              <td>BD Mipmap</td>
+            </tr>
+            <tr>
+              <td>BD Osc Kick</td>
+            </tr>
+            <tr>
+              <td>BD Pitch E-Kik</td>
+            </tr>
+            <tr>
+              <td>BD Rattler!</td>
+            </tr>
+            <tr>
+              <td>CY China Cymbl</td>
+            </tr>
+            <tr>
+              <td>CY FM Gong</td>
+            </tr>
+            <tr>
+              <td>CY FM Ride Cym</td>
+            </tr>
+            <tr>
+              <td>CY Ping Ride</td>
+            </tr>
+            <tr>
+              <td>HH CR Hat</td>
+            </tr>
+            <tr>
+              <td>HH CR Hat Clos</td>
+            </tr>
+            <tr>
+              <td>HH CleanRythm</td>
+            </tr>
+            <tr>
+              <td>HH ClosedE-Hat</td>
+            </tr>
+            <tr>
+              <td>HH CowboyJungl</td>
+            </tr>
+            <tr>
+              <td>HH E-HiHats Op</td>
+            </tr>
+            <tr>
+              <td>HH Elect Hat</td>
+            </tr>
+            <tr>
+              <td>HH ElectroClsd</td>
+            </tr>
+            <tr>
+              <td>HH FM Hat</td>
+            </tr>
+            <tr>
+              <td>HH Hardcore</td>
+            </tr>
+            <tr>
+              <td>HH Harsh Real</td>
+            </tr>
+            <tr>
+              <td>HH Hi Head</td>
+            </tr>
+            <tr>
+              <td>HH HiHat4PS Cl</td>
+            </tr>
+            <tr>
+              <td>HH HiHat4PS Op</td>
+            </tr>
+            <tr>
+              <td>HH Hihat</td>
+            </tr>
+            <tr>
+              <td>HH Jungle Clsd</td>
+            </tr>
+            <tr>
+              <td>HH KHO Beats</td>
+            </tr>
+            <tr>
+              <td>HH Metal Machn</td>
+            </tr>
+            <tr>
+              <td>HH Real Hat</td>
+            </tr>
+            <tr>
+              <td>PR Agogo</td>
+            </tr>
+            <tr>
+              <td>PR Avedis</td>
+            </tr>
+            <tr>
+              <td>PR Bell0DaCow</td>
+            </tr>
+            <tr>
+              <td>PR Bio Rhythm</td>
+            </tr>
+            <tr>
+              <td>PR BlastrFight</td>
+            </tr>
+            <tr>
+              <td>PR Blibzkrieg</td>
+            </tr>
+            <tr>
+              <td>PR Blipper 1</td>
+            </tr>
+            <tr>
+              <td>PR Blipper 2</td>
+            </tr>
+            <tr>
+              <td>PR CR Guiro</td>
+            </tr>
+            <tr>
+              <td>PR CR Hi Bongo</td>
+            </tr>
+            <tr>
+              <td>PR Clae</td>
+            </tr>
+            <tr>
+              <td>PR Clap Happy</td>
+            </tr>
+            <tr>
+              <td>PR Clave</td>
+            </tr>
+            <tr>
+              <td>PR Conga</td>
+            </tr>
+            <tr>
+              <td>PR Cowbell</td>
+            </tr>
+            <tr>
+              <td>PR Cricket</td>
+            </tr>
+            <tr>
+              <td>PR ElectBongo</td>
+            </tr>
+            <tr>
+              <td>PR Finger Bell</td>
+            </tr>
+            <tr>
+              <td>PR Full Stop</td>
+            </tr>
+            <tr>
+              <td>PR Gene Splice</td>
+            </tr>
+            <tr>
+              <td>PR Krafty</td>
+            </tr>
+            <tr>
+              <td>PR Noiz Chew</td>
+            </tr>
+            <tr>
+              <td>PR Pacific Rim</td>
+            </tr>
+            <tr>
+              <td>PR Picky, Pick</td>
+            </tr>
+            <tr>
+              <td>PR Pit-Pat</td>
+            </tr>
+            <tr>
+              <td>PR Plucked Can</td>
+            </tr>
+            <tr>
+              <td>PR Popcorn</td>
+            </tr>
+            <tr>
+              <td>PR RobotShufle</td>
+            </tr>
+            <tr>
+              <td>PR Shake it!</td>
+            </tr>
+            <tr>
+              <td>PR Shaker</td>
+            </tr>
+            <tr>
+              <td>PR Shush</td>
+            </tr>
+            <tr>
+              <td>PR Squirch</td>
+            </tr>
+            <tr>
+              <td>PR StringedPot</td>
+            </tr>
+            <tr>
+              <td>PR Tabla</td>
+            </tr>
+            <tr>
+              <td>PR Tin Tapper</td>
+            </tr>
+            <tr>
+              <td>PR TipOfDaBlip</td>
+            </tr>
+            <tr>
+              <td>PR_Tunnel Pong</td>
+            </tr>
+            <tr>
+              <td>PR Vibra</td>
+            </tr>
+            <tr>
+              <td>PR Watery</td>
+            </tr>
+            <tr>
+              <td>PR Woodblock</td>
+            </tr>
+            <tr>
+              <td>SD 909 Snare</td>
+            </tr>
+            <tr>
+              <td>SD BrightSnare</td>
+            </tr>
+            <tr>
+              <td>SD Burst Snare</td>
+            </tr>
+            <tr>
+              <td>SD CR Snare</td>
+            </tr>
+            <tr>
+              <td>SD CleanRhythm</td>
+            </tr>
+            <tr>
+              <td>SD Cotton Snar</td>
+            </tr>
+            <tr>
+              <td>SD CowboyJungl</td>
+            </tr>
+            <tr>
+              <td>SD DumpsterSnr</td>
+            </tr>
+            <tr>
+              <td>SD ElectroSnar</td>
+            </tr>
+            <tr>
+              <td>SD Hardcore</td>
+            </tr>
+            <tr>
+              <td>SD Harsh Real</td>
+            </tr>
+            <tr>
+              <td>SD Jungle Snar</td>
+            </tr>
+            <tr>
+              <td>SD KHO Beats</td>
+            </tr>
+            <tr>
+              <td>SD Metal Machn</td>
+            </tr>
+            <tr>
+              <td>SD Metallic Sn</td>
+            </tr>
+            <tr>
+              <td>SD SimmonsySnr</td>
+            </tr>
+            <tr>
+              <td>SD Sizzlin'Snr</td>
+            </tr>
+            <tr>
+              <td>SD SlideySnare</td>
+            </tr>
+            <tr>
+              <td>SD SnappySnare</td>
+            </tr>
+            <tr>
+              <td>SD Snarez</td>
+            </tr>
+            <tr>
+              <td>SD Synare</td>
+            </tr>
+            <tr>
+              <td>SD Thin Snare</td>
+            </tr>
+            <tr>
+              <td>SD Zap Snare</td>
+            </tr>
+            <tr>
+              <td>TM SimmonsyTom</td>
+            </tr>
+            <tr>
+              <td>TM Toms</td>
+            </tr>
+            <tr>
+              <td>TM Zimmonz</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">sfx</h3><span class="swithCondition contentClosed"></span>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>* 101 Vocoder</td>
+            </tr>
+            <tr>
+              <td>* Deep Vocoder</td>
+            </tr>
+            <tr>
+              <td>* ExtIn-Dly+FM</td>
+            </tr>
+            <tr>
+              <td>* Extzin-Filter</td>
+            </tr>
+            <tr>
+              <td>* ExtIn-Flt+Pn</td>
+            </tr>
+            <tr>
+              <td>* ExtIn-Gate</td>
+            </tr>
+            <tr>
+              <td>* Goblin Talk</td>
+            </tr>
+            <tr>
+              <td>* Hobbitronix</td>
+            </tr>
+            <tr>
+              <td>* Sing 'Coder</td>
+            </tr>
+            <tr>
+              <td>Airlock Door</td>
+            </tr>
+            <tr>
+              <td>AsteroidsD-Lux</td>
+            </tr>
+            <tr>
+              <td>Bombs Away</td>
+            </tr>
+            <tr>
+              <td>Bromide</td>
+            </tr>
+            <tr>
+              <td>Close one!</td>
+            </tr>
+            <tr>
+              <td>Cyber Washer</td>
+            </tr>
+            <tr>
+              <td>Da Ring</td>
+            </tr>
+            <tr>
+              <td>Dead Pack,Man</td>
+            </tr>
+            <tr>
+              <td>Default</td>
+            </tr>
+            <tr>
+              <td>Dog vs.Cat</td>
+            </tr>
+            <tr>
+              <td>Fly-By</td>
+            </tr>
+            <tr>
+              <td>Frankenstein</td>
+            </tr>
+            <tr>
+              <td>From Venus</td>
+            </tr>
+            <tr>
+              <td>Gizmo</td>
+            </tr>
+            <tr>
+              <td>Hatching</td>
+            </tr>
+            <tr>
+              <td>Helicopter</td>
+            </tr>
+            <tr>
+              <td>Herge</td>
+            </tr>
+            <tr>
+              <td>Howling Dogs</td>
+            </tr>
+            <tr>
+              <td>Insane Dentist</td>
+            </tr>
+            <tr>
+              <td>Landing</td>
+            </tr>
+            <tr>
+              <td>Last Breath</td>
+            </tr>
+            <tr>
+              <td>Lava Stream</td>
+            </tr>
+            <tr>
+              <td>Mad Science</td>
+            </tr>
+            <tr>
+              <td>Modularized</td>
+            </tr>
+            <tr>
+              <td>Ocean->Sliders</td>
+            </tr>
+            <tr>
+              <td>Panning Zaps</td>
+            </tr>
+            <tr>
+              <td>ReverseBellFX</td>
+            </tr>
+            <tr>
+              <td>Seaform</td>
+            </tr>
+            <tr>
+              <td>Space Jalopy</td>
+            </tr>
+            <tr>
+              <td>StartTheMachin</td>
+            </tr>
+            <tr>
+              <td>Swamp Gas</td>
+            </tr>
+            <tr>
+              <td>The FM Police</td>
+            </tr>
+            <tr>
+              <td>The Lab</td>
+            </tr>
+            <tr>
+              <td>Thunderstorm</td>
+            </tr>
+            <tr>
+              <td>Trance Tube</td>
+            </tr>
+            <tr>
+              <td>UFO Blastoff</td>
+            </tr>
+            <tr>
+              <td>Whazzat?</td>
+            </tr>
+            <tr>
+              <td>Wheely Windy</td>
+            </tr>
+            <tr>
+              <td>Wind</td>
+            </tr>
+            <tr>
+              <td>Windy City</td>
+            </tr>
+            <tr>
+              <td>X-Mod</td>
+            </tr>
+          </table>
+        </section>
       </section>
       <h2 class="heading switch">ショートカット<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
