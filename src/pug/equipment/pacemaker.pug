@@ -1,0 +1,674 @@
+- var pagename='pacemaker tonium|spindey.com'
+- var description='Toniumのpacemakerのマニュアルです。'
+- var keywords='pacemaker,Tonium'
+doctype html
+html(lang="en")
+  include ../_include/_head.pug
+  body
+    h1.heading Pacemaker Device
+    main.equipmentMain
+      h2.heading.switch
+        | 設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | 設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→設定
+          table
+            tr
+              td タイム表示の切り替え
+              td トラック・タイム→タイム[現在時間/残り時間]
+            tr
+              td エンドアラート
+              td トラック・タイム→エンドアラート[オン、オフ] 設定ボタン→設定→設定→言語[英語、日本語、韓国語]
+            tr
+              td 設定の初期化(トラックとミックスには影響しない)
+              td 設定の初期化
+
+        h3.heading.switch
+          | 情報
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→情報
+          table
+            tr
+              td ステータスの確認
+              td ステータス[バッテリー残量(%)、使用可能なHD(GB)、使用済みHD(GB)、ミックスの数、トラックの数]
+
+        h3.heading.switch
+          | 電源
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→設定→電源
+
+          table
+            tr
+              td オート電源オフまでの時間
+              td 待機[オフ、1分、5分]
+            tr
+              td 画面の明るさ
+              td 明るさ[明るい、普通、暗い]
+
+            tr
+              td バックライトのタイマー※スリープ状態に入るまでの時間
+              td タイムアウト[オフ、10秒、30秒]
+
+            tr
+              td ナイトライト※アクティブでないボタンの薄い点灯
+              td ナイトライト[オン、オフ]
+
+            tr
+              td アクティブ・ライト※アクティブなボタンの点灯
+              td アクティブ・ライト[オン、オフ]
+
+        h3.heading.switch
+          | ミックス・コントロール
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→ミックス・コントロール
+
+          table
+            tr
+              td タイムストレッチ
+              td タイム・ストレッチ[オン、オフ]
+
+            tr
+              td ヴァイナル・ポーズ
+              td ヴァイナル・ポーズ[オン、オフ]
+                br
+                | ポーズ時アナログ風かデジタル風かの設定
+                br
+                | オン時はタッチパッドの縁でスクラッチ出来る
+
+            tr
+              td ライン・アウト警告
+              td ライン・アウト警告[オン、オフ]
+
+      h2.heading.switch
+        | エフェクト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | キルオールエフェクト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p キルオールボタンを押すとEQ、カラー/ビートFXを無効化/再有効化される
+            br
+            | キルオールを押したあとにEQ、カラー/ビートFXを変更すると前のEQとエフェクトの状態には戻せない
+            br
+            | キルオールはゲインとキーには影響しない
+
+        h3.heading.switch
+          | ビートジャンプ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pボタンを押し下げ、巻き戻しボタンを押すとビートジャンプを使用可能になる
+            br
+            | (Beat Jump Enabledと表示される)
+            br
+            | 繰り返すと後ろへジャンプ
+            br
+            | Pボタンを押し下げホールドし、早送りを押すと前へジャンプ
+
+          table
+            tr
+              td Beat jump length
+              td 設定ボタン→ミックス・コントロール→Beat jump length[1/16、1/8、1/4、1/2、1、2、4、8]
+
+
+
+        h3.heading.switch
+          | トラックのEQとゲイン
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 調整したいものによってタッチパッドの中央から上下左右にスワイプし、そのまま縁をなぞる
+            br
+            | EQとゲインレベル調整は現在の曲のみに適用される
+            br
+            | (新しいトラックを読み込むとEQとゲインはデフォルトの値にリセットされる)
+            br
+            | タッチパッド上のオーディオエフェクトの位置は設定メニューで設定可能
+
+        h3.heading.switch
+          | エフェクト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p エフェクトは現在の曲のみに適用される
+            br
+            | (新しいトラックをロードするとFXパラメータはデフォルトの値にリセットされる)
+
+
+        h3.heading.switch
+          | エフェクトのレイアウトの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p デフォルトでタッチパッド上に配置されていないエフェクトの配置
+          table
+            tr
+              td パッド・アサイン
+              td 設定ボタン→設定→設定→エフェクト・レイアウト→パッド・アサイン
+            tr
+              td 設定初期化
+              td 設定ボタン→設定→設定→エフェクト・レイアウト→設定初期化
+
+        h3.heading.switch
+          | エフェクトのクロスフェーダーのタイプの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td エフェクトのクロスフェーダーのタイプ
+              td 設定ボタン→ミックス・コントロール→X Faderタイプ[ノーマル、ベース、フィルター]
+
+        h3.heading.switch
+          | カラーFX
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p カラーFXではハイカット/ローカット、ワウ、クラッシュを追加できる
+            br
+            | デフォルトではハイカット/ローカットフィルターは左に配置されている
+            br
+            | (ワウとクラッシュはデフォルトでは使用可能ではないので、設定メニューで配置する)
+
+            table
+              tr
+                td ハイカット/ローカットフィルターの適用
+                td pスイッチを押し上げ、タッチパッド上を中央から左へスワイプし、縁をなぞる
+
+
+
+        h3.heading.switch
+          | ビートFX
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ロール、リバーブ、トランス、ディレイのビートエフェクト追加できる
+            br
+            | ビートFXでは「ドライ/ウェット」と「時間(もしくはサイズ)」の2つのパラメータを調整する
+            br
+            | デフォルトではリバーブは上に、ロールは右、エコーは下に配置されている
+            br
+            | (トランスとディレイはデフォルトでは使用可能ではないので設定メニューで配置する)
+
+          table
+            tr
+              td エフェクトの時間/サイズを調整する
+              td Pスイッチを押し上げ、ロールタイムは左、エコータイムは下へ、リバーブサイズは上へ、タッチパッドの中心から2回スワイプし、そのまま縁をなぞる
+            tr
+              td エフェクトのドライ/ウェットを調整する
+              td Pスイッチを押し上げ、ロールは左、エコーは下へ、リバーブは上へ、タッチパッドの中心から2回スワイプし、そのまま縁をなぞる
+
+        h3.heading.switch
+          | キーエフェクト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td キートランスポーズエフェクト
+              td タッチパッドの中心から割り当てられた場所までスワイプし、縁をなぞる
+            tr
+              td キーチューンエフェクト
+              td タッチパッドの中心から割り当てられた場所まで2度スワイプし、縁をなぞる
+                br
+                | ビートFXは1度に1つしか有効にならない(トランスは除く)
+
+
+
+
+      h2.heading.switch
+        | オーディオ
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | マスターボリューム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          table
+            tr
+              td マスターボリューム
+              td 設定ボタン→音量を選択し、そのままタッチパッドの縁をなぞる
+
+        h3.heading.switch
+          | マスターボリュームの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→オーディオ→ライン・アウト
+          table
+            tr
+              td 音量
+              td 音量を選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Digital
+                br
+                | ※ミックスモードのときグレーアウト
+              td Digital
+            tr
+              td Treble
+              td ライン・アウトEQ→Trebleを選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Mid
+              td ライン・アウトEQ→Midを選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Bass
+              td ライン・アウトEQ→Bassを選択し、そのままタッチパッドの縁をなぞる
+
+        h3.heading.switch
+          | マスターボリュームのノーマライズ設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+            table
+              tr
+                td ノーマライズ
+                td 設定ボタン→オーディオ→音量ノーマライズ[オン、オフ]
+
+
+        h3.heading.switch
+          | ヘッドフォン
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td チャンネルミックス
+              td pスイッチを押し下げてクロスフェーダーをなぞる
+            tr
+              td 音量コントロール
+              td Pスイッチを押し下げ、タッチパッドの縁をなぞる
+
+
+
+
+
+
+        h3.heading.switch
+          | ヘッドフォンの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→オーディオ→フォン
+          table
+            tr
+              td フォン・レンジ
+              td フォン・レンジ[High imp,Low imp]
+            tr
+              td 音量制限
+              td 音量制限を選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Treble
+              td ヘッドフォンEQ→Trebleを選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Mid
+              td ヘッドフォンEQ→Midを選択し、そのままタッチパッドの縁をなぞる
+            tr
+              td Bass
+              td ヘッドフォンEQ→Bassを選択し、そのままタッチパッドの縁をなぞる
+
+        h3.heading.switch
+          | ヘッドフォンのクロスフェーダータイプの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定ボタン→ミックス・コントロール
+          table
+            tr
+              td ヘッドフォンのクロスフェーダータイプ選択
+              td X Faderモード[基本モードに切替、詳細モードに切替]
+
+      h2.heading.switch
+        | キュー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | キューをセットする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p アクティブなチャンネルでトラック再生中にプレイボタンで曲を現在位置でポーズする
+          p 位置を移動するには早送り、巻き戻しボタン、タッチパッドの縁をなぞる
+          p キューボタンでキューポイントを設定する
+
+          p キューボタンを押すと再生中のトラックの再生位置をキューポイントに移動する
+          p キューボタンを放すと、トラックは再びキューされる
+          p キューボタンを離す前にプレイボタンを押すと曲は再生を続ける
+
+          p ※トラックごとに1つのユーザー定義のキューポイントがセットされる
+            br
+            | (新しいトラックを読み込むと前に設定したキューポイントは削除される)
+
+          p オートキューがオンのとき、ペースメーカーは最初のビートで曲にキューする
+
+          p ※キューポイントはエディターの中で設定できる
+            br
+            | エディターからペースメーカーへ曲が転送されるとき、設定されたキューポイントはペースメーカー、もしくはエディターで変更されるまで設定されている
+        h3.heading.switch
+          | オートキューを使用のオン、オフ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td オートキューを使用のオン、オフ
+              td 設定ボタン→設定→ミックス・コントロール→オート・キュー[オン、オフ]
+
+
+      h2.heading.switch
+        | ケース
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | ケースを作る
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist タッチパッドの中心をダブルタップしトラックリストに入る
+              li.contentOperationOrderlist ケースに追加したいトラック上で設定ボタンを押す
+              li.contentOperationOrderlist ケースへ追加
+              li.contentOperationOrderlist 新規ケース作成
+
+
+        h3.heading.switch
+          | 既存のケースにトラックを追加
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist タッチパッドの中心をダブルタップしトラックリストに入る
+              li.contentOperationOrderlist ケースに追加したいトラック上で設定ボタンを押す
+              li.contentOperationOrderlist ケースへ追加
+              li.contentOperationOrderlist マイ・ケース
+
+        h3.heading.switch
+          | ケースからトラックを削除
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist タッチパッドの中心をダブルタップしトラックリストに入る
+              li.contentOperationOrderlist pスイッチ押上げでフィルター
+              li.contentOperationOrderlist ケースに移動
+              li.contentOperationOrderlist 削除したい曲上で設定ボタン→ケースから削除
+
+      h2.heading.switch
+        | テンポ
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | テンポの変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し上げ、タッチパッドの縁をなぞる
+        h3.heading.switch
+          | ベンド
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p タッチパッドの淵をなぞり、一時的にトラックのテンポを変える
+            br
+            | ベンドピッチはオプションで、設定メニューから使用可能
+
+        h3.heading.switch
+          | ビート・アシスト(Beat graph)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ビート・アシストのラインが右に動いている場合はアクティブなチャンネルで再生されているトラックの方が速いので、止まるまでテンポを落とす
+
+        h3.heading.switch
+          | ビート・アシスト(Beat graph)の有効化/無効化
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ビート・アシスト(Beat graph)の有効化/無効化
+              td 設定ボタン→ミックス・コントロール→ビート・アシスト[オン、オフ]
+
+
+        h3.heading.switch
+          | オートビートマッチ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し下げてPlayボタンを押すとアクティブなチャンネルのテンポが非アクティブなトラックのテンポに同期する
+            br
+            | (トラックが両方のチャンネルで再生中のときのみ有効)
+        h3.heading.switch
+          |  シンクテンポ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pボタンを下げてCueボタンを押すとアクティブなチャンネルのテンポが非アクティブなトラックのテンポに同期する
+
+
+
+
+
+      h2.heading.switch
+        | ナビゲーションとトラック選択
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | トラックの選択と再生
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist タッチパッドの中心をダブルタップし、トラックリストを表示→トラックを右スワイプ
+              li.contentOperationOrderlist トラックを右スワイプ
+              li.contentOperationOrderlist Playボタン(Pスイッチを押し上げ、Playボタンを押すと逆再生)
+
+          p ※早送りボタン、巻き戻しボタンでアルファベットの次の頭文字へ移動できる
+          p ※トラックが再生されるかキューされるかはオート・キューのオンオフによる
+
+
+        h3.heading.switch
+          | トラックリストフィルター
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+            ul.contentOperationOrderlistGroup
+              li.contentOperationOrderlist タッチパッドの中心をダブルタップし、トラックリストを表示
+              li.contentOperationOrderlist Pスイッチを押し上げる
+              li.contentOperationOrderlist トラックパッドを左右にスライドしてフィルターを切り替えて絞り込み
+              li.contentOperationOrderlist Pスイッチを離すと条件を満たすトラックが表示される
+                br
+                | ※条件の複数指定、解除はキュー・ボタン(複数すべてを解除するには全曲を指定)
+
+          table
+            tr
+              td どのフィルターを有効にするかの設定
+              td 設定ボタン→設定→設定→フィルタリング項目[ミックス、ケース、アルバム、アーティスト、ジャンル、レーベル、BPM、Key、追加日付、レイティング、タイプ、ビットレート、年、リミックス]
+
+          table
+            tr
+              td 両チャンネルのトラックリスト
+                br
+                | (デフォルトでは独立)
+              td 設定ボタン→設定→設定→リストレイアウト[別々,共通]
+
+
+      h2.heading.switch
+        | ミックスのレコーディング
+        span.swithCondition.contentClosed
+
+      section.h2content.hide
+
+        h3.heading.switch
+          | ミックスのレコーディングの開始、停止
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 開始
+              td 設定ボタン→設定→ミックスの保存をオン
+            tr
+              td 停止
+              td 設定ボタン→設定→ミックスの保存をオフ→[保存、ミックスを破棄し・・、キャンセル]
+
+        h3.heading.switch
+          | ミックスの停止
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          ul
+            li 設定ボタン→停止→続行
+            li 設定ボタン→停止→保存(ミックスの保存がオフのときグレーアウト)
+            li 設定ボタン→停止→ロック
+            li 設定ボタン→停止→新規(ミックスの保存がオフのときグレーアウト)
+
+          table
+            tr
+              td ミックスの保存のオン/オフ
+              td 設定→ミックスの保存[オン、オフ] ※プレイ・モードのときグレーアウト
+
+
+        h3.heading.switch
+          | ミックスモードとプレイモードの切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ミックスモードからプレイモードへ切り替え
+              td 設定ボタン→設定→プレイモードに切替
+            tr
+              td プレイモードからミックスモードへ切り替え
+              td 設定ボタン→設定→ミックス・モードに切替
+
+
+        h3.heading.switch
+          | リピートをセットする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 設定→再生設定
+          table
+            tr
+              td リピート
+              td リピート[オフ、1曲、全曲]
+            tr
+              td シャッフル
+              td シャッフル[オン、オフ]
+
+
+
+      h2.heading.switch
+        | ループ
+        span.swithCondition.contentClosed
+
+      section.h2content.hide
+
+        h3.heading.switch
+          | ループをセットする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td ループにインポイントをセットする
+              td pスイッチを押し上げ、巻き戻しボタンを押してループのインポイントをセットする
+            tr
+              td エンドポイントをセットする
+              td Pスイッチを押し上げ、早送りボタンを押してループのエンドポイントをセットする
+                br
+                | Pスイッチを放す
+            tr
+              td ループを解除する
+              td Pスイッチを押上げ、cueボタンを押す
+            tr
+              td ループを出る
+              td Pスイッチボタンを押し上げ、キューボタンを押す
+            tr
+              td ループに再び入る
+              td Pスイッチボタンを押し上げ、キューボタンを押す
+            tr
+              td ループをキャンセルする
+              td Pスイッチを放す、再生方向を反転する　もしくはテンポを変更する
+
+          p ※アクティブなループの中でキュー、早送り、巻き戻しをすると自動的にループから出る
+          p ※一度設定するとループは保存されるので別のトラックがロードされてもアクティブに出来る
+          p ※トラックごとに持てるのは1ループだけなので、トラックに新しいループをセットすると前のループは上書きされる
+
+
+        h3.heading.switch
+          | アクティブなループのインポイントの調整
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し上げ、巻き戻しボタンを押す(秒数が表示される)
+            br
+            | Pスイッチを押したままタッチパッドの縁をストロークし、インポイントを移動する
+
+
+        h3.heading.switch
+          | アクティブなループのエンドポイントの調整
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し上げ、早送りボタンを押す(秒数が表示される)
+            br
+            | Pスイッチを押したままタッチパッドの縁をストロークし、アウトポイントを移動する
+
+
+        h3.heading.switch
+          | インポイントからエンドポイントの距離を分割しループを短くする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し上げ、巻き戻しボタンを押す
+            br
+            | Pスイッチを押し上げたまま、巻き戻しボタンを押すたびにループが半分の長さになる
+            br
+            | 巻き戻しボタンもしくはPスイッチを離すと終了
+
+          p 長さを戻すにはPスイッチを押し上げ、早送りボタンを押す
+            br
+            | Pスイッチを押し上げたまま、早送りボタンを押すたびにループが2倍の長さになる(最大で分割前の長さまで)
+            br
+            | 早送りボタンもしくはPスイッチを離すと終了
+
+
+        h3.heading.switch
+          | エンドポイントからインポイントの距離を分割し、ループを短くする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Pスイッチを押し上げ、早送りボタンを押す
+            br
+            | Pスイッチを押上げ、早送りボタンを押し続けたまま巻き戻しボタンを押すたびにループの長さが半分になる
+            br
+            | 早送りボタンもしくはPスイッチを離すと終了
+
+          p 長さを戻すにはPスイッチを押し上げ、巻き戻しボタンを押す
+            br
+            | Pスイッチを押上げ、巻き戻しボタンを押し続けたまま早送りボタンを押すたびにループの長さが2倍になる(最大で分割前の長さまで)
+            br
+            | 巻き戻しボタンもしくはPスイッチを離すと終了
+
+        h3.heading.switch
+          | ループの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+            p 設定ボタン→ミックス・コントロール
+            table
+              tr
+                td スナップループ
+                  br
+                  | 全ての作ったループがもっとも近いビートにスナップされる
+                td スナップループ[オン、オフ]
+
+              tr
+                td ループ・トラベル
+                td ループ・トラベル[オン、オフ]
+              tr
+                td Fixed Loop Length
+                  br
+                  | 設定したループの長さを設定値にする
+                td Fixed loop length[オフ、1/64、1/32、1/16、1/8、1/4、1/2、1、2、4]
+
+
+
+
+
+    include ../_include/_footer.pug

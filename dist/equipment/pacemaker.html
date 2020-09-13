@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="ja">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics-->
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37361015-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+        dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-37361015-2');
+      </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="keywords" content="pacemaker,Tonium">
+      <meta name="description" content="Toniumのpacemakerのマニュアルです。">
+      <meta property="og:local" content="ja_JP">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="DTM機材のマニュアルサイトです。">
+      <meta property="og:title" content="pacemaker tonium|spindey.com">
+      <meta property="og:url" content="https://spindey.com">
+      <meta property="og:image" content="https://spindey.com/img/ogp/ogp.png">
+      <meta property="og:site_title" content="spindey">
+      <title>pacemaker tonium|spindey.com</title>
+      <link rel="stylesheet" type="text/css" href="/css/style.css">
+      <script src="/js/main.js" defer=""></script>
+    </head>
+  </html>
+  <body>
+    <h1 class="heading">Pacemaker Device</h1>
+    <main class="equipmentMain">
+      <h2 class="heading switch">設定<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→設定</p>
+          <table>
+            <tr>
+              <td>タイム表示の切り替え</td>
+              <td>トラック・タイム→タイム[現在時間/残り時間]</td>
+            </tr>
+            <tr>
+              <td>エンドアラート</td>
+              <td>トラック・タイム→エンドアラート[オン、オフ] 設定ボタン→設定→設定→言語[英語、日本語、韓国語]</td>
+            </tr>
+            <tr>
+              <td>設定の初期化(トラックとミックスには影響しない)</td>
+              <td>設定の初期化</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">情報<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→情報</p>
+          <table>
+            <tr>
+              <td>ステータスの確認</td>
+              <td>ステータス[バッテリー残量(%)、使用可能なHD(GB)、使用済みHD(GB)、ミックスの数、トラックの数]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">電源<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→設定→電源</p>
+          <table>
+            <tr>
+              <td>オート電源オフまでの時間</td>
+              <td>待機[オフ、1分、5分]</td>
+            </tr>
+            <tr>
+              <td>画面の明るさ</td>
+              <td>明るさ[明るい、普通、暗い]</td>
+            </tr>
+            <tr>
+              <td>バックライトのタイマー※スリープ状態に入るまでの時間</td>
+              <td>タイムアウト[オフ、10秒、30秒]</td>
+            </tr>
+            <tr>
+              <td>ナイトライト※アクティブでないボタンの薄い点灯</td>
+              <td>ナイトライト[オン、オフ]</td>
+            </tr>
+            <tr>
+              <td>アクティブ・ライト※アクティブなボタンの点灯</td>
+              <td>アクティブ・ライト[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ミックス・コントロール<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→ミックス・コントロール</p>
+          <table>
+            <tr>
+              <td>タイムストレッチ</td>
+              <td>タイム・ストレッチ[オン、オフ]</td>
+            </tr>
+            <tr>
+              <td>ヴァイナル・ポーズ</td>
+              <td>ヴァイナル・ポーズ[オン、オフ]<br>ポーズ時アナログ風かデジタル風かの設定<br>オン時はタッチパッドの縁でスクラッチ出来る</td>
+            </tr>
+            <tr>
+              <td>ライン・アウト警告</td>
+              <td>ライン・アウト警告[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">エフェクト<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">キルオールエフェクト<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>キルオールボタンを押すとEQ、カラー/ビートFXを無効化/再有効化される<br>キルオールを押したあとにEQ、カラー/ビートFXを変更すると前のEQとエフェクトの状態には戻せない<br>キルオールはゲインとキーには影響しない</p>
+        </section>
+        <h3 class="heading switch">ビートジャンプ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pボタンを押し下げ、巻き戻しボタンを押すとビートジャンプを使用可能になる<br>(Beat Jump Enabledと表示される)<br>繰り返すと後ろへジャンプ<br>Pボタンを押し下げホールドし、早送りを押すと前へジャンプ</p>
+          <table>
+            <tr>
+              <td>Beat jump length</td>
+              <td>設定ボタン→ミックス・コントロール→Beat jump length[1/16、1/8、1/4、1/2、1、2、4、8]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">トラックのEQとゲイン<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>調整したいものによってタッチパッドの中央から上下左右にスワイプし、そのまま縁をなぞる<br>EQとゲインレベル調整は現在の曲のみに適用される<br>(新しいトラックを読み込むとEQとゲインはデフォルトの値にリセットされる)<br>タッチパッド上のオーディオエフェクトの位置は設定メニューで設定可能</p>
+        </section>
+        <h3 class="heading switch">エフェクト<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>エフェクトは現在の曲のみに適用される<br>(新しいトラックをロードするとFXパラメータはデフォルトの値にリセットされる)</p>
+        </section>
+        <h3 class="heading switch">エフェクトのレイアウトの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>デフォルトでタッチパッド上に配置されていないエフェクトの配置</p>
+          <table>
+            <tr>
+              <td>パッド・アサイン</td>
+              <td>設定ボタン→設定→設定→エフェクト・レイアウト→パッド・アサイン</td>
+            </tr>
+            <tr>
+              <td>設定初期化</td>
+              <td>設定ボタン→設定→設定→エフェクト・レイアウト→設定初期化</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">エフェクトのクロスフェーダーのタイプの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>エフェクトのクロスフェーダーのタイプ</td>
+              <td>設定ボタン→ミックス・コントロール→X Faderタイプ[ノーマル、ベース、フィルター]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">カラーFX<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>カラーFXではハイカット/ローカット、ワウ、クラッシュを追加できる<br>デフォルトではハイカット/ローカットフィルターは左に配置されている<br>(ワウとクラッシュはデフォルトでは使用可能ではないので、設定メニューで配置する)
+            <table>
+              <tr>
+                <td>ハイカット/ローカットフィルターの適用</td>
+                <td>pスイッチを押し上げ、タッチパッド上を中央から左へスワイプし、縁をなぞる</td>
+              </tr>
+            </table>
+          </p>
+        </section>
+        <h3 class="heading switch">ビートFX<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ロール、リバーブ、トランス、ディレイのビートエフェクト追加できる<br>ビートFXでは「ドライ/ウェット」と「時間(もしくはサイズ)」の2つのパラメータを調整する<br>デフォルトではリバーブは上に、ロールは右、エコーは下に配置されている<br>(トランスとディレイはデフォルトでは使用可能ではないので設定メニューで配置する)</p>
+          <table>
+            <tr>
+              <td>エフェクトの時間/サイズを調整する</td>
+              <td>Pスイッチを押し上げ、ロールタイムは左、エコータイムは下へ、リバーブサイズは上へ、タッチパッドの中心から2回スワイプし、そのまま縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>エフェクトのドライ/ウェットを調整する</td>
+              <td>Pスイッチを押し上げ、ロールは左、エコーは下へ、リバーブは上へ、タッチパッドの中心から2回スワイプし、そのまま縁をなぞる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">キーエフェクト<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>キートランスポーズエフェクト</td>
+              <td>タッチパッドの中心から割り当てられた場所までスワイプし、縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>キーチューンエフェクト</td>
+              <td>タッチパッドの中心から割り当てられた場所まで2度スワイプし、縁をなぞる<br>ビートFXは1度に1つしか有効にならない(トランスは除く)</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">オーディオ<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">マスターボリューム<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>マスターボリューム</td>
+              <td>設定ボタン→音量を選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">マスターボリュームの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→オーディオ→ライン・アウト</p>
+          <table>
+            <tr>
+              <td>音量</td>
+              <td>音量を選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Digital<br>※ミックスモードのときグレーアウト</td>
+              <td>Digital</td>
+            </tr>
+            <tr>
+              <td>Treble</td>
+              <td>ライン・アウトEQ→Trebleを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Mid</td>
+              <td>ライン・アウトEQ→Midを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Bass</td>
+              <td>ライン・アウトEQ→Bassを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">マスターボリュームのノーマライズ設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>ノーマライズ</td>
+              <td>設定ボタン→オーディオ→音量ノーマライズ[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ヘッドフォン<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>チャンネルミックス</td>
+              <td>pスイッチを押し下げてクロスフェーダーをなぞる</td>
+            </tr>
+            <tr>
+              <td>音量コントロール</td>
+              <td>Pスイッチを押し下げ、タッチパッドの縁をなぞる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ヘッドフォンの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→オーディオ→フォン</p>
+          <table>
+            <tr>
+              <td>フォン・レンジ</td>
+              <td>フォン・レンジ[High imp,Low imp]</td>
+            </tr>
+            <tr>
+              <td>音量制限</td>
+              <td>音量制限を選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Treble</td>
+              <td>ヘッドフォンEQ→Trebleを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Mid</td>
+              <td>ヘッドフォンEQ→Midを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+            <tr>
+              <td>Bass</td>
+              <td>ヘッドフォンEQ→Bassを選択し、そのままタッチパッドの縁をなぞる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ヘッドフォンのクロスフェーダータイプの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→ミックス・コントロール</p>
+          <table>
+            <tr>
+              <td>ヘッドフォンのクロスフェーダータイプ選択</td>
+              <td>X Faderモード[基本モードに切替、詳細モードに切替]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">キュー<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">キューをセットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>アクティブなチャンネルでトラック再生中にプレイボタンで曲を現在位置でポーズする</p>
+          <p>位置を移動するには早送り、巻き戻しボタン、タッチパッドの縁をなぞる</p>
+          <p>キューボタンでキューポイントを設定する</p>
+          <p>キューボタンを押すと再生中のトラックの再生位置をキューポイントに移動する</p>
+          <p>キューボタンを放すと、トラックは再びキューされる</p>
+          <p>キューボタンを離す前にプレイボタンを押すと曲は再生を続ける</p>
+          <p>※トラックごとに1つのユーザー定義のキューポイントがセットされる<br>(新しいトラックを読み込むと前に設定したキューポイントは削除される)</p>
+          <p>オートキューがオンのとき、ペースメーカーは最初のビートで曲にキューする</p>
+          <p>※キューポイントはエディターの中で設定できる<br>エディターからペースメーカーへ曲が転送されるとき、設定されたキューポイントはペースメーカー、もしくはエディターで変更されるまで設定されている</p>
+        </section>
+        <h3 class="heading switch">オートキューを使用のオン、オフ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>オートキューを使用のオン、オフ</td>
+              <td>設定ボタン→設定→ミックス・コントロール→オート・キュー[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">ケース<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">ケースを作る<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">タッチパッドの中心をダブルタップしトラックリストに入る</li>
+              <li class="contentOperationOrderlist">ケースに追加したいトラック上で設定ボタンを押す</li>
+              <li class="contentOperationOrderlist">ケースへ追加</li>
+              <li class="contentOperationOrderlist">新規ケース作成</li>
+            </ul>
+          </div>
+        </section>
+        <h3 class="heading switch">既存のケースにトラックを追加<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">タッチパッドの中心をダブルタップしトラックリストに入る</li>
+              <li class="contentOperationOrderlist">ケースに追加したいトラック上で設定ボタンを押す</li>
+              <li class="contentOperationOrderlist">ケースへ追加</li>
+              <li class="contentOperationOrderlist">マイ・ケース</li>
+            </ul>
+          </div>
+        </section>
+        <h3 class="heading switch">ケースからトラックを削除<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">タッチパッドの中心をダブルタップしトラックリストに入る</li>
+              <li class="contentOperationOrderlist">pスイッチ押上げでフィルター</li>
+              <li class="contentOperationOrderlist">ケースに移動</li>
+              <li class="contentOperationOrderlist">削除したい曲上で設定ボタン→ケースから削除</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <h2 class="heading switch">テンポ<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">テンポの変更<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し上げ、タッチパッドの縁をなぞる</p>
+        </section>
+        <h3 class="heading switch">ベンド<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>タッチパッドの淵をなぞり、一時的にトラックのテンポを変える<br>ベンドピッチはオプションで、設定メニューから使用可能</p>
+        </section>
+        <h3 class="heading switch">ビート・アシスト(Beat graph)<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ビート・アシストのラインが右に動いている場合はアクティブなチャンネルで再生されているトラックの方が速いので、止まるまでテンポを落とす</p>
+        </section>
+        <h3 class="heading switch">ビート・アシスト(Beat graph)の有効化/無効化<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>ビート・アシスト(Beat graph)の有効化/無効化</td>
+              <td>設定ボタン→ミックス・コントロール→ビート・アシスト[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オートビートマッチ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し下げてPlayボタンを押すとアクティブなチャンネルのテンポが非アクティブなトラックのテンポに同期する<br>(トラックが両方のチャンネルで再生中のときのみ有効)</p>
+        </section>
+        <h3 class="heading switch"> シンクテンポ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pボタンを下げてCueボタンを押すとアクティブなチャンネルのテンポが非アクティブなトラックのテンポに同期する</p>
+        </section>
+      </section>
+      <h2 class="heading switch">ナビゲーションとトラック選択<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">トラックの選択と再生<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">タッチパッドの中心をダブルタップし、トラックリストを表示→トラックを右スワイプ</li>
+              <li class="contentOperationOrderlist">トラックを右スワイプ</li>
+              <li class="contentOperationOrderlist">Playボタン(Pスイッチを押し上げ、Playボタンを押すと逆再生)</li>
+            </ul>
+          </div>
+          <p>※早送りボタン、巻き戻しボタンでアルファベットの次の頭文字へ移動できる</p>
+          <p>※トラックが再生されるかキューされるかはオート・キューのオンオフによる</p>
+        </section>
+        <h3 class="heading switch">トラックリストフィルター<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">タッチパッドの中心をダブルタップし、トラックリストを表示</li>
+              <li class="contentOperationOrderlist">Pスイッチを押し上げる</li>
+              <li class="contentOperationOrderlist">トラックパッドを左右にスライドしてフィルターを切り替えて絞り込み</li>
+              <li class="contentOperationOrderlist">Pスイッチを離すと条件を満たすトラックが表示される<br>※条件の複数指定、解除はキュー・ボタン(複数すべてを解除するには全曲を指定)</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <td>どのフィルターを有効にするかの設定</td>
+              <td>設定ボタン→設定→設定→フィルタリング項目[ミックス、ケース、アルバム、アーティスト、ジャンル、レーベル、BPM、Key、追加日付、レイティング、タイプ、ビットレート、年、リミックス]</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>両チャンネルのトラックリスト<br>(デフォルトでは独立)</td>
+              <td>設定ボタン→設定→設定→リストレイアウト[別々,共通]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">ミックスのレコーディング<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">ミックスのレコーディングの開始、停止<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>開始</td>
+              <td>設定ボタン→設定→ミックスの保存をオン</td>
+            </tr>
+            <tr>
+              <td>停止</td>
+              <td>設定ボタン→設定→ミックスの保存をオフ→[保存、ミックスを破棄し・・、キャンセル]</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ミックスの停止<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <ul>
+            <li>設定ボタン→停止→続行</li>
+            <li>設定ボタン→停止→保存(ミックスの保存がオフのときグレーアウト)</li>
+            <li>設定ボタン→停止→ロック</li>
+            <li>設定ボタン→停止→新規(ミックスの保存がオフのときグレーアウト)</li>
+          </ul>
+          <table>
+            <tr>
+              <td>ミックスの保存のオン/オフ</td>
+              <td>設定→ミックスの保存[オン、オフ] ※プレイ・モードのときグレーアウト</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ミックスモードとプレイモードの切り替え<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>ミックスモードからプレイモードへ切り替え</td>
+              <td>設定ボタン→設定→プレイモードに切替</td>
+            </tr>
+            <tr>
+              <td>プレイモードからミックスモードへ切り替え</td>
+              <td>設定ボタン→設定→ミックス・モードに切替</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">リピートをセットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定→再生設定</p>
+          <table>
+            <tr>
+              <td>リピート</td>
+              <td>リピート[オフ、1曲、全曲]</td>
+            </tr>
+            <tr>
+              <td>シャッフル</td>
+              <td>シャッフル[オン、オフ]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">ループ<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">ループをセットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>ループにインポイントをセットする</td>
+              <td>pスイッチを押し上げ、巻き戻しボタンを押してループのインポイントをセットする</td>
+            </tr>
+            <tr>
+              <td>エンドポイントをセットする</td>
+              <td>Pスイッチを押し上げ、早送りボタンを押してループのエンドポイントをセットする<br>Pスイッチを放す</td>
+            </tr>
+            <tr>
+              <td>ループを解除する</td>
+              <td>Pスイッチを押上げ、cueボタンを押す</td>
+            </tr>
+            <tr>
+              <td>ループを出る</td>
+              <td>Pスイッチボタンを押し上げ、キューボタンを押す</td>
+            </tr>
+            <tr>
+              <td>ループに再び入る</td>
+              <td>Pスイッチボタンを押し上げ、キューボタンを押す</td>
+            </tr>
+            <tr>
+              <td>ループをキャンセルする</td>
+              <td>Pスイッチを放す、再生方向を反転する　もしくはテンポを変更する</td>
+            </tr>
+          </table>
+          <p>※アクティブなループの中でキュー、早送り、巻き戻しをすると自動的にループから出る</p>
+          <p>※一度設定するとループは保存されるので別のトラックがロードされてもアクティブに出来る</p>
+          <p>※トラックごとに持てるのは1ループだけなので、トラックに新しいループをセットすると前のループは上書きされる</p>
+        </section>
+        <h3 class="heading switch">アクティブなループのインポイントの調整<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し上げ、巻き戻しボタンを押す(秒数が表示される)<br>Pスイッチを押したままタッチパッドの縁をストロークし、インポイントを移動する</p>
+        </section>
+        <h3 class="heading switch">アクティブなループのエンドポイントの調整<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し上げ、早送りボタンを押す(秒数が表示される)<br>Pスイッチを押したままタッチパッドの縁をストロークし、アウトポイントを移動する</p>
+        </section>
+        <h3 class="heading switch">インポイントからエンドポイントの距離を分割しループを短くする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し上げ、巻き戻しボタンを押す<br>Pスイッチを押し上げたまま、巻き戻しボタンを押すたびにループが半分の長さになる<br>巻き戻しボタンもしくはPスイッチを離すと終了</p>
+          <p>長さを戻すにはPスイッチを押し上げ、早送りボタンを押す<br>Pスイッチを押し上げたまま、早送りボタンを押すたびにループが2倍の長さになる(最大で分割前の長さまで)<br>早送りボタンもしくはPスイッチを離すと終了</p>
+        </section>
+        <h3 class="heading switch">エンドポイントからインポイントの距離を分割し、ループを短くする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Pスイッチを押し上げ、早送りボタンを押す<br>Pスイッチを押上げ、早送りボタンを押し続けたまま巻き戻しボタンを押すたびにループの長さが半分になる<br>早送りボタンもしくはPスイッチを離すと終了</p>
+          <p>長さを戻すにはPスイッチを押し上げ、巻き戻しボタンを押す<br>Pスイッチを押上げ、巻き戻しボタンを押し続けたまま早送りボタンを押すたびにループの長さが2倍になる(最大で分割前の長さまで)<br>巻き戻しボタンもしくはPスイッチを離すと終了</p>
+        </section>
+        <h3 class="heading switch">ループの設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>設定ボタン→ミックス・コントロール</p>
+          <table>
+            <tr>
+              <td>スナップループ<br>全ての作ったループがもっとも近いビートにスナップされる</td>
+              <td>スナップループ[オン、オフ]</td>
+            </tr>
+            <tr>
+              <td>ループ・トラベル</td>
+              <td>ループ・トラベル[オン、オフ]</td>
+            </tr>
+            <tr>
+              <td>Fixed Loop Length<br>設定したループの長さを設定値にする</td>
+              <td>Fixed loop length[オフ、1/64、1/32、1/16、1/8、1/4、1/2、1、2、4]</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+    </main>
+    <footer><a href="/">spindey.com</a></footer>
+    <div class="loadingLayer" id="js-loadingLayer">
+      <div class="loadingIconBox">
+        <div class="loadingBar1"></div>
+        <div class="loadingBar2"></div>
+        <div class="loadingBar3"></div>
+        <div class="loadingBar4"></div>
+        <div class="loadingBar5"></div>
+      </div>
+    </div>
+    <div class="button" id="js-returntop"></div>
+  </body>
+</html>
