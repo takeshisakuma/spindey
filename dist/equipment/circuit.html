@@ -183,6 +183,7 @@
       <section class="h2content hide">
         <h3 class="heading switch">シンセ パッチのプレビュー<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
+          <p>モノフォニックパッチは1つのノートを演奏し、ポリフォニックパッチはコードを演奏する</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -190,7 +191,11 @@
               <li class="contentOperationOrderlist">32パッドを押す</li>
             </ul>
           </div>
-          <p>SHIFTキーを押しながらだと、プレビューの演奏をしない<br>                モノフォニックパッチは1つのノートを演奏し、ポリフォニックパッチはコードを演奏する<br>                レコーディング中はプレビューが演奏されない</p>
+          <p>プレビューの演奏をしない方法</p>
+          <ul>
+            <li>SHIFTキーを押しながらシンセパッチビューで32パッドを押す</li>
+            <li>レコーディング中にシンセパッチビューで32パッドを押す</li>
+          </ul>
         </section>
         <h3 class="heading switch">パッチの選択<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -514,7 +519,7 @@
               <li class="contentOperationOrderlist">再度Recordを押して録音を停止</li>
             </ul>
           </div>
-          <p>Circuitのシンセエンジンは6ノートポリフォニックであるため、選択したパッチがポリフォニックであれば、パターン上の任意のステップで最大6つのノートを同時に演奏することができる<br></p>
+          <p>Circuitのシンセエンジンは6ノートポリフォニックなので、選択したパッチがポリフォニックであれば、パターン上の任意のステップで最大6つのノートを同時に演奏することができる<br></p>
         </section>
       </section>
       <h2 class="heading switch">シンセ(マクロ)<span class="swithCondition contentClosed"></span></h2>
@@ -552,7 +557,7 @@
               <li class="contentOperationOrderlist">ノブをひねる(LEDが赤くなる)</li>
             </ul>
           </div>
-          <p>ノブの動きを再生したい場合、シーケンスが新しいループを開始する前に録音モードを解除する必要がある<br>                そうでなければ、新しいノブの位置に対応するデータでオートメーションデータを上書きしてしまう</p>
+          <p>ノブの動きを再生したい場合、シーケンスが新しいループを開始する前に録音モードを解除しないと、新しいノブの位置に対応するデータでオートメーションデータを上書きしてしまう</p>
         </section>
         <h3 class="heading switch">ノブの動きを記録する(再生停止中)<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -635,7 +640,7 @@
               <li class="contentOperationOrderlist">Synth 1 or 2を押してSynth 1 or 2ビューを開く</li>
             </ul>
           </div>
-          <p>上二行には鍵盤が示され、下二行にはシーケンサーが示される<br>                鍵盤は 2 オクターブで構成され、濃い紫色のパッドはそれぞれ最低ノートと最高ノートを表す</p>
+          <p>上二行には鍵盤が示され、下二行にはシーケンサーが示される<br>鍵盤は2オクターブで構成され、濃い紫色のパッドはそれぞれ最低音のノートと最高音のノートを表す</p>
         </section>
         <h3 class="heading switch">ノートの削除<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -651,7 +656,7 @@
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">ノートを追加したいステップのパターンパッドを押しながら、パフォーマンスパッドで任意のノートを演奏し、パターンパッドから指を離す<br>[Record を押す必要は無い]</li>
+              <li class="contentOperationOrderlist">ノートを追加したいステップのパターンパッドを押しながら、パフォーマンスパッドで任意のノートを演奏し、パターンパッドから指を離す<br>[Recordを押す必要は無い]</li>
             </ul>
           </div>
         </section>
@@ -668,11 +673,47 @@
           </div>
         </section>
       </section>
-      <h2 class="heading switch">シンセ(Velocity と Gate)<span class="swithCondition contentClosed"></span></h2>
+      <h2 class="heading switch">シンセ(Velocity)<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
         <h3 class="heading switch">Velocity<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>Velocity：ノートのボリュームがパッドを叩く強さにどのように関連するかを決定する<br>各ステップのVelocity値は、そのステップに割り当てられた全てのノートに適用される<br>ベロシティパラメータは、ノートに適用されるスピードとそのボリュームの関係を決定<br>Velocity値が大きい場合にはノートの音量が大きくなり、Velocity値が低い場合にはノートの音量が小さくなる<br>パフォーマンスパッドを演奏する際、Velocity値が各ステップに割り当てられる<br>Velocity値は、ノートごとではなくステップごとに設定されるため、一つのステップ内の全てのノートは同じVelocity値となる<br>ステップごとにVelocityパラメータを設定することができ、Circuitでは、パターンの作成後にもステップのVelocity値を1～16の値に変更できる<br>これはVelocityビューで行われる<br>Velocityボタンを押してこのビューを選択すると、ボタンがオフホワイトに点灯する<br>Velocityビューでは、グリッドの下二行がパターンステップを示す<br>パターンステップディスプレイ内の1つのパッドが白色/青色に交互に点滅し、Velocity値が表示されているステップを示す<br>グリッドの上二行では、16セグメントのバーグラフメーターを構成している</p>
+          <p>ノートのボリュームがパッドを叩く強さにどのように関連するかを決定する</p>
+          <p>Velocity値は、「ノートごと」ではなく「ステップごと」に設定されるので、一つのステップ内の全てのノートは同じVelocity値になる</p>
+          <table>
+            <tr>
+              <td>Velocity値が大きい場合</td>
+              <td>ノートの音量が大きくなる</td>
+            </tr>
+            <tr>
+              <td>Velocity値が低い場合</td>
+              <td>ノートの音量が小さくなる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Velocityビュー<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Velocityビューに切り替えるとVelocity値を変更できる(1～16の値)<br>Velocityボタンを押してこのビューを選択すると、ボタンがオフホワイトに点灯する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">Velocityボタンを押してVelocityビューに切り替える</li>
+              <li class="contentOperationOrderlist">ベロシティ値に対応するベロシティ値ディスプレイ行のパッドを押して、ベロシティ値を変更</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <td>グリッドの上二行</td>
+              <td>16セグメントのバーグラフメーター<br>パターンステップディスプレイ内の1つのパッドが白色/青色に交互に点滅し、Velocity値が表示されているステップを示す</td>
+            </tr>
+            <tr>
+              <td>グリッドの下二行</td>
+              <td>パターンステップ</td>
+            </tr>
+          </table>
+          <p>パターンの再生中にVelocityビューで、ベロシティ値を変更することも可能<br>この場合、ベロシティ値を変更したいステップのパッドを押し続ける<br>これはパターン内のどの地点でも行える<br>押さえられたステップパッドは赤く点灯し、上二行がフリーズして選択されたステップのベロシティ値を表示する<br>ここで、新しく変更したい値に対応するベロシティパッドを押す<br>パターンは再生を続けるため、リアルタイムに様々なベロシティ値に変更しながら、その違いを聞くことができる</p>
+        </section>
+        <h3 class="heading switch">Velocity値<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
           <p>白色に点灯しているパッドの数は、選択したステップのVelocity値を示す<br>リアルタイムに録音を行う場合(シーケンサーを再生しながら録音を行う場合)、ベロシティ値は内部で7ビットの精度に設定される(0～127の値)<br>Velocityビューでは、16セグメントで8ずつベロシティ値を示す(16のパッドしか使用できないため)<br>このため、ディスプレイ上の「最後の」パッドが暗く点灯する場合がある<br>例：Velocity値が100の場合、パッド1～12は完全に点灯し、パッド13は薄暗く点灯(100の値がパッド12とパッド13の中間の値であるため)</p>
           <table>
             <tr>
@@ -744,54 +785,64 @@
               <td>127</td>
             </tr>
           </table>
-          <p>ベロシティ値に対応するベロシティ値ディスプレイ行のパッドを押すことで、ベロシティ値を変更できる<br>                ベロシティ値を上げる場合には、値に対応するパッドを押す<br>                パターンの再生中に Velocity ビュー を使用して、ベロシティ値を変更することも可能<br>                この場合、ベロシ ティ値を変更したいステップのパッドを押し続ける<br>                これはパターン内のどの地点でも行える<br>                押さえられたス テップパッドは赤く点灯し、上二行がフリーズして選択されたステップのベロシティ値を表示する<br>                ここで、新し く変更したい値に対応するベロシティパッドを押す<br>                パターンは再生を続けるため、リアルタイムに様々 なベロシティ値に変更しながら、その違いを聞くことができる</p>
-        </section>
-        <h3 class="heading switch">Gate<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>Gate：ノートの持続時間を設定する<br>                各ステップのGate 値は、そのステップに割り当てられた全てのノートに適用される</p>
-          <p>Gate ビューでは、グリッドの下二行にパターンステップが表示される<br>                グリッドの上二行では16セグメントのバーグラフメーターが構成され、白く点灯しているパッドの数が、選択されているステップのゲート値を表す</p>
-          <p>ゲート値ディスプレイ行でゲート値に対応するパッドを押すことで、ゲート値を変更できる<br>                そのステップ内のノートが鳴る長さはパターンステップ数と同じ長さになる<br>                ゲート値を短くしたい場合、変更したい値に対応するパッドを押す<br>                音が続いてほしい長さに実際に相当するステップ数に 対応したパッドを押すことがルールとなっている</p>
-          <p>パターンの再生中にゲート値を変更する</p>
-          <div class="contentOperationBox">
-            <p class="contentOperationCaption">操作</p>
-            <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Gate ビューを開く</li>
-              <li class="contentOperationOrderlist">ゲート値を変更したいステップのパッドを押しながら上2行のパッドからGate値を選択</li>
-            </ul>
-          </div>
-          <p>ゲート値は1～16で示され、数字(ステップの数)はそのステップ内のノートが鳴る長さを表す<br>                Circuit では、全体的なステップ数に一番近いものにそれらをクオンタイズする<br>                ゲート値が 16の場合、そのステップ内のノートがパターン全体中で鳴り続ける<br>                ゲート値を編集することでそのステップに含まれる全てのノートが同じ値となる</p>
-          <p>シンセトラックのノートの長さは1/6ステップ単位で指定可能<br>                シンセ・ゲート・ビューの長さパッドを繰り返し押し、色の濃さを変更する</p>
         </section>
         <h3 class="heading switch">固定ベロシティ<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>固定ベロシティはベロシティ値を96に固定する<br>                シンセシーケンスを構成するノートが、実際にパッドを叩く強さに関わらず演奏されるため、より機械的な印象が増す<br></p>
+          <p>固定ベロシティはベロシティ値を96に固定する<br>シンセシーケンスを構成するノートが、実際にパッドを叩く強さに関わらず演奏されるため、より機械的な印象が増す<br></p>
           <p>固定ベロシティを有効にする</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Shiftボタンを押したまま Velocityボタンを押す</li>
+              <li class="contentOperationOrderlist">Shiftボタンを押したままVelocityボタンを押す</li>
             </ul>
           </div>
-          <p>固定ベロシティ有効時は、Shift を押している間 Velocity ボタンが明るい白に点灯する</p>
+          <p>固定ベロシティ有効時は、Shiftを押している間Velocityボタンが明るい白に点灯する</p>
           <p>ベロシティを固定に設定しても、既に録音しているノートのベロシティ値は変わらない</p>
+        </section>
+      </section>
+      <h2 class="heading switch">シンセ(Gate)<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Gate<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ノートの持続時間を設定する<br>各ステップのGate値は、そのステップに割り当てられた全てのノートに適用される</p>
+          <p>パターンの再生中にゲート値を変更する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">Gateビューを開く</li>
+              <li class="contentOperationOrderlist">ゲート値を変更したいステップのパッドを押しながら上2行のパッドからGate値を選択</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <td>グリッドの上二行</td>
+              <td>16セグメントのバーグラフメーターが構成され、白く点灯しているパッドの数が、選択されているステップのゲート値を表す</td>
+            </tr>
+            <tr>
+              <td>グリッドの下二行</td>
+              <td>パターンステップが表示される</td>
+            </tr>
+          </table>
+          <p>ゲート値は1～16で示され、数字(ステップの数)はそのステップ内のノートが鳴る長さを表す<br>Circuitでは、全体的なステップ数に一番近いものにそれらをクオンタイズする<br>ゲート値が16の場合、そのステップ内のノートがパターン全体中で鳴り続ける<br>ゲート値を編集することでそのステップに含まれる全てのノートが同じ値となる</p>
+          <p>シンセトラックのノートの長さは1/6ステップ単位で指定可能<br>シンセ・ゲート・ビューの長さパッドを繰り返し押し、色の濃さを変更する</p>
         </section>
       </section>
       <h2 class="heading switch">シンセ(鍵盤設定)<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
         <h3 class="heading switch">拡大Noteビュー<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>拡大 Note ビューを使用することで、クロマチックスケールで 2オクターブの範囲を演奏することができる</p>
+          <p>拡大Noteビューを使用することで、クロマチックスケールで2オクターブの範囲を演奏することができる</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Synth 1 かSynth2選択済みの状態でShiftボタンを押しながら Note ボタン を押す<br>[Note が白色に点灯]</li>
+              <li class="contentOperationOrderlist">Synth 1 かSynth2選択済みの状態でShiftボタンを押しながらNoteボタンを押す<br>[Note が白色に点灯]</li>
             </ul>
           </div>
-          <p>拡大 Note ビュー解除</p>
+          <p>拡大Noteビュー解除</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">再度 Note を押す</li>
+              <li class="contentOperationOrderlist">再度Noteを押す</li>
             </ul>
           </div>
         </section>
@@ -800,16 +851,16 @@
           <p>シンセでは合計12オクターブの範囲から演奏することができる</p>
           <table>
             <tr>
-              <td>Oct ▲ ボタン</td>
-              <td>押すたびに、ピッチレンジを1 オクターブずつ上げる(最大5オクターブ上)</td>
+              <td>Oct▲ボタン</td>
+              <td>押すたびに、ピッチレンジを1オクターブずつ上げる(最大5オクターブ上)</td>
             </tr>
             <tr>
-              <td>Oct ▼ボタン</td>
-              <td>押すたびに、ピッチレンジを1 オクターブずつ下げる(最大6オクターブ下)</td>
+              <td>Oct▼ボタン</td>
+              <td>押すたびに、ピッチレンジを1オクターブずつ下げる(最大6オクターブ下)</td>
             </tr>
           </table>
-          <p>デフォルトのオクターブの一番低いノートは標準ピアノ鍵盤の中央 C</p>
-          <p> 最も高い、 または低いオクターブの設定では、キーボードのサイズ(範囲)が制限される</p>
+          <p>デフォルトのオクターブの一番低いノートは標準ピアノ鍵盤の中央C</p>
+          <p>最も高い、または低いオクターブの設定では、キーボードのサイズ(範囲)が制限される</p>
         </section>
         <h3 class="heading switch">スケール<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -817,19 +868,19 @@
         </section>
         <h3 class="heading switch">スケール選択<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>スケールは、再生中にも変更することが可能<br>                選択されたスケールは、Synth 1 と Synth 2 の両方に適用される</p>
+          <p>スケールは、再生中にも変更することが可能<br>選択されたスケールは、Synth1とSynth2の両方に適用される</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Scaleボタンを押して Scale ビュー にアクセスする</li>
+              <li class="contentOperationOrderlist">Scaleボタンを押してScaleビューにアクセスする</li>
               <li class="contentOperationOrderlist">17～32パッドでスケールを選択する</li>
             </ul>
           </div>
-          <p>選択されたスケールは、パターンを保存する際に保存される<br>                パッドの配置が1オクターブ分の(Cから始まる)鍵盤のレイアウトをシミュレートしている<br>                二行目が白鍵を示しており、一行目が黒鍵を示している<br>                このビューではパッド1、 4、 8、16 が常に無効となり、 パッド 2、3、5、6、7 が黒鍵として機能する<br>                Noteを再度押して Scale ビューを終了すると、 Note ビューの上二行に、選択されているスケールの2オクターブ分のノートが表示される<br>                しかしクロマチックスケールを選択した場合には、スケール内の12の全てのノートを演奏することができる<br>                そのため、クロマチックスケールの場合には1オクターブ分のみの鍵盤を使用することになる<br>                これにより、 Note ビュー の上二行が Scale ビュー 上二行と同じレイアウトになる</p>
+          <p>選択されたスケールは、パターンを保存する際に保存される<br>                パッドの配置が1オクターブ分の(Cから始まる)鍵盤のレイアウトをシミュレートしている<br>                二行目が白鍵を示しており、一行目が黒鍵を示している<br>                このビューではパッド1、4、8、16が常に無効となり、パッド2、3、5、6、7が黒鍵として機能する<br>                Noteを再度押してScaleビューを終了すると、Noteビューの上二行に、選択されているスケールの2オクターブ分のノートが表示される<br>                しかしクロマチックスケールを選択した場合には、スケール内の12の全てのノートを演奏することができる<br>                そのため、クロマチックスケールの場合には1オクターブ分のみの鍵盤を使用することになる<br>                これにより、Noteビューの上二行がScaleビュー上二行と同じレイアウトになる</p>
         </section>
         <h3 class="heading switch">スケール一覧<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>Scale ビューでは、グリッド下二行の部分で16種類のスケールから選択を行う<br>                以下の表では、スケール 内の一番低い音が C の場合に各スケールに含まれるノートを示す</p>
+          <p>Scaleビューでは、グリッド下二行の部分で16種類のスケールから選択を行う<br>以下の表では、スケール内の一番低い音がCの場合に各スケールに含まれるノートを示す</p>
           <div class="tableScroll">
             <table>
               <tr>
@@ -1074,7 +1125,7 @@
               </tr>
               <tr>
                 <td>31</td>
-                <td> ホールトーン</td>
+                <td>ホールトーン</td>
                 <td>〇</td>
                 <td></td>
                 <td>〇</td>
@@ -1090,7 +1141,7 @@
               </tr>
               <tr>
                 <td>32</td>
-                <td> クロマチック</td>
+                <td>クロマチック</td>
                 <td>〇</td>
                 <td>〇</td>
                 <td>〇</td>
@@ -1109,12 +1160,12 @@
         </section>
         <h3 class="heading switch">ルートノート(音)<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ルート音は、再生中にも変更することが可能<br>                選択されたルート音は、Synth 1 と Synth 2 の両方に適用される</p>
-          <p>全てのスケールのデフォルトのルート音はC<br>                Scale ビューでは、C に対応するパッド 9が他のパッドよりも暗い青色に点灯<br>                シンセノートを含んでいるパターンを作成した後、パターンを再生しながら主音を変更することでパターンをトランス ポーズすることができる<br>                また、既存のパターンのスケール自体を変更することも可能<br>                この場合、作成されたパターンの一部のノートが新しいスケールに存在しない場合があるが、このような場合存在しないノートの代わりに再生するノートを自動的に選択する<br>                通常、元のノートよりも半音上または下のノートが選択される</p>
+          <p>ルート音は、再生中にも変更することが可能<br>                選択されたルート音は、Synth1とSynth2の両方に適用される</p>
+          <p>全てのスケールのデフォルトのルート音はC<br>                Scaleビューでは、Cに対応するパッド9が他のパッドよりも暗い青色に点灯<br>                シンセノートを含んでいるパターンを作成した後、パターンを再生しながら主音を変更することでパターンをトランスポーズすることができる<br>                また、既存のパターンのスケール自体を変更することも可能<br>                この場合、作成されたパターンの一部のノートが新しいスケールに存在しない場合があるが、このような場合存在しないノートの代わりに再生するノートを自動的に選択する<br>                通常、元のノートよりも半音上または下のノートが選択される</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Scale ビューで別のノートを選択する<br>                        (Scale ビューの上二行では、常に C から B までの 1オクターブ分が表示される)</li>
+              <li class="contentOperationOrderlist">Scale ビューで別のノートを選択する<br>                        (Scaleビューの上二行では、常にCからBまでの1オクターブ分が表示される)</li>
               <li class="contentOperationOrderlist">別のルート音が選択されるとパッドの照明が変化し、新しい鍵盤で現在選択されているスケールに使用できるノートが示される</li>
             </ul>
           </div>
@@ -1146,30 +1197,40 @@
         </section>
         <h3 class="heading switch">ドラムトラック<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>Circuit には Drum 1～Drum 4 の4つのドラムトラックが備わっている<br>                ドラムトラックのグリッドディスプレイはシンセトラックのものとは異なり、ドラムデータは奇数と偶数のペアで示され、全てのディスプレイがパターンステップを表示し、シンセで表示されるようなピッチに関する情報は表示されない</p>
-          <p>ドラムの入力<br>                Drum1 ・Drum2を押す<br>                ドラムノートビューは、常にペアで構成されている<br>                上二行には Drum 1 が、下二行には Drum2 が示され、Drum 3 および Drum 4 も全く同じように動作</p>
+          <p>CircuitにはDrum1～4の4つのドラムトラックがある<br>                ドラムトラックのグリッドディスプレイはシンセトラックのものとは異なり、ドラムデータは奇数と偶数のペアで示され、全てのディスプレイがパターンステップを表示し、シンセで表示されるようなピッチに関する情報は表示されない</p>
         </section>
         <h3 class="heading switch">ドラムを演奏する<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>2つのペアのドラムの動作は、 RGB カラーコーディングを除いて同一<br>                Drum 1 とDrum 2 はペアとしてオレンジで表示され、Drum 3 と Drum 4 は黄色で表示される<br>                Note ビューで Drum 1 または Drum 2 のいずれかを押すと、Drum 1 は上二行に、 Drum 2 は下二行に表示される<br>                Note ビューで Drum 3 または Drum 4 のいずれかを押すと、Drum 3 は上二行に、 Drum 4 は下二行に表示される<br>                ただし、32全てのパッドグリッドが 4つのうち 1つのドラムを示すビューも存在する</p>
+          <p>Drum1とDrum2はペアとしてオレンジで表示され、Drum3とDrum4は黄色で表示される</p>
+          <table>
+            <tr>
+              <td>NoteビューでDrum1またはDrum2のいずれかを押す</td>
+              <td>Drum1は上二行に、Drum2は下二行に表示される</td>
+            </tr>
+            <tr>
+              <td>NoteビューでDrum3またはDrum4のいずれかを押す</td>
+              <td>Drum3は上二行に、Drum4は下二行に表示される</td>
+            </tr>
+          </table>
+          <p>32全てのパッドグリッドが4つのうち1つのドラムを示すビューも存在する</p>
         </section>
         <h3 class="heading switch">拡大ビュー<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>4つのドラムセット(それぞれ 1つのパッドが 1種類のドラムに対応)から手動で ドラムパターンを打ち込むことができる</p>
+          <p>4つのドラムセット(それぞれ1つのパッドが1種類のドラムに対応)から手動でドラムパターンを打ち込むことができる</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Shiftボタンを押しながら Noteボタン を押す<br>[パッド 29～ 32以外のグリッドパッドが全て無効になる]</li>
+              <li class="contentOperationOrderlist">Shiftボタンを押しながらNoteボタンを押す<br>[パッド29～32以外のグリッドパッドが全て無効になる]</li>
             </ul>
           </div>
-          <p>拡大 Note ビュー では、リアルタイムに自由にドラムパッドを演奏できる<br>                また、Record を押すことでそれらをパターンに録音することも可能<br>                タイミングをクオンタイズすることでドラムヒットを 16のステップパターンに合わせることができる<br>                既存のパターンを再生しながら 拡大 Noteビューを使用することで、追加のヒットを録音することができる</p>
+          <p>拡大Noteビューでは、リアルタイムに自由にドラムパッドを演奏できる<br>                また、Recordを押すことでそれらをパターンに録音することも可能<br>                タイミングをクオンタイズすることでドラムヒットを16のステップパターンに合わせることができる<br>                既存のパターンを再生しながら拡大Noteビューを使用することで、追加のヒットを録音することができる</p>
         </section>
         <h3 class="heading switch">ドラムパターンを録音する<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">ドラムトラックの Note ビュー を開く</li>
+              <li class="contentOperationOrderlist">ドラムトラックのNoteビューを開く</li>
               <li class="contentOperationOrderlist">REC</li>
               <li class="contentOperationOrderlist">パフォーマンスパッドを叩く</li>
             </ul>
@@ -1177,21 +1238,31 @@
         </section>
         <h3 class="heading switch">ヒットの手動入力とステップ編集<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>パターンを再生していない場合には、 Note ビューではドラムヒットが聞こない<br>Noteビューでは、上下 2つのペアのグリッドパッドで 16ステップのパターンを示し、全てのパッドがパフォーマンスパッドとなる<br>停止モードでは、パターンを手動で変更することができる<br>加えたいヒットのステップパッド(薄く点灯しているもの)を押すだけで、ヒットを加えることができる<br>明るいステップパッドを押すと、ヒットが削除され点灯が暗くなる<br>ドラムヒットのその他の変更各ヒットのベロシティを変更することも可能</p>
+          <p>パターンを再生していない場合には、Noteビューではドラムヒットが聞こえない<br>Noteビューでは、上下2つのペアのグリッドパッドで16ステップのパターンを示し、全てのパッドがパフォーマンスパッドとなる<br>停止モードでは、パターンを手動で変更することができる<br>加えたいヒットのステップパッド(薄く点灯しているもの)を押すだけで、ヒットを加えることができる<br>明るいステップパッドを押すと、ヒットが削除され点灯が暗くなる</p>
         </section>
-        <h3 class="heading switch">Clear と Duplicate<span class="swithCondition contentClosed"></span></h3>
+        <h3 class="heading switch">ClearとDuplicate<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <table>
             <tr>
               <td>Clear</td>
-              <td>テップに含まれている全てのオートメーションデータ(マクロノブの動き)を削除</td>
+              <td>ステップに含まれている全てのオートメーションデータ(マクロノブの動き)も削除</td>
             </tr>
             <tr>
               <td>Duplicate</td>
-              <td>ステップに含まれている全てのオートメーションデータ(マクロノブの動き)をコピー</td>
+              <td>ステップに含まれている全てのオートメーションデータ(マクロノブの動き)もコピー</td>
             </tr>
           </table>
-          <p>Duplicateを使用して ステップからステップへドラムヒットをコピーすると、オートメーションによってドラムサウンドに与えられた変更も新しいステップにコピーされる<br>ステップからドラムヒットを削除した場合、そのステップのオートメーショ ンデータは保持されるため、そのステップに録音される新しいドラムヒットに影響する<br>Clear機能を使用すると、 オートメーションデータも削除されるので、後から追加されるドラムヒットは元のサウンドとなる</p>
+          <p>ドラムヒット削除時</p>
+          <table>
+            <tr>
+              <td>入力済みのステップをオフにした場合</td>
+              <td>そのステップのオートメーションデータは残るので、後に入力されるドラムヒットに影響する</td>
+            </tr>
+            <tr>
+              <td>Clear機能で削除した場合</td>
+              <td>オートメーションデータも削除されるので、後から追加されるドラムヒットは元のサウンドになる</td>
+            </tr>
+          </table>
         </section>
       </section>
       <h2 class="heading switch">ドラム(velocity)<span class="swithCondition contentClosed"></span></h2>
@@ -1204,17 +1275,41 @@
               <th>詳細</th>
             </tr>
             <tr>
-              <td>Note ビュー で入力されたドラムヒット</td>
-              <td>ベロシティが 96に固定される(Velocity ビュー で12のパッドが点灯)</td>
+              <td>Noteビューで入力されたドラムヒット</td>
+              <td>ベロシティが96に固定される(Velocityビューで12のパッドが点灯)</td>
             </tr>
             <tr>
-              <td> 拡大ビューで入力されたドラムヒット</td>
+              <td>拡大ビューで入力されたドラムヒット</td>
               <td>パッドを叩く強さによって決定</td>
             </tr>
           </table>
-          <p>拡大ビュー で(4つのパッドをタップして)入力されるドラムヒットのベロシティ値は、パッドを叩く強さによって決定される<br>Circuit では、パターンを作成した後にも Velocity ビュー でステップのベロシティ値を変更できる<br>Velocityボタンを押すとVelocityビューが開かれる<br>ドラムトラックはペアで構成されるため、ドラムのVelocityビューは、シンセのVelocityビューとは異なる<br>Velocity ビュー では、グリッドの上二行が Drum 1 または Drum 3 の16ステップパターンを示し、下二行には 16セグメントのバーグラフメーターが示される<br>オフホワイトに点灯しているパッドの数が、選択されているステップのベロシティ値を表す<br>Drum 2 または Drum 4 を選択した場合二行ずつのペアの配置が逆転し、ベロ シティメーターがステップの上に配置される<br>パターンステップディスプレイ内の 1つのパッドが白 /オレンジ色 に交互に点滅し、ベロシティ値が表示されているステップを表す<br>ベロシティ値が8の倍数でない場合、ベロシティディスプレイの最後のパッドが薄く点灯する<br>また、ステップパッドを押すとそのステップのドラムヒットが聞こえる<br>ベロシティ値ディスプレイ内のパッドを押すことで、それに対応するベロシティ値に変更できる<br>ベロシティ値を下げたい場合、変更したい値に対応するパッドを押す</p>
-          <p>Note ビュー で入力されたドラムヒットは、ベロシティが 96に固定される(Velocity ビュー で12のパッドが点灯)<br>パターンの再生中に Velocity ビュー を使用して、ベロシティ値を変更することも可能<br>この場合、ベロシティ値を変更したいステップのパッドを押し続ける<br>これはパターン内のどの地点でも行える<br>押さえられたステップパッドは赤く点灯し、他の二行がフリーズして選択されたステップのベロシティ値を表示する<br>ここで、新しく 変更したい値に対応するパッドを押す<br>パターンは再生を続けるため、リアルタイムに様々なベロシティ値に変更することができる</p>
-          <p> Velocity ビューで、ドラムヒットの入力</p>
+        </section>
+        <h3 class="heading switch">Velocityビュー<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ドラムトラックはペアで構成されるので、ドラムのVelocityビューは、シンセのVelocityビューとは異なる</p>
+          <p>オフホワイトに点灯しているパッドの数が、選択されているステップのベロシティ値を表す<br>パターンステップディスプレイ内の1つのパッドが白/オレンジ色に交互に点滅し、ベロシティ値が表示されているステップを表す<br>ベロシティ値が8の倍数でない場合、ベロシティディスプレイの最後のパッドが薄く点灯する</p>
+          <p>Velocityビューで、ドラムヒットの入力</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作</p>
+            <ul class="contentOperationOrderlistGroup">
+              <li class="contentOperationOrderlist">Velocityボタンを押すとVelocityビューが開かれる</li>
+            </ul>
+          </div>
+          <table>
+            <tr>
+              <td>グリッドの上二行</td>
+              <td>16ステップパターンを示す(Drum1またはDrum3の場合)<br>16セグメントのバーグラフメーターを示す(Drum2またはDrum4の場合)</td>
+            </tr>
+            <tr>
+              <td>グリッドの下二行</td>
+              <td>16セグメントのバーグラフメーターを示す(Drum1またはDrum3の場合)<br>16ステップパターンを示す(Drum2またはDrum4の場合)</td>
+            </tr>
+          </table>
+          <p>ステップパッドを押すとそのステップのドラムヒットが聞こえる</p>
+          <p>ディスプレイ内のパッドを押すことで、それに対応するベロシティ値に変更できる</p>
+        </section>
+        <h3 class="heading switch">Velocityビューでのドラムヒットの入力<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
@@ -1223,35 +1318,39 @@
           </div>
           <p>小さなボリュームで「隠し」ヒットを加える際に便利</p>
         </section>
+        <h3 class="heading switch">入力済みのノートのベロシティ変更<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パターンの再生中にVelocityビューを使用して、ベロシティ値を変更可能<br>この場合、ベロシティ値を変更したいステップのパッドを押し続ける<br>これはパターン内のどの地点でも行える<br>押さえられたステップパッドは赤く点灯し、他の二行がフリーズして選択されたステップのベロシティ値を表示する<br>ここで、新しく変更したい値に対応するパッドを押す<br>パターンは再生を続けるため、リアルタイムに様々なベロシティ値に変更することができる</p>
+        </section>
         <h3 class="heading switch">拡大ビューでの固定ベロシティ<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>拡大ビュー 内で4つのパフォーマンスパッドを使用してヒットを入力する場合、ベロシティを無効にすると効果的な場合がある<br>                固定ベロシティが有効の場合、ベロシティ値を96に固定する</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Shiftボタンを押しながら Velocityボタンを押す</li>
+              <li class="contentOperationOrderlist">Shiftボタンを押しながらVelocityボタンを押す</li>
             </ul>
           </div>
-          <p>固定ベロシティ有効時：Shiftを 押している間 Velocity ボタンが白く点灯する</p>
+          <p>固定ベロシティ有効時：Shiftを押している間Velocityボタンが白く点灯する</p>
         </section>
       </section>
       <h2 class="heading switch">ドラム(パッチ)<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
         <h3 class="heading switch">パッチの選択<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>Circuit の4つのドラムトラックでは、64種類のパッチ(プリセット)を使用できる</p>
+          <p>4つのドラムトラックで64種類のパッチ(プリセット)を使用できる</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Shiftボタンを押しながら Drum 1、Drum 2、Drum 3、Drum 4のいずれかを押す</li>
+              <li class="contentOperationOrderlist">Shiftボタンを押しながらDrum1、Drum2、Drum3、Drum4のいずれかを押す</li>
             </ul>
           </div>
-          <p>Drum 1 または 2 および Oct ▲(または、Drum 3 または 4 および Oct ▼)が白く点灯し、グリッドのパッドがそれぞれ 32のドラムパッチ( Drum 1 または 2 にはパッチ 1～32、Drum 3 または 4 にはパッチ 33～64) を示す<br>                使用しているドラムトラックに関わらず、点灯していない Octave ボタンを押すことで他のページを表示できる</p>
+          <p>Drum1または2およびOct▲(または、Drum3または4およびOct▼)が白く点灯し、グリッドのパッドがそれぞれ32のドラムパッチ(Drum1または2にはパッチ1～32、Drum3または4にはパッチ33～64)を示す<br>使用しているドラムトラックに関わらず、点灯していないOctaveボタンを押すことで他のページを表示できる</p>
           <p>保存されているパターンのパッチを変更した場合にも、セッションを再度保存しない限り、先にパターンと共に保存されていたパッチは変更されない</p>
         </section>
         <h3 class="heading switch">ドラムパッチのプレビュー<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ドラムプレビュー（可変、もしくは固定ベロシティ）<br>                シフト押しながらだとプレビューの演奏をしない<br>                ベロシティビューのステップのプレビューはドラムトラックがミュートでも再生中に動作する</p>
+          <p>ドラムプレビュー（可変、もしくは固定ベロシティ）<br>シフト押しながらだとプレビューの演奏をしない<br>ベロシティビューのステップのプレビューはドラムトラックがミュートでも再生中に動作する</p>
         </section>
       </section>
       <h2 class="heading switch">ドラム(マクロ)<span class="swithCondition contentClosed"></span></h2>
@@ -1327,14 +1426,15 @@
         </section>
         <h3 class="heading switch">ノブの動きを記録する<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>ノブを動かしながら Recordを押して、録音モードに切り替える<br>録音モードに切り替えると、はじめはマクロコントロール下のLEDが直前と同じ色と明るさのままだが、調整を加えるとLEDがただちに赤くなり、ノブの動きが記録されていることを示す<br>シーケンサーが走っていない場合(Circuit が停止モードの場合)にも、特定のドラムヒットにマクロオートメーションを追加することができる<br>シンセトラックとは異なり、ドラムトラックのNoteビューにはステップパターンディスプレイが個別に表示されないため、 Velocityを押して、Velocity ビューを表示する必要がある<br>Recordボタンを押して(明るい赤色に点灯)、サウンドを変更したいドラムヒットを選択する<br>すると、現在割り当てられているドラムサウンドが聞こえ、パッドがトラックカラー(オレンジまたは緑色)と赤色に交互に点滅する<br>必要に応じて、使用しているドラムトラックのマクロコントロールを動かす<br>マクロLEDがトラックカラーから赤色に変わる<br>これを行いながらそのパッドを繰り返し押すことで、ドラムヒットを演奏し続けることができる<br>任意のサウンドが得られたら、録音モードを終了する<br>1つのヒットのみサウンドを変更したい場合、上記の手順を繰り返すが、この場合ヒットを含む他のいずれかのステップを選択し、マクロコントロールをリセットしてオリジナルのサウンドに戻す<br>そして、録音モードを終了する<br>これにより、最初にサウンドを変更したヒットのみが変化する<br>シーケンスを走らせると、他の全てのヒットに新しいマクロの設定が適用される</p>
+          <p>ノブを動かしながらRecordを押して、録音モードに切り替える<br>録音モードに切り替えると、はじめはマクロコントロール下のLEDが直前と同じ色と明るさのままだが、調整を加えるとLEDがただちに赤くなり、ノブの動きが記録されていることを示す<br>シーケンサーが走っていない場合(Circuitが停止中)にも、特定のドラムヒットにマクロオートメーションを追加することができる<br>シンセトラックとは異なり、ドラムトラックのNoteビューにはステップパターンディスプレイが個別に表示されないため、Velocityを押して、Velocityビューを表示する必要がある<br>Recordボタンを押して(明るい赤色に点灯)、サウンドを変更したいドラムヒットを選択する<br>すると、現在割り当てられているドラムサウンドが聞こえ、パッドがトラックカラー(オレンジまたは緑色)と赤色に交互に点滅する<br>必要に応じて、使用しているドラムトラックのマクロコントロールを動かす<br>マクロLEDがトラックカラーから赤色に変わる<br>これを行いながらそのパッドを繰り返し押すことで、ドラムヒットを演奏し続けることができる<br>任意のサウンドが得られたら、録音モードを終了する</p>
+          <p>1つのヒットのみサウンドを変更したい場合、上記の手順を繰り返すが、この場合ヒットを含む他のいずれかのステップを選択し、マクロコントロールをリセットしてオリジナルのサウンドに戻す<br>そして、録音モードを終了する<br>これにより、最初にサウンドを変更したヒットのみが変化する<br>シーケンスを走らせると、他の全てのヒットに新しいマクロの設定が適用される</p>
         </section>
         <h3 class="heading switch">マクロオートメーションデータを削除<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作</p>
             <ul class="contentOperationOrderlistGroup">
-              <li class="contentOperationOrderlist">Clear を押しながら該当のノブを 20%以上回転させる</li>
+              <li class="contentOperationOrderlist">Clearを押しながら該当のノブを20%以上回転させる</li>
               <li class="contentOperationOrderlist">ノブ下の LED が赤く点灯し、削除される</li>
             </ul>
           </div>
