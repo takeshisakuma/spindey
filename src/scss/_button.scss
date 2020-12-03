@@ -1,49 +1,49 @@
 .controllerKnob {
-  padding-left: 1.6rem;
-  position: relative;
+    padding-left: 1.6rem;
+    position: relative;
 }
 
 .controllerKnob:before {
-  background-image: url(/img/icon/knob.svg);
-  background-size: 1rem;
-  content: "";
-  height: 1rem;
-  left: 0.4rem;
-  position: absolute;
-  top: 0;
-  width: 1rem;
+    background-image: url(/img/icon/knob.svg);
+    background-size: 1rem;
+    content: "";
+    height: 1rem;
+    left: 0.4rem;
+    position: absolute;
+    top: 0;
+    width: 1rem;
 }
 
 .controllerButton {
-  border: 0.1rem solid #333333;
-  border-radius: 0.2rem;
-  font-size: 0.6rem;
-  margin: 0 0.2rem;
-  padding: 0.2rem;
-  vertical-align: middle;
-  white-space: nowrap;
+    border: 0.1rem solid #333333;
+    border-radius: 0.2rem;
+    font-size: 0.6rem;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    vertical-align: middle;
+    white-space: nowrap;
 }
 
 .controllerPage {
-  padding-left: 1.6rem;
-  position: relative;
+    padding-left: 1.6rem;
+    position: relative;
 }
 
 .controllerPage:before {
-  background-image: url(/img/icon/page.svg);
-  background-size: 1rem;
-  content: "";
-  height: 1rem;
-  left: 0.4rem;
-  position: absolute;
-  top: 0;
-  width: 1rem;
+    background-image: url(/img/icon/page.svg);
+    background-size: 1rem;
+    content: "";
+    height: 1rem;
+    left: 0.4rem;
+    position: absolute;
+    top: 0;
+    width: 1rem;
 }
 
 .imageZone {
-  text-align: center;
+    text-align: center;
 }
 
 .imageZone img {
-  max-width: 100%;
+    max-width: 100%;
 }

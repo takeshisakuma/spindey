@@ -1,141 +1,123 @@
 @media screen and (max-width: 959px) {
+    h1.heading {
+        font-size: 1.6rem;
+        text-align: center;
+    }
 
-  h1.heading {
-    font-size: 1.6rem;
-    text-align: center;
-  }
+    h2.heading {
+        background-color: #535c68;
+        border-bottom: 1px solid #eee;
+        color: #eee;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 16px 48px 16px 16px;
+        position: relative;
+    }
 
-  h2.heading {
-    background-color: #535c68;
-    border-bottom: 1px solid #eee;
-    color: #eee;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 16px 48px 16px 16px;
-    position: relative;
-  }
+    h3.heading {
+        background-color: #95afc0;
+        border-bottom: 1px solid #eee;
+        color: #333;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 16px 48px 16px 16px;
+        position: relative;
+    }
 
-  h3.heading {
-    background-color: #95afc0;
-    border-bottom: 1px solid #eee;
-    color: #333;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 16px 48px 16px 16px;
-    position: relative;
-  }
+    h4.heading {
+        border: 1px solid #333;
+        color: lawngreen;
+        margin: 0;
+        padding: 10px;
+    }
 
-  h4.heading {
-    border: 1px solid #333;
-    color: lawngreen;
-    margin: 0;
-    padding: 10px;
-  }
+    h5.heading {
+        border: 1px solid #333;
+        color: purple;
+        margin: 0;
+        padding: 10px;
+    }
 
-  h5.heading {
-    border: 1px solid #333;
-    color: purple;
-    margin: 0;
-    padding: 10px;
-  }
+    section {
+        padding: 0;
+    }
 
+    .h2content {
+        background-color: #fff;
+    }
 
+    .h3content {
+        background-color: #fff;
+        padding: 0 10px 10px 10px;
+    }
 
-
-  section {
-    padding: 0;
-  }
-
-  .h2content {
-    background-color: #fff;
-  }
-
-  .h3content {
-    background-color: #fff;
-    padding: 0 10px 10px 10px;
-  }
-
-  .hide {
-    display: none;
-  }
-
-
+    .hide {
+        display: none;
+    }
 }
 
-
-
-
-
 @media screen and (min-width: 960px) {
+    h1.heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 
-  h1.heading {
-    font-size: 2.5rem;
-    text-align: center;
-  }
+    .equipmentMain {
+        width: 1140px;
+        margin: 0 auto 0;
+        padding-bottom: 160px;
+    }
 
-  .equipmentMain {
-    width: 1140px;
-    margin: 0 auto 0;
-    padding-bottom: 160px;
-  }
+    h2.heading {
+        background-color: #34495e;
+        color: #fff;
+        font-size: 1.9rem;
+        margin: 0;
+        padding: 20px 20px 20px 20px;
+        position: relative;
+    }
 
-  h2.heading {
+    h3.heading {
+        border-left: 4px solid #e74c3c;
+        color: #333;
+        font-size: 1.6rem;
+        margin: 40px 0 20px 10px;
+        padding: 0 20px 0 20px;
+        position: relative;
+    }
 
-    background-color: #34495e;
-    color: #fff;
-    font-size: 1.9rem;
-    margin: 0;
-    padding: 20px 20px 20px 20px;
-    position: relative;
-  }
+    h4.heading {
+        border: 1px solid #333;
+        color: lawngreen;
+        margin: 0;
+        padding: 10px;
+    }
 
-  h3.heading {
-    border-left: 4px solid #e74c3c;
-    color: #333;
-    font-size: 1.6rem;
-    margin: 40px 0 20px 10px;
-    padding: 0 20px 0 20px;
-    position: relative;
-  }
+    h5.heading {
+        border: 1px solid #333;
+        color: purple;
+        margin: 0;
+        padding: 10px;
+    }
 
-  h4.heading {
-    border: 1px solid #333;
-    color: lawngreen;
-    margin: 0;
-    padding: 10px;
-  }
+    section {
+        padding: 0;
+    }
 
-  h5.heading {
-    border: 1px solid #333;
-    color: purple;
-    margin: 0;
-    padding: 10px;
-  }
+    section + h2.heading {
+        margin-top: 80px;
+    }
 
+    .h2content {
+        background-color: #fff;
+    }
 
+    .h3content {
+        background-color: #fff;
+        padding: 0 10px 10px 10px;
+    }
 
-
-  section {
-    padding: 0;
-  }
-
-  section+h2.heading {
-    margin-top: 80px;
-  }
-
-
-  .h2content {
-    background-color: #fff;
-  }
-
-  .h3content {
-    background-color: #fff;
-    padding: 0 10px 10px 10px;
-  }
-
-  .hide {
-    display: block;
-  }
-
-
+    .hide {
+        display: block;
+    }
 }
