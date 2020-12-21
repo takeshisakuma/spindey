@@ -29,1097 +29,907 @@
     </head>
   </html>
   <body>
-    <h1 class="heading">Beatstep</h1>    BeatStep firmware
-        V 1.2.0.3
-        新機能：
-        プリセットリセット
-        RECALL + STOPを押す
-        パッドキャリブレーションを除くすべてのデータをデフォルトに戻す
-        フルリセット
-        RECALL + PLAYを押す
-        パッドキャリブレーションを含むすべてのデータをデフォルトに戻す
-        改善点：
-        より速いノブ加速
-        シーケンサー実行中のパッド上のMIDIチャンネルの視覚化の改善
-        V 1.1.0.0
-        新機能：
-        追加の設定をローカルで提供する
-        SEQモードでユニットにいくつかのパラメーターを直接設定する方法がある
-        Shift +ノブ1：ゲート時間を設定(50％.. 99％)
-        Shift +ノブ2：スイングを設定(50％.. 75％)
-        Shift +ノブ3：レガートモードを設定する(オフ/オン/オンリセット)
-        CNTRLモードのコントローラーでパッドをトランスポーズする
-        CNTRLモードでShift +大きなノブを使用してパッドをトランスポーズできる
-        (+ /-24半ステップ範囲)
-        シーケンサーの大きなノブの移調範囲を拡張する移調範囲(大きなノブ)を+/- 12から+/- 24半ステップ拡張した
-        ーーーーーーーーーーーーーーーーーー
-        http://downloads.arturia.net/products/beatstep/manual/BeatStep_Manual_1_0_1_JP.pdf
+    <h1 class="heading">Beatstep</h1>
     <main class="equipmentMain">
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
+      <h2 class="heading switch">基本的な情報<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
-        <h3 class="heading switch">コンピューターとBeatStep を接続して使用する<span class="swithCondition contentClosed"></span></h3>
+        <h3 class="heading switch">モード<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <p>もっとも基本的な使用例は、BeatStep は、USB規格に準拠しているので、USB ポートのあるコンピューターと接続をし、様々なアプリケーションの入力デバイスとして使用する事ができる<br>Arturia の MIDI コントロールセンター・ユーティリティは、BeatStep のエンコーダーとパッドが送信するMIDI コマンドを定義するために使用することができる</p>
-        </section>
-        <h3 class="heading switch">MIDI や CV/GATE プロダクトとBeatStepを接続して使用する<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>BeatStep は、データを送受信することができ、コンピューターの USB ポートからのバスパワーで動作する<br>コントロール情報は、 BeatStep のMIDI ポートとCV/GATE コネクターから他のデバイスに送信することも可能</p>
-        </section>
-        <h3 class="heading switch">iPad® とBeatStep を接続する<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>カメラコネクション・キットを使用することでiPadの入力デバイスとしても使用できるようになる</p>
-        </section>
-        <h3 class="heading switch">フロントパネルについて<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>レベル/レート/トランスポーズ・エンコーダー</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>エンコーダー</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>パッド</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>トランスポート・コントロール</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>モード・ボタン</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>RECALL/STORE ボタン</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>SHIFT ボタン</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>CHAN ボタン</td>
-              <td></td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">モードとは？<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>トップパネルにある 17 個のエンコーダーと 16 個のパッドは、選択したモードによって 2 つの主な機能がある<br>コントローラー(CNTRL)モード<br>シーケンサー(SEQ)モード</p>
+          <p>トップパネルにある17個のエンコーダーと16個のパッドは、選択したモードによって2つの主な機能がある</p>
+          <p>使用中のモードは、パッドや、CNTRL/SEQボタンの色で表示される</p>
           <table>
             <tr>
               <td>赤</td>
-              <td>CNTRL</td>
+              <td>コントローラー(CNTRL)モード</td>
             </tr>
             <tr>
               <td>青</td>
-              <td>SEQ</td>
+              <td>シーケンサー(SEQ)モード</td>
             </tr>
           </table>
-          <p>使用中のモードは、パッドや、CNTRL/SEQ ボタンの色で表示される：</p>
-          <p>CNTRL/SEQ ボタンを押すことで、いつでもこれらのモードを切り替えることができる</p>
+          <p>モードの切り替え</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">CNTRL/SEQボタン</li>
+              </ul>
+            </p>
+          </div>
         </section>
-        <h3 class="heading switch">フロントパネルについて<span class="swithCondition contentClosed"></span></h3>
+        <h3 class="heading switch">フロントパネル<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <table>
             <tr>
-              <td>Level/Rate/Transpose エンコーダー</td>
-              <td>        この大きなエンコーダーは、選択したモードにより 3 種類の機能を使用できる：<br> CNTRL モードでは、デフォルトでマスターレベルをコントロールするが、他のパラメーターをコントロールするためにアサインすることも可能<br> SEQ モードでは、テンポを変更するが、SHIFT ボタンを同時に使用するとシーケンス全体を半音階ステップでトランスポーズする</td>
-            </tr>
-            <tr>
-              <td>Level/Rate/Transpose エンコーダー</td>
-              <td>この大きなエンコーダーは、選択したモードにより 3 種類の機能を使用できる：<br> CNTRL モードでは、デフォルトでマスターレベルをコントロールするが、他のパラメーターをコントロールするためにアサインすることも可能<br> SEQ モードでは、テンポを変更するが、SHIFT ボタンを同時に使用するとシーケンス全体を半音階ステップでトランスポーズする</td>
+              <td>Level/Rate/Transposeエンコーダー</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>CNTRLモード</td>
+                    <td>マスターレベルをコントロールする(デフォルト)<br>他のパラメーターをコントロールするためにアサインすることも可能</td>
+                  </tr>
+                  <tr>
+                    <td>SEQモード</td>
+                    <td>テンポを変更する<br>SHIFTボタンを同時に使用するとシーケンス全体を半音階ステップでトランスポーズする</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>エンコーダー</td>
-              <td>16個の”エンドレス”エンコーダーは非常に汎用性がある<br> CNTRL モードでは、すべての機能をプログラム可能なエンコーダーになる<br> SEQ モードでは、対応するステップのノートを設定する</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>CNTRLモード</td>
+                    <td>すべての機能をプログラム可能なエンコーダーになる</td>
+                  </tr>
+                  <tr>
+                    <td>SEQモード</td>
+                    <td>対応するステップのノートを設定する</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
               <td>パッド</td>
-              <td>また、モードは 16 個のベロシティ＆プレッシャーセンシティブ・パッドの機能も切替える<br> CNTRL モードでは、ほぼどんなMIDI 関連の機能でもアサインすることができる<br> SEQ モードでは、シーケンスのステップの有効/無効を決定する<br>SHIFT ボタンと使用することでプレーモード、タイミング値、入力スケールやシーケンスの長さを設定することができる</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>CNTRLモード</td>
+                    <td>MIDI関連の機能をアサインできる</td>
+                  </tr>
+                  <tr>
+                    <td>SEQモード</td>
+                    <td>シーケンスのステップの有効/無効を決定</td>
+                  </tr>
+                </table>SHIFTボタンと使用することでプレーモード、タイミング値、入力スケールやシーケンスの長さを設定することができる
+              </td>
             </tr>
             <tr>
               <td>トランスポート・コントロール</td>
               <td>
                 <table>
                   <tr>
-                    <td>PLAY/STOP ボタン</td>
-                    <td>MIDI マシンコントロール・メッセージを使用してシーケンサーをコントロールする<br>DAWがMMC コマンドに反応しない場合は、他の MIDI メッセージを送信することも可能<br>変更を必要とする時は、Arturia の MIDI コントロールセンター・ソフトウェアを使用する</td>
+                    <td>PLAY/STOPボタン</td>
+                    <td>MIDIマシンコントロール・メッセージを使用してシーケンサーをコントロールする<br>DAWがMMCコマンドに反応しない場合は、他のMIDIメッセージを送信することも可能<br>変更する場合はArturiaのMIDIコントロールセンター・ソフトウェアを使用する</td>
                   </tr>
                   <tr>
-                    <td>STOP ボタン</td>
-                    <td>機能は明らか</td>
+                    <td>STOPボタン</td>
+                    <td>停止</td>
                   </tr>
                   <tr>
-                    <td>PLAY ボタン</td>
-                    <td>PAUSE/CONTINUE ボタンとしても機能する 再生中のシーケンスを一時停止し、数秒後に再びシーケンスを開始させるにためには、PLAY ボタンを使用する</td>
+                    <td>PLAYボタン</td>
+                    <td>PAUSE/CONTINUEボタンとしても機能する<br>再生中のシーケンスを一時停止し、数秒後に再びシーケンスを開始させるにためには、PLAYボタンを使用する</td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
               <td>モード・ボタン</td>
-              <td>2つのボタンには重要な機能がある
+              <td>
                 <table>
                   <tr>
-                    <td>CNTRL/SEQ ボタン</td>
-                    <td> 2 つのモード間を切替える<br>トップパネルのLEDの色でアクティブになっているモードを表示す<br>CNTRL モードは赤<br>SEQ モードは青</td>
+                    <td>CNTRL/SEQボタン</td>
+                    <td>2つのモード間を切替える<br>トップパネルのLEDの色でアクティブになっているモードを表示す<br>CNTRLモードは赤<br>SEQモードは青</td>
                   </tr>
                   <tr>
-                    <td>EXT SYNC ボタン</td>
-                    <td>マスター/スレーブ状態を切替える</td><br>外部シンク・モードが有効な場合、このボタンが点灯する<br>次の 4 種類のボタンは、パッドとの組み合わせのみで使用することができる
+                    <td>EXT SYNCボタン</td>
+                    <td>マスター/スレーブ状態を切替える</td><br>外部シンク・モードが有効な場合、このボタンが点灯する<br>次の4種類のボタンは、パッドとの組み合わせのみで使用することができる
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
-              <td>RECALL/STORE ボタン</td>
-              <td>  RECALL を押しながらパッドを選択する<br>16個のプリセットの中から1つをロードすることができる<br> STORE を押しながらパッドを選択する<br>使用中のプリセットを保存することができる</td>
+              <td>RECALL/STOREボタン</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>RECALLを押しながらパッドを選択する</td>
+                    <td>16個のプリセットの中から1つをロードすることができる</td>
+                  </tr>
+                  <tr>
+                    <td>STOREを押しながらパッドを選択する</td>
+                    <td>使用中のプリセットを保存することができる</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
             <tr>
-              <td>SHIFT ボタン</td>
-              <td>SEQ モードでのみ有効になり、パッドで再生モード、タイミング値、やエンコーダーの入力スケール等の値を設定できるようになる</td>
+              <td>SHIFTボタン</td>
+              <td>SEQモードでのみ有効<br>パッドで再生モード、タイミング値、やエンコーダーの入力スケール等の値を設定できるようになる</td>
             </tr>
             <tr>
-              <td>CHAN ボタン(グローバル MIDI チャンネル)</td>
-              <td>CHAN ボタンを押しながらパッドを選択する<br>グローバル MIDI チャンネルを設定することができる<br>注： SEQ モードでのみ動作し、ボタンとの組み合わせで行われる操作がある<br>SHIFT ボタンと CHANボタンの両方を押したまま操作をするとシーケンスの長さを設定するために 16 個のパッドを使用する事ができる</td>
-            </tr>
-            <tr>
-              <td>CHAN ボタン(グローバル MIDI チャンネル)</td>
-              <td>CHAN ボタンを押しながらパッドを選択する<br>グローバル MIDI チャンネルを設定することができる<br>注： SEQ モードでのみ動作し、ボタンとの組み合わせで行われる操作がある<br>SHIFT ボタンと CHANボタンの両方を押したまま操作をするとシーケンスの長さを設定するために 16 個のパッドを使用する事ができる</td>
+              <td>CHAN ボタン(グローバルMIDIチャンネル)</td>
+              <td>
+                <table>
+                  <tr>
+                    <td>CHAN ボタンを押しながらパッドを選択</td>
+                    <td>グローバルMIDIチャンネルを設定することができる</td>
+                  </tr>
+                  <tr>
+                    <td>SHIFTボタンとCHANボタンの両方を押したまま操作をする</td>
+                    <td>シーケンスの長さを設定するために16個のパッドを使える</td>
+                  </tr>
+                </table>
+              </td>
             </tr>
           </table>
         </section>
-        <h3 class="heading switch">サイドパネルについて<span class="swithCondition contentClosed"></span></h3>
+        <h3 class="heading switch">サイドパネル<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <table>
             <tr>
-              <td>Gate/CV アウトプット</td>
-              <td>これらは通常、Arturia の強力なモノフォニック・シンセサイザー(MiniBruteやMicroBrute)などの外部デバイス、またはモジュラー・シンセサイザーに電気信号を送信する際に使用される</td>
+              <td>Gate/CVアウトプット</td>
+              <td>外部デバイスやモジュラー・シンセサイザーに電気信号を送信する時に使う</td>
             </tr>
             <tr>
-              <td>MIDI コネクション</td>
-              <td>外部の MIDI 対応機器にあらゆる種類のコントロール信号を送信するために同梱の MIDI アダプターを使用する<br>BeatStep の各エンコーダーとパッドは、特定の MIDI データを送信するように独立して設定することができる</td>
+              <td>MIDIコネクション</td>
+              <td>外部のMIDI対応機器にのコントロール信号を送信するために同梱のMIDIアダプターを使用する<br>BeatStepの各エンコーダーとパッドは、特定のMIDIデータを送信するように独立して設定することができる</td>
             </tr>
             <tr>
-              <td>USB/DC インプット</td>
-              <td>このジャックは、コンピューターへのデータ送受信、および電源の供給を受けるために接続することができる<br>BeatStepは、コンピューターが無くてもコントローラーのプリセットとシーケンスを使用することができ、汎用のUSB 充電器によって使用することも可能</td>
+              <td>USB/DCインプット</td>
+              <td>このジャックは、コンピューターへのデータ送受信、および電源の供給を受けるために接続することができる<br>BeatStepは、コンピューターが無くてもコントローラーのプリセットとシーケンスを使用することができ、汎用のUSB充電器によって使用することも可能</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">フルリセット<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッドキャリブレーションを含むすべてのデータをデフォルトに戻す</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">RECALL+PLAYを押す</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <main class="equipmentMain">
+      <h2 class="heading switch">外部機器との接続<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">コンピューターとBeatStepを接続して使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>もっとも基本的な使用例は、BeatStepは、USB規格に準拠しているので、USBポートのあるコンピューターと接続をし、様々なアプリケーションの入力デバイスとして使用する事ができる<br>ArturiaのMIDIコントロールセンター・ユーティリティは、BeatStepのエンコーダーとパッドが送信するMIDIコマンドを定義するために使用することができる</p>
+        </section>
+        <h3 class="heading switch">MIDIやCV/GATEプロダクトとBeatStepを接続して使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStepは、データを送受信することができ、コンピューターのUSBポートからのバスパワーで動作する<br>コントロール情報は、BeatStepのMIDIポートとCV/GATEコネクターから他のデバイスに送信することも可能</p>
+        </section>
+        <h3 class="heading switch">iPadと接続する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>カメラコネクション・キットを使用することでiPadの入力デバイスとしても使用できるようになる</p>
+        </section>
+        <h3 class="heading switch">グローバル MIDI チャンネルを変更する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>CHANボタンとBeatStep のパッドの1つを組み合わせて切り替えを行う</p>
+          <p>例：BeatStepのグローバル・チャンネルをチャンネル2に切り替えたい場合、"CHAN"ボタンとパッド2を押す</p>
+          <p>例：BeatStepのグローバル・チャンネルをチャンネル1に切り替えたい場合、"CHAN"ボタンとパッド1を押す</p>
+        </section>
+        <h3 class="heading switch">シーケンサー・チャンネル<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>デフォルトでは、グローバル MIDI チャンネルとシーケンサー・チャンネルは同じ値に設定されている(MIDIチャンネル 1)</p>
+          <p>しかしこれらは、独立して設定することができるので、 CNTRL モードで、エンコーダーとパッドで 1 つのデバイスをコントロールし、シーケンサーで別のデバイスを演奏することも可能</p>
+          <p>MIDI コントロールセンター・ウィンドウの右側でシーケンサー・チャンネルを見つけることができる</p>
+        </section>
+      </section>
+      <h2 class="heading switch">プリセット<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">デフォルトのプリセット<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プリセットとシーケンスは、「白紙状態」のセッティングを提供し、クリエイティブな設定の出発点となるようデフォルトから始めることができる</p>
+          <table>
+            <tr>
+              <td>CNTRLモード</td>
+              <td>
+                <ul>
+                  <li>エンコーダーは、MIDICC番号を送信するように割り当てられている</li>
+                  <li>パッドは半音階でサウンドを演奏するように割り当てられている</li>
+                  <li>トランスポート・ボタンは、MMCによってSTOPとSTARTコマンドを送信する</li>
+                  <li>すべては、グローバルMIDIチャンネルで送信するように設定されている</li>
+                </ul>
+                <p>※グローバルMIDIチャンネルのデフォルト値は、チャンネル1</p>
+              </td>
+            </tr>
+            <tr>
+              <td>SEQモード</td>
+              <td>
+                <ul>
+                  <li>パッドはすべて同じMIDIノートに設定されている(C3、またはMIDIノート＃60)</li>
+                  <li>シーケンス内のすべてのステップが有効になっている</li>
+                  <li>各シーケンスは16ステップのパターンレングスを有している</li>
+                  <li>エンコーダーは、中間点、または0からトランスポートを開始する</li>
+                  <li>エンコーダーのピッチエディットにはクロマチック・スケールが使用されている</li>
+                  <li>再生モードはフォワード(FWD)に設定されている</li>
+                  <li>ステップサイズは1/16に設定されている</li>
+                </ul>
+                <p>以下のSEQモード・パラメーターは、シーケンスごとではなくグローバル
+                  <li>すべてのシーケンスに有効</li>
+                  <li> デフォルト値は次の通り</li>
+                  <li>レガートはオフ</li>
+                  <li>ゲートタイムは50%</li>
+                  <li>スウィング率は50%</li>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">プリセット、シーケンスのリコール<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>いくつかプリセットを作成した後に、パーソナライズしたプリセットのセッティングを素早く切り替えることができるようになる</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">RECALLボタンを押したままパッドの1つを押す</li>
+                <li class="contentOperationOrderlist">CNTRLモードでRECALLボタンを押しながらパッド2ボタンを押すとBeastStepのプリセットメモリーからプリセット＃2を選択する</li>
+                <li class="contentOperationOrderlist">これは同じシーケンスをBeatStepのエディットバッファーに残したままCNTRLプリセットを変更する</li>
+                <li class="contentOperationOrderlist">プリセット＃2からプリセット＃1に切り替えるには、もう一度RECALLボタンを押し、今度はパッド1を押す</li>
+                <li class="contentOperationOrderlist">同じCNTRLプリセットを使用しながら異なるシーケンスを選択する場合、CNTRL/SEQボタンを押してSEQモードに入ってからCNTRLプリセットを選択した時と同じ操作を行う</li>
+                <li class="contentOperationOrderlist">RECALLを押しながら必要なパッドの1つを押す</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <h3 class="heading switch">プリセット、シーケンスの保存<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MIDI コントロールセンターを使用せずにほぼすべてのコントロールのMIDI設定を変更することはできず、CNTRLモードでSTOREボタンを使用する主な要因としては、最終段階での設定の変更やそのような類いの場面でプリセットを再び呼び出す場合が考えられる</p>
+          <p>SEQモードでは、MIDI コントロールセンター・ソフトウェアを使用せずにほとんどすべての変更を行うことができる<br>注意：次の手順を行う時は、選択したCNTRLプリセットやシーケンスを上書きする<br>上書きしても良いか確認してから進める<br>そうでない場合には、使用可能なメモリーロケーションを調べそこにプリセットを保存するようにする</p>
+          <p>プリセットやシーケンスを保存する場所を確認済みの場合：</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">プリセットやシーケンスを保存する場所を確認する</li>
+                <li class="contentOperationOrderlist">正しいモードになっていることを確認する(CNTRL or SEQ)</li>
+                <li class="contentOperationOrderlist">STOREボタンを押しながらパッドを押す</li>
+                <li class="contentOperationOrderlist">次回、呼び出すときにそのプリセットはそのパッドを押すことで呼び出せる</li>
+              </ul>
+            </p>
+          </div>
+          <p>この手順は、BeatStepのフロントパネルから操作される時、プリセットとシーケンスは、別々に記憶され、呼び出されるので両方の項目を編集した場合、両方を保存する必要がある</p>
+        </section>
+        <h3 class="heading switch">プリセットリセット<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッドキャリブレーションを除くすべてのデータをデフォルトに戻す</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">RECALL+STOPを押す</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+      </section>
+      <h2 class="heading switch">シーケンサーの操作<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">ステップ・シーケンサー<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>CNTRL/SEQボタンでSEQモードを使用している場合、BeatStepは、ステップシーケンサーになる</p>
+          <p>パッドやエンコーダーは、シーケンスを構築するために使用するコントロールと入力デバイスとなる</p>
+          <p>1度に1つの音を出力する</p>
+          <p>各キーのピッチは、ポット、エンコーダー、またはスライダーを使用して設定する</p>
+          <table>
+            <tr>
+              <td>パッド</td>
+              <td>シーケンスステップのオン/オフを決定する<br>SHIFTボタンと一緒に使用することでプレーバック・モードのようなシーケンスパラメーターを選択する</td>
+            </tr>
+            <tr>
+              <td>エンコーダー</td>
+              <td>各ステップがシーケンサーサイクルで再生する音符を決定する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ピッチのエディット<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>エンコーダーを使用してピッチのエディットができる</p>
+          <table>
+            <tr>
+              <td>CNTRLモード</td>
+              <td>ほとんどすべてのMIDIデータを送ることができる</td>
+            </tr>
+            <tr>
+              <td>SEQモード</td>
+              <td>各シーケンスステップがプレーする音階を決定する</td>
+            </tr>
+          </table>
+          <p>SEQモードでは、シーケンサーが再生中かどうかに関わらず、シーケンスの音階をエディットすることができる<br>それを止めるとエディットしたそのままの音が再生される<br>再生中にエディットをするとそのステップの再生順になるまでその音を聴くことができない<br>スケールタイプ・パラメーターの設定は、エンコーダーを回した時にどの音階を使用できるかについて決定する</p>
+        </section>
+        <h3 class="heading switch">シーケンスステップのオン/オフ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッドを使用してシーケンスステップのオン/オフを決定する</p>
+          <table>
+            <tr>
+              <td>CNTRLモード</td>
+              <td>ほとんどすべてのMIDIデータを送ることができる</td>
+            </tr>
+            <tr>
+              <td>SEQモード</td>
+              <td>シーケンス内の各ステップのオン/オフを決定することができる<br>1つ、または2つのボタンを押しながらパッドを押すことで様々なシーケンスパラメーターを設定することができる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">パターン・モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッドの下の行の最初の4つは、SHIFTボタンと組み合わせてパターン・モード(再生方向)を選択することができる<br>ここでは各オプションの例として4ステップシーケンスを用いて紹介する</p>
+          <table>
+            <tr>
+              <td>Forward<br>(デフォルト)</td>
+              <td>1、2、3、4 | 1、2、3、4のような順序配列で再生する</td>
+            </tr>
+            <tr>
+              <td>Reverse</td>
+              <td>4、3、2、1 | 4、3、2、1のように逆進する</td>
+            </tr>
+            <tr>
+              <td>Alternate</td>
+              <td>1、2、3、4 | 4、3、2、1 | 1、2、3、4 | 4、3、2、1 と前進と逆進を交互に繰り返す</td>
+            </tr>
+            <tr>
+              <td>Random</td>
+              <td>ランダムにシーケンスステップを再生する<br>再生順序は予測できない</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ステップサイズ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>使用中のシーケンスのプレーバック・レートを2倍、または1/2にする</p>
+          <p>タイムベースと呼ばれることもある</p>
+          <p>ステップサイズの設定</p>
+          <table>
+            <tr>
+              <td>4分音符</td>
+              <td>shift + 1/4</td>
+            </tr>
+            <tr>
+              <td>8分音符<br>(デフォルト)</td>
+              <td>shift + 1/8</td>
+            </tr>
+            <tr>
+              <td>16分音符</td>
+              <td>shift + 1/16</td>
+            </tr>
+            <tr>
+              <td>32分音符</td>
+              <td>shift + 1/32</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">スウィング<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>スウィングの設定はペアの最初の音符を長くし、2番目の音符を短くし、シーケンスのノートのタイミングをシフトすることができる</p>
+          <p>ステップサイズが1/8の場合</p>
+          <table>
+            <tr>
+              <td>スウィングを50％に設定<br>(デフォルト)</td>
+              <td>各ノートは、イコールになる<br>ストレートな8分音符で再生される</td>
+            </tr>
+            <tr>
+              <td>スウィング値を50％以上にする</td>
+              <td>最初の音符は、1/8よりも長くなり、2番目の音はより短くなる<br>シーケンスがより“明るい雰囲気”になり、“機械的”な雰囲気を減少する</td>
+            </tr>
+          </table>
+          <p>最大のスウィング設定値は75％<br>値が大きくなるほど最初の音符と2番目の音符の長さの違いが大きくなる</p>
+        </section>
+        <h3 class="heading switch">ゲートタイム<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>レガート・パラメーターをオフに設定すると、リズムの関係性を変更することなく、シーケンスステップのすべてのノートの長さを調節することが可能</p>
+          <p>パラメーターの範囲は、50％(変更なし)～99％(最大値)<br>デフォルトでは、50％に設定されている<br>99％の設定では、ノートオフ・コマンドは、次の音符の直前に発生する</p>
+          <p>レガート・パラメーターがオンになっている時は、ゲートタイムの設定は行えない</p>
+          <p>再びレガートをオフに設定した時に使用できるようになる</p>
+        </section>
+        <h3 class="heading switch">パターンレングス<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パターンレングスは、1ステップから16ステップまでの間で設定可能(デフォルトは、16ステップ)</p>
+          <p>例：1/8のステップサイズを使用してシーケンスは、1/8(1つの8分音符)～16/8(2小節)までの間で設定可能</p>
+          <p>パターンレングスを変更する</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">SHIFTとCHANボタンを押しながら長さに対応したパッドを押す</li>
+              </ul>
+            </p>
+          </div>
+          <p>BeatStepのフロントパネルからアクセスできないシーケンス機能はMIDIコントロールセンター内でのみエディット可能</p>
+        </section>
+        <h3 class="heading switch">レガート<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>レガートする音符の間にスペースを空けず、スムーズに演奏する</p>
+          <p>技術的には、MIDIノートでのレガートを表現する際、実際には2つの音符がオーバーラップすることを意味する</p>
+          <p>最初の音符のノートオフは2番目の音符のノートオン・コマンド後になる</p>
+          <p>レガート・モードはBeatStepシーケンスがオンになっている時に可能</p>
+          <p>逆にレガート・モードでは、ノートオフ・コマンドは重ならない</p>
+          <p>最初の音符のノートオフ・コマンドは、つねに2番目の音符のノートオフ・コマンドの前に発生する</p>
+          <p>3つのレガート・モード</p>
+          <table>
+            <tr>
+              <td>オフ<br>(デフォルト)</td>
+              <td>レガートしない<br>各ノートの長さは、ゲートタイム・セッティングの影響を受ける</td>
+            </tr>
+            <tr>
+              <td>レガート</td>
+              <td>レガートする<br>ゲートタイム・セッティングは上書きされる</td>
+            </tr>
+            <tr>
+              <td>レガート・リセット</td>
+              <td>シーケンスの最後の音符のコマンドのノートオフを送信した後に、シーケンスの各ループの最初のノートのノートオン・コマンドを送信することを除いてレガートと同様</td>
+            </tr>
+          </table>
+          <p>同じ概念がCV/Gateジャックから電圧が送信される場合にも適用される</p>
+        </section>
+        <h3 class="heading switch">SEQモードでパラメーターを直接設定<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>Shift+ノブ1</td>
+              <td>ゲート時間を設定(50％..99％)</td>
+            </tr>
+            <tr>
+              <td>Shift+ノブ2</td>
+              <td>スイングを設定(50％..75％)</td>
+            </tr>
+            <tr>
+              <td>Shift+ノブ3</td>
+              <td>レガートモードを設定する(オフ/オン/オンリセット)</td>
+            </tr>
+            <tr>
+              <td>CNTRLモードのコントローラー</td>
+              <td>パッドをトランスポーズする</td>
+            </tr>
+            <tr>
+              <td>CNTRLモードでShift+大きなノブ</td>
+              <td>パッドをトランスポーズできる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オールノートオフ・コマンド<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>デバイスがスタック、またはハングした時に音を出したままになった場合に有効</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">STOPボタンを3回続けて押す</li>
+                <li class="contentOperationOrderlist">MIDIでオールノートオフ・コマンドが送信される</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+      </section>
+      <h2 class="heading switch">スケール<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">スケール<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStepのフロントパネルでは、8個の入力スケールの中から 1 つをエンコーダーに割り当てることができる</p>
+          <p>スケールとは望ましい音程を素早く選択するための一種のフィルター</p>
+          <table>
+            <tr>
+              <td>スケール</td>
+              <td>シーケンスステップにすでに割り当てられたMIDIノートを変更しない</td>
+            </tr>
+            <tr>
+              <td>エンコーダー</td>
+              <td>シーケンスステップにすでに割り当てられたMIDIノートを変更する</td>
+            </tr>
+          </table>
+          <p>スケールは、エンコーダーが回された時に選択する音程に特定のアウトラインを与える<br>常に半音階で音程を変更するよりも効率的に音階を指定することができる</p>
+          <p>スケールの範囲外にある音階を入力したい場合、異なるスケールに変更することもできる<br>変更してもすでに選んでいる音に影響を与えることはない</p>
+        </section>
+        <h3 class="heading switch">スケールタイプ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>上の行の8個のパッドの下には入力スケールの名前が印刷されている<br>選択するには、SHIFTボタンを押しながらその内の1つのパッドを押す<br>デフォルトではクロマチック・スケール</p>
+          <table>
+            <tr>
+              <td>クロマチック<br>(デフォルト)</td>
+              <td>12個の音は半音階(スケールが設定できる最大数)<br>フィルターバイパスと同様エンコーダーを回すとすべての音階を選択可能</td>
+            </tr>
+            <tr>
+              <td>メジャー</td>
+              <td>8音</td>
+            </tr>
+            <tr>
+              <td>マイナー</td>
+              <td>8音</td>
+            </tr>
+            <tr>
+              <td>ドリア</td>
+              <td>8音</td>
+            </tr>
+            <tr>
+              <td>ミクソリディアン</td>
+              <td>8音</td>
+            </tr>
+            <tr>
+              <td>ハーモニックマイナー</td>
+              <td>8音</td>
+            </tr>
+            <tr>
+              <td>ブルース</td>
+              <td>7音</td>
+            </tr>
+            <tr>
+              <td>ユーザースケール</td>
+              <td>1～12音の間で選択可能</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">シーケンスのルート音の決定方法<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <ol>
+            <li>シーケンサーのステップのために選択された音</li>
+            <li>MIDI コントロールセンター内の値をエディットするか SHIFT ボタンを押しながら、大きなエンコーダーを回すか、どちらかの方法によって全体のトランスポーズ・パラメーターの設定を変更</li>
+            <li>シーケンサーのチャンネルとマッチしたDAWトラックのチャンネルが再生している最も低いMIDIノート<br>このノート情報は、中央の C (C3)との関係をベースにしたシーケンスをトランスポーズする</li>
+          </ol>
+          <p>例：C3 でプレーする場合　トランスポーズは不要</p>
+          <p>例：D3 でプレーする場合　+2のトランスポーズを行う</p>
+        </section>
+      </section>
+      <h2 class="heading switch">同期<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">同期(シンクロナイゼーション)<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStep全体をMIDI機材のマスタークロックにすることも、またはUSBによってコンピューターから送られるMIDIタイミングのスレーブとしても機能することができる</p>
+          <p>青いLEDによってどちらのモードを選択しているか表示される</p>
+          <p>マスター、スレーブ・モードの切り替え</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">EXT SYNCボタン</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <h3 class="heading switch">マスター<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>EXT SYNCボタンが点灯していない場合、beatStepはマスターとして動作している</p>
+          <ul>
+            <li>START/STOPボタンを使用して直接内蔵のシーケンサーをコントロールすることができる</li>
+            <li>BeatStepは、MIDIアウト、USB/MIDIの両方に同期メッセージを送信する</li>
+            <li>シーケンサー・モードで、テンポの設定はビッグノブを使用して行う(Shiftは使用しない)</li>
+          </ul>
+        </section>
+        <h3 class="heading switch">スレーブ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStep のEXT SYNCボタンが点灯している時は、外部のUSB MIDIクロックのスレーブとして機能している</p>
+          <ul>
+            <li>PLAY/STOP ボタンは、内部シーケンサーをコントロールしていない(マスタークロックのトランスポート・セクションが行う)</li>
+            <li>BeatStepのPLAY/STOPボタンは、MIDIコントロールセンターに送るようなMIDIメッセージは送信する</li>
+            <li>BeatStepは、USB MIDIから受信したシンク・メッセージをMIDI出力端子から送信する</li>
+            <li>シーケンスのテンポは、マスターコントロールの管理下にある</li>
+          </ul>
+        </section>
+      </section>
+      <h2 class="heading switch">CV/GATE、MIDI インターフェイスとして使用<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">USBとMIDI出力ポート<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStep は、そのコントロールからほとんどのMIDIデータをも送ることができ、USBとMIDI出力端子からデータを送信することができる</p>
+          <p>コンピューターのMIDI出力から受け取るMIDIデータをスルーさせることも可能</p>
+          <ul>
+            <li>ノートデータ</li>
+            <li>CC値</li>
+            <li>プログラム/バンク・チェンジ</li>
+            <li>タイミング・データ</li>
+            <li>MMC</li>
+            <li>NRPN</li>
+            <li> RPN</li>
+          </ul>
+          <p>BeatStepが出力しないMIDIデータの例：システムエクスクルーシブ</p>
+        </section>
+        <h3 class="heading switch">3種類の接続方法<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>BeatStepは、USB、MIDI 出力、CV/Gateの3種類の接続が可能</p>
+          <p>フロントパネルで、グローバルMIDIチャンネルを設定することができ、デフォルトでは、BeatStepが生成するすべてのものは、そのチャンネル上で送信される</p>
+          <p>MIDIコントロールセンターは、シーケンサーと CV/GATE 端子に独立したMIDI チャンネルを割り当てることができる</p>
+          <p>活用例：エンコーダーとパッドはMIDIチャンネル1でコントロールを行い、シーケンサーは、MIDI チャンネル 2 を使用してデータを送信し、CV/GATE 端子では、DAW の MIDIチャンネル3からのノートデータでモジュラーシンセを動かすことができる</p>
+        </section>
+        <h3 class="heading switch">シーケンサーのチャンネル設定(MIDI コントロールセンターのみ)<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>グローバルチャンネル・パラメーター</td>
+              <td>(MIDIチャンネルにつき)16 のセッティングが使用可能</td>
+            </tr>
+            <tr>
+              <td>シーケンサーチャンネル・パラメーター</td>
+              <td>17 のセッティングを提供する 16 の MIDI チャンネルごとに 1 ずつ、さらにもう 1 つのオプションは、グローバル</td>
+            </tr>
+          </table>
+          <p>シーケンサーチャンネル・パラメーターがグローバルに設定されている場合、グローバル・チャンネル設定が変更された場合、その後、シーケンサー・チャンネルも同様に変更される</p>
+          <p>常に、シーケンサーがエンコーダーやパッドと同一の MIDI チャンネルで送信したい場合には、両方の 1 つのパラメーター(グローバルチャンネル)を変更する必要がある</p>
+        </section>
+        <h3 class="heading switch">CV/Gate信号のためのソースを選択<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッドとシーケンサーは、簡単にCV/GATE 信号に変換することができ、それらを接続したデバイスに送信することができる情報を生成する</p>
+          <p>DAWの特定のMIDIトラックから、BeatStepのCV/GATE端子にまでUSB によってMIDIノートデータを送ることも可能</p>
+          <table>
+            <tr>
+              <td>どのデバイスの CV/Gate 端子でもモノフォニック</td>
+              <td>AW 上の選択した MIDI トラックがポリフォニックであった場合、最も低いキーに優先権がある<br>しかし、コード内のノートが正確に同じタイミングで発音されていてもDAW は毎回同じ順序でそれらを送らない場合があり、プレーバック時に矛盾を起こす場合がある<br>最善策は、1 つのMIDI ノートだけが CV/GATE 端子に送られるように整った MIDI チャンネルであることを確認すること</td>
+            </tr>
+            <tr>
+              <td>どのデバイスの CV/Gate端子でも非常にシンプルな信号を送るだけ<br>(ピッチとノートオン/オフのみ)</td>
+              <td>モジュラーシンセのセッティングに関するエディットはシンセ上で行われる必要がある<br>BeatStep エンコーダーは CV / GATE 端子によってシンセサイザーのパラメーターをコントロールすることはできない</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">CV/Gate のチャンネル設定(MIDI コントロールセンターのみ)<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>グローバルチャンネル・パラメーターは、使用可能な16(各 MIDIチャンネルごとに1つ)の設定があるが、CV/GATE チャンネルパラメーターは、17 の設定がある</p>
+          <p>16のMIDI チャンネルとエクストラでグローバルラベルとしてどのように動作させるかによってこのパラメーターをグローバルに設定することを必要とするかもしれない</p>
+          <p>例</p>
+          <p>CV/GATE チャンネルパラメーターがグローバルに設定されている場合、グローバル・チャンネルの設定が変更された場合、その後 CV/GATE チャンネルは同様に変更される</p>
+          <p>エンコーダーとパッドのMIDI チャンネルの割り当てを変更する必要があるが、常にパッドがCV/GATE 端子にノートデータを送信したい場合、2 つのかわりに 1 つ(グローバル・チャンネル)を変更する必要がある</p>
+        </section>
+        <h3 class="heading switch">BeatStep CV/Gate のスペック<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>一部のアナログ・シンセサイザーがBeatStepの CV/GATE 信号を完全な互換性がない場合がある</p>
+          <p>CV/Gate 端子から送信される電気信号は以下
+            <ul>
+              <li>コントロールボルテージ： 1 ボルト/オクターブ、0V～7V</li>
+              <li>ゲート出力：8 ボルト</li>
+            </ul>
+          </p>
+        </section>
+      </section>
+      <h2 class="heading switch">デフォルトセッティング<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">トランスポート・ボタン<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トランスポート・ボタン</p>
+          <table>
+            <tr>
+              <th>パラメーター</th>
+              <th>値</th>
+              <th>モード</th>
+              <th>MIDI チャンネル/デバイス</th>
+            </tr>
+            <tr>
+              <td>STOP</td>
+              <td>Stop(01)</td>
+              <td>MMC</td>
+              <td>127 (device)</td>
+            </tr>
+            <tr>
+              <td>PLAY</td>
+              <td>Play (02)</td>
+              <td>MMC</td>
+              <td>127 (device)</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">CNTRL モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <th>パラメーター</th>
+              <th>値</th>
+              <th>モード</th>
+              <th>MIDI チャンネル/デバイス</th>
+            </tr>
+            <tr>
+              <td>Pad velocity curve</td>
+              <td>1</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Encoder acceleration</td>
+              <td>Fast</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Encoder 1</td>
+              <td>CC# 7</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 2</td>
+              <td>CC# 74</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 3</td>
+              <td>CC# 71</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 4</td>
+              <td>CC# 76</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 5</td>
+              <td>CC# 77</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 6</td>
+              <td>CC# 93</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 7</td>
+              <td>CC# 73</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 8</td>
+              <td>CC# 75</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 9</td>
+              <td>CC# 114</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 10</td>
+              <td>CC# 18</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 11</td>
+              <td>CC# 19</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 12</td>
+              <td>CC# 16</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 13</td>
+              <td>CC# 17</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 14</td>
+              <td>CC# 91</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 15</td>
+              <td>CC# 79</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Encoder 16</td>
+              <td>CC# 72</td>
+              <td>Absolute</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 1</td>
+              <td>Note# 44</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 2</td>
+              <td>Note# 45</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 3</td>
+              <td>Note# 46</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 4</td>
+              <td>Note# 47</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 5</td>
+              <td>Note# 48</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 6</td>
+              <td>Note# 49</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 7</td>
+              <td>Note# 50</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 8</td>
+              <td>Note# 51</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 9</td>
+              <td>Note# 36</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 10</td>
+              <td>Note# 37</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 11</td>
+              <td>Note# 38</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 12</td>
+              <td>Note# 39</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 13</td>
+              <td>Note# 40</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 14</td>
+              <td>Note# 41</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 15</td>
+              <td>Note# 42</td>
+              <td>Gate</td>
+              <td>Global</td>
+            </tr>
+            <tr>
+              <td>Pad 16</td>
+              <td>Note# 43</td>
+              <td>Gate</td>
+              <td>Global</td>
             </tr>
           </table>
         </section>
       </section>
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>    3BEATSTEP の基本的な操作
-          3.1 デフォルトのプリセット
-          プリセットとシーケンスは、“白紙状態”のセッティングを提供し、クリエイティブな設定の出発点となるようデフォルトから始めることができる
-          CNTRL モードでは以下のようになる
-           エンコーダーは、MIDI CC 番号を送信するように割り当てられている
-           パッドは半音階でサウンドを演奏するように割り当てられている
-           トランスポート・ボタンは、MMCによって“STOP”と“START”コマンドを送信する
-           すべては、グローバル MIDI チャンネルで送信するように設定されている
-          注：グローバル MIDI チャンネルのデフォルト値は、チャンネル 1
-          SEQ モードでは以下のようになる
-           パッドはすべて同じ MIDI ノートに設定されている(C3、またはMIDI ノート＃60)
-           シーケンス内のすべてのステップが有効になっている
-           各シーケンスは 16 ステップのパターンレングスを有している
-           エンコーダーは、中間点、または“ゼロ”からトランスポートを開始する
-           エンコーダーのピッチエディットにはクロマチック・スケールが使用されている
-           再生モードはフォワード(FWD)に設定されている
-           ステップサイズは 1/16 に設定されている
-          以下の SEQ モード・パラメーターは、シーケンスごとではなくグローバル
-          すべてのシーケンスに有効
-          デフォルト値は次の通り
-          レガートはオフ
-          　ゲートタイムは 50%
-          スウィング率は 50%
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">プリセット、またはシーケンスをリコール<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>いくつかプリセットを作成した後に、パーソナライズしたプリセットのセッティングを素早く切り替えることができるようになる<br>“RECALL”ボタンを押したままパッドの 1 つを押す<br>CNTRL モードで RECALL ボタンを押しながらパッド 2 ボタンを押すと BeastStep のプリセットメモリーからプリセット＃2 を選択する<br>これは同じシーケンスを BeatStepのエディットバッファーに残したまま CNTRLプリセットを変更する<br>プリセット＃2 からプリセット＃1 に切り替えるには、もう一度“RECALL”ボタンを押し、今度はパッド 1 を押す<br>同じCNTRL プリセットを使用しながら異なるシーケンスを選択する場合、CNTRL/SEQ ボタンを押して SEQモードに入ってから CNTRL プリセットを選択した時と同じ操作を行う<br>RECALL を押しながら必要なパッドの 1 つを押す</p>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">プリセット、またはシーケンスを保存後にアクセスできるプリセットやシーケンスを保存しておくために STORE ボタンを使用する<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>MIDI コントロールセンターを使用せずにほぼすべてのコントロールの MIDI 設定を変更することはできず、CNTRL モードで STORE ボタンを使用する主な要因としては、最終段階での設定の変更やそのような類いの場面でプリセットを再び呼び出す場合が考えられる<br>SEQ モードでは、MIDI コントロールセンター・ソフトウェアを使用せずにほとんどすべての変更を行うことができる<br>注意： 次の手順を行う時は、選択した CNTRL プリセットやシーケンスを上書きする<br>上書きしても良いか確認してから進める<br>そうでない場合には、使用可能なメモリーロケーションを調べそこにプリセットを保存するようにする<br>プリセットやシーケンスを保存する場所を確認済みの場合：<br> 正しいモードになっていることを確認する(CNTRL または SEQ)<br> STORE ボタンを押しながらパッドを押す<br>次回、呼び出すときにそのプリセットはそのパッドを押すことで呼び出せる<br>Rこの手順は、BeatStep のフロントパネルから操作される時、プリセットとシーケンスは、別々に記憶され、呼び出されることを覚えておく<br>両方の項目を編集した場合、両方を保存する必要がある</p>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>
-      <h2 class="heading switch">グローバル MIDI チャンネルを変更する<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <p>MIDI チャンネルを切り替えるということは、DAW ソフトウェアでコントロールするインストゥルメントやトラックを選択する簡単な方法の1つ<br> "CHAN"ボタンとBeatStep のパッドの1つを組み合わせて行う</p>
-          <p>例：BeatStep のグローバル・チャンネルをチャンネル 2 に切り替えたい場合、"CHAN"ボタンとパッド2を押す</p>
-          <p>例：BeatStep のグローバル・チャンネルをチャンネル 1 に切り替えたい場合、"CHAN"ボタンとパッド1を押す</p>
-        </section>
-      </section>
-      <h2 class="heading switch">5.BEATSTEP コントローラーの設定を編集する<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>    4MIDI コントロールセンター
-          4.3 接続
-          付属の USB ケーブルを使用してコンピューターと BeatStep を接続する
-          LEDがスタートアップサイクルを行ったあとに起動される
-          その後、 MIDI コントロールセンターを起動し、BeatStepは接続されたデバイスの 1 つになる
-          4.4 シンク・ボタン
-          MIDI コントロールセンター・ソフトウェアを起動するたびに最初に行うことは“Sync”ボタンをクリックすること
-          これは、BeatStep をコンピューターに接続し、BeatStepエディット・バッファー(CNTRL、SEQモードの両方)にあるものすべてをつかむ
-          そしてそれの名前に日付/タイムスタンプを付加する
-          お好みに応じてこのファイルの名前を変更することができる
-          この後、ソフトウェアで設定されたすべての変更もBeatStep内部で行われる
-          そして、BeatStepがCNTRLモードである限り、MIDI コントロールセンターの内部で自動的にコントロールのいずれかを使用するように自動的に選択される
-          注： BeatStepがSEQ モードの時、MIDI コントロールセンターはシーケンサーで行われる変更(ステップサイズ、パターンレングスなど)を受け取ることができない
-          4.5 MIDI コントロールセンター・マニュアル
-          “Help”メニューを使用してMIDI コントロールセンターの内蔵マニュアルにアクセスすることができる
-      <h2 class="heading switch">5.BEATSTEP コントローラーの設定を編集する<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>
-          5.1 MIDI コントロールセンターで、MIDI プリセットを作成する
-          5.1.1 概要： BeatStep プリセットとは？
-          MIDI コントロールセンター・ソフトウェアを使用してBeatStepをほとんどの MIDI 情報に反応させることでき、どんなデバイス、ソフトウェアでも動作するように設定することができる
-          さらに内臓のシーケンサーを使用してBeatStepにシーケンスをプログラムすることができる
-          MIDI コントロールセンターでのBeatStep プリセットとは以下の 2 つの部分の合計
-          ：コントローラーの設定とシーケンスの両方
-          しかし、これには重要なポイントがある
-          ：プリセットが、BeatStepのフロントパネルで取り扱われる方法とMIDI コントロールセンターで取り扱う方法の大きな違いがある
-          STORE 、RECALL 機能をフロントパネルで使用した場合は、 CNTRL と SEQ セッティングは、独立して記憶、呼び出しを行うかもしれない
-          しかし MIDI コントロールセンターで行った場合、シングルアクションで CNTRL、SEQ 両方のロケーションを上書きする
-          BeatStepにこれらのファイルのどちらかを変更したい場合、どちらの方法でやるべきか確認してから行なう
-          ここでは、MIDI コントロールセンターを使用して行うことが可能な BeatStep コントローラー・セッティングのアサインの例を下に示す：
-           パッドを使用してMIDI ノートを送信する
-           パッドを使用することによってMIDI CC# の 2 つの値間を切替える
-           お好みの MIDI CC ナンバーをコントロールし、その動作範囲を定義するためにエンコーダーを割当てる
-           BeatStep のオンボードメモリー内に変更したコントロールのすべての設定を保存する
-           パーソナライズした 16 個のプリセットをどれでも簡単にリコールすることができる
-          5.1.2 パッドに 2 つの値の MIDI CC # を切り替えるように割り当てる
-          ポピュラー・ミュージックのエフェクトとして、近頃はオーディオループを使用し、曲の特定の部分に激しくフィルタリングし、曲の後半にフルオープンに変更する場合がある
-          DAW ソフトウェアですぐに使用でき、フィルタープラグインにそのコマンドをおくるために BeatStep のパッドの 1 つをあらかじめ設定しておくことができる
-          パッド 6 を使用してみまる
-          パッドを選択し、その後プルダウンのモードメニューから “Switched”と“Toggle”を選択する
-          この設定は、パッドを押すたびにお好みの MIDI CC ナンバーの 2 つの異なる値を送信することができる
-          フィルターの明るさ(CC#74)、またはハーモニック成分(CC#71)をコントロールするタスクが割当てられているMIDI CC ナンバーがいくつかある
-          今回は、CC#74 を使用する
-          “CC number”フィールドをクリックし、上図のように明るさのコントロール番号を選択する
-          次に効率よく動作するように最小値と最大値を(オーディオソースに合わせて)調整し、設定する
-          パッド 6 を最初に押すとCC＃ 74 のコマンドを値 78 で送る
-          これはフィルターを途中まで閉じるが、それでも多くのオーディオを通過させる
-          2 回目にパッドを押すと、値 127 を送信し、フィルターを完全に開く
-          注：受信するデバイスとBeatStepのMIDIチャンネルに割り当てているチャンネルが同じであることを確認する
-          5.1.3 エンコーダーに 2 つの値の MIDI CC # をコントロールするよう割り当てる
-          エンコーダーには、パッドの項で説明した内容と同じ技術を使用している
-          面白い使用例を紹介する
-          LFO のレートを特定の範囲内で動作するように設定する
-          …
-          上図に示すように先ほどと同じ情報を確認する：
-           エンコーダー 5 が選択されているので、赤く示されている
-           グローバル MIDI チャンネルが割当てられている
-          ；ここでは、使用するMIDI チャンネルを 1～16の間で選択するか、グローバル・チャンネルにするかを選択可能
-           モードは、“Control”に設定されており、その場合はMIDI CC 番号を送信することを意味する
-           次のモードフィールドでは“Absolute”が設定されており、完全な反時計回りから完全な時計回りまで直線的に信号を送信することを意味する
-           CC 番号は CC# 76 が選択されている
-          これはビブラートをコントロールするためのMIDI CC#
-           Min / LSB と Max / MSB フィールドは、エンコーダー 5 が設定した範囲内でのみで動作するように限定をする
-          要約すると、上の設定はエンコーダー 5 がターゲットデバイスのビブラートのレート(速さ)を 10～32 の間でコントロールすることを意味している
-          この設定でビブラートは、あまり速くなることはなく、遅いレートを設定することができる
-          使用しているMIDI デバイスに適した自然な値を設定することができる
-          注： 一部のデバイスでは、標準的なMIDI コントローラーの割り当てを使用することはできない
-          5.2 プリセットの保存と呼び出し
-          次の 3 つのサブセクションでは、BeatStepのプリセット管理の基本を説明する
-          このマニュアルはソフトウェアの“Help”メニューから開くことができる
-          5.2.1 BeatStep プリセットに新しい設定を保存する
-          セクション 5.1 で見たようにフィルターの設定を切り替えるには、パッドを設定し、ビブラートのレートをコントロールするエンコーダーの設定を行った
-          BeatStepは、もっと多くの可能性があるが、これはその入口にふさわしい内容
-          次に使用する際に、この設定を使用できるように確認する必要がある
-          このセッティングをいつでもBeatStepで使用できるよう内部のメモリーへグループとして保存しなければならない
-          MIDI コントロールセンターの左上のセクションに“STORE”というボタンがある
-          その上に 16 個のメモリーロケーションのどこに作成したプリセットとシーケンスが保存するか指定するリストがある
-          重要： MIDI コントロールセンターは、CNTRLとSEQ セッティングの両方を 1 つのプリセットとして認識していることに注意してください以下のステップに続く時、CNTRL プリセット #2 と SEQ #2 は同時に上書きされる
-          両方を上書きして良いか確認してから先に進める
-          そうでない場合は、他の場所に使用中のシーケンス # 2 を保存するためにBeatStep のフロントパネルを使用する
-          この例では、メモリーロケーション #2 が使用可能であると仮定する
-          上の写真のようにリストの中から“Memory 2”を選択する
-          プリセットを保存する場所を確認したら“Store”ボタンを押す
-          操作は以上
-          作成したプリセットはMIDI コントロールセンターのメモリーロケーションの＃2 に保存され、それぞれのモードを選択し、リコールボタンとパッド＃2 を一緒に押すことによってBeatStep上で独立して呼び出すことが可能
-          5.2.2 MIDI コントロールセンターで BeatStep のフロントパネルのエディットをリコール
-          BeatStep のフロントパネルを使用したシーケンスを変更した場合、それらをバックアップするために MIDI コントロールセンターにそれらの変化を記憶させる必要がある
-          これは、この時点では、簡単に失われる可能性がある
-          別のプリセットを選択したり、コンピューターから本機を切り離した場合にエディット内容は消えてしまう
-          これが起こらないように、以下の 2 つのうち、1 つを行わなければならない：
-           MIDI コントロールセンターのワーキングメモリーにこのエディットバッファーの内容をテンプレートとして保存する
-           内部のプリセットの 1 つに変更を保存するために BeatStep のフロントパネルにある Store ボタンを使用する
-          覚書：MIDI コントロールセンターは、同時に CNTRL プリセットとシーケンスの両方をつかむ
-          重要： MCC リコールボタンの上にカーソルを置くと説明や警告が表示される
-          それは、選択したメモリーをリコールするとき、 同時に MIDI コントロールセンターのワーキングメモリーとBeatStep のエディットバッファーの現在の内容を置き換えることを警告している
-          今までに作成したプリセットやシーケンスを失わないように注意する
-          必要がある場合、そのメモリーを他の場所に退避する
-          5.2.3 ワーキングメモリーに BeatStep プリセットをリコール
-          コンピューターを接続すること無く BeatStep を使用することができるので、シーケンスを作成し、後に使用するために内臓のプリセットに保存することができる
-          BeatStepの内部プリセットのいずれかをつかみ、 MIDIコントロールセンターでテンプレートとして保存することができる
-          注： MIDI コントロールセンターは、CNTRL プリセットとシーケンスの両方を取り出すことを忘れない
-          5.3 グローバル・パラメーター
-          MIDI コントロールセンター・ウィンドウの右側にセットアップや、作用スタイルに最適化するために使用できる重要なパラメーターがある
-          5.3.1 グローバル・チャンネル
-          グローバル MIDI チャンネルを選択するには、プルダウンメニューを使用する
-          シーケンサーとCV/Gate 出力で使用するために別々のMIDI チャンネルを使用することができる
-          5.3.2 CV/Gate チャンネル
-          BeatStep は、コントロールボルテージと、ゲートシグナルを MIDI ノートに変換し、CVや Gateジャックから、これらの信号を扱える モジュラー・シンセサイザー、または他のデバイスに送ることができる
-          DAW 上のどのMIDI トラックがデータソースになるかを選択するためにこのパラメーターを使用する
-          チャプター 7 では、CV/Gate デバイスでBeatStep を使用することに関する詳細な情報を提供する
-          5.3.3 ノブ・アクセラレーション
-          このパラメーターを使用するとエンコーダーのレスポンスカーブを 3 種類の中からもっとも使用しやすいものを選択することができる
-           Slow(Off)： アクセラレーション無し；エンコーダーは、すべての許容量を送信する
-          その結果、最小値から最大値まで移動するためにはエンコーダーをより多く回す必要がある
-          より高い精度を必要とする場合、この設定が有効
-           Medium： 適度なアクセラレーション；素早く回すとエンコーダーは、いくつかの値をスキップする
-          結果として、最小値から最大値まで、より少ない回転数で到達することができる
-           Fast： 最大のアクセラレーション；素早く回すと複数の値をスキップする
-          その結果、パラメーター値は、最小値から最大値まで最低限の回転数(1回転)で到達できるが、エンコーダーが適切なス
-          ピードで回転している時、精度は他の設定よりも低くなる
-          5.3.4 パッドベロシティ・カーブ
-          パッドからMIDI イベントをソフトに、または激しくトリガーさせるか力の量を設定する
-          これは個人的な好みで設定を行う
-          BeatStepは、 MIDI コントロールセンターを使用して 4 種類の選択肢を提供する
-           Linear： ベロシティ全体にわたって等しい反応
-           Logarithmic： 低いベロシティに対し、敏感に反応
-           Exponential： 高いベロシティに対し敏感に反応
-           Full： どのような強さでパッドを叩いてもベロシティ 127(最大値)を送信
-          5.4 パフォーマンス・データ
-          これらのパラメーターは、 SEQ モードに関連するすべてのものをコントロールする
-          それらはMIDI コントロールセンター・ウィンドウの右側に表示されている
-          その中のいくつかは BeatStep のフロントパネルから使用できるものもある
-          最初のものはすべてのシーケンスに影響を与え、残りはシーケンスごとに用意されている
-          5.4.1 シーケンサー・チャンネル
-          MIDI コントロールセンター内でのみ使用可能
-          ：このパラメーターは、エンコーダーやパッドとは異なる
-          MIDI チャンネルをシーケンサーに設定することができる
-          この設定はシーケンス全体に影響を与える
-          5.4.2 全体のトランスポーズ
-          各シーケンスは、他から独立してトランスポーズすることができる
-          これは MIDI コントロールセンター内部、またはBeatStep のSHIFT ボタンを押しながら、LEVEL / RATE / TRANSPOSE エンコーダーを回すことでトランスポーズを行うことができる
-          これはシーケンスに対して行う他の任意の値の変更と同様
-          ：次回にも同様の設定を使用したい場合には設定を保存する必要がある
-          5.4.3 パターン・モード
-          このパラメーターによって各シーケンスが再生される方法をForward、Reverse、Alternate、 Random の 4 種類から選択する
-          5.4.4 レガート
-          小節、シーケンスごとにオン、オフ、リセットの 3 つのオプションを提供する
-          このパラメーターは、 MIDI コントロールセンター内部でのみ使用可能
-          5.4.5 スケールタイプ
-          このセッティングは、エンコーダーが SEQ モード時にどの音階を選択するか決定する
-          8 つのオプションから選択可能で、各シーケンスでこの中のどれでも使用することが可能
-          5.4.6 スウィング
-          シーケンスごとに使用可能なこのパラメーターは、各シーケンスのリズミカルなグルーブを調整することができる
-          このパラメーターはBeatStepのフロントパネルからは使用できず、MIDI コントロールセンターを使用しなければならない
-          5.4.7 ゲートタイム
-          レガートがオフ(セクション 6.5.5 を参照)に設定されると、シーケンスステップがオープンなままホールドされる
-          量を指定するためにこの値を使用する
-          これは、シーケンス内の各ステップに等しく影響し、シーケンスごとに設定可能
-          パラメーター自体は MIDI コントロールセンターでのみ使用可能
-          5.5 シーケンスデータ
-          作品が型にはまらない小節や拍子にしたい場合、このパラメーターは有効と言える
-          これらはシーケンスごとに保存され、BeatStepのフロントパネルや、 MIDI コントロールセンター・ウィンドウの右側で設定することができる
-          5.5.1 ステップサイズ
-          シーケンスのステップサイズ、または数学的に言えば分母を決定するために 4 つのオプションが提供される
-          5.5.2 パターンレングス
-          ステップサイズは、分母を決めるが、パターンレングスは分子を決定する
-          これら 2 つのパラメーターによって、シーケンスをほとんどのどんな拍子(5/8、3/4、11/16 など)にでも指定することができる
-          パターン・モードと共に使用すると、より楽しめる
-          5.6 テンプレート管理： Save、Delete、Import、Export..等
-          これらの重要な特徴は、 MIDI コントロールセンター・マニュアルに記載されている
-          それはソフトウェア“Help”メニューで見ることができる
-          5.7 シーケンス・ウィンドウ
-          MIDI コントロールセンターの中央は、各シーケンス内で、何が起こっているかを示す便利なグラフィックのホーム画面
-          ここでは、楽譜と音名表示の 2 種類の視覚的表現を採用している
-          これらはいくつかの方法でエディットすることができる
-          5.7.1 楽譜表示(ノーテーション)
-          Tシーケンス内で音階を変更するには最速の方法かもしれない
-          既存の音符にカーソルを移動し、クリックの後、4 オクターブの範囲内でお好みの場所に音符をドラッグして移動する
-          全体のトランスポーズや、パターンレングスなどに多くの影響をあたえることができる
-          しかし、ステップを視覚的に見るだけで聴かない場合は、そのステップのオン/オフ設定を確認する
-          5.7.2 音名
-          フィールドに音名を入力するとその音名が設定される
-          例：シーケンスの 2 番目の音を“Bb2”に変更したい場合、シンプルにテキストフィールドをハイライトさせ、“Bb2、またはbb2”と入力する
-          テキストフィールドだけでなく、同時に楽譜表示も変更されることに注意する
-          この機能については、もう少し解説を必要とする
-          1 つには、使用可能な入力方法がいくつかある
-           C1～C5(またはc1～ｃ5)の間の音名を入力
-           MIDI ノート番号は、35～84 の間の“絶対値”を入力(中央のC = C3=MIDI ノート＃60)
-           C3 の上下 24 ステップの“相対的”なトランスポーズ量を入力(例：“-2”と入力するとBb2 が表示される)
-          これらのデータ入力方法は、すべて C3(中央のC)をベースにしている点
-          これはあまり聞いたことがないかもしれない
-          これは、“C3”が常にシーケンスの中心として基準になっているためで、全体的なトランスポーズやパラメーターの影響を受ける
-          例えば、D3 や 62、 +2 (すべて同じ音)を入力しても Eb3 が聞こえる場合、全体的なトランスポーズの値が“+1”に設定されている可能性が高くなる
-          5.7.3 ステップ オン/オフ
-          音名の下の小さなボタンをクリックすることで各シーケンスステップのオン/オフを設定することができる
-          上図では、ステップ 1 がオフになっている
-          もう一度ボタンをクリックするとオンに変更される
-          これは、シーケンスの長さに影響はしない
-          オフの場合は、シーケンスの一部のままだが、音は再生されない
-          覚書： MIDI コントロールセンターで行われた変更は、BeatStepのエディットバッファーでも行われるが、その逆はない
-          言い換えると、BeatStepのフロントパネルでシーケンスステップを変更した場合、 それをMIDI コントロールセンター内で使用できるようにもう一度“マッチ”させなければならない
-          (データ損失の可能性を防ぐために)
-          この目的のために使用できる 2 つの方法がある
-          　メモリーボックスでワーキングメモリーを選択し、“RECALL”をクリックする
-          “Sync”ボタンを 2 回クリックする
-          5.8 ユーザースケール
-          ユーザースケールの機能は、他のスケールと同様
-          SEQ モードで動作させる場合、すぐにシーケンスステップの必要な音階を探すことを手伝う
-          違いは、8 個のスケールオプションの内、7 個はプリセットさせており変更できない
-          7 個のプリセット・スケールは、音楽的な使用方法には充分
-          しかし、 SEQ モードでエンコーダーでの入力オプションとして、音階の異なる設定を指定したい場合、ペンタトニックスケール以上の難解なスケールを使用したい場合など、MIDI コントロールセンターを使用してユーザースケールを定義することができる
-          シーケンサーウィンドウの右側に、下図のような半音階の表示があることに気づくはず
-          スケールの音は、シーケンサーが動作していない時にエンコーダーがそのレンジ過ぎるときに度の音が聴こえるようにするか設定することができるオプション
-          各音符の下にある番号はスケールでの音符を表す
-          青色はオン、白色はオフを意味する
-          エンコーダーを回すときに、例えばノートナンバー 0、1、3、4、6, 7、9、10 を聴こるように設定することができる
-          音楽理論に明るい方は、これらをハーフトーン/ホールトーン・スケールとして認識しても良い
-          C、C#、D#、E、F#、G、A、A#
-          エンコーダーを右回りに回すと次のオクターブへ移動し、左回りに回すと逆のパターンを繰り返す
-          これらの音階は、中央の C の相対的な意味で表現される
-          全体的なトランスポーズのパラメーターを“+5”に設定した場合、実際に聴こえるスケールは“F”になる
-          エディットはMIDI コントロールセンターで行い、それをBeatStepに送信するため、スケールを構築した後に、ユーザースケールを記憶させる必要はない
-          また、BeatStep のフロントパネルからユーザースケールをエディットすることもできない
-          これは MIDI コントロールセンター内部で行わなければならない
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>    6シーケンサーの操作について
-          BeastStep のシーケンスの一部であるいくつかのパラメーターは、フロントパネルからアクセスすることができない
-          それらは、 MIDI コントロールセンターを使用してエディットすることができる
-          6.1 ステップシーケンサーとは？
-          ステップシーケンサーは、ミュージック・シーケンサーの中でもっとも基本的なタイプ
-          ステップシーケンサーは、1 度に 1 つの音を出力する
-          これはアルペジエイターと似ているが、それはキーボードからの入力に基づかない
-          各キーのピッチは、ポット、エンコーダー、またはスライダーを使用して設定する
-          ステップシーケンサーを面白く役立てるアイデアの 1 つは、それがとても速く、次々と選択した音符を再生することで、これは人間の力では不可能に近いもの
-          そしてシーケンスが動作中は、無限にループされるため、パフォーマーは、フィルターやエンベロープ・セッティングのような他のパラメーターを操作したり、リアルタイムに複数の音符を入れ替えることに集中することができる
-          6.2 BeatStep シーケンサーのキャラクター
-          CNTRL/SEQ ボタンで SEQ モードを使用している場合、 BeatStep は、ステップシーケンサーになる
-          パッドやエンコーダーは、シーケンスを構築するために使用するコントロールと入力デバイスとなる
-          パッド
-          シーケンスステップのオン/オフを決定する
-          SHIFT ボタンと一緒に使用することでプレーバック・モードのようなシーケンスパラメーターを選択する
-          エンコーダー
-          各ステップがシーケンサーサイクルで再生する音符を決定する
-          6.2.1 スケールは何をするのか
-          BeatStep のフロントパネルでは、8 個の入力スケールの中から 1 つをエンコーダーに割り当てることができる
-          スケールとは望ましい音程を素早く選択するための一種の“フィルター”
-          スケールはシーケンスステップにすでに割り当てられたMIＤＩ ノートを変更しない
-          エンコーダーはシーケンスステップにすでに割り当てられたMIＤＩ ノートを変更する
-          スケールは、エンコーダーが回された時に選択する音程に特定のアウトラインを与える
-          それは常に半音階で音程を変更するよりも効率的に音階を指定することができる
-          ライブ中に複数のシーケンスステップの音程を変更したい場合に便利
-          演奏している曲にマッチするスケールを選ぶとどのように操作しても間違った音程を選ぶことはない
-          スタジオで使用しても、この機能は便利
-          スケールの範囲外にある音階を入力したい場合、異なるスケールに変更することもできる
-          変更してもすでに選んでいる音に影響を与えることはない
-          6.2.2 スケールタイプ
-          各スケールは以下のようになる
-          各スケールタイプに書かれている最後の音は、最初の音の 1 オクターブ上であることに注意
-          クロマチック
-          12 個の音は半音階
-          つまりスケールが設定できる最大数
-          フィルターバイパスと同様
-          エンコーダーを回すとすべての音階を選択可能
-          以下に紹介する大部分が 8 つの音で作られている
-          メジャー 、マイナー、ドリア、ミクソリディアン、ハーモニックマイナー、ブルース
-          ブルース・スケールは 8 つの音ではない
-          ユーザースケール
-          1～12 の間で好きな数の音を選択する事ができる
-          6.2.3 シーケンスのルート音の決定方法
-          いつでも BeatStep シーケンスは、3 つの部分の合計
-          1. シーケンサーのステップのために選択された音
-          2. MIDI コントロールセンター内の値をエディットするか SHIFT ボタンを押しながら、大きなエンコーダーを回すか、どちらかの方法によって全体のトランスポーズ・パラメーターの設定を変更
-          3. シーケンサーのチャンネルとマッチした DAW トラックのチャンネルが再生している元も低い USB MIDI ノートこのノート情報は、中央の C (C3)との関係をベースにしたシーケンスをトランスポーズする
-          例えば、C3 でプレーする場合は、トランスポーズは必要なく、D3 でプレーする場合は +2のトランスポーズを行う
-          6.2.4 オールノートオフ・コマンドを送る方法
-          珍しいケースだが、MIDI メッセージが何らかの理由により遮ることができる
-          これはデバイスがスタック、またはハングした時に音を出したままになった場合に有効
-          この場合、“STOP”ボタンを 3 回続けて押す
-          そうすると MIDI でオールノートオフ・コマンドが送信される
-          このコマンドは、MIDI 仕様の 1 つなのでどんなデバイスに対しても有効
-          6.3 パターンのエディット
-          使用方法が一見シンプルなデバイスに感じるが、BeatStep は、音楽制作のための驚異的な多数のオプションを提供する
-          以下の特徴は、 SEQ モードで大きな役割を果たす
-          6.3.1 エンコーダーを使用してピッチのエディット
-          ほぼすべてのBeatStepのコントロールと同様にエンコーダーには二重の役割がある
-           CNTRL モードでは、ほとんどすべてのMIDI データを送ることができる
-           SEQ モードでは、各シーケンスステップがプレーする音階を決定する
-          BeatStep がSEQ モードにある限り、シーケンサーが再生中かどうかに関わらず、シーケンスの音階をエディットすることができる
-          それを止めるとエディットしたそのままの音が再生される
-          再生中にエディットをするとそのステップの再生順になるまでその音を聴くことができない
-          それは稀に“幸運なアクシデント”を起こす場合がある
-          スケールタイプ・パラメーターの設定は、エンコーダーを回した時にどの音階を使用できるかについて決定する
-          6.3.2 パッドを使用してシーケンスステップのオン/オフを決定する
-          パッドは、エンコーダーと同様に 2 つ以上の機能を持っている
-           CNTRL モードでは、ほとんどすべてのMIDI データを送ることができる
-           SEQ モードでは、シーケンス内の各ステップのオン/オフを決定することができる
-          SEQ モード時のパッドには、隠された機能がある
-          (といってもパッドの下に印字されているので隠れていないが)1 つ、または 2 つのボタンを押しながらパッドを押すことで様々なシーケンスパラメーターを設定することができる
-          6.3.3 シーケンスパラメーターの設定
-          BeatStep のフロントパネルからエディット可能な各シーケンスの 4 つの基本的な側面がある
-          シーケンスのプレー、ストップに関わらずこれらの機能の変更を行うことができる
-          6.3.3.1 入力スケール
-          上の行の 8 個のパッドの下には入力スケールの名前が印刷されている
-          (“Chromaticや”Minor“など)
-          選択するには、SHIFT ボタンを押しながらその内の 1 つのパッドを押す
-          デフォルトではクロマチック・スケール
-          6.3.3.2 パターン・モード
-          パッドの下の行の最初の 4 つは、SHIFT ボタンと組み合わせてパターン・モード(再生方向)を選択することができる
-          ここでは各オプションの例として 4 ステップシーケンスを用いて紹介する
-           Forward： 1、2、3、4 | 1、2、3、4 のような順序配列で再生する(デフォルト)
-           Reverse： 4、3、2、1 | 4、3、2、1 のように逆進する
-           Alternate：1、2、3、4 | 4、3、2、1 | 1、2、3、4 | 4、3、2、1 と前進と逆進を交互に繰り返す
-           Random： ランダムにシーケンスステップを再生する
-          再生順序は予測できない
-          6.3.3.3 ステップサイズ
-          使用中のシーケンスのプレーバック・レートを 2 倍、または半分に切る
-          それは“タイムベース”と呼ばれることもある
-          ステップサイズを設定するには、SHIFT ボタンを押しながら必要なタイミングに対応したパッドを押す
-           4 分音符 (1/4)
-           8 分音符 (1/8)
-           16 分音符 (1/16)(デフォルト)
-           32 分音符 (1/32)
-          6.3.3.4 パターンレングス
-          パターンレングスは、1 ステップから 16 ステップまでの間で設定可能
-          例：1/8 のステップサイズを使用してシーケンスは、1/8(1 つの 8 分音符)～16/8(2 小節)までの間でどんな値にでも設定可能
-          新しいパターンレングスを選択するには、SHIFT と CHAN ボタンを押しながら必要なセッティングに対応したパッドを押す
-          パターンレングスのデフォルトは、16 ステップに設定されている
-          コンピューターに接続しているかどうかに関わらずこれら 4 つの特徴とそれらを組み合わせて使用する方法は、ユーザーに大きな柔軟性を与える
-          しかし、BeatStep のフロントパネルからアクセスできない多くのシーケンス機能がある
-          これらは MIDIコントロールセンター内でのみエディットすることができる
-          6.4 同期(シンクロナイゼーション)
-          BeatStep は、たくさんのフロントパネル・オプションをクリエイティブな操作に提供しているが、同様に“隠れた”機能もカバーしてきた
-          もう一つ知っておくべき機能がある
-          ：BeatStep 全体をMIDI 機材のマスタークロックにすることも、またはUSB によってコンピューターから送られる MIDI タイミングのスレーブとしても機能することができる
-          “EXT SYNC”ボタンを使用してマスター、及びスレーブ・モードを切り替えることができる
-          青いLEDによってどちらのモードを選択しているか表示す
-          6.4.1 マスター
-          “EXT SYNC”ボタンが点灯していない場合、beatStepはマスターとして動作している
-          START/STOP ボタンを使用して直接内臓のシーケンサーをコントロールすることができる
-          BeatStep は、MIDI アウト、USB/Midi の両方に同期メッセージを送信する
-          シーケンサー・モードで、テンポの設定はビッグノブを使用して行う(Shiftは使用しない)
-          6.4.2 スレーブ
-          BeatStep の “EXT SYNC”ボタンが点灯している時は、外部の USB MIDI クロックのスレーブとして機能している
-          (BeatStep がスレーブ・モード時)：
-           PLAY/STOP ボタンは、内部シーケンサーをコントロールしていない
-          それはマスタークロックのトランスポート・セクションが行う
-          しかし、BeatStepのPLAY/STOP ボタンは、MIDI コントロール
-          センターに送るようなその他の MIDI メッセージを送信する
-           BeatStep は、USB MIDI から受信したシンク・メッセージを MIDI 出力端子から送信する
-           シーケンスのテンポは、マスターコントロールの管理下にある
-          BeatStepをスレーブ・モードに設定するのはとても簡単
-          内部シーケンスで微調整した後に、DAW のトランスポート・コントロールに接続する場合には、必要に応じて“EXT SYNC”ボタンを切り替えるだけ
-          6.5 MIDI コントロールセンターでのみ見られるシーケンス・セッティング
-          MIDI コントロールセンターによってアクセス可能ないくつかの非常にクールなシーケンサーのオプションがある
-          6.5.1 シーケンサー・チャンネル
-          デフォルトでは、グローバル MIDI チャンネルとシーケンサー・チャンネルは同じ値に設定されている(MIDIチャンネル 1)
-          しかしこれらは、独立して設定することができるので、 CNTRL モードで、エンコーダーとパッドで 1 つのデバイスをコントロールし、シーケンサーで別のデバイスを演奏することも可能
-          MIDI コントロールセンター・ウィンドウの右側でシーケンサー・チャンネルを見つけることができる
-          6.5.2 スウィング
-          スウィングの設定はペアの最初の音符を長くし、2 番目の音符を短くし、シーケンスのノートのタイミングをシフトすることができる
-          ステップサイズが 1/8 に設定すると以下のようになる
-          スウィングを 50％に設定
-          各ノートは、“イコール”になる
-          そしてストレートな 8 分音符で再生される
-          スウィング値を50％以上にする
-          最初の音符は、1/8 よりも長くなり、2 番目の音はより短くなる
-          シーケンスがより“明るい雰囲気”になり、“機械的”な雰囲気を減少する
-           最大のスウィング設定値は 75％
-          値が大きくなるほど最初の音符と 2 番目の音符の長さの違いが大きくなる
-          ここに楽譜で最小値と最大値の表現を示す
-          デフォルトのスウィング設定は、50％
-          6.5.3 ゲートタイム
-          レガート・パラメーターをオフに設定すると、リズムの関係性を変更することなく、シーケンスステップのすべてのノートの長さを調節することが可能
-          パラメーターの範囲は、50％(変更なし)～99％(最大値)
-          99％の設定では、ノートオフ・コマンドは、次の音符の直前に発生する
-          レガート・パラメーターがオンになっている時は、ゲートタイムの設定は行えない
-          再びレガートをオフに設定した時に使用できるようになる
-          デフォルトでは、50％に設定されている
-          6.5.4 ユーザースケール
-          他のスケールと同様に、ユーザースケールは BeatStep のフロントパネルから選択することができる
-          MIDI コントロールセンターで行えることは、ユーザースケールをどのように定義するかということ
-          6.5.5 レガート
-          音楽的には、ミュージシャンが“レガート”でプレーをすると言う時は、レガートする音符の間にスペースを空けず、スムーズに演奏する
-          技術的には、 MIDI ノートでの“レガート”を表現する際、実際には 2 つの音符がオーバーラップすることを意味する
-          最初の音符のノートオフは 2 番目の音符のノートオン・コマンド後になる
-          レガート・モードはBeatStep シーケンスがオンになっている時に可能
-          逆にレガート・モードでは、ノートオフ・コマンドは重ならない
-          最初の音符のノートオフ・コマンドは、つねに 2番目の音符のノートオフ・コマンドの前に発生する
-          3 つのレガート・モードがある
-          オフ：レガートしない(デフォルト)
-          レガート：以下に記載されている
-          レガート・リセット：シーケンスの最後の音符のコマンドのノートオフを送信した後に、シーケンスの各ループの最初のノートのノートオン・コマンドを送信することを除いてレガートと同様
-          同じ概念がCV/Gate ジャックから電圧が送信される場合にも適用される
-          ここでは異なるレガート・モードの設定に対する典型的な 2 つのレスポンスについて例を紹介する
-          6.5.5.1 レガート・オフ
-          レガート・オフでは、音符は別々に扱われる
-           ステップ 1 プレー
-          o ノート 1 オン・メッセージ送信
-          o ノート 1 オフ・メッセージをステップ 2 のプレー前に送信
-           ステップ 2 プレー
-          o ノート 2 オン・メッセージ送信
-          o ノート 2 オフ・メッセージをステップ 3 のプレー前に送信
-          6.5.5.2 レガート・オン
-          レガートをオンに設定し、シーケンスステップ間のノートオンとノートオフ・コマンドが重なる
-          新しいノートのアタックは、受信デバイスでは聴こえない
-           ステップ 1 プレー
-          o ノート 1 オン・メッセージ送信
-           ステップ 2 プレー
-          o ノート 2 オン・メッセージ送信
-          o ノート 1 オフ・メッセージは、ノート 2 のオン・メッセージの直後に送信
-           ステップ 3 プレー
-          o ノート 3 オン・メッセージ送信
-          o ノート 2 オフ・メッセージは、ノート 3 のオン・メッセージの直後に送信
-          覚書；
-          レガートがオフに設定されると、各ノートの長さは、ゲートタイム・セッティングの影響を受ける
-          レガートがオンに設定されるとゲートタイム・セッティングは上書きされる
-      <h2 class="heading switch">aa<span class="swithCondition contentClosed"></span></h2>
-      <section class="h2content hide">
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-        <h3 class="heading switch">aa<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide">
-          <table>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-            <tr>
-              <td>aaa</td>
-              <td>aaa</td>
-            </tr>
-          </table>
-        </section>
-      </section>    7CV/GATE 、または MIDI インターフェイスとして使用する
-          7.1 USB/MIDI 機能
-          7.1.1 USB と MIDI 出力ポート
-          BeatStep は、そのコントロールからほとんどの MIDI データをも送ることができ、 USB と MIDI 出力端子からデータを送信することができる
-          また、コンピューターの MIDI 出力から受け取るMIDI データをそのまま通過(スルー)させることができる
-          ： ノートデータ、CC値、プログラム/バンク・チェンジ、タイミング・データ、MMC、NRPN、RPN
-          BeatStepが出力しない MIDI データ、またはパスがほんの週種類だけある(例：システムエクスクルーシブ)
-          7.1.2 3 種類の接続方法 ： それぞれが独自のデータ
-          BeatStep は、USB、MIDI 出力、CV/Gate 接続による 3 つの異なる方法での接続を提供する
-          しかし、それはBeatStep が各目的地に同じデータを送らなければならないことを意味しない
-          BeatStepのフロントパネルで、グローバル MIDI チャンネルを設定することができ、デフォルトでは、BeatStepが生成するすべてのものは、そのチャンネル上で送信される
-          しかし MIDI コントロールセンターは、シーケンサーと CV/GATE 端子に独立した MIDI チャンネルを割り当てることができる
-          これが意味することは、エンコーダーとパッドは MIDI チャンネル 1 でコントロールを行い、シーケンサーは、MIDI チャンネル 2 を使用してデータを送信する
-          そして CV/GATE 端子では、ご使用の DAW の MIDIチャンネル 3 からのノートデータでモジュラーシンセを動かすことができる
-          7.1.3 シーケンサーのチャンネル設定(MIDI コントロールセンターのみ)
-          知っておいたほうが良い重要なこと：
-          グローバルチャンネル・パラメーターは、(MIDIチャンネルにつき)16 のセッティングが使用可能
-          しかし、シーケンサーチャンネル・パラメーターは 17 のセッティングを提供する
-          ：16 の MIDI チャンネルごとに 1 ずつ、さらにもう 1 つのオプションは、グローバル
-          グローバル・オプションがより良い選択であるシナリオがある
-          理由：シーケンサーチャンネル・パラメーターがグローバルに設定されている場合、グローバル・チャンネル設定が変更された場合、その後、シーケンサー・チャンネルも同様に変更される
-          常に、シーケンサーがエンコーダーやパッドと同一の MIDI チャンネルで送信したい場合には、両方の 1 つのパラメーター(グローバルチャンネル)を変更する必要がある
-          7.2 CV/Gate の操作
-          7.2.1 CV/Gate 信号のためのソースを選択
-          パッドとシーケンサーは、簡単にCV/GATE 信号に変換することができ、それらを接続したデバイスに送信することができる情報を生成する
-          それは、DAW ソフトウェアの特定の MIDI トラックから、BeatStep の CV/GATE 端子にまでUSB によってMIDI ノートデータを送ることも可能
-          以下の 2 点に留意する
-           どのデバイスの CV/Gate 端子でもモノフォニック
-          もし、DAW 上の選択した MIDI トラックがポリフォニックであった場合、最も低いキーに優先権がある
-          しかし、コード内のノートが正確に同じタイミングで発音されていてもDAW は毎回同じ順序でそれらを送らない場合があり、プレーバック時に矛盾を起こす場合がある
-          最善策は、1 つのMIDI ノートだけが CV/GATE 端子に送られるように整った MIDI チャンネルであることを確認すること
-           どのデバイスの CV/Gate 端子でも非常にシンプルな信号を送るだけ
-          ：ピッチとノートオン/オフ
-          例：モジュラーシンセにADSR レートをコントロールする MIDI データを送信することはできない
-          言い換えると、モジュラーシンセのセッティングに関するエディットはシンセ上で行われる必要がある
-          BeatStep エンコーダーは CV / GATE 端子によってシンセサイザーのパラメーターをコントロールすることはできない
-          7.2.2 CV/Gate のチャンネル設定(MIDI コントロールセンターのみ)
-          ：グローバルチャンネル・パラメーターは、使用可能な 16(各 MIDIチャンネルごとに 1 つ)の設定があるが、CV/GATE チャンネルパラメーターは、17 の設定がある
-          ：16 のMIDI チャンネルとエクストラでグローバルラベルとして
-          どのように動作させるかによってこのパラメーターをグローバルに設定することを必要とするかもしれない
-          例：
-          CV/GATE チャンネルパラメーターがグローバルに設定されている場合、グローバル・チャンネルの設定が変更された場合、その後 CV/GATE チャンネルは同様に変更される
-          エンコーダーとパッドのMIDI チャンネルの割り当てを変更する必要があるが、常にパッドがCV/GATE 端子にノートデータを送信したい場合、2 つのかわりに 1 つ(グローバル・チャンネル)を変更する必要がある
-          7.2.3 BeatStep CV/Gate のスペック
-          一部のアナログ・シンセサイザーがBeatStepの CV/GATE 信号を完全な互換性がない場合がある
-          CV/Gate 端子から送信される電気信号は以下の通り：
-           コントロールボルテージ： 1 ボルト/オクターブ、0V～7V
-           ゲート出力：8 ボルト
-          8デフォルトセッティング
-          以下の表は、CNTRL プリセットごとのデフォルトセッティングを表示する
-      <p>トランスポート・ボタン</p>
-      <table>
-        <tr>
-          <th>パラメーター</th>
-          <th>値</th>
-          <th>モード</th>
-          <th>MIDI チャンネル/デバイス</th>
-        </tr>
-        <tr>
-          <td>STOP</td>
-          <td>Stop(01)</td>
-          <td>MMC</td>
-          <td>127 (device)</td>
-        </tr>
-        <tr>
-          <td>PLAY</td>
-          <td>Play (02)</td>
-          <td>MMC</td>
-          <td>127 (device)</td>
-        </tr>
-      </table>
-      <p>CNTRL モード</p>
-      <table>
-        <tr>
-          <th>パラメーター</th>
-          <th>値</th>
-          <th>モード</th>
-          <th>MIDI チャンネル/デバイス</th>
-        </tr>
-        <tr>
-          <td>Pad velocity curve</td>
-          <td>1</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Encoder acceleration</td>
-          <td>Fast</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Encoder 1</td>
-          <td>CC# 7</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 2</td>
-          <td>CC# 74</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 3</td>
-          <td>CC# 71</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 4</td>
-          <td>CC# 76</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 5</td>
-          <td>CC# 77</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 6</td>
-          <td>CC# 93</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 7</td>
-          <td>CC# 73</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 8</td>
-          <td>CC# 75</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 9</td>
-          <td>CC# 114</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 10</td>
-          <td>CC# 18</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 11</td>
-          <td>CC# 19</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 12</td>
-          <td>CC# 16</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 13</td>
-          <td>CC# 17</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 14</td>
-          <td>CC# 91</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 15</td>
-          <td>CC# 79</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Encoder 16</td>
-          <td>CC# 72</td>
-          <td>Absolute</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 1</td>
-          <td>Note# 44</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 2</td>
-          <td>Note# 45</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 3</td>
-          <td>Note# 46</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 4</td>
-          <td>Note# 47</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 5</td>
-          <td>Note# 48</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 6</td>
-          <td>Note# 49</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 7</td>
-          <td>Note# 50</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 8</td>
-          <td>Note# 51</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 9</td>
-          <td>Note# 36</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 10</td>
-          <td>Note# 37</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 11</td>
-          <td>Note# 38</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 12</td>
-          <td>Note# 39</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 13</td>
-          <td>Note# 40</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 14</td>
-          <td>Note# 41</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 15</td>
-          <td>Note# 42</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-        <tr>
-          <td>Pad 16</td>
-          <td>Note# 43</td>
-          <td>Gate</td>
-          <td>Global</td>
-        </tr>
-      </table>
     </main>
     <footer><a href="/">spindey.com</a></footer>
     <div class="loadingLayer" id="js-loadingLayer">

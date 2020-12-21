@@ -1,84 +1,46 @@
-let menu = document.getElementsByClassName("switch");
+((): void => {
+  //スイッチ要素取得
+  const menuArray = Array.from(document.getElementsByClassName("switch"));
 
-function show() {
-  let hideContent = this.nextElementSibling;
-  hideContent.classList.toggle("hide");
-  let switchCondition = this.children[0];
-  switchCondition.classList.toggle("contentClosed");
-}
+  //開閉
+  const show = (e: Event): void => {
+    //コンテンツ開閉
 
-/*
-const show = () => {
-    let hideContent = this.nextElementSibling;
-    hideContent.classList.toggle('hide');
-    let switchCondition = this.children[0];
-    console.log(switchCondition);
-    switchCondition.classList.toggle('contentClosed');
-}
-*/
+    //早期リターンでe.targetがHTMLElementのインスタンスでない可能性を消す
+    if (!(e.target instanceof HTMLElement)) {
+      return;
+    }
 
-for (let i = 0; i < menu.length; i++) {
-  menu[i].addEventListener("click", show);
-}
+    if (e.target.nextElementSibling) {
+      let hideContent = e.target.nextElementSibling;
+      if (e.target.nextElementSibling) {
+        hideContent.classList.toggle("hide");
+      }
 
+      //コンテンツ開閉時のアイコンの表示変更
+      if (e.target.children[0]) {
+        let switchCondition = e.target.children[0];
+        switchCondition.classList.toggle("contentClosed");
+      }
+    }
+  };
 
-const loaderLayer = document.getElementById("js-loadingLayer");
-const loadedTransiton = () => {
-  if (loaderLayer !== null) {
-    loaderLayer.classList.remove("active");
+  //各switchにクリックイベントshowを追加
+  menuArray.forEach((menu): void => {
+    menu.addEventListener("click", show);
+  });
+})();
+
+//ローディング
+((): void => {
+  if (document.getElementById("js-loadingLayer")) {
+    const loaderLayer = document.getElementById(
+      "js-loadingLayer"
+    ) as HTMLDivElement;
+
+    const loadedTransiton = (): void => {
+      loaderLayer.classList.remove("active");
+    };
+    window.addEventListener("load", loadedTransiton);
   }
-}
-window.addEventListener("load", loadedTransiton);
-
-
-
-
-
-
-
-
-const returnTop = document.getElementById("js-returntop");
-
-const wheelScrollCancel = (event) => {
-  event.preventDefault();
-}
-
-const returnTopAnimation = () => {
-
-  document.addEventListener('wheel', wheelScrollCancel, { passive: false });
-
-  let currentScrollPosition = 0;
-
-  currentScrollPosition = window.scrollY || 0;
-
-  window.scrollTo(0, Math.floor(currentScrollPosition / 1.1));
-
-  if (currentScrollPosition > 0) {
-    window.requestAnimationFrame(returnTopAnimation);
-  } else {
-
-    document.removeEventListener('wheel', wheelScrollCancel, { passive: false });
-  }
-}
-
-returnTop.addEventListener("click", returnTopAnimation);
-
-
-//モニターの高さ取得
-const displayHeight = window.parent.screen.height;
-
-const returntopAppearance = () => {
-  //スクロール量
-  let currentScrollPosition = 0;
-  currentScrollPosition = window.scrollY || 0;
-
-  //スクロール量が画面の高さより大きいならactive追加
-  if (displayHeight < currentScrollPosition * 5) {
-    returnTop.classList.add("active");
-  } else {
-    returnTop.classList.remove("active");
-  }
-
-}
-
-document.addEventListener("scroll", returntopAppearance);
+})();
