@@ -85,6 +85,9 @@ html(lang="ja")
                   br
                   | SHIFTキーを押しながらPROGRAM/BPMノブを回すと、エフェクトのグループの先頭にジャンプする
 
+
+
+
         h3.heading.switch
           | エフェクトのかかり具合を調整する
           span.swithCondition.contentClosed
@@ -152,6 +155,1310 @@ html(lang="ja")
             | SHIFTキーを押しながらスライダーを操作すると、現在選択しているプログラムのFX RELEASEの効果の深さを調整することができる
 
           p ディレイを使用したエフェクト・プログラムを選択しているときは、タッチ・パッドから手を離した瞬間、エフェクト・プログラム中のディレイ音が残り、FxRelease機能は動作しない
+
+        h3.heading.switch
+          | FX RELEASEの保存
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p FX RELEASEの設定をプログラムごとに保存することができる
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist WRITEキーを押す
+                  br
+                  | WRITEキー、PROGRAM MEMORYキーが点滅する
+                  br
+                  | SHIFTキーが点灯し、EXITキーとして機能する
+                li.contentOperationOrderlist 再度WRITEキーを押す
+                  br
+                  | ライトが実行される
+                  br
+                  | 終了後、通常状態に戻る
+
+
+
+      h2.heading.switch
+        | エフェクトリスト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+
+        h3.heading.switch
+          | フィルター
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td FLt.1
+                td LPF
+                td LPF(Low Pass Filter)
+                td Cutoff Frequency
+                td Resonance
+                td 64
+                td
+              tr
+                td FLt.2
+                td HPF
+                td HPF (High Pass Filter)
+                td Cutoff Frequency
+                td Resonance
+                td 64
+                td
+              tr
+                td FLt.3
+                td BPF+
+                td BPF+ (Band Pass Filter+)
+                td Cutoff Frequency
+                td Resonance
+                td 64
+                td
+              tr
+                td FLt.4
+                td 72dB LPF
+                td 72dB/oct LPF
+                td Cutoff Frequency
+                td Resonance
+                td 64
+                td
+              tr
+                td FLt.5
+                td LPF&Delay
+                td LPF & Delay
+                td Delay Time
+                td LPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td FLt.6
+                td HPF&Delay
+                td HPF & Delay
+                td Delay Time
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+
+              tr
+                td FLt.7
+                td BPF+&Delay
+                td BPF+ & Delay
+                td Delay Time
+                td BPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td FLt.8
+                td LPF&Reverb
+                td LPF & Reverb
+                td Reverb Depth
+                td LPF Cutoff & Resonance
+                td off
+                td
+              tr
+                td FLt.9
+                td HPF&Reverb
+                td HPF & Reverb
+                td Reverb Depth
+                td HPF Cutoff & Resonance
+                td off
+                td
+              tr
+                td FL.10
+                td BPF+&Rvb
+                td BPF+&Reverb
+                td Reverb Depth
+                td BPF Cutoff & Resonance
+                td off
+                td
+              tr
+                td FL.11
+                td MorphFilt
+                td Morphing Filter
+                td LPF – BPF+ – HPF
+                td Cutoff & Resonance
+                td 100
+                td
+              tr
+                td FL.12
+                td RadioFilt
+                td Radio Filter
+                td Band Width
+                td Noise Level
+                td 100
+                td
+              tr
+                td FL.13
+                td RadioIso
+                td Radio Isolator
+                td Mid+Low – Mid – Mid+Hi
+                td Level & Drive
+                td 0
+                td
+              tr
+                td FL.14
+                td Isolator
+                td Isolator
+                td Low - Mid – Hi
+                td Level & Drive
+                td 0
+                td
+              tr
+                td FL.15
+                td Iso&Dist
+                td Isolator & Distortion
+                td Low - Mid - Hi
+                td Distortion
+                td 100
+                td
+              tr
+                td FL.16
+                td Iso&Delay
+                td Isolator & Delay
+                td Low - Mid - Hi
+                td Delay Depth
+                td 100
+                td BPM
+
+
+
+
+        h3.heading.switch
+          | EQ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td Eq. 1
+                td 4bandEQ
+                td 4 band Equalizer
+                td Band1-2-3-4
+                td Level (-18dB – +12dB)
+                td 0
+                td
+              tr
+                td Eq. 2
+                td 8bandEQ
+                td 8 band Equalizer
+                td Band1-2-3-4-5-6-7-8
+                td Level (-18dB – +12dB)
+                td 0
+                td
+
+
+
+
+
+
+
+        h3.heading.switch
+          | モジュレーション
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td Mod.1
+                td Jet
+                td Jet (Manual Flanger)
+                td Delay Time
+                td Feedback
+                td 100
+                td
+              tr
+                td Mod.2
+                td ManuPhaser
+                td Manual Phaser
+                td Frequency
+                td Resonance
+                td 100
+                td
+              tr
+                td Mod.3
+                td TalkFilter
+                td Talk Filter
+                td 1st Formant
+                td 2nd Formant
+                td off
+                td BPM
+              tr
+                td Mod.4
+                td DigiTalk
+                td Digi Talk
+                td 1st Formant
+                td 2nd Formant
+                td 100
+                td
+              tr
+                td Mod.5
+                td RingMod&HP
+                td Ring Mod & HPF
+                td Ring Mod Frequency
+                td HPF Cutoff & Resonance
+                td 100
+                td
+              tr
+                td Mod.6
+                td PitchShift
+                td Pitch Shifter & HPF
+                td Pitch Shift
+                td HPF Cutoff & Resonance
+                td 100
+                td
+              tr
+                td Mod.7
+                td MidPitch
+                td Mid Pitch Shifter
+                td Pitch Shift
+                td Mix Balance (Original - Mix - Pitch Shift)
+                td 100
+                td
+              tr
+                td Mod.8
+                td Pitch&Dly
+                td Pitch Shifter & Delay
+                td Pitch Shift
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td Mod.9
+                td BrokenMod
+                td Broken Modulation
+                td Frequency
+                td Depth
+                td 100
+                td
+              tr
+                td Md.10
+                td FuzzDist
+                td Fuzz Distortion
+                td Low Boost – Low Cut
+                td Distortion
+                td 100
+                td
+              tr
+                td Md.11
+                td Decimator
+                td Decimator
+                td Sampling Frequency
+                td Sampling Bit
+                td 0
+                td
+              tr
+                td Md.12
+                td Decima&HPF
+                td Decimator & HPF
+                td Decimator Frequency & Bit
+                td HPF Cutoff & Resonance
+                td 64
+                td
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | コンプレッサー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td CMP.1
+                td Compressor
+                td Compressor
+                td Sensitivity
+                td Attack
+                td 0
+                td
+              tr
+                td CMP.2
+                td LowComp
+                td Low Compressor
+                td Sensitivity
+                td Attack
+                td 0
+                td
+
+
+
+
+
+        h3.heading.switch
+          | LFO
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td LFO.1
+                td LFO LPF
+                td LFO LPF
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LFO.2
+                td LFO HPF
+                td LFO HPF
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LFO.3
+                td LFO BPF+
+                td LFO BPF+
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LFO.4
+                td LFO HP&Dly
+                td LFO HPF+ & Delay
+                td Delay Time
+                td HPF Level, Delay Depth
+                td off
+                td BPM
+              tr
+                td LFO.5
+                td InfinitHP+
+                td Infinit LFO HPF+
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LFO.6
+                td RandomLPF
+                td Random LFO LPF
+                td LFO Speed
+                td LFO Depth
+                td 100
+                td BPM
+              tr
+                td LFO.7
+                td RandomHPF+
+                td Random LFO HPF+
+                td LFO Speed
+                td LFO Depth
+                td 100
+                td BPM
+              tr
+                td LFO.8
+                td Flanger
+                td Flanger
+                td LFO Speed
+                td Feedback
+                td 100
+                td BPM
+              tr
+                td LFO.9
+                td DeepFlange
+                td Deep Flanger
+                td LFO Speed
+                td Feedback
+                td 100
+                td BPM
+              tr
+                td LF.10
+                td MidFlanger
+                td Mid Flanger
+                td LFO Speed
+                td Feedback
+                td 100
+                td BPM
+              tr
+                td LF.11
+                td Flange&LPF
+                td Flanger & LPF Flanger
+                td LFO Speed
+                td LPF Cutoff & Resonance
+                td 100
+                td BPM
+              tr
+                td LF.12
+                td Flange&Dly
+                td Flanger & Delay
+                td Delay Time
+                td Flanger Feedback, Delay Depth
+                td off
+                td BPM
+              tr
+                td LF.13
+                td InfiniFlng
+                td Infinit LFO Flanger
+                td LFO Speed
+                td Feedback
+                td 100
+                td BPM
+              tr
+                td LF.14
+                td Phaser
+                td Phaser
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LF.15
+                td MidPhaser
+                td Mid Phaser
+                td LFO Speed
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LF.16
+                td Phaser&Dly
+                td Phaser & Delay
+                td Delay Time
+                td Phaser Resonance, Delay Depth
+                td off
+                td BPM
+              tr
+                td LF.17
+                td StepPhaser
+                td Step Phaser
+                td Frequency
+                td Resonance
+                td 100
+                td BPM
+              tr
+                td LF.18
+                td AutoPan
+                td Auto Pan
+                td LFO Speed
+                td Mono Mix – Auto Pan
+                td 0
+                td BPM
+              tr
+                td LF.19
+                td MidAutoPan
+                td Mid Auto Pan
+                td LFO Speed
+                td LFO Depth
+                td 0
+                td BPM
+              tr
+                td LF.20
+                td Slicer
+                td Slicer
+                td LFO Speed
+                td LFO Depth
+                td 0
+                td BPM
+              tr
+                td LF.21
+                td MidSlicer
+                td Mid Slicer
+                td LFO Speed
+                td LFO Depth
+                td 0
+                td BPM
+              tr
+                td LF.22
+                td Slicer&LPF
+                td Slicer & LPF
+                td Slicer LFO Speed
+                td LPF Cutoff & Resonance
+                td 100
+                td BPM
+              tr
+                td LF.23
+                td Slicer&HPF
+                td Slicer & HPF
+                td Slicer LFO Speed
+                td HPF Cutoff & Resonance
+                td 100
+                td BPM
+              tr
+                td LF.24
+                td Gate&LPF
+                td Audio Gate & LPF
+                td Gate Pattern 1, 2, 3, 4, 5, 6, 7, 8
+                td LPF Cutoff & Resonance
+                td 100
+                td BPM
+              tr
+                td LF.25
+                td Gate&HPF
+                td Audio Gate & HPF
+                td Gate Pattern 1, 2, 3, 4, 5, 6, 7, 8
+                td HPF Cutoff & Resonance
+                td 100
+                td BPM
+
+
+
+
+
+
+
+        h3.heading.switch
+          | ディレイ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td dLY.1
+                td Delay
+                td Delay
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dLY.2
+                td SmoothDly
+                td Smooth Delay
+                td Delay Time
+                td Delay Depth
+                td off
+                td
+              tr
+                td dLY.3
+                td LowCutDly
+                td Low Cut Delay
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dLY.4
+                td PingPongDl
+                td Ping Pong Delay
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dLY.5
+                td LCR Delay
+                td LCR Delay
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dLY.6
+                td 3bandDelay
+                td 3 band Delay
+                td Low – Mid – Hi
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dLY.7
+                td MultiTapDl
+                td Multi Tap Delay
+                td Delay Tone
+                td Delay Depth
+                td off
+                td
+              tr
+                td dLY.8
+                td BPF Slide
+                td BPF Time Slide
+                td Delay Time
+                td BPF Frequency
+                td off
+                td BPM
+              tr
+                td dLY.9
+                td ReverseDly
+                td Reverse Delay & HPF
+                td Delay Time
+                td HPF Cutoff & Resonance
+                td 100
+                td BPM
+              tr
+                td dL.10
+                td RvsDlyMix
+                td Reverse Delay Mix
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dL.11
+                td 3bandRvsDl
+                td 3 band Reverse Delay
+                td Delay Time
+                td Low – Mid – Hi
+                td off
+                td BPM
+              tr
+                td dL.12
+                td GateRvbDly Gate
+                td Reverb & Delay
+                td Delay Time
+                td Delay Depth, Reverb Depth
+                td off
+                td BPM
+              tr
+                td dL.13
+                td Delay&Rvb
+                td Delay & Reverb
+                td Delay Time
+                td Delay Depth, Reverb Depth
+                td off
+                td BPM
+              tr
+                td dL.14
+                td TapeEcho
+                td Tape Echo
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td dL.15
+                td DubEcho
+                td Dub Echo
+                td Delay Time
+                td Delay Tone
+                td off
+                td BPM
+              tr
+                td dL.16
+                td FdbckEcho
+                td Feedback Echo
+                td Delay Time
+                td Delay Depth
+                td off
+                td BPM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | リバーブ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td rVb.1
+                td Reverb
+                td Reverb
+                td Reverb Time
+                td Reverb Depth
+                td off
+                td
+              tr
+                td rVb.2
+                td Reverb2
+                td Reverb 2
+                td Reverb Time
+                td Reverb Depth
+                td off
+                td
+              tr
+                td rVb.3
+                td SpringRvb
+                td Spring Reverb
+                td Reverb Time
+                td Reverb Depth
+                td off
+                td
+              tr
+                td rVb.4
+                td GateReverb
+                td Gate Reverb
+                td Gate Time
+                td Reverb Depth
+                td off
+                td
+              tr
+                td rVb.5
+                td ReversGate
+                td Reverse Gate Reverb
+                td Gate Time
+                td Reverb Depth
+                td off
+                td
+              tr
+                td rVb.6
+                td 3bandGateR
+                td 3 band Gate Reverb
+                td Low – Mid – Hi
+                td Reverb Depth
+                td off
+                td
+
+
+
+        h3.heading.switch
+          | グレイン
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td Grn.1
+                td GrainShift
+                td Grain Shifter
+                td Cycle Speed
+                td Length
+                td 90
+                td BPM
+              tr
+                td Grn.2
+                td MidGrain
+                td Mid Grain Shifter
+                td Cycle Speed
+                td Length
+                td 90
+                td BPM
+              tr
+                td Grn.3
+                td MidGrain+
+                td Mid Grain Shifter+
+                td Cycle Speed
+                td Length
+                td 90
+                td BPM
+              tr
+                td Grn.4
+                td Grain&HPF
+                td Grain&HPF
+                td Grain Cycle Speed & Length
+                td HPF Cutoff & Resonance
+                td 90
+                td BPM
+              tr
+                td Grn.5
+                td Grain&HPF+
+                td Grain&HPF+
+                td Grain Speed
+                td HPF Cutoff & Resonance
+                td 90
+                td BPM
+
+
+
+
+
+        h3.heading.switch
+          | ルーパー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td LoP.1
+                td LooperF/R
+                td Looper Forward/Rverse
+                td Looper Beat
+                td Reverse – Forward(Cross Fade)
+                td 90
+                td BPM
+              tr
+                td LoP.2
+                td VinylLoop
+                td Vinyl Looper
+                td Looper Beat
+                td Reverse – Forward (Pitch)
+                td 90
+                td BPM
+              tr
+                td LoP.3
+                td RewindLoop
+                td Rewind Spin Looper
+                td Looper Beat
+                td Rewind Spin – Forward
+                td 90
+                td BPM
+              tr
+                td LoP.4
+                td Looper&LPF
+                td Looper & LPF
+                td Looper Beat
+                td LPF Cutoff & Resonance
+                td 90
+                td BPM
+              tr
+                td LoP.5
+                td Looper&HPF
+                td Looper & HPF
+                td Looper Beat
+                td HPF Cutoff & Resonance
+                td 90
+                td BPM
+              tr
+                td LoP.6
+                td Loop&Flang
+                td Looper & Flanger
+                td Looper Beat
+                td Flanger Feedback
+                td 90
+                td BPM
+              tr
+                td LoP.7
+                td Loop&Pitch
+                td Looper & Pitch Shifter
+                td Looper Beat
+                td Pitch Shift
+                td 90
+                td BPM
+              tr
+                td LoP.8
+                td Loop&Decim
+                td Looper & Decimator
+                td Looper Beat
+                td Decimator Frequency & Bit
+                td 90
+                td BPM
+              tr
+                td LoP.9
+                td LoopIso&HP
+                td Looper, Isolator & HPF
+                td Looper Beat
+                td HPF Cutoff & Resonance
+                td 90
+                td BPM
+              tr
+                td LP.10
+                td Loop&Iso+
+                td Looper & Isolator+
+                td Looper Beat
+                td Low – Mid – Hi
+                td 90
+                td BPM
+              tr
+                td LP.11
+                td BassLooper
+                td Bass Looper
+                td Looper Beat
+                td Reverse – Forward (Cross Fade)
+                td 64
+                td BPM
+              tr
+                td LP.12
+                td Loop&OSC
+                td Looper & Oscillator
+                td Looper Beat
+                td Oscillator Pitch, etc.
+                td 90
+                td BPM
+              tr
+                td LP.13
+                td Loop&Noise
+                td Looper & Noise
+                td Looper Beat
+                td Noise Level, etc.
+                td 90
+                td BPM
+
+
+
+
+
+
+        h3.heading.switch
+          | サンプル
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td SMP.1
+                td SmplEndPnt
+                td Sample End Point
+                td Loop End Time
+                td HPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td SMP.2
+                td SmplRoll
+                td Sample Roll
+                td Sample Length(1/1, 1/2, 1/4...1/128)
+                td HPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td SMP.3
+                td SmplFw/Rvs
+                td Sample Forward/Reverse
+                td Reverse – Forward (x1 speed)
+                td HPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td SMP.4
+                td SmpFastF/R
+                td Sample Fast Forward/Reverse
+                td Reverse – Forward (x4 speed)
+                td HPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td SMP.5
+                td SmplF/R&Dl
+                td Sample Forward/Reverse & Delay
+                td Reverse – Forward (x1 speed)
+                td Delay Depth
+                td off
+                td
+              tr
+                td SMP.6
+                td SmplStrtch
+                td Sample Time Stretch
+                td Slow – x1 speed – Fast
+                td HPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td SMP.7
+                td SmplGrain
+                td Sample Grain
+                td Start Point
+                td Sample Length(1/1, 1/2, 1/4...1/128)
+                td 90
+                td
+
+
+
+
+
+        h3.heading.switch
+          | フェード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td CrS.1
+                td 4smpXFader
+                td 4 sample bank Cross Fader Roll
+                td Bank1-Bank2-Bank3-Bank4
+                td Sample Length(1/1, 1/2, 1/4...1/128)
+                td 90
+                td
+              tr
+                td CrS.2
+                td XFadeStrch
+                td 4 sample bank Cross Fader Time Stretch
+                td Bank1-Bank2-Bank3-Bank4
+                td x1 speed – Slow
+                td 90
+                td
+              tr
+                td CrS.3
+                td XFade&LPF
+                td 4 sample bank Cross Fader & LPF
+                td Bank1-Bank2-Bank3-Bank4
+                td LPF Cutoff & Resonance
+                td 90
+                td
+              tr
+                td CrS.4
+                td XFade&HPF
+                td 4 sample bank Cross Fader & HPF
+                td Bank1-Bank2-Bank3-Bank4
+                td HPF Cutoff & Resonance
+                td 90
+                td
+
+
+
+
+
+
+        h3.heading.switch
+          | ビート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td drM.1
+                td HouseBeat
+                td House Beat
+                td Pattern 1 - 2 - 3... 7 - 8
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td drM.2
+                td BeatBox
+                td Beat Box
+                td Pattern 1 - 2 - 3... 7 - 8
+                td Delay Depth
+                td off
+                td BPM
+              tr
+                td drM.3
+                td TribalBeat
+                td Tribal Beat
+                td Percussion Tone
+                td Percussion Noise, Delay Depth
+                td off
+                td BPM
+              tr
+                td drM.4
+                td ElectrBeat
+                td Electro Beat
+                td Snare Drum Tone
+                td Snare Drum Decay, Bass Drum Decay, Delay Depth
+                td off
+                td BPM
+              tr
+                td drM.5
+                td PadDrum1
+                td Pad Drum 1
+                td Bass Drum & Hi Hat – (mix) – Snare Drum & Hi Hat
+                td Decay
+                td off
+                td
+              tr
+                td drM.6
+                td PadDrum2
+                td Pad Drum 2
+                td Bass Drum – (mix) – Snare Drum
+                td Decay
+                td off
+                td
+
+
+
+        h3.heading.switch
+          | シンセ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td SYn.1
+                td SawBass
+                td Unison Saw Bass
+                td Synth Pitch
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.2
+                td SquBass
+                td Unison Squ Bass
+                td Synth Pitch
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.3
+                td SawSynth
+                td Unison Saw Synth
+                td Synth Pitch
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.4
+                td SquSynth
+                td Unison Squ Synth
+                td Synth Pitch
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.5
+                td MetalicSyn
+                td Metalic Synth
+                td Synth Pitch, BPF Cutoff etc.
+                td LFO Speed etc.
+                td off
+                td BPM
+              tr
+                td SYn.6
+                td Siren
+                td Siren
+                td LFO Speed etc.
+                td LFO Intensity
+                td off
+                td BPM
+              tr
+                td SYn.7
+                td LFOSin
+                td LFO Sin
+                td Synth Pitch, LFO Speed
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.8
+                td LFOSqu
+                td LFO Squ
+                td Synth Pitch, LFO Speed
+                td HPF Cutoff & Resonance
+                td off
+                td BPM
+              tr
+                td SYn.9
+                td Noise
+                td Noise
+                td Noise Tone
+                td Noise Level
+                td off
+                td BPM
+              tr
+                td SY.10
+                td SynLooper
+                td Synth & Looper
+                td Synth Tone
+                td Looper Off – Looper On (Beat)
+                td off
+                td BPM
+
+
+
+
+        h3.heading.switch
+          | ボコーダー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.tableScroll
+            table
+              tr
+                td(colspan="3") Program Name
+                td X AXIS
+                td Y AXIS Fx
+                td Release
+                td BPM Sync
+              tr
+                td Voc.1
+                td Vocoder
+                td Vocoder
+                td Pitch
+                td Vocoder Tone
+                td 90
+                td
+              tr
+                td Voc.2
+                td Vocoder M7
+                td Vocoder Maj7
+                td Pitch
+                td Vocoder
+                td 90
+                td
+              tr
+                td Voc.3
+                td Vocoder m7
+                td Vocoder min7
+                td Pitch
+                td Vocoder
+                td 90
+                td
+              tr
+                td Voc.4
+                td VocoderMix
+                td Vocoder Mix
+                td Pitch
+                td Mix Balance (Dry – Mix)
+                td 90
+                td
+
+
 
 
       h2.heading.switch
@@ -368,7 +1675,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | PROGRAM MEMORYキーへ設定を呼び出し
+          | PROGRAM MEMORYキーに保存した設定の呼び出し
           span.swithCondition.contentClosed
         section.h3content.hide
 
@@ -578,27 +1885,6 @@ html(lang="ja")
           p SAMPLE BANKに入っているデータは、そのBANKキーを押すとデータの再生が消え上書きされる
 
 
-
-        h3.heading.switch
-          | プログラムの保存(ライト)
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          p FX RELEASEの設定をプログラムごとに保存することができる
-
-
-          div.contentOperationBox
-            p.contentOperationCaption 操作
-              ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist WRITEキーを押す
-                  br
-                  | WRITEキー、PROGRAM MEMORYキーが点滅する
-                  br
-                  | SHIFTキーが点灯し、EXITキーとして機能する
-                li.contentOperationOrderlist 再度WRITEキーを押す
-                  br
-                  | ライトが実行される
-                  br
-                  | 終了後、通常状態に戻る
 
 
 
@@ -872,7 +2158,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | カードにセーブしたデータをロードする
+          | 保存したデータをロードする
           span.swithCondition.contentClosed
         section.h3content.hide
 
