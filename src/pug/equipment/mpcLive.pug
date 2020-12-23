@@ -33,4 +33,1514 @@ html(lang="ja")
             tr
               td aaa
               td aaa
+
+
+
+
+      h2.heading.switch
+        | aa
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | aa
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td aaa
+              td aaa
+            tr
+              td aaa
+              td aaa
+        h3.heading.switch
+          | aa
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td Sequence
+              td ソングの「構成要素」
+                br
+                | DAW のように、同時に再生される複数のトラックが含まれている
+                br
+                | プロジェクトでは、1つのシーケンスを作成し、展開させるために別のシーケンスも作成し、それぞれを特定の順番で、または繰り返してソングを組み立てる
+                br
+                |(1 つのプロジェクトには最大 128 のシーケンスを含めることができる)
+
+            tr
+              td Track
+              td シーケンスのレイヤー
+                br
+                | トラックには2種類ある
+                table
+                  tr
+                    td MIDIトラック
+                    td MIDIデータのみで構成され、オーディオデータはない
+                      br
+                      | これらのトラックは、プログラムを使って音を出す
+                      br
+                      | 通常のDAWとは異なり、各MIDIトラックはそのシーケンスの中にのみ存在する
+                      br
+                      | 複数のシーケンスで同じトラックを使用したい場合は、あるシーケンスから別のシーケンスにトラックをコピーすることができる
+                      br
+                      | 1つのシーケンスには128のMIDIトラックを含めることができる
+                  tr
+                    td Audio Track
+                    td 録音されたオーディオ信号
+                      br
+                      | MIDI トラックとは異なり、オーディオトラックは、トラック自体が空であっても、プロジェクト内のすべてのシーケンスに存在する
+                      br
+                      | シーケンスには、8つのオーディオトラックを含めることができる
+            tr
+              td Program
+              td MIDIトラックがルーティングされるプリセット
+                br
+                | プログラムにはオーディオサンプルが含まれている場合があり、トラックが再生されたときにトリガーされて再生される
+                br
+                | プログラムはトラックやシーケンスから独立しているので、複数のシーケンスにまたがって同じプログラムを使用することができる
+                br
+                | (1つのプロジェクトには128のプログラムを含めることができる)
+                br
+                | 各プログラムは16パッドを使用して演奏することができる
+                br
+                | (8つのパッドバンクにまたがるので、各プログラムで128のパッドにアクセスすることができる)
+                br
+                | 各パッドを押すとMIDIノートを演奏するが、その MIDI ノートはプログラムごとに異なるトリガーとなる
+                br
+                | 例：ドラムプログラムでは、ひとつのパッドにアサインされたキックドラムの音をトリガーし、さらに別のパッドではアサインされたスネアドラムの音をトリガーすることができる
+
+
+
+          table
+            tr
+              td(rowspan="3") Sequence
+              td Track(MIDI/Drum Program)
+              td ドラム
+            tr
+              td Track(MIDI/Keygroup Program)
+              td ベース、キーボード、シンセなど音階のある楽器
+            tr
+              td Track(Audio)
+              td オーディオ
+
+
+      h2.heading.switch
+        | ファイルブラウズ
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ブラウザの表示
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p "Browse" か"Shift"+"Menu/Browse"を押してブラウザを表示させる
+            br
+            | 次に、タッチスクリーンを使ってドラムサウンドのある場所に移動する
+            br
+            | ファイルを場所別にブラウズするには、画面の左側にある Places をタップする
+
+          table
+            tr
+              td Internal
+              td MPC Liveの内部ドライブ
+            tr
+              td MPC Documents
+              td MPC Liveの内蔵ドライブ MPC Documents のショートカット
+                br
+                | USB ポートや SD カードスロットに接続されているストレージデバイスがある場合は、この欄にも表示される
+
+
+
+        h3.heading.switch
+          | ファイルをタイプ別にブラウズする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Content をタップしてから、ファイルのタイプをタップする
+            br
+            | Drums、Instruments、 Clips、Samples、Demos、My Files をタップする
+            br
+            | MPC Expansionをブラウズするには：Expansions をタップする
+
+        h3.heading.switch
+          | ブラウザでの移動
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td フォルダレベルを1つ上に移動する
+              td 左上隅にあるフォルダ/上矢印アイコンをタップする
+
+            tr
+              td リストを移動する
+              td
+                ul
+                  li 上か下にスワイプする
+                  li データダイヤルを回す
+                  li –/+ボタンを使用する
+            tr
+              td フォルダに入る
+              td
+                ul
+                  li フォルダをダブルタップするか、右下隅の Open をタップする
+                  li データダイヤルを押す
+                  li センターカーソルを押す
+
+
+
+        h3.heading.switch
+          | ファイルのロード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 選択したファイルをロードする
+              td
+                ul
+                  li ファイルをダブルタップする
+                  li Loadをタップする
+                  li データダイヤルを押す
+                  li センターカーソルを押す
+                table
+                  tr
+                    td ファイルがサンプルの場合
+                    td プロジェクトのサンプルプールにロードされる
+                  tr
+                    td ファイルがプロジェクトの場合
+                    td ファイル全体がロードされる
+                      br
+                      | (現在の読み込んでいるプロジェクトを閉じるかどうか聞かれる)
+
+
+
+            tr
+              td フォルダ内のすべてのファイルをロードする
+              td フォルダを選択して(リストでハイライト表示されているように)、Shift キーを押したまま、右下隅のLoad Allをタップする
+                p プロジェクトにロードしたサンプルは自動的に非圧縮オーディオファイル(WAV)に変換されるので、元ファイルサイズよりも多くのメモリー/ストレージ容量を使用する可能性がある
+                  br
+                  | 複数のファイルを一度に読み込むことができない場合は、ファイル数を減らしてからもう一度試す
+
+
+
+        h3.heading.switch
+          | 選択したファイルやフォルダを削除する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ブラウザ画面で Shift キーを押しながら Delete File をタップする
+
+        h3.heading.switch
+          | オーディション機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 画面下の Play(▶アイコン)をタップして長押しする
+
+
+        h3.heading.switch
+          | オーディション機能の設定変更
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 画面下部のAuditionをタップしてウィンドウを表示する
+            br
+            | 設定変更が終わったらもう一度Auditionをタップして、ウィンドウを非表示にする
+
+
+          table
+            tr
+              td オーディション機能の有効化/無効化
+              td Autoをタップして有効/無効の切り替え
+            tr
+              td 音量の設定
+              td レベルスライダーを上下にドラッグして音量を設定
+
+
+
+
+
+
+        h3.heading.switch
+          | 現在のドライブの情報を表示する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shift キーを押しながら画面下部の Drive Infoをタップする
+                li.contentOperationOrderlist ドライブの情報が新しいウィンドウに表示される
+                li.contentOperationOrderlist OK をタップして前の画面に戻る
+
+      h2.heading.switch
+        | ロードしたサンプルをパッドにアサインする
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ロードしたサンプルをパッドにアサインする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ドラムキットのサンプルをサンプルプールにロードした後、Sample Assign タブを使用してキックドラムのサウンドをパッドにアサインする
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 画面下部の Sample Assign をタップする
+                  br
+                  | パッドとプロジェクトのサンプルプールが表示される
+                li.contentOperationOrderlist パッド 1 を押すか、画面上のパッド 1をタップして選する
+                  br
+                  | パッドが緑色に点灯する
+                li.contentOperationOrderlist サンプルプールリストを上下にスワイプするか、データダイヤルまたは–/+ボタンを使用して移動する
+                li.contentOperationOrderlist サンプルプールリストでサンプルをタップするか、データダイヤルを押すか、センターカーソルを押してサンプルをロードする
+
+                li.contentOperationOrderlist パッド 1を押してキックドラムのサンプルを再生することができる
+
+                li.contentOperationOrderlist 上記の手順を他のパッドでも繰り返す
+
+
+
+
+
+
+      h2.heading.switch
+        | ドラムシーケンスの作成
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ドラムシーケンスの作成
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu を押してメニューに入り、Grid View をタップする
+                li.contentOperationOrderlist TAP TEMPO をタップしてシーケンスの速さ(BPM)を決める
+                li.contentOperationOrderlist Recボタンを押して、シーケンスを録音待機状態にする
+                li.contentOperationOrderlist Play ボタンを押すと、実際の録音が始まる
+                  br
+                  | 録音が始まる前に 1 小節分のカウントインが聞こえる
+                li.contentOperationOrderlist 簡単なキックドラムのパターンを演奏する
+                  br
+                  | 先ほど録音した音符イベントが自動的にグリッドに配置される
+                  br
+                  | 最初の小節の長さは 2小節
+                  br
+                  | 2小節を過ぎると、録音は自動的にオーバーダブが作動する
+                li.contentOperationOrderlist スネアドラムのパートを演奏し、次にハイハットのパートを演奏する
+                li.contentOperationOrderlist 録音が終わったら、Stop ボタンを押す
+
+
+          table
+            tr
+              td Overdub
+              td 録音済みのシーケンスでRecをやり直すと、同じパッドで演奏した既存の音が、新しい録音で演奏したパッドに置き換わってしまう
+                br
+                | これを防ぐには、録音前に Rec ボタンの代わりに Overdub ボタンを押す
+                br
+                | オーバーダブでは、既存のシーケンスの上にノートイベントを追加して録音することができる
+            tr
+              td Undo
+              td 通常、Undo ボタンを押すと、最後のイベントだけが取り消される
+                br
+                | 元に戻すイベントがある場合、Undo ボタンは点灯する
+                br
+                | 録音中は、Undo ボタンが点滅する
+                br
+                | この場合、元に戻すボタンを押すと、その録音のすべてのイベントが消去される
+
+
+
+      h2.heading.switch
+        | データのセーブと名前の変更
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | プログラムの名前を変更する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist 画面下部の Program セクションで、右端のカーソルアイコンをタップする
+                li.contentOperationOrderlist 表示されたバーチャルキーボードを使って新しい名前(例：Drums)を入力し、Do It をタップする
+        h3.heading.switch
+          | サンプルの名前を変更する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu を押してメニューに入り、Sample Edit をタップしてサンプルエディットモードに入る
+                li.contentOperationOrderlist 画面上部の Sample フィールドにサンプルの名前が表示される
+                  br
+                  | 以下のいずれかの方法でサンプルを選択する
+                  ul
+                    li サンプルフィールドが選択されているときは、データダイヤルまたは–/+ボタンで変更する
+                    li サンプルフィールドをダブルタップし、表示されたリストの中から 1 つをタップする
+                li.contentOperationOrderlist 隣のキーボードアイコンをタップして、現在のサンプルの名前を変更する
+                li.contentOperationOrderlist 表示されたバーチャルキーボードを使って新しい名前を入力し、Do It をタップする
+
+
+
+
+
+        h3.heading.switch
+          | プロジェクトを保存する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Menuを押して画面上部のディスクアイコンをタップするか、Shift+Browseを押してSaveウィンドウを開く
+
+          table
+            tr
+              td 表示したいストレージデバイスを選択する
+              td 左側のストレージ欄でタップする
+                table
+                  tr
+                    td Internal
+                    td MPC Liveの内蔵ドライブ
+                  tr
+                    td MPC Documents
+                    td ：MPC の内蔵ドライブ MPC Documents フォルダへのショートカット
+                      br
+                      | MPC Liveの USB ポートや SD カードスロットに接続されているストレージデバイスがある場合は、この欄にも表示される
+            tr
+              td フォルダに入る
+              td
+                ul
+                  li フォルダをダブルタップする
+                  li データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押すか、センターカーソルを押す
+                p 右上の5つのフォルダボタンのいずれかをタップして、事前に割り当てられたファイルパスにすぐにジャンプすることもできる
+
+            tr
+              td 新しいフォルダを作成する
+              td New Folder をタップし、表示される仮想キーボードを使用して名前を入力し、Do It をタップする
+
+            tr
+              td フォルダのレベルを 1 つ上に移動する
+              td 左上隅にあるフォルダ/上矢印アイコンをタップする
+            tr
+              td ファイルに名前を付ける
+              td 画面下部の File Name フィールドをタップし、表示される仮想キーボードを使用します。
+
+            tr
+              td ファイルを保存する
+              td Save をタップする
+            tr
+              td メニューに戻る
+              td
+                ul
+                  li Cancelをタップする
+                  li 左上隅の(←)矢印アイコンをタップする
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ノートイベントのエディット
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ノートイベントのエディット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p グリッドでは、シーケンスとして録音したノート(またはノートイベント)を確認することができます。
+
+          p グリッドビューに入るには、Main を押し、タッチスクリーン左端の Grid View をタップする
+
+
+          table
+            tr
+              td 拡大/縮小
+              td 右上の虫めがねアイコンをタップする
+                br
+                | 次にグリッド内で 2 本の指を離したり、狭めたりする
+                br
+                | これは水平軸または垂直軸で行うことができる
+            tr
+              td 1つのパッドバンクと 2 小節を表示するようにグリッドを自動的に設定する
+              td 左下隅にあるグリッドと拡大鏡アイコンをタップする
+            tr
+              td 最後の操作を元に戻す
+              td Undoを押す
+            tr
+              td 元に戻した最後のアクションをやり直す
+              td Shift + Undo/Redo を押す
+            tr
+              td ノートを入力する
+              td 右上隅の鉛筆アイコンをタップする
+                br
+                | 次に、グリッドで正方形をタップする
+            tr
+              td ノートを削除する
+              td 右上隅の消しゴムアイコンをタップする
+                br
+                | 次に、グリッドでノートをタップする
+            tr
+              td 単一のノートを選択する
+              td 右上隅の選択ボックスをタップする
+                br
+                | 次に、グリッドでノートをタップする
+            tr
+              td パッドのすべてのノートを選択する
+              td 目的のパッドを押す
+            tr
+              td 選択したノートを移動する
+              td タッチスクリーンの下部にある Nudge をタップし、データダイアルまたは–/+ボタンでノートを左右移動する
+                br
+                | デフォルトでは、クォンタイズ値で定義された TC でノートを配置することができる
+            tr
+              td 選択したノートをクォンタイズグリッドの制限を受けることなく移動させる
+              td タッチスクリーンの左下隅にある Don’tSnap をタップしたまま、データダイアルまたは–/+ボタンを使用してノートをシフトする
+                br
+                | この場合、１回のナッジは 4 ティックに相当する
+            tr
+              td 選択したノートの開始点または終了点を(位置を変えずに)調整する
+              td タッチスクリーンの下部にある Edit Start をタップし、データダイアルまたは–/+ボタンを使用する
+            tr
+              td 選択したノートを上下にトランスポーズする
+              td タッチスクリーンの下部にある Transpose をタップし、データダイアルまたは–/+ボタンを使用する
+            tr
+              td 前または次のトラックに切り替える
+              td Shift キーを押したまま、タッチスクリーン下部の Track フィールド、またはデータダイヤル、–/+ボタンを使用する
+            tr
+              td トラックをミュートにする
+              td Shift キーを押したまま、タッチスクリーン下部のMuteをタップする
+            tr
+              td トラックをソロにする
+              td Shift キーを押したまま、タッチスクリーン下部のSoloをタップする
+            tr
+              td Timing Correct ウィンドウを開く
+              td Shift キーを押したまま、タッチスクリーン下部の TC をタップする
+            tr
+              td メトロノームの設定を調整する
+              td Shift キーを押したまま、タッチスクリーン下部の Click をタップする
+            tr
+              td 選択したノートのベロシティを調整する
+              td タッチスクリーン下部の Velocity をタップし、データダイアルまたは–/+ボタンを使用する
+                br
+                | 数値が画面に表示される
+            tr
+              td ベロシティレーンを表示または非表示にする
+              td タッチスクリーン右下隅の上矢印(^)ボタンをタップして、グリッドの下にベロシティレーンを表示する
+                br
+                | 各ノートのベロシティは垂直バーで表され、高く赤色で表されるバーほど、高いベロシティ値であることを示している
+
+                p 上矢印(^)ボタンをもう一度タップすると、背の高いバージョンのベロシティレーンが表示され、ボタンが下矢印(v)へ変わる
+                  br
+                  | タップするとベロシティレーンが非表示になる
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | サウンドのエディット
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | 基本的なサウンドのエディット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu を押してから、Program Edit をタップしてプログラムエディットモードに入る
+                li.contentOperationOrderlist パッドを押して、そのパラメーターをタッチスクリーンに表示する
+
+
+          table
+            tr
+              td 音量を調整する
+              td Volume ノブを上下にドラッグする
+                br
+                | または、データダイアルまたは–/+ボタンを使用する
+                br
+                | 微調整を行うには、ノブをダブルタップして大きく表示されたノブを調整する
+            tr
+              td ステレオパンニングを調整する
+              td Pan ノブをタップして上下にドラッグする
+                | または、データダイアルまたは–/+ボタンを使用する
+                br
+                | 微調整を行うには、ノブをダブルタップして大きく表示されたノブを調整する
+            tr
+              td 音程をチューニングする
+              td Samples タブをタップするとその下の最初の四角が点灯するので、サンプル名の隣にある Semi と Fine ノブを調整する
+            tr
+              td リバーブをかける
+              td タッチスクリーン下部の Effects をタップすると、Insert Effects タブが表示される
+                br
+                | リバーブをかけたいパッドを押して選択する
+
+
+        h3.heading.switch
+          | エフェクトを追加する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 目的のスロットをダブルタップする
+                  br
+                  | エフェクトのリストが表示される
+                li.contentOperationOrderlist 上下にスワイプしてリストを移動する
+                li.contentOperationOrderlist エフェクトをロードするには、ダブルタップする
+                  br
+                  | または、一度タップしてから Select をタップするか、データダイアルを押す
+                li.contentOperationOrderlist Close をタップしてリストを閉じる
+
+          table
+            tr
+              td エフェクトのパラメーターを調整する
+              td 鉛筆のアイコンをタップする
+            tr
+              td エフェクトスロットを空にする
+              td ゴミ箱のアイコンをタップする
+            tr
+              td エフェクトをオフにする
+              td スロット右側の On/Off ボタンをタップし切り替える
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ベーストラックの作成
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | 新しいトラックを選択する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに戻る
+                li.contentOperationOrderlist タッチスクリーンの中央左の Track フィールドをダブルタップし、トラックのリストから Track2 (unused)をタップする
+                  br
+                  | または、Track フィールドに(unused)と表示されるまで、タッチスクリーン下部の Track+ボタンをタップする
+
+
+
+        h3.heading.switch
+          | 新しいプログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ピアノキーのアイコンをタップし、キーグループプログラムを作成する
+                  br
+                  | これは、パッドでベース音を半音単位で演奏するために必要
+                  br
+                  | タッチスクリーン下部の Program フィールドに新しいプログラム名が表示される
+                li.contentOperationOrderlist タッチスクリーン下部のプログラムセクションで、右端のカーソルアイコンをタップする
+                li.contentOperationOrderlist 表示された仮想キーボードを使用して新しい名前を入力し、Do It をタップする
+
+
+
+        h3.heading.switch
+          | ベースサウンドをロードしてエディットする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shift+Menu/Browseを押してブラウザを表示する
+                  br
+                  | 次に、タッチスクリーンを使ってベースサウンドがある場所に移動し、プロジェクトのサンプルプールにロードする
+                li.contentOperationOrderlist Menu を押し、Program Edit をタップしてプログラムエディットモードに入る
+                li.contentOperationOrderlist プログラムエディットモードでは、画面下部の Samples タブをタップして、プログラム内の 4 つのレイヤーのサンプルを表示する
+                li.contentOperationOrderlist 最初のレイヤーフィールドをダブルタップしてから、左側のリストからベースサンプルをタップする
+                  br
+                  | ドラムプログラムではなくキーグループプログラムを使用しているため、このサンプルはすべてのパッドで演奏可能
+
+
+
+
+          p パッドバンク D ボタンを押してパッドバンク D に切り替え、パッド 13 を押すとベースサンプルが元のピッチで再生される
+            br
+            | 他のパッドを使って、クロマチックにサンプルを再生することができる
+
+
+        h3.heading.switch
+          | レイヤーを追加して、ベロシティレンジを設定する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 高いベロシティで再生したときに音の響きが異なるようにする
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shift+Menu/Browseを押してブラウザを表示させ、似ているが少し明るめに聞こえる別のベースサンプルを選択して、プロジェクトのサンプルプールにロードする
+                li.contentOperationOrderlist プログラムエディットモードに戻り、Layer タブで 2 番目の Layer フィールドをダブルタップし、新しいベースサンプルを選択する
+                  br
+                  | パッドを押して、両方のサンプルが一度に鳴るのを聞く
+                li.contentOperationOrderlist Pan Velocity タブをタップしてパラメーターを表示する
+                li.contentOperationOrderlist Layer1 の Vel End を 80 に設定する
+                  br
+                  | 同様に、レイヤー2 の Vel Start スライダーを 81 に設定する
+                li.contentOperationOrderlist パッドを押すと、低いベロシティ(0-80)はレイヤー 1 のサンプルのみをトリガーし、高いベロシティ(81-127)はレイヤー 2 のサンプルのみをトリガーする
+
+
+        h3.heading.switch
+          | ベース音を録音してエディットする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p 録音が終わったら、Filter セクションでサウンドを微調整してみる
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist プログラムエディットモードで、Filter/Env タブをタップしてパラメーターを表示する
+                li.contentOperationOrderlist Type ドロップダウンメニューをダブルタップしてフィルターを選択する
+                  br
+                  | Lowpass 4 Pole を使ってみる
+                li.contentOperationOrderlist カットオフ(Cutoff)またはレゾナンス(Resonance)ノブをタップし、ベースサンプルの音を調整する
+                li.contentOperationOrderlist Amp Envelope セクションで Attack または Release ノブをタップし、設定を調整する
+                  br
+                  | サウンドのレベル特性をコントロールする
+
+
+        h3.heading.switch
+          | エフェクトを追加する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Effects タブをタップして、インサートエフェクトを表示する
+                li.contentOperationOrderlist Inserts スロットの 1 つをダブルタップして、利用可能なエフェクトのリストを表示する
+                li.contentOperationOrderlist ベースラインに追加したいエフェクトをダブルタップするか、キャンセルするには Close をクリックする
+
+          table
+            tr
+              td エフェクトの設定を調整する
+              td スロット横にある鉛筆アイコンをクリックしてパラメーター・ウィンドウを開く
+            tr
+              td プログラムのすべてのインサートエフェクトを有効/無効にする
+              td 右上隅の All On/All Off ボタンをクリックする
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | オーディオトラックのレコーディング
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | オーディオトラックのレコーディングの準備
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに戻る
+                li.contentOperationOrderlist 画面下部の Audio タブをタップする
+                  br
+                  | Track フィールドに Audio 001 が表示される
+                li.contentOperationOrderlist チャンネルストリップが画面の左側に表示されていない場合は、Input Config(タッチスクリーン下部)または目のアイコン(タッチスクリーン左上)をタップして表示する
+
+                li.contentOperationOrderlist シンセサイザーやその他のラインレベルのオーディオソースをリアパネルの 1/4 インチ(6.35 mm)input に接続し、Line/Phono セレクターをLineに設定する
+
+                li.contentOperationOrderlist 最初のフィールド(Input)をダブルタップし、Input 1 または Input 1、2 を(オーディオソースに応じて)選択する
+
+                li.contentOperationOrderlist 2 番目のフィールドが Out 1、2 に設定されていない場合は、ダブルタップし、そのオプションを出力として選択する
+
+                li.contentOperationOrderlist Monitor(モニター)ボタンをタップして、Autoトラックが録音可能な状態の場合のみに入力オーディオが聞こえるよう)になるまで、3 つの状態を切り替える
+
+                li.contentOperationOrderlist Rec Volノブを回して、音源を再生しながら、Rec Vol ノブを回して入力レベルを設定する
+                  br
+                  | メーターレベルが表示されるので、それが最大レベルを超えないことを確認する
+
+        h3.heading.switch
+          | オーディオトラックのレコーディング
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Record Arm ボタンをタップしてトラックを録音可能にする
+                li.contentOperationOrderlist Rec または Overdub を押して録音待機させる
+                li.contentOperationOrderlist 録音を開始するには、Play または Play Start を押してから、オーディオソースを再生する
+                  br
+                  | その時に、既存のシーケンスがバックグラウンドで再生されていることを確認する
+                  br
+                  | 録音を停止するには、Stop を押す
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ソングの作成
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ソングの作成
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+
+          p 始める前に、いくつかのシーケンスが録音されていることを確認する
+
+          table
+            tr
+              td ソングモードに入る
+              td 再生が停止していることを確認してから Menu を押して、Song をタップしてソングモードに入る
+            tr
+              td シーケンスのプレイリスト
+              td このプロジェクトで作成した各シーケンスがパッドに割り当てられている
+                br
+                | シーケンスプレイリストはパッドの左側にある
+                br
+                | 曲が演奏されると、シーケンスプレイリストの各ステップに移動する
+                br
+                | 各ステップには、割り当てたシーケンスが含まれている
+            tr
+              td 各ステップの繰り返し回数
+              td 各ステップは、Repeat カラムの値(リピートアイコン)によって繰り返される
+                br
+                | リピート値を 1 に設定すると、シーケンスが 1 回だけ再生されることを意味する
+                br
+                | 右のバーのカラムは、そのステップの長さを示す：[シーケンス内の小節数] x[リピート回数]
+            tr
+              td 各ステップのBPMを独自にする
+              td 各ステップは、BPM カラムの値によって決定される、独立したテンポでシーケンスを再生するように設定できる
+                br
+                | 各シーケンスには独自のテンポがあるが、プロジェクト全体に異なるマスターテンポが使用される場合があり、 各シーケンスの BPM 値は、マスターテンポとは異なる場合がある
+                br
+                | 再生がマスターテンポに追従するように設定されている場合、各シーケンスの個々のテンポは無視される
+                br
+                | デフォルトでは、各プロジェクトはシーケンステンポを使用するように設定されている
+                br
+                | タッチスクリーン上部の Seq/Mst ボタンをタップし(ボタンには Mst が表示されます)、すべてのシーケンスが同じテンポを使用するようにマスターテンポを入力することを推奨
+
+          table
+            tr
+              td 現在の位置にステップを挿入する
+              td Insert をタップする
+            tr
+              td 現在選択されているステップを削除する
+              td Delete をタップする
+            tr
+              td ステップで再生するシーケンスを設定する
+              td ステップの Sequence フィールドをタップしてから、データダイアルを回してシーケンスを選択する
+            tr
+              td シーケンスのリピート回数を設定する
+              td ステップの Repeat フィールド(シーケンス名の横)をタップし、データダイヤルを回して番号を選択する
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ソングのエクスポート
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ソングのエクスポート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 制作した楽曲をオーディオファイルとして共有するには、エクスポートを行う
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist ソングモードで、タッチスクリーン下部の Export をタップする
+                li.contentOperationOrderlist Audio Mixdown 画面で、次の操作を行う
+                  ul
+                    li Start フィールドが 1 に設定されていることを確認し、End フィールドは曲の最後のバーを設定する
+                    li Audio Tailフィールドをタップし、データダイアルを回して 2 秒に設定する
+                    li 圧縮ファイルでエクスポートする場合は、左下隅に mp3 ファイル形式のオプションをタップする
+                li.contentOperationOrderlist Export をタップし、曲を保存する場所を選択する
+                  br
+                  | 曲に名前を付けるには、File Name フィールドをタップし、表示された仮想キーボードを使用して新しい名前を入力し、Save をタップしてエクスポートを開始する
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ステップシーケンサー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ステップシーケンサー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p パッドを「ステップボタン」として使用することで、従来のステップシーケンサースタイルでノートイベントを素早く入力することができる
+          p ステップシーケンサーに入る
+          ul
+            li Menu を押してから Step Sequencer をタップする
+            li いくつかのモードでは、画面の左端にあるステップアイコンをタップすることもできる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 左上のトラックフィールドをタップしてから、データダイヤルまたは–/+ボタンを使って(unused)トラックを選択する
+                  br
+                  | または、トラックフィールドをダブルタップしてから、選択することもできる
+                li.contentOperationOrderlist 画面上部の Track Length フィールドをタップしてトラックの長さを設定し、データダイヤルまたは–/+ボタンを使って長さを選択する
+                  br
+                  | 最小値の Sequence を選択すると、トラックはシーケンスの長さになる
+                  br
+                  | これにより、1 小節のドラムシーケンスを 4 小節のベースラインの下で繰り返し演奏することもできる
+                li.contentOperationOrderlist 画面下部 Bar –/+ ボタンでエディットしたいステップを選択する
+                  br
+                  | 左上のバーフィールドにバー番号が表示される
+                li.contentOperationOrderlist 画面下部 Pad –/+ ボタンでエディットしたいパッドを選択する
+                  br
+                  | パッド番号は左上の Pad フィールドに表示される
+                li.contentOperationOrderlist Play ボタンを押して、シーケンスを開始する
+
+                li.contentOperationOrderlist 各パッドは、バーのステップを表す
+                  br
+                  | 選択したトラックに既にノートイベントがある場合、対応するパッド(ステップ)がその速度に応じた色で点灯する
+
+
+          table
+            tr
+              td ステップでノートを入力する
+              td 点灯していないパッドを押す
+                br
+                | パッドがベロシティに対応する色で点灯する
+            tr
+              td ステップからノートを削除する
+              td 点灯しているパッドを押す
+                br
+                | パッドが消灯する
+            tr
+              td バー全体からすべてのノートを削除する
+              td Shift キーを押しながら右下の Clear Bar をタップする
+
+
+
+
+
+
+
+      h2.heading.switch
+        | ドラムループとチョップモード
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ドラムループとチョップモード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+
+
+          p サンプルエディットモードを使ってドラムループを操作する
+            br
+            | ブラウザを使ってドラムループを探し、ダブルタップしてプログラムに追加する
+            br
+            | ループはプロジェクト内のテンポに合わせる必要はない
+
+          p サンプルエディットモードに入るには、Menu を押してから Sample Edit をタップしてサンプルエディットモードに入る
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 画面上部の Sample フィールドをタップし、データダイヤルまたは–/+ボタンを使って、読み込んだドラムループを選択する
+                  br
+                  | プロジェクトにロードされたすべてのサンプルをスクロールすることができる
+                  br
+                  | または、サンプルフィールドをダブルタップしてからサンプルをタップして選択することもできる
+                li.contentOperationOrderlist 画面左下の Trim/Chop タブをタップして、Trim モードと Chop モードを切り替える
+                  br
+                  | チョップモードを選択すると、ドラムループをスライスしてくれる
+                li.contentOperationOrderlist 画面左下のThreshold をタップし、右側のスレッショルド欄をタップする
+                  br
+                  | データダイヤル、–/+ボタン、テンキー(MPC X)を使って値を選択するか、しきい値フィールドをダブルタップして、画面上のテンキーを使用することもできる
+                  br
+                  | ドラムループの各トランジェントピークにスライスマーカーがあるように値を選択する
+
+
+          p 各スライスは自動的にパッドに割り当てられる
+            br
+            | パッド A01 はスライス 1、パッド A02 はスライス 2 を再生する
+            br
+            | 各パッドを押すと、同じ番号のスライスが再生される
+
+
+        h3.heading.switch
+          | スライスをサンプルとして新しいプログラムを作成
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 対応するノートイベントを自動的に作成して、これらのスライスを順次再生するようにもできる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shift キーを押したままにして、画面下部の Convert をタップして Convert または Assign Slices ウィンドウに入る
+                li.contentOperationOrderlist Convert To フィールドをタップして、データダイヤルまたは–/+ボタンで、New Program with New Samples(新規サンプルと新規プログラム)を選択する
+                li.contentOperationOrderlist Crop Samples(サンプルの切り取り)がチェックされていることを確認します。チェックされていない場合は、タップする
+                li.contentOperationOrderlist Create New Program(新規プログラムの作成)がチェックされていることを確認する
+                  br
+                  | チェックが入っていない場合は、タップする
+                li.contentOperationOrderlist Create Events がチェックされていることを確認する
+                  br
+                  | チェックが入っていない場合は、タップする
+                li.contentOperationOrderlist Bars フィールドをタップし、データダイヤルまたは–/+ボタンで、サンプル全体で使用するバーの数を選択する
+                li.contentOperationOrderlist Do It をタップして続行します。各スライスはパッドに割り当てられ、各パッドはトラックに録音されたノートイベントを持る
+                  br
+                  | そのトラックを再生すると、各パッド(各スライス)が元の順番で再生される
+                  br
+                  | Menu を押してから Grid View をタップすると、シーケンスの中でサンプルがどのように表示されているかを確認することができる
+                li.contentOperationOrderlist Play ボタンを押して、ドラムループが曲のテンポに合っているかどうかを聞く
+
+
+
+          p 画面上部の TC/clock アイコンをタップすると、Timing Correct ウィンドウを使用してノートイベントが正確に一定の時間間隔になるようクォンタイズできる
+
+
+      h2.heading.switch
+        | ミュート
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | パッドミュート
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p 異なるパッドをミュートして、それらのサンプルやパートがない場合のシーケンスがどのように聞こえるかを確認できる
+
+          p パッドミュートモードに入るには、Menu を押し、Pad Mute をタップするか、Shift+Track Muteを押す
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Play ボタンを押してシーケンスを再生する
+                li.contentOperationOrderlist 画面上部のプログラムフィールドをタップし、データダイヤルまたは–/+ボタンを使用してドラムプログラムを選択する
+                  br
+                  | または、プログラムフィールドをダブルタップしてから、プログラムをタップして選択することもできる
+                li.contentOperationOrderlist パッドを 1 回押すか、画面上でタップしてミュートする
+                  br
+                  | ミュートされたパッドは赤く点灯する
+                  br
+                  | 複数のパッドを同時にミュートすることもできる
+
+
+        h3.heading.switch
+          | トラック全体をミュートする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p トラックミュートモードに入るには、Menu を押してから Track Mute をタップする
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Play ボタンを押して、シーケンスを再生する
+                li.contentOperationOrderlist 画面上部のシーケンスフィールドをタップしてから、データダイヤルまたは–/+ボタンを使って希望のシーケンスを選択する
+                  br
+                  | または、シーケンスフィールドをダブルタップしてから、シーケンスをタップして選択することもできる
+                li.contentOperationOrderlist 各パッドはトラックに割り当てられている
+                  br
+                  | 対応するパッドを押すか、画面上でタップしてトラックをミュートする
+                  br
+                  | パッドが赤く点灯する
+                  br
+                  | 複数のトラックを同時にミュートすることができる
+
+
+
+          table
+            tr
+              td トラックを正確な音程間隔でミュートする
+              td 「Time Division」をタップして音楽的なタイミング値を設定する
+                br
+                | または、データダイヤルまたは -/+ ボタンを使用する
+                br
+                | Close をタップしてページを閉じる
+
+
+
+
+
+
+      h2.heading.switch
+        | サンプリング
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | サンプリング
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+
+          p サンプラーを開くには、Menu を押し、サンプラーをタップしてサンプラーモードに入る
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist オーディオソースを MPC ハードウェアの入力／入力に接続する
+                li.contentOperationOrderlist 左上隅の Input _ メニューが Input 1、2(MPC ハードウェアの入力)に設定されていない場合は、Input 1、2 を選択する
+                li.contentOperationOrderlist Rec Vol (MPC Live、 MPC One、 MPC Touch) ノブを回して、オーディオソースを再生しながら入力レベルを設定する
+                  br
+                  | メーターにレベルが表示される
+                  br
+                  | レベルが最大レベルを超えていないことを確認する
+                li.contentOperationOrderlist スレッショルドスライダーをタップして、スレッショルドを設定する
+                  br
+                  | または、データダイヤルまたは–/+ボタンを使用する
+                  br
+                  | 低いレベル(例：-50 dB)に設定する
+                li.contentOperationOrderlist Arm をタップしてサンプラーを録音待機状態にする
+                li.contentOperationOrderlist オーディオソースを再生する
+                  br
+                  | 入力レベルがスレッショルド値に達したら録音を開始する
+                  br
+                  | または、丸い録音ボタンをタップして手動で録音を開始する
+                li.contentOperationOrderlist 録音を停止するには、Stop ボタンをタップする
+                  br
+                  | Keep or Discard Sample ウィンドウが表示される
+
+
+
+        h3.heading.switch
+          | Keep or Discard Sampleウィンドウ：
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 新しいサンプルに名前を付ける
+              td Edit Name フィールドをタップし、バーチャルキーボードを使用して名前を入力する
+            tr
+              td 新しいサンプルをプログラムに割り当てる
+              td Program フィールドをタップしてから、データダイヤルまたは–/+ボタンを使用して目的のプログラムを選択する
+                br
+                | また、Program フィールドをダブルタップしてからプログラムをタップして選択することもできる
+            tr
+              td サンプルをプログラム内のパッドにアサインする
+              td Assign to Pad フィールドをタップしてから、目的のパッドを押す
+                br
+                | データダイヤルまたは–/+ボタンを使用して目的のパッド番号を選択するか、パッドフィールドをダブルタップしてからパッド番号をタップする
+            tr
+              td サンプルのルートノートを設定する
+              td Root Note フィールドをタップしてから、データダイアルまたは–/+ボタンを使って目的のノートを選択する
+            tr
+              td サンプルを保存する
+              td 画面下部の Save ボタンをタップする
+            tr
+              td 録音を再生する
+              td 画面下部の Play ボタンをタップする
+            tr
+              td 録音を保存せずに破棄する
+              td 画面下部の Discard ボタンをタップする
+            tr
+              td 選択した内容を確認する
+              td 画面下部の Keep をタップする
+            tr
+              td サンプルエディットモードでサンプルをエディットする
+              td 画面下の Edit ボタンをタップする
+
+
+
+
+
+
+      h2.heading.switch
+        | サンプルエディット
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | サンプルエディット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 新しく録音したサンプルは、サンプルエディットモードを使ってエディットする必要がある
+          p サンプルエディットモードに入るには、Menu(メニュー)を押し、Sample Edit(サンプルエディット)をタップする
+          table
+            tr
+              td Trim Mode と Chop Mode を切り替える
+              td 画面下部の Trim/Chop タブをタップする
+            tr
+              td サンプルのスタートポイントを設定する
+              td 1 列目の Q-Link ツマミを使って、解像度を変化させながらスタートポイントを調整する
+                br
+                | また、波形の S マーカーをタップしてドラッグすることもできる
+                br
+                | また、Start フィールドをダブルタップして、画面上のテンキーを使って値を入力することもできる
+                br
+                |(Start フィールドをタップしてテンキーを使うこともできる)
+            tr
+              td サンプルのエンドポイントを設定する
+              td 2 列目の Q-Link ツマミを使って、分解能を変えながらエンドポイントを調整する
+                br
+                | 波形の中の E マーカーをタップしてドラッグすることもできる
+                br
+                | Start フィールドをダブルタップして画面上のテンキーを使って値を入力することもできる
+                br
+                | (Start フィールドをタップしてテンキーを使うこともできる
+            tr
+              td エディットした音を聞く
+              td パッド 10 を押して、スタートポイントからエンドポイントまでのサンプルを再生
+
+
+
+
+
+        h3.heading.switch
+          | サンプルに様々な処理を施す
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p Process Sample ウィンドウを開くには、画面下部の Process をタップする
+
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist データダイヤルまたは–/+ボタンを使用して、Function フィールドで希望する処理を選択する
+                  br
+                  | Function をタップするかFunction フィールドをダブルタップして目的のプロセスをタップする
+                li.contentOperationOrderlist 適用する量を調整する
+                  br
+                  | 他の場所をタップすると、前の画面に戻る
+                li.contentOperationOrderlist 選択内容を実行するには Do Itをタップする
+                  br
+                  | 処理をキャンセルするには、Cancel をタップする
+
+
+
+      h2.heading.switch
+        | XY パッドでオートメーションを記録する
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | XY パッドでオートメーションを記録する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p 様々なパラメーターを自動化することで動きやダイナミズムをシーケンスに付加することができる
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu を押し、XYFX をタップして XYFX モードに入る
+                li.contentOperationOrderlist XYFX Location フィールドをダブルタップして、Program を選択する
+                li.contentOperationOrderlist プロジェクトでこのモードを初めて開くと XYFX をプログラムにロードするように求められる
+                  br
+                  | Insert XYFX をタップしてこれを行う
+                li.contentOperationOrderlist Setup をタップして XY パッドの動作をコントロールするセットアップパネルが表示される
+                li.contentOperationOrderlist Preset フィールドをダブルタップし、エフェクトをタップして選択する
+                  br
+                  |(これらは、XYFX モードで使用できるエフェクトであり、すべての MPC エフェクトではない)
+                  br
+                  | リスト全体を表示するには、上下にスワイプする
+                li.contentOperationOrderlist いずれかのノブ(Attack、Release、または Wet/Dry)を上下にドラッグして、必要に応じて値を設定する
+                  br
+                  | それらの下には、どのパラメーターを X 軸と Y 軸でコントロールするかを確認することができる
+                li.contentOperationOrderlist オートメーションボタンをタップするか、Read/Write (MPC X) を押して、利用可能なオートメーショ ンモードを切り替える
+                  br
+                  | ボタンが赤/Write(W)になっていることを確認する
+                li.contentOperationOrderlist Play Start を押して録音を開始する
+                li.contentOperationOrderlist タッチスクリーン上の XY パッドで指を動かして記録する
+                  br
+                  | 音の変化は、X 軸と Y 軸の両方のパラメーターのオートメーションとして記録されている
+                  br
+                  | XYパッドに触れているときに、左下隅にあるLatchをタップすると、指を離した後もマーカーをキープできる
+                  br
+                  | XYパッドの別の部分に触れるか、もう一度Latchをタップするまで、マーカーはそこに残る
+                li.contentOperationOrderlist 記録が終了したら、Stop を押す
+                li.contentOperationOrderlist オートメーションボタンをタップして緑色の Read (R)オプションを選択する
+                  br
+                  | これにより、トラックを再生するときに、記録したばかりのオートメーションが使用されるようになる
+
+
+
+      h2.heading.switch
+        | エフェクトリスト
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | エフェクトリスト
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          table
+            tr
+              td リバーブ
+              td
+                ul
+                  li Small
+                  li Reverb Medium
+                  li Reverb Large
+                  li Reverb Large 2
+                  li Reverb In Gate
+                  li Reverb Out Gate
+            tr
+              td ディレイ
+              td
+                ul
+                  li Delay Mono
+                  li Delay Mono Sync
+                  li Delay Stereo
+                  li Delay Sync (Stereo)
+                  li Delay LP
+                  li Delay HP
+                  li Delay Analog
+                  li Delay Analog Sync
+                  li Delay Tape Sync
+                  li Delay Ping Pong
+                  li Delay Multi-Tap
+
+
+
+            tr
+              td フランジャー
+              td
+                ul
+                  li Flanger
+                  li Flanger Sync
+
+
+            tr
+              td コーラス
+              td
+                ul
+                  li Chorus 2-Voice
+                  li Chorus 4-Voice
+
+            tr
+              td オートパン
+              td
+                ul
+                  li Autopan
+                  li Autopan Sync
+
+
+            tr
+              td トレモロ
+              td
+                ul
+                  li Tremolo
+                  li Tremolo Sync
+
+
+
+            tr
+              td フェイザー
+              td
+                ul
+                  li Phaser 1
+                  li Phaser 2
+                  li Phaser Sync
+
+
+            tr
+              td ハイパスフィルター
+              td
+                ul
+                  li HP Filter
+                  li HP Filter Sweep
+                  li HP Filter Sync
+                  li HP Shelving Filter
+
+
+
+
+
+            tr
+              td ローパスフィルター
+              td
+                ul
+                  li LP Filter
+                  li LP Filter Sweep
+                  li LP Filter Sync
+                  li LP Shelving Filter
+
+
+
+            tr
+              td パラメトリック EQ
+              td
+                ul
+                  li PEQ 2-Band
+                  li 2-Shelf,
+                  li PEQ 4-Band
+
+
+
+            tr
+              td ディストーション
+              td
+                ul
+                  li Distortion Amp
+                  li Distortion Fuzz
+                  li Distortion Grimey
+                  li Distortion Overdrive
+                  li Distortion Custom
+
+
+
+            tr
+              td コンプレッサー
+              td
+                ul
+                  li Compressor Master
+                  li Compressor Opto
+                  li Compressor VCA
+                  li Compressor Vintage
+
+
+
+            tr
+              td ビットリデューサー
+              td
+                ul
+                  li Decimator
+                  li Resampler
+
+            tr
+              td その他
+              td
+                ul
+                  li Auto Wah
+                  li Frequency Shifter
+                  li Transient Shaper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     include ../_include/_footer.pug
+
+//- P62-72 program
+//- P73-300
+//- P332-405 アップデート
