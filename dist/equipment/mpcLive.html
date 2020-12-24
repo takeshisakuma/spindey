@@ -85,17 +85,17 @@
           <div class="tableScroll">
             <table>
               <tr>
-                <td rowspan="3">Places</td>
+                <td rowspan="3">Placesタブ</td>
                 <td rowspan="3"> ファイルを場所別にブラウズする</td>
                 <td>Internal</td>
                 <td>MPC Liveの内部ドライブ</td>
               </tr>
               <tr>
-                <td>MPC Documents</td>
+                <td>MPC Documentsタブ</td>
                 <td>MPC Liveの内蔵ドライブ MPC Documents のショートカット<br>USB ポートや SD カードスロットに接続されているストレージデバイスがある場合は、この欄にも表示される</td>
               </tr>
               <tr>
-                <td>(Expantions)</td>
+                <td>(Expantions)タブ</td>
                 <td>インストールされているExpansionsが列記される</td>
               </tr>
               <tr>
@@ -1439,6 +1439,325 @@
             <tr>
               <td>プログラムの名前を変更する</td>
               <td>プログラムセクションの右端にあるカーソルアイコンをタップする<br>表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確定するか、画面上部のグレーバーをタップしてキャンセルする</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">DrumSynth<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">DrumSynth を使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">MAINを押す</li>
+                <li class="contentOperationOrderlist">中段のTRACKの「プラグインアイコン」を押す<br>下段がPLUGIN PROGRAMに切り替わる</li>
+                <li class="contentOperationOrderlist">PLUGIN RPOGRAMの「PLUGIN」をダブルタップするか、ダイヤルを回すとプラグインウィンドウが開く</li>
+                <li class="contentOperationOrderlist">使いたいDrumSynthを選択
+                  <ul>
+                    <li>Clap</li>
+                    <li>Crash</li>
+                    <li>HiHat</li>
+                    <li>Kick</li>
+                    <li>Perc</li>
+                    <li>Ride</li>
+                    <li>Snare</li>
+                    <li>Tom</li>
+                  </ul>
+                </li>
+                <li class="contentOperationOrderlist">パッドを叩くとドラムが鳴る</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <h3 class="heading switch">DrumSynth を使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>エフェクトのON/OFFは右端のFXカラムで行う</p>
+          <table>
+            <tr>
+              <td>(ドラムサウンド名)タブ</td>
+              <td>各ドラムサウンドの設定を調整</td>
+            </tr>
+            <tr>
+              <td>Trans/Distタブ</td>
+              <td>トランジェントとディストーションエフェクトの設定を調整</td>
+            </tr>
+            <tr>
+              <td>EQ/Compタブ</td>
+              <td>EQ と Compressor エフェクトの設定を調整</td>
+            </tr>
+          </table>
+          <p>ドラムサウンド</p>
+          <table>
+            <tr>
+              <td>Model</td>
+              <td>エミュレートするドラムサウンドの種類を選択</td>
+              <td>Varies</td>
+            </tr>
+            <tr>
+              <td>One-Shot</td>
+              <td>トリガー時に全体を再生</td>
+              <td>Enabled/Disabled</td>
+            </tr>
+            <tr>
+              <td>Velocity</td>
+              <td>入力されるベロシティの量<br>0 に設定すると、すべての音がフルレベルであるかのように鳴る</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Velocity 2</td>
+              <td>パラメーターを制御するための追加のベロシティエンベロープの量を調整</td>
+              <td>-100 – 0 – +100%</td>
+            </tr>
+            <tr>
+              <td>Target</td>
+              <td>ベロシティ 2 の情報を送信するパラメーターを選択</td>
+              <td>Param 1–8</td>
+            </tr>
+            <tr>
+              <td>Gain</td>
+              <td>ドラム音の音量レベルを調整</td>
+              <td>-Inf, -68.0 – 0 – +12.0 dB</td>
+            </tr>
+            <tr>
+              <td>Parameter Knobs</td>
+              <td>最大8つのパラメーターを使いサウンドをさらに調整<br>使用可能なパラメーターはドラムサウンドのタイプに応じて異なる<br>ノブでパラメーターを調整</td>
+              <td>Varies</td>
+            </tr>
+          </table>
+          <p>Transient</p>
+          <table>
+            <tr>
+              <td>Attack</td>
+              <td>適用するトランジェントアタック量を調整</td>
+              <td>-100 – 0 – +100%</td>
+            </tr>
+            <tr>
+              <td>Shape</td>
+              <td>トランジェントの形状を調整</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Sustain</td>
+              <td>トランジェント効果からサスティーンエンベロープを引いた、または加えた割合</td>
+              <td>-100 – 0 – +100%</td>
+            </tr>
+          </table>
+          <p>Distortion</p>
+          <table>
+            <tr>
+              <td>Pre-Shape</td>
+              <td>インプットシグナルのプリディストーションのハイエンドトーンを調整</td>
+              <td>-100 – 0 – +100%</td>
+            </tr>
+            <tr>
+              <td>Drive</td>
+              <td>適用されるドライブ量</td>
+              <td>0–60 dB</td>
+            </tr>
+            <tr>
+              <td>Threshold</td>
+              <td>ディストーションを適用するシグナルレベル</td>
+              <td>-20.0–0.0 dB FS</td>
+            </tr>
+            <tr>
+              <td>High Cut</td>
+              <td>ディストーションシグナルのハイカットフィルターの中心周波数</td>
+              <td>1.00–20.0 kHz</td>
+            </tr>
+            <tr>
+              <td>Mix</td>
+              <td>ディストーションエフェクトの Wet/Dry 量</td>
+              <td>0–100%</td>
+            </tr>
+          </table>
+          <p>EQ</p>
+          <table>
+            <tr>
+              <td>High Freq</td>
+              <td>High EQ バンドの中心周波数</td>
+              <td>1.20 – 20.0 kHz</td>
+            </tr>
+            <tr>
+              <td>High Gain</td>
+              <td>High EQ バンドに適用するゲインの量</td>
+              <td>Cut, -12.0 – 0 – +12.0 dB</td>
+            </tr>
+            <tr>
+              <td>High Mid Freq</td>
+              <td>High Mid EQ バンドの中心周波数</td>
+              <td>120 Hz – 16.0 kHz</td>
+            </tr>
+            <tr>
+              <td>High Mid Q</td>
+              <td>High Mid EQ バンドの幅</td>
+              <td>0.40–10.00</td>
+            </tr>
+            <tr>
+              <td>High Mid Gain</td>
+              <td>High Mid EQ バンドに適用するゲインの量</td>
+              <td>-18.0 – 0 – +18.0 dB</td>
+            </tr>
+            <tr>
+              <td>Low Mid Freq</td>
+              <td>Low Mid EQ バンドの中心周波数</td>
+              <td>40.0 Hz – 8.00 kHz</td>
+            </tr>
+            <tr>
+              <td>Low Mid Q</td>
+              <td>Low Mid EQ バンドの幅</td>
+              <td>0.40–10.00</td>
+            </tr>
+            <tr>
+              <td>Low Mid Gain</td>
+              <td>Low Mid EQ バンドに適用するゲインの量</td>
+              <td>-18.0 – 0 – +18.0 dB</td>
+            </tr>
+            <tr>
+              <td>Low Freq</td>
+              <td>Low EQ バンドの中心周波数</td>
+              <td>20.0 Hz – 1.00 kHz</td>
+            </tr>
+            <tr>
+              <td>Low Gain</td>
+              <td>Low EQ の帯域に適用されるゲインの量</td>
+              <td>Cut, -12.0 – 0 – +12.0 dB</td>
+            </tr>
+          </table>
+          <p>Compressor</p>
+          <table>
+            <tr>
+              <td>Ratio</td>
+              <td>適用されるコンプレッション量</td>
+              <td>1.0:1 – 100.0:1</td>
+            </tr>
+            <tr>
+              <td>Attack</td>
+              <td>コンプレッサーを適用する時間の長さ</td>
+              <td>100 us – 300 ms</td>
+            </tr>
+            <tr>
+              <td>Threshold</td>
+              <td>コンプレッサーが適用されるシグナルレベル</td>
+              <td>-60.0–0.0 dB</td>
+            </tr>
+            <tr>
+              <td>Output</td>
+              <td>コンプレッションされたシグナルの追加出力ゲイン量</td>
+              <td>0.0–30.0 dB</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">DrumSynth：Multi<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>1つのプラグインからすべての DrumSynth サウンドにアクセスできる<br>1つのプロジェクトにつき 1 つの DrumSynth:Multi プラグインしかアクティブにすることができない</p>
+          <table>
+            <tr>
+              <td>DrumSynth 1～8タブ</td>
+              <td>ドラムシンセ1～8のパラメーターを調整</td>
+            </tr>
+            <tr>
+              <td>DrumSynth 1～8 Trans/Distタブ</td>
+              <td>ドラムシンセ1～8のTrans/Distを調整</td>
+            </tr>
+            <tr>
+              <td>DrumSynth 1～8 EQ/Compタブ</td>
+              <td>ドラムシンセ1～8のEQ/Compを調整</td>
+            </tr>
+            <tr>
+              <td>Send FXタブ</td>
+              <td>Delay、Diffuser、Reverb の設定を調整</td>
+            </tr>
+            <tr>
+              <td>Mixerタブ</td>
+              <td>各ドラムのボリューム、パン、ミューティング、ソロを調整することができる<br>1-8 のアイコンをタップして、選択したドラムをミュート/ミュート解除の切り替え<br>S(ソロ)アイコンをタップすると、選択したドラムをソロにする<br>pan slider を使用してドラムのパンの調整<br>またはスライダーをタップしてエンコーダーを使用するか、Q-LINK ノブを使用する<br>ドラムの音量を調整するには volume slider をタップしてドラッグする<br>またはスライダーをタップしてエンコーダーを使用するか、Q-LINK ノブを使用する</td>
+            </tr>
+            <tr>
+              <td>FXタブ</td>
+              <td>各ドラムサウンドのトランジェント、ディストーション、EQ、コンプレッサーの有効/無効の切り替え<br>FX box をタップして使用中のドラムで選択している FXの有効/無効の切り替え</td>
+            </tr>
+            <tr>
+              <td>Sends</td>
+              <td>Delay、Diffuser、Reverb Send FX のセンドレベルを調整<br>Send ノブをタップしてドラッグすると現在使用中のドラムで選択しているエフェクトのセンドレベルを調整<br>または、ノブをタップしてエンコーダーを使用するか、Q-LINK ノブを使用する</td>
+            </tr>
+          </table>
+          <p>Delay</p>
+          <table>
+            <tr>
+              <td>Time</td>
+              <td>ドライシグナルとディレイシグナル間の時間の長さ</td>
+              <td>1/32 – 8/4</td>
+            </tr>
+            <tr>
+              <td>Ratio</td>
+              <td>Left または Right ステレオフィールドのディレイタイムを減少<br>オフセットやパンされたディレイを作成するのに便利</td>
+              <td>L 100:50, R 50:100</td>
+            </tr>
+            <tr>
+              <td>Feedback</td>
+              <td>ディレイラインにフィードバックされるディレイシグナル量</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Filter Freq</td>
+              <td>フィルタリングされたディレイシグナルの中心周波数を設定</td>
+              <td>1.00 – 20.0 kHz</td>
+            </tr>
+            <tr>
+              <td>Reso</td>
+              <td>フィードバックシグナルのレゾナンス量</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Reso Freq</td>
+              <td>フィードバックレゾナンスの中心周波数</td>
+              <td>100 Hz – 10.0 kHz</td>
+            </tr>
+          </table>
+          <p>Diffuser</p>
+          <table>
+            <tr>
+              <td>Delay</td>
+              <td>ドライシグナルとディフュージョンシグナル間のディレイタイム</td>
+              <td>1/64 – 4/4</td>
+            </tr>
+            <tr>
+              <td>Feedback</td>
+              <td>ディフュージョンシグナルをディレイラインに送り返す量</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Diffusion</td>
+              <td>リバーブの残響反射密度の割合<br>低設定では個々の反射音の音がより存在感を増し、高設定では反射がより均一になる</td>
+              <td>0–100%</td>
+            </tr>
+            <tr>
+              <td>Bright</td>
+              <td>ディフュージョンシグナルのハイエンドトーンを調整</td>
+              <td>0–100%</td>
+            </tr>
+          </table>
+          <p>Reverb</p>
+          <table>
+            <tr>
+              <td>Mode</td>
+              <td>適用されるリバーブの種類</td>
+              <td>Hall, Stadium, Room, Abstract</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td>リバーブテールの長さ</td>
+              <td>0.4 s – +Inf s</td>
+            </tr>
+            <tr>
+              <td>Low Cut</td>
+              <td>リバーブ・ローパスフィルターの中心周波数</td>
+              <td>1 – 1000 Hz</td>
+            </tr>
+            <tr>
+              <td>High Cut</td>
+              <td>リバーブ・ハイパスフィルターの中心周波数</td>
+              <td>1.00 – 20.0 kHz</td>
             </tr>
           </table>
         </section>
