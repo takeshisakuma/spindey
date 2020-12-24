@@ -96,33 +96,55 @@ html(lang="ja")
 
 
 
-          p "Browse" か"Shift"+"Menu/Browse"を押してブラウザを表示させる
+          p "Shift"+"Menu/Browse"を押してブラウザを表示させる
             br
             | 次に、タッチスクリーンを使ってドラムサウンドのある場所に移動する
             br
             | ファイルを場所別にブラウズするには、画面の左側にある Places をタップする
+          .tableScroll
+            table
+              tr
+                td(rowspan="3") Places
+                td(rowspan="3")  ファイルを場所別にブラウズする
+                td Internal
+                td MPC Liveの内部ドライブ
 
-          table
-            tr
-              td Internal
-              td MPC Liveの内部ドライブ
-            tr
-              td MPC Documents
-              td MPC Liveの内蔵ドライブ MPC Documents のショートカット
-                br
-                | USB ポートや SD カードスロットに接続されているストレージデバイスがある場合は、この欄にも表示される
+              tr
+                td MPC Documents
+                td MPC Liveの内蔵ドライブ MPC Documents のショートカット
+                  br
+                  | USB ポートや SD カードスロットに接続されているストレージデバイスがある場合は、この欄にも表示される
+              tr
+                td (Expantions)
+                td インストールされているExpansionsが列記される
+              tr
+                td(rowspan="6")  Content
+                td(rowspan="6")  ファイルをタイプ別にブラウズする
+                td Drums
+                td
+
+              tr
+                td Instruments
+                td
+              tr
+                td Clips
+                td
+              tr
+                td Samples
+                td
+              tr
+                td My Files
+                td
+              tr
+                td Splice
+                td
+              tr
+                td Expantions
+                td インストールされているExpansionsが列記される
+                td(colspan="2")
 
 
 
-        h3.heading.switch
-          | ファイルをタイプ別にブラウズする
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          p Content をタップしてから、ファイルのタイプをタップする
-            br
-            | Drums、Instruments、 Clips、Samples、Demos、My Files をタップする
-            br
-            | MPC Expansionをブラウズするには：Expansions をタップする
 
         h3.heading.switch
           | ブラウザでの移動
@@ -131,7 +153,7 @@ html(lang="ja")
           table
             tr
               td フォルダレベルを1つ上に移動する
-              td 左上隅にあるフォルダ/上矢印アイコンをタップする
+              td 左上隅にあるフォルダに上矢印のアイコンをタップする
 
             tr
               td リストを移動する
@@ -144,9 +166,9 @@ html(lang="ja")
               td フォルダに入る
               td
                 ul
-                  li フォルダをダブルタップするか、右下隅の Open をタップする
+                  li フォルダをダブルタップする
+                  li 右下隅の Open をタップする
                   li データダイヤルを押す
-                  li センターカーソルを押す
 
 
 
@@ -162,7 +184,6 @@ html(lang="ja")
                   li ファイルをダブルタップする
                   li Loadをタップする
                   li データダイヤルを押す
-                  li センターカーソルを押す
                 table
                   tr
                     td ファイルがサンプルの場合
@@ -170,8 +191,6 @@ html(lang="ja")
                   tr
                     td ファイルがプロジェクトの場合
                     td ファイル全体がロードされる
-                      br
-                      | (現在の読み込んでいるプロジェクトを閉じるかどうか聞かれる)
 
 
 
@@ -196,14 +215,22 @@ html(lang="ja")
         section.h3content.hide
           p 画面下の Play(▶アイコン)をタップして長押しする
 
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 画面下の Play(▶アイコン)をタップして長押しする
 
         h3.heading.switch
           | オーディション機能の設定変更
           span.swithCondition.contentClosed
         section.h3content.hide
-          p 画面下部のAuditionをタップしてウィンドウを表示する
-            br
-            | 設定変更が終わったらもう一度Auditionをタップして、ウィンドウを非表示にする
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 画面下部のAuditionをタップしてウィンドウを表示する
+                li.contentOperationOrderlist  設定変更が終わったらもう一度Auditionをタップして、ウィンドウを非表示にする
+
 
 
           table
@@ -250,7 +277,7 @@ html(lang="ja")
                   br
                   | パッドが緑色に点灯する
                 li.contentOperationOrderlist サンプルプールリストを上下にスワイプするか、データダイヤルまたは–/+ボタンを使用して移動する
-                li.contentOperationOrderlist サンプルプールリストでサンプルをタップするか、データダイヤルを押すか、センターカーソルを押してサンプルをロードする
+                li.contentOperationOrderlist サンプルプールリストでサンプルをタップするか、データダイヤルを押してサンプルをロードする
 
                 li.contentOperationOrderlist パッド 1を押してキックドラムのサンプルを再生することができる
 
@@ -371,7 +398,7 @@ html(lang="ja")
               td
                 ul
                   li フォルダをダブルタップする
-                  li データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押すか、センターカーソルを押す
+                  li データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押す
                 p 右上の5つのフォルダボタンのいずれかをタップして、事前に割り当てられたファイルパスにすぐにジャンプすることもできる
 
             tr
@@ -383,7 +410,7 @@ html(lang="ja")
               td 左上隅にあるフォルダ/上矢印アイコンをタップする
             tr
               td ファイルに名前を付ける
-              td 画面下部の File Name フィールドをタップし、表示される仮想キーボードを使用します。
+              td 画面下部の File Name フィールドをタップし、表示される仮想キーボードを使用する
 
             tr
               td ファイルを保存する
@@ -428,7 +455,7 @@ html(lang="ja")
           span.swithCondition.contentClosed
         section.h3content.hide
 
-          p グリッドでは、シーケンスとして録音したノート(またはノートイベント)を確認することができます。
+          p グリッドでは、シーケンスとして録音したノート(またはノートイベント)を確認することができる
 
           p グリッドビューに入るには、Main を押し、タッチスクリーン左端の Grid View をタップする
 
@@ -716,10 +743,8 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist プログラムエディットモードで、Filter/Env タブをタップしてパラメーターを表示する
                 li.contentOperationOrderlist Type ドロップダウンメニューをダブルタップしてフィルターを選択する
-                  br
-                  | Lowpass 4 Pole を使ってみる
-                li.contentOperationOrderlist カットオフ(Cutoff)またはレゾナンス(Resonance)ノブをタップし、ベースサンプルの音を調整する
-                li.contentOperationOrderlist Amp Envelope セクションで Attack または Release ノブをタップし、設定を調整する
+                li.contentOperationOrderlist 調整したいパラメータのノブをタップし、音を調整する
+                li.contentOperationOrderlist Amp Envelope セクションで AttackやRelease ノブをタップし、設定を調整する
                   br
                   | サウンドのレベル特性をコントロールする
 
@@ -852,7 +877,7 @@ html(lang="ja")
                 br
                 | デフォルトでは、各プロジェクトはシーケンステンポを使用するように設定されている
                 br
-                | タッチスクリーン上部の Seq/Mst ボタンをタップし(ボタンには Mst が表示されます)、すべてのシーケンスが同じテンポを使用するようにマスターテンポを入力することを推奨
+                | タッチスクリーン上部の Seq/Mst ボタンをタップし(ボタンには Mst が表示される)、すべてのシーケンスが同じテンポを使用するようにマスターテンポを入力することを推奨
 
           table
             tr
@@ -1042,7 +1067,9 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Shift キーを押したままにして、画面下部の Convert をタップして Convert または Assign Slices ウィンドウに入る
                 li.contentOperationOrderlist Convert To フィールドをタップして、データダイヤルまたは–/+ボタンで、New Program with New Samples(新規サンプルと新規プログラム)を選択する
-                li.contentOperationOrderlist Crop Samples(サンプルの切り取り)がチェックされていることを確認します。チェックされていない場合は、タップする
+                li.contentOperationOrderlist Crop Samples(サンプルの切り取り)がチェックされていることを確認する
+                  br
+                  | チェックされていない場合は、タップする
                 li.contentOperationOrderlist Create New Program(新規プログラムの作成)がチェックされていることを確認する
                   br
                   | チェックが入っていない場合は、タップする
@@ -1050,7 +1077,9 @@ html(lang="ja")
                   br
                   | チェックが入っていない場合は、タップする
                 li.contentOperationOrderlist Bars フィールドをタップし、データダイヤルまたは–/+ボタンで、サンプル全体で使用するバーの数を選択する
-                li.contentOperationOrderlist Do It をタップして続行します。各スライスはパッドに割り当てられ、各パッドはトラックに録音されたノートイベントを持る
+                li.contentOperationOrderlist Do It をタップして続行する
+                  br
+                  | 各スライスはパッドに割り当てられ、各パッドはトラックに録音されたノートイベントを持る
                   br
                   | そのトラックを再生すると、各パッド(各スライス)が元の順番で再生される
                   br
@@ -1500,7 +1529,7 @@ html(lang="ja")
               td ドラム・プログラム
               td 1 つまたは複数のサンプルを音源として使用する
                 br
-                | サンプルのリストと各サンプルの設定(パッドの割り当て、ループポイント、ピッチチューニング、エフェクトなど)が含まれている。
+                | サンプルのリストと各サンプルの設定(パッドの割り当て、ループポイント、ピッチチューニング、エフェクトなど)が含まれている
                 br
                 | 主にドラムパートを作成したり、サンプルを素早く簡単にパッドにアサインしたりするために使用される
             tr
@@ -1595,7 +1624,7 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist Browse(MPC X, MPC One)を押すか、Shift+Menu/Browse(MPC Live, MPC Touch)を押してブラウザーを表示する
+                li.contentOperationOrderlist Shift+Menu/Browseを押してブラウザーを表示する
                   br
                   | サンプルを探して選択し、Load をタップしてプログラムにロードする
                 li.contentOperationOrderlist Sample Assign をタップすると、パッドとプロジェクトのサンプルプールが表示される
@@ -1631,8 +1660,6 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Menu >Program Edit からプログラムエディットモード に入る
-                  br
-                  | または、Prog Edit(MPC X,MPC One)を押す
                 li.contentOperationOrderlist  Samples タブをタップする
                   br
                   | これにより、現在のパッドの4つのレイヤーすべてにアサインされたサンプルと、各レイヤーのチューニングとレベルパラメーターを表示することができる
@@ -1658,8 +1685,12 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Menu >Program Edit からプログラムエディットモード に入る
-                li.contentOperationOrderlist Pan Velocity タブをタップします。これにより、現在のパッドの4つのレイヤーすべてにアサインされたサンプルと、各レイヤーのパンとベロシティの範囲を表示することができる
-                li.contentOperationOrderlist パッドをタップして選択し、アサインされたサンプルを再生します。パッドは緑色に点灯する
+                li.contentOperationOrderlist Pan Velocity タブをタップする
+                  br
+                  | これにより、現在のパッドの4つのレイヤーすべてにアサインされたサンプルと、各レイヤーのパンとベロシティの範囲を表示することができる
+                li.contentOperationOrderlist パッドをタップして選択し、アサインされたサンプルを再生する
+                  br
+                  | パッドは緑色に点灯する
                 li.contentOperationOrderlist Layer フィールドのいずれかをタップして選択する
                   br
                   | 次に Sample フィールドをタップして、データ・ダイヤルまたは-/+ボタンでサンプルを選択する
@@ -1678,9 +1709,9 @@ html(lang="ja")
           | Keygroup プログラム
           span.swithCondition.contentClosed
         section.h3content.hide
-          p キーグループプログラムは、1 つ以上のサンプルを使用し、サンプルのリストと、各サンプルの設定(ピッチチューニング、エフェクトなど)が含まれます。
-            br
-            | MIDI キーボードやパッドでサンプルをクロマチックに演奏するために使用される
+          p キーグループプログラムは、1 つ以上のサンプルを使用し、サンプルのリストと、各サンプルの設定(ピッチチューニング、エフェクトなど)が含まれる
+
+          p MIDI キーボードやパッドでサンプルをクロマチックに演奏するために使用される
 
 
 
@@ -1693,11 +1724,11 @@ html(lang="ja")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist Main を押してメインモードに入ります。
-                li.contentOperationOrderlist Track フィールドの横にあるピアノの鍵盤アイコンをタップすると、キーグループのプログラムが表示されます。
-                li.contentOperationOrderlist プロジェクトにまだキーグループプログラムが含まれていない場合は、新しいキーグループプログラム(Program という名前で数字が付加されています)が自動的にプロジェクトに追加され、以下の Program フィールドに表示されます。
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Track フィールドの横にあるピアノの鍵盤アイコンをタップすると、キーグループのプログラムが表示される
+                li.contentOperationOrderlist プロジェクトにまだキーグループプログラムが含まれていない場合は、新しいキーグループプログラム(Program という名前で数字が付加されてる)が自動的にプロジェクトに追加され、以下の Program フィールドに表示される
                   br
-                  | プロジェクトにすでにキーグループ・プログラムが含まれている場合、最初のものが自動的に選択され、下の Program フィールドに表示されます。
+                  | プロジェクトにすでにキーグループ・プログラムが含まれている場合、最初のものが自動的に選択され、下の Program フィールドに表示される
 
 
           table
@@ -1724,14 +1755,18 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Menu>Program Edit からプログラムエディットモードに入る
-                li.contentOperationOrderlist Samples をタップします。これにより、キーグループ 4 つのレイヤーすべてにアサインされたサンプルと、各レイヤーのチューニングとレベルパラメータを表示することができる
+                li.contentOperationOrderlist Samples をタップする
+                  br
+                  | これにより、キーグループ 4 つのレイヤーすべてにアサインされたサンプルと、各レイヤーのチューニングとレベルパラメータを表示することができる
                 li.contentOperationOrderlist Number of KG フィールドをタップし、データダイヤルまたは-/+ボタンで、プログラムのキーグループ数(1～128)を設定する
                   br
                   | または、Number of KG フィールドをタップしてテンキーパッドで値を入力する
                 li.contentOperationOrderlist Keygroup フィールドをタップし、データダイヤルまたは-/+ボタンを使用してキーグループを選択する
                   br
                   | または、Keygroupフィールドをダブルタップしてから、キーグループをタップして選択することもできる
-                li.contentOperationOrderlist パッドをタップして、キーグループのサンプルを再生します。パッドは緑色に点灯する
+                li.contentOperationOrderlist パッドをタップして、キーグループのサンプルを再生する
+                  br
+                  | パッドは緑色に点灯する
                   br
                   |MPC ハードウェアで、パッドバンク D に切り替えてパッド 13 をタップする
                   br
@@ -1774,7 +1809,9 @@ html(lang="ja")
             br
             | 各列はミュートグループを表し、あるパッドがクリップを再生しているときは、同じミュートグループ内の他のパッドはすべてオフになり同時に再生できないようになる
             br
-            | 例えば、パッド 2 のクリップ再生中に、パッド 6 を押すと、パッド 2 のループエンドのタイミングでパッド 6 のクリップ再生に切り替わりループ再生を続けます。この方法で複数クリップを交互に再生し展開させることができる
+            | 例えば、パッド 2 のクリップ再生中に、パッド 6 を押すと、パッド 2 のループエンドのタイミングでパッド 6 のクリップ再生に切り替わりループ再生を続ける
+            br
+            | この方法で複数クリップを交互に再生し展開させることができる
             br
             | 上で説明した 4 カラムのパッド構成はデフォルト設定なのでプログラムエディットモードを使用して、パッドのミュートグループの組み合わせは自由に変更することができる
 
@@ -1789,7 +1826,7 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Main を押してメインモードに入る
                 li.contentOperationOrderlist Track フィールドの横にあるプレイボタンのアイコンをタップすると、クリッププログラムが表示される
-                li.contentOperationOrderlist プロジェクトにクリッププログラムが含まれていない場合は、新しいクリッププログラム(クリップという名前に数字が付加されています)が自動的にプロジェクトに追加され、下の Program フィールドに表示される
+                li.contentOperationOrderlist プロジェクトにクリッププログラムが含まれていない場合は、新しいクリッププログラム(クリップという名前に数字が付加されている)が自動的にプロジェクトに追加され、下の Program フィールドに表示される
                   br
                   | プロジェクトにすでにクリッププログラムが含まれている場合、自動的に下の Program フィールドに表示される
 
@@ -1880,8 +1917,6 @@ html(lang="ja")
           p プラグインプログラムには、トラックの MIDI データを送信するためのプラグインのインスタンスが含まれる
             br
             | これにより、複数トラックで同じプラグインのインスタンスを使用できる
-            br
-            | (面倒で CPU 負荷の高い、すべてのトラックにプラグインのインスタンスをロードするのではなく)
 
 
         h3.heading.switch
@@ -1955,8 +1990,6 @@ html(lang="ja")
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Menu(メニュー)を押し、Channel Mixer(チャンネルミキサー)をタップして、Channel Mixer(チャンネルミキサー)に入る
-                  br
-                  | または、Ch. Mixer(MPC X)または Track Mix(MPC One)を押す
                 li.contentOperationOrderlist 左上のミキサーフィールドをダブルタップし、Midi Tracks をタップする
                 li.contentOperationOrderlist プラグインプログラムでトラックを表す四角をタップして選択する
                 li.contentOperationOrderlist ボリュームスライダーやパンノブをタップして上下にドラッグして調整する
@@ -1981,7 +2014,7 @@ html(lang="ja")
           | MIDI プログラム
           span.swithCondition.contentClosed
         section.h3content.hide
-          p MIDI プログラムでは、トラックの MIDI データをシンセやドラムマシンのような外部 MIDI デバイスに送ることができます。
+          p MIDI プログラムでは、トラックの MIDI データをシンセやドラムマシンのような外部 MIDI デバイスに送ることができる
 
         h3.heading.switch
           | MIDI プログラムを作成する
@@ -1993,7 +2026,7 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Main を押してメインモードに入る
                 li.contentOperationOrderlist トラックフィールドの横にある MIDI ジャックのアイコンをタップすると、MIDI プログラムが表示される
-                li.contentOperationOrderlist プロジェクトにまだ MIDI プログラムが含まれていない場合、新しい MIDI プログラム(Midi という名前で数字が付加されています)が自動的にプロジェクトに追加され、下のプログラムフィールドに表示される
+                li.contentOperationOrderlist プロジェクトにまだ MIDI プログラムが含まれていない場合、新しい MIDI プログラム(Midi という名前で数字が付加されている)が自動的にプロジェクトに追加され、下のプログラムフィールドに表示される
                   br
                   | プロジェクトに既に MIDI プログラムが含まれている場合、自動的に選択されて下のプログラムフィールドに表示される
                   br
@@ -2064,7 +2097,9 @@ html(lang="ja")
                   br
                   | プロジェクトに既に CV プログラムが含まれている場合は、自動的に CV プログラムが選択され、下の Program フィールドに表示される
                   br
-                  | 別の CV プログラムを作成するには、プログラム欄の上にある+アイコンをタップします。新しい CV プログラムが作成され、番号(例：CV 002)が付加される
+                  | 別の CV プログラムを作成するには、プログラム欄の上にある+アイコンをタップする
+                  br
+                  | 新しい CV プログラムが作成され、番号(例：CV 002)が付加される
 
                 li.contentOperationOrderlist CV プログラムのための追加設定は、ノートトラッキング(Note)、CV Port、Gate Port、モジュレーションホイール(Mod Wheel)、Velocity Port の5つ
 
@@ -2099,3 +2134,4 @@ html(lang="ja")
 //- P71-300
 //- P332-405 アップデート
 //- MPCで検索
+//- センターカーソルは無い
