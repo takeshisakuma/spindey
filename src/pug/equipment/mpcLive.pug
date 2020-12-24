@@ -7,53 +7,14 @@ html(lang="ja")
   body
     h1.heading MPC Live
     main.equipmentMain
-      h2.heading.switch
-        | aa
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | aa
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          table
-            tr
-              td aaa
-              td aaa
-            tr
-              td aaa
-              td aaa
-        h3.heading.switch
-          | aa
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          table
-            tr
-              td aaa
-              td aaa
-            tr
-              td aaa
-              td aaa
-
-
 
 
       h2.heading.switch
-        | aa
+        | ファイル構成
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
-          | aa
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          table
-            tr
-              td aaa
-              td aaa
-            tr
-              td aaa
-              td aaa
-        h3.heading.switch
-          | aa
+          | ファイル構成
           span.swithCondition.contentClosed
         section.h3content.hide
           table
@@ -74,7 +35,7 @@ html(lang="ja")
                 | トラックには2種類ある
                 table
                   tr
-                    td MIDIトラック
+                    td MIDI Track
                     td MIDIデータのみで構成され、オーディオデータはない
                       br
                       | これらのトラックは、プログラムを使って音を出す
@@ -660,7 +621,7 @@ html(lang="ja")
 
 
       h2.heading.switch
-        | ベーストラックの作成
+        | メロディのあるトラックの作成
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
@@ -696,7 +657,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | ベースサウンドをロードしてエディットする
+          | サウンドをロードしてエディットする
           span.swithCondition.contentClosed
         section.h3content.hide
 
@@ -743,7 +704,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | ベース音を録音してエディットする
+          | 録音してエディットする
           span.swithCondition.contentClosed
         section.h3content.hide
 
@@ -848,7 +809,7 @@ html(lang="ja")
 
 
       h2.heading.switch
-        | ソングの作成
+        | ソング
         span.swithCondition.contentClosed
       section.h2content.hide
         h3.heading.switch
@@ -917,16 +878,6 @@ html(lang="ja")
 
 
 
-
-
-
-
-
-
-      h2.heading.switch
-        | ソングのエクスポート
-        span.swithCondition.contentClosed
-      section.h2content.hide
         h3.heading.switch
           | ソングのエクスポート
           span.swithCondition.contentClosed
@@ -1068,7 +1019,7 @@ html(lang="ja")
                   | チョップモードを選択すると、ドラムループをスライスしてくれる
                 li.contentOperationOrderlist 画面左下のThreshold をタップし、右側のスレッショルド欄をタップする
                   br
-                  | データダイヤル、–/+ボタン、テンキー(MPC X)を使って値を選択するか、しきい値フィールドをダブルタップして、画面上のテンキーを使用することもできる
+                  | データダイヤル、–/+ボタンを使って値を選択するか、しきい値フィールドをダブルタップして、画面上のテンキーを使用することもできる
                   br
                   | ドラムループの各トランジェントピークにスライスマーカーがあるように値を選択する
 
@@ -1199,7 +1150,7 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist オーディオソースを MPC ハードウェアの入力／入力に接続する
                 li.contentOperationOrderlist 左上隅の Input _ メニューが Input 1、2(MPC ハードウェアの入力)に設定されていない場合は、Input 1、2 を選択する
-                li.contentOperationOrderlist Rec Vol (MPC Live、 MPC One、 MPC Touch) ノブを回して、オーディオソースを再生しながら入力レベルを設定する
+                li.contentOperationOrderlist Rec Volノブを回して、オーディオソースを再生しながら入力レベルを設定する
                   br
                   | メーターにレベルが表示される
                   br
@@ -1222,7 +1173,7 @@ html(lang="ja")
 
 
         h3.heading.switch
-          | Keep or Discard Sampleウィンドウ：
+          | Keep or Discard Sampleウィンドウ
           span.swithCondition.contentClosed
         section.h3content.hide
           table
@@ -1355,7 +1306,7 @@ html(lang="ja")
                 li.contentOperationOrderlist いずれかのノブ(Attack、Release、または Wet/Dry)を上下にドラッグして、必要に応じて値を設定する
                   br
                   | それらの下には、どのパラメーターを X 軸と Y 軸でコントロールするかを確認することができる
-                li.contentOperationOrderlist オートメーションボタンをタップするか、Read/Write (MPC X) を押して、利用可能なオートメーショ ンモードを切り替える
+                li.contentOperationOrderlist オートメーションボタンをタップして、利用可能なオートメーショ ンモードを切り替える
                   br
                   | ボタンが赤/Write(W)になっていることを確認する
                 li.contentOperationOrderlist Play Start を押して録音を開始する
@@ -1529,6 +1480,609 @@ html(lang="ja")
 
 
 
+      h2.heading.switch
+        | プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p シーケンス内で作成した各トラックは、プログラムを介してルーティングされる
+            br
+            | 6種類のプログラムがあり、それぞれがトラックで使用目的に合わせて設定する
+            br
+            | 1つのプロジェクトで最大 128 のプログラムを使用することができる
+
+          table
+            tr
+              td ドラム・プログラム
+              td 1 つまたは複数のサンプルを音源として使用する
+                br
+                | サンプルのリストと各サンプルの設定(パッドの割り当て、ループポイント、ピッチチューニング、エフェクトなど)が含まれている。
+                br
+                | 主にドラムパートを作成したり、サンプルを素早く簡単にパッドにアサインしたりするために使用される
+            tr
+              td キーグループ・プログラム
+              td 1 つ以上のサンプルを音源として使用する
+                br
+                | サンプルのリストと、各サンプルの設定(ピッチチューニング、エフェクトなど)が含まれている
+                br
+                | MIDI キーボードや MPC パッドでサンプルをクロマチックに演奏するために使用される
+            tr
+              td クリップ・プログラム
+              td ループさせることのできる複数のサンプル(クリップ)を使用する
+                br
+                | 各クリップはパッドに割り当てることができ、押すことでクオンタイズの設定に応じて自動的にタイムストレッチされたクリップをトリガーすることができる
+                br
+                | これにより、異なる BPM の組み合わせでクリップを再生させてパフォーマンスすることができる
+            tr
+              td プラグイン・プログラム
+              td トラックの MIDI データを送信するためのプラグインのインスタンスが含まれている
+            tr
+              td MIDI・プログラム
+              td トラックの MIDI データをシンセやドラムマシンなどの外部 MIDI デバイスに送ることができる
+            tr
+              td CV・プログラム
+              td あなたのトラックの MIDI データをシンセのようなコントロール電圧(CV)を使用する外部 MIDIデバイスに送ることができる
+
+
+      h2.heading.switch
+        | Drum プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Drum プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p ドラム・プログラムは、1 つ以上のサンプルを音源として使用する
+            br
+            | このプログラムには、(1)サンプルのリストと(2)各サンプルの設定(パッドの割り当て、ループポイント、ピッチチューニング、エフェクトなど)が含まれている
+            br
+            | ドラムプログラムは、主にドラムパートを作成したり、パッドにサンプルを素早く簡単にアサインしたりするために使用する
+
+
+        h3.heading.switch
+          | ドラムプログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Track フィールドの横にある、ドラムプログラムを示すアイコンをタップする
+                li.contentOperationOrderlist プロジェクトにまだドラムプログラムが含まれていない場合は、新しいドラムプログラム(Program という名前で数字が付加されている)が自動的にプロジェクトに追加され、以下の Program フィールドに表示される
+                  br
+                  | プロジェクトにすでにドラムプログラムが含まれている場合、最初のドラムプログラムは自動的に選択され、下の Program フィールドに表示される
+
+
+
+
+
+          table
+            tr
+              td 別のドラムプログラムを作成する
+              td Program フィールドの上にある+アイコンで、新しいドラムプログラムが作成され、番号が付加される
+                br
+                | (例：Program 002)
+            tr
+              td プログラムの名前を変更する
+              td プログラムセクションの右端にあるカーソルアイコンをタップする
+                br
+                | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確認するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | ドラムプログラムにサンプルをロードする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Browse(MPC X, MPC One)を押すか、Shift+Menu/Browse(MPC Live, MPC Touch)を押してブラウザーを表示する
+                  br
+                  | サンプルを探して選択し、Load をタップしてプログラムにロードする
+                li.contentOperationOrderlist Sample Assign をタップすると、パッドとプロジェクトのサンプルプールが表示される
+                li.contentOperationOrderlist パッドを押すかタップして選択する
+                  br
+                  | パッドが緑色に点灯する
+                li.contentOperationOrderlist Sample Pool リストでサンプルをタップしてパッドにアサインする
+                  br
+                  | または、データダイヤルまたは-/+ボタンを使用して、サンプルをアサインしたり、アサインされたサンプルを変更したりすることができる
+                li.contentOperationOrderlist 次のパッドを選択、サンプルをアサインしていく
+
+
+
+
+          table
+            tr
+              td 選択したパッドからアサインされたサンプルをクリアする
+              td Clear Pad をタップする
+
+
+
+          p ドラムプログラムは、A-H の 8 つのバンクにまたがって 16 パッドの合計 128 パッドがある
+
+
+
+
+        h3.heading.switch
+          | プログラムエディットモードでドラムプログラムのサンプルをアサインする方法1
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu >Program Edit からプログラムエディットモード に入る
+                  br
+                  | または、Prog Edit(MPC X,MPC One)を押す
+                li.contentOperationOrderlist  Samples タブをタップする
+                  br
+                  | これにより、現在のパッドの4つのレイヤーすべてにアサインされたサンプルと、各レイヤーのチューニングとレベルパラメーターを表示することができる
+                li.contentOperationOrderlist パッドをタップして選択し、アサインされたサンプルを再生する
+                  br
+                  | パッドは緑色に点灯する
+                li.contentOperationOrderlist サンプル波形の下にある Layer フィールドをタップして選択する
+                  br
+                  | Sample フィールドをタップして、データ・ダイヤルまたは-/+ボタンでをサンプルを選択する
+                  br
+                  | また、レイヤーフィールドをダブルタップして、サンプルを選択することもできる
+
+
+
+
+        h3.heading.switch
+          | プログラムエディットモードでドラムプログラムのサンプルをアサインする方法2
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu >Program Edit からプログラムエディットモード に入る
+                li.contentOperationOrderlist Pan Velocity タブをタップします。これにより、現在のパッドの4つのレイヤーすべてにアサインされたサンプルと、各レイヤーのパンとベロシティの範囲を表示することができる
+                li.contentOperationOrderlist パッドをタップして選択し、アサインされたサンプルを再生します。パッドは緑色に点灯する
+                li.contentOperationOrderlist Layer フィールドのいずれかをタップして選択する
+                  br
+                  | 次に Sample フィールドをタップして、データ・ダイヤルまたは-/+ボタンでサンプルを選択する
+                  br
+                  | また、レイヤーのフィールドをダブルタップして、サンプルを選択することもできる
+
+
+
+
+
+      h2.heading.switch
+        | Keygroup プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Keygroup プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p キーグループプログラムは、1 つ以上のサンプルを使用し、サンプルのリストと、各サンプルの設定(ピッチチューニング、エフェクトなど)が含まれます。
+            br
+            | MIDI キーボードやパッドでサンプルをクロマチックに演奏するために使用される
+
+
+
+
+        h3.heading.switch
+          | キーグループプログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入ります。
+                li.contentOperationOrderlist Track フィールドの横にあるピアノの鍵盤アイコンをタップすると、キーグループのプログラムが表示されます。
+                li.contentOperationOrderlist プロジェクトにまだキーグループプログラムが含まれていない場合は、新しいキーグループプログラム(Program という名前で数字が付加されています)が自動的にプロジェクトに追加され、以下の Program フィールドに表示されます。
+                  br
+                  | プロジェクトにすでにキーグループ・プログラムが含まれている場合、最初のものが自動的に選択され、下の Program フィールドに表示されます。
+
+
+          table
+            tr
+              td 別のキーグループプログラムを作成する
+              td Program フィールドの上にある+アイコンをタップする
+                br
+                | 新しいキーグループプログラムが作成され、番号が付加される
+                br
+                | (例：Program 002)
+            tr
+              td プログラムの名前を変更する
+              td Program セクションの右端にあるカーソルアイコンをタップする
+                br
+                | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確認するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+        h3.heading.switch
+          | キーグループプログラムでサンプルを割り当てる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu>Program Edit からプログラムエディットモードに入る
+                li.contentOperationOrderlist Samples をタップします。これにより、キーグループ 4 つのレイヤーすべてにアサインされたサンプルと、各レイヤーのチューニングとレベルパラメータを表示することができる
+                li.contentOperationOrderlist Number of KG フィールドをタップし、データダイヤルまたは-/+ボタンで、プログラムのキーグループ数(1～128)を設定する
+                  br
+                  | または、Number of KG フィールドをタップしてテンキーパッドで値を入力する
+                li.contentOperationOrderlist Keygroup フィールドをタップし、データダイヤルまたは-/+ボタンを使用してキーグループを選択する
+                  br
+                  | または、Keygroupフィールドをダブルタップしてから、キーグループをタップして選択することもできる
+                li.contentOperationOrderlist パッドをタップして、キーグループのサンプルを再生します。パッドは緑色に点灯する
+                  br
+                  |MPC ハードウェアで、パッドバンク D に切り替えてパッド 13 をタップする
+                  br
+                  | サンプルが元のピッチで再生されていることが確認できる
+                  br
+                  | 他のパッドを使って、サンプルをクロマチックに再生することができる
+                li.contentOperationOrderlist レイヤーフィールドをタップし、データダイヤルまたは-/+ボタンを使用してサンプルを選択する
+                  br
+                  | または、レイヤーのフィールドをダブルタップしてから、サンプルをタップして選択することもできる
+
+
+
+
+          p 複雑なキーグループプログラムを作成したい場合、より多くのキーグループを追加できる
+            br
+            | キーグループプログラムには最大 128 個のキーグループがあり、各キーグループには最大 4 つのサンプル(レイヤー1～4)を保持できる
+            br
+            | (合計512 サンプル)
+
+
+
+
+      h2.heading.switch
+        | Clip プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Clip プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+
+          p クリッププログラムは、複数のサンプルをループさせることができる
+            br
+            | 各クリップをパッドに割り当てクオンタイズの設定に応じてクリップをトリガーすることができ、さまざまな BPMのクリップを自動タイムストレッチさせてパフォーマンスすることができる
+            br
+            | デフォルトでは、16 個のパッドは 4 つの列に分割されている
+            br
+            | 各列はミュートグループを表し、あるパッドがクリップを再生しているときは、同じミュートグループ内の他のパッドはすべてオフになり同時に再生できないようになる
+            br
+            | 例えば、パッド 2 のクリップ再生中に、パッド 6 を押すと、パッド 2 のループエンドのタイミングでパッド 6 のクリップ再生に切り替わりループ再生を続けます。この方法で複数クリップを交互に再生し展開させることができる
+            br
+            | 上で説明した 4 カラムのパッド構成はデフォルト設定なのでプログラムエディットモードを使用して、パッドのミュートグループの組み合わせは自由に変更することができる
+
+
+        h3.heading.switch
+          | クリッププログラムを作成
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Track フィールドの横にあるプレイボタンのアイコンをタップすると、クリッププログラムが表示される
+                li.contentOperationOrderlist プロジェクトにクリッププログラムが含まれていない場合は、新しいクリッププログラム(クリップという名前に数字が付加されています)が自動的にプロジェクトに追加され、下の Program フィールドに表示される
+                  br
+                  | プロジェクトにすでにクリッププログラムが含まれている場合、自動的に下の Program フィールドに表示される
+
+          table
+            tr
+              td 別のクリッププログラムを作成する
+              td Program フィールドの上にある+アイコンをタップする
+                br
+                | 新しいクリッププログラムが作成され、番号が付加される
+                br
+                | (例：Clip 002)
+            tr
+              td プログラムの名前を変更する
+              td Program セクションの右端にあるカーソルアイコンをタップする
+                br
+                | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確認するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+
+
+        h3.heading.switch
+          | クリップをクリッププログラムに読み込む
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Edit Clips をタップすると、パッドとクリップの設定が表示される
+                li.contentOperationOrderlist パッドをタップして選択する
+                  br
+                  | (アサインされている場合は、そのパッドのサンプルを再生することもできる)
+                  br
+                  | 画面上のパッドが赤く点灯し、その番号が Pad フィールドに表示される
+                li.contentOperationOrderlist Sample フィールドをタップし、データダイヤルまたは-/+ボタンを使ってクリップを選択する
+                  br
+                  | または、Sample フィールドをダブルタップしてからクリップをタップして選択することもできる
+                li.contentOperationOrderlist 次のパッドを選択し、クリップを選択する
+
+
+          table
+            tr
+              td 選択したパッドからアサインされたクリップをクリアする
+              td None を選択
+
+
+
+
+
+
+
+        h3.heading.switch
+          | クリッププログラムにクリップを割り当てる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Shift+Menu/Browseでブラウザーを表示し、クリップを選択、Load をタップしてプログラムにロードする
+                  br
+                  | 他にもロードしたいクリップがある場合、これを繰り返す
+                li.contentOperationOrderlist Sample Assign をタップすると、パッドとプロジェクトのサンプルプールが表示される
+                li.contentOperationOrderlist Assign Mode をタップして選択する(サンプルプール内のアイテムをタップしてパッドに自動的に割り当てられる)
+                  br
+                  | サンプルプールリストをタップしてパッドにアサインしたり、データダイヤル、-/+ボタンでクリップを変更したりもできる
+
+          table
+            tr
+              td 選択したパッドからアサインされたクリップをクリアする
+              td Clear Pad をタップする
+
+
+
+
+
+
+      h2.heading.switch
+        | Plugin プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Plugin プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p プラグインプログラムには、トラックの MIDI データを送信するためのプラグインのインスタンスが含まれる
+            br
+            | これにより、複数トラックで同じプラグインのインスタンスを使用できる
+            br
+            | (面倒で CPU 負荷の高い、すべてのトラックにプラグインのインスタンスをロードするのではなく)
+
+
+        h3.heading.switch
+          | プラグインプログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Track フィールドの横にあるプラグのアイコンをタップすると、プラグインプログラムが表示される
+                li.contentOperationOrderlist プロジェクトにまだプラグインプログラムが含まれていない場合、新しいプラグインプログラム(Plugin+数字が付加されている)が自動的にプロジェクトに追加され、下の Program フィールドに表示される
+                  br
+                  | プロジェクトにすでにプラグインプログラムが含まれている場合、最初のものが自動的に選択され、下の Program フィールドに表示される
+                  br
+                  | 別のプラグインプログラムを作成するにはプログラムフィールドの上にある+アイコンをタップする
+                  br
+                  | 新しいプラグインプログラムが作成され、番号が付加される(例：Plugin 002)
+                li.contentOperationOrderlist Plugin フィールドをダブルタップする
+                  br
+                  | 表示されるリストで、目的のプラグインをタップする
+                  br
+                  | または、データダイヤル、-/+ボタンを使用してプラグインを選択することもできる
+                  br
+                  | プラグインをタイプやメーカーでソートするには、Type か Manufacturer をタップする
+                li.contentOperationOrderlist プラグインを選択するには Select をタップするか、キャンセルするには Close をタップする
+
+
+
+
+          table
+            tr
+              td プログラムで使用する MIDI チャンネルを選択する
+              td MIDI Ch フィールドをダブルタップし、表示されるリストの中でチャンネルをタップする
+                br
+                | または、データダイヤルや -/+ ボタンを使って選択することもできる
+                br
+                | この設定は、マルチモードに対応したバーチャル・インストゥルメント・プラグインを使用している場合に有効
+            tr
+              td プラグインのプリセットを選択する
+              td Preset フィールドをダブルタップする
+                br
+                | 表示されるリストで目的のプリセットをタップする
+                br
+                | また、データダイヤルや-/+ボタンを使って選択することもできる
+            tr
+              td プログラムの名前を変更する
+              td Program セクションの右端にあるカーソルアイコンをタップし、表示される仮想キーボードを使用して新しい名前を入力、Do It をタップして確定するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | プラグインプログラムを使用してトラックのボリュームとパンニングを調整する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu(メニュー)を押し、Channel Mixer(チャンネルミキサー)をタップして、Channel Mixer(チャンネルミキサー)に入る
+                  br
+                  | または、Ch. Mixer(MPC X)または Track Mix(MPC One)を押す
+                li.contentOperationOrderlist 左上のミキサーフィールドをダブルタップし、Midi Tracks をタップする
+                li.contentOperationOrderlist プラグインプログラムでトラックを表す四角をタップして選択する
+                li.contentOperationOrderlist ボリュームスライダーやパンノブをタップして上下にドラッグして調整する
+                  br
+                  | これを一度行うと、プラグインプログラムの音量やパンの調整が普通にできるようになる
+
+
+
+
+          p シーケンスをコピーすると、ボリュームとパンの値はそのシーケンスと一緒にコピーされる
+            br
+            | デフォルトでは、一部のプラグインは MIDI ボリュームとパンをサポートしていないので、プラグインプログラムでボリュームレベルとパンの調整が必要
+
+
+
+      h2.heading.switch
+        | MIDI プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | MIDI プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p MIDI プログラムでは、トラックの MIDI データをシンセやドラムマシンのような外部 MIDI デバイスに送ることができます。
+
+        h3.heading.switch
+          | MIDI プログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist トラックフィールドの横にある MIDI ジャックのアイコンをタップすると、MIDI プログラムが表示される
+                li.contentOperationOrderlist プロジェクトにまだ MIDI プログラムが含まれていない場合、新しい MIDI プログラム(Midi という名前で数字が付加されています)が自動的にプロジェクトに追加され、下のプログラムフィールドに表示される
+                  br
+                  | プロジェクトに既に MIDI プログラムが含まれている場合、自動的に選択されて下のプログラムフィールドに表示される
+                  br
+                  | 別の MIDI プログラムを作成するには、プログラムフィールドの上にある+アイコンをタップする
+                  br
+                  | 新しい MIDI プログラムが作成され、番号(例：Midi 002)が付加される
+                li.contentOperationOrderlist MIDI プログラムの設定は、MIDI ポート、プログラム変更メッセージ(Program Ch)、MIDI チャンネル(MIDI Ch)、最上位バイト(Bank MSB)、最下位バイト(Bank LSB)の 5 つの追加設定がある
+                  br
+                  | 各設定を設定するには、そのフィールドをダブルタップして表示されるリストで、必要なオプションをタップする
+                  br
+                  | または、データダイヤルまたは-/+ボタンを使用してオプションを選択する
+
+          p ソフトウェアの環境設定(エディットメニュー)で MIDI ポートを設定する必要がある
+          table
+            tr
+              td プログラムの名前を変更する
+              td プログラムセクションの右端にあるカーソルアイコンをタップする
+                br
+                | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確認するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+
+        h3.heading.switch
+          | MIDI プログラムを使ってトラックのボリュームとパンニングを調整する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menu(メニュー)を押し、Channel Mixer(チャンネルミキサー)をタップして、Channel Mixer(チャンネルミキサー)に入る
+                li.contentOperationOrderlist 左上のミキサーフィールドをダブルタップし、Midi Tracks をタップする
+                li.contentOperationOrderlist MIDI プログラムでトラックを表す四角をタップして選択する
+                li.contentOperationOrderlist ボリュームスライダーやパンノブをタップして上下にドラッグして調整する
+                  br
+                  | これを一度行うと、MIDI プログラムのボリュームとパンを通常通り調整することができる
+
+          p シーケンスをコピーすると、ボリュームとパンの値はそのシーケンスと一緒にコピーされる
+            br
+            | これは新しいシーケンスに移動して、同じ MIDI プログラムを新しいトラックに配置した場合にも当てはまる
+
+
+
+
+      h2.heading.switch
+        | CV プログラム
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | CV プログラム
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p CV プログラムでは、コントロール電圧(CV)の信号を、CV を使用するシンセやドラムマシンなどの外部 MIDI デバイスに送ることができる
+
+        h3.heading.switch
+          | CV プログラムを作成する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Main を押してメインモードに入る
+                li.contentOperationOrderlist Track フィールドの横にある CV アイコンをタップすると、CV プログラムが表示される
+                li.contentOperationOrderlist プロジェクトにまだ CV プログラムが含まれていない場合は、新しい CV プログラム(CV+数字が付加されている)が自動的にプロジェクトに追加され、Program フィールドに表示される
+                  br
+                  | プロジェクトに既に CV プログラムが含まれている場合は、自動的に CV プログラムが選択され、下の Program フィールドに表示される
+                  br
+                  | 別の CV プログラムを作成するには、プログラム欄の上にある+アイコンをタップします。新しい CV プログラムが作成され、番号(例：CV 002)が付加される
+
+                li.contentOperationOrderlist CV プログラムのための追加設定は、ノートトラッキング(Note)、CV Port、Gate Port、モジュレーションホイール(Mod Wheel)、Velocity Port の5つ
+
+
+
+
+          table
+            tr
+              td プログラムの名前を変更する
+              td プログラムセクションの右端にあるカーソルアイコンをタップする
+                br
+                | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確定するか、画面上部のグレーバーをタップしてキャンセルする
+
+
+
+
+
+
 
 
 
@@ -1541,6 +2095,7 @@ html(lang="ja")
 
     include ../_include/_footer.pug
 
-//- P62-72 program
-//- P73-300
+
+//- P71-300
 //- P332-405 アップデート
+//- MPCで検索
