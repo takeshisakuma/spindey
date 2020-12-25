@@ -2449,8 +2449,927 @@ html(lang="ja")
 
 
 
+      h2.heading.switch
+        | Menu/メニュー
+        span.swithCondition.contentClosed
+      section.h2content.hide
 
 
+        h3.heading.switch
+          | Save/セーブ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          table
+            tr
+              td プロジェクトを保存する
+              td 画面上部のディスクアイコンをタップする
+            tr
+              td 表示したいストレージを選択する
+              td 左側のストレージ欄でタップする
+                table
+                  tr
+                    td Internal
+                    td MPC Liveの内蔵ドライブ
+                  tr
+                    td MPC Documents
+                    td MPC Liveの内蔵ドライブにある MPC Documents フォルダへのショートカット
+                      br
+                      | MPC LiveのUSBポートやSDカードスロットに接続されているストレージデバイスに接続されているストレージデバイスがある場合は、この欄にも表示される
+
+            tr
+              td フォルダに入る
+              td フォルダをダブルタップするか、データダイヤルを回す、または-/+ボタンを使用してリストを移動し、データダイヤルを押すと、フォルダに入ることができる
+                br
+                | また、右上の 5 つのフォルダボタンをタップすると、割り当てられたファイルパスにジャンプすることができる
+            tr
+              td 新しいフォルダを作成する
+              td New Folder をタップし、表示される仮想キーボードで名前を入力し、Do It をタップするとすぐに新しいフォルダが入力される
+            tr
+              td フォルダのレベルを 1 つ上に移動する
+              td 左上のフォルダ/アイコンをタップする
+            tr
+              td ファイルに名前を付ける
+              td 画面下部の File Name をタップし、表示される仮想キーボードを使用する
+            tr
+              td 保存する
+              td Save をタップする
+            tr
+              td プロジェクトのテンプレートファイルとして保存する
+              td Save as Template をタップしてチェックを入れてから Save をタップする
+                br
+                | (このファイルは、Preference/環境設定の Project Load/Save tab タブの Template File フィールドに表示される)
+            tr
+              td キャンセルしてメニューに戻る
+              td Cancel をタップする
+                br
+                | または、左上のアイコンをタップする
+
+
+
+      h2.heading.switch
+        | Preferences/環境設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | 環境設定を開く
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          table
+            tr
+              td 環境設定を開く
+              td 画面上部の歯車アイコンをタップする
+            tr
+              td メニューに戻る
+              td 左上隅の←アイコンをタップする
+                br
+                | Vintage Mode/ヴィンテージモード(General タブ)と Start Time/スタートタイム(Sync タブ)を除いて、環境設定の変更は自動的に保存される
+
+            tr
+              td MPC ハードウェアのデフォルト設定を復元する
+              td Reset をタップする
+                br
+                | 表示された画面で、OK をタップして続行するか、Cancel をタップして環境設定に戻る
+                br
+                | 次のウィンドウで、Save をタップして現在のプロジェクトを保存してからデフォルト設定を復元するか、
+                br
+                | Cancel をタップして環境設定に戻るか、Don’t Saveをタップして現在のプロジェクトを保存せずにデフォルト設定を復元する
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Info/インフォメーション
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 使用している MPC ハードウェアの現在の情報が表示される
+          ul
+            li 現在のファームウェアバージョン
+            li ハードウェアのシリアル番号
+            li Control Surface 用の現在のファームウェア
+
+
+
+
+
+
+        h3.heading.switch
+          | Wi-Fi
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p MPC ハードウェアのワイヤレス接続方法を決定し、Ableton Live と Ableton Link 対応アプリケーションのビート、フェーズ、テンポをワイヤレスまたは有線ネットワーク上で同期させる Ableton Link を使用することができる
+
+          table
+            tr
+              td MPC ハードウェアのワイヤレス接続を有効または無効にする
+              td On/Off セレクターをタップする
+                br
+                | 使用可能なワイヤレスネットワークが下のパネルに表示される
+            tr
+              td ワイヤレスネットワークを選択する
+              td ネットワーク名をタップする
+            tr
+              td 選択したワイヤレスネットワークに接続する
+              td Connect をタップする
+                br
+                | Wi-Fi ネットワークがパスワードで保護されている場合は、表示される仮想キーボードを使用して正しいパスワードを入力して接続する
+            tr
+              td 選択したワイヤレスネットワークの情報を表示する
+              td Shiftキーを押しながら Info をタップする
+                br
+                | 表示される Network Information ウィンドウには、ネットワーク名、IPv4/IPv6 アドレス(サブネットマスクとゲートウェイを含む)、セキュリティの種類、信号強度(パーセンテージで表示)が表示される
+
+            tr
+              td 接続されているワイヤレスネットワークから切断する
+              td Disconnect をタップする
+            tr
+              td 選択したワイヤレスネットワークから接続情報(パスワードなど)をクリアする
+              td Forget をタップする
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Ethernet
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p USB-to-Ethernet アダプターを使用して MPC ハードウェアを有線ネットワークに接続する方法を決定します。
+
+          table
+            tr
+              td イーサネット接続の有効/無効の切り替え
+              td Enabled ボックスをタップする
+            tr
+              td ネットワークに接続する方法を決定する
+              td Address Method ドロップダウンを使用する
+            tr
+              td MPCハードウェアにイーサネット接続を設定する
+              td Automatic を選択し、自分で設定するには Manual を選択する
+            tr
+              td イーサネットを手動設定する
+              td IP Address、Subnet Mask、Gateway、DNS をタップして値を入力する
+
+
+                  h3.heading.switch
+                    | Bluetooth
+                    span.swithCondition.contentClosed
+                  section.h3content.hide
+
+                    p MPC ハードウェアの Bluetooth 接続がどのように動作するかを決定する
+                      br
+                      | Bluetooth MIDI コントローラや Bluetooth コンピュータキーボードを使用できる
+                    table
+                      tr
+                        td MPC ハードウェアの Bluetooth 接続を有効または無効にする
+                        td On/Off セレクターをタップする
+                          br
+                          | 利用可能なBluetooth デバイスは、その下のパネルにある Available Devices(利用可能なデバイス)の下に表示される
+                          br
+                          | すでにMPC ハードウェアとペアリングされている Bluetooth デバイスは、Paired Devices の下に表示される
+                      tr
+                        td Bluetooth デバイスを選択する
+                        td Bluetooth デバイス名をタップする
+                      tr
+                        td 選択した Bluetooth device をペアリングする
+                        td (Available Devices セクション)、Pair をタップする
+                      tr
+                        td 選択した Bluetooth デバイス(Paired Devices セクション)に接続する
+                        td Connect をタップする
+                      tr
+                        td 接続されている Bluetooth デバイス(Paired Devices セクション)から切断する
+                        td Disconnect をタップする
+                      tr
+                        td 使用可能な Bluetooth デバイスを元の状態に戻す
+                        td Remove をタップする
+
+
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | Sequencer/シーケンサー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p グリッドビューとステップシーケンサーでのシーケンサーの動作を決定する
+
+          table
+
+            tr
+              td Instant Track Mute
+              td 無効にしてトラックをミュートした場合、そのトラックのノートオンメッセージは無視され、サンプルと演奏中のノートはその長さの分だけ再生し終了する
+                br
+                | ループを小節の最後まで再生したいが、次にシーケンスがループするときには再生しないようにしたい場合に、この機能を有効にしてトラックをミュートすると、MIDI トラックのボリューム(0)が送信される
+                br
+                | ループは再生を続けるが、音量はゼロなので、すぐにトラックをミュートしたいときに便利
+            tr
+              td Record Track Mute and Solo Events
+              td
+                table
+                  tr
+                    td 有効
+                    td トラックミュートモードの時にトラックミュートとソロイベントが再生される
+                  tr
+                    td 無効
+                    td トラックミュートモード中はトラックミュートとソロイベントは再生されない
+            tr
+              td Record Track Mute and Solo Events
+              td
+                table
+                  tr
+                    td 有効
+                    td トラックミュートモード中にトラックミュートとソロイベントが記録される
+                      br
+                      | (タイミング補正の設定は記録されたポジションイベントに影響する)
+                  tr
+                    td 無効
+                    td トラックミュートモード中はトラックミュートとソロイベントは記録されない
+                      br
+                      | この機能は、トラックミュートモードを演奏やリスニングのためだけに使用するのではなく、トラックミュートモードを使用して、トラックミュートやソロをシーケンスに録音したい場合に便利
+
+            tr
+              td Record Pad Aftertouch Events
+              td
+                table
+                  tr
+                    td 有効
+                    td パッドのアフタータッチデータ(MPC ハードウェアの感圧パッドからの)が記録される
+                  tr
+                    td 無効
+                    td パッドのアフタータッチデータは無視される
+
+            tr
+              td Place Events Recorded During Count-In at Start Point
+
+              td この設定は、アルペジエーターをアクティブにして録音した場合には無視される
+                table
+                  tr
+                    td 有効
+                    td 録音のプリカウント中にパッドを押すと、録音開始時にそのノートイベントが記録される
+                  tr
+                    td 無効
+                    td プリカウントが終了して録音が開始されるまでノートは録音されない
+            tr
+              td Truncate Duration
+              td イベントが現在のシーケンスの長さを超えた場合、イベントが切り取られるかどうか、またどのように切り取られるかを決定する
+                table
+                  tr
+                    td To Sequence Length
+                    td イベントの長さがシーケンスの長さを超える場合、イベントは切り捨てられる
+                      br
+                      | シーケンスがループしたときにイベント自体が重ならないようにするために使う
+                  tr
+                    td To Sequence End
+                    td イベントがシーケンスの長さを超えると、現在のシーケンスの最後まで切り捨てられる
+                      br
+                      | (シーケンスが終了するかループするとイベントは再生を停止する)
+                  tr
+                    td As Played
+                    td シーケンスがループするときにイベントが重なっても、記録された通りに再生される
+                      br
+                      | 例：4 小節ループの 2 小節目から始まるノートを録音し、それを 5 小節間保持した場合、その音符は 7 小節目(As Played)、6 小節目(To Sequence Length)、4 小節目(To Sequence End)で終了する
+                  tr
+                    td Q-LINK SWING CONTROL APPLIES TC SETTINGS ON RELEASE
+                    td
+                      table
+                        tr
+                          td 有効
+                          td Swing に割り当てられた Q-Link のつまみを回して離すと、すぐに Swing の設定が適用されます。
+                        tr
+                          td 無効
+                          td タイミングコレクト(TC)ウィンドウを使ってスイングの設定を行う必要があります。
+            tr
+              td Display Resolution
+              td オペレーティングシステムの特定の領域におけるパルス値の表示解像度(PPQNpulses per quarter note)を設定する
+                br
+                | この設定はタイミングではなく、表示分解能に影響を与える
+
+
+
+        h3.heading.switch
+          | Sync/同期
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p MPC ハードウェアが接続された USB および MIDI デバイスとどのように同期するかを設定する
+
+          table
+            tr
+              td Receive
+              td MPC ハードウェアが受信する情報を設定する
+                ul
+                  li MIDI Clock 情報(MIDI Clock)
+                  li  MIDI Time Code 情報(MIDI Time Code(MTC)
+                  li Ableton Link からの通信(Ableton Link)
+                  li Off(いずれも受信しない)
+
+
+            tr
+              td Receive MMC
+              td
+                table
+                  tr
+                    td 有効
+                    td MPC ハードウェアは MIDI マシンコントロール(MMC)を受信できる
+                  tr
+                    td 無効
+                    td 情報を受信しない
+            tr
+              td Send
+              td MPC ハードウェアが送信する情報を設定する
+                ul
+                  li MIDI Clock 情報(MIDI Clock)
+                  li  MIDI Time Code 情報(MIDI Time Code(MTC)
+                  li Off(どちらも送信しない)
+            tr
+              td Send MMC
+              td
+                table
+                  tr
+                    td 有効
+                    td MIDI マシンコントロール(MMC)情報を送信する
+                  tr
+                    td 無効
+                    td MIDI マシンコントロール(MMC)情報送信しない
+            tr
+              td MTC Frame Rate
+              td MIDI タイムコード(MTC)で使用するフレームレートを決定する
+                br
+                | 特に映画のスコアリングプロジェクトで作業を行う際に、正しいタイミングを得るために重要
+                br
+                | ほとんどの場合、25 を選択する
+            tr
+              td Start Time
+              td Send MIDI が Off 以外に設定されている場合に送信される開始時刻
+                br
+                | 時：分：秒：フレームで表示される
+            tr
+              td Send Port 1–4
+              td MIDI クロックや MTC 情報が送信される MIDI ポート
+
+
+
+        h3.heading.switch
+          | Hardware/ハードウェア
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p MPC ハードウェアのパッドとタッチスクリーンの動作を決定する
+
+
+        table
+          tr
+            td Pad Threshold
+            td パッドがトリガーされるためにパッドを打つのに必要な力の大きさを決定する
+          tr
+            td Pad Sensitivity
+            td パッドをタップした時にどのように反応するかを決定します。値が低いほど、より大きな力が必要になる
+              br
+              | 値を高くすると、パッドを押している間にあまり力を入れなくても、ハイベロシティのノートを生成しやすくなる
+          tr
+            td Pad Curve
+            td パッドをタップした時にどのように速度値に変換されるかを決定する
+              br
+              | A カーブは基本的に直線的
+              br
+              | B、C、D カーブは指数関数的
+          tr
+            td Velocity & Aftertouch
+            td このメーターは、パッドを叩いたりするときに表示され、パッドに加えている力と圧力を測定するのに役立ち、パッドのしきい値と感度パラメータ(上記)を調整する際にも役立つ
+
+          tr
+            td MIDI Control Mode Output
+            td これは、MPC ハードウェアが外部 MIDI デバイスに MIDI メッセージを送信するためにどの MIDI ポートを使用しているかを決定する
+
+          tr
+            td Screen Dimming
+            td 自動的にタッチスクリーンを暗くするまでの時間を設定する
+              br
+              | (バッテリーを使用の場合、バッテリー寿命を延ばすことができる)
+          tr
+            td Screen Brightness
+            td 通常時の画面の明るさを決定する
+          tr
+            td Power On Screen (MPC Live only)
+            td MPC Live の電源を入れたときに特別な画面が表示されるかどうかを決定する
+              br
+              | この画面で、MPC Live の使用を開始するには、ボタンをタップしたままにしておかないと、自動的に電源が切れてしまう
+              br
+              | この機能は、誤って電源を入れてしまい、バッテリーの寿命を浪費することを防ぎます。以下のように設定することができる
+              table
+                tr
+                  td Never
+                  td ：画面が表示されることはない
+                td
+                  td When On Battery
+                  td バッテリー使用中に MPC Live の電源を入れた場合のみ画面が表示される
+                tr
+                  td Always
+                  td 画面が必ず表示される
+
+          tr
+            td Date
+            td 現在の日付を、月/日/年の形式で表示する
+              br
+              | スタンドアロンモードで MPC X または MPC Live でファイルを保存すると、ファイルのメタデータに現在の日付が含まれる
+              br
+              | コントローラーモードで使用している場合、この設定はホストコンピュータの現在の日付で上書きされる
+          tr
+            td Time
+            td 現在の時刻
+              br
+              | スタンドアロンモードでにファイルを保存すると、ファイルのメタデータに現在時刻が含まれる
+              br
+              | コントローラーモードで使用している場合、この設定はホストコンピュータの現在時刻で上書きされる
+
+
+        h3.heading.switch
+          | Project Defaults/プロジェクトの基本設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p 作成する新規プロジェクトのさまざまなデフォルト値を決定する
+          table
+            tr
+              td New Project Dialog
+              td 新しいプロジェクトを開始するときに表示されるオプションを決定する
+                table
+                  tr
+                    td Off
+                    td 新規プロジェクトは、ここに示されているプロジェクトのデフォルト設定を除いて、何も設定されていない空のプロジェクトになる
+                  tr
+                    td Demo
+                    td 開始点としてデモプロジェクト(いくつかの異なるジャンルのもの)を読み込むか、空のプロジェクトを読み込むかを選択することができる
+                  tr
+                    td Demo/Template/Recent
+                    td デモプロジェクト、プロジェクトのテンプレートファイル、または空のプロジェクトをロードするかを選択できる
+                      br
+                      | このウィンドウでテンプレートを選択するには、プロジェクトの読み込み/保存タブのテンプレート・ファイル・フィールドにプロジェクトがある必要がある
+            tr
+              td Default Tempo
+              td デフォルトの BPM テンポ
+            tr
+              td Default Master Tempo
+              td
+                table
+                  tr
+                    td 有効
+                    td デフォルトのテンポ値がマスターテンポに使用される
+                  tr
+                    td 無効
+                    td デフォルトのテンポがシーケンスに使用される
+            tr
+              td Default Sequence Bars
+              td 新しいシーケンスのデフォルトの小節数を決定する
+            tr
+              td Default Time Signature Numerator
+              td 新しいシーケンス 1 小節あたりの拍子数を決定する(拍子記号の先頭の番号)
+            tr
+              td Default Time Signature Denominator
+              td 新しいシーケンスの各ビート値(タイムシグネチャのボトムナンバー)の設定
+            tr
+              td Default Pad Slice
+              td 新しいサンプルをロードしたり、プロジェクトに録音したときに、どう再生するか設定する
+                table
+                  tr
+                    td Pad
+                    td プログラムエディットモードの Slice メニューが Pad に設定され、レイヤーの開始点や終了点などを設定することができる
+                  tr
+                    td All
+                    td プログラムエディットモードの Slice メニューが All に設定され、サンプル全体が再生される
+
+            tr
+              td Default Drum/Keygroup Filter
+              td ドラムとキーグループプログラムが使用するデフォルトのフィルタータイプを決定する
+            tr
+              td Default Plugin Synth
+              td 新しいプラグインプログラムが使用するデフォルトのインストゥルメントプラグインを決定する
+                br
+                | 表示されるウィンドウを使って選択する
+
+
+
+
+
+
+
+
+
+
+        h3.heading.switch
+          | プロジェクトのロード/セーブ
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p プロジェクトを自動的に保存するかどうか(どのように保存するか)を決定します。
+            br
+            | MPC ハードウェアをコントローラーとして使用している場合は、自動的にロードするファイルを設定することもできる
+
+          table
+            tr
+              td Auto Load File
+              td MPC ソフトウェアを開いたときに自動的にロードするプロジェクト(.xpj)またはプログラム(.xpm)を選択する
+            tr
+              td Enabled
+              td 有効の場合、タイムアウト間隔後にプロジェクトが自動保存されます。無効の場合、自動保存されない
+            tr
+              td Timeout
+              td このフィールドを使用して、プロジェクトが自動的に保存される頻度を選択する
+            tr
+              td Template File
+              td New Project Dialog ウィンドウで User Template を選択したときに自動的に読み込まれるプロジェクトテンプレートを選択する
+                br
+                | (ファイル保存時に Save as Template ボックスを選択した場合、このフィールドに表示される)
+                br
+                | User Template オプションを利用できるようにするには、New Project Dialog(Project Defaults タブ)を Demo または Demo/Template/Recent に設定する必要がある
+
+
+
+        h3.heading.switch
+          | Record/Export(レコーディング/エクスポートの設定)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p レコーディングとエクスポート/書き出しの設定を行う
+
+          table
+            tr
+              td Recording Bit Depth
+              td レコーディングされたオーディオのビット深度を決定する
+            tr
+              td Include Program Volume/Pan Settings
+              td
+                table
+                  tr
+                    td 有効
+                    td エクスポートされたオーディオ/MIDI ファイルにボリュームとパンの設定が含まれる
+                  tr
+                    td 無効
+                    td ボリュームとパンはそれぞれ 0dB とセンター(C)に設定される
+
+            tr
+              td Bypass Program Effects Plugins
+              td
+                table
+                  tr
+                    td 有効
+                    td エクスポートしたオーディオ/MIDI ファイルにはサードパーティ製のエフェクトプラグインが含まれるが、エフェクトはバイパスされる
+                  tr
+                    td 無効
+                    td エフェクトが有効になる
+
+
+            tr
+              td Audio Tail Length
+              td エクスポートするオーディオファイルに適用されるオーディオテール(無音)の長さを指定する
+            tr
+              td Audio Export
+              td オーディオのエクスポートアイコンをクリックしたときに、どの部分をエクスポートするかを決定する
+            tr
+              td Track
+              td 現在のシーケンスの中で現在表示されているトラックをエクスポートする
+            tr
+              td Program
+              td 現在表示されているプログラムを使用しているシーケンスのすべてのトラックをエクスポートする
+            tr
+              td Master
+              td プログラムを使用しているすべてのトラックをマスター出力にエクスポートする
+            tr
+              td MIDI Export
+              td MIDI エクスポートアイコンをクリックしたときに、どの部分をエクスポートするかを決定する
+            tr
+              td Track
+              td MIDI エクスポートは現在のシーケンスで現在表示されているトラックをエクスポートする
+            tr
+              td Sequence
+              td MIDI エクスポートは現在のシーケンスのすべてのトラックをエクスポートする
+            tr
+              td Bounce Bit Depth
+              td エクスポートされるオーディオファイルのビット深度を 16 ビット/24 ビットに設定する
+
+
+
+
+
+
+
+        h3.heading.switch
+          | General/ジェネラル
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p ハードウェアおよびオペレーティングシステムでの他の機能の動作方法を決定する
+
+
+          table
+            tr
+              td Tap Tempo
+              td タップボタンを何回押すと新しいテンポに変更されるかを決定します。
+            tr
+              td Flash Tap Tempo Light
+              td 有効の場合、テンポに合わせてタップボタンライトが点滅します。無効の場合、消灯します。
+            tr
+              td Filter ‘All Notes Off’ CC
+              td 有効の場合、"All Notes Off"(MIDI panic)メッセージは無視されます。CC メッセージを送信できる外部 MIDI デバイス使用時に、フィルタリングしたい場合に便利です。無効の場合"All Notes Off "を受信します。
+
+            tr
+              td Program Change
+              td MIDI プログラム変更メッセージの変更内容を決定する
+                ul
+                  li プログラム
+                  li シーケンス
+                  li トラック
+            tr
+              td Vintage Mode
+              td オーディオ出力に適用されるエミュレーションタイプを決定する
+                ul
+                  li MPC3000
+                  li MPC60
+                  li None
+
+            tr
+              td Audition Auto Play
+              td 自動プレビュー時のサンプルの音の長さを決定する
+            tr
+              td Audition Outputs
+              td MPC Live では Out 1,2-7,8 を使用しないが、MPC X との互換性を保つために表示する
+                br
+                | これらのサウンドには、ブラウザでのサンプル、プログラム、プロジェクト、サンプルエディットモードでのサンプル再生、キュープレビュー、スライスプレビュー、サンプラーでのサンプル再生、サンプルを Keep or Discard Sample ウィンドウでのサンプル再生などがある
+
+            tr
+              td Cue Preview
+              td キュープレイヘッドを移動させながらオーディオを再生するかどうかを決定する
+                br
+                | サンプル波形の中でキュープレイヘッドを移動させると、キュープレイヘッドの前のサンプルの小さな部分を再生する(Before)、キュープレイヘッドの後のサンプルの小さな部分を再生する(After)、または全く再生しない(Off)ように設定することができる
+                br
+                | サンプルエディットモードでも設定できる
+            tr
+              td Slice Preview
+              td スライスマーカーを移動させたときに、どのようにオーディオを再生するかを設定する
+                br
+                | サンプル波形の中でスライスマーカを移動させると、スライスマーカの前のサンプルの小部分を再生する(Before)、スライスマーカの後のサンプルの小部分を再生する(After)、または全く再生しない(Off)などの設定が可能
+                br
+                | サンプルエディットモードでも設定できる
+
+            tr
+              td Threads
+              td オーディオのレンダリングに使用するコンピュータのプロセッサのコア数を決定します。使用可能範囲はプロセッサによって異なる
+                br
+                | (MPC ハードウェアをコントローラモードで使用している場合にのみ利用可能)
+            tr
+              td Audio Warp Algorithm
+              td ピッチを変えずにサンプルの長さを調整したときに、サンプルがどのように Warp されるかを決定する
+                br
+                | (例：オーディオトラックの場合はオーディオエディットモード、クリップの場合はプログラムエディットモードのワープ機能)
+                br
+                | (コントローラモードで使用している場合にのみ使用可能)
+                br
+                | ワープアルゴリズムは非常に CPU 負荷が高く、自由に使いすぎると再生中にオーディオがドロップアウトしてしまうことがある
+                br
+                | ElastiquePro 以外のワープアルゴリズムを使用することで、必要な CPU リソースを減らすことができる
+
+            tr
+              td Audio Track Auto Warp
+              td 録音されたオーディオトラックのリージョンをどのように Warp させるかを決定する
+                br
+                | オンに設定すると、録音したオーディオトラックリージョンは、現在のシーケンステンポに合わせて自動的に反らせられる
+                br
+                | オーディオトラックリージョンが時間に合っている間に、シーケンステンポを調整することができる
+                br
+                | オーディオファイルを録音すると、現在のシーケンステンポが埋め込まれる
+                br
+                | この情報は、プロジェクトを保存する際にサンプルファイル内に保存される
+                br
+                | オーディオトラックのリージョンをワープするとき、ワープアルゴリズムはこのシーケンステンポと BPM フィールドの現在の値を使用して "ストレッチファクター"を生成する
+
+            tr
+              td BPM Detection Range
+              td ソフトウェアの BPM 自動検出機能を使用した場合や、タップボタンを押して新しいテンポを入力した場合の BPM 値の検出範囲を定義する
+
+            tr
+              td Bank Button Press
+              td パッドバンクボタンがどのように動作するかが決まる
+                table
+                  tr
+                    td Select A-D
+                    td パッドバンクボタンを 1 回押すと、対応するバンクがパッドバンク A-D から選択される
+                      br
+                      | パッドバンクボタンを押しながら Shift を長押しすると、パッドバンク E-H から対応するバンクが選択される
+                  tr
+                    td Select/toggle bank
+                    td パッドバンクボタンを押すと、パッドバンク A-D とパッドバンク E-H に対応するバンクを交互に選択できる
+                      br
+                      | (パッドバンク E-H のいずれかを選択するために Shift キーを押す必要はない)
+
+            tr
+              td Desktop Screensaver Disable
+              td MPC ソフトウェアを使用している間(つまり、コントローラモードで MPC ハードウェアを使用している間)、コンピュータのスクリーンセーバーが無効になっているかどうかを決定する
+                table
+                  tr
+                    td Never
+                    td コンピュータのスクリーンセーバーは正常に機能する
+                  tr
+                    td When hardware used
+                    td MPC がコンピューターに接続使用時、スクリーンセーバーは無効になる
+                  tr
+                    td When hardware attached
+                    td MPC ハードウェアがコンピュータに接続され、電源が入っている限り、コンピュータのスクリーンセーバーは無効になる
+                      br
+                      | MPC ハードウェアの電源を切るか、コンピュータから MPC ハードウェアを切り離すと、スクリーンセーバーは再び正常に機能します。
+                  tr
+                    td Always
+                    td MPC ソフトウェアが開いている間は(MPC ハードウェアが接続されているかどうか、電源が入っているかどうかに関わらず)、コンピューターのスクリーンセーバーは無効になる
+                      br
+                      | (このオプションは MPC ハードウェアをコントローラモードで使用している場合にのみ利用可能)
+
+
+
+            tr
+              td Collect Usage Statistic
+              td ユーザーの使用状況の統計情報をAKAIに時々送信するかどうかを決定する
+                br
+                | (MPC ハードウェアをコントローラモードで使用している場合にのみ利用可能)
+
+
+
+
+
+
+        h3.heading.switch
+          | Splice
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Splice プラットフォームとの統合を制御する
+
+
+
+
+
+
+        h3.heading.switch
+          | Sync/同期
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p シンクフィールド(画面上部中央)をタップし、データダイヤルを回すか、-/+ボタンを使用して、MPC ハードウェアが受信する情報を設定
+          ul
+            li MIDI クロック情報(MIDI Clock)
+            li MIDI タイムコード情報(MTC)
+            li Ableton Link からの通信
+            li OFF
+
+          p 環境設定の Sync タブの Receive メニューと同じ設定
+            br
+            | これらのタイプのタイミング情報を受信するには、MPC ハードウェアがネットワークに接続されている必要がある
+
+
+        h3.heading.switch
+          | Mode/モード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p アイコンをタップすると、MPC Liveをスタンドアローンモードとコントローラモードに切り替えることができる
+
+          table
+            tr
+              td Save
+              td 現在のプロジェクトを保存してから切り替える
+            tr
+              td Don't Save
+              td プロジェクトを保存せずに切り替える
+            tr
+              td Cancel
+              td 現在のモードとプロジェクトのままにする
+
+
+
+          p 現在のプロジェクトを閉じることなく、スタンドアロンモードとコントローラモードを自由に切り替えることはできない
+
+
+
+
+      h2.heading.switch
+        | System Resources/システムリソース
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | System Resources/システムリソース
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p このウィンドウのインジケータには、現在の使用状況の統計情報が表示される
+
+          table
+            tr
+              td Battery
+              td MPCLive を内蔵バッテリーで使用している場合、最初のインジケーターは現在のバッテリー寿命をパーセンテージで表する
+            tr
+              td CPU
+              td CPU インジケータは、現在の CPU をパーセンテージで表示する
+            tr
+              td RAM Usage
+              td  Mem インジケータは、MPC ハードウェアの現在の RAM 使用率を表示する
+            tr
+              td Drives
+              td ドライブインジケータは、検出された外部ストレージデバイス、または MPC 内部ドライブの空き容量を表示する
+
+        h3.heading.switch
+          | プロジェクトからサンプルを削除する(RAM の空き容量を増やす)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Purge をタップする
+            br
+            | 表示された画面で、Unused Samples をタップしてプロジェクトから未使用のサンプルをすべて削除し、All Samples をタップしてプロジェクトからすべてのサンプル(すべてのプログラム、シーケンス、オーディオまたは MIDI トラック)を削除するか、「キャンセル」をタップして前の画面に戻る
+
+
+        h3.heading.switch
+          | System Resources ウィンドウを閉じる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p OK、右上隅の X、またはウィンドウ外の任意の場所をタップする
+
+
+
+
+
+      h2.heading.switch
+        | エラー対応
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | メモリ不足
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p MPC ハードウェアの使用中に、アクションを完了するのに十分なメモリがないという警告が表示された場合は、以下の操作を行ってメモリを増やす
+            br
+            | プロジェクト内のすべてのオーディオトラックが、レコーディング時に record-arm していないことを確認する
+            br
+            | 警告が表示される前に存在したプロジェクトのサンプルプールからサンプルを削除する
+            br
+            | それでも警告が表示される場合は、以下の手順を実行する
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 警告が表示される前に実行した最後のアクションを手動で元に戻す
+                  br
+                  | (元に戻す履歴が RAM に保存されるため、元にUndo ボタンを使用できない場合がある)
+                li.contentOperationOrderlist プロジェクトを保存する
+                li.contentOperationOrderlist 以下のいずれかを実行し、保存したプロジェクトを再度ロードする
+                  ul
+                    li メインモードでは、画面上部のフォルダアイコンをタップし、画面下部の New をタップする
+                    li MPC のハードウェアの電源をオフにして、再度オンする
+                    li メニューの歯車アイコンから環境設定の Reset をタップし、OK をタップし Restart で環境設定をリセットする
+                    li 一度コントローラーモードに入って、再度スタンドアローンモードに入る
+
+
+        h3.heading.switch
+          | サンプルをプロジェクトに読みこめない場合
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p プロジェクトに読み込むサンプルは非圧縮オーディオファイルに自動的変換されるため、外部ストレージデバイスよりも多くの容量を使用する可能性がある
+            br
+            | 一度に読み込めない場合、ファイル数の少ないものを選択する
 
 
     include ../_include/_footer.pug
@@ -2460,3 +3379,238 @@ html(lang="ja")
 //- P332-400 アップデート
 //- MPCで検索
 //- センターカーソルは無い
+
+
+
+
+
+//- タイムカウンター/ロケート..81
+
+
+
+
+
+
+//- タイミングコレクト(TC)....83
+
+
+
+
+
+//- メトロノーム(Click/Metro) ..85
+
+
+
+
+
+//- オートメーション ..86
+//- グローバル...86
+//- プログラムとオーディオトラック86
+
+
+//- 16 レベル87
+
+
+
+//- Erase/消去 ........88
+
+
+
+
+//- エフェクト.89
+//- 概要..89
+//- インサートエフェクト..91
+//- パッド .......91
+//- キーグループ ......93
+//- オーディオトラック 95
+//- プログラム96
+//- サブミックス..98
+//- マスター ...99
+//- センド/リターンエフェクト .......100
+//- パッド .....101
+//- キーグループ ....102
+//- オーディオトラック .103
+//- プログラム..103
+//- サブミックス104
+
+
+
+
+//- オーディオミックスダウン...105
+//- バッテリー残量 .106
+//- スタンドアロンとコントローラモード ...107
+
+
+
+
+//- モード .109
+
+
+
+//- メインモード .110
+//- シーケンスセクション ..........115
+//- トラックセクション..123
+//- プログラム132
+
+
+
+
+//- グリッドビュー .137
+
+
+
+//- オーディオエディットモード........142
+
+
+
+//- トラックビュー..151
+//- MIDI トラック ........153
+//- オーディオトラック.154
+
+
+
+//- ステップシーケンサー.155
+
+
+
+
+//- XYFX モード ..159
+
+
+
+
+
+//- サンプルエディットモード ..........162
+//- 設定......164
+//- トリムモード .........165
+//- サンプルのアサイン/割り当て.......169
+//- スライスとサンプルの処理.171
+//- チョップモード.......176
+//- スライスの変換または割り当て.....179
+//- スライスの処理182
+//- プログラムモード..185
+//- サンプルのアサイン/割り当て.......188
+//- スライスの処理189
+
+
+
+
+
+//- プログラムエディットモード........192
+//- Drum プログラム .192
+//- マスター ..........195
+//- サンプル .........196
+//- パンベロシティ.203
+//- フィルター/エンベロープ..204
+//- LFO モジュレーション.....205
+//- エフェクト.........207
+//- Keygroup プログラム.........209
+//- マスター ..........210
+//- サンプル .........213
+//- パンベロシティ.219
+//- フィルター/エンベロープ..220
+//- LFO モジュレーション.....221
+//- エフェクト.........223
+//- Clip プログラム....225
+//- プログラム.......227
+//- パッド 228
+//- Plugin プログラム 231
+//- MIDI プログラム...232
+//- CV プログラム .....233
+//- エンベロープの構造234
+
+
+
+//- リストエディットモード..235
+
+
+//- ブラウザー ..239
+//- ブラウズ 239
+//- サンプルアサイン.241
+
+
+
+//- サンプラー...242
+//- サンプル245
+//- スライス.247
+//- パッドタップ..........248
+//- パッドホールド......249
+//- オートサンプラー..249
+
+
+//- ルーパー.....250
+
+
+
+
+//- パッドミキサー 255
+//- レベル...257
+//- パンニング257
+//- ミュート..258
+//- センドエフェクト ....258
+//- インサートエフェクト.259
+//- ルーティング ........259
+
+
+
+//- チャンネルミキサー....260
+//- MIDI トラック........263
+//- オーディオトラック.264
+//- プログラム266
+//- リターン .268
+//- サブミックス .........269
+//- マスター 270
+
+
+
+//- パッドミュートモード....271
+//- パッドミュート .......272
+//- パッドグループ.....273
+
+
+
+//- トラックミュートモード..274
+//- トラックミュート .....275
+//- トラックグループ...276
+
+
+
+//- ネクストシーケンスモード..........277
+//- ソングモード 279
+
+
+
+//- Q-Link
+//- Q-Link エディットモード .282
+//- プロジェクト..........284
+//- プログラム/オーディオ・トラック..........286
+//- パッドシーン.........288
+//- パッドパラメーター289
+//- スクリーン.290
+
+
+
+//- パッドカラーモード......291
+
+//- MIDI
+//- 　MIDI コントロールモード293
+//- 　パッド ....294
+//- 　ボタン....295
+//- 　Q-Link ノブ..........296
+//- 　XY パッド..297
+//- 　MIDI Learn 機能 .297
+
+
+//- パッドパフォームモード..298
+
+//- MIDI マシンコントロール (MMC)322
+
+//- MPC 2.1 のアップデート
+//- MPC 2.2 のアップデート
+//- MPC 2.3 のアップデート..
+//- MPC 2.4 のアップデート..
+//- MPC 2.5 のアップデート.
+//- MPC 2.6 のアップデート
+//- MPC 2.7 のアップデート
+//- MPC 2.7.2 のアップデート
+//- MPC 2.8 のアップデート
