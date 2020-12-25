@@ -2111,64 +2111,64 @@
         <h3 class="heading switch">Hardware/ハードウェア<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>MPC ハードウェアのパッドとタッチスクリーンの動作を決定する</p>
+          <table>
+            <tr>
+              <td>Pad Threshold</td>
+              <td>パッドがトリガーされるためにパッドを打つのに必要な力の大きさを決定する</td>
+            </tr>
+            <tr>
+              <td>Pad Sensitivity</td>
+              <td>パッドをタップした時にどのように反応するかを決定します。値が低いほど、より大きな力が必要になる<br>値を高くすると、パッドを押している間にあまり力を入れなくても、ハイベロシティのノートを生成しやすくなる</td>
+            </tr>
+            <tr>
+              <td>Pad Curve</td>
+              <td>パッドをタップした時にどのように速度値に変換されるかを決定する<br>A カーブは基本的に直線的<br>B、C、D カーブは指数関数的</td>
+            </tr>
+            <tr>
+              <td>Velocity & Aftertouch</td>
+              <td>このメーターは、パッドを叩いたりするときに表示され、パッドに加えている力と圧力を測定するのに役立ち、パッドのしきい値と感度パラメータ(上記)を調整する際にも役立つ</td>
+            </tr>
+            <tr>
+              <td>MIDI Control Mode Output</td>
+              <td>これは、MPC ハードウェアが外部 MIDI デバイスに MIDI メッセージを送信するためにどの MIDI ポートを使用しているかを決定する</td>
+            </tr>
+            <tr>
+              <td>Screen Dimming</td>
+              <td>自動的にタッチスクリーンを暗くするまでの時間を設定する<br>(バッテリーを使用の場合、バッテリー寿命を延ばすことができる)</td>
+            </tr>
+            <tr>
+              <td>Screen Brightness</td>
+              <td>通常時の画面の明るさを決定する</td>
+            </tr>
+            <tr>
+              <td>Power On Screen (MPC Live only)</td>
+              <td>MPC Live の電源を入れたときに特別な画面が表示されるかどうかを決定する<br>この画面で、MPC Live の使用を開始するには、ボタンをタップしたままにしておかないと、自動的に電源が切れてしまう<br>この機能は、誤って電源を入れてしまい、バッテリーの寿命を浪費することを防ぎます。以下のように設定することができる
+                <table>
+                  <tr>
+                    <td>Never</td>
+                    <td>：画面が表示されることはない</td>
+                  </tr>
+                  <td>
+                    <td>When On Battery</td>
+                    <td>バッテリー使用中に MPC Live の電源を入れた場合のみ画面が表示される</td>
+                  </td>
+                  <tr>
+                    <td>Always</td>
+                    <td>画面が必ず表示される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td>現在の日付を、月/日/年の形式で表示する<br>スタンドアロンモードで MPC X または MPC Live でファイルを保存すると、ファイルのメタデータに現在の日付が含まれる<br>コントローラーモードで使用している場合、この設定はホストコンピュータの現在の日付で上書きされる</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td>現在の時刻<br>スタンドアロンモードでにファイルを保存すると、ファイルのメタデータに現在時刻が含まれる<br>コントローラーモードで使用している場合、この設定はホストコンピュータの現在時刻で上書きされる</td>
+            </tr>
+          </table>
         </section>
-        <table>
-          <tr>
-            <td>Pad Threshold</td>
-            <td>パッドがトリガーされるためにパッドを打つのに必要な力の大きさを決定する</td>
-          </tr>
-          <tr>
-            <td>Pad Sensitivity</td>
-            <td>パッドをタップした時にどのように反応するかを決定します。値が低いほど、より大きな力が必要になる<br>値を高くすると、パッドを押している間にあまり力を入れなくても、ハイベロシティのノートを生成しやすくなる</td>
-          </tr>
-          <tr>
-            <td>Pad Curve</td>
-            <td>パッドをタップした時にどのように速度値に変換されるかを決定する<br>A カーブは基本的に直線的<br>B、C、D カーブは指数関数的</td>
-          </tr>
-          <tr>
-            <td>Velocity & Aftertouch</td>
-            <td>このメーターは、パッドを叩いたりするときに表示され、パッドに加えている力と圧力を測定するのに役立ち、パッドのしきい値と感度パラメータ(上記)を調整する際にも役立つ</td>
-          </tr>
-          <tr>
-            <td>MIDI Control Mode Output</td>
-            <td>これは、MPC ハードウェアが外部 MIDI デバイスに MIDI メッセージを送信するためにどの MIDI ポートを使用しているかを決定する</td>
-          </tr>
-          <tr>
-            <td>Screen Dimming</td>
-            <td>自動的にタッチスクリーンを暗くするまでの時間を設定する<br>(バッテリーを使用の場合、バッテリー寿命を延ばすことができる)</td>
-          </tr>
-          <tr>
-            <td>Screen Brightness</td>
-            <td>通常時の画面の明るさを決定する</td>
-          </tr>
-          <tr>
-            <td>Power On Screen (MPC Live only)</td>
-            <td>MPC Live の電源を入れたときに特別な画面が表示されるかどうかを決定する<br>この画面で、MPC Live の使用を開始するには、ボタンをタップしたままにしておかないと、自動的に電源が切れてしまう<br>この機能は、誤って電源を入れてしまい、バッテリーの寿命を浪費することを防ぎます。以下のように設定することができる
-              <table>
-                <tr>
-                  <td>Never</td>
-                  <td>：画面が表示されることはない</td>
-                </tr>
-                <td>
-                  <td>When On Battery</td>
-                  <td>バッテリー使用中に MPC Live の電源を入れた場合のみ画面が表示される</td>
-                </td>
-                <tr>
-                  <td>Always</td>
-                  <td>画面が必ず表示される</td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>Date</td>
-            <td>現在の日付を、月/日/年の形式で表示する<br>スタンドアロンモードで MPC X または MPC Live でファイルを保存すると、ファイルのメタデータに現在の日付が含まれる<br>コントローラーモードで使用している場合、この設定はホストコンピュータの現在の日付で上書きされる</td>
-          </tr>
-          <tr>
-            <td>Time</td>
-            <td>現在の時刻<br>スタンドアロンモードでにファイルを保存すると、ファイルのメタデータに現在時刻が含まれる<br>コントローラーモードで使用している場合、この設定はホストコンピュータの現在時刻で上書きされる</td>
-          </tr>
-        </table>
         <h3 class="heading switch">Project Defaults/プロジェクトの基本設定<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>作成する新規プロジェクトのさまざまなデフォルト値を決定する</p>
