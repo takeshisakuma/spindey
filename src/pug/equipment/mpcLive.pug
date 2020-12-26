@@ -2916,63 +2916,64 @@ html(lang="ja")
 
 
           p 作成する新規プロジェクトのさまざまなデフォルト値を決定する
-          table
-            tr
-              td New Project Dialog
-              td 新しいプロジェクトを開始するときに表示されるオプションを決定する
-                table
-                  tr
-                    td Off
-                    td 新規プロジェクトは、ここに示されているプロジェクトのデフォルト設定を除いて、何も設定されていない空のプロジェクトになる
-                  tr
-                    td Demo
-                    td 開始点としてデモプロジェクト(いくつかの異なるジャンルのもの)を読み込むか、空のプロジェクトを読み込むかを選択することができる
-                  tr
-                    td Demo/Template/Recent
-                    td デモプロジェクト、プロジェクトのテンプレートファイル、または空のプロジェクトをロードするかを選択できる
-                      br
-                      | このウィンドウでテンプレートを選択するには、プロジェクトの読み込み/保存タブのテンプレート・ファイル・フィールドにプロジェクトがある必要がある
-            tr
-              td Default Tempo
-              td デフォルトの BPM テンポ
-            tr
-              td Default Master Tempo
-              td
-                table
-                  tr
-                    td 有効
-                    td デフォルトのテンポ値がマスターテンポに使用される
-                  tr
-                    td 無効
-                    td デフォルトのテンポがシーケンスに使用される
-            tr
-              td Default Sequence Bars
-              td 新しいシーケンスのデフォルトの小節数を決定する
-            tr
-              td Default Time Signature Numerator
-              td 新しいシーケンス 1 小節あたりの拍子数を決定する(拍子記号の先頭の番号)
-            tr
-              td Default Time Signature Denominator
-              td 新しいシーケンスの各ビート値(タイムシグネチャのボトムナンバー)の設定
-            tr
-              td Default Pad Slice
-              td 新しいサンプルをロードしたり、プロジェクトに録音したときに、どう再生するか設定する
-                table
-                  tr
-                    td Pad
-                    td プログラムエディットモードの Slice メニューが Pad に設定され、レイヤーの開始点や終了点などを設定することができる
-                  tr
-                    td All
-                    td プログラムエディットモードの Slice メニューが All に設定され、サンプル全体が再生される
+          .tableScroll
+            table
+              tr
+                td New Project Dialog
+                td 新しいプロジェクトを開始するときに表示されるオプションを決定する
+                  table
+                    tr
+                      td Off
+                      td 新規プロジェクトは、ここに示されているプロジェクトのデフォルト設定を除いて、何も設定されていない空のプロジェクトになる
+                    tr
+                      td Demo
+                      td 開始点としてデモプロジェクト(いくつかの異なるジャンルのもの)を読み込むか、空のプロジェクトを読み込むかを選択することができる
+                    tr
+                      td Demo/Template/Recent
+                      td デモプロジェクト、プロジェクトのテンプレートファイル、または空のプロジェクトをロードするかを選択できる
+                        br
+                        | このウィンドウでテンプレートを選択するには、プロジェクトの読み込み/保存タブのテンプレート・ファイル・フィールドにプロジェクトがある必要がある
+              tr
+                td Default Tempo
+                td デフォルトの BPM テンポ
+              tr
+                td Default Master Tempo
+                td
+                  table
+                    tr
+                      td 有効
+                      td デフォルトのテンポ値がマスターテンポに使用される
+                    tr
+                      td 無効
+                      td デフォルトのテンポがシーケンスに使用される
+              tr
+                td Default Sequence Bars
+                td 新しいシーケンスのデフォルトの小節数を決定する
+              tr
+                td Default Time Signature Numerator
+                td 新しいシーケンス 1 小節あたりの拍子数を決定する(拍子記号の先頭の番号)
+              tr
+                td Default Time Signature Denominator
+                td 新しいシーケンスの各ビート値(タイムシグネチャのボトムナンバー)の設定
+              tr
+                td Default Pad Slice
+                td 新しいサンプルをロードしたり、プロジェクトに録音したときに、どう再生するか設定する
+                  table
+                    tr
+                      td Pad
+                      td プログラムエディットモードの Slice メニューが Pad に設定され、レイヤーの開始点や終了点などを設定することができる
+                    tr
+                      td All
+                      td プログラムエディットモードの Slice メニューが All に設定され、サンプル全体が再生される
 
-            tr
-              td Default Drum/Keygroup Filter
-              td ドラムとキーグループプログラムが使用するデフォルトのフィルタータイプを決定する
-            tr
-              td Default Plugin Synth
-              td 新しいプラグインプログラムが使用するデフォルトのインストゥルメントプラグインを決定する
-                br
-                | 表示されるウィンドウを使って選択する
+              tr
+                td Default Drum/Keygroup Filter
+                td ドラムとキーグループプログラムが使用するデフォルトのフィルタータイプを決定する
+              tr
+                td Default Plugin Synth
+                td 新しいプラグインプログラムが使用するデフォルトのインストゥルメントプラグインを決定する
+                  br
+                  | 表示されるウィンドウを使って選択する
 
 
 
@@ -3608,15 +3609,322 @@ html(lang="ja")
 
 
 
+        h3.heading.switch
+          | メトロノーム(Click/Metro)
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Click/Metro ウィンドウには、メトロノーム（クリックトラック）に関するすべての設定が含まれている
+
+          table
+            tr
+              td メトロノームの設定を開く
+              td 画面上部のメトロノームのアイコンをタップする
+                table
+                  tr
+                    td メインモードまたはリストエディットモード
+                    td 画面上部のメトロ/メトロノームのアイコンをタップする
+                  tr
+                    td グリッドビュー
+                    td Shift キーを押しながら画面下部のクリックをタップする
+                  tr
+                    td トラックビュー
+                    td 画面下部をタップしてクリックする
+            tr
+              td 録音前にメトロノームがカウントするかどうかを設定
+              td Count-In フィールドを使用する
+                table
+                  tr
+                    td Off
+                    td メトロノームのプリカウントを無効にします。
+                  tr
+                    td Record
+                    td 録音中のみプリカウントを有効にします。
+                  tr
+                    td Record + Play
+                    td 録音モードとプレイバックモードの両方でプリカウントを有効にします。.
+            tr
+              td メトロノームを有効にするかどうか
+              td Enableフィールドを使用して設定
+                table
+                  tr
+                    td Off
+                    td メトロノームを無効にする
+                  tr
+                    td Play
+                    td 再生中のメトロノーム音のみを有効にする
+                  tr
+                    td Record
+                    td 録音時のみメトロノームの音が出るようにする
+                  tr
+                    td Record + Play
+                    td 録音モードと再生モードの両方でメトロノームを発生させる
+
+            tr
+              td メトロノームクリックのタイムディビジョン
+              td Rate（レート）フィールドを使用する
+                ul
+                  li 1/4
+                  li 1/4T
+                  li 1/8
+                  li 1/8T
+                  li 1/16
+                  li 1/16T
+                  li 1/32
+                  li 1/32T
+                p (T はトリプレットベースのタイムディビジョン)
+            tr
+              td メトロノームのサウンドを選択
+              td Sound フィールドを使用する
+                ul
+                  li Sidestick 1
+                  li Sidestick 2
+                  li Clap
+                  li Metroclick
+                  li Shake
+                  li Tambourine
+                  li MPC Click
+
+            tr
+              td トロノームのクリックの音量を設定
+              td Volume ノブを使用
+            tr
+              td メトロノームの有効/無効の切り替え
+              td On/Off ボタンをタップする
+
+            tr
+              td どのペアの出力でメトロノームクリックを再生するかを設定
+              td Output フィールドを使用
+                table
+                  tr
+                    td スタンドアロンモード
+                    td Out 1/2 - 5/6
+                  tr
+                    td コントローラモード
+                    td Out 1、2/3、4/5、6か、 1-6 各モノラルを選択する
+                p （Out 7/8 は搭載さていないが、MPCX との互換性を保つために表示されている)
+
+
+      h2.heading.switch
+        | Automation/オートメーション
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | Automation/オートメーション
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p プログラムやオーディオトラックのオートメーションを「written/書き込み」「read/読み込み」「無効」のいずれかに設定できる
+            br
+            | これは、グローバルに、または個々のプログラムとオーディオトラックに対して行うことができる
+
+
+        h3.heading.switch
+          | グローバル/Global
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p いくつかのモードでは、右上にグローバルオートメーションを制御するボタンがある
+            br
+            | このボタンをタップして状態を変更すると、プロジェクト内のすべてのプログラムのオートメーション状態が変更される
+          ul
+            li メインモード
+            li XYFX モード
+            li パッドミュートモード
+            li パッドミキサー
+            li チャンネルミキサー
+            li Q-Link エディットモード
+
+          table
+            tr
+              td 3 つの状態を切り替える
+              td グローバルオートメーションボタンをタップする
+                table
+                  tr
+                    td オフにする
+                    td オートメーションデータは無視される
+                      br
+                      | すでにオートメーションを録音または入力している場合、Read(R)と Write(W)に切り替わる
+                      br
+                      | ボタンをタップしている間に Shift を押し続けることで、これをオーバーライドしてオフにすることができる
+                      br
+                      | すでにオートメーションを録音した状態でオフにした場合、トラックはオフにしたポイントでエフェクトとそのパラメータ値を使用したままになる
+
+                  tr
+                    td Read(R)に設定する
+                    td オートメーションデータは読み込まれるが、記録はされない
+                      br
+                      | これは、録音中にオートメーションが誤って変更されるのを防ぐための保護機能
+                  tr
+                    td Write(W)に設定する
+                    td オートメーションを記録することができ、 既存のオートメーションを上書きする
+                      br
+                      | (記録中に誤って XY パッドに触れないように注意する)
+
+
+
+        h3.heading.switch
+          | プログラム & オーディオトラック/Programs & Audio Tracks
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+
+          p メインモードとチャンネルミキサーの画面左側のチャンネルストリップにあるプログラムオートメーションボタンを使って、プログラムやオーディオトラックごとにオートメーションを設定することもできる
+            br
+            | プログラムオートメーションは、MIDI プログラムを除くすべてのプログラムタイプで利用可能
+
+          p グローバルオートメーションボタンをタップすると、プロジェクト内のすべてのオートメーション状態が変更される
+
+          p メインモードで、チャンネルストリップが非表示の場合、プロジェクトフィールド下にある目のアイコンをタップして表示する
+            br
+            | チャンネルミキサーでチャンネルストリップにプログラムオートメーションボタンが表示されていない場合、Mixer フィールドがAudio Tracks または Programs に設定されていることを確認する
+
+
+          table
+            tr
+              td 3 つの状態を切り替える
+              td プログラム・オートメーションボタンをタップする
+                table
+                  tr
+                    td オフの場合
+                    td プログラムはオートメーションデータを無視する
+                      br
+                      | すでにオートメーションを録音または入力している場合、これをタップすると、Read(R) と Write(W)のみの間で切り替わるが、ボタンを押したりタップしたりしている間に Shift を押し続けることで、これをオーバーライドしてオフにすることができる
+                      br
+                      | すでにオートメーションを録音した状態でオフにした場合、トラックはオフにしたポイントでエフェクトとそのパラメータ値を使用したままになる
+
+                  tr
+                    td Read(R)に設定されている場合
+                    td プログラムはオートメーションデータの読み込みのみで、その上に追加のオートメーションを記録しない
+                      br
+                      | これは、録音中にオートメーションが誤って変更されるのを防ぐための保護機能
+                  tr
+                    td Write(W)に設定する
+                    td プログラムはオートメーションを記録することができる
+                      br
+                      |（オートメーション可能なパラメータに Q-Link ノブが割り当てられている場合は、記録中に誤って触れないよう注意）
+
+      h2.heading.switch
+        | 16 Level/16 レベル
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+
+        h3.heading.switch
+          | 16 Level/16 レベル
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          p MPC ハードウェアの 16 Level ボタンを押して、16 Level を有効または無効にする
+
+          p 有効にすると、選択しているパッド（デフォルトでは Pad A01）が一時的に全 16 パッドにコピーされる
+            br
+            | これで全てのパッドは選択されたパッドと同じノート番号を出力するようになるが、パラメーターは押す強さに関わらず、パッド番号に応じて順に増加する値に固定される
+            br
+            | （例：パッド 1 が最小値、パッド 16 が最大値）
+            br
+            | 表示された 16 Levels の画面で、Type セレクターを使ってパラメーターを選択する
+          ul
+           li Velocity
+           li Tune
+           li Filter
+           li Layer
+           li Attack
+           li Decay
+
+
+          table
+            tr
+              td パッドを選択する
+              td 以下のいずれかの操作を行う
+                br
+                | （16 Levels ウィンドウが開いている間）
+
+
+                ul
+                  li 16 レベルボタンを長押ししながら、目的のパッドを押す
+                  li 16 Levels チェックボックスをタップしてチェックを外し（一時的に機能を無効にします）、目的のパッドを押してから、再度 16 Levels チェックボックスをタップしてチェックを入れる
+                  li Pad フィールドをタップし、データダイヤルまたは-/+ボタンを使用する
+                  li Pad フィールドをダブルタップし、表示されるリストの中から目的のパッドをタップする
+
+
+                table
+                  tr
+                    td Type が Tune に設定されている場合
+                    td Original Pad フィールドを使用して、サンプルのオリジナルのピッチを使用するパッドを選択する
+                      br
+                      | または Shift キーを押しながら目的のパッドを押す
+                  tr
+                    td Type が Layer に設定されている場合
+                    td 複数のサンプルを含むパッドは、各レイヤーの Velocity Start と Velocity End の設定に従って各レイヤーを再生する
 
 
 
 
+      h2.heading.switch
+        | Erase/消去
+        span.swithCondition.contentClosed
+      section.h2content.hide
 
 
+        h3.heading.switch
+          | Erase/消去
+          span.swithCondition.contentClosed
+        section.h3content.hide
 
+          p 消去機能は、特定のシーケンスのトラックの全部または一部を消去する機能
 
-
+          table
+            tr
+              td Erase ウィンドウを開く
+              td Erase ボタンを押す
+                br
+                | または、メインモード中にセクションの右端にある鉛筆のアイコンをタップし、表示された画面で Erase をタップする
+            tr
+              td 消去したいシーケンスを選択する
+              td Sequence フィールドを使用する
+            tr
+              td シーケンス内で消去したいトラックを選択する
+              td Track フィールドを使用する
+            tr
+              td 消去したいシーケンスの時間範囲を設定する
+              td Bar、Beat、Tick フィールドを使用する
+                br
+                | 左のフィールドは時間範囲の開始を設定する
+                br
+                | 右のフィールドは時間範囲の終了を設定する
+            tr
+              td 消去するイベントの種類を選択する
+              td Erase オプションを選択する
+                table
+                  tr
+                    td All
+                    td 指定された時間範囲からすべてのパッドイベントを消去し、その設定をすべてリセットする
+                  tr
+                    td Automation
+                    td 指定された時間範囲からオートメーションのみを消去する
+                      br
+                      | Parameter フィールドを使用して、消去するオートメーションのタイプを選択する
+                  tr
+                    td Note
+                    td 指定した時間範囲から特定のパッドイベントのみを消去する
+                      br
+                      | 表示される 8 つのパッドバンクの図では、各バンクの各パッドを押してノートを選択または非選択にする
+                  tr
+                    td Except Note
+                    td 指定をした時間範囲のパッドイベント以外はすべて消去される
+            tr
+              td 選択を確定する
+              td DO IT をタップする
+            tr
+              td キャンセルして前の画面に戻る
+              td
+                ul
+                  li X
+                  li CANCEL
+                  li ウィンドウ外の任意の場所をタップする
 
 
 
@@ -3638,17 +3946,6 @@ html(lang="ja")
 
 
 
-
-//- メトロノーム(Click/Metro) ..85
-
-
-
-//- オートメーション ..86
-//- グローバル...86
-//- プログラムとオーディオトラック86
-
-
-//- 16 レベル87
 
 
 

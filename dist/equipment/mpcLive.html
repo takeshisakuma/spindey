@@ -2169,81 +2169,83 @@
         <h3 class="heading switch">Project Defaults/プロジェクトの基本設定<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>作成する新規プロジェクトのさまざまなデフォルト値を決定する</p>
-          <table>
-            <tr>
-              <td>New Project Dialog</td>
-              <td>新しいプロジェクトを開始するときに表示されるオプションを決定する
-                <table>
-                  <tr>
-                    <td>Off</td>
-                    <td>新規プロジェクトは、ここに示されているプロジェクトのデフォルト設定を除いて、何も設定されていない空のプロジェクトになる</td>
-                  </tr>
-                  <tr>
-                    <td>Demo</td>
-                    <td>開始点としてデモプロジェクト(いくつかの異なるジャンルのもの)を読み込むか、空のプロジェクトを読み込むかを選択することができる</td>
-                  </tr>
-                  <tr>
-                    <td>Demo/Template/Recent</td>
-                    <td>デモプロジェクト、プロジェクトのテンプレートファイル、または空のプロジェクトをロードするかを選択できる<br>このウィンドウでテンプレートを選択するには、プロジェクトの読み込み/保存タブのテンプレート・ファイル・フィールドにプロジェクトがある必要がある</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td>Default Tempo</td>
-              <td>デフォルトの BPM テンポ</td>
-            </tr>
-            <tr>
-              <td>Default Master Tempo</td>
-              <td>
-                <table>
-                  <tr>
-                    <td>有効</td>
-                    <td>デフォルトのテンポ値がマスターテンポに使用される</td>
-                  </tr>
-                  <tr>
-                    <td>無効</td>
-                    <td>デフォルトのテンポがシーケンスに使用される</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td>Default Sequence Bars</td>
-              <td>新しいシーケンスのデフォルトの小節数を決定する</td>
-            </tr>
-            <tr>
-              <td>Default Time Signature Numerator</td>
-              <td>新しいシーケンス 1 小節あたりの拍子数を決定する(拍子記号の先頭の番号)</td>
-            </tr>
-            <tr>
-              <td>Default Time Signature Denominator</td>
-              <td>新しいシーケンスの各ビート値(タイムシグネチャのボトムナンバー)の設定</td>
-            </tr>
-            <tr>
-              <td>Default Pad Slice</td>
-              <td>新しいサンプルをロードしたり、プロジェクトに録音したときに、どう再生するか設定する
-                <table>
-                  <tr>
-                    <td>Pad</td>
-                    <td>プログラムエディットモードの Slice メニューが Pad に設定され、レイヤーの開始点や終了点などを設定することができる</td>
-                  </tr>
-                  <tr>
-                    <td>All</td>
-                    <td>プログラムエディットモードの Slice メニューが All に設定され、サンプル全体が再生される</td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td>Default Drum/Keygroup Filter</td>
-              <td>ドラムとキーグループプログラムが使用するデフォルトのフィルタータイプを決定する</td>
-            </tr>
-            <tr>
-              <td>Default Plugin Synth</td>
-              <td>新しいプラグインプログラムが使用するデフォルトのインストゥルメントプラグインを決定する<br>表示されるウィンドウを使って選択する</td>
-            </tr>
-          </table>
+          <div class="tableScroll">
+            <table>
+              <tr>
+                <td>New Project Dialog</td>
+                <td>新しいプロジェクトを開始するときに表示されるオプションを決定する
+                  <table>
+                    <tr>
+                      <td>Off</td>
+                      <td>新規プロジェクトは、ここに示されているプロジェクトのデフォルト設定を除いて、何も設定されていない空のプロジェクトになる</td>
+                    </tr>
+                    <tr>
+                      <td>Demo</td>
+                      <td>開始点としてデモプロジェクト(いくつかの異なるジャンルのもの)を読み込むか、空のプロジェクトを読み込むかを選択することができる</td>
+                    </tr>
+                    <tr>
+                      <td>Demo/Template/Recent</td>
+                      <td>デモプロジェクト、プロジェクトのテンプレートファイル、または空のプロジェクトをロードするかを選択できる<br>このウィンドウでテンプレートを選択するには、プロジェクトの読み込み/保存タブのテンプレート・ファイル・フィールドにプロジェクトがある必要がある</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Default Tempo</td>
+                <td>デフォルトの BPM テンポ</td>
+              </tr>
+              <tr>
+                <td>Default Master Tempo</td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>有効</td>
+                      <td>デフォルトのテンポ値がマスターテンポに使用される</td>
+                    </tr>
+                    <tr>
+                      <td>無効</td>
+                      <td>デフォルトのテンポがシーケンスに使用される</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Default Sequence Bars</td>
+                <td>新しいシーケンスのデフォルトの小節数を決定する</td>
+              </tr>
+              <tr>
+                <td>Default Time Signature Numerator</td>
+                <td>新しいシーケンス 1 小節あたりの拍子数を決定する(拍子記号の先頭の番号)</td>
+              </tr>
+              <tr>
+                <td>Default Time Signature Denominator</td>
+                <td>新しいシーケンスの各ビート値(タイムシグネチャのボトムナンバー)の設定</td>
+              </tr>
+              <tr>
+                <td>Default Pad Slice</td>
+                <td>新しいサンプルをロードしたり、プロジェクトに録音したときに、どう再生するか設定する
+                  <table>
+                    <tr>
+                      <td>Pad</td>
+                      <td>プログラムエディットモードの Slice メニューが Pad に設定され、レイヤーの開始点や終了点などを設定することができる</td>
+                    </tr>
+                    <tr>
+                      <td>All</td>
+                      <td>プログラムエディットモードの Slice メニューが All に設定され、サンプル全体が再生される</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>Default Drum/Keygroup Filter</td>
+                <td>ドラムとキーグループプログラムが使用するデフォルトのフィルタータイプを決定する</td>
+              </tr>
+              <tr>
+                <td>Default Plugin Synth</td>
+                <td>新しいプラグインプログラムが使用するデフォルトのインストゥルメントプラグインを決定する<br>表示されるウィンドウを使って選択する</td>
+              </tr>
+            </table>
+          </div>
         </section>
         <h3 class="heading switch">プロジェクトのロード/セーブ<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -2718,6 +2720,295 @@
             <tr>
               <td>タイムコレクションを適用するノートイベントを選択する</td>
               <td>グリッドビューの様々なツールを使用するか、目的のイベントがあるパッドを押す<br>（パッドを押すとすべてのイベントが選択され、オンに設定される）<br>この操作は、タイミングコレクトウィンドウを開く前に行う必要がある<br>Range を選択すると、クオンタイズされるパッドやキーと同様に、ロケーション（From と To）を定義することができる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">メトロノーム(Click/Metro)<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Click/Metro ウィンドウには、メトロノーム（クリックトラック）に関するすべての設定が含まれている</p>
+          <table>
+            <tr>
+              <td>メトロノームの設定を開く</td>
+              <td>画面上部のメトロノームのアイコンをタップする
+                <table>
+                  <tr>
+                    <td>メインモードまたはリストエディットモード</td>
+                    <td>画面上部のメトロ/メトロノームのアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>グリッドビュー</td>
+                    <td>Shift キーを押しながら画面下部のクリックをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>トラックビュー</td>
+                    <td>画面下部をタップしてクリックする</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>録音前にメトロノームがカウントするかどうかを設定</td>
+              <td>Count-In フィールドを使用する
+                <table>
+                  <tr>
+                    <td>Off</td>
+                    <td>メトロノームのプリカウントを無効にします。</td>
+                  </tr>
+                  <tr>
+                    <td>Record</td>
+                    <td>録音中のみプリカウントを有効にします。</td>
+                  </tr>
+                  <tr>
+                    <td>Record + Play</td>
+                    <td>録音モードとプレイバックモードの両方でプリカウントを有効にします。.</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>メトロノームを有効にするかどうか</td>
+              <td>Enableフィールドを使用して設定
+                <table>
+                  <tr>
+                    <td>Off</td>
+                    <td>メトロノームを無効にする</td>
+                  </tr>
+                  <tr>
+                    <td>Play</td>
+                    <td>再生中のメトロノーム音のみを有効にする</td>
+                  </tr>
+                  <tr>
+                    <td>Record</td>
+                    <td>録音時のみメトロノームの音が出るようにする</td>
+                  </tr>
+                  <tr>
+                    <td>Record + Play</td>
+                    <td>録音モードと再生モードの両方でメトロノームを発生させる</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>メトロノームクリックのタイムディビジョン</td>
+              <td>Rate（レート）フィールドを使用する
+                <ul>
+                  <li>1/4</li>
+                  <li>1/4T</li>
+                  <li>1/8</li>
+                  <li>1/8T</li>
+                  <li>1/16</li>
+                  <li>1/16T</li>
+                  <li>1/32</li>
+                  <li>1/32T</li>
+                </ul>
+                <p>(T はトリプレットベースのタイムディビジョン)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>メトロノームのサウンドを選択</td>
+              <td>Sound フィールドを使用する
+                <ul>
+                  <li>Sidestick 1</li>
+                  <li>Sidestick 2</li>
+                  <li>Clap</li>
+                  <li>Metroclick</li>
+                  <li>Shake</li>
+                  <li>Tambourine</li>
+                  <li>MPC Click</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>トロノームのクリックの音量を設定</td>
+              <td>Volume ノブを使用</td>
+            </tr>
+            <tr>
+              <td>メトロノームの有効/無効の切り替え</td>
+              <td>On/Off ボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>どのペアの出力でメトロノームクリックを再生するかを設定</td>
+              <td>Output フィールドを使用
+                <table>
+                  <tr>
+                    <td>スタンドアロンモード</td>
+                    <td>Out 1/2 - 5/6</td>
+                  </tr>
+                  <tr>
+                    <td>コントローラモード</td>
+                    <td>Out 1、2/3、4/5、6か、 1-6 各モノラルを選択する</td>
+                  </tr>
+                </table>
+                <p>（Out 7/8 は搭載さていないが、MPCX との互換性を保つために表示されている)</p>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Automation/オートメーション<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Automation/オートメーション<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プログラムやオーディオトラックのオートメーションを「written/書き込み」「read/読み込み」「無効」のいずれかに設定できる<br>これは、グローバルに、または個々のプログラムとオーディオトラックに対して行うことができる</p>
+        </section>
+        <h3 class="heading switch">グローバル/Global<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>いくつかのモードでは、右上にグローバルオートメーションを制御するボタンがある<br>このボタンをタップして状態を変更すると、プロジェクト内のすべてのプログラムのオートメーション状態が変更される</p>
+          <ul>
+            <li>メインモード</li>
+            <li>XYFX モード</li>
+            <li>パッドミュートモード</li>
+            <li>パッドミキサー</li>
+            <li>チャンネルミキサー</li>
+            <li>Q-Link エディットモード</li>
+          </ul>
+          <table>
+            <tr>
+              <td>3 つの状態を切り替える</td>
+              <td>グローバルオートメーションボタンをタップする
+                <table>
+                  <tr>
+                    <td>オフにする</td>
+                    <td>オートメーションデータは無視される<br>すでにオートメーションを録音または入力している場合、Read(R)と Write(W)に切り替わる<br>ボタンをタップしている間に Shift を押し続けることで、これをオーバーライドしてオフにすることができる<br>すでにオートメーションを録音した状態でオフにした場合、トラックはオフにしたポイントでエフェクトとそのパラメータ値を使用したままになる</td>
+                  </tr>
+                  <tr>
+                    <td>Read(R)に設定する</td>
+                    <td>オートメーションデータは読み込まれるが、記録はされない<br>これは、録音中にオートメーションが誤って変更されるのを防ぐための保護機能</td>
+                  </tr>
+                  <tr>
+                    <td>Write(W)に設定する</td>
+                    <td>オートメーションを記録することができ、 既存のオートメーションを上書きする<br>(記録中に誤って XY パッドに触れないように注意する)</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">プログラム & オーディオトラック/Programs & Audio Tracks<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>メインモードとチャンネルミキサーの画面左側のチャンネルストリップにあるプログラムオートメーションボタンを使って、プログラムやオーディオトラックごとにオートメーションを設定することもできる<br>プログラムオートメーションは、MIDI プログラムを除くすべてのプログラムタイプで利用可能</p>
+          <p>グローバルオートメーションボタンをタップすると、プロジェクト内のすべてのオートメーション状態が変更される</p>
+          <p>メインモードで、チャンネルストリップが非表示の場合、プロジェクトフィールド下にある目のアイコンをタップして表示する<br>チャンネルミキサーでチャンネルストリップにプログラムオートメーションボタンが表示されていない場合、Mixer フィールドがAudio Tracks または Programs に設定されていることを確認する</p>
+          <table>
+            <tr>
+              <td>3 つの状態を切り替える</td>
+              <td>プログラム・オートメーションボタンをタップする
+                <table>
+                  <tr>
+                    <td>オフの場合</td>
+                    <td>プログラムはオートメーションデータを無視する<br>すでにオートメーションを録音または入力している場合、これをタップすると、Read(R) と Write(W)のみの間で切り替わるが、ボタンを押したりタップしたりしている間に Shift を押し続けることで、これをオーバーライドしてオフにすることができる<br>すでにオートメーションを録音した状態でオフにした場合、トラックはオフにしたポイントでエフェクトとそのパラメータ値を使用したままになる</td>
+                  </tr>
+                  <tr>
+                    <td>Read(R)に設定されている場合</td>
+                    <td>プログラムはオートメーションデータの読み込みのみで、その上に追加のオートメーションを記録しない<br>これは、録音中にオートメーションが誤って変更されるのを防ぐための保護機能</td>
+                  </tr>
+                  <tr>
+                    <td>Write(W)に設定する</td>
+                    <td>プログラムはオートメーションを記録することができる<br>（オートメーション可能なパラメータに Q-Link ノブが割り当てられている場合は、記録中に誤って触れないよう注意）</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">16 Level/16 レベル<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">16 Level/16 レベル<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MPC ハードウェアの 16 Level ボタンを押して、16 Level を有効または無効にする</p>
+          <p>有効にすると、選択しているパッド（デフォルトでは Pad A01）が一時的に全 16 パッドにコピーされる<br>これで全てのパッドは選択されたパッドと同じノート番号を出力するようになるが、パラメーターは押す強さに関わらず、パッド番号に応じて順に増加する値に固定される<br>（例：パッド 1 が最小値、パッド 16 が最大値）<br>表示された 16 Levels の画面で、Type セレクターを使ってパラメーターを選択する</p>
+          <ul>
+            <li>Velocity</li>
+            <li>Tune</li>
+            <li>Filter</li>
+            <li>Layer</li>
+            <li>Attack</li>
+            <li>Decay</li>
+          </ul>
+          <table>
+            <tr>
+              <td>パッドを選択する</td>
+              <td>以下のいずれかの操作を行う<br>（16 Levels ウィンドウが開いている間）
+                <ul>
+                  <li>16 レベルボタンを長押ししながら、目的のパッドを押す</li>
+                  <li>16 Levels チェックボックスをタップしてチェックを外し（一時的に機能を無効にします）、目的のパッドを押してから、再度 16 Levels チェックボックスをタップしてチェックを入れる</li>
+                  <li>Pad フィールドをタップし、データダイヤルまたは-/+ボタンを使用する</li>
+                  <li>Pad フィールドをダブルタップし、表示されるリストの中から目的のパッドをタップする</li>
+                </ul>
+                <table>
+                  <tr>
+                    <td>Type が Tune に設定されている場合</td>
+                    <td>Original Pad フィールドを使用して、サンプルのオリジナルのピッチを使用するパッドを選択する<br>または Shift キーを押しながら目的のパッドを押す</td>
+                  </tr>
+                  <tr>
+                    <td>Type が Layer に設定されている場合</td>
+                    <td>複数のサンプルを含むパッドは、各レイヤーの Velocity Start と Velocity End の設定に従って各レイヤーを再生する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Erase/消去<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Erase/消去<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>消去機能は、特定のシーケンスのトラックの全部または一部を消去する機能</p>
+          <table>
+            <tr>
+              <td>Erase ウィンドウを開く</td>
+              <td>Erase ボタンを押す<br>または、メインモード中にセクションの右端にある鉛筆のアイコンをタップし、表示された画面で Erase をタップする</td>
+            </tr>
+            <tr>
+              <td>消去したいシーケンスを選択する</td>
+              <td>Sequence フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンス内で消去したいトラックを選択する</td>
+              <td>Track フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>消去したいシーケンスの時間範囲を設定する</td>
+              <td>Bar、Beat、Tick フィールドを使用する<br>左のフィールドは時間範囲の開始を設定する<br>右のフィールドは時間範囲の終了を設定する</td>
+            </tr>
+            <tr>
+              <td>消去するイベントの種類を選択する</td>
+              <td>Erase オプションを選択する
+                <table>
+                  <tr>
+                    <td>All</td>
+                    <td>指定された時間範囲からすべてのパッドイベントを消去し、その設定をすべてリセットする</td>
+                  </tr>
+                  <tr>
+                    <td>Automation</td>
+                    <td>指定された時間範囲からオートメーションのみを消去する<br>Parameter フィールドを使用して、消去するオートメーションのタイプを選択する</td>
+                  </tr>
+                  <tr>
+                    <td>Note</td>
+                    <td>指定した時間範囲から特定のパッドイベントのみを消去する<br>表示される 8 つのパッドバンクの図では、各バンクの各パッドを押してノートを選択または非選択にする</td>
+                  </tr>
+                  <tr>
+                    <td>Except Note</td>
+                    <td>指定をした時間範囲のパッドイベント以外はすべて消去される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>DO IT をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルして前の画面に戻る</td>
+              <td>
+                <ul>
+                  <li>X</li>
+                  <li>CANCEL</li>
+                  <li>ウィンドウ外の任意の場所をタップする</li>
+                </ul>
+              </td>
             </tr>
           </table>
         </section>
