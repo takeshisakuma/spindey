@@ -3322,7 +3322,7 @@
         <h3 class="heading switch">Send/Return Effects / センド/リターンエフェクト<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
           <p>センド/リターンエフェクトは、次のように動作する<br>1. パッド、キーグループ、オーディオトラック、プログラム、サブミックスは、指定されたセンドレベルでリターンに送る<br>2. オーディオはリターン・エフェクトによって処理される<br>各リターンは、最大 4 つのエフェクトをロードすることができる<br>3. 処理されたオーディオは、ステレオ・マスター出力、またはモノラル・マスター出力に送られる</p>
-          <p>センド/リターンエフェクトのロードとリターンレベルは、後述のチャンネルミキサーでのみ設定可能</p>
+          <p>センド/リターンエフェクトのロードとリターンレベルは、チャンネルミキサーでのみ設定可能</p>
           <p>センド/リターンエフェクトをリターンにロードする</p>
           <div class="contentOperationBox">
             <p class="contentOperationCaption">操作
@@ -3595,17 +3595,350 @@
           </div>
         </section>
       </section>
+      <h2 class="heading switch">Modes / モード<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Modes / モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MPC ハードウェアでは、モードを選択できるメニューページがある</p>
+          <table>
+            <tr>
+              <td>グリッドビュー</td>
+              <td>トラックを選択している場合に利用可能</td>
+            </tr>
+            <tr>
+              <td>オーディオエディットモード</td>
+              <td>オーディオトラックが選択されている場合に利用可能</td>
+            </tr>
+          </table>
+          <p>メインモード、グリッドビュー、オーディオエディットモード、トラックビュー、ステップシーケンサー、XYFX モードでは、左端に 5 つのモードアイコンが表示される<br>このアイコンをタップして、簡単にモード間を移動することができる</p>
+          <table>
+            <tr>
+              <td>メインモードに入る</td>
+              <td>ハウス(家)アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>グリッドビューに入る</td>
+              <td>グリッドアイコンをタップする<br>このアイコンを表示するには、メインモードのタッチスクリーン左下隅にある MIDI タブを選択している必要がある</td>
+            </tr>
+            <tr>
+              <td>オーディオエディットモードに入る</td>
+              <td>波形ボックスのアイコンをタップする<br>このアイコンを表示するには、メインモードのタッチスクリーン左下にある Audio タブを選択する必要がある</td>
+            </tr>
+            <tr>
+              <td>トラックビューに入る</td>
+              <td>横棒ラインのアイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>ステップシーケンサーに入る</td>
+              <td>縦棒アイコンをタップします。</td>
+            </tr>
+            <tr>
+              <td>XYFX モードに入る</td>
+              <td>XY アイコンをタップする</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Main Mode / メインモード<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Main Mode / メインモード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>メインモードでは、最もよく使用される機能の概要を確認できる<br>メインモードに入るには、以下のいずれかの操作を行う</p>
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">Main を押す</li>
+                <li class="contentOperationOrderlist">Menu を押し、Main をタップする</li>
+                <li class="contentOperationOrderlist">タッチスクリーンの上部にプロジェクト名と TC/タイミング情報等が表示される</li>
+              </ul>
+            </p>
+          </div>
+          <p>Project フィールドには、現在のプロジェクトの名前が表示される</p>
+        </section>
+        <h3 class="heading switch">プロジェクトウィンドウを表示する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Project フィールドをタップすると利用可能なプログラム、シーケンス、サンプルのリストが表示される</p>
+          <p>プロジェクトウィンドウでは、リストで実行できる一般的な機能に加えて、次のようなことができる</p>
+          <table>
+            <tr>
+              <td>リストを移動する</td>
+              <td>上下にスワイプします。</td>
+            </tr>
+            <tr>
+              <td>プログラムまたはシーケンスのリストを展開または折りたたむ</td>
+              <td>左にある矢印（V または>）をタップする</td>
+            </tr>
+            <tr>
+              <td>プログラム、シーケンス、またはサンプルを選択する</td>
+              <td>タップする</td>
+            </tr>
+            <tr>
+              <td>サンプルを選択して直ちにサンプルエディットモードに入る</td>
+              <td>ダブルタップする</td>
+            </tr>
+            <tr>
+              <td>プロジェクトを保存する</td>
+              <td>Save をタップします。</td>
+            </tr>
+            <tr>
+              <td>プロジェクトを別名で保存する</td>
+              <td>Save As をタップする<br>表示される Save ウィンドウで、プロジェクトを保存する</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>右上隅の X またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>プロジェクトからサンプルを削除する</td>
+              <td>Purge をタップする<br>表示される画面で、Unused Samples をタップして未使用サンプルをプロジェクトからすべて削除したり、All Samples をタップしてプロジェクトからすべてのサンプルを削除するか、または Cancel をタップして前の画面に戻る</td>
+            </tr>
+            <tr>
+              <td>現在のシーケンスをエクスポートする</td>
+              <td>Export をタップします。</td>
+            </tr>
+            <tr>
+              <td>曲をエクスポートする</td>
+              <td>表示されるオーディオミックスダウン画面を使用します</td>
+            </tr>
+            <tr>
+              <td>現在のシーケンスを Ableton Live セットとしてエクスポートする</td>
+              <td>ALS Export をタップします。</td>
+            </tr>
+          </table>
+          <p>In と Out ボックスは、MPC ハードウェアがコンピュータとの間で MIDI メッセージを受信または送信していることを示す<br>タッチスクリーン上部のタイムカウンターは、現在のプレイヘッドの位置を示す<br>これはほとんどのモードで表示される</p>
+          <table>
+            <tr>
+              <td>タイミングコレクト（Timing Correct）ウィンドウを開く</td>
+              <td>タイミングコレクト（TC）アイコンをクリックする</td>
+            </tr>
+            <tr>
+              <td>クリック/メトロ（Click/Metro）メニューを開く</td>
+              <td>メトロ（Metro）アイコンをクリックする</td>
+            </tr>
+          </table>
+          <p>オートメーションアイコンは、グローバルなオートメーションの状態をいくつかのモードで表示している</p>
+          <p>メインモードでのタッチスクリーン下部のボタン</p>
+          <table>
+            <tr>
+              <td>MIDI</td>
+              <td>Track セクションの MIDI トラックのみを表示するには、このボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>Track セクションのオーディオトラックのみを表示するには、このボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>Track –/+</td>
+              <td>これらのボタンの 1 つをタップすると、それぞれ前のトラックまたは次のトラックに切り替わる</td>
+            </tr>
+            <tr>
+              <td>Mute</td>
+              <td>現在のトラックをミュートするには、このボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>Solo</td>
+              <td>現在のトラックをソロにするには、このボタンをタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">チャンネルストリップ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>タッチスクリーンの左端のチャンネルストリップをコントロールする 2 つの小さなアイコン</p>
+          <table>
+            <tr>
+              <td>チャンネルストリップを表示または非表示にする</td>
+              <td>目のアイコンをタップする<br>目のアイコン下のアイコンは、チャンネルストリップの種類を示す</td>
+            </tr>
+          </table>
+          <p>チャンネルストリップには現在選択されているアイコンに応じて、現在のパッド、プログラム、トラック、またはマスター出力に関する重要な設定が含まれる</p>
+          <table>
+            <tr>
+              <td>パッドのチャンネルストリップを表示する</td>
+              <td>シングルパッドアイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>プログラムのチャンネルストリップを表示する</td>
+              <td>4 つの四角形のアイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックのチャンネルストリップを表示する</td>
+              <td>バーのアイコンをタップする (MIDI タブが選択されている場合)<br>もしくは 波形のアイコンをタップする (Audio タブが選択されている場合)</td>
+            </tr>
+            <tr>
+              <td>マスターチャンネルストリップを表示する</td>
+              <td>王冠のアイコンをタップする</td>
+            </tr>
+          </table>
+          <p>ドラムプログラム、キーグループプログラム、またはクリッププログラムを使用しているときにパッドのチャンネルストリップを表示する</p>
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>現在のパッド番号が表示される<br>パッドを押すか、フィールドをタップして別のパッドを選択する<br>これはパッドミキサーに入らずにパッドをミックスするのに便利</td>
+            </tr>
+            <tr>
+              <td>2 番目のフィールド</td>
+              <td>パッドがどこにルーティングされているかが表示される<br>通常これは Program に設定されています。スタンドアロンモードでは Out1/2–7/8、Out1–8 か Sub1–8、コントローラーモードでは Out1/2–31/32 または Out1–32 に設定されている<br>モノラルチャンネルに設定されている場合、パンノブをセンターポジションに設定すると左右のチャンネルから同じ音が聞こえる<br>パンノブが左または右の最大位置に設定されている場合、それぞれのチャンネルからのみ出力される</td>
+            </tr>
+            <tr>
+              <td>Inserts フィールド</td>
+              <td>そのパッドで有効または無効になっているエフェクトが表示される<br>Inserts の下のエリアをタップすると、エフェクトのロード、変更、有効/無効化が可能なウィンドウが開く</td>
+            </tr>
+            <tr>
+              <td>スライダの横にある緑色のレベルメーター</td>
+              <td>パッドのボリュームレベルを dB で確認できる</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>パッドをソロにする</td>
+              <td>Soloをタップする</td>
+            </tr>
+            <tr>
+              <td>パッドをミュートする</td>
+              <td>Muteをタップする</td>
+            </tr>
+            <tr>
+              <td>パッドのパンまたはレベルを変更する</td>
+              <td>パンノブまたはレベルスライダーを調整する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">プログラムのチャンネルストリップを表示する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ドラムプログラム、キーグループプログラム、クリッププログラム、プラグインプログラムを使用しているときに、プログラムのチャンネルストリップを表示する</p>
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>現在のプログラム番号と名前が表示される（変更可能）</td>
+            </tr>
+            <tr>
+              <td>2 番目のフィールド</td>
+              <td>プログラムがどこにルーティングされているかを示している
+                <table>
+                  <tr>
+                    <td>スタンドアロンモード</td>
+                    <td>Out1/2–7/8、Out1–8 か Sub1–8、</td>
+                  </tr>
+                  <tr>
+                    <td>コントローラモード</td>
+                    <td>Out1/2–31/32 または Out1–32 に設定できる</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>モノラルチャンネルに設定されている場合</td>
+                    <td>パンノブをセンターポジションに設定すると左右のチャンネルから同じ音が聞こえる</td>
+                  </tr>
+                  <tr>
+                    <td>パンノブが左または右の最大位置に設定されている場合</td>
+                    <td>それぞれのチャンネルからのみ出力される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Inserts フィールド</td>
+              <td>そのプログラムで有効または無効になっているエフェクトが表示される</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>プログラムをソロにする</td>
+              <td>Soloをタップ</td>
+            </tr>
+            <tr>
+              <td>プログラムをミュートにする</td>
+              <td>Muteをタップ</td>
+            </tr>
+            <tr>
+              <td>プログラムのオートメーションを変更する</td>
+              <td>プログラムのオートメーションボタンをタップして 3 つの状態を切り替える
+                <table>
+                  <tr>
+                    <td>オフ</td>
+                    <td>プログラムはオートメーションデータを無視する<br>すでにオートメーションを記録または入力している場合、オートメーションボタンをタップすると、Read(R) と Write(W)のみを切り替えるが、オートメーションボタンをタップしている間に Shift を押したままにすることで、これを上書きしてオフにすることができる<br>オートメーションを録音してオフにした場合、オフにした時点でのエフェクトとそのパラメータ値を維持したままになる</td>
+                  </tr>
+                  <tr>
+                    <td>Read (R)</td>
+                    <td>プログラムはオートメーションデータを読み込みますが、その上に追加のオートメーションを記録しない<br>録音中にオートメーショ ンが誤って変更されるのを防ぐための保護機能</td>
+                  </tr>
+                  <tr>
+                    <td>Write（W）</td>
+                    <td>プログラムはオートメーションを記録することができる<br>オートメーション可能なパラメータに Q-Link ノブが割り当てられている場合は、録音中に誤って触らないように注意する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>プログラムのパンやレベルを変更する</td>
+              <td>パンノブまたはレベルスライダーで調整する<br>スライダー横の緑色のレベルメーターは音量レベルを dB で表示する</td>
+            </tr>
+            <tr>
+              <td>すべてのプログラムとオーディオトラックを同じオートメーションに設定する</td>
+              <td>タッチスクリーン右上のグローバルオートメーションボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>エフェクトのロード、変更、有効/無効化が可能なウィンドウを開く</td>
+              <td>Inserts 下のエリアをタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">MIDI トラックを使用中にトラックのチャンネルストリップを表示する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MIDI トラックを使用中にトラックのチャンネルストリップを表示する</p>
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>現在のトラック（変更可能）とその名前が表示される</td>
+            </tr>
+            <tr>
+              <td>2 番目のフィールド</td>
+              <td>トラックが使用しているプログラムの名前が表示される</td>
+            </tr>
+            <tr>
+              <td>スライダーの隣にある青いレベルメーター</td>
+              <td>トラックの現在のベロシティレベルを示す</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>トラックをミュートする</td>
+              <td>Muteをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックをソロにする</td>
+              <td>Soloタップする</td>
+            </tr>
+            <tr>
+              <td>トラックのパンを変更する</td>
+              <td>パンノブを調整する</td>
+            </tr>
+            <tr>
+              <td>トラックのレベルを変更する</td>
+              <td>レベルスライダーを調整する</td>
+            </tr>
+          </table>
+          <p>トラックがプラグインプログラムを使用している場合</p>
+          <table>
+            <tr>
+              <td>スライダー</td>
+              <td>CC #7（音量）を送信する</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>ノブ</td>
+              <td>CC #10（パン）をインストゥルメントプラグインに送信する</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>プラグイン</td>
+              <td>これらのメッセージを通常と同様に処理する</td>
+            </tr>
+          </table>
+        </section>
+      </section>
     </main>
-    <footer><a href="/">spindey.com</a></footer>
-    <div class="loadingLayer" id="js-loadingLayer">
-      <div class="loadingIconBox">
-        <div class="loadingBar1"></div>
-        <div class="loadingBar2"></div>
-        <div class="loadingBar3"></div>
-        <div class="loadingBar4"></div>
-        <div class="loadingBar5"></div>
-      </div>
-    </div>
-    <div class="button" id="js-returntop"></div>
   </body>
 </html>
