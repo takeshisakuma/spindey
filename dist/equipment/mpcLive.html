@@ -3102,7 +3102,7 @@
               </tr>
               <tr>
                 <td>エフェクトをロードする</td>
-                <td>ダブルタップする<br>または、Select をタップするか、データダイヤルを押すか、センターカーソルを押す<br>キャンセルするには、Close をタップするか、リスト外の任意の場所をタップする</td>
+                <td>ダブルタップする<br>または、Select をタップするか、データダイヤルを押す<br>キャンセルするには、Close をタップするか、リスト外の任意の場所をタップする</td>
               </tr>
             </table>
             <p>エフェクトのエディット</p>
@@ -3924,20 +3924,597 @@
               <td>スライダー</td>
               <td>CC #7（音量）を送信する</td>
             </tr>
-          </table>
-          <table>
             <tr>
               <td>ノブ</td>
               <td>CC #10（パン）をインストゥルメントプラグインに送信する</td>
             </tr>
-          </table>
-          <table>
             <tr>
               <td>プラグイン</td>
               <td>これらのメッセージを通常と同様に処理する</td>
             </tr>
           </table>
         </section>
+        <h3 class="heading switch">MIDI トラックを使用中にトラックのチャンネルストリップを表示する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>オーディオトラックを使用しているときに、トラックのチャンネルストリップを表示する</p>
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>外部オーディオ信号のペア（スタンドアロンモードでは Input 1/2–3/4、コントローラーモードでは Input 1/2–31/32 のいずれか）、もしくは単一の入力（スタンドアロンモードでは Input 1–4、コントローラーモードでは Input 1–32 のいずれか）からソースを設定する</td>
+            </tr>
+            <tr>
+              <td>2 番目のフィールド</td>
+              <td>トラックがどこにルーティングされているかを示しており、これを変更することができる<br>スタンドアロンモードでは Out1/2-7/8、または Out1-8 かSub1-8、コントローラモードでは Out1/2-31/32、または Out1-32になる</td>
+            </tr>
+            <tr>
+              <td>Inserts フィールド</td>
+              <td>そのトラックで有効または無効になっているエフェクトが表示される</td>
+            </tr>
+            <tr>
+              <td>スライダー横の緑色のレベルメーター</td>
+              <td>トラックの現在音量レベルを dB で表示する</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>モノラルチャンネルに設定されている場合</td>
+              <td>パンノブをセンターポジションに設定すると左右のチャンネルから同じ音が聞こえる</td>
+            </tr>
+            <tr>
+              <td>パンノブが左または右の最大位置に設定されている場合</td>
+              <td>それぞれのチャンネルからのみ出力される</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>エフェクトをロード、変更、有効または無効にすることができるウィンドウを開く</td>
+              <td>インサートの下のエリアをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックをソロにする</td>
+              <td>Soloをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックミュートする</td>
+              <td>Muteをタップする</td>
+            </tr>
+            <tr>
+              <td>オーディオトラックのオートメーションを変更する</td>
+              <td>トラックオートメーションボタンをタップして 3 つの状態を循環させる
+                <table>
+                  <tr>
+                    <td>オフ</td>
+                    <td>オーディオトラックはオートメーションデータを無視する<br>すでにオートメーションを録音してオフにした場合、オフにした時点でのエフェクトとそのパラメータ値を維持したままになる</td>
+                  </tr>
+                  <tr>
+                    <td>Read (R)</td>
+                    <td>オーディオトラックはオートメーションデータを読み込むが、その上に追加のオートメーションを記録することはある<br>これは、録音中にオートメーションが誤って変更されるのを防ぐための保護機能</td>
+                  </tr>
+                  <tr>
+                    <td>Write（W）</td>
+                    <td>オーディオトラックはオートメーションを記録することができる<br>オートメーション可能なパラメーターに割り当てられた Q-Link ノブがある場合は、録音中に誤って触らないように注意する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>すべてのプログラムとオーディオトラックを同じオートメーションに設定する</td>
+              <td>タッチスクリーン右上のグローバルオートメーションボタンをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックのパンを変更する</td>
+              <td>パンノブを調整する</td>
+            </tr>
+            <tr>
+              <td>トラックのレベルを変更する</td>
+              <td>レベルスライダーを調整する</td>
+            </tr>
+            <tr>
+              <td>トラックを録音可能にする</td>
+              <td>Record Arm ボタンをタップする<br>オーディオ録音を開始すると、オーディオ信号がこのトラックに録音される<br>各トラックの Arm ボタンをタップしながら Shift を押し続けると、トラックビューで複数のトラックを選択することができる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">マスターチャンネルストリップを表示する場合<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>現在のマスター出力が表示される（変更可能）</td>
+            </tr>
+            <tr>
+              <td>Inserts フィールド</td>
+              <td>そのペア出力に対して有効または無効になっているエフェクターが表示される</td>
+            </tr>
+            <tr>
+              <td>スライダー横の緑色のレベルメーター</td>
+              <td>マスター出力の音量レベルを dB で表示</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>エフェクトをロード、変更、有効または無効にすることができるウィンドウを開く</td>
+              <td>Inserts の下の領域をタップする</td>
+            </tr>
+            <tr>
+              <td>マスター出力をミュートする</td>
+              <td>Mute をタップする</td>
+            </tr>
+            <tr>
+              <td>パンノブ</td>
+              <td>マスター出力のパンを変更</td>
+            </tr>
+            <tr>
+              <td>レベルスライダー</td>
+              <td>マスター出力のレベルを変更</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Sequence Section / シーケンス セクション<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Sequence Section / シーケンス セクション<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Sequence セクションには、現在のシーケンスとその情報が表示される</p>
+          <table>
+            <tr>
+              <td>シーケンスを選択する</td>
+              <td>Sequence フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンスの名前をエディットする</td>
+              <td>セクションの右端にあるカーソルアイコンをタップし、表示されるバーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンスのテンポを調整する</td>
+              <td>BPM フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンスが独自のテンポ（Sequence）とマスターテンポ（Master）のどちらに従うかを設定する</td>
+              <td>BPM フィールドの下にある Sequence/Master ボタンをタップする<br>Shift を押したままタップして設定することもできる</td>
+            </tr>
+            <tr>
+              <td>シーケンスの長さを小節単位で調整</td>
+              <td>Bars（小節）フィールドを使用</td>
+            </tr>
+            <tr>
+              <td>ループ</td>
+              <td>Loop ボタンは、シーケンス（またはその一部）がループするかどうかを表示する
+                <table>
+                  <tr>
+                    <td>ループを有効または無効にする</td>
+                    <td>Loopボタンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>ループの開始点と終了点を設定する</td>
+                    <td>Start または End フィールドをタップし、データダイアルまたは -/+ボタンを使用するか、フィールドをダブルタップして表示されるテンキーを使う</td>
+                  </tr>
+                </table>
+                <p>小節の削除および小節のコピー処理の最後の小節の値は、シーケンスの長さの合計によって変わる</p>
+              </td>
+            </tr>
+            <tr>
+              <td>シーケンス全体の移調（半音単位）を設定</td>
+              <td>Transpose フィールドを使用</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">シーケンスをエディットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>セクション右端にある鉛筆アイコンをタップしシーケンスエディット/コピーウィンドウを開く</p>
+          <table>
+            <tr>
+              <td>メインモードに戻る</td>
+              <td>Cancel をタップするか、タッチスクリーンの左上隅にある(←)をタップする<br>または、Main を押す</td>
+            </tr>
+            <tr>
+              <td>シーケンスの名前をエディットする</td>
+              <td>タッチスクリーン上部をタップして表示されるバーチャルキーボードを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Erase 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>特定のシーケンスのトラックの全部または一部を消去する</p>
+          <table>
+            <tr>
+              <td>消去したいシーケンスを選択する</td>
+              <td>Sequence フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンス内で消去したいトラックを選択する</td>
+              <td>Trackフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>消去したいシーケンスの時間範囲を設定する</td>
+              <td>Bar、Beat、Tick フィールドを使用する<br>左のフィールドは時間範囲の開始を設定し、右のフィールドは時間範囲の終了を設定する</td>
+            </tr>
+            <tr>
+              <td>消去するイベントの種類を選択する</td>
+              <td>Eraseオプションを選択する
+                <table>
+                  <tr>
+                    <td>All</td>
+                    <td>指定された時間範囲からすべてのパッドイベントを消去し、すべての設定をリセットする</td>
+                  </tr>
+                  <tr>
+                    <td>Automation</td>
+                    <td>指定された時間範囲からオートメーションのみを消去する</td>
+                  </tr>
+                  <tr>
+                    <td>Note</td>
+                    <td>指定された時間範囲から特定のパッドイベントのみを消去する<br>表示されている 8 つのパッドバンクの図で、各バンクの各パッドを押して、そのノートを選択または選択解除する<br>このオプションは MIDI トラックでのみ使用可能で、オーディオトラックでは使用できない</td>
+                  </tr>
+                  <tr>
+                    <td>Except Note</td>
+                    <td>指定された時間範囲からパッドイベント以外のすべてを消去する<br>このオプションは、オーディオトラックではなく、MIDI トラックでのみ利用可能</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>← Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Clear 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>シーケンスからすべてのイベントを消去して、すべての設定をリセットする</p>
+          <table>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Clear をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Transpose 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>シーケンス内のトラックにある一連のイベントをトランスポーズする<br>その範囲内のイベントは、グリッドビューに応じてシフトする<br>このオプションは MIDI トラックでのみ使用できる</p>
+          <table>
+            <tr>
+              <td>トランスポーズするシーケンスを選択する</td>
+              <td>Sequenceフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>シーケンス内でトランスポーズするトラックを選択する</td>
+              <td>Track フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>トランスポーズするシーケンスの時間範囲を設定する</td>
+              <td>2 つの Bar、Beat、および Tick フィールドを使用する<br>左側のフィールドは時間範囲の開始点を、右側のフィールドは時間範囲の終了点を設定する</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップします。</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップします。</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>ドラムプログラムの場合</td>
+              <td>2 つの Pad フィールドでsource/ソース・パッド（イベントを移動したいパッド）とdestination/デスティネーション・パッド（イベントが配置される場所）を選択し、目的のパッドを押します。</td>
+            </tr>
+            <tr>
+              <td>Keygroup プログラム、Plugin プログラム、および MIDI プログラムの場合</td>
+              <td>Range(範囲)とトランスポーズ量を設定する
+                <table>
+                  <tr>
+                    <td>Range</td>
+                    <td> 2 つの Note フィールドで、トランスポーズするイベントのノート範囲を設定する<br>この範囲内のイベントは転置されるが、この範囲外のノートイベントは変更されない</td>
+                  </tr>
+                  <tr>
+                    <td>Transpose</td>
+                    <td>このフィールドでは、ノートイベントをトランスポーズするセミトーン数を上または下に設定する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Bounce to Sample 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>シーケンス（すべてのトラック）をオーディオサンプルとしてレンダリングし、プロジェクトのサンプルプールに保存する<br>デフォルトでは、Bounce - という名前が付けられ、シーケンス名が付加される<br>このシーケンスですでにこの機能を使用している場合は、既存のサンプルをこの新しいサンプルで上書きするか、キャンセルするかを尋ねられる</p>
+          <table>
+            <tr>
+              <td>既存のシーケンスに上書き保存する</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Delete Bars 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>小節単位でシーケンスを削除する</p>
+          <table>
+            <tr>
+              <td>削除する小節のシーケンスを選択する</td>
+              <td>Sequence フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>削除する小節の範囲を設定する</td>
+              <td>First Bar と Last Bar のフィールドを使用する<br>各フィールドの小節とその間すべての小節が削除される</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Insert Bars機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>指定したポイントのシーケンスに空白の小節を追加する</p>
+          <table>
+            <tr>
+              <td>目的のシーケンスを選択する</td>
+              <td>Sequence フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>挿入する小節数を設定する</td>
+              <td># of Bars フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>挿入する小節の拍子を設定する</td>
+              <td>2 つの Time Sig フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>小節を挿入する場所を設定する</td>
+              <td>Before Barフィールドを使用する<br>この小節の前に小節が挿入される</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Half Length 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>シーケンスの長さを半分にする</p>
+        </section>
+        <h3 class="heading switch">Double Length 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>すべてのイベントをシーケンスの後ろにコピーし、シーケンスを倍にする</p>
+        </section>
+        <h3 class="heading switch">Copy Sequence 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>あるシーケンスの内容を別のシーケンスにコピーする</p>
+          <table>
+            <tr>
+              <td>コピー元のシーケンスを選択する</td>
+              <td>Copy Contents of Sequence フィールドを使用する<br>これはイベントをコピーするシーケンス</td>
+            </tr>
+            <tr>
+              <td>コピー先のシーケンスを選択する</td>
+              <td>Over Contents of Sequence フィールドを使用する<br>これは、コピー元のシーケンスがコピーされるシーケンス</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Copy Bars 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ある範囲の小節をシーケンスからコピーし、指定したポイントの小節に追加する</p>
+          <table>
+            <tr>
+              <td>コピー元のシーケンスを選択する</td>
+              <td>From Sequenceフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>ソースシーケンスでコピーする小節の範囲を設定する</td>
+              <td>First Bar と Last Bar のフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>コピー先のシーケンスを選択する</td>
+              <td>To Sequence フィールドを使用する<br>これは、コピー元のシーケンスの小節がコピーされるシーケンス</td>
+            </tr>
+            <tr>
+              <td>コピーした小節を追加する場所を設定する</td>
+              <td>After Bar フィールドを使用する<br>コピーした小節はこの後に挿入される</td>
+            </tr>
+            <tr>
+              <td>コピーする小節のインスタンス数を設定する</td>
+              <td>Copiesフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>コピー先シーケンスを上書きする</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>何も消去せずにコピー先シーケンスにイベントを追加する</td>
+              <td>Merge をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Copy Events 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>シーケンスのイベントの範囲をコピーし、指定されたポイントで別のイベントに追加する</p>
+          <table>
+            <tr>
+              <td>コピー元のシーケンスを選択する</td>
+              <td>From Sequenceフィールドを使用する<br>これは、イベントをコピーするシーケンスとなる</td>
+            </tr>
+            <tr>
+              <td>コピー元のトラックを選択する</td>
+              <td>From Track フィールドを使用する<br>これはイベントをコピーするトラック</td>
+            </tr>
+            <tr>
+              <td>コピーするパッドやノートを設定する</td>
+              <td>Pad または Noteフィールドを使用する<br>デフォルトではAll に設定されており、現在のトラックの全てのイベントをコピーする</td>
+            </tr>
+            <tr>
+              <td>コピーするイベントの時間範囲を設定する</td>
+              <td>Bar、Beat、および Tick フィールドを使用する<br>左側のフィールドは開始点を、右側のフィールドは終了点を設定する</td>
+            </tr>
+            <tr>
+              <td>どのコンテンツをコピーするかを設定する</td>
+              <td>点線矢印の下のフィールドを使用する
+                <table>
+                  <tr>
+                    <td>Copy All Events</td>
+                    <td>トラック内のすべてのイベントをコピーして貼り付ける</td>
+                  </tr>
+                  <tr>
+                    <td>Copy Only Selected Events</td>
+                    <td>選択されているイベントのみをコピーして貼り付ける</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>コピー先シーケンスを選択する</td>
+              <td>To Sequence フィールドを使用する<br>これは、ソースシーケンスのイベントがコピーされるシーケンス</td>
+            </tr>
+            <tr>
+              <td>コピー先のトラックを選択する</td>
+              <td>To Track フィールドを使用する<br>これは、ソーストラックのイベントがコピーされるトラック</td>
+            </tr>
+            <tr>
+              <td>コピーしたイベントをどこに追加するかを設定する</td>
+              <td>Bar、Beat、および Tick フィールドを使用する<br>このポイント後に、イベントが追加される</td>
+            </tr>
+            <tr>
+              <td>コピーするイベントのインスタンス数を設定する</td>
+              <td>Copies フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>グリッドビュー、またはリストエディットモードで、指定時間範囲内のイベントをコピーするか、選択したノートをコピーするかを設定する</td>
+              <td>Selection フィールドを使用する<br>このフィールドは MIDI トラックでのみ使用できる
+                <table>
+                  <tr>
+                    <td>All events</td>
+                    <td>上記の Bar、Beat、Tick フィールドで決定された時間範囲のノートをコピーすることができる</td>
+                  </tr>
+                  <tr>
+                    <td>SelectedEvent</td>
+                    <td>グリッドビューもしくはリストエディットモードで現在選択されているイベントのみをコピーすることができる</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>コピー先のシーケンスを上書きする</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>何も消さずにイベントをコピー先のシーケンスに追加する</td>
+              <td>Merge をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>←Back またはウィンドウ外の任意の場所をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Save Current Sequence 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>外部ストレージデバイスまたは MPC X または MPC Live の内部ドライブに現在のシーケンスを保存する</p>
+          <table>
+            <tr>
+              <td>表示したいストレージデバイス(SD カードや増設ドライブ等)を選択する</td>
+              <td>左側の Storage 欄でタップする
+                <table>
+                  <tr>
+                    <td>Internal</td>
+                    <td>MPC Liveの内蔵ドライブ</td>
+                  </tr>
+                  <tr>
+                    <td>MPC Documents</td>
+                    <td>MPC Liveの内蔵ドライブにある MPC Documents フォルダへのショートカット<br>MPC Liveの USB ポートや SDカードスロットに接続されているストレージデバイス、またはパソコン（MPC Touch）に接続されているストレージデバイスがある場合、この欄に表示される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>フォルダの中に入る</td>
+              <td>ダブルタップするか、データダイアルまたは -/+ボタンを使ってリストを移動し、データダイヤルを押してフォルダに入る<br>また、右上にある 5 つのフォルダボタンのいずれかをタップして、事前に割り当てられたファイルパスにすぐにジャンプすることもできる</td>
+            </tr>
+            <tr>
+              <td>新しいフォルダを作成する</td>
+              <td>New Folder をタップし、表示されるバーチャルキーボードを使用して名前を入力し、Do It をタップする<br>すぐに新しいフォルダの階層内に移動する</td>
+            </tr>
+            <tr>
+              <td>1 つ上のフォルダ階層に移動する</td>
+              <td>左上隅にある フォルダ/↑アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>ファイルに名前を付ける</td>
+              <td>タッチスクリーン下部の File Name フィールドをタップし、表示されるバーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>ファイルを保存する</td>
+              <td>Save をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメニューに戻る</td>
+              <td>Cancel をタップする<br>または、左上隅の←アイコンをタップする</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Track Section / トラック<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Track Section / トラック<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide"></section>
       </section>
     </main>
   </body>
