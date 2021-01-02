@@ -1813,7 +1813,7 @@
             </tr>
             <tr>
               <td>キャンセルしてメニューに戻る</td>
-              <td>Cancel をタップする<br>または、左上のアイコンをタップする</td>
+              <td>Cancel をタップする<br>または、左上の←アイコンをタップする</td>
             </tr>
           </table>
         </section>
@@ -3529,7 +3529,7 @@
                   </tr>
                 </table>
                 <p>Export をタップして Save 画面に入り、オーディオミックスダウンを保存する名前と場所を選択することができる</p>
-                <p>キャンセルする場合は Cancel もしくは、左上隅のアイコンをタップして前の画面に戻る</p>
+                <p>キャンセルする場合は Cancel もしくは、左上隅の←アイコンをタップして前の画面に戻る</p>
               </td>
             </tr>
           </table>
@@ -4041,12 +4041,12 @@
               <td>Mute をタップする</td>
             </tr>
             <tr>
-              <td>パンノブ</td>
               <td>マスター出力のパンを変更</td>
+              <td>パンノブを調整する</td>
             </tr>
             <tr>
-              <td>レベルスライダー</td>
               <td>マスター出力のレベルを変更</td>
+              <td>レベルスライダーを調整する</td>
             </tr>
           </table>
         </section>
@@ -4514,8 +4514,896 @@
       <h2 class="heading switch">Track Section / トラック<span class="swithCondition contentClosed"></span></h2>
       <section class="h2content hide">
         <h3 class="heading switch">Track Section / トラック<span class="swithCondition contentClosed"></span></h3>
-        <section class="h3content hide"></section>
+        <section class="h3content hide">
+          <p>現在のトラック、プログラムタイプ、およびその情報が表示される
+            <ul>
+              <li>MIDIトラック使用時のトラックセクション</li>
+              <li>オーディオトラックを使用しているときのトラックセクション</li>
+            </ul>
+          </p>
+          <p>Track フィールドには、トラック番号とその名前が表示される</p>
+          <table>
+            <tr>
+              <td>トラック名をエディットする</td>
+              <td>セクション右端のカーソルアイコンをタップし、表示されるバーチャルキーボードを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">MIDI トラックを使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MIDI トラックを使用中に、プログラムセレクターは、トラックがルーティングされているプログラムの種</p>
+          <table>
+            <tr>
+              <td>プログラムの種類を変更する</td>
+              <td>プログラムセレクターで変更可能<br>具体的なプログラム名は、プログラムセクションの下に表示される
+                <table>
+                  <tr>
+                    <td>ドラムプログラムを選択する</td>
+                    <td>4 つの四角形のアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>キーグループプログラムを選択する</td>
+                    <td>ピアノキーのアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>キーグループプログラムを選択する</td>
+                    <td>ピアノキーのアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>クリッププログラムを選択する</td>
+                    <td>プレイボタンのアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>MIDI プログラムを選択する</td>
+                    <td>小節のアイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>CV プログラムを選択する</td>
+                    <td>CV アイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>プラグインプログラムを選択する</td>
+                    <td>プラグアイコンをタップする</td>
+                  </tr>
+                </table>
+                <p>MIDI トラックを使用しているときは、Length フィールドを使用して、トラックの長さをビート単位で設定する<br>最小値である Seq または 0（テンキーパッドを使用している場合）を選択すると、トラックはそのシーケ ンスと全く同じ長さになる<br>この機能を使うと、異なる長さのトラックを維持することができる<br>例：1 小節のドラムシーケンスを 4 小節のベースラインの下で繰り返し演奏することができる</p>
+              </td>
+            </tr>
+            <tr>
+              <td>録音されたレベルに対してトラックがどれくらい大音量または小音量で再生するかを設定</td>
+              <td>Velocity フィールドを使用<br>50％に設定すると、最初に再生された半分のベロシティでトラックが再生される<br>200％に設定すると、トラックは 2 倍の音量で再生される<br>最大のベロシティ値は 127</td>
+            </tr>
+            <tr>
+              <td>トラック全体の移調（半音単位）を設定する</td>
+              <td>Transpose フィールド</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オーディオトラックを使用する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>オーディオ録音</td>
+              <td>オーディオトラックを使用しているときに、Record Arm ボタンをタップして、トラックを録音待機状態にする<br>オーディオ録音を開始すると、オーディオ信号がこのトラックに録音される</td>
+            </tr>
+            <tr>
+              <td>トラックビューで複数のトラックを選択する</td>
+              <td>Shift+Arm ボタンをタップする事で複数トラックを選択できる</td>
+            </tr>
+            <tr>
+              <td>オーディオトラックを使用中にモニター状態を切り替える</td>
+              <td>Monitor ボタンで 切り替える</td>
+              <table>
+                <tr>
+                  <td>Auto</td>
+                  <td>ラックの録音が有効な場合にのみ入力音が聞こえる</td>
+                </tr>
+                <tr>
+                  <td>On</td>
+                  <td>トラックの録音が有効であるかどうかにかかわらず、入力音が聞こえる</td>
+                </tr>
+                <tr>
+                  <td>Off</td>
+                  <td>入力音は聞こえない</td>
+                </tr>
+              </table>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">トラックをエディットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>セクション右端の鉛筆アイコンをタップしてトラックエディットウィンドウを開く</p>
+          <table>
+            <tr>
+              <td>メインモードに戻る</td>
+              <td>タッチスクリーン左上隅の Cancel<br>もしくは←アイコンか、Main を押す</td>
+            </tr>
+            <tr>
+              <td>トラックの名前をエディットする</td>
+              <td>タッチスクリーン上部をタップし、表示されるバーチャルキーボードを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Clear 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラックからすべてのイベントを消去し、すべての設定をリセットする</p>
+          <table>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Clear をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Explode 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>現在選択しているトラックを個別のパッドまたはノート（イベントではなくピッチ）ごとに、複数のトラックに分割する<br>元のトラックはそのまま残され、そこから作成された各トラックにはトラック名/パッド名、または番号が名前として付けられる</p>
+        </section>
+        <h3 class="heading switch">Double -Speed Events 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック上のすべてのノートイベントの長さと、グリッドに打ち込まれた間隔を半分にする<br>トラックのノートイベントが詰まるので、この機能を使用する前のトラックを2倍のスピードで再生しているように聞こえる<br>ノート自体のテンポ/ピッチには影響しない</p>
+        </section>
+        <h3 class="heading switch">Half -Speed Events 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック上のすべてのノートイベントの長さと、グリッドに打ち込まれた間隔を2 倍にする<br>トラックのノートを広げて配置するので、この機能を使用する前のトラックを半分のスピードで再生しているように聞こえる<br>ノート自体のテンポ/ピッチには影響しない</p>
+        </section>
+        <h3 class="heading switch">Copy Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>選択したトラックの内容を別のトラックにコピーすることができる</p>
+          <table>
+            <tr>
+              <td>コピー元のトラックを選択する</td>
+              <td>Copy Contents ofTrack フィールドをタップする<br>(コピーしたいイベントがあるトラック)</td>
+            </tr>
+            <tr>
+              <td>コピー先のトラックを選択する</td>
+              <td>Over Contents of Track フィールドをタップする<br>ソーストラックからこのトラックにコピーされる</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Split Events 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ノートイベントを分割して新しいリズムやパターンを作成できる</p>
+          <table>
+            <tr>
+              <td>作成するイベントの数を選択する</td>
+              <td>Into スライダーを使用して、2～32 のイベントを選択する</td>
+            </tr>
+            <tr>
+              <td>選択したイベントにスプリットを適用する</td>
+              <td>Onlyselected events フィールドをタップする</td>
+            </tr>
+            <tr>
+              <td>トラック内のすべてのノートイベントを分割する</td>
+              <td>チェックボックスをオフにする</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Pitch Quantize 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ノートイベントの音程を特定のスケールに強制的に変換する</p>
+          <table>
+            <tr>
+              <td>ルートノートを指定</td>
+              <td>Root Note フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>スケールタイプを選択</td>
+              <td>Root Note フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>どのノートイベントをクオンタイズするか決定する</td>
+              <td>Only apply to selected event チェックボックスをタップする
+                <table>
+                  <tr>
+                    <td>On</td>
+                    <td>選択しているノートイベントのみがクオンタイズされる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>現在選択しているトラックのすべてがクオンタイズされる</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>クオンタイズされたノートイベントが配置される可能性が最も低い音程と最も高い音程を設定する</td>
+              <td>Start NoteとEnd Note フィールドを使用する<br>ノートイベントが元々この範囲外にある場合、設定した範囲内で最も近い音程（音階内）に強制的にクオンタイズされる</td>
+            </tr>
+            <tr>
+              <td>ノートイベントのクオンタイズを継続する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>ノートイベントのクオンタイズをキャンセルする</td>
+              <td>Close をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Humanize 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MIDI ノートイベントのタイミング、長さ、ベロシティにランダム化を適用する</p>
+          <table>
+            <tr>
+              <td>MIDI イベントのタイミングにヒューマナイズを適用する</td>
+              <td>Humanize Time チェックボックスをタップする</td>
+            </tr>
+            <tr>
+              <td>イベントのタイミングを調整する</td>
+              <td>Amount (Pulses)スライダーを使用する</td>
+            </tr>
+            <tr>
+              <td>ヒューマナイズ効果をどの程度タイミングに適用するかを設定する</td>
+              <td>Eagerness スライダーを使用し、マイナス値は前ノリ、プラス値は後ノリに設定できる</td>
+            </tr>
+            <tr>
+              <td>MIDI ノートイベントの継続時間にヒューマナイズを適用するかを設定する</td>
+              <td>Humanize Note Length チェックボックスをタップする</td>
+            </tr>
+            <tr>
+              <td>ノートの長さにヒューマナイズ効果をどの程度適用するかを設定する</td>
+              <td>Length スライダーを使用する</td>
+            </tr>
+            <tr>
+              <td>MIDI ノートイベントのベロシティにヒューマナイズを適用するかを設定する</td>
+              <td>Humanize Velocity チェックボックスをタップする</td>
+            </tr>
+            <tr>
+              <td>ノートベロシティにヒューマナイズ効果をどの程度適用するかを設定する</td>
+              <td>Strength スライダーを使用する</td>
+            </tr>
+            <tr>
+              <td>どのノートでこれらのヒューマナイズ値を使用するかを決定する</td>
+              <td>Only Apply to Selected Events チェックボックスをタップする
+                <table>
+                  <tr>
+                    <td>On</td>
+                    <td>選択しているノートのみヒューマナイズされる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>トラック内すべてのノートがヒューマナイズされる</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>ヒューマナイズを適用してこのウィンドウを開いたままにする</td>
+              <td>Apply をタップする</td>
+            </tr>
+            <tr>
+              <td>ヒューマナイズを適用してウィンドウを閉じる</td>
+              <td>Do Itをタップする</td>
+            </tr>
+            <tr>
+              <td>変更せずにウィンドウを閉じる</td>
+              <td>Close をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Generate Random Events 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>MIDI トラック上にランダ ムでメロディックなフレーズやドラムパターンを作成する</p>
+          <table>
+            <tr>
+              <td>作成したいイベントタイプを選択する</td>
+              <td>Event Typeフィールドを使用して、Drum Events または Melodic Events を選択する</td>
+            </tr>
+            <tr>
+              <td>トラック上の既存のイベントとの相対的なイベントの作成方法を選択する</td>
+              <td>Replace フィールドを使用する
+                <table>
+                  <tr>
+                    <td>Replace All Events</td>
+                    <td>トラック上のすべてのイベントをランダムに生成されたイベントに置き換える</td>
+                  </tr>
+                  <tr>
+                    <td>Replace Events in Note Range</td>
+                    <td>トラック上の指定されたノート範囲内すべてのイベントをランダムに生成されたものに置き換えるには、このオプションを選択する<br>ドラムイベントのノート範囲を設定するにはBank メニュー、Start PadとEnd Pad メニュー、メロディックイベントのノート範囲を設定するには Start Noteと End Note メニューを使用する</td>
+                  </tr>
+                  <tr>
+                    <td>Add to Existing Events</td>
+                    <td>トラック上の既存のイベントを置き換えたり上書きしたりせずに、ランダムに生成されたイベントを追加する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>イベントで使用する小節数を設定する</td>
+              <td>Pattern Size(Bars)フィールドを使用する<br>最大値は現在のシーケンスの小節数が上限となる</td>
+            </tr>
+            <tr>
+              <td>イベントの持続時間を選択する</td>
+              <td>Note Length フィールドを使用する<br>(メロディックイベントの生成中にレガートが有効になっている場合、この機能は機能しない)</td>
+            </tr>
+            <tr>
+              <td>イベントを生成してこのウィンドウを開いたままにする</td>
+              <td>Apply をタップする</td>
+            </tr>
+            <tr>
+              <td>イベントを生成してウィンドウを閉じる</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>イベントを生成せずにウィンドウを閉じる</td>
+              <td>Close をタップする</td>
+            </tr>
+          </table>
+          <p>イベントタイプが Drum Events に設定されている場合</p>
+          <table>
+            <tr>
+              <td>イベントを生成するために使用するパッドバンクを選択する</td>
+              <td>Bank フィールドを使用するか、Rangeを選択して Start Padと End Pad メニューでパッド範囲を定義する</td>
+            </tr>
+            <tr>
+              <td>イベントを生成する特定のパッド範囲を設定する</td>
+              <td>Start Pad または End Pad フィールドを使用する<br>これらのフィールドは、Bank メニューが Range に設定されている場合にのみ使用できる</td>
+            </tr>
+            <tr>
+              <td>トラック内にイベントをどの程度、密接に配置するかを設定する</td>
+              <td>Density スライダーを使用する</td>
+            </tr>
+            <tr>
+              <td>ノートのリズムパターンの変化の程度を設定する</td>
+              <td>Rhythm Variation スライダーを使用する</td>
+            </tr>
+          </table>
+          <p>イベントタイプが Melodic Events に設定されている場合</p>
+          <table>
+            <tr>
+              <td>イベントが生成される特定ノート範囲を設定する</td>
+              <td>Start Note か End Note フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>レガートを有効または無効にする</td>
+              <td>Legato チェックボックスをタップする
+                <table>
+                  <tr>
+                    <td>On</td>
+                    <td>ノートは拡張または短縮され、最初のノートイベントの開始点から終了点までの長く切れ目のないフレーズが作成される<br>各ノートイベントは、別のノートイベントが開始するまで持続する<br>複数のノートイベントが同時に開始する場合（最後のノートイベントではない場合）、同じ長さになる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>Note Length メニューで設定されたデュレーションを使用してノートを作成する</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>トラック内で同時発音させるノートイベント数を設定する</td>
+              <td>Polyphony フィールドで 1～8 を選択する</td>
+            </tr>
+            <tr>
+              <td>音階を使用するかどうかを決定する</td>
+              <td>Constraint Notes to Scale チェックボックスをタップする
+                <table>
+                  <tr>
+                    <td>On</td>
+                    <td>ノートは Scale メニューで決定されたスケール内に収まる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td> ノートは半音階になる</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>トラック内にイベントをどの程度、密接に配置するかを設定する</td>
+              <td>Density スライダーを使用する</td>
+            </tr>
+            <tr>
+              <td>ノートが使用するスケールのルートノートを設定する</td>
+              <td>Root Note フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>ノートがスケールかモードのどちら使用するかを選択する</td>
+              <td>Scale フィールドを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Bounce to Sample 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック（現在選択しているシーケンスのみ）をオーディオサンプルとしてレンダリングし、プロジェクトのサンプルプールに保存する<br>その際にデフォルトで、Bounce - という名前がトラック名に付加される<br>この機能は、MIDI プログラムや CV プログラムを使用しているトラックには機能しない<br>この機能をすでにこのトラックで使用している場合、既存のサンプルを新しいサンプルで上書きするか、キャンセルするか確認される</p>
+          <table>
+            <tr>
+              <td>既存サンプルを上書きして保存する</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Bounce to Audio Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プロジェクト内のトラック（現 在選択しているシーケンスのみ）をオーディオトラックとしてレンダリングする<br>メインモードは自動的にAudio タブに切り替わる<br>デフォルトでは、Audio という名前に数字が付加される（例：Audio 002）<br>この機能は、MIDI プログラムや CV プログラムでは使用できない<br>この機能をすでにこのトラックで使用している場合は、既存のサンプルを新しいサンプルで上書きするか、キャンセルするかを確認される</p>
+          <table>
+            <tr>
+              <td>既存のサンプルを上書きしてトラックを保存する</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Export as Pattern 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック（現在選択されているシーケンスのみ）をパターン（.mpcpattern）として外部ストレージデバイス、または MPC の内部ドライブに保存する</p>
+          <table>
+            <tr>
+              <td>表示したいストレージデバイスを選択する</td>
+              <td>左側のStorage欄をタップする
+                <table>
+                  <tr>
+                    <td>Internal</td>
+                    <td>MPC Liveの内蔵ドライブで、外部からアクセスできない領域</td>
+                  </tr>
+                  <tr>
+                    <td>MPC Documents</td>
+                    <td>MPC Liveの内蔵ドライブにある MPC Documentsフォルダへのショートカット<br>MPCの USB ポートや SD スロットに接続されているストレージデバイス、またはPC（MPC Touch）に接続しているデバイスがある場合もここに表示される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>フォルダに入る</td>
+              <td>ul
+                <li>フォルダをダブルタップする</li>
+                <li>データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押してフォルダに入る</li>
+                <li>右上にある5 つのフォルダボタンをタップして、割り当てられたファイルパスにすぐにジャンプすることもできる</li>
+              </td>
+            </tr>
+            <tr>
+              <td>新しいフォルダを作成する</td>
+              <td>New Folder をタップし、表示されるバーチャルキーボードを使用して名前を入力し、Do It をタップすると、新しいフォルダが作成される</td>
+            </tr>
+            <tr>
+              <td>フォルダ1 つ上の階層に移動する</td>
+              <td>左上隅にあるフォルダ/↑アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>ファイル名を付ける</td>
+              <td>タッチスクリーン下部 File Nameフィールドをタップし、バーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>ファイルを保存する</td>
+              <td>Save をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメニューに戻る</td>
+              <td>
+                <ul>
+                  <li>Cancel をタップする</li>
+                  <li>左上隅の←アイコンをタップする</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+          <p>オーディオトラックを使用中は、以下のいずれかの機能を使用することができる</p>
+          <table>
+            <tr>
+              <td>メインモードに戻る</td>
+              <td>ul
+                <li>Cancel をタップする</li>
+                <li>左上隅の←アイコンをタップする</li>
+                <li>Main を押す</li>
+              </td>
+            </tr>
+            <tr>
+              <td>トラック名をエディットする</td>
+              <td>タッチスクリーン上部をタップし、バーチャルキーボードを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Delete 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>オーディオトラック全体を消去する</p>
+          <table>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Clear をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Clear Regions 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック自体を消去せずにオーディオトラックからすべてのリージョンを消去する</p>
+        </section>
+        <h3 class="heading switch">Reset Channel Strip 機能：<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <ul>
+            <li>すべてのインサートエフェクトスロットをクリアする</li>
+            <li>ミュート、ソロ、オートメーション、およびモニターをオフにする</li>
+            <li>パンノブをセンターにリセットする</li>
+            <li>レベルスライダーを 0.00 dB にリセットする</li>
+            <li>Record Arm ボタンをオフにする</li>
+          </ul>
+          <p>トラックのインプットやアウトプットを変更することはありません。</p>
+        </section>
+        <h3 class="heading switch">Copy Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラック内容を別のトラックにコピーできる</p>
+          <table>
+            <tr>
+              <td>コピー元のトラックを選択する</td>
+              <td>Copy Contents ofTrack フィールドをタップする<br>(コピーしたいイベントのあるトラック)</td>
+            </tr>
+            <tr>
+              <td>コピー先のトラックを選択する</td>
+              <td>Over Contents ofTrack フィールドをタップする<br>(ソーストラックがコピーされるトラック先)</td>
+            </tr>
+            <tr>
+              <td>コピー先トラック名を変更する</td>
+              <td>Track Nameフィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメインモードに戻る</td>
+              <td>
+                <ul>
+                  <li>Cancelをタップする</li>
+                  <li>ウィンドウの外のどこかをタップする</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Save Current Channel Strip 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラックのチャンネルストリップ（現在のオーディオトラック）の現在の設定を外部ストレージデバイス、または MPC の内部ドライブに保存する</p>
+          <table>
+            <tr>
+              <td>表示したいストレージデバイスを選択する</td>
+              <td>左側の Storage 欄をタップする
+                <table>
+                  <tr>
+                    <td>Internal</td>
+                    <td>MPC Liveの内蔵ドライブ</td>
+                  </tr>
+                  <tr>
+                    <td>MPC Documents</td>
+                    <td>MPC liveの内蔵ドライブにある MPC Documents フォルダへのショートカット<br>MPC Liveの USB ポートや SDスロットに接続されているストレージデバイスがある場合は、この欄にも表示される</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>フォルダに入る</td>
+              <td>フォルダをダブルタップする<br>または、データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押してフォルダを入力する<br>また、右上にある5 つのフォルダボタンに割り当てられたファイルパスにジャンプすることもできる</td>
+            </tr>
+            <tr>
+              <td>新しいフォルダを作成する</td>
+              <td>New Folder をタップ、バーチャルキーボードを使用して名前を入力し、Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>フォルダの階層を1 つ上に移動する</td>
+              <td>左上隅にあるフォルダ/↑アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>ファイル名を付ける</td>
+              <td>タッチスクリーン下部 File Nameフィールドをタップし、バーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>ファイル名を付ける</td>
+              <td>タッチスクリーン下部 File Nameフィールドをタップし、バーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>ファイルを保存する</td>
+              <td>Save をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメニューに戻る</td>
+              <td>
+                <ul>
+                  <li>Cancel をタップする</li>
+                  <li>左上隅の←アイコンをタップする</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">Program Section / プログラム<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Program Section / プログラム<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>Program セクションには現在選択しているプログラムが表示されるが、Track セクションで選択されているプログラムのタイプによって表示が異なる</p>
+          <p>MIDI トラックを使用している間</p>
+          <table>
+            <tr>
+              <td>プログラム名をエディット</td>
+              <td>右端のカーソルアイコンをタップ、バーチャルキーボードで名前を入力し、Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>現在選択されているタイプの新しいプログラムを作成する</td>
+              <td>+アイコンをタップする<br>同じタイプの新しいプログラムが作成され、番号が付加される（例：Program 002）</td>
+            </tr>
+          </table>
+          <p>オーディオトラックを使用している間</p>
+          <table>
+            <tr>
+              <td>インプットソースを変更</td>
+              <td>Input Config をタップし、トラックチャンネルストリップの表示/非表示を切り替える<br>オーディオトラックのチャンネルストリップ（マスターチャンネルストリップではない）表示中に、自動的に選択される</td>
+            </tr>
+            <tr>
+              <td>オーディオエディットモードに入る</td>
+              <td>Edit Audio をタップする<br>(タッチスクリーン左端の波形とボックスのアイコン)</td>
+            </tr>
+          </table>
+          <p>ドラムプログラムを表示している間<br>Drum Program フィールドにはプログラム名が表示される</p>
+          <table>
+            <tr>
+              <td>プログラムエディットモードの first Sample タブに入る</td>
+              <td>Warp Samples をタップする</td>
+            </tr>
+            <tr>
+              <td>ブラウザの Sample Assign タブに入る</td>
+              <td>Assign Samples をタップする</td>
+            </tr>
+            <tr>
+              <td>Sample Edit Mode の Program Mode に入る</td>
+              <td>Edit Samples をタップする<br> 表示されるサンプルは、最後に押したパッドの最上層にあるもの</td>
+            </tr>
+          </table>
+          <p>キーグループプログラムを表示中<br>Keygroup Program プログラムフィールドにプログラム名が表示される<br>クリッププログラムを表示しているときは、Clip Program フィールドにプログラム名が表示される</p>
+          <table>
+            <tr>
+              <td>プログラムエディットモードに入る</td>
+              <td>Edit Clips をタップ<br>ここでは、パッドにサンプル（クリップ）を割り当てたり、各クリップのエディット、起動時の各クリップの再生方法等を設定できる</td>
+            </tr>
+          </table>
+          <p>プラグインプログラムを表示しているとき<br>Plugin Program フィールドにはプログラム名が表示される</p>
+          <table>
+            <tr>
+              <td>プラグインを選択する</td>
+              <td>Plugin フィールドを使用<br>表示されるタッチスクリーン下部の Type または Manufacturer ボタンをタップすると、プラグインのタイプ等よるソートを有効または無効にすることができる<br>コントローラーモード時に外部プラグインを使用する場合、プラグインがインストールされている場所をMPCSOFTWARE の Preferences から設定する必要がある<br>インストールされる場所はソフトにより異なる</td>
+            </tr>
+            <tr>
+              <td>使用する MIDI チャンネルを選択する</td>
+              <td>MIDI CH フィールド<br>マルチモードをサポートするバーチャル・インストゥルメント・プラグインを使用している場合は、この設定を使用する</td>
+            </tr>
+            <tr>
+              <td>選択済みのプラグイン内のプリセット（もしあれば）を切り替える</td>
+              <td>Preset フィールドを使用</td>
+            </tr>
+          </table>
+          <p>MIDI プログラムを表示しているとき<br>MIDI Program フィールドにはプログラム名が表示される</p>
+          <table>
+            <tr>
+              <td>MIDI データを送信するポートを選択する</td>
+              <td>MIDI Port フィールドを使用<br>MIDI ポートは環境設定/Preference でも設定する必要がある</td>
+            </tr>
+            <tr>
+              <td>プログラムチェンジメッセージを送信するプログラムチャンネルを選択</td>
+              <td>Program Ch フィールドを使用</td>
+            </tr>
+            <tr>
+              <td>MIDI データを送信する MIDI チャンネルを選択</td>
+              <td>MIDI Ch フィールドを使用</td>
+            </tr>
+            <tr>
+              <td>Most Significant Byte と Least Significant Byte（それぞれ）を送信するメッセージを選択する</td>
+              <td>Bank MSB と Bank LSB フィールドを使用</td>
+            </tr>
+          </table>
+          <p>CV プログラムを表示しているとき<br>CV Program フィールドにはプログラム名が表示される</p>
+          <table>
+            <tr>
+              <td>Note フィールド</td>
+              <td>プログラムのノートトラックを選択する<br>Lowest、Highest、Last のいずれかを選択する</td>
+            </tr>
+            <tr>
+              <td>CV Port フィールド</td>
+              <td>プログラムが使用する CV ポートを選択する</td>
+            </tr>
+            <tr>
+              <td>Gate Port フィールド</td>
+              <td>プログラムが使用するゲートポートを選択する</td>
+            </tr>
+            <tr>
+              <td>Mod Wheel フィールド</td>
+              <td>プログラムが使用するゲートポートを選択する</td>
+            </tr>
+            <tr>
+              <td>Mod Wheel フィールド</td>
+              <td>外部コントローラのモジュレーションホイールが使用する CV ポートを選択する</td>
+            </tr>
+            <tr>
+              <td>Velocity Port フィールド</td>
+              <td>プログラムがベロシティ値の送信に使用する CV ポートを選択する</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+      <h2 class="heading switch">プログラムをエディットする<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">プログラムをエディットする<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>Program Edit/Copy ウィンドウが開く</td>
+              <td>セクション右端の鉛筆アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>メインモードに戻る</td>
+              <td>
+                <ul>
+                  <li>Cancel をタップする</li>
+                  <li> 左上隅の←アイコンをタップする</li>
+                  <li>Main を押す</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>プログラム名をエディットする</td>
+              <td>タッチスクリーン上部をタップして表示されるバーチャルキーボードを使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Delete 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>トラックからすべてのイベントを消去し、設定をすべてリセットする</p>
+          <table>
+            <tr>
+              <td>選択を確定する</td>
+              <td>Clear をタップする</td>
+            </tr>
+            <tr>
+              <td>前の画面に戻る</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Duplicate 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>同一のプログラムを新たに作成する<br>複製されたプログラムは同じ名前を使用しますが、番号が付加される（例：Program 002）</p>
+        </section>
+        <h3 class="heading switch">Duplicate to Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>新しいトラックを作ると同時にプログラムを複製する<br>複製されたプログラムは同じ名前を使用するが、番号が付加される（例：Program 002）<br>新しいトラック名には Track と番号が付加される（例：Track 06）</p>
+        </section>
+        <h3 class="heading switch">Duplicate to Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プログラム（現在選択しているシーケンスの）を使用しているすべてのトラックをオーディオサンプルとしてレンダリングし、プロジェクトのサンプルプールに保存する<br>デフォルトでは、Bounce - という名前でプログラムが付加される<br>この機能は MIDI プログラムや CV プログラムには使用できない<br>すでにこの機能を使用している場合、既存サンプルを新しいサンプルで上書きするか、キャンセルするか確認される</p>
+          <table>
+            <tr>
+              <td>既存のサンプルを上書きしてプログラムを保存する</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Duplicate to Track 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プログラム（現在選択しているシーケンスの）をプロジェクト内のオーディオトラックとしてレンダリングし、自動的に Audio タブに切り替える<br>デフォルトでは、Audio という名前が付けられ、数字が付加される（例：Audio 002）<br>この機能は、MIDI プログラムや CV プログラムでは使用できない<br>この機能をすでにこのトラックで使用している場合、既存サンプルを新しいサンプルで上書きするか、キャンセルするか確認される</p>
+          <table>
+            <tr>
+              <td>既存のサンプルを上書きしてトラックを保存する</td>
+              <td>Replace をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Flatten Pad 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>パッド上のすべてのサンプルをオーディオサンプルとしてレンダリングし、そのパッドの最初のレイヤーに配置する<br>サンプルは、パッドのチャンネルストリップ後にフルベロシティ（127）で生成される<br>この機能は、パッドやプログラムの CPU 負荷を軽減したい場合に便利<br>デフォルトでは、最初のサンプルの名前が使用されます。この機能はドラムプログラムのみ有効<br>（プログラムエディットモードのタッチスクリーン上部に表示されている Flatten Pad ボタンと同じ）</p>
+          <table>
+            <tr>
+              <td>パッドを選択する</td>
+              <td>パッドを押すか、Pad メニューを使用する</td>
+            </tr>
+            <tr>
+              <td>オーディオテールの長さを設定する</td>
+              <td>Audio Tail フィールドを使用する<br>これにより、オーディオファイルの最後に余韻が追加され、オーディオの長さを超えるエフェクトやサンプル（長いリバーブやディレイ、長いディケイを持つワンショットサンプル等）を使用している場合に便利<br>数秒のオーディオテールを使用することを推奨</td>
+            </tr>
+            <tr>
+              <td>新しいサンプル名を付ける</td>
+              <td>Edit Name フィールドをタップし、バーチャルキーボードを使用します。選択を確定するには、Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルする</td>
+              <td>Cancel をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Save Current Program または Save Current Sample 機能<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プログラムまたはサンプル（最後に押したパッドの最上層）を外部ストレージデバイス、MPC の内部ドライブに保存する</p>
+          <table>
+            <tr>
+              <td>表示したいストレージデバイスを選択する</td>
+              <td>左側のStorage 欄をタップする
+                <table>
+                  <tr>
+                    <td>internal</td>
+                    <td>MPC の内蔵ドライブ</td>
+                  </tr>
+                  <tr>
+                    <td>MPC Documents</td>
+                    <td>MPC Liveの内蔵ドライブにある MPC Documents フォルダへのショートカット<br>MPC Live USB ポートや SDスロットに接続されているストレージデバイスがある場合も、この欄にも表示されます。</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>フォルダに入る</td>
+              <td>
+                <ul></ul>
+                <li>フォルダをダブルタップする</li>
+                <li>データダイヤルを回すか、–/+ボタンを使ってリストを移動し、データダイヤルを押してフォルダを入力する</li>
+                <li>右上にある 5 つのフォルダボタンのいずれかで割り当てられたファイルパスにジャンプすることもできる</li>
+              </td>
+            </tr>
+            <tr>
+              <td>新しいフォルダを作成する</td>
+              <td>New Folder をタップし、バーチャルキーボードを使用して名前を入力し、Do It をタップする</td>
+            </tr>
+            <tr>
+              <td>フォルダの階層を 1 つ上に移動する</td>
+              <td>左上隅にあるフォルダ/↑アイコンをタップする</td>
+            </tr>
+            <tr>
+              <td>ファイル名を付ける</td>
+              <td>タッチスクリーン下部 File Nameフィールドをタップし、バーチャルキーボードを使用する</td>
+            </tr>
+            <tr>
+              <td>ファイルを保存する</td>
+              <td>Save をタップする</td>
+            </tr>
+            <tr>
+              <td>キャンセルしてメニューに戻る</td>
+              <td>Cancel をタップする<br>または、左上隅の←アイコンをタップする</td>
+            </tr>
+          </table>
+        </section>
       </section>
     </main>
+    <footer><a href="/">spindey.com</a></footer>
+    <div class="loadingLayer" id="js-loadingLayer">
+      <div class="loadingIconBox">
+        <div class="loadingBar1"></div>
+        <div class="loadingBar2"></div>
+        <div class="loadingBar3"></div>
+        <div class="loadingBar4"></div>
+        <div class="loadingBar5"></div>
+      </div>
+    </div>
+    <div class="button" id="js-returntop"></div>
   </body>
 </html>
