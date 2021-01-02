@@ -5393,17 +5393,397 @@
           </table>
         </section>
       </section>
+      <h2 class="heading switch">Audio Edit Mode / オーディオエディットモード<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Audio Edit Mode / オーディオエディットモード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <Audio>Edit Mode / オーディオエディットモード</Audio>
+          <p>オーディオエディットモードでは、プロジェクト内のオーディオトラックを表示してエディットすることができる</p>
+          <table>
+            <tr>
+              <td>オーディオエディットモードに入る</td>
+              <td>Menu を押してから Audio Edit Mode をタップする</td>
+            </tr>
+          </table>
+          <p>オーディオエディットオプションは、現在選択されているトラックがオーディオトラックの場合に使用できる</p>
+          <p>MIDI トラックを選択している場合<br>オーディオエディットモードではなくグリッドビューのアイコンが表示される</p>
+          <table>
+            <tr>
+              <td>オーディオトラックを選択する<br>（オーディオエディットモードを有効にする）</td>
+              <td>Main モードに入り、左下隅の Audio をタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オーディオエディットモード（またはメインモード）で録音する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">チャンネルストリップがタッチスクリーンの左側に表示されていない場合は、小さな目のアイコンをタップして表示させる</li>
+                <li class="contentOperationOrderlist">シンセサイザーやその他のオーディオソースを MPC ハードウェアの入力端子に接続する<br>Line/Phono セレクターも適切に設定する</li>
+                <li class="contentOperationOrderlist">最初のフィールドをダブルタップしてオーディオ信号をインプットするソースを選択する
+                  <table>
+                    <tr>
+                      <td></td>
+                      <td>ペアの入力</td>
+                      <td>シングル入力</td>
+                    </tr>
+                    <tr>
+                      <td>スタンドアロンモード</td>
+                      <td> Input 1/2-3/4</td>
+                      <td>Input 1-4</td>
+                    </tr>
+                    <tr>
+                      <td>コントローラモード</td>
+                      <td>Input 1/2-31/32</td>
+                      <td>Input 1-32</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="contentOperationOrderlist">2 番目のフィールドをダブルタップしてトラックのルーティング先/出力先を選択する
+                  <table>
+                    <tr>
+                      <td>スタンドアロンモード</td>
+                      <td>コントローラモード</td>
+                    </tr>
+                    <tr>
+                      <td>Out 1/2-7/8 と Submix 1-8</td>
+                      <td>Out 1/2-31/32</td>
+                      <p>(MPC Live では Out 7/8 を使用しないが、MPC X との互換性を保つために表示する)</p>
+                    </tr>
+                  </table>
+                </li>
+                <li class="contentOperationOrderlist">Monitor ボタンをタップして、オーディオトラックのモニター方法を設定する<br>タップして 3 つの状態を切り替える
+                  <table>
+                    <tr>
+                      <td>Auto</td>
+                      <td>録音可能な状態にある時だけモニターできる</td>
+                    </tr>
+                    <tr>
+                      <td>On</td>
+                      <td>録音可能であるかどうかに関わらず、常にモニターできる</td>
+                    </tr>
+                    <tr>
+                      <td>Off</td>
+                      <td>モニター音は一切聞こえない</td>
+                    </tr>
+                  </table>
+                </li>
+                <li class="contentOperationOrderlist">Rec Vol ノブを回して、オーディオ信号を送り、インプットレベルメーターにレベルが表示されるので最大レベルを超えないように調整する</li>
+                <li class="contentOperationOrderlist">Mute と Solo が On になっている場合、タップして Off にする<br>また、オートメーションボタンもタップしてオフ / グレーにすることを推奨（緑 / Read [R] や赤 / Write [W] ではない）</li>
+                <li class="contentOperationOrderlist">パンノブの横にある Rec Arm ボタンをタップしてトラックを録音待機状態にする</li>
+                <li class="contentOperationOrderlist">Rec ボタンを押して、シーケンスの録音を可能にする</li>
+                <li class="contentOperationOrderlist">実際に録音を開始するには、Play または Play Start を押す<br>既存のシーケンスをバックグラウンドで再生しながら録音していく<br>録音すると、波形が 1 つの「トラックリージョン」として表示される</li>
+                <li class="contentOperationOrderlist">Stop を押して録音を停止する</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <h3 class="heading switch">エディットツール<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>タッチスクリーンの上部には、トラック名、シーケンスとタイミングの情報、エディットツールが表示される</p>
+          <table>
+            <tr>
+              <td>グリッドに表示したい現在のシーケンスのどのトラックを選択</td>
+              <td>Track フィールドを使用</td>
+            </tr>
+            <tr>
+              <td>シーケンスの長さを設定</td>
+              <td>Bars フィールドを使用</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">マーキーモード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>マーキーアイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>トラックリージョンを選択する</td>
+              <td>タップします。</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または複数の選択されたトラックリージョン）を移動する</td>
+              <td>タップして左右にドラッグ</td>
+            </tr>
+            <tr>
+              <td>トラックを 2 つの特定のポイントで分割する<br>（どちらかの側とその間にトラックリージョンを作成する）</td>
+              <td>トラックをタップしてドラッグし、半透明の白いボックスを作成してから、そのボックスをタップします。</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または複数の選択されたトラックリージョン）を短くしたり長くしたりする</td>
+              <td>その端をタップして左右にドラッグ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">選択モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>矢印アイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>トラックリージョンを選択する</td>
+              <td>選択したいトラックリージョンそれをタップする</td>
+            </tr>
+            <tr>
+              <td>複数のトラックリージョンを選択する</td>
+              <td>トラックリージョンをタップしてドラッグし、それらをハイライトするボックスを作成する</td>
+            </tr>
+            <tr>
+              <td>選択を解除</td>
+              <td>ダブルタップ</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または複数の選択されたトラックリージョン）を移動する</td>
+              <td>タップして左右にドラッグ</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または複数の選択されたトラックリージョン）を短くしたり長くしたりする</td>
+              <td>リージョンの端をタップしてドラッグ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">描画モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>鉛筆アイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>空のグリッドにノートを入力する</td>
+              <td>グリッドをタップ</td>
+            </tr>
+            <tr>
+              <td>ノートを選択する</td>
+              <td>ノートをタップ</td>
+            </tr>
+            <tr>
+              <td>ノートを移動させる</td>
+              <td>タップして別のマスにドラッグ</td>
+            </tr>
+            <tr>
+              <td>ノートを消す</td>
+              <td>ダブルタップ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">消去モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>消しゴムアイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>複数のトラックリージョンを選択する</td>
+              <td>グリッド上をタップしてドラッグすると、それらをハイライトするボックスが作成される</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または選択した複数のトラックリージョン）を消去する</td>
+              <td>そのトラックリージョンをタップ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">分割モード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ハサミアイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>トラックを特定の点で分割する</td>
+              <td>トラックのその点をタップする</td>
+            </tr>
+            <tr>
+              <td>トラックリージョンを選択する</td>
+              <td>その左端をタップする</td>
+            </tr>
+            <tr>
+              <td>複数のトラックリージョンを選択する</td>
+              <td>グリッドをタップしてドラッグし、それらをハイライトするボックスを作成する</td>
+            </tr>
+            <tr>
+              <td>選択の解除</td>
+              <td>選択したトラックリージョンをダブルタップ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ミュートモード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>ミュートアイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>複数のトラックリージョンを選択する</td>
+              <td>グリッド上をタップしてドラッグすると、それらをハイライトするボックスが作成される</td>
+            </tr>
+            <tr>
+              <td>選択を解除する</td>
+              <td>選択したトラックリージョンをダブルタップ</td>
+            </tr>
+            <tr>
+              <td>トラックリージョン（または複数の選択されたトラックリージョン）をミュートまたは解除する</td>
+              <td>そのトラックリージョンをタップする</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">ナビゲーションモード<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>虫眼鏡アイコンをタップして選択する</p>
+          <table>
+            <tr>
+              <td>トラックの別の部分に移動する</td>
+              <td>タップしてドラッグする</td>
+            </tr>
+            <tr>
+              <td>ズームインまたはズームアウトする</td>
+              <td>グリッド上で指を広げるかつまむ<br>垂直、水平、またはその両方を同時に行うことができる</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Settings ウィンドウ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>オーディオエディットモードの設定を行うことができる</p>
+          <p>Settingsを表示するには、歯車のアイコンをタップする</p>
+          <table>
+            <tr>
+              <td>イベントをグリッドにスナップさせる</td>
+              <td>Snap Mode セレクターを使う
+                <table>
+                  <tr>
+                    <td>Absolute</td>
+                    <td>イベントは、グリッド上で最も近いタイムディビジョンにスナップされる<br>（TC フィールドまたは Time Correctウィンドウで設定する）<br>これは、スナップ/クオンタイズ機能を使用する方法</td>
+                  </tr>
+                  <tr>
+                    <td>Relative</td>
+                    <td>イベントは、グリッド上で最も近いタイムディビジョン（TC フィールドまたは Time Correct ウィンドウで設定する）にイベントの元のタイムポジションを加えてスナップされます（例：グリッド上で元々3 ティック前のタイムディビジョンにあるイベントは、すべてのタイムディビジョンから 3 ティック前の位置にのみスナップされる）</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>オーディオのプレイヘッドに対する画面の動作を設定</td>
+              <td>Auto-Scroll セレクターを使用
+                <table>
+                  <tr>
+                    <td>Follow</td>
+                    <td>ズーム設定に応じて、オーディオプレイヘッドを中央に配置したまま波形表示がスクロールする</td>
+                  </tr>
+                  <tr>
+                    <td>Page</td>
+                    <td>波形表示はオーディオのプレイヘッドに沿ってページ毎に切り替わりする</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>波形表示は全く動かない</td>
+                  </tr>
+                </table>
+                <p>これらの機能は、サンプルエディットモードのサンプル波形にも適用される</p>
+              </td>
+            </tr>
+            <tr>
+              <td>MPC ソフトウェアと MPC ハードウェアのズームとスクロールをリンクさせる</td>
+              <td>Link Zoom and Scroll セレクターを使用
+                <table>
+                  <tr>
+                    <td>オン</td>
+                    <td>MPC ソフトウェアと MPC ハードウェアのズームとスクロールは常に同じにする</td>
+                  </tr>
+                  <tr>
+                    <td>オフ</td>
+                    <td>グリッドビューは MPC ソフトウェアと MPC ハードウェアで個別に調整できる</td>
+                  </tr>
+                </table>
+              </td>
+              <p>この設定は、コントローラモードで MPC ソフトウェアに接続している場合のみ有効</p>
+            </tr>
+            <tr>
+              <td>プレイヘッドをどのように動かすか設定</td>
+              <td>Q-Link Playhead Increment セレクターで、Q-Link ノブ 2（プレイヘッド）を回す<br>1/16 分ノート単位（1/16 ノート）とタイムディビジョン（TC Division）を選択する</td>
+            </tr>
+            <tr>
+              <td>チャンネルストリップを操作する</td>
+              <td>タッチスクリーン左端 5 つのモードアイコンの横のチャンネルストリップを操作する 2つの小さなアイコンを使う
+                <table>
+                  <tr>
+                    <td>チャンネルストリップを表示または非表示にする</td>
+                    <td>目のアイコンをタップ</td>
+                  </tr>
+                  <tr>
+                    <td>トラックのチャンネルストリップを表示する</td>
+                    <td>波形アイコンをタップする</td>
+                  </tr>
+                  <tr>
+                    <td>マスターチャンネルストリップを表示する</td>
+                    <td>王冠/クラウンアイコンをタップする</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オーディオトラックを使用しているときに、トラックのチャンネルストリップを表示する<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <table>
+            <tr>
+              <td>最初のフィールド</td>
+              <td>外部オーディオ信号の入力ソースを示している
+                <table>
+                  <tr>
+                    <td>スタンドアロンモード</td>
+                    <td>Input 1/2-3/4、または Input 1-4</td>
+                  </tr>
+                  <tr>
+                    <td>コントローラーモード</td>
+                    <td>Input 1/2-31/32、または Out1-32</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>2 番目のフィールド</td>
+              <td>トラックがどこにルーティング/出力されているかを示している<br>変更可能
+                <table>
+                  <tr>
+                    <td>スタンドアロンモード</td>
+                    <td>Out1/2-7/8、Out1-8、または Sub1-8</td>
+                  </tr>
+                  <tr>
+                    <td>コントローラーモード</td>
+                    <td>Out1/2-31/32、または Out1-32</td>
+                  </tr>
+                </table>
+                <p>モノラルチャンネルに設定されている場合、パンノブをセンターポジションに設定すると左右のチャンネルから同じ音が聞こえる<br>パンノブが左または右の最大位置に設定されている場合、それぞれのチャンネルからのみ出力される</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Inserts フィールド</td>
+              <td>そのトラックで有効または無効になっているエフェクトが表示される</td>
+            </tr>
+            <tr>
+              <td>エフェクトをロード、変更、有効または無効にすることができるウィンドウを開く</td>
+              <td>Inserts の下のエリアをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックをソロにする</td>
+              <td>Soloをタップする</td>
+            </tr>
+            <tr>
+              <td>トラックをミュートする</td>
+              <td>Mute をタップする</td>
+            </tr>
+            <tr>
+              <td>オーディオトラックのモニター方法を設定</td>
+              <td>Monitor ボタンをタップして3 つの状態を切り替える
+                <table>
+                  <tr>
+                    <td>Auto</td>
+                    <td>録音可能な状態にある時だけモニターできる</td>
+                  </tr>
+                  <tr>
+                    <td>On</td>
+                    <td>録音可能であるかどうかに関わらず、常にモニターできる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>モニター音は一切聞こえない</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </section>
     </main>
-    <footer><a href="/">spindey.com</a></footer>
-    <div class="loadingLayer" id="js-loadingLayer">
-      <div class="loadingIconBox">
-        <div class="loadingBar1"></div>
-        <div class="loadingBar2"></div>
-        <div class="loadingBar3"></div>
-        <div class="loadingBar4"></div>
-        <div class="loadingBar5"></div>
-      </div>
-    </div>
-    <div class="button" id="js-returntop"></div>
   </body>
 </html>
