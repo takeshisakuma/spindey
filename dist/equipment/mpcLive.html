@@ -5946,6 +5946,202 @@
           </table>
         </section>
       </section>
+      <h2 class="heading switch">Track View / トラックビュー<span class="swithCondition contentClosed"></span></h2>
+      <section class="h2content hide">
+        <h3 class="heading switch">Track View / トラックビュー<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>各シーケンスのトラックの概要を見ることができる<br>このモードを使用して、トラックとシーケンスを同時にエディットする</p>
+          <p>トラックビューに入るには、以下のいずれかの操作を行う</p>
+          <ul>
+            <li>Menu を押してから Track View をタップする</li>
+            <li>Shift+Main/Trackを押す</li>
+          </ul>
+          <p>現在のシーケンスの各トラックを表し、MIDI トラックとオーディオトラックはグループ化されている</p>
+          <ul>
+            <li>MIDI トラックは上の方にまとまっている</li>
+            <li>オーディオトラックは下の方にまとまっている</li>
+          </ul>
+          <table>
+            <tr>
+              <td>トラックのリストを移動する</td>
+              <td>上下にスワイプする</td>
+            </tr>
+            <tr>
+              <td>トラックの各グループを折りたたんだり展開したりする</td>
+              <td>最初のトラックの MUTE ボタンの上にある上三角(▲)または下三角(▼)アイコンをタップする</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>タッチスクリーン上部</td>
+              <td>シーケンス名とタイミング情報が表示される</td>
+            </tr>
+            <tr>
+              <td>タッチスクリーン上部のタイムカウンター</td>
+              <td>現在の再生開始位置/プレイヘッドの位置を示する<br>(ほとんどのモードで表示される)</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>下に表示したいトラックを含むシーケンスを選択する</td>
+              <td>Sequence を使用する</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">Settings ウィンドウ<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>特定のトラックビュー設定を設定することができる<br>設定を表示するには、歯車のアイコンをタップする</p>
+          <table>
+            <tr>
+              <td>未使用トラックの表示/非表示の切り替え</td>
+              <td>Show Unused Tracks（未使用トラックの表示）セレクターを使う
+                <table>
+                  <tr>
+                    <td>On</td>
+                    <td>全てのトラック(未使用トラックも含めて)が表示される</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>シーケンスやプログラムが存在する/使用中のトラックのみが表</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Timing Correct の設定を開く</td>
+              <td>タッチスクリーン下部の TC をタップする</td>
+            </tr>
+            <tr>
+              <td>メトロノームの設定を開く</td>
+              <td>タッチスクリーン下部の Click をタ</td>
+            </tr>
+            <tr>
+              <td>同じ種類のトラック（MIDI またはオーディオ）の前または次のトラックを選択する</td>
+              <td>
+                <ul>
+                  <li>画面下部の Track – または Track +をタップする</li>
+                  <li>画面のメイン部分にあるトラックをタ</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">MIDI Tracks / MIDI トラック<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プロジェクト内のすべての MIDI トラックは、トラックビューの上半分にグループ化されている</p>
+          <table>
+            <tr>
+              <td>MIDIトラックを表示したり非表示にしたりする</td>
+              <td>三角アイコン(▲)(▼)をタップする</td>
+            </tr>
+            <tr>
+              <td>トラックで使用するプログラムを選択する</td>
+              <td>Program フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックの長さを設定する</td>
+              <td>Length フィールドを使用する<br>最小値の Seq または 0（テンキーパッドを使用している場合）を選択すると、シーケンスと全く同じ長さになる<br>この機能を使うと、異なる長さのトラックを同時に再生でき、1 小節のドラムシーケンスを 4 小節のベースラインの下で繰り返し演奏することができる</td>
+            </tr>
+            <tr>
+              <td>トラックの長さを設定する</td>
+              <td>Length フィールドを使用する<br>最小値の Seq または 0（テンキーパッドを使用している場合）を選択すると、シーケンスと全く同じ長さになる<br>この機能を使うと、異なる長さのトラックを同時に再生でき、1 小節のドラムシーケンスを 4 小節のベースラインの下で繰り返し演奏することができる</td>
+            </tr>
+            <tr>
+              <td>録音されたレベルに対してトラックがどれくらい大音量または小音量で再生するかを設定する</td>
+              <td>Velocity フィールドを使用する<br>50％に設定すると、最初に再生された半分のベロシティでトラックが再生される<br>200％に設定すると、トラックは 2 倍の音量で再生される<br>最大のベロシティ値は 127</td>
+            </tr>
+            <tr>
+              <td>トラック全体の移調（半音単位）を設定する</td>
+              <td>Transpose フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックのレベルを変更する</td>
+              <td>レベルスライダーを使用する<br>スライダー上のレベルメーターがトラックの現在のレベルを表示する</td>
+            </tr>
+            <tr>
+              <td>トラックのパンを変更する</td>
+              <td>パンノブを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックをソロにする</td>
+              <td>Solo ボタンを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックをミュートにする</td>
+              <td>Mute ボタンを使用する</td>
+            </tr>
+            <tr>
+              <td>現在選択されているトラックをミュートする</td>
+              <td>タッチスクリーン下部の Muteをタップ</td>
+            </tr>
+            <tr>
+              <td>現在選択されているトラックをソロにする</td>
+              <td>タッチスクリーン下部の Soloをタップ</td>
+            </tr>
+          </table>
+        </section>
+        <h3 class="heading switch">オーディオトラック<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <p>プロジェクト内のすべてのオーディオトラックは、トラックビューの下半分にまとめて表示される</p>
+          <table>
+            <tr>
+              <td>これらのトラックを表示または非表示にする</td>
+              <td>三角アイコン(▲)(▼)をタップする</td>
+            </tr>
+            <tr>
+              <td>入力トラックの入力を設定する</td>
+              <td>Input フィールドを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックを録音可能にする</td>
+              <td>Arm ボタンを使用する<br>オーディオ録音を開始すると、オーディオ信号はこのトラックに録音される<br>Shift キーを押しながら、各トラックの Arm ボタンをタップすることで、複数のトラックを選択することができる<br>オーディオトラックを使用中は、Monitor ボタンで 3 つのモニター状態を切り替えることができる
+                <table>
+                  <tr>
+                    <td>Auto</td>
+                    <td>録音可能な状態にある時だけモニターできる</td>
+                  </tr>
+                  <tr>
+                    <td>On</td>
+                    <td>録音可能であるかどうかに関わらず、常にモニターできる</td>
+                  </tr>
+                  <tr>
+                    <td>Off</td>
+                    <td>モニター音は一切聞こえない</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>トラックのレベルを変更する</td>
+              <td>レベルスライダーを使用する<br>スライダーの上にあるレベルメーターが現在のトラックのレベルを示す</td>
+            </tr>
+            <tr>
+              <td>トラックのパンを変更する</td>
+              <td>パンノブを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックをソロにする</td>
+              <td>Solo ボタンを使用する</td>
+            </tr>
+            <tr>
+              <td>トラックをミュートにする</td>
+              <td>Mute ボタンを使用する</td>
+            </tr>
+            <tr>
+              <td>現在選択されているトラックをミュートする</td>
+              <td>タッチスクリーン下部の Mute をタップする</td>
+            </tr>
+            <tr>
+              <td>現在選択されているトラックをソロにする</td>
+              <td>タッチスクリーン下部の Solo をタップする</td>
+            </tr>
+            <tr>
+              <td>新しいオーディオトラックを作成する</td>
+              <td>Add new audio track ボタンを使用する</td>
+            </tr>
+          </table>
+        </section>
+      </section>
     </main>
     <footer><a href="/">spindey.com</a></footer>
     <div class="loadingLayer" id="js-loadingLayer">
