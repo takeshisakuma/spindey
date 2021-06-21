@@ -7984,9 +7984,311 @@ html(lang="ja")
 
 
 
+      h2.heading.switch
+        | ステップシーケンサー
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | ステップシーケンサー
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p パッドをステップボタンとして使用して、従来のステップシーケンサースタイルの入力、またはエディットしたりすることができる
+            br
+            | オーディオトラックではなく、MIDI トラックでのみ使用可能
+            br
+            | オートメーションを作成したりエディットしたりすることもできる
+
+        h3.heading.switch
+          | ステップシーケンサーに入る
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist Menuを押して、Step Sequencerをタップ
+                li.contentOperationOrderlist Step Seq (MPC X、 MPC One) を押す
+
+
+          table
+            tr
+              td タッチスクリーン上部
+              td トラック名と情報、シーケンスとタイミングの情報が表示される
+            tr
+              td Track フィールド
+              td 現在のトラックの名前が表示される
+            tr
+              td Track フィールド
+              td 現在のトラックの名前が表示される
+            tr
+              td  Track Length フィールド
+              td トラックの長さを設定する
+                br
+                | 最小値、Sequence または 0（テンキーパッドを使用する）を選択すると、トラックはそのシーケンスと全く同じ長さになる
+                br
+                | この機能を使うと、異なる長さのトラックを維持することができる
+                br
+                | 例:1 小節のドラムシーケンスを 4 小節のベースラインの下で繰り返し演奏することができる
+            tr
+              td Bars（小節）フィールド
+              td シーケンスの長さを小節単位で調整
+                br
+                | シーケンスが独自のテンポ(Seq)とマスターテンポ(Mst)のどちらに従うかを設定するには、BPM フィールドの隣にある Seq/Mst ボタンをタップする
+                br
+                | または、Shift+Tap/Master ボタンを押す
+            tr
+              td タッチスクリーン上部のタイムカウンター
+              td 現在のプレイヘッドの位置を示す
+                br
+                | これはほとんどのモードで表示される
+            tr
+              td Time Division セレクター
+              td シーケンスの各小節のステップ数を決定する値を設定する
+                br
+                | T はトリプレット基準値を示す
+            tr
+              td タッチスクリーン下部のTC
+              td Timing Correct ウィンドウを開く
 
 
 
+        h3.heading.switch
+          | シーケンスのステップを入力または削除する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist タッチスクリーン下部の Pad –/+ ボタンを使用して、ステップを入力または削除したいパッドを選択
+                  br
+                  | 現在のパッド番号が左上に表示される
+                  br
+                  | または、パッドセレクト機能を使用する
+                  br
+                  | Pad Sel をタップしてホールドし、目的のパッドを押してから PadSel を離す
+                  br
+                  | パッドセレクトを『ラッチ機能』として使用することもできる
+                  br
+                  | Pad Sel をタップしてアクティブにし、目的のパッドを押してから Pad Sel をもう一度タップする
+                li.contentOperationOrderlist タッチスクリーン下部の Bar –/+ ボタンを使用して、入力または削除したいステップを持つシーケンスのバーを選択
+                  br
+                  | 現在のバー番号は左上に表示される
+                li.contentOperationOrderlist MPC ハードウェアのパッドを押すか、シーケンサーの下部にあるボタンをタップ
+                  br
+                  | 各パッドは小節のステップに対応していて、そのベロシティに対応する色で点灯
+                  br
+                  | 16 以上のタイムディビジョンでは、バーのステップは複数のパッドバンクで表現される
+                  br
+                  | この場合、Pad Bank ボタン A と B を使用して、バー内のすべてのステップを表示する
+                  br
+                  | タイムディビジョンが 16 より大きい場合、バーのステップは複数のパッドバンクにまたがり表示される
+                  br
+                  | この場合、ステップ番号(1–16、17–32、等）の左右の矢印(<)と()>)を使用して、シーケンサーに表示されるステップを変更する
+                  br
+                  | または、Pad Bank ボタン A と B を使用して切り替える
+
+
+        h3.heading.switch
+          | ステップのベロシティを調整する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 以下のいずれかの操作を行う
+          ul
+            li ステップのベロシティバーのどこかをタップします。ベロシティバー上の任意の場所をタップする
+            li タッチスクリーン右端のスライダーを使って、すべてのステップのベロシティバーを増減させる
+            li ステップに対応する Q-Link ノブを回す（Q-Link ノブはスクリーンエディットモードになっている必要がある）
+              br
+              | 0（オフ）に設定するとステップが削除される
+
+
+          table
+            tr
+              td Nudge <
+                br
+                | Nudge >
+              td ステップ長を左右に（それぞれ 1 ステップずつ）移動させる
+                br
+                | これは、さまざまなリズムの組み合わせを試すのに便利
+            tr
+              td タッチスクリーン右端のスライダー
+              td すべてのステップのベロシティバーを増減させることができる
+
+            tr
+              td Flip Steps ボタン
+              td ノートが入力されているステップと、ノートが入力されていないステップを反転させる
+                br
+                | ノートがなかったステップには、フルベロシティ(127)のノートが表示されるようになり、ノートがあったステップは空になる
+            tr
+              td Presets
+              td Presets をタップして、プリセットシーケンスコントロールを表示または非表示にする
+                br
+                | これらのコントロールを使用して、シーケンス内の現在のバーのベロシティを操作することができる
+                table
+                  tr
+                    td 最初のボタン
+                    td ステップに昇降ベロシティを適用する
+                      br
+                      | タップするたびに、これらのオプションが切り替わる
+                      div.contentOperationBox
+                        p.contentOperationCaption 操作
+                          ul.contentOperationOrderlistGroup
+                            li.contentOperationOrderlist 小節の終わりにあるピークまで上昇
+                            li.contentOperationOrderlist 小節の半分ずつを 2 つのピークで上昇
+                            li.contentOperationOrderlist 小節の 4 分の 1 ごとのピークを 1 つずつ上昇
+                            li.contentOperationOrderlist 小節の開始時に 1 つのピークから下降
+                            li.contentOperationOrderlist 小節の半分ずつを 2 つのピークで下降
+                            li.contentOperationOrderlist 小節の 4 分の 1 ごとのピークを 1 つずつ下降
+                  tr
+                    td 2 番目のボタン
+                    td 小節内の位置に応じて、ステップのベロシティを最大値(127)または最小値(1)に設定
+                      br
+                      | タップするたびに、これらのオプションが切り替わる
+                      div.contentOperationBox
+                        p.contentOperationCaption 操作
+                          ul.contentOperationOrderlistGroup
+                            li.contentOperationOrderlist 小節を 2 分割し前半のベロシティは 1 に、後半のベロシティは 127 に設定
+                            li.contentOperationOrderlist 小節を 4 分割しの 1/4、3/4 パートのベロシティを 1 に、2/4、4/4 パートのベロシティを 127 に設定
+                            li.contentOperationOrderlist 小節を 8 分割し 1/8、3/8、5/8、7/8 パートのベロシティを 1 に、2/8、4/8、6/8、8/8 のパートのベロシティを 127 に設定
+                            li.contentOperationOrderlist 小節を 2 分割し前半のベロシティは 127 に、後半のベロシティは 1 に設定
+                            li.contentOperationOrderlist 小節を 4 分割し 1/4、3/4 パートのベロシティを 127、2/4、4/4 パートのベロシティを 1 に設定
+                            li.contentOperationOrderlist 小節を 8 分割し 1/8、3/8、5/8、7/8 パートのベロシティを 127 に、2/8、4/8、6/8、8/8 のパートのベロシティを 1 に設定
+                  tr
+                    td 3 番目のボタン
+                    td ステップに昇降ベロシティを適用します。タップするたびに、これらのオプションが切り替わる
+
+                      div.contentOperationBox
+                        p.contentOperationCaption 操作
+                          ul.contentOperationOrderlistGroup
+                            li.contentOperationOrderlist 小節全体でベロシティは山なりに上昇しピークに達すると、そこから下降
+                            li.contentOperationOrderlist 小節を 2 分割としベロシティは山なりに上昇しピークに達すると、そこから下降
+                              br
+                              | 1 小節中で 2 回繰り返す
+                            li.contentOperationOrderlist 小節を 4 分割としベロシティは山なりに上昇しピークに達すると、そこから下降
+                              br
+                              | 1 小節中で 4 回繰り返す
+
+                            li.contentOperationOrderlist 小節全体でベロシティは谷に下降しピークに達すると、そこから上昇
+                            li.contentOperationOrderlist 小節を 2 分割としベロシティは谷に下降しピークに達すると、そこから上昇
+                              br
+                              | 1 小節中で 2 回繰り返す
+                            li.contentOperationOrderlist 小節を 4 分割としベロシティは谷に下降しピークに達すると、そこから上昇
+                              br
+                              | 1 小節中で 4 回繰り返す
+                  tr
+                    td 4 番目のボタン
+                    td 小節の前半と後半が入れ替わる
+                      br
+                      | 小節の前半は後半の鏡像になり、その逆も同様
+
+                  tr
+                    td 5 番目のボタン
+                    td 入力されたノートを含むすべてのステップのベロシティを反転させる
+                      br
+                      | 新旧のベロシティの合計は 127 になる
+                      br
+                      | 例外：ノートのあるステップのベロシティが 127 または 1 の場合は、0 のベロシティを持つことはできない
+
+                      p 例：
+                      ul
+                        li ベロシティが 40 のステップが反転すると 87 のベロシティになり、その逆も同様
+                        li ベロシティが 75 のステップが反転すると 52 のベロシティになり、その逆も同様
+                        li ベロシティが 127 のステップ反転すると 1 のベロシティになり、その逆も同様
+
+
+
+
+
+
+      h2.heading.switch
+        | XYFX Mode / XYFX モード
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | XYFX Mode / XYFX モード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          p タッチスクリーンを XY パッドに変え、各軸はエフェクトパラメーターの範囲を表す
+            br
+            | XY パッド上で指を動かすと、2 つのパラメーターを同時に操作することができ、トラックに面白いエフェクトオートメーションを作成可能
+            br
+            | XYFX モードでコントロールするエフェクトは、そのプログラムのインサートエフェクトのように機能する
+            br
+            | XYFX は、このモードを使用する前にプログラムにロードする必要のあるインサートエフェクトの名前
+
+
+        h3.heading.switch
+          | XYFX モードに入る
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Menu を押して、XYFX をタップ
+          p 最初にこのモードをプロジェクトに入ると、XYFX をプログラムにロードするように指示されることがある
+            br
+            | Insert XYFX をタップしてこれを行う
+            br
+            | すでに 4 つのインサートエフェクトがロードされている場合は、インサートエフェクトスロットの 1 つをクリアしてから行う必要がある
+          table
+            tr
+              td XYFX Location フィールド
+              td 現在のプログラム（Program）またはマスター出力（ステレオペアチャンネル：Output 1/2、Output 3/4 など）を選択して、エフェクトが適用される信号を選択
+            tr
+              td 右上のタイムカウンター
+              td 現在の再生ヘッドの位置
+            tr
+              td オートメーションボタン
+              td グローバルオートメーションの状態を示す
+            tr
+              td タッチスクリーンのグリッド部分
+              td
+                p タッチスクリーンのグリッド部分
+                  br
+                  | 現在位置は指の移動に沿ってマーカーで表示される
+                  br
+                  | X 軸は横軸で、右に動くにつれて値が大きくなる
+                  br
+                  | Y 軸は垂直軸で、上に移動するにつれて値が大きくなる
+                  br
+                  | 各軸は、割り当てられたパラメーターでラベル付けされている
+                p エフェクトにビートディビジョンパラメーターがある場合、現在のディビジョンは列全体にハイライト表示される
+
+                p エフェクトは色分けされ、視覚的に区別できる
+                  br
+                  | ビートリピートエフェクトは青色で、手動でコントロールされたエフェクトは緑色で表示され、視覚的に区別しやすくなっている
+            tr
+              td XY パッド
+              td XY パッドをタッチした状態で、左下の Latch をタップすると、XY パッドを離しても XY パッドに触れていた最後の状態を保持(ラッチ)
+                br
+                | XY パッドの別の部分をタッチするか、再度 Latch をタップするまで、その状態を保持
+            tr
+              td Setup ボタン
+              td XY パッドの動作をコントロールするセットアップパネルを表示/非表示
+            tr
+              td Preset フィールド
+              td XYFX モードで使用するエフェクトを選択
+            tr
+              td Attack ノブ
+              td XY パッドに触れたときにトリガーされるエンベロープのアタックフェイズの長さを設定
+                br
+                | エフェクトがタッチに完全に反応するまでの時間を決定
+            tr
+              td Release ノブ
+              td エンベロープのリリースフェーズの長さを設定
+                br
+                | 言い換えれば、XY パッドから手を離した後、エフェクトが完全に非アクティブになるまでの時間を設定
+            tr
+              td Wet/Dry ノブ
+              td オリジナル信号（ドライ）とエフェクト信号（ウェット）のブレンドを設定
+            tr
+              td Wet/Dry ノブ
+              td オリジナル信号（ドライ）とエフェクト信号（ウェット）のブレンドを設定
+            tr
+              td X 軸と Y 軸フィールド
+              td 各軸でコントロールされるパラメーターを示す
+                br
+                | これは使用するエフェクトによって異なる
 
 
 
@@ -8001,10 +8303,7 @@ html(lang="ja")
 
 
 
-//- ステップシーケンサー.155
 
-
-//- XYFX モード ..159
 
 
 
