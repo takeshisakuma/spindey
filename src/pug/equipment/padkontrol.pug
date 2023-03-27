@@ -684,6 +684,37 @@ html(lang="ja")
                       td 0～127
                       td コントロール・チェンジ・ナンバーを送信
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+        h3.heading.switch
+          | X-YパッドへのMIDIメッセージ割り当てのショートカット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 使用頻度が高いMIDIメッセージのショートカットが16パッドの9～16に割り当てられている
+
+          table
+            tr
+              td 9
+              td PITCH BEND
+            tr
+              td 10
+              td MAIN VOLUME
+            tr
+              td 11
+              td PAN
+            tr
+              td 12
+              td EXPRESSION
+            tr
+              td 13
+              td RESONANCE
+            tr
+              td 14
+              td BRIGHTNESS
+            tr
+              td 15
+              td DECAY TIME
+            tr
+              td 16
+              td REVERB SEND
 
 
         h3.heading.switch
@@ -736,49 +767,8 @@ html(lang="ja")
                       td 0～127
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
-        h3.heading.switch
-          | X-Yパッドへのメッセージ割当のショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          table
-            tr
-              td X-YパッドのX軸方向に割り当てる場合
-              td 「Setting」ボタンを押す(点灯)
-                br
-                | Xキーを押したまま16パッドの9～16を押す
-            tr
-              td X-YパッドのY軸方向に割り当てる場合
-              td 「Setting」ボタンを押す(点灯)
-                br
-                | Yキーを押したまま16パッドの9～16を押す
 
 
-
-          table
-            tr
-              td 9
-              td PITCH BEND
-            tr
-              td 10
-              td MAIN VOLUME
-            tr
-              td 11
-              td PAN
-            tr
-              td 12
-              td EXPRESSION
-            tr
-              td 13
-              td RESONANCE
-            tr
-              td 14
-              td BRIGHTNESS
-            tr
-              td 15
-              td DECAY TIME
-            tr
-              td 16
-              td REVERB SEND
 
 
       h2.heading.switch
@@ -818,13 +808,14 @@ html(lang="ja")
           | アサイナブル・ノブ1、2へのMIDIメッセージの割り当て
           span.swithCondition.contentClosed
         section.h3content.hide
-          p(style="color:red") 片方ずつできるはず
+
 
 
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「KNOB 1 ASSIGNABLE」キーか「KNOB 2 ASSIGNABLE」を押す(点灯)
                 li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
                 li.contentOperationOrderlist ダイヤルを回す(OFF/BND/AFT/0～127)
                   table
@@ -841,52 +832,16 @@ html(lang="ja")
                       td 0～127
                       td コントロール・チェンジ・ナンバーを送信
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
-
-
         h3.heading.switch
-          | アサイナブル・ノブ1、2へのPolarityの設定
+          | アサイナブル・ノブへのMIDIメッセージ割り当てのショートカット
           span.swithCondition.contentClosed
         section.h3content.hide
-          p アサイナブル・ノブ1、2への値の反転
-
-
-          div.contentOperationBox
-            p.contentOperationCaption 操作
-              ul.contentOperationOrderlistGroup
-                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
-                  br
-                  | ディスプレイにはポラリティが表示される
-                li.contentOperationOrderlist ダイヤルでポラリティを選択(nnn/rev)
-                  table
-                    tr
-                      th 省略形
-                      th 意味
-                    tr
-                      td nnn
-                      td Normal
-                    tr
-                      td rev
-                      td Reverse
-                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
-        h3.heading.switch
-          | アサイナブル・ノブへのメッセージ割当のショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
-          table
-            tr
-              td 「アサイナブル・ノブ1」に割り当てる場合
-              td 「Setting」ボタンを押す(点灯)
-                br
-                | 「KNOB 1 ASSIGN」キーを押したまま「16パッド」の9～16を押す
-            tr
-              td 「アサイナブル・ノブ2」に割り当てる場合
-              td 「Setting」ボタンを押す(点灯)
-                br
-                | 「KNOB 1 ASSIGN」キーを押したまま「16パッド」の9～16を押す
-
-
+          p 使用頻度が高いMIDIメッセージのショートカットが16パッドの9～16に割り当てられている
 
           table
+            tr
+              th 16パッド
+              th メッセージ
             tr
               td 9
               td PITCH BEND
@@ -911,6 +866,36 @@ html(lang="ja")
             tr
               td 16
               td REVERB SEND
+
+
+        h3.heading.switch
+          | アサイナブル・ノブ1、2へのPolarityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p アサイナブル・ノブ1、2への値の反転
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「KNOB 1 ASSIGNABLE」キーか「KNOB 2 ASSIGNABLE」を押す(点灯)
+
+                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
+                  br
+                  | ディスプレイにはポラリティが表示される
+                li.contentOperationOrderlist ダイヤルでポラリティを選択(nnn/rev)
+                  table
+                    tr
+                      th 省略形
+                      th 意味
+                    tr
+                      td nnn
+                      td Normal
+                    tr
+                      td rev
+                      td Reverse
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
 
 
