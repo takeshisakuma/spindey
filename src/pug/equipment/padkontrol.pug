@@ -1,0 +1,1912 @@
+- var pagename='padKontrol|spindey.com'
+- var description='KorgのpadKontrolのマニュアルです。'
+- var keywords='padKontrol,Korg'
+doctype html
+html(lang="ja")
+  include ../_include/_head.pug
+  body
+    h1.heading padKontrol
+    main.equipmentMain
+
+
+
+
+      h2.heading.switch
+        | モード
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | モード
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td play mode
+              td ノートナンバーが割り当てられているパッドは消灯
+                br
+                | コントロールチェンジが割り当てられているパッドは点灯
+            tr
+              td setting mode
+              td
+
+        h3.heading.switch
+          | モードの切り替え
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「setting」キーを押す
+
+
+      h2.heading.switch
+        | SCENE
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | SCENE
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p シーンは16個まで保存できる
+          p 設定は保存をしないと電源オフや別のシーンに切り替えた時に消える
+        h3.heading.switch
+          | SCENEの呼び出し
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Playモード、settingモードどちらでも可能
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「SCENEキー」を押したまま「PROG. CHANGE/WRITE/ALL PAD」キーを押す
+                  br
+                  | ディスプレイに保存先のシーンナンバーが点滅表示される
+                li.contentOperationOrderlist 変更方法1:ダイヤルで変更
+                  br
+                  | 変更方法2:保存先を16パッドで選択
+                li.contentOperationOrderlist 保存:「SETTING/ENTER」キー
+                  br
+                  | キャンセル:「MESSAGE/EXIT」キー
+
+
+        h3.heading.switch
+          | SCENEを保存
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p Playモード、settingモードどちらでも可能
+          p 設定は保存をしないと電源オフや別のシーンに切り替えた時に消える
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「SCENE」キーを押したまま「PROG. CHANGE/WRITE/ALL PAD」キーを押す
+                  br
+                  | ディスプレイに保存先のシーンナンバーが点滅表示される
+                li.contentOperationOrderlist 変更方法1:ダイヤルで変更
+                  br
+                  | 変更方法2:保存先を16パッドで選択
+                li.contentOperationOrderlist 保存:「SETTING/ENTER」キー
+                  br
+                  | キャンセル:「MESSAGE/EXIT」キー
+
+
+
+        h3.heading.switch
+          | 工場出荷状態に戻す
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 30種類のプリロード・シーンが登録されていて、そのうち16個が読み込まれている
+          p Playモード、settingモードどちらでも可能
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「SCENE」キーを押したまま「FIXED VELOCITY/PRELOAD」キーを押す
+                  br
+                  | (「FIXED VELOCIT/PRELOAD」キーが点灯、「SETTING/ENTER」キーが点滅)
+                  br
+                  | ディスプレイにプリロード・シーン・ナンバーが表示される
+                li.contentOperationOrderlist ダイヤルで(ALL)を選ぶ
+                li.contentOperationOrderlist 実行:「SETTING/ENTER」キーを押す
+                  br
+                  | キャンセル:「MESSAGE/EXIT」キーを押す
+                li.contentOperationOrderlist ディスプレイにLodと点滅表示され、ロードが行われる
+
+
+        h3.heading.switch
+          | プリロード・シーンを任意に読み込む
+          span.swithCondition.contentClosed
+
+        section.h3content.hide
+          p 30種類のプリロード・シーンが登録されていて、そのうち16個が読み込まれている
+          p Playモード、settingモードどちらでも可能
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「SCENE」キーを押したまま「FIXED VELOCITY/PRELOAD」キーを押す(FIXED VELOCIT/PRELOADキーが点灯、SETTING/ENTERキーが点滅)
+                  br
+                  | ディスプレイにプリロード・シーン・ナンバーが表示される
+                li.contentOperationOrderlist ダイヤルで(P.01～P.30)を選ぶ
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押して読み込むプリロード・シーンを決定
+                li.contentOperationOrderlist ダイヤルで保存先(S.01～S.16)を選ぶ
+                li.contentOperationOrderlist 実行:「SETTING/ENTER」キーを押す
+                  br
+                  | キャンセル:「MESSAGE/EXIT」キーを押す
+
+
+
+
+      h2.heading.switch
+        | PLAY
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          |  フラムとロールを有効化する対象を決める
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+            br
+            | フラムとロールの有効化は個別にはできない
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「FLAM」キーを押したまま16パッドか「PEDAL」キーを押す(点灯)
+                  br
+                  | または、「ROLL」キーを押したまま16パッドか「PEDAL」キーを押す(点灯)
+
+
+
+        h3.heading.switch
+          | ロール機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「ROLL」キーを押す(スピードに合わせて点滅)
+                  br
+                  | (フラムとロールの有効化は個別にはできない)
+                li.contentOperationOrderlist X-Yパッドに触れながら16パッドかペダルを押す
+                  br
+                  | 16パッドやペダルを押している間はロール奏法(離すと止まる)
+
+
+        h3.heading.switch
+          | ロールスピードの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの左端(最小値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの左端を押した時の値を決める(40-240)
+                li.contentOperationOrderlist 「MIDI CH/RIGHT」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの右端(最大値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの右端を押した時の値を決める(40-240)
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          | ロールのVelocityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「REL. VAL/LOWE」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの下端(最小値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの下端を押した時の値を決める(1-127)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの上端(最大値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの上端を押した時の値を決める(1-127)
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          | フラム機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+          p 16パッドかペダルのみ有効
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「FRAM」キーを押す
+                li.contentOperationOrderlist X-Yパッドに触れながらパッドやペダルを押す
+                  br
+                  | オフ：FLAMキーを押す(消灯)
+
+
+
+        h3.heading.switch
+          | フラムの1打目から2打目が発音されるまでの時間の設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの左端(最小値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの左端を押した時の値を決める(0-255)
+                li.contentOperationOrderlist 「MIDI CH/RIGHT」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの右端(最大値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの右端を押した時の値を決める(0-255)
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          |  フラムの2打目のVelocityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「REL. VAL/LOWER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの下端(最小値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの下端を押した時の値を決める(1-127)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはX-Yパッドの上端(最大値)を押したときの値が表示される
+                li.contentOperationOrderlist ダイヤルでX-Yパッドの上端を押した時の値を決める(1-127)
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+
+
+
+        h3.heading.switch
+          | ホールド機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「HOLD」キーを押す(点灯)
+                  br
+                  | オフにするときは、「HOLD」キーを押す(消灯)
+
+        h3.heading.switch
+          | 固定Velocity機能
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+            br
+            | Velocityを強制的にSettingモードで設定した固定ベロシティ値にする
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「FIXED VELOCITY/PRELOAD」キーを押す
+
+
+        h3.heading.switch
+          | 固定Velocityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ロール、フラム機能がオンの時、2打目以降のVelocityには効かない
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                li.contentOperationOrderlist 「Fixed Velocity」キーを押す
+                  br
+                  | ディスプレイには固定ベロシティの値が点滅表示される
+                li.contentOperationOrderlist ダイヤルを回して指定する(1～127)
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | プログラムチェンジ送信
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「PROG CHANGE/WRITE/ALL PAD」キーを押しながらダイヤルを回す
+                  br
+                  | ディスプレイにはプログラムナンバーが点滅表示される
+                li.contentOperationOrderlist 送信 「PROG CHANGE/WRITE/ALL PAD」キーを離す
+                  br
+                  | ※送信MIDIチャンネルがDisable以外の全16パッドやペダルで送信される
+
+        h3.heading.switch
+          | メッセージ送信
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p playモード
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 送信：「MESSAGE/EXIT」キーを押しながら16パッドの1～3を押す
+                  table
+                    tr
+                      td 1
+                      td PANICの送信
+                    tr
+                      td 2
+                      td NOTE OFFの送信
+                    tr
+                      td 3
+                      td GM ONの送信
+                    tr
+                      td 4～8
+                      td ユーザーが本来登録できるが、エディタ/ライブラリアンが最新OSで使えない
+
+      h2.heading.switch
+        | 16パッドの設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | 16パッド
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p 1つのパッドにはノートナンバーとコントロールチェンジのどちらかしか設定できない
+        section.h3content.hide
+        h3.heading.switch
+          |  全ての16パッドを設定対象にする
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 全選択:「PROG CHANGE/WRITE/ALL PAD」キーを押す(点灯)
+                  br
+                  | 解除：16パッドのどれかを押す
+
+
+        h3.heading.switch
+          |  16パッドにノート・ナンバーかコントロール・チェンジを割り当てる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                li.contentOperationOrderlist 変えたい16パッドを押す(点灯)
+                  table
+                    tr
+                      td ノートナンバーが割り当てられている時
+                      td ディスプレイにノートナンバーが表示される
+                    tr
+                      td コントロール・チェンジが割り当てられている時
+                      td ディスプレイにコントロール・チェンジ・ナンバーが表示される
+                li.contentOperationOrderlist ジョグダイヤルで変更する(C-1～G9/C0～127)
+                li.contentOperationOrderlist 次のパッドを押す(繰り返し)
+                li.contentOperationOrderlist 「Setting」を押す
+
+
+        h3.heading.switch
+          | 16パッドのコントロール・チェンジのオン・バリューの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p コントロール・チェンジを紐づけているときは、オン・バリューの設定はできない(「VELOCITY/UPPER」キーを押しても「---」)
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                  br
+                  | ディスプレイには16パッドを押した時のオンバリュー(コントロールチェンジの値)が表示される
+                li.contentOperationOrderlist 変えたい16パッドを押す(点灯)
+                li.contentOperationOrderlist ジョグダイヤルで変更する(0～127)　
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | 16パッドのコントロール・チェンジのリリース・バリューの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「REL. VAL./LOWER」キーを押す(点灯)
+                  br
+                  | ディスプレイには16パッドを押した時のリリースバリュー(コントロールチェンジの値)が表示される
+                li.contentOperationOrderlist ジョグダイヤルで変更する(0～127)　
+                li.contentOperationOrderlist 「Setting」を押す
+
+        h3.heading.switch
+          | 16パッドのVelocity設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ノート・ナンバーを紐づけているときは、リリース・バリューの設定はできない(REL. VAL./LOWERキーを押しても「---」)
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Fixed Velocity」キーがオフなのを確認
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                li.contentOperationOrderlist 設定したい16パッドを押す(点灯)
+                li.contentOperationOrderlist ダイヤルを回して指定する(1～127/C-1～C-8)
+                li.contentOperationOrderlist 「Setting」を押す
+
+        h3.heading.switch
+          | 16パッドのMIDI chの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「MIDI ch」が点灯していることを確認
+                li.contentOperationOrderlist 設定したい16パッドを押す(点灯)
+                li.contentOperationOrderlist ジョグダイヤルで変更する(1～16/disable)
+                li.contentOperationOrderlist 次のパッドを押す(繰り返し)
+                li.contentOperationOrderlist 「Setting」を押す
+
+        h3.heading.switch
+          | 16パッドの動作タイプの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
+                  br
+                  | ディスプレイに動作タイプが表示される
+                li.contentOperationOrderlist 動作を設定したい16パッドを押す(点灯)
+                li.contentOperationOrderlist ダイヤルで動作タイプを選ぶ(ooo/TGL)
+                  table
+                    tr
+                      th ooo=Momentary
+                      th 16パッドを押した時にノート・オン、離した時にノート・オフを送信
+                    tr
+                      th TGL=Momentary
+                      th 16パッドを押した時にノート・オンとノート・オフを交互に送信
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | 16パッドのUSB-MIDIポートの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PORT」キーを押す(点灯)
+                li.contentOperationOrderlist ポートを設定したい16パッドを押す(点灯)
+                  br
+                  | ディスプレイには押した16パッドのポートが表示される
+                li.contentOperationOrderlist ダイヤルでMIDI送信ポートを選択(P-A/-B)
+                li.contentOperationOrderlist 「Setting」を押す
+
+      h2.heading.switch
+        | ペダルの設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | ペダルにノート・メッセージかコントロール・チェンジを割り当てる
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                  table
+                    tr
+                      td ノートナンバーが割り当てられている時
+                      td ディスプレイにノートナンバーが表示される
+                    tr
+                      td コントロール・チェンジが割り当てられている時
+                      td ディスプレイにコントロール・チェンジ・ナンバーが表示される
+                li.contentOperationOrderlist ジョグダイヤルで変更する(C-1～G9/0～127))　
+                li.contentOperationOrderlist 「Setting」を押す
+
+
+        h3.heading.switch
+          | ペダルのMIDIチャンネルを設定する
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「MIDI CH/RIGHT」キーを押す(点灯)
+                  br
+                  | ディスプレイにはMIDIチャンネルが表示される
+                li.contentOperationOrderlist ダイヤルでMIDIチャンネルを選択(1～16/Disable)
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | ペダルの動作タイプの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
+                  br
+                  | ディスプレイに動作タイプが表示される
+                li.contentOperationOrderlist ダイヤルで動作タイプを選ぶ(ooo/TGL)
+                  table
+                    tr
+                      th ooo=Momentary
+                      th ペダルを押した時にノート・オン、離した時にノート・オフを送信
+                    tr
+                      th TGL=Momentary
+                      th ペダルを押した時にノート・オンとノート・オフを交互に送信
+                li.contentOperationOrderlist 「Setting」キーを押す
+
+        h3.heading.switch
+          | ペダルのノート・ナンバーのオン・バリューの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p ノート・ナンバーを紐づけているときは、リリース・バリューの設定はできない(REL. VAL./LOWERキーを押しても「---」)
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはペダルを踏んだ時のオンバリュー(コントロールチェンジの値)が表示される
+                li.contentOperationOrderlist ジョグダイヤルで変更する(C0～127)
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | ペダルのコントロール・チェンジのリリース・バリューの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「REL. VAL./LOWER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはペダルを離した時のリリースバリュー(コントロールチェンジの値)が表示される
+                li.contentOperationOrderlist ジョグダイヤルで変更する(C0～127)
+                li.contentOperationOrderlist 「Setting」を押す
+
+        h3.heading.switch
+          | ペダルのVelocity設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Fixed Velocity」がオフになっているのを確認
+                li.contentOperationOrderlist 「Setting」キーを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
+                li.contentOperationOrderlist ダイヤルを回して指定する(1～127)
+                li.contentOperationOrderlist 「Setting」を押す
+        h3.heading.switch
+          | ペダルのUSB-MIDIポートの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p MIDI接続時はこの設定は無意味
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「PEDAL」キーを押す(点灯)
+                li.contentOperationOrderlist 「PORT」キーを押す(点灯)
+                li.contentOperationOrderlist ダイヤルでMIDI送信ポートを選択(P-A/P-B)
+                li.contentOperationOrderlist 「Setting」を押す
+
+
+      h2.heading.switch
+        | X-Yパッドの設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | X-Yパッド
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p X-Yパッドの設定にはMIDIチャンネルの設定、ベロシティの設定、USB-MIDIの設定はない
+
+        h3.heading.switch
+          | X-Yパッドを有効にするトリガー・パッドとペダルの選択
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p X-Yパッドの軸ごとに有効にするか、しないかを16パッド単位、ペダルで設定可能
+          table
+            tr
+              td X軸を有効化する場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「X」キーを押したまま、有効にする16パッドか「PEDAL」キーを押す(点灯)
+            tr
+              td Y軸を有効化する場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「Y」キーを押したまま、有効にする16パッドか「PEDAL」キーを押す(点灯)
+
+
+
+
+        h3.heading.switch
+          |  X-YパッドへのMIDIメッセージの割り当て
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                li.contentOperationOrderlist ダイヤルを回す(OFF/BND/AFT/0～127)
+                  table
+                    tr
+                      td OFF
+                      td 何も送信しない
+                    tr
+                      td BND
+                      td ピットベンドを送信
+                    tr
+                      td AFT
+                      td アフタータッチを送信
+                    tr
+                      td 0～127
+                      td コントロール・チェンジ・ナンバーを送信
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          | X-YパッドへのPolarityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p X-YパッドのX軸方向、Y軸方向の値の反転
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
+                  br
+                  | ディスプレイにはポラリティが表示される
+                li.contentOperationOrderlist ダイヤルでポラリティを選択(nnn/rev)
+                  table
+                    tr
+                      th 省略形
+                      th 意味
+                    tr
+                      td nnn
+                      td Normal
+                    tr
+                      td rev
+                      td Reverse
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          | X-Yパッドへのリリース・バリューの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「REL. VAL./LOWER」キーを押す(点灯)
+                  br
+                  | ディスプレイにはMIDIメッセージの値が表示される
+                li.contentOperationOrderlist ダイヤルでMIDIメッセージの値を変更する
+                  table
+                    tr
+                      td Pitch Bendを選んだ場合
+                      td -128～127
+                    tr
+                      td After Touch、コントロールチェンジを選んだ場合
+                      td 0～127
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+        h3.heading.switch
+          | X-Yパッドへのメッセージ割当のショートカット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td X-YパッドのX軸方向に割り当てる場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | Xキーを押したまま16パッドの9～16を押す
+            tr
+              td X-YパッドのY軸方向に割り当てる場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | Yキーを押したまま16パッドの9～16を押す
+
+
+
+          table
+            tr
+              td 9
+              td PITCH BEND
+            tr
+              td 10
+              td MAIN VOLUME
+            tr
+              td 11
+              td PAN
+            tr
+              td 12
+              td EXPRESSION
+            tr
+              td 13
+              td RESONANCE
+            tr
+              td 14
+              td BRIGHTNESS
+            tr
+              td 15
+              td DECAY TIME
+            tr
+              td 16
+              td REVERB SEND
+
+
+      h2.heading.switch
+        | アサイナブル・ノブの設定
+        span.swithCondition.contentClosed
+      section.h2content.hide
+        h3.heading.switch
+          | アサイナブル・ノブ1、2の設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p アサイナブル・ノブの設定にはMIDIチャンネルの設定、、リリース・バリューの設定、ベロシティの設定、USB-MIDIの設定はない
+
+
+
+
+
+        h3.heading.switch
+          | 有効にする16パッドとX-Yパッドの選択
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td アサイナブル・ノブ1を有効にする場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「KNOB 1 ASSIGNABLE」キーを押したまま、有効にしたい16パッドか「PEDAL」キーを押す(点灯)
+            tr
+              td アサイナブル・ノブ2を有効にする場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「KNOB 2 ASSIGNABLE」キーを押したまま、有効にしたい16パッドか「PEDAL」キーを押す(点灯)
+
+
+
+
+        h3.heading.switch
+          | アサイナブル・ノブ1、2へのMIDIメッセージの割り当て
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p(style="color:red") 片方ずつできるはず
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「Setting」ボタンを押す(点灯)
+                li.contentOperationOrderlist 「NOTE/CC#/LEFT」キーを押す(点灯)
+                li.contentOperationOrderlist ダイヤルを回す(OFF/BND/AFT/0～127)
+                  table
+                    tr
+                      td OFF
+                      td 何も送信しない
+                    tr
+                      td BND
+                      td ピットベンドを送信
+                    tr
+                      td AFT
+                      td アフタータッチを送信
+                    tr
+                      td 0～127
+                      td コントロール・チェンジ・ナンバーを送信
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+
+
+        h3.heading.switch
+          | アサイナブル・ノブ1、2へのPolarityの設定
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          p アサイナブル・ノブ1、2への値の反転
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist 「SW TYPE/POLARITY」キーを押す(点灯)
+                  br
+                  | ディスプレイにはポラリティが表示される
+                li.contentOperationOrderlist ダイヤルでポラリティを選択(nnn/rev)
+                  table
+                    tr
+                      th 省略形
+                      th 意味
+                    tr
+                      td nnn
+                      td Normal
+                    tr
+                      td rev
+                      td Reverse
+                li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
+        h3.heading.switch
+          | アサイナブル・ノブへのメッセージ割当のショートカット
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              td 「アサイナブル・ノブ1」に割り当てる場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「KNOB 1 ASSIGN」キーを押したまま「16パッド」の9～16を押す
+            tr
+              td 「アサイナブル・ノブ2」に割り当てる場合
+              td 「Setting」ボタンを押す(点灯)
+                br
+                | 「KNOB 1 ASSIGN」キーを押したまま「16パッド」の9～16を押す
+
+
+
+          table
+            tr
+              td 9
+              td PITCH BEND
+            tr
+              td 10
+              td MAIN VOLUME
+            tr
+              td 11
+              td PAN
+            tr
+              td 12
+              td EXPRESSION
+            tr
+              td 13
+              td RESONANCE
+            tr
+              td 14
+              td BRIGHTNESS
+            tr
+              td 15
+              td DECAY TIME
+            tr
+              td 16
+              td REVERB SEND
+
+
+
+
+      h2.heading.switch
+        | 付録
+        span.swithCondition.contentClosed
+      section.h2content.hide
+
+        h3.heading.switch
+          | Settingモードでの各キーの動作
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th キー
+              th Trigger Pad
+              th Pedal
+              th X-Yパッド
+              th Knob1/2
+              th Flam
+              th Roll
+            tr
+              td NOTE/CC#/LEFT
+              td Note#C-1～G9
+                br
+                | CC#0～127
+              td Note#C-1～G9
+                br
+                | CC#0～127
+              td Message Type
+                br
+                | (No Assign/Pitch Bend/After Touch/CC#)
+              td Message Type
+                br
+                | (No Assign/Pitch Bend/After Touch/CC#)
+              td Interval Left
+                br
+                | 0～255
+              td Speed Left
+                br
+                | 40～240
+            tr
+              td MIDI CH/RIGHT
+              td MIDI CH
+                br
+                | (Disable/1～16)
+              td MIDI CH
+                br
+                | (Disable/1～16)
+              td -
+              td -
+              td Interval Right
+                br
+                | 0～255
+              td Speed Roght
+                br
+                | 40～240
+            tr
+              td SW TYPE/POLARITY
+              td Switch Type
+                br
+                | (Momentary/Toggle)
+              td Switch Type
+                br
+                | (Momentary/Toggle)
+              td Polarity
+                br
+                | (Normal/Reverse)
+              td Polarity
+                br
+                | (Normal/Reverse)
+              td -
+              td -
+            tr
+              td REL VAL/LOWER
+              td Release Value
+                br
+                | 0～127(cc割当時のみ)
+              td Release Value
+                br
+                | 0～127(cc割当時のみ)
+              td Release Value
+                br
+                | 0～127/-128～127
+              td -
+              td Volume Lower
+                br
+                | 1～127
+              td Expression Lower
+                br
+                | 1～127
+            tr
+              td VELOCITY/UPPER
+              td Velocity Curve(Note) On Value
+                br
+                | 0～127(cc)
+              td Velocity Curve(Note) On Value
+                br
+                | 0～127(cc)
+              td -
+              td -
+              td Volume Lower
+                br
+                | 1～127
+              td Expression Lower
+                br
+                | 1～127
+            tr
+              td PORT
+              td USB-MIDI Port
+                br
+                | (PORT A/PORT B)
+              td  USB-MIDI Port
+                br
+                | (PORT A/PORT B)
+              td -
+              td -
+              td -
+              td -
+
+        h3.heading.switch
+          | Preload Scene List
+          span.swithCondition.contentClosed
+        section.h3content.hide
+          table
+            tr
+              th No.
+              th Scene Name
+              th Pre Assign.
+            tr
+              td 01
+              td OASYS,TRITON Series
+                br
+                | KARMA "Standard Kit1"
+              td SCENE 01
+            tr
+              td 02
+              td OASYS,TRITON Series
+                br
+                | KARMA "Standard Kit2"
+              td SCENE 02
+            tr
+              td 03
+              td OASYS,TRITON Series
+                br
+                | KARMA "Percussion Kit"
+              td SCENE 03
+            tr
+              td 04
+              td OASYS,TRITON Series
+                br
+                | KARMA "Orchestra/Ethnic Kit"
+              td SCENE 04
+            tr
+              td 05
+              td OASYS,TRITON Series
+                br
+                | KARMA "Jazz/Brush Kit"
+              td -
+            tr
+              td 06
+              td Korg Legacy Collection WAVESTATION
+              td SCENE 05
+            tr
+              td 07
+              td GM "Standard Kit 1"
+              td SCENE 06
+            tr
+              td 08
+              td GM "Standard Kit 2"
+              td -
+            tr
+              td 09
+              td GM "Percussion Kit 2"
+              td -
+            tr
+              td 10
+              td GM "Orchestra Kit"
+              td -
+            tr
+              td 11
+              td GM "Brush Kit"
+              td -
+            tr
+              td 12
+              td TOONTRACK dfh SUPERIOR
+              td SCENE 07
+            tr
+              td 13
+              td UVI KORG EDITION "Kit 1"
+              td SCENE 08
+            tr
+              td 14
+              td UVI KORG EDITION "Kit 2"
+              td SCENE 09
+            tr
+              td 15
+              td inMusic BFD
+              td SCENE 10
+            tr
+              td 16
+              td FXpansion GURU
+              td SCENE 11
+            tr
+              td 17
+              td Native Instruments BATTERY
+              td SCENE 12
+            tr
+              td 18
+              td Ableton Live
+              td SCENE 13
+            tr
+              td 19
+              td Ableton Live Sampler
+              td SCENE 14
+            tr
+              td 20
+              td Apple GarageBand
+              td SCENE 15
+            tr
+              td 21
+              td Reason Studio Readrum
+              td -
+            tr
+              td 22
+              td IK Multimedia SampleTank 2 Korg Edition
+              td -
+            tr
+              td 23
+              td SOECTRASONICS STYLUS RMX
+              td -
+            tr
+              td 24
+              td Steinberg Greeve Agent
+              td -
+            tr
+              td 25
+              td Steinberg HYPERSONIC
+              td -
+            tr
+              td 26
+              td Waldorf Attack
+              td -
+            tr
+              td 27
+              td WIZOO Darbuka
+              td -
+            tr
+              td 28
+              td Image-Line FL Studio
+              td -
+            tr
+              td 29
+              td "Chromatic Scale" for Synth. Sound
+              td -
+            tr
+              td 30
+              td 16Step "Velocity"
+              td SCENE 16
+
+
+
+
+        h3.heading.switch
+          | Note no.
+          span.swithCondition.contentClosed
+
+
+        section.h3content.hide
+          table
+            tr
+              th Note
+              th No.
+              th (Hex)
+            tr
+              td C-1
+              td 0
+              td (00)
+            tr
+              td C#-1
+              td 1
+              td (01)
+            tr
+              td D-1
+              td 2
+              td (02)
+            tr
+              td D#-1
+              td 3
+              td (03)
+            tr
+              td E-1
+              td 4
+              td (04)
+            tr
+              td F-1
+              td 5
+              td (05)
+            tr
+              td F#-1
+              td 6
+              td (06)
+            tr
+              td G-1
+              td 7
+              td (07)
+            tr
+              td G#-1
+              td 8
+              td (08)
+            tr
+              td A-1
+              td 9
+              td (09)
+            tr
+              td A#-1
+              td 10
+              td (0A)
+            tr
+              td B-1
+              td 11
+              td (0B)
+            tr
+              td C0
+              td 12
+              td (0C)
+            tr
+              td C#0
+              td 13
+              td (0D)
+            tr
+              td D0
+              td 14
+              td (0E)
+            tr
+              td D#0
+              td 15
+              td (0F)
+            tr
+              td E0
+              td 16
+              td (10)
+            tr
+              td F0
+              td 17
+              td (11)
+            tr
+              td F#0
+              td 18
+              td (12)
+            tr
+              td G0
+              td 19
+              td (13)
+            tr
+              td G#0
+              td 20
+              td (14)
+            tr
+              td A0
+              td 21
+              td (15)
+            tr
+              td A#0
+              td 22
+              td (16)
+            tr
+              td B0
+              td 23
+              td (17)
+            tr
+              td C1
+              td 24
+              td (18)
+            tr
+              td C#1
+              td 25
+              td (19)
+            tr
+              td D1
+              td 26
+              td (1A)
+            tr
+              td D#1
+              td 27
+              td (1B)
+            tr
+              td E1
+              td 28
+              td (1C)
+            tr
+              td F1
+              td 29
+              td (1D)
+            tr
+              td F#1
+              td 30
+              td (1E)
+            tr
+              td G1
+              td 31
+              td (1F)
+            tr
+              td G#1
+              td 32
+              td (20)
+            tr
+              td A1
+              td 33
+              td (21)
+            tr
+              td A#1
+              td 34
+              td (22)
+            tr
+              td B1
+              td 35
+              td (23)
+            tr
+              td C2
+              td 36
+              td (24)
+            tr
+              td C#2
+              td 37
+              td (25)
+            tr
+              td D2
+              td 38
+              td (26)
+            tr
+              td D#2
+              td 39
+              td (27)
+            tr
+              td E2
+              td 40
+              td (28)
+            tr
+              td F2
+              td 41
+              td (29)
+            tr
+              td F#2
+              td 42
+              td (2A)
+            tr
+              td G2
+              td 43
+              td (2B)
+            tr
+              td G#2
+              td 44
+              td (2C)
+            tr
+              td A2
+              td 45
+              td (2D)
+            tr
+              td A#2
+              td 46
+              td (2E)
+            tr
+              td B2
+              td 47
+              td (2F)
+            tr
+              td C3
+              td 48
+              td (30)
+            tr
+              td C#3
+              td 49
+              td (31)
+            tr
+              td D3
+              td 50
+              td (32)
+            tr
+              td D#3
+              td 51
+              td (33)
+            tr
+              td E3
+              td 52
+              td (34)
+            tr
+              td F3
+              td 53
+              td (35)
+            tr
+              td F#3
+              td 54
+              td (36)
+            tr
+              td G3
+              td 55
+              td (37)
+            tr
+              td G#3
+              td 56
+              td (38)
+            tr
+              td A3
+              td 57
+              td (39)
+            tr
+              td A#3
+              td 58
+              td (3A)
+            tr
+              td B3
+              td 59
+              td (3B)
+            tr
+              td C4
+              td 60
+              td (3C)
+            tr
+              td C#4
+              td 61
+              td (3D)
+            tr
+              td D4
+              td 62
+              td (3E)
+            tr
+              td D#4
+              td 63
+              td (3F)
+            tr
+              td E4
+              td 64
+              td (40)
+            tr
+              td F4
+              td 65
+              td (41)
+            tr
+              td F#4
+              td 66
+              td (42)
+            tr
+              td G4
+              td 67
+              td (43)
+            tr
+              td G#4
+              td 68
+              td (44)
+            tr
+              td A4
+              td 69
+              td (45)
+            tr
+              td A#4
+              td 70
+              td (46)
+            tr
+              td B4
+              td 71
+              td (47)
+            tr
+              td C5
+              td 72
+              td (48)
+            tr
+              td C#5
+              td 73
+              td (49)
+            tr
+              td D5
+              td 74
+              td (4A)
+            tr
+              td D#5
+              td 75
+              td (4B)
+            tr
+              td E5
+              td 76
+              td (4C)
+            tr
+              td F5
+              td 77
+              td (4D)
+            tr
+              td F#5
+              td 78
+              td (4E)
+            tr
+              td G5
+              td 79
+              td (4F)
+            tr
+              td G#5
+              td 80
+              td (50)
+            tr
+              td A5
+              td 81
+              td (51)
+            tr
+              td A#5
+              td 82
+              td (52)
+            tr
+              td B5
+              td 83
+              td (53)
+            tr
+              td C6
+              td 84
+              td (54)
+            tr
+              td C#6
+              td 85
+              td (55)
+            tr
+              td D6
+              td 86
+              td (56)
+            tr
+              td D#6
+              td 87
+              td (57)
+            tr
+              td E6
+              td 88
+              td (58)
+            tr
+              td F6
+              td 89
+              td (59)
+            tr
+              td F#6
+              td 90
+              td (5A)
+            tr
+              td G6
+              td 91
+              td (5B)
+            tr
+              td G#6
+              td 92
+              td (5C)
+            tr
+              td A6
+              td 93
+              td (5D)
+            tr
+              td A#6
+              td 94
+              td (5E)
+            tr
+              td B6
+              td 95
+              td (5F)
+            tr
+              td C7
+              td 96
+              td (60)
+            tr
+              td C#4
+              td 97
+              td (61)
+            tr
+              td D7
+              td 98
+              td (62)
+            tr
+              td D#7
+              td 99
+              td (63)
+            tr
+              td E7
+              td 100
+              td (64)
+            tr
+              td F7
+              td 101
+              td (65)
+            tr
+              td F#7
+              td 102
+              td (66)
+            tr
+              td G7
+              td 103
+              td (67)
+            tr
+              td G#7
+              td 104
+              td (68)
+            tr
+              td A7
+              td 105
+              td (69)
+            tr
+              td A#7
+              td 106
+              td (6A)
+            tr
+              td B7
+              td 107
+              td (6B)
+            tr
+              td C8
+              td 108
+              td (6C)
+            tr
+              td C#8
+              td 109
+              td (6D)
+            tr
+              td D8
+              td 110
+              td (6E)
+            tr
+              td D#8
+              td 111
+              td (6F)
+            tr
+              td E8
+              td 112
+              td (70)
+            tr
+              td F8
+              td 113
+              td (71)
+            tr
+              td F#8
+              td 114
+              td (72)
+            tr
+              td G8
+              td 115
+              td (73)
+            tr
+              td G#8
+              td 116
+              td (74)
+            tr
+              td A8
+              td 117
+              td (75)
+            tr
+              td A#8
+              td 118
+              td (76)
+            tr
+              td B8
+              td 119
+              td (77)
+            tr
+              td C9
+              td 120
+              td (78)
+            tr
+              td C#9
+              td 121
+              td (79)
+            tr
+              td D9
+              td 122
+              td (7A)
+            tr
+              td D#9
+              td 123
+              td (7B)
+            tr
+              td E9
+              td 124
+              td (7C)
+            tr
+              td F9
+              td 125
+              td (7D)
+            tr
+              td F#9
+              td 126
+              td (7E)
+            tr
+              td G9
+              td 127
+              td (7F)
+
+
+      section.h2content.hide
+        h3.heading.switch
+          | MIDI Control Change Message
+          span.swithCondition.contentClosed
+
+
+        section.h3content.hide
+          table
+            tr
+              th CC#(Hex)
+              th Function
+            tr
+              td 000(00)
+              td Bank Select MSB/LSB
+            tr
+              td 001(01)
+              td Modulation MSB/LSB
+            tr
+              td 002(02)
+              td Breath Controller MSB/LSB
+            tr
+              td 004(04)
+              td Foot Controller MSB/LSB
+            tr
+              td 005(05)
+              td Portament MSB/LSB
+            tr
+              td 006(06)
+              td Data Entry MSB/LSB
+            tr
+              td 007(07)
+              td Channel Volume MSB/LSB
+            tr
+              td 008(08)
+              td Balance MSB/LSB
+
+            tr
+              td 010(0A)
+              td Pan Select MSB/LSB
+            tr
+              td 011(0B)
+              td Expression Select MSB/LSB
+            tr
+              td 012(0C)
+              td Effect Control 1 MSB/LSB
+            tr
+              td 013(0D)
+              td Effect Control 2 MSB/LSB
+            tr
+              td 016(10)
+              td General Purpose Controller 1 MSB/LSB
+            tr
+              td 017(11)
+              td General Purpose Controller 2 MSB/LSB
+            tr
+              td 018(12)
+              td General Purpose Controller 3 MSB/LSB
+            tr
+              td 019(13)
+              td General Purpose Controller 4 MSB/LSB
+
+
+
+            tr
+              td 032(20)
+              td Bank Select MSB/LSB
+            tr
+              td 033(21)
+              td Modulation MSB/LSB
+            tr
+              td 034(22)
+              td Breath Controller MSB/LSB
+            tr
+              td 036(24)
+              td Foot Controller MSB/LSB
+            tr
+              td 037(25)
+              td Portament MSB/LSB
+            tr
+              td 038(26)
+              td Data Entry MSB/LSB
+            tr
+              td 039(27)
+              td Channel Volume MSB/LSB
+            tr
+              td 040(28)
+              td Balance MSB/LSB
+
+            tr
+              td 042(2A)
+              td Pan Select MSB/LSB
+            tr
+              td 043(2B)
+              td Expression Select MSB/LSB
+            tr
+              td 044(2C)
+              td Effect Control 1 MSB/LSB
+            tr
+              td 045(2D)
+              td Effect Control 2 MSB/LSB
+            tr
+              td 048(30)
+              td General Purpose Controller 1 MSB/LSB
+            tr
+              td 049(31)
+              td General Purpose Controller 2 MSB/LSB
+            tr
+              td 050(32)
+              td General Purpose Controller 3 MSB/LSB
+            tr
+              td 051(33)
+              td General Purpose Controller 4 MSB/LSB
+            tr
+              td 064(40)
+              td Hold 1 (Damper,Sustain)
+            tr
+              td 065(41)
+              td Portamento Switch (on/off)
+            tr
+              td 066(42)
+              td Sostenuto
+            tr
+              td 067(43)
+              td Soft Pedal
+            tr
+              td 068(44)
+              td Legato Foot Switch
+            tr
+              td 069(45)
+              td Hold 2
+            tr
+              td 070(46)
+              td Sound Controller 1 (Sound Variation)
+            tr
+              td 071(47)
+              td Sound Controller 2
+            tr
+              td 072(48)
+              td Sound Controller 3
+            tr
+              td 073(49)
+              td Sound Controller 4
+            tr
+              td 074(4A)
+              td Sound Controller 5
+            tr
+              td 075(4B)
+              td Sound Controller 6
+            tr
+              td 076(4C)
+              td Sound Controller 7
+            tr
+              td 077(4D)
+              td Sound Controller 8
+            tr
+              td 078(4E)
+              td Sound Controller 9
+            tr
+              td 079(4F)
+              td Sound Controller 10
+            tr
+              td 080(50)
+              td General Purpose Controller 5
+            tr
+              td 081(51)
+              td General Purpose Controller 6
+            tr
+              td 082(52)
+              td General Purpose Controller 7
+            tr
+              td 083(53)
+              td General Purpose Controller 8
+            tr
+              td 084(54)
+              td Portament Control
+            tr
+              td 091(5B)
+              td Effect Depth (Reverb Send Level)
+            tr
+              td 092(5C)
+              td Effect Depth (Tremolo Depth)
+            tr
+              td 093(5D)
+              td Effect Depth (Chorus Send Level)
+            tr
+              td 094(5E)
+              td Effect Depth (Celeste Depth)
+            tr
+              td 095(5F)
+              td Effect Depth (Phase Depth)
+            tr
+              td 096(60)
+              td Data Increment
+            tr
+              td 097(61)
+              td Data Increment
+            tr
+              td 098(62)
+              td NRPN MSB/LSB
+            tr
+              td 099(63)
+              td NRPN MSB/LSB
+            tr
+              td 100(64)
+              td RPN MSB/LSB
+            tr
+              td 101(65)
+              td RPN MSB/LSB
+
+    include ../_include/_footer.pug
