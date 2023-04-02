@@ -843,231 +843,235 @@
       <section class="h2content hide">
         <h3 class="heading switch">Settingモードでの各キーの動作<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <table>
-            <tr>
-              <th>キー</th>
-              <th>Trigger Pad</th>
-              <th>Pedal</th>
-              <th>X-Yパッド</th>
-              <th>Knob1/2</th>
-              <th>Flam</th>
-              <th>Roll</th>
-            </tr>
-            <tr>
-              <td>NOTE/CC#/LEFT</td>
-              <td>Note#C-1～G9<br>CC#0～127</td>
-              <td>Note#C-1～G9<br>CC#0～127</td>
-              <td>Message Type<br>(No Assign/Pitch Bend/After Touch/CC#)</td>
-              <td>Message Type<br>(No Assign/Pitch Bend/After Touch/CC#)</td>
-              <td>Interval Left<br>0～255</td>
-              <td>Speed Left<br>40～240</td>
-            </tr>
-            <tr>
-              <td>MIDI CH/RIGHT</td>
-              <td>MIDI CH<br>(Disable/1～16)</td>
-              <td>MIDI CH<br>(Disable/1～16)</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Interval Right<br>0～255</td>
-              <td>Speed Roght<br>40～240</td>
-            </tr>
-            <tr>
-              <td>SW TYPE/POLARITY</td>
-              <td>Switch Type<br>(Momentary/Toggle)</td>
-              <td>Switch Type<br>(Momentary/Toggle)</td>
-              <td>Polarity<br>(Normal/Reverse)</td>
-              <td>Polarity<br>(Normal/Reverse)</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>REL VAL/LOWER</td>
-              <td>Release Value<br>0～127(cc割当時のみ)</td>
-              <td>Release Value<br>0～127(cc割当時のみ)</td>
-              <td>Release Value<br>0～127/-128～127</td>
-              <td>-</td>
-              <td>Volume Lower<br>1～127</td>
-              <td>Expression Lower<br>1～127</td>
-            </tr>
-            <tr>
-              <td>VELOCITY/UPPER</td>
-              <td>Velocity Curve(Note) On Value<br>0～127(cc)</td>
-              <td>Velocity Curve(Note) On Value<br>0～127(cc)</td>
-              <td>-</td>
-              <td>-</td>
-              <td>Volume Lower<br>1～127</td>
-              <td>Expression Lower<br>1～127</td>
-            </tr>
-            <tr>
-              <td>PORT</td>
-              <td>USB-MIDI Port<br>(PORT A/PORT B)</td>
-              <td> USB-MIDI Port<br>(PORT A/PORT B)</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </table>
+          <div class="tableScroll">
+            <table>
+              <tr>
+                <th>キー</th>
+                <th>Trigger Pad</th>
+                <th>Pedal</th>
+                <th>X-Yパッド</th>
+                <th>Knob1/2</th>
+                <th>Flam</th>
+                <th>Roll</th>
+              </tr>
+              <tr>
+                <td>NOTE/CC#/LEFT</td>
+                <td>Note#C-1～G9<br>CC#0～127</td>
+                <td>Note#C-1～G9<br>CC#0～127</td>
+                <td>Message Type<br>(No Assign/Pitch Bend/After Touch/CC#)</td>
+                <td>Message Type<br>(No Assign/Pitch Bend/After Touch/CC#)</td>
+                <td>Interval Left<br>0～255</td>
+                <td>Speed Left<br>40～240</td>
+              </tr>
+              <tr>
+                <td>MIDI CH/RIGHT</td>
+                <td>MIDI CH<br>(Disable/1～16)</td>
+                <td>MIDI CH<br>(Disable/1～16)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Interval Right<br>0～255</td>
+                <td>Speed Roght<br>40～240</td>
+              </tr>
+              <tr>
+                <td>SW TYPE/POLARITY</td>
+                <td>Switch Type<br>(Momentary/Toggle)</td>
+                <td>Switch Type<br>(Momentary/Toggle)</td>
+                <td>Polarity<br>(Normal/Reverse)</td>
+                <td>Polarity<br>(Normal/Reverse)</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>REL VAL/LOWER</td>
+                <td>Release Value<br>0～127(cc割当時のみ)</td>
+                <td>Release Value<br>0～127(cc割当時のみ)</td>
+                <td>Release Value<br>0～127/-128～127</td>
+                <td>-</td>
+                <td>Volume Lower<br>1～127</td>
+                <td>Expression Lower<br>1～127</td>
+              </tr>
+              <tr>
+                <td>VELOCITY/UPPER</td>
+                <td>Velocity Curve(Note) On Value<br>0～127(cc)</td>
+                <td>Velocity Curve(Note) On Value<br>0～127(cc)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Volume Lower<br>1～127</td>
+                <td>Expression Lower<br>1～127</td>
+              </tr>
+              <tr>
+                <td>PORT</td>
+                <td>USB-MIDI Port<br>(PORT A/PORT B)</td>
+                <td> USB-MIDI Port<br>(PORT A/PORT B)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </table>
+          </div>
         </section>
         <h3 class="heading switch">Preload Scene List<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
-          <table>
-            <tr>
-              <th>No.</th>
-              <th>Scene Name</th>
-              <th>Pre Assign.</th>
-            </tr>
-            <tr>
-              <td>01</td>
-              <td>OASYS,TRITON Series<br>KARMA "Standard Kit1"</td>
-              <td>SCENE 01</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>OASYS,TRITON Series<br>KARMA "Standard Kit2"</td>
-              <td>SCENE 02</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>OASYS,TRITON Series<br>KARMA "Percussion Kit"</td>
-              <td>SCENE 03</td>
-            </tr>
-            <tr>
-              <td>04</td>
-              <td>OASYS,TRITON Series<br>KARMA "Orchestra/Ethnic Kit"</td>
-              <td>SCENE 04</td>
-            </tr>
-            <tr>
-              <td>05</td>
-              <td>OASYS,TRITON Series<br>KARMA "Jazz/Brush Kit"</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>06</td>
-              <td>Korg Legacy Collection WAVESTATION</td>
-              <td>SCENE 05</td>
-            </tr>
-            <tr>
-              <td>07</td>
-              <td>GM "Standard Kit 1"</td>
-              <td>SCENE 06</td>
-            </tr>
-            <tr>
-              <td>08</td>
-              <td>GM "Standard Kit 2"</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>09</td>
-              <td>GM "Percussion Kit 2"</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>GM "Orchestra Kit"</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <td>GM "Brush Kit"</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>12</td>
-              <td>TOONTRACK dfh SUPERIOR</td>
-              <td>SCENE 07</td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>UVI KORG EDITION "Kit 1"</td>
-              <td>SCENE 08</td>
-            </tr>
-            <tr>
-              <td>14</td>
-              <td>UVI KORG EDITION "Kit 2"</td>
-              <td>SCENE 09</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>inMusic BFD</td>
-              <td>SCENE 10</td>
-            </tr>
-            <tr>
-              <td>16</td>
-              <td>FXpansion GURU</td>
-              <td>SCENE 11</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>Native Instruments BATTERY</td>
-              <td>SCENE 12</td>
-            </tr>
-            <tr>
-              <td>18</td>
-              <td>Ableton Live</td>
-              <td>SCENE 13</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>Ableton Live Sampler</td>
-              <td>SCENE 14</td>
-            </tr>
-            <tr>
-              <td>20</td>
-              <td>Apple GarageBand</td>
-              <td>SCENE 15</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>Reason Studio Readrum</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>22</td>
-              <td>IK Multimedia SampleTank 2 Korg Edition</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>23</td>
-              <td>SOECTRASONICS STYLUS RMX</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>24</td>
-              <td>Steinberg Greeve Agent</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>25</td>
-              <td>Steinberg HYPERSONIC</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>26</td>
-              <td>Waldorf Attack</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>27</td>
-              <td>WIZOO Darbuka</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>28</td>
-              <td>Image-Line FL Studio</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>29</td>
-              <td>"Chromatic Scale" for Synth. Sound</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>30</td>
-              <td>16Step "Velocity"</td>
-              <td>SCENE 16</td>
-            </tr>
-          </table>
+          <div class="tableScroll">
+            <table>
+              <tr>
+                <th>No.</th>
+                <th>Scene Name</th>
+                <th>Pre Assign.</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>OASYS,TRITON Series<br>KARMA "Standard Kit1"</td>
+                <td>SCENE 01</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>OASYS,TRITON Series<br>KARMA "Standard Kit2"</td>
+                <td>SCENE 02</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>OASYS,TRITON Series<br>KARMA "Percussion Kit"</td>
+                <td>SCENE 03</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>OASYS,TRITON Series<br>KARMA "Orchestra/Ethnic Kit"</td>
+                <td>SCENE 04</td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>OASYS,TRITON Series<br>KARMA "Jazz/Brush Kit"</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>06</td>
+                <td>Korg Legacy Collection WAVESTATION</td>
+                <td>SCENE 05</td>
+              </tr>
+              <tr>
+                <td>07</td>
+                <td>GM "Standard Kit 1"</td>
+                <td>SCENE 06</td>
+              </tr>
+              <tr>
+                <td>08</td>
+                <td>GM "Standard Kit 2"</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>09</td>
+                <td>GM "Percussion Kit 2"</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>GM "Orchestra Kit"</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>GM "Brush Kit"</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>TOONTRACK dfh SUPERIOR</td>
+                <td>SCENE 07</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>UVI KORG EDITION "Kit 1"</td>
+                <td>SCENE 08</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>UVI KORG EDITION "Kit 2"</td>
+                <td>SCENE 09</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>inMusic BFD</td>
+                <td>SCENE 10</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>FXpansion GURU</td>
+                <td>SCENE 11</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Native Instruments BATTERY</td>
+                <td>SCENE 12</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>Ableton Live</td>
+                <td>SCENE 13</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>Ableton Live Sampler</td>
+                <td>SCENE 14</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>Apple GarageBand</td>
+                <td>SCENE 15</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Reason Studio Readrum</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>IK Multimedia SampleTank 2 Korg Edition</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>SOECTRASONICS STYLUS RMX</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>Steinberg Greeve Agent</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>Steinberg HYPERSONIC</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>Waldorf Attack</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>WIZOO Darbuka</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>Image-Line FL Studio</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>"Chromatic Scale" for Synth. Sound</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>30</td>
+                <td>16Step "Velocity"</td>
+                <td>SCENE 16</td>
+              </tr>
+            </table>
+          </div>
         </section>
         <h3 class="heading switch">Note no.<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">

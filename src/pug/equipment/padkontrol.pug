@@ -909,253 +909,255 @@ html(lang="ja")
           | Settingモードでの各キーの動作
           span.swithCondition.contentClosed
         section.h3content.hide
-          table
-            tr
-              th キー
-              th Trigger Pad
-              th Pedal
-              th X-Yパッド
-              th Knob1/2
-              th Flam
-              th Roll
-            tr
-              td NOTE/CC#/LEFT
-              td Note#C-1～G9
-                br
-                | CC#0～127
-              td Note#C-1～G9
-                br
-                | CC#0～127
-              td Message Type
-                br
-                | (No Assign/Pitch Bend/After Touch/CC#)
-              td Message Type
-                br
-                | (No Assign/Pitch Bend/After Touch/CC#)
-              td Interval Left
-                br
-                | 0～255
-              td Speed Left
-                br
-                | 40～240
-            tr
-              td MIDI CH/RIGHT
-              td MIDI CH
-                br
-                | (Disable/1～16)
-              td MIDI CH
-                br
-                | (Disable/1～16)
-              td -
-              td -
-              td Interval Right
-                br
-                | 0～255
-              td Speed Roght
-                br
-                | 40～240
-            tr
-              td SW TYPE/POLARITY
-              td Switch Type
-                br
-                | (Momentary/Toggle)
-              td Switch Type
-                br
-                | (Momentary/Toggle)
-              td Polarity
-                br
-                | (Normal/Reverse)
-              td Polarity
-                br
-                | (Normal/Reverse)
-              td -
-              td -
-            tr
-              td REL VAL/LOWER
-              td Release Value
-                br
-                | 0～127(cc割当時のみ)
-              td Release Value
-                br
-                | 0～127(cc割当時のみ)
-              td Release Value
-                br
-                | 0～127/-128～127
-              td -
-              td Volume Lower
-                br
-                | 1～127
-              td Expression Lower
-                br
-                | 1～127
-            tr
-              td VELOCITY/UPPER
-              td Velocity Curve(Note) On Value
-                br
-                | 0～127(cc)
-              td Velocity Curve(Note) On Value
-                br
-                | 0～127(cc)
-              td -
-              td -
-              td Volume Lower
-                br
-                | 1～127
-              td Expression Lower
-                br
-                | 1～127
-            tr
-              td PORT
-              td USB-MIDI Port
-                br
-                | (PORT A/PORT B)
-              td  USB-MIDI Port
-                br
-                | (PORT A/PORT B)
-              td -
-              td -
-              td -
-              td -
+          .tableScroll
+            table
+              tr
+                th キー
+                th Trigger Pad
+                th Pedal
+                th X-Yパッド
+                th Knob1/2
+                th Flam
+                th Roll
+              tr
+                td NOTE/CC#/LEFT
+                td Note#C-1～G9
+                  br
+                  | CC#0～127
+                td Note#C-1～G9
+                  br
+                  | CC#0～127
+                td Message Type
+                  br
+                  | (No Assign/Pitch Bend/After Touch/CC#)
+                td Message Type
+                  br
+                  | (No Assign/Pitch Bend/After Touch/CC#)
+                td Interval Left
+                  br
+                  | 0～255
+                td Speed Left
+                  br
+                  | 40～240
+              tr
+                td MIDI CH/RIGHT
+                td MIDI CH
+                  br
+                  | (Disable/1～16)
+                td MIDI CH
+                  br
+                  | (Disable/1～16)
+                td -
+                td -
+                td Interval Right
+                  br
+                  | 0～255
+                td Speed Roght
+                  br
+                  | 40～240
+              tr
+                td SW TYPE/POLARITY
+                td Switch Type
+                  br
+                  | (Momentary/Toggle)
+                td Switch Type
+                  br
+                  | (Momentary/Toggle)
+                td Polarity
+                  br
+                  | (Normal/Reverse)
+                td Polarity
+                  br
+                  | (Normal/Reverse)
+                td -
+                td -
+              tr
+                td REL VAL/LOWER
+                td Release Value
+                  br
+                  | 0～127(cc割当時のみ)
+                td Release Value
+                  br
+                  | 0～127(cc割当時のみ)
+                td Release Value
+                  br
+                  | 0～127/-128～127
+                td -
+                td Volume Lower
+                  br
+                  | 1～127
+                td Expression Lower
+                  br
+                  | 1～127
+              tr
+                td VELOCITY/UPPER
+                td Velocity Curve(Note) On Value
+                  br
+                  | 0～127(cc)
+                td Velocity Curve(Note) On Value
+                  br
+                  | 0～127(cc)
+                td -
+                td -
+                td Volume Lower
+                  br
+                  | 1～127
+                td Expression Lower
+                  br
+                  | 1～127
+              tr
+                td PORT
+                td USB-MIDI Port
+                  br
+                  | (PORT A/PORT B)
+                td  USB-MIDI Port
+                  br
+                  | (PORT A/PORT B)
+                td -
+                td -
+                td -
+                td -
 
         h3.heading.switch
           | Preload Scene List
           span.swithCondition.contentClosed
         section.h3content.hide
-          table
-            tr
-              th No.
-              th Scene Name
-              th Pre Assign.
-            tr
-              td 01
-              td OASYS,TRITON Series
-                br
-                | KARMA "Standard Kit1"
-              td SCENE 01
-            tr
-              td 02
-              td OASYS,TRITON Series
-                br
-                | KARMA "Standard Kit2"
-              td SCENE 02
-            tr
-              td 03
-              td OASYS,TRITON Series
-                br
-                | KARMA "Percussion Kit"
-              td SCENE 03
-            tr
-              td 04
-              td OASYS,TRITON Series
-                br
-                | KARMA "Orchestra/Ethnic Kit"
-              td SCENE 04
-            tr
-              td 05
-              td OASYS,TRITON Series
-                br
-                | KARMA "Jazz/Brush Kit"
-              td -
-            tr
-              td 06
-              td Korg Legacy Collection WAVESTATION
-              td SCENE 05
-            tr
-              td 07
-              td GM "Standard Kit 1"
-              td SCENE 06
-            tr
-              td 08
-              td GM "Standard Kit 2"
-              td -
-            tr
-              td 09
-              td GM "Percussion Kit 2"
-              td -
-            tr
-              td 10
-              td GM "Orchestra Kit"
-              td -
-            tr
-              td 11
-              td GM "Brush Kit"
-              td -
-            tr
-              td 12
-              td TOONTRACK dfh SUPERIOR
-              td SCENE 07
-            tr
-              td 13
-              td UVI KORG EDITION "Kit 1"
-              td SCENE 08
-            tr
-              td 14
-              td UVI KORG EDITION "Kit 2"
-              td SCENE 09
-            tr
-              td 15
-              td inMusic BFD
-              td SCENE 10
-            tr
-              td 16
-              td FXpansion GURU
-              td SCENE 11
-            tr
-              td 17
-              td Native Instruments BATTERY
-              td SCENE 12
-            tr
-              td 18
-              td Ableton Live
-              td SCENE 13
-            tr
-              td 19
-              td Ableton Live Sampler
-              td SCENE 14
-            tr
-              td 20
-              td Apple GarageBand
-              td SCENE 15
-            tr
-              td 21
-              td Reason Studio Readrum
-              td -
-            tr
-              td 22
-              td IK Multimedia SampleTank 2 Korg Edition
-              td -
-            tr
-              td 23
-              td SOECTRASONICS STYLUS RMX
-              td -
-            tr
-              td 24
-              td Steinberg Greeve Agent
-              td -
-            tr
-              td 25
-              td Steinberg HYPERSONIC
-              td -
-            tr
-              td 26
-              td Waldorf Attack
-              td -
-            tr
-              td 27
-              td WIZOO Darbuka
-              td -
-            tr
-              td 28
-              td Image-Line FL Studio
-              td -
-            tr
-              td 29
-              td "Chromatic Scale" for Synth. Sound
-              td -
-            tr
-              td 30
-              td 16Step "Velocity"
-              td SCENE 16
+          .tableScroll
+            table
+              tr
+                th No.
+                th Scene Name
+                th Pre Assign.
+              tr
+                td 01
+                td OASYS,TRITON Series
+                  br
+                  | KARMA "Standard Kit1"
+                td SCENE 01
+              tr
+                td 02
+                td OASYS,TRITON Series
+                  br
+                  | KARMA "Standard Kit2"
+                td SCENE 02
+              tr
+                td 03
+                td OASYS,TRITON Series
+                  br
+                  | KARMA "Percussion Kit"
+                td SCENE 03
+              tr
+                td 04
+                td OASYS,TRITON Series
+                  br
+                  | KARMA "Orchestra/Ethnic Kit"
+                td SCENE 04
+              tr
+                td 05
+                td OASYS,TRITON Series
+                  br
+                  | KARMA "Jazz/Brush Kit"
+                td -
+              tr
+                td 06
+                td Korg Legacy Collection WAVESTATION
+                td SCENE 05
+              tr
+                td 07
+                td GM "Standard Kit 1"
+                td SCENE 06
+              tr
+                td 08
+                td GM "Standard Kit 2"
+                td -
+              tr
+                td 09
+                td GM "Percussion Kit 2"
+                td -
+              tr
+                td 10
+                td GM "Orchestra Kit"
+                td -
+              tr
+                td 11
+                td GM "Brush Kit"
+                td -
+              tr
+                td 12
+                td TOONTRACK dfh SUPERIOR
+                td SCENE 07
+              tr
+                td 13
+                td UVI KORG EDITION "Kit 1"
+                td SCENE 08
+              tr
+                td 14
+                td UVI KORG EDITION "Kit 2"
+                td SCENE 09
+              tr
+                td 15
+                td inMusic BFD
+                td SCENE 10
+              tr
+                td 16
+                td FXpansion GURU
+                td SCENE 11
+              tr
+                td 17
+                td Native Instruments BATTERY
+                td SCENE 12
+              tr
+                td 18
+                td Ableton Live
+                td SCENE 13
+              tr
+                td 19
+                td Ableton Live Sampler
+                td SCENE 14
+              tr
+                td 20
+                td Apple GarageBand
+                td SCENE 15
+              tr
+                td 21
+                td Reason Studio Readrum
+                td -
+              tr
+                td 22
+                td IK Multimedia SampleTank 2 Korg Edition
+                td -
+              tr
+                td 23
+                td SOECTRASONICS STYLUS RMX
+                td -
+              tr
+                td 24
+                td Steinberg Greeve Agent
+                td -
+              tr
+                td 25
+                td Steinberg HYPERSONIC
+                td -
+              tr
+                td 26
+                td Waldorf Attack
+                td -
+              tr
+                td 27
+                td WIZOO Darbuka
+                td -
+              tr
+                td 28
+                td Image-Line FL Studio
+                td -
+              tr
+                td 29
+                td "Chromatic Scale" for Synth. Sound
+                td -
+              tr
+                td 30
+                td 16Step "Velocity"
+                td SCENE 16
 
 
 

@@ -55,107 +55,108 @@ html(lang="ja")
           | フロントパネル
           span.swithCondition.contentClosed
         section.h3content.hide
-          table
-            tr
-              td Level/Rate/Transposeエンコーダー
-              td
-                table
-                  tr
-                    td CNTRLモード
-                    td マスターレベルをコントロールする(デフォルト)
-                      br
-                      | 他のパラメーターをコントロールするためにアサインすることも可能
-                  tr
-                    td SEQモード
-                    td テンポを変更する
-                      br
-                      | SHIFTボタンを同時に使用するとシーケンス全体を半音階ステップでトランスポーズする
-            tr
-              td エンコーダー
-              td
-                table
-                  tr
-                    td CNTRLモード
-                    td すべての機能をプログラム可能なエンコーダーになる
-                  tr
-                    td SEQモード
-                    td 対応するステップのノートを設定する
-            tr
-              td パッド
-              td
-                table
-                  tr
-                    td CNTRLモード
-                    td MIDI関連の機能をアサインできる
-                  tr
-                    td SEQモード
-                    td シーケンスのステップの有効/無効を決定
+          .tableScroll
+            table
+              tr
+                td Level/Rate/Transposeエンコーダー
+                td
+                  table
+                    tr
+                      td CNTRLモード
+                      td マスターレベルをコントロールする(デフォルト)
+                        br
+                        | 他のパラメーターをコントロールするためにアサインすることも可能
+                    tr
+                      td SEQモード
+                      td テンポを変更する
+                        br
+                        | SHIFTボタンを同時に使用するとシーケンス全体を半音階ステップでトランスポーズする
+              tr
+                td エンコーダー
+                td
+                  table
+                    tr
+                      td CNTRLモード
+                      td すべての機能をプログラム可能なエンコーダーになる
+                    tr
+                      td SEQモード
+                      td 対応するステップのノートを設定する
+              tr
+                td パッド
+                td
+                  table
+                    tr
+                      td CNTRLモード
+                      td MIDI関連の機能をアサインできる
+                    tr
+                      td SEQモード
+                      td シーケンスのステップの有効/無効を決定
 
-                | SHIFTボタンと使用することでプレーモード、タイミング値、入力スケールやシーケンスの長さを設定することができる
-            tr
-              td トランスポート・コントロール
-              td
-                table
-                  tr
-                    td PLAY/STOPボタン
-                    td MIDIマシンコントロール・メッセージを使用してシーケンサーをコントロールする
+                  | SHIFTボタンと使用することでプレーモード、タイミング値、入力スケールやシーケンスの長さを設定することができる
+              tr
+                td トランスポート・コントロール
+                td
+                  table
+                    tr
+                      td PLAY/STOPボタン
+                      td MIDIマシンコントロール・メッセージを使用してシーケンサーをコントロールする
+                        br
+                        | DAWがMMCコマンドに反応しない場合は、他のMIDIメッセージを送信することも可能
+                        br
+                        | 変更する場合はArturiaのMIDIコントロールセンター・ソフトウェアを使用する
+                    tr
+                      td STOPボタン
+                      td 停止
+                    tr
+                      td PLAYボタン
+                      td PAUSE/CONTINUEボタンとしても機能する
+                        br
+                        | 再生中のシーケンスを一時停止し、数秒後に再びシーケンスを開始させるにためには、PLAYボタンを使用する
+              tr
+                td モード・ボタン
+                td
+                  table
+                    tr
+                      td CNTRL/SEQボタン
+                      td 2つのモード間を切替える
+                        br
+                        | トップパネルのLEDの色でアクティブになっているモードを表示す
+                        br
+                        | CNTRLモードは赤
+                        br
+                        | SEQモードは青
+                    tr
+                      td EXT SYNCボタン
+                      td マスター/スレーブ状態を切替える
                       br
-                      | DAWがMMCコマンドに反応しない場合は、他のMIDIメッセージを送信することも可能
+                      | 外部シンク・モードが有効な場合、このボタンが点灯する
                       br
-                      | 変更する場合はArturiaのMIDIコントロールセンター・ソフトウェアを使用する
-                  tr
-                    td STOPボタン
-                    td 停止
-                  tr
-                    td PLAYボタン
-                    td PAUSE/CONTINUEボタンとしても機能する
-                      br
-                      | 再生中のシーケンスを一時停止し、数秒後に再びシーケンスを開始させるにためには、PLAYボタンを使用する
-            tr
-              td モード・ボタン
-              td
-                table
-                  tr
-                    td CNTRL/SEQボタン
-                    td 2つのモード間を切替える
-                      br
-                      | トップパネルのLEDの色でアクティブになっているモードを表示す
-                      br
-                      | CNTRLモードは赤
-                      br
-                      | SEQモードは青
-                  tr
-                    td EXT SYNCボタン
-                    td マスター/スレーブ状態を切替える
-                    br
-                    | 外部シンク・モードが有効な場合、このボタンが点灯する
-                    br
-                    | 次の4種類のボタンは、パッドとの組み合わせのみで使用することができる
-            tr
-              td RECALL/STOREボタン
-              td
-                table
-                  tr
-                    td RECALLを押しながらパッドを選択する
-                    td 16個のプリセットの中から1つをロードすることができる
-                  tr
-                    td STOREを押しながらパッドを選択する
-                    td 使用中のプリセットを保存することができる
-            tr
-              td SHIFTボタン
-              td SEQモードでのみ有効
-                br
-                | パッドで再生モード、タイミング値、やエンコーダーの入力スケール等の値を設定できるようになる
-            tr
-              td CHAN ボタン(グローバルMIDIチャンネル)
-              td
-                table
-                  tr
-                    td CHAN ボタンを押しながらパッドを選択
-                    td グローバルMIDIチャンネルを設定することができる
-                  tr
-                    td SHIFTボタンとCHANボタンの両方を押したまま操作をする
-                    td シーケンスの長さを設定するために16個のパッドを使える
+                      | 次の4種類のボタンは、パッドとの組み合わせのみで使用することができる
+              tr
+                td RECALL/STOREボタン
+                td
+                  table
+                    tr
+                      td RECALLを押しながらパッドを選択する
+                      td 16個のプリセットの中から1つをロードすることができる
+                    tr
+                      td STOREを押しながらパッドを選択する
+                      td 使用中のプリセットを保存することができる
+              tr
+                td SHIFTボタン
+                td SEQモードでのみ有効
+                  br
+                  | パッドで再生モード、タイミング値、やエンコーダーの入力スケール等の値を設定できるようになる
+              tr
+                td CHAN ボタン(グローバルMIDIチャンネル)
+                td
+                  table
+                    tr
+                      td CHAN ボタンを押しながらパッドを選択
+                      td グローバルMIDIチャンネルを設定することができる
+                    tr
+                      td SHIFTボタンとCHANボタンの両方を押したまま操作をする
+                      td シーケンスの長さを設定するために16個のパッドを使える
 
 
 
