@@ -462,7 +462,70 @@
                 <td>4つ目のノブで切替</td>
               </tr>
             </table>
-            <p>「TOGGLE ALL」のファンクション・ボタンで4つを一括で変更できる</p>
+          </div>
+        </section>
+        <h3 class="heading switch">PADモードのEDIT PADS<span class="swithCondition contentClosed"></span></h3>
+        <section class="h3content hide">
+          <div class="contentOperationBox">
+            <p class="contentOperationCaption">操作
+              <ul class="contentOperationOrderlistGroup">
+                <li class="contentOperationOrderlist">EDIT PADSのファンクション・ボタンを押す</li>
+              </ul>
+            </p>
+          </div>
+          <div class="tableScroll">
+            <table>
+              <tr>
+                <th>項目名</th>
+                <th>値</th>
+                <th>その他</th>
+              </tr>
+              <tr>
+                <td>NOTE</td>
+                <td>C-2〜G8</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>MIN VEL</td>
+                <td>00〜127</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>MAX VAL</td>
+                <td>00〜127</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>CC</td>
+                <td>00〜127</td>
+                <td>PRESSUREがCCの時のみ設定可能</td>
+              </tr>
+              <tr>
+                <td>PRESSURE</td>
+                <td>OFF/Channel/Poly/</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>PAD ON</td>
+                <td>Off / Red / Orange / Amber / Coral / Yellow / Lime / Jade / Aqua / Sky / Indigo / Violet / Purple / Arctic / Pink / Hot Pink / Green</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>PAD OFF</td>
+                <td>Off / Red / Orange / Amber / Coral / Yellow / Lime / Jade / Aqua / Sky / Indigo / Violet / Purple / Arctic / Pink / Hot Pink / Green</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>MIDI-CH</td>
+                <td>UsePrefs/01〜16</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>OUTPUT</td>
+                <td>UsePrefs/01〜16</td>
+                <td></td>
+              </tr>
+            </table>
           </div>
         </section>
       </section>
@@ -960,13 +1023,26 @@
           <table>
             <tr>
               <td>1回押す</td>
-              <td>プリセットやシーケンス、設定（またはそのすべて）を保存</td>
+              <td>プリセットやシーケンス、設定(またはそのすべて)を保存</td>
             </tr>
             <tr>
               <td>長押し(2、3秒)</td>
               <td>すべてのセッティングを保存</td>
             </tr>
           </table>
+          <div class="tableScroll">
+            <p>SAVEのファンクション・ボタン</p>
+            <table>
+              <tr>
+                <td>SAVE TYPE</td>
+                <td>SAVE PRESET / SAVE SEQUENCE / SAVE PREFERENCES / SAVE ALL 切替</td>
+              </tr>
+              <tr>
+                <td>EDIT NAME</td>
+                <td>名前変更</td>
+              </tr>
+            </table>
+          </div>
         </section>
         <h3 class="heading switch">自動演奏、録音<span class="swithCondition contentClosed"></span></h3>
         <section class="h3content hide">
@@ -1129,11 +1205,15 @@
         <section class="h3content hide">
           <table>
             <tr>
-              <td>短く押す</td>
-              <td>長押し</td>
+              <th>押し方</th>
+              <th>動作</th>
             </tr>
             <tr>
+              <td>短く押す</td>
               <td>VELで指定している値で打ち込める(点灯)</td>
+            </tr>
+            <tr>
+              <td>長押し</td>
               <td>「タイ」イベントを入力(半点灯)</td>
             </tr>
           </table>
@@ -1142,18 +1222,23 @@
         <section class="h3content hide">
           <table>
             <tr>
-              <td>現在再生されているBAR</td>
-              <td>緑のLED</td>
+              <th>LEDの色色</th>
+              <th>意味</th>
+              <th>範囲</th>
+            </tr>
+            <tr>
+              <td>緑</td>
+              <td>現在再生されているBARの位置</td>
               <td>ステップ1から4の間のみ</td>
             </tr>
             <tr>
-              <td>現在表示されているBAR</td>
-              <td>エメラルドグリーンのLED</td>
+              <td>エメラルドグリーン</td>
+              <td>現在表示されているBARの位置</td>
               <td>ステップ1から4の間のみ</td>
             </tr>
             <tr>
-              <td>現在再生されているステップ</td>
-              <td>青のLED</td>
+              <td>青</td>
+              <td>現在再生されているステップの位置</td>
               <td>ステップ1から16の間</td>
             </tr>
           </table>

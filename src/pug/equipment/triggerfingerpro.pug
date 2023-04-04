@@ -383,7 +383,68 @@ html(lang="ja")
                 td BANK D
                 td MIDI/Mackie/HUI/Arsenal
                 td 4つ目のノブで切替
-            p 「TOGGLE ALL」のファンクション・ボタンで4つを一括で変更できる
+
+
+
+        h3.heading.switch
+          | PADモードのEDIT PADS
+          span.swithCondition.contentClosed
+        section.h3content.hide
+
+
+          div.contentOperationBox
+            p.contentOperationCaption 操作
+              ul.contentOperationOrderlistGroup
+                li.contentOperationOrderlist EDIT PADSのファンクション・ボタンを押す
+          .tableScroll
+            table
+              tr
+                th 項目名
+                th 値
+                th その他
+              tr
+                td NOTE
+                td C-2〜G8
+                td
+              tr
+                td MIN VEL
+                td 00〜127
+                td
+              tr
+                td MAX VAL
+                td 00〜127
+                td
+              tr
+                td CC
+                td 00〜127
+                td PRESSUREがCCの時のみ設定可能
+              tr
+                td PRESSURE
+                td OFF/Channel/Poly/
+                td
+              tr
+                td PAD ON
+                td Off / Red / Orange / Amber / Coral / Yellow / Lime / Jade / Aqua / Sky / Indigo / Violet / Purple / Arctic / Pink / Hot Pink / Green
+                td
+              tr
+                td PAD OFF
+                td Off / Red / Orange / Amber / Coral / Yellow / Lime / Jade / Aqua / Sky / Indigo / Violet / Purple / Arctic / Pink / Hot Pink / Green
+                td
+              tr
+                td MIDI-CH
+                td UsePrefs/01〜16
+                td
+              tr
+                td OUTPUT
+                td UsePrefs/01〜16
+                td
+
+
+
+
+
+
+
 
       h2.heading.switch
         | コントロール・モード
@@ -870,10 +931,21 @@ html(lang="ja")
           table
             tr
               td 1回押す
-              td プリセットやシーケンス、設定（またはそのすべて）を保存
+              td プリセットやシーケンス、設定(またはそのすべて)を保存
             tr
               td 長押し(2、3秒)
               td すべてのセッティングを保存
+
+          .tableScroll
+            p SAVEのファンクション・ボタン
+            table
+              tr
+                td SAVE TYPE
+                td SAVE PRESET / SAVE SEQUENCE / SAVE PREFERENCES / SAVE ALL 切替
+              tr
+                td EDIT NAME
+                td 名前変更
+
 
 
 
@@ -1060,10 +1132,13 @@ html(lang="ja")
         section.h3content.hide
           table
             tr
-              td 短く押す
-              td 長押し
+              th 押し方
+              th 動作
             tr
+              td 短く押す
               td VELで指定している値で打ち込める(点灯)
+            tr
+              td 長押し
               td 「タイ」イベントを入力(半点灯)
 
 
@@ -1074,16 +1149,20 @@ html(lang="ja")
         section.h3content.hide
           table
             tr
-              td 現在再生されているBAR
-              td 緑のLED
+              th LEDの色色
+              th 意味
+              th 範囲
+            tr
+              td 緑
+              td 現在再生されているBARの位置
               td ステップ1から4の間のみ
             tr
-              td 現在表示されているBAR
-              td エメラルドグリーンのLED
+              td エメラルドグリーン
+              td 現在表示されているBARの位置
               td ステップ1から4の間のみ
             tr
-              td 現在再生されているステップ
-              td 青のLED
+              td 青
+              td 現在再生されているステップの位置
               td ステップ1から16の間
 
 
