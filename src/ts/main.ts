@@ -35,7 +35,7 @@
 ((): void => {
   if (document.getElementById("js-loadingLayer")) {
     const loaderLayer = document.getElementById(
-      "js-loadingLayer"
+      "js-loadingLayer",
     ) as HTMLDivElement;
 
     const loadedTransiton = (): void => {
@@ -65,11 +65,8 @@
     //トップへ戻るアニメーション開始時にdocumentにホイールイベントwheelScrollCancel追加
     document.addEventListener("wheel", wheelScrollCancel, { passive: false });
 
-    //変数currentScrollPosition(現在のスクロール位置)に0を代入
-    let currentScrollPosition = 0;
-
     //変数currentScrollPosition(現在のスクロール位置)
-    currentScrollPosition = window.scrollY || 0;
+    const currentScrollPosition = window.scrollY || 0;
 
     //スクロール
     window.scrollTo(0, Math.floor(currentScrollPosition / 1.1));
@@ -92,11 +89,8 @@
 
   //関数returnAppearanceトップへ戻るボタンの表示/非表示切り替え
   const returntopAppearance = (): void => {
-    //変数currentScrollPosition(現在のスクロール位置)に0を代入
-    let currentScrollPosition = 0;
-
     //変数currentScrollPosition(現在のスクロール位置)
-    currentScrollPosition = window.scrollY || 0;
+    const currentScrollPosition = window.scrollY || 0;
 
     //画面の高さが変数currentScrollPosition(現在のスクロール位置)*5より小さいか判定
     if (displayHeight < currentScrollPosition * 5) {

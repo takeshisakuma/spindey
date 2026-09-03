@@ -1,12 +1,7 @@
 {
-  "extends": "stylelint-config-prettier",
-  "plugins": [
-    "stylelint-order",
-    "stylelint-prettier"
-  ],
+  "extends": ["stylelint-prettier/recommended"],
+  "plugins": ["stylelint-order"],
   "rules": {
-    "prettier/prettier": true,
-    "declaration-colon-newline-after": null,
     "order/properties-alphabetical-order": true
   }
 }
