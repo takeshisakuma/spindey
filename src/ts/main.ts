@@ -12,14 +12,14 @@
     }
 
     if (e.target.nextElementSibling) {
-      let hideContent = e.target.nextElementSibling;
+      const hideContent = e.target.nextElementSibling;
       if (e.target.nextElementSibling) {
         hideContent.classList.toggle("hide");
       }
 
       //コンテンツ開閉時のアイコンの表示変更
       if (e.target.children[0]) {
-        let switchCondition = e.target.children[0];
+        const switchCondition = e.target.children[0];
         switchCondition.classList.toggle("contentClosed");
       }
     }
