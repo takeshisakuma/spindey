@@ -1,6 +1,7 @@
 - var pagename='padKontrol|spindey.com'
 - var description='KorgのpadKontrolのマニュアルです。'
 - var keywords='padKontrol,Korg'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -11,14 +12,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("モード")
+        +section3("モード")
           table
             tr
               td play mode
@@ -29,10 +24,7 @@ html(lang="ja")
               td setting mode
               td
 
-        h3.heading.switch
-          | モードの切り替え
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モードの切り替え")
 
 
           div.contentOperationBox
@@ -41,20 +33,11 @@ html(lang="ja")
                 li.contentOperationOrderlist 「setting」キーを押す
 
 
-      h2.heading.switch
-        | SCENE
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SCENE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("SCENE")
+        +section3("SCENE")
           p シーンは16個まで保存できる
           p 設定は保存をしないと電源オフや別のシーンに切り替えた時に消える
-        h3.heading.switch
-          | SCENEの呼び出し
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SCENEの呼び出し")
           p Playモード、settingモードどちらでも可能
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -70,10 +53,7 @@ html(lang="ja")
                   | キャンセル:「MESSAGE/EXIT」キー
 
 
-        h3.heading.switch
-          | SCENEを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SCENEを保存")
           p Playモード、settingモードどちらでも可能
           p 設定は保存をしないと電源オフや別のシーンに切り替えた時に消える
           div.contentOperationBox
@@ -91,10 +71,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 工場出荷状態に戻す
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("工場出荷状態に戻す")
           p 30種類のプリロード・シーンが登録されていて、そのうち16個が読み込まれている
           p Playモード、settingモードどちらでも可能
 
@@ -113,11 +90,7 @@ html(lang="ja")
                 li.contentOperationOrderlist ディスプレイにLodと点滅表示され、ロードが行われる
 
 
-        h3.heading.switch
-          | プリロード・シーンを任意に読み込む
-          span.swithCondition.contentClosed
-
-        section.h3content.hide
+        +section3("プリロード・シーンを任意に読み込む")
           p 30種類のプリロード・シーンが登録されていて、そのうち16個が読み込まれている
           p Playモード、settingモードどちらでも可能
           div.contentOperationBox
@@ -136,15 +109,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | PLAY
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("PLAY")
 
-        h3.heading.switch
-          |  フラムとロールを有効化する対象を決める
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" フラムとロールを有効化する対象を決める")
           p playモード
             br
             | フラムとロールの有効化は個別にはできない
@@ -158,10 +125,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ロール機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ロール機能")
           p playモード
 
 
@@ -176,10 +140,7 @@ html(lang="ja")
                   | 16パッドやペダルを押している間はロール奏法(離すと止まる)
 
 
-        h3.heading.switch
-          | ロールスピードの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ロールスピードの設定")
           p playモード
 
           div.contentOperationBox
@@ -196,10 +157,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
 
-        h3.heading.switch
-          | ロールのVelocityの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ロールのVelocityの設定")
           p playモード
 
           div.contentOperationBox
@@ -216,10 +174,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
 
-        h3.heading.switch
-          | フラム機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フラム機能")
           p playモード
           p 16パッドかペダルのみ有効
 
@@ -233,10 +188,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | フラムの1打目から2打目が発音されるまでの時間の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フラムの1打目から2打目が発音されるまでの時間の設定")
           p playモード
 
           div.contentOperationBox
@@ -253,10 +205,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
 
-        h3.heading.switch
-          |  フラムの2打目のVelocityの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" フラムの2打目のVelocityの設定")
           p playモード
 
           div.contentOperationBox
@@ -276,10 +225,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ホールド機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ホールド機能")
           p playモード
 
           div.contentOperationBox
@@ -289,10 +235,7 @@ html(lang="ja")
                   br
                   | オフにするときは、「HOLD」キーを押す(消灯)
 
-        h3.heading.switch
-          | 固定Velocity機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("固定Velocity機能")
           p playモード
             br
             | Velocityを強制的にSettingモードで設定した固定ベロシティ値にする
@@ -303,10 +246,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「FIXED VELOCITY/PRELOAD」キーを押す
 
 
-        h3.heading.switch
-          | 固定Velocityの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("固定Velocityの設定")
           p ロール、フラム機能がオンの時、2打目以降のVelocityには効かない
 
 
@@ -320,10 +260,7 @@ html(lang="ja")
                   | ディスプレイには固定ベロシティの値が点滅表示される
                 li.contentOperationOrderlist ダイヤルを回して指定する(1～127)
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | プログラムチェンジ送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムチェンジ送信")
           p playモード
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -335,10 +272,7 @@ html(lang="ja")
                   br
                   | ※送信MIDIチャンネルがDisable以外の全16パッドやペダルで送信される
 
-        h3.heading.switch
-          | メッセージ送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メッセージ送信")
           p playモード
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -358,20 +292,11 @@ html(lang="ja")
                       td 4～8
                       td ユーザーが本来登録できるが、エディタ/ライブラリアンが最新OSで使えない
 
-      h2.heading.switch
-        | 16パッドの設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 16パッド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("16パッドの設定")
+        +section3("16パッド")
           p 1つのパッドにはノートナンバーとコントロールチェンジのどちらかしか設定できない
         section.h3content.hide
-        h3.heading.switch
-          |  全ての16パッドを設定対象にする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" 全ての16パッドを設定対象にする")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -382,10 +307,7 @@ html(lang="ja")
                   | 解除：16パッドのどれかを押す
 
 
-        h3.heading.switch
-          |  16パッドにノート・ナンバーかコントロール・チェンジを割り当てる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" 16パッドにノート・ナンバーかコントロール・チェンジを割り当てる")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -405,10 +327,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「Setting」を押す
 
 
-        h3.heading.switch
-          | 16パッドのコントロール・チェンジのオン・バリューの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドのコントロール・チェンジのオン・バリューの設定")
           p コントロール・チェンジを紐づけているときは、オン・バリューの設定はできない(「VELOCITY/UPPER」キーを押しても「---」)
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -420,10 +339,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 変えたい16パッドを押す(点灯)
                 li.contentOperationOrderlist ジョグダイヤルで変更する(0～127)　
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | 16パッドのコントロール・チェンジのリリース・バリューの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドのコントロール・チェンジのリリース・バリューの設定")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -434,10 +350,7 @@ html(lang="ja")
                 li.contentOperationOrderlist ジョグダイヤルで変更する(0～127)　
                 li.contentOperationOrderlist 「Setting」を押す
 
-        h3.heading.switch
-          | 16パッドのVelocity設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドのVelocity設定")
           p ノート・ナンバーを紐づけているときは、リリース・バリューの設定はできない(REL. VAL./LOWERキーを押しても「---」)
 
           div.contentOperationBox
@@ -450,10 +363,7 @@ html(lang="ja")
                 li.contentOperationOrderlist ダイヤルを回して指定する(1～127/C-1～C-8)
                 li.contentOperationOrderlist 「Setting」を押す
 
-        h3.heading.switch
-          | 16パッドのMIDI chの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドのMIDI chの設定")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -464,10 +374,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 次のパッドを押す(繰り返し)
                 li.contentOperationOrderlist 「Setting」を押す
 
-        h3.heading.switch
-          | 16パッドの動作タイプの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドの動作タイプの設定")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -485,10 +392,7 @@ html(lang="ja")
                       th TGL=Momentary
                       th 16パッドを押した時にノート・オンとノート・オフを交互に送信
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | 16パッドのUSB-MIDIポートの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16パッドのUSB-MIDIポートの設定")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -501,14 +405,8 @@ html(lang="ja")
                 li.contentOperationOrderlist ダイヤルでMIDI送信ポートを選択(P-A/-B)
                 li.contentOperationOrderlist 「Setting」を押す
 
-      h2.heading.switch
-        | ペダルの設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ペダルにノート・メッセージかコントロール・チェンジを割り当てる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ペダルの設定")
+        +section3("ペダルにノート・メッセージかコントロール・チェンジを割り当てる")
 
 
           div.contentOperationBox
@@ -528,10 +426,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「Setting」を押す
 
 
-        h3.heading.switch
-          | ペダルのMIDIチャンネルを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルのMIDIチャンネルを設定する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -543,10 +438,7 @@ html(lang="ja")
                   | ディスプレイにはMIDIチャンネルが表示される
                 li.contentOperationOrderlist ダイヤルでMIDIチャンネルを選択(1～16/Disable)
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | ペダルの動作タイプの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルの動作タイプの設定")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -566,10 +458,7 @@ html(lang="ja")
                       th ペダルを押した時にノート・オンとノート・オフを交互に送信
                 li.contentOperationOrderlist 「Setting」キーを押す
 
-        h3.heading.switch
-          | ペダルのノート・ナンバーのオン・バリューの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルのノート・ナンバーのオン・バリューの設定")
           p ノート・ナンバーを紐づけているときは、リリース・バリューの設定はできない(REL. VAL./LOWERキーを押しても「---」)
 
 
@@ -583,10 +472,7 @@ html(lang="ja")
                   | ディスプレイにはペダルを踏んだ時のオンバリュー(コントロールチェンジの値)が表示される
                 li.contentOperationOrderlist ジョグダイヤルで変更する(C0～127)
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | ペダルのコントロール・チェンジのリリース・バリューの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルのコントロール・チェンジのリリース・バリューの設定")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -598,10 +484,7 @@ html(lang="ja")
                 li.contentOperationOrderlist ジョグダイヤルで変更する(C0～127)
                 li.contentOperationOrderlist 「Setting」を押す
 
-        h3.heading.switch
-          | ペダルのVelocity設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルのVelocity設定")
 
 
           div.contentOperationBox
@@ -613,10 +496,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「VELOCITY/UPPER」キーを押す(点灯)
                 li.contentOperationOrderlist ダイヤルを回して指定する(1～127)
                 li.contentOperationOrderlist 「Setting」を押す
-        h3.heading.switch
-          | ペダルのUSB-MIDIポートの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ペダルのUSB-MIDIポートの設定")
           p MIDI接続時はこの設定は無意味
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -628,20 +508,11 @@ html(lang="ja")
                 li.contentOperationOrderlist 「Setting」を押す
 
 
-      h2.heading.switch
-        | X-Yパッドの設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | X-Yパッド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("X-Yパッドの設定")
+        +section3("X-Yパッド")
           p X-Yパッドの設定にはMIDIチャンネルの設定、ベロシティの設定、USB-MIDIの設定はない
 
-        h3.heading.switch
-          | X-Yパッドを有効にするトリガー・パッドとペダルの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("X-Yパッドを有効にするトリガー・パッドとペダルの選択")
           p X-Yパッドの軸ごとに有効にするか、しないかを16パッド単位、ペダルで設定可能
           table
             tr
@@ -658,10 +529,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          |  X-YパッドへのMIDIメッセージの割り当て
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" X-YパッドへのMIDIメッセージの割り当て")
 
 
           div.contentOperationBox
@@ -684,10 +552,7 @@ html(lang="ja")
                       td 0～127
                       td コントロール・チェンジ・ナンバーを送信
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
-        h3.heading.switch
-          | X-YパッドへのMIDIメッセージ割り当てのショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("X-YパッドへのMIDIメッセージ割り当てのショートカット")
           p 使用頻度が高いMIDIメッセージのショートカットが16パッドの9～16に割り当てられている
 
           table
@@ -717,10 +582,7 @@ html(lang="ja")
               td REVERB SEND
 
 
-        h3.heading.switch
-          | X-YパッドへのPolarityの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("X-YパッドへのPolarityの設定")
           p X-YパッドのX軸方向、Y軸方向の値の反転
 
 
@@ -745,10 +607,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
 
 
-        h3.heading.switch
-          | X-Yパッドへのリリース・バリューの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("X-Yパッドへのリリース・バリューの設定")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -771,24 +630,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | アサイナブル・ノブの設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | アサイナブル・ノブ1、2の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("アサイナブル・ノブの設定")
+        +section3("アサイナブル・ノブ1、2の設定")
           p アサイナブル・ノブの設定にはMIDIチャンネルの設定、、リリース・バリューの設定、ベロシティの設定、USB-MIDIの設定はない
 
 
 
 
 
-        h3.heading.switch
-          | 有効にする16パッドとX-Yパッドの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("有効にする16パッドとX-Yパッドの選択")
           table
             tr
               td アサイナブル・ノブ1を有効にする場合
@@ -804,10 +654,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | アサイナブル・ノブ1、2へのMIDIメッセージの割り当て
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アサイナブル・ノブ1、2へのMIDIメッセージの割り当て")
 
 
 
@@ -832,10 +679,7 @@ html(lang="ja")
                       td 0～127
                       td コントロール・チェンジ・ナンバーを送信
                 li.contentOperationOrderlist 「SETTING/ENTER」キーを押す
-        h3.heading.switch
-          | アサイナブル・ノブへのMIDIメッセージ割り当てのショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アサイナブル・ノブへのMIDIメッセージ割り当てのショートカット")
           p 使用頻度が高いMIDIメッセージのショートカットが16パッドの9～16に割り当てられている
 
           table
@@ -868,10 +712,7 @@ html(lang="ja")
               td REVERB SEND
 
 
-        h3.heading.switch
-          | アサイナブル・ノブ1、2へのPolarityの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アサイナブル・ノブ1、2へのPolarityの設定")
           p アサイナブル・ノブ1、2への値の反転
 
 
@@ -900,15 +741,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 付録
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("付録")
 
-        h3.heading.switch
-          | Settingモードでの各キーの動作
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Settingモードでの各キーの動作")
           .tableScroll
             table
               tr
@@ -1018,10 +853,7 @@ html(lang="ja")
                 td -
                 td -
 
-        h3.heading.switch
-          | Preload Scene List
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Preload Scene List")
           .tableScroll
             table
               tr
@@ -1162,12 +994,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Note no.
-          span.swithCondition.contentClosed
-
-
-        section.h3content.hide
+        +section3("Note no.")
           table
             tr
               th Note
@@ -1688,12 +1515,7 @@ html(lang="ja")
 
 
       section.h2content.hide
-        h3.heading.switch
-          | MIDI Control Change Message
-          span.swithCondition.contentClosed
-
-
-        section.h3content.hide
+        +section3("MIDI Control Change Message")
           table
             tr
               th CC#(Hex)

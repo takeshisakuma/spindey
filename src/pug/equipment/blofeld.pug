@@ -1,38 +1,27 @@
 - var pagename='blofeld|spindey.com'
 - var description='WardolfのBlofeldのマニュアルです。'
 - var keywords='Blefeld,Wardolf'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading blofeld
     main.equipmentMain
-      h2.heading.switch
-        | 基本操作
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 電源
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("基本操作")
+        +section3("電源")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 電源スイッチ
-        h3.heading.switch
-          | 音量
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音量")
           p マスターボリューム
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist
                 span.controllerKnob System Volume
-        h3.heading.switch
-          | プログラムの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -40,10 +29,7 @@ html(lang="ja")
               li.contentOperationOrderlist マルチモードの場合は「Shift+Sound/Multi」を押す
               li.contentOperationOrderlist セレクションダイヤルでプログラムを選択
           p ディスプレイパラメーターダイヤルでバンク変更可能
-        h3.heading.switch
-          | カテゴリーサーチ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カテゴリーサーチ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -56,15 +42,9 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist ディスプレイパラメーターダイヤルでオフにする
           p カテゴリーサーチではプログラムナンバーの変更は行わない
-        h3.heading.switch
-          | パラメーターのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメーターのエディット")
           p ロータリーコントロールノブでパラメーターを調整する
-        h3.heading.switch
-          | パラメーターコントロールのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメーターコントロールのエディット")
           p Global Menu内のAuto EditをONにすることを推奨
           table
             tr
@@ -87,10 +67,7 @@ html(lang="ja")
               li Effects
               li Arpeggiator
           p ディスプレイパラメーターをエディットする際、パネルパラメーターを調整可能
-        h3.heading.switch
-          | パラメーターを変更せずにチェックする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメーターを変更せずにチェックする")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -100,10 +77,7 @@ html(lang="ja")
                 | [全ての4つのパラメーターがディスプレイに表示される]
               li.contentOperationOrderlist ボタンを押しながら必要であればパラメーター変更可能
               li.contentOperationOrderlist ボタンを離すとチェック終了
-        h3.heading.switch
-          | 保存されたプログラムとエディットされたプログラムを比較(コンペアサウンド)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("保存されたプログラムとエディットされたプログラムを比較(コンペアサウンド)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -115,20 +89,14 @@ html(lang="ja")
             | コンペア機能が有効の状態で新規プログラムを選択すると、コンペア機能は自動的に停止する
             br
             |  コンペア機能が有効の状態ではパラメーターのエディットはできない
-        h3.heading.switch
-          | エディットされたプログラムのリコール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディットされたプログラムのリコール")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist  Shift+Utilityを押す
               li.contentOperationOrderlist セレクションダイヤルでメニューページのRecall Soundを選択
               li.contentOperationOrderlist Shift+Utilityで、全てのエディットをリコール
-        h3.heading.switch
-          | プログラムの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムの保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -155,50 +123,32 @@ html(lang="ja")
                 | Shift+Utilityを押してそのロケーションに保存
                 br
                 | 保存しない場合は、Shift+Utility以外のボタンを押す
-        h3.heading.switch
-          | プログラムのコピー(マルチプログラムを保存する)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムのコピー(マルチプログラムを保存する)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist マルチモードを有効にする
               li.contentOperationOrderlist Shift+Utilityを押して、マルチ保存(Multi Store)ページを開く
               li.contentOperationOrderlist 以下はプログラムの保存と同じ
-      h2.heading.switch
-        | マルチモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | マルチモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("マルチモード")
+        +section3("マルチモード")
           p
             | Blofeldは16パートのマルチモードを搭載している
             br
             |             マルチモードの各サウンドはPartと呼ばれる
-        h3.heading.switch
-          | Play Sound ModeとMulti Modeを切り替え
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Play Sound ModeとMulti Modeを切り替え")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist Shift+Sound/Multiを押す
           p Multiモードでは、ディスプレイ上段に、現在選択されているPartが表示される
           p 1024個のサウンドプログラムの他に、128個のマルチプログラムが追加されている
-        h3.heading.switch
-          | マルチプログラムの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マルチプログラムの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist セレクションダイヤル
-        h3.heading.switch
-          | マルチプログラム全体の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マルチプログラム全体の設定")
           table
             tr
               td マルチボリューム
@@ -218,10 +168,7 @@ html(lang="ja")
                 | 最小：40
                 br
                 | 最大：300
-        h3.heading.switch
-          | マルチプログラムのパート選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マルチプログラムのパート選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -229,10 +176,7 @@ html(lang="ja")
                 | Playボタンを押しながらセレクションダイヤルで任意のパートを選択
                 br
                 | [ディスプレイ左上に現在選択されているパートが表示される]
-        h3.heading.switch
-          | マルチプログラムのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マルチプログラムのエディット")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -386,24 +330,15 @@ html(lang="ja")
                 | receive：入力されるプログラムチェンジメッセージを受信する
                 br
                 |  ignore：入力されるプログラムチェンジメッセージを無視する
-        h3.heading.switch
-          | レイヤーサウンドを作る
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レイヤーサウンドを作る")
           p
             | 例：2つのパートを有効にし、サウンドナンバーを含め、それぞれのパラメータを同じ設定にする
             br
             |  次に一方のインストゥルメントを1オクターブトランスポーズする
             br
             |  または、一方をDetune-05に、もう一方をdetune+5に設定する
-      h2.heading.switch
-        | オシレーター
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オシレーターパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("オシレーター")
+        +section3("オシレーターパラメーターコントロール")
           p Shape
           table
             tr
@@ -475,10 +410,7 @@ html(lang="ja")
             | 最小：0
             br
             | 最大127
-        h3.heading.switch
-          | オシレーターエディットメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オシレーターエディットメニュー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -562,10 +494,7 @@ html(lang="ja")
                 |                   on：オシレーターシンク有効
                 br
                 |                   off：オシレーターシンク無効
-        h3.heading.switch
-          | オシレーターコモン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オシレーターコモン")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -636,14 +565,8 @@ html(lang="ja")
             tr
               td Pitch Amount
               td 全オシレーターのピッチモジュレーションの度合いを設定
-      h2.heading.switch
-        | リングモジュレーション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | リングモジュレーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("リングモジュレーション")
+        +section3("リングモジュレーション")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -665,14 +588,8 @@ html(lang="ja")
                 br
                 | middleは同等
                 |                    F2 63の場合はFilter2のみに送られる
-      h2.heading.switch
-        | ノイズ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ノイズ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ノイズ")
+        +section3("ノイズ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -704,14 +621,8 @@ html(lang="ja")
                 | +で低周波が加わっていく
                 br
                 | -で高周波成分が除去されていく
-      h2.heading.switch
-        | フィルター
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | フィルターセクションパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("フィルター")
+        +section3("フィルターセクションパラメーターコントロール")
           p Cutoff
           table
             tr
@@ -767,10 +678,7 @@ html(lang="ja")
               td 24dBスロープのレゾナンスローパスフィルター
           p Env Amount
           p カットオフ周波数のフィルターエンベロープのかかり具合の設定
-        h3.heading.switch
-          | フィルターエディットメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルターエディットメニュー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -846,10 +754,7 @@ html(lang="ja")
             tr
               td Pan Amount
               td 任意のフィルターに対してパンニングモジュレーションのかかり具合を設定
-        h3.heading.switch
-          | フィルターコモン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルターコモン")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -867,14 +772,8 @@ html(lang="ja")
             |            parallel、serialに切り替え可能
             br
             |        パンニングユニットを通った後は2つの信号はミックスされ、Amplifierセクション、FXセクションに送られる
-      h2.heading.switch
-        | Envelope
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Filter、およびAmp Envelopeのパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Envelope")
+        +section3("Filter、およびAmp Envelopeのパラメーターコントロール")
           p
             | エンベロープのRate、Timeモジュレーションでサウンドパラメーターを設定可能
             br
@@ -903,10 +802,7 @@ html(lang="ja")
             tr
               td Release
               td 設定値0～127
-        h3.heading.switch
-          | Envelope Edit Menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Envelope Edit Menu")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1023,14 +919,8 @@ html(lang="ja")
             tr
               td Release
               td 設定値：0～127
-      h2.heading.switch
-        | LFO
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | LFOのパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("LFO")
+        +section3("LFOのパラメーターコントロール")
           p
             | LFO1/2はパラメーターコントロールからエディット
             br
@@ -1084,10 +974,7 @@ html(lang="ja")
                 |             LFO　ClockedパラメータがOnのとき、speedを音楽的な値で調整可能
                 br
                 | 設定値：1280bar～1/48
-        h3.heading.switch
-          | LFO Edit Menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFO Edit Menu")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1165,14 +1052,8 @@ html(lang="ja")
             tr
               td Fade
               td LFOがフェードイン/フェードアウトするスピードを設定
-      h2.heading.switch
-        | モジュレーション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | モジュレーションマトリクスのパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("モジュレーション")
+        +section3("モジュレーションマトリクスのパラメーターコントロール")
           table
             tr
               td Select
@@ -1192,10 +1073,7 @@ html(lang="ja")
             tr
               td Destination
               td
-        h3.heading.switch
-          | モジュレーションマトリクスエディットメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーションマトリクスエディットメニュー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1267,14 +1145,8 @@ html(lang="ja")
             tr
               td MAX
               td Maximum value
-      h2.heading.switch
-        | Amp
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Amplifier Edit Menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Amp")
+        +section3("Amplifier Edit Menu")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1305,14 +1177,8 @@ html(lang="ja")
                 | ボリュームモジュレーションの量を設定
                 br
                 | 設定値0～127
-      h2.heading.switch
-        | エフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エフェクトのパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクト")
+        +section3("エフェクトのパラメーターコントロール")
           p
             | blofeldには2つのエフェクトユニットが搭載されている
             br
@@ -1333,10 +1199,7 @@ html(lang="ja")
             tr
               td Mix 2
               td Mix 1と同様
-        h3.heading.switch
-          | Effect Edit Menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Effect Edit Menu")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1681,19 +1544,10 @@ html(lang="ja")
                 | ルームシミュレーションのリバーブ高周波成分をカットするタイミングの設定
                 br
                 | 設定値0～127
-      h2.heading.switch
-        | Arpeggiator
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Arpeggiator
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Arpeggiator")
+        +section3("Arpeggiator")
           p 最大16個のノートを保存できるノートリストが搭載されている
-        h3.heading.switch
-          | アルペジエーターの停止
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アルペジエーターの停止")
           p
             | アルペジエーターの停止
             br
@@ -1702,10 +1556,7 @@ html(lang="ja")
             |                     方法2.Modeをoff/on/One Shotに設定する
             br
             |                     方法3.シーケンサーからAll Note Offメッセージを送信
-        h3.heading.switch
-          | アルペジエーターのパラメーターコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アルペジエーターのパラメーターコントロール")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1811,10 +1662,7 @@ html(lang="ja")
                 |     off：ノートリストはリスタートされない
                 br
                 |     on：ノートリストがリスタートする
-        h3.heading.switch
-          | Arpeggiator Step Data Pages
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Arpeggiator Step Data Pages")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1868,14 +1716,8 @@ html(lang="ja")
                 | 特定のステップのノートレングスを変更
                 br
                 |                設定値：legato/-3～+3
-      h2.heading.switch
-        | Global Parameter
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Global Menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Global Parameter")
+        +section3("Global Menu")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1971,10 +1813,7 @@ html(lang="ja")
                   |                設定にはY,X,Y,Zの4つのコントロールを使う
                   br
                   |                設定値：0～120
-        h3.heading.switch
-          | MIDI Dump Functions
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI Dump Functions")
           p ダンプ機能で、メモリの内容をMIDI(受信のみ)、USB(送受信)でやりとりする
           p Playモードでダンプ有効
           .contentOperationBox
@@ -2004,10 +1843,7 @@ html(lang="ja")
                 br
                 |                     Dump All Multis：全マルチプログラムを送信
               li.contentOperationOrderlist Shift+Utilityでダンプ実行
-        h3.heading.switch
-          | システムエクスクルーシブの受信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("システムエクスクルーシブの受信")
           p
             | システムエクスクルーシブの受信時の注意事項
             br
@@ -2016,14 +1852,8 @@ html(lang="ja")
             |             Device IDの送信側と受信側の設定があっていることを確認
             br
             |             受信したサウンドプログラムはバッファに保存されるので、電源を切る前に保存が必要
-      h2.heading.switch
-        | 情報
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Wavetableのリスト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("情報")
+        +section3("Wavetableのリスト")
           table
             tr
               th No.
@@ -2232,10 +2062,7 @@ html(lang="ja")
             tr
               td 68
               td UpperWaves
-        h3.heading.switch
-          | FM Source
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FM Source")
           table
             tr
               th FM Source
@@ -2276,10 +2103,7 @@ html(lang="ja")
             tr
               td Env4
               td Envelope 4 Signal
-        h3.heading.switch
-          | Modulation Source
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Modulation Source")
           table
             tr
               th Modulation Source
@@ -2359,10 +2183,7 @@ html(lang="ja")
             tr
               td MAXIMUM
               td constant for minimum modulation(equals +1)
-        h3.heading.switch
-          | Modulation Destinations
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Modulation Destinations")
           table
             tr
               th Modulation Destinations
@@ -2478,10 +2299,7 @@ html(lang="ja")
             tr
               td M4 Amount
               td Modulation amount of M4
-        h3.heading.switch
-          | Controller Numbers
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Controller Numbers")
           .tableScroll
             table
               tr

@@ -1,21 +1,16 @@
 - var pagename='2-pole|spindey.com'
 - var description='Waldorfの2-poleのマニュアルです。'
 - var keywords='2-pole,Waldorf'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading 2-pole
     main.equipmentMain
-      h2.heading.switch
-        | 2-poleのユースケース
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("2-poleのユースケース")
 
-        h3.heading.switch
-          | Overdrive
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Overdrive")
           table
             tr
               td セッティング
@@ -39,10 +34,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Noise / Reverb Gate
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Noise / Reverb Gate")
           table
             tr
               td セッティング
@@ -70,10 +62,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Multimode Filter
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Multimode Filter")
           table
             tr
               td セッティング
@@ -97,10 +86,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sidechain Dynamic Processor
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sidechain Dynamic Processor")
           table
             tr
               td セッティング
@@ -125,10 +111,7 @@ html(lang="ja")
                   li サイドチェインはHP(ハイパス)でも使用できる
 
 
-        h3.heading.switch
-          | Beat Slicer
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Beat Slicer")
           table
             tr
               td セッティング
@@ -153,10 +136,7 @@ html(lang="ja")
                   li スライスはLP(ローパス)フィルタリングでも実行可能
 
 
-        h3.heading.switch
-          | Wave Crusher
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Wave Crusher")
           table
             tr
               td セッティング
@@ -183,10 +163,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Auto-Filter
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Auto-Filter")
           table
             tr
               td セッティング
@@ -213,10 +190,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Analog Kick
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Analog Kick")
           table
             tr
               td セッティング
@@ -243,10 +217,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Auto Wah-Wah
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Auto Wah-Wah")
           table
             tr
               td セッティング
@@ -278,14 +249,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Basic Operation
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Basic Operation
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Basic Operation")
+        +section3("Basic Operation")
           table
             tr
               td Powering On / Off
@@ -330,14 +295,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 2-pole Parameters
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Activate Switch
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("2-pole Parameters")
+        +section3("Activate Switch")
           table
             tr
               td ●(active)
@@ -347,10 +306,7 @@ html(lang="ja")
               td 完全な信号パスが実際にバイパスされ、クリーンで未処理の信号が得られる
 
 
-        h3.heading.switch
-          | Amplifier Section
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Amplifier Section")
           p 歪みのないクリーンな信号を得るには、Gainを適切なレベルに調整する必要がある
           p input gainの範囲は0dB〜30 dBなので、さまざまな入力レベルを処理できる
           p Gainの上のLEDインジケータは、オーディオ信号が存在する場合は常に表示される
@@ -367,10 +323,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Filter Section
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Filter Section")
           p 2-poleはrectifierとsaturationを備えたmultimode filterを提供する
             br
             | 信号のパス: Rectifier -> Filter -> Saturation
@@ -453,10 +406,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Envelope Section
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Envelope Section")
 
           p 2-pole Filterは様々なソースからトリガーできるエンベロープを提供する
 
@@ -558,10 +508,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | LFO Section
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFO Section")
           p 2-pole Filterにはカットオフ変調に使用できる低周波発振器(LFO)が装備されている
             br
             | LFOは、周波数と深さを調整できる周期的な三角波を生成する

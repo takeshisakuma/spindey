@@ -1,20 +1,15 @@
 - var pagename='製品名|spindey.com'
 - var description='社名の製品名のマニュアルです。'
 - var keywords='製品名,社名'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading 製品名
     main.equipmentMain
-      h2.heading.switch
-        | aa
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | aa
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("aa")
+        +section3("aa")
           table
             tr
               td aaa
@@ -32,10 +27,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 4
                 li.contentOperationOrderlist 5
 
-        h3.heading.switch
-          | aa
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("aa")
           table
             tr
               td aaa

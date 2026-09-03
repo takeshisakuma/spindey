@@ -1,6 +1,7 @@
 - var pagename='Beatstep|spindey.com'
 - var description='ArturiaのBeatstepのマニュアルです。'
 - var keywords='Beatstep,Arturia'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -18,20 +19,14 @@ html(lang="ja")
 
 
     main.equipmentMain
-      h2.heading.switch
-        | 基本的な情報
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("基本的な情報")
 
 
 
 
 
 
-        h3.heading.switch
-          | モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モード")
           p トップパネルにある17個のエンコーダーと16個のパッドは、選択したモードによって2つの主な機能がある
 
           p 使用中のモードは、パッドや、CNTRL/SEQボタンの色で表示される
@@ -51,10 +46,7 @@ html(lang="ja")
                 li.contentOperationOrderlist CNTRL/SEQボタン
 
 
-        h3.heading.switch
-          | フロントパネル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フロントパネル")
           .tableScroll
             table
               tr
@@ -161,10 +153,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サイドパネル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サイドパネル")
           table
             tr
               td Gate/CVアウトプット
@@ -181,10 +170,7 @@ html(lang="ja")
                 | BeatStepは、コンピューターが無くてもコントローラーのプリセットとシーケンスを使用することができ、汎用のUSB充電器によって使用することも可能
 
 
-        h3.heading.switch
-          | フルリセット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フルリセット")
 
           p パッドキャリブレーションを含むすべてのデータをデフォルトに戻す
           div.contentOperationBox
@@ -198,45 +184,27 @@ html(lang="ja")
 
 
     main.equipmentMain
-      h2.heading.switch
-        | 外部機器との接続
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("外部機器との接続")
 
-        h3.heading.switch
-          | コンピューターとBeatStepを接続して使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンピューターとBeatStepを接続して使用する")
           p もっとも基本的な使用例は、BeatStepは、USB規格に準拠しているので、USBポートのあるコンピューターと接続をし、様々なアプリケーションの入力デバイスとして使用する事ができる
             br
             | ArturiaのMIDIコントロールセンター・ユーティリティは、BeatStepのエンコーダーとパッドが送信するMIDIコマンドを定義するために使用することができる
 
-        h3.heading.switch
-          | MIDIやCV/GATEプロダクトとBeatStepを接続して使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIやCV/GATEプロダクトとBeatStepを接続して使用する")
           p BeatStepは、データを送受信することができ、コンピューターのUSBポートからのバスパワーで動作する
             br
             | コントロール情報は、BeatStepのMIDIポートとCV/GATEコネクターから他のデバイスに送信することも可能
 
-        h3.heading.switch
-          | iPadと接続する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("iPadと接続する")
           p カメラコネクション・キットを使用することでiPadの入力デバイスとしても使用できるようになる
-        h3.heading.switch
-          | グローバル MIDI チャンネルを変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グローバル MIDI チャンネルを変更する")
           p CHANボタンとBeatStep のパッドの1つを組み合わせて切り替えを行う
 
           p 例：BeatStepのグローバル・チャンネルをチャンネル2に切り替えたい場合、"CHAN"ボタンとパッド2を押す
           p 例：BeatStepのグローバル・チャンネルをチャンネル1に切り替えたい場合、"CHAN"ボタンとパッド1を押す
 
-        h3.heading.switch
-          | シーケンサー・チャンネル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンサー・チャンネル")
 
 
           p デフォルトでは、グローバル MIDI チャンネルとシーケンサー・チャンネルは同じ値に設定されている(MIDIチャンネル 1)
@@ -245,14 +213,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | プリセット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | デフォルトのプリセット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プリセット")
+        +section3("デフォルトのプリセット")
           p プリセットとシーケンスは、「白紙状態」のセッティングを提供し、クリエイティブな設定の出発点となるようデフォルトから始めることができる
 
 
@@ -287,10 +249,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プリセット、シーケンスのリコール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プリセット、シーケンスのリコール")
           p いくつかプリセットを作成した後に、パーソナライズしたプリセットのセッティングを素早く切り替えることができるようになる
 
 
@@ -304,10 +263,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 同じCNTRLプリセットを使用しながら異なるシーケンスを選択する場合、CNTRL/SEQボタンを押してSEQモードに入ってからCNTRLプリセットを選択した時と同じ操作を行う
                 li.contentOperationOrderlist RECALLを押しながら必要なパッドの1つを押す
 
-        h3.heading.switch
-          | プリセット、シーケンスの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プリセット、シーケンスの保存")
           p MIDI コントロールセンターを使用せずにほぼすべてのコントロールのMIDI設定を変更することはできず、CNTRLモードでSTOREボタンを使用する主な要因としては、最終段階での設定の変更やそのような類いの場面でプリセットを再び呼び出す場合が考えられる
 
           p SEQモードでは、MIDI コントロールセンター・ソフトウェアを使用せずにほとんどすべての変更を行うことができる
@@ -331,10 +287,7 @@ html(lang="ja")
 
           p この手順は、BeatStepのフロントパネルから操作される時、プリセットとシーケンスは、別々に記憶され、呼び出されるので両方の項目を編集した場合、両方を保存する必要がある
 
-        h3.heading.switch
-          | プリセットリセット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プリセットリセット")
 
           p パッドキャリブレーションを除くすべてのデータをデフォルトに戻す
 
@@ -345,17 +298,11 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | シーケンサーの操作
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("シーケンサーの操作")
 
 
 
-        h3.heading.switch
-          | ステップ・シーケンサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・シーケンサー")
           p CNTRL/SEQボタンでSEQモードを使用している場合、BeatStepは、ステップシーケンサーになる
           p パッドやエンコーダーは、シーケンスを構築するために使用するコントロールと入力デバイスとなる
           p 1度に1つの音を出力する
@@ -381,10 +328,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ピッチのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ピッチのエディット")
           p エンコーダーを使用してピッチのエディットができる
           table
             tr
@@ -407,10 +351,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンスステップのオン/オフ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスステップのオン/オフ")
           p パッドを使用してシーケンスステップのオン/オフを決定する
           table
             tr
@@ -430,10 +371,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パターン・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・モード")
 
           p パッドの下の行の最初の4つは、SHIFTボタンと組み合わせてパターン・モード(再生方向)を選択することができる
             br
@@ -460,10 +398,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ステップサイズ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップサイズ")
 
           p 使用中のシーケンスのプレーバック・レートを2倍、または1/2にする
           p タイムベースと呼ばれることもある
@@ -492,10 +427,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スウィング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スウィング")
 
 
           p スウィングの設定はペアの最初の音符を長くし、2番目の音符を短くし、シーケンスのノートのタイミングをシフトすることができる
@@ -521,10 +453,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ゲートタイム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ゲートタイム")
           p レガート・パラメーターをオフに設定すると、リズムの関係性を変更することなく、シーケンスステップのすべてのノートの長さを調節することが可能
           p パラメーターの範囲は、50％(変更なし)～99％(最大値)
             br
@@ -538,10 +467,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パターンレングス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンレングス")
 
 
           p パターンレングスは、1ステップから16ステップまでの間で設定可能(デフォルトは、16ステップ)
@@ -557,10 +483,7 @@ html(lang="ja")
 
           p BeatStepのフロントパネルからアクセスできないシーケンス機能はMIDIコントロールセンター内でのみエディット可能
 
-        h3.heading.switch
-          | レガート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レガート")
 
           p レガートする音符の間にスペースを空けず、スムーズに演奏する
           p 技術的には、MIDIノートでのレガートを表現する際、実際には2つの音符がオーバーラップすることを意味する
@@ -595,10 +518,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パラメーターを直接設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメーターを直接設定")
           table
             tr
               td SEQモードでShift+ノブ1
@@ -615,10 +535,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オールノートオフ・コマンド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オールノートオフ・コマンド")
           p デバイスがスタック、またはハングした時に音を出したままになった場合に有効
 
 
@@ -636,15 +553,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | スケール
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("スケール")
 
-        h3.heading.switch
-          | スケール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スケール")
 
           p BeatStepのフロントパネルでは、8個の入力スケールの中から 1 つをエンコーダーに割り当てることができる
           p スケールとは望ましい音程を素早く選択するための一種のフィルター
@@ -672,10 +583,7 @@ html(lang="ja")
             | 変更してもすでに選んでいる音に影響を与えることはない
 
 
-        h3.heading.switch
-          | スケールタイプ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スケールタイプ")
           p 上の行の8個のパッドの下には入力スケールの名前が印刷されている
             br
             | 選択するには、SHIFTボタンを押しながらその内の1つのパッドを押す
@@ -718,10 +626,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンスのルート音の決定方法
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスのルート音の決定方法")
           ol
             li シーケンサーのステップのために選択された音
             li MIDI コントロールセンター内の値をエディットするか SHIFT ボタンを押しながら、大きなエンコーダーを回すか、どちらかの方法によって全体のトランスポーズ・パラメーターの設定を変更
@@ -735,15 +640,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 同期
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("同期")
 
-        h3.heading.switch
-          | 同期(シンクロナイゼーション)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("同期(シンクロナイゼーション)")
 
 
           p BeatStep全体をMIDI機材のマスタークロックにすることも、またはUSBによってコンピューターから送られるMIDIタイミングのスレーブとしても機能することができる
@@ -758,10 +657,7 @@ html(lang="ja")
                 li.contentOperationOrderlist EXT SYNCボタン
 
 
-        h3.heading.switch
-          | マスター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マスター")
           p EXT SYNCボタンが点灯していない場合、beatStepはマスターとして動作している
           ul
             li START/STOPボタンを使用して直接内蔵のシーケンサーをコントロールすることができる
@@ -769,10 +665,7 @@ html(lang="ja")
             li シーケンサー・モードで、テンポの設定はビッグノブを使用して行う(Shiftは使用しない)
 
 
-        h3.heading.switch
-          | スレーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スレーブ")
           p BeatStep のEXT SYNCボタンが点灯している時は、外部のUSB MIDIクロックのスレーブとして機能している
           ul
             li PLAY/STOP ボタンは、内部シーケンサーをコントロールしていない(マスタークロックのトランスポート・セクションが行う)
@@ -785,14 +678,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | CV/GATE、MIDI インターフェイスとして使用
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | USBとMIDI出力ポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("CV/GATE、MIDI インターフェイスとして使用")
+        +section3("USBとMIDI出力ポート")
           p BeatStep は、そのコントロールからほとんどのMIDIデータをも送ることができ、USBとMIDI出力端子からデータを送信することができる
           p コンピューターのMIDI出力から受け取るMIDIデータをスルーさせることも可能
           ul
@@ -813,10 +700,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 3種類の接続方法
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("3種類の接続方法")
           p BeatStepは、USB、MIDI 出力、CV/Gateの3種類の接続が可能
           p フロントパネルで、グローバルMIDIチャンネルを設定することができ、デフォルトでは、BeatStepが生成するすべてのものは、そのチャンネル上で送信される
           p MIDIコントロールセンターは、シーケンサーと CV/GATE 端子に独立したMIDI チャンネルを割り当てることができる
@@ -830,10 +714,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンサーのチャンネル設定(MIDI コントロールセンターのみ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンサーのチャンネル設定(MIDI コントロールセンターのみ)")
           table
             tr
               td グローバルチャンネル・パラメーター
@@ -850,10 +731,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | CV/Gate信号のためのソースを選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("CV/Gate信号のためのソースを選択")
 
 
           p パッドとシーケンサーは、簡単にCV/GATE 信号に変換することができ、それらを接続したデバイスに送信することができる情報を生成する
@@ -882,10 +760,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | CV/Gate のチャンネル設定(MIDI コントロールセンターのみ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("CV/Gate のチャンネル設定(MIDI コントロールセンターのみ)")
 
 
           p グローバルチャンネル・パラメーターは、使用可能な16(各 MIDIチャンネルごとに1つ)の設定があるが、CV/GATE チャンネルパラメーターは、17 の設定がある
@@ -896,10 +771,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | BeatStep CV/Gate のスペック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BeatStep CV/Gate のスペック")
           p 一部のアナログ・シンセサイザーがBeatStepの CV/GATE 信号を完全な互換性がない場合がある
           p CV/Gate 端子から送信される電気信号は以下
             ul
@@ -910,14 +782,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | デフォルトセッティング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | トランスポート・ボタン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("デフォルトセッティング")
+        +section3("トランスポート・ボタン")
 
 
           p トランスポート・ボタン
@@ -941,10 +807,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | CNTRL モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("CNTRL モード")
 
           table
             tr

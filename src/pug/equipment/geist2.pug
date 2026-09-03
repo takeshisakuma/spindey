@@ -1,20 +1,15 @@
 - var pagename='Geist2|spindey.com'
 - var description='fxpansionのGeist2のマニュアルです。'
 - var keywords='Geist2,fxpansion'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading Geist2
     main.equipmentMain
-      h2.heading.switch
-        | Geist2の概要
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Geist2のアーキテクチャ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Geist2の概要")
+        +section3("Geist2のアーキテクチャ")
           table
             tr
               td レイヤー
@@ -42,10 +37,7 @@ html(lang="ja")
                 | エンジンは8つ
                 br
                 |         各エンジンは64のパッドと24のパターンを備える
-        h3.heading.switch
-          | パターンを配置するための機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンを配置するための機能")
           table
             tr
               td シーン
@@ -59,14 +51,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Geist2のインターフェース
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ブラウザ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Geist2のインターフェース")
+        +section3("ブラウザ")
 
 
           p
@@ -109,10 +95,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pads and Pad mode controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pads and Pad mode controls")
           p
             | 画面上のパッドは、現在のエンジンのパッドを表す
             br
@@ -123,10 +106,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pattern memory keys
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pattern memory keys")
           p
             | パターンメモリキー、パターンキーは、現在のエンジンの24個のパターンを表し、選択する
             br
@@ -134,29 +114,20 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Engine selector
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Engine selector")
           p
             | エンジンセレクタボタンは、編集する8つのエンジンのいずれかを選択する
 
 
 
-        h3.heading.switch
-          | Pad Editor
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pad Editor")
           p
             | Pad Editorセクションは、現在のパッドとその8つのレイヤーの編集コントロールを提供する
 
 
 
 
-        h3.heading.switch
-          | Context-sensitive workspace area(状況依存ワークスペース領域)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Context-sensitive workspace area(状況依存ワークスペース領域)")
           p
             | ワークスペースの内容は、[page]ボタンによって決まる
             br
@@ -167,46 +138,31 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Page buttons
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Page buttons")
           p
             | [Pattern]、[Global Mixer]、[Pad Mixer]、[Layer Mixer]、[Scene]、[Song]、[Mapping]ボタンは、ワークスペース領域に表示されるページを制御する
 
 
 
-        h3.heading.switch
-          | Transport
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Transport")
           p トランスポートコントロールは、Geist2内のシーケンスに不可欠<br>
           | パターンを再生して実行するには、トランスポートが実行されている必要がある
 
 
-        h3.heading.switch
-          | Learn
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Learn")
           p
             | ラーンボタンは、Geist2コントロールをMIDIまたはホストオートメーションにマッピングするために使用される
 
 
 
-        h3.heading.switch
-          | Undo/Redo
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Undo/Redo")
           p
             | Geist2には、ほとんどすべてのブラウザーの読み込みアクションに適用される強力な複数レベルのUndo/Redoシステムが備わっている
             br
             | ワンクリックでサウンドとキットをロードできるため、既存のサウンドが誤って置き換えられた場合、元に戻す機能は非常に便利
 
 
-        h3.heading.switch
-          | Tempo
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tempo")
           p
             | Geist2がプラグインとして実行されている場合：ホストにロックされる
             br
@@ -214,10 +170,7 @@ html(lang="ja")
             br
             | スタンドアローンの場合2：タップテンポ機能で指定(ALTキーを押しながら、テンポコントロールを4回以上クリックする)
 
-        h3.heading.switch
-          | Menus
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Menus")
           p
             | [ファイル]メニューはファイルの保存/読み込みに使用される
             br
@@ -227,28 +180,19 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Preset/Kit indicator
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Preset/Kit indicator")
           p
             | このインジケーターは、最後にロードされたGeist2プリセットまたはキット、あるいはその両方の名前を表示する
 
 
 
-        h3.heading.switch
-          | Status display(状態表示)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Status display(状態表示)")
           p
             | ステータス表示セクションには、Geist2のサンプルで使用されているメモリ(RAM)の量、MIDI /オーディオエンジンのステータス、および音声スチールが発生したときのインジケータが含まれている
 
 
 
-        h3.heading.switch
-          | Master Gain
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Master Gain")
           p
             | マスターゲインコントロールは、マスターチャンネルのゲインを調整します。
             br
@@ -264,14 +208,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 編集する要素を選択する
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エンジンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("編集する要素を選択する")
+        +section3("エンジンの選択")
           p
             | 一度に編集できるのは、8つのエンジンのうち1つだけ
             br
@@ -280,10 +218,7 @@ html(lang="ja")
             | Geist2インターフェイスの上部にあるエンジンセレクターの8つのボタンのいずれかをクリックして、編集するエンジンを選択する(Geist2の初期化時にエンジン1が選択される)
             br
             | [GLOBAL MIXER]ページを使用して、エンジンチャネルをクリックしてエンジンを選択することもできる
-        h3.heading.switch
-          | パッドの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドの選択")
           p
             | 「選択されたパッド」の概念は、ブラウザでシングル/ダブルクリックプロセスを使用してブラウザからサンプルをロードするときや、パッドエディタ、レイヤーミキサー、パッドミキサーを使用するときなど、Geist2の多くの状況で使用される
           ul
@@ -297,17 +232,11 @@ html(lang="ja")
             | 通常、16パッドの4つのバンクの1つが表示される
             br
             | すべてのパッドを表示するには、[All]ボタンをクリックする
-        h3.heading.switch
-          | レイヤーの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レイヤーの選択")
           p
             | パッドエディターとレイヤーミキサーでは、サウンドデザインとエフェクトのパラメーターを編集するためにレイヤーを選択する必要がある
 
-        h3.heading.switch
-          | パターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの選択")
           p
             | 8つのエンジンにはそれぞれ24個のパターンが含まれており、それぞれパターンメモリキーで表される
           p
@@ -324,14 +253,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 制御規約(Control conventions)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ロータリー/スライダーコントロールの調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("制御規約(Control conventions)")
+        +section3("ロータリー/スライダーコントロールの調整")
           ul
             li
               | ロータリーとスライダーのコントロールは、クリックして上下にドラッグして調整する
@@ -348,10 +271,7 @@ html(lang="ja")
               | コンピューターのキーボードで値を直接編集する
           p
             | Geist2の多くのロータリー/スライダーコントロールは、TransMod変調システムで変調できる
-        h3.heading.switch
-          | 数値
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("数値")
           table
             tr
               td 値を手動で入力
@@ -366,28 +286,19 @@ html(lang="ja")
               td 値が2倍または半分
               td Altキーを押しながらクリック
 
-        h3.heading.switch
-          |ドロップダウンメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドロップダウンメニュー")
           p
             | ドロップダウンメニューは、機能の多くの設定から選択するためにGeist2全体で広く使用されています。
             br
             | このマニュアルでは、これらを単に「メニュー」と呼ぶことがよくあります。
-        h3.heading.switch
-          | コンテキストメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンテキストメニュー")
           p
             | Geist2には、インターフェイスの関連領域を右クリックして表示されるコンテキストメニューの多くの追加機能が含まれている
             br
             | このマニュアルでは、さまざまなコンテキストメニューが完全に文書化されている
             br
             | シングルボタンマウスを使用している場合は、Ctrlキーを押しながらクリックして、コンテキストメニューを表示する
-        h3.heading.switch
-          | ツールチップ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ツールチップ")
           p
             | ツールチップは、Geist2でパラメーター値およびその他の有用な情報を表示するために使用される
             br
@@ -396,20 +307,14 @@ html(lang="ja")
             | コントロールの調整中にツールチップが表示され、値がリアルタイムで更新される
 
 
-        h3.heading.switch
-          | ユーザーインターフェイスのスケーリング、サイズ、およびパネルの再構成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ユーザーインターフェイスのスケーリング、サイズ、およびパネルの再構成")
           p
             | Geist2のインターフェイスはベクターベースであり、スケーリングおよびサイズ変更できる
             br
             | さらに、パネル内のさまざまなパネルは、パネル間の仕切りを使用して再構成できる
 
 
-        h3.heading.switch
-          | UIスケーリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("UIスケーリング")
           p
             | プリファレンスの中のこのメニュー(ツールメニューの中のプリファレンス機能使う場合)はユーザーインターフェースのスケーリングを調整する
             br
@@ -420,18 +325,12 @@ html(lang="ja")
             | Retina/4k以上の解像度の画面ではより高い設定を推奨
 
 
-        h3.heading.switch
-          | UIウィンドウのリサイズ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("UIウィンドウのリサイズ")
           p Geist2ウィンドウの端をクリック/ドラッグして、必要に応じてサイズを変更する
 
 
 
-        h3.heading.switch
-          | パネルの再構成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パネルの再構成")
           p
             | パネル領域間の仕切りは、クリックしてドラッグするか、ダブルクリックして表示を切り替えることで調整できる
             br
@@ -449,14 +348,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サウンドをロードする
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 自動ロードモードでの作業
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サウンドをロードする")
+        +section3("自動ロードモードでの作業")
           p
             | 自動ロードボタン(インターフェース上でA Loadとラベル付けされています)をアクティブにする
             br
@@ -501,10 +394,7 @@ html(lang="ja")
                   | 自動ロード機能により望ましくない変更が発生した場合、マルチステージの元に戻すおよびやり直し機能を使用して以前の状態に戻すことができる
 
 
-        h3.heading.switch
-          | パッドを新しいサウンドに置き換える
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドを新しいサウンドに置き換える")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -515,10 +405,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 1つのパッドに複数のサウンドを重ねる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("1つのパッドに複数のサウンドを重ねる")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -536,10 +423,7 @@ html(lang="ja")
             | パッドのレイヤー再生モードをすべてのレイヤーのデフォルト設定から変更することにより、そのレイヤーは入力速度に応じて再生する(ヴェロシティ分割)か、「ラウンドロビン」または「ランダムな順序」で循環するように設定できる
 
 
-        h3.heading.switch
-          | プリセットをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プリセットをロードする")
           p
             | Geist2プリセット(「フルプリセット」とも呼ばれる)には、Geist2セッションのコンテンツ全体が保存される
             br
@@ -560,14 +444,8 @@ html(lang="ja")
                 li.contentOperationOrderlist プリセットのロード後にトランスポートの[再生/停止]ボタンをクリックするか、Geist2をプラグインとして実行している場合はホスト/ DAWトランスポートを開始する
 
 
-      h2.heading.switch
-        | パッドを演奏してパターンを録音する
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Geist2 MIDIノートとチャンネル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パッドを演奏してパターンを録音する")
+        +section3("Geist2 MIDIノートとチャンネル")
           p
             | Geist2はマルチティンバー楽器です。
             br
@@ -583,10 +461,7 @@ html(lang="ja")
             br
             | チャネル9は、現在選択されているエンジンに使用されます。
 
-        h3.heading.switch
-          | Channels 1-9: Engine pads and patterns
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Channels 1-9: Engine pads and patterns")
           p
             | Channels 1-8: Engines 1-8
             br
@@ -869,10 +744,7 @@ html(lang="ja")
             | Geist2が応答する他のいくつかのMIDIチャンネルもあります。:
 
 
-        h3.heading.switch
-          | Channel 11: Scenes
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Channel 11: Scenes")
 
           table
             tr
@@ -1069,10 +941,7 @@ html(lang="ja")
               td Scene64
 
 
-        h3.heading.switch
-          | Channel 16: Current engine and scenes 53-64
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Channel 16: Current engine and scenes 53-64")
 
           table
             tr
@@ -1232,10 +1101,7 @@ html(lang="ja")
               td B3
               td Scene64
 
-        h3.heading.switch
-          | Channel 10: Pads 1-16 on all 8 engines
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Channel 10: Pads 1-16 on all 8 engines")
 
 
           table
@@ -1625,10 +1491,7 @@ html(lang="ja")
               td Engin8:pad16
 
 
-        h3.heading.switch
-          | リアルタイムパッドトリガー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リアルタイムパッドトリガー")
           p
             | ブラウザの下に表示されるパッドは、現在選択されているエンジンのパッドを表す
           table
@@ -1639,10 +1502,7 @@ html(lang="ja")
               td Geist2インターフェースの画面上のパッドをクリック
               td 再生の正確なタイミング応答できない(編集中のクイックプレビューを目的)
 
-        h3.heading.switch
-          | パターンへのパッドトリガーのシーケンス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンへのパッドトリガーのシーケンス")
           p
             | 再生中のパッドのステップベースのシーケンスを記録できる
             br
@@ -1651,10 +1511,7 @@ html(lang="ja")
             | パターンは、Geist2インターフェイスのマウスを使用してプログラムおよび編集することもできる
 
 
-        h3.heading.switch
-          | Geist2のステップシーケンスパラダイムの紹介
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Geist2のステップシーケンスパラダイムの紹介")
           p
             | シーケンスシステムは、本質的に、ステップとステップ長のパラメーターで定義された設定グリッドに基づいています。
             br
@@ -1675,10 +1532,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDI経由でイベントをパターンに記録する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI経由でイベントをパターンに記録する")
           p
             | エンジンのパッドのレイヤーにいくつかのサウンドをロードした後、リアルタイムでパターンイベントを記録する
 
@@ -1714,10 +1568,7 @@ html(lang="ja")
                   |       負の値(中心線より下)により、イベントはステップの開始よりも早く再生されます。
 
 
-        h3.heading.switch
-          | パターンのプログラミングと編集
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのプログラミングと編集")
           p
             | Geist2のパターンは、マウスでプログラム/編集することもできる
           ul
@@ -1729,10 +1580,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パッドモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドモード")
 
           table
             tr
@@ -1834,14 +1682,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.4 ループのスライス
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 1.4 ループのスライス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.4 ループのスライス")
+        +section3("1.4 ループのスライス")
           p
             | Geist2には、ブラウザの拡張機能と見なすことができるスライサーパネルがある
             br
@@ -1875,14 +1717,8 @@ html(lang="ja")
                   br
                   | 何も読み込まずにスライサーパネルを終了するには、[キャンセル]をクリックする
 
-      h2.heading.switch
-        | 1.5 サウンドの読み込みと作業の保存の詳細
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 自動ロードモードを使用してコンテキストをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.5 サウンドの読み込みと作業の保存の詳細")
+        +section3("自動ロードモードを使用してコンテキストをロードする")
 
 
           div.contentOperationBox
@@ -1912,10 +1748,7 @@ html(lang="ja")
                   br
                   | その中のパターンは、エンジンの既存の24個のパターンを置き換えます。
 
-        h3.heading.switch
-          | 自動ロードが無効化された状態での作業
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("自動ロードが無効化された状態での作業")
             | [自動読み込み]ボタンが無効になっている場合、読み込み可能な要素をクリックしても自動的には読み込まれない
             br
             | 代わりに、要素はダブルクリックまたはドラッグアンドドロップを使用して読み込まれる
@@ -1928,10 +1761,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 自動ロードを無効にしてダブルクリックしてロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("自動ロードを無効にしてダブルクリックしてロードする")
 
 
 
@@ -1957,10 +1787,7 @@ html(lang="ja")
                       | プレビュー(自動または手動)は、プレビュー再生ボタンを無効にすることにより、アクティブなときに停止できる
 
 
-        h3.heading.switch
-          | 自動ロードを無効にしたドラッグ＆ドロップを使用したロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("自動ロードを無効にしたドラッグ＆ドロップを使用したロード")
           p
             | サンプル、パッド、キット、パターン/パターンバンクをドラッグアンドドロップしながら、他のエンジンセレクタボタンにカーソルを合わせて、現在選択されているエンジンを切り替える
             br
@@ -1994,10 +1821,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | その他のブラウザ機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("その他のブラウザ機能")
           p
             | ブラウザには、検索、お気に入り、ショートリストなどの多くの機能が含まれており、できるだけ簡単かつ迅速にサウンドを見つけることができる
             br
@@ -2026,14 +1850,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.6 サウンドの編集と変調
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サウンドの編集と変調
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.6 サウンドの編集と変調")
+        +section3("サウンドの編集と変調")
           p
             | パッドエディターには、現在選択されているパッドとその8つのレイヤーそれぞれのサウンドと再生特性を変更するためのパラメーターを編集するための多数のコントロールがある
             br
@@ -2114,10 +1932,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 複数の編集ショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("複数の編集ショートカット")
           p
             | レイヤーとパッドの編集ショートカットは、複数のレイヤー/パッドを同時に編集できるようにするために提供されています(ロックされていない場合)。
             br
@@ -2160,10 +1975,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | TransModシステムでサウンドを変調する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TransModシステムでサウンドを変調する")
           p
             | TransMod変調では、現在の変調ソースを(さまざまな利用可能なソースから)選択し、変調可能なGeist2コントロールに変調量を直接描画します。
             br
@@ -2207,14 +2019,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.7 ミキサーページとエフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ミキサーページとエフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.7 ミキサーページとエフェクト")
+        +section3("ミキサーページとエフェクト")
           p Geist2には、チャンネルベースのレイアウトと次のエフェクト処理を提供する3つの独立したミキサーページがあります。:
           table
             tr
@@ -2228,10 +2034,7 @@ html(lang="ja")
               td 現在のパッドのレイヤー
 
 
-        h3.heading.switch
-          | パッドミキサーページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドミキサーページ")
           p
             | パッドミキサーページには、現在エンジンに指定されているパッドの数と同じ数のチャンネルが表示されます。
             br
@@ -2247,10 +2050,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 重要なパッドミキサーコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("重要なパッドミキサーコントロール")
           table
             tr
               td
@@ -2271,10 +2071,7 @@ html(lang="ja")
                 | このインジケータは、チャネルの6つのエフェクトスロットのそれぞれがアクティブかどうかを示します。
 
 
-        h3.heading.switch
-          | レイヤーミキサーページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レイヤーミキサーページ")
           p
             | レイヤーミキサーページには8つのチャンネルが表示されます。
             br
@@ -2289,10 +2086,7 @@ html(lang="ja")
             |     レイヤーは、パッドミキサーをバイパスして、個別のサブ出力に設定することもできます。
 
 
-        h3.heading.switch
-          | グローバルミキサーページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グローバルミキサーページ")
           p
             | [グローバルミキサー]ページには、8つのエンジンすべて、4つのAuxチャンネル、およびマスターチャンネルが個別のミキサーチャンネルとして表示されます。
             br
@@ -2326,20 +2120,14 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 複数のチャンネルを編集する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("複数のチャンネルを編集する")
           p
             | 複数の要素のミックスパラメーターを同時に調整するには、複数のチャンネルを選択するか、レイヤー/パッドの複数の編集ショートカットを使用します。
             br
             |     エフェクトデバイスを挿入したり、複数のチャンネルで同時にパラメーターを調整したりすることはできません。
 
 
-        h3.heading.switch
-          | センド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("センド")
           p
             | センドは、パッドからAuxバスへの「パラレル」ルーティングです。
             br
@@ -2352,10 +2140,7 @@ html(lang="ja")
             |     グローバルミキサーのAuxチャンネル自体には送信機能がないことに注意してください。
 
 
-        h3.heading.switch
-          | エフェクトスロット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトスロット")
           p
             | 各パッドには、エフェクトデバイスをロードするための6つの割り当て可能なエフェクトスロットがあります。
             br
@@ -2366,10 +2151,7 @@ html(lang="ja")
             li
               | 必要な垂直領域が使用できない場合は、[エフェクト]ボタンをクリックして、ミキサーチャンネルの代わりに現在のチャンネルのエフェクトスロットを表示します。
 
-        h3.heading.switch
-          | エフェクトコントロールの使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトコントロールの使用")
           p
             | エフェクトシステムとそのコントロールの完全なガイドについては、第7章を参照してください。
           h4
@@ -2389,10 +2171,7 @@ html(lang="ja")
             li Reverb
 
 
-        h3.heading.switch
-          | デバイスヘッダーと一般的なデバイスコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("デバイスヘッダーと一般的なデバイスコントロール")
           p
             | デバイスがオーディオを処理するには、アクティブボタンが有効になっている必要があります。
             br
@@ -2412,10 +2191,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | エフェクトチェーンコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトチェーンコントロール")
           p
             | ChainメニューとPrevious / Next Chainプリセットボタンを使用すると、6つのエフェクトスロットのチェーン全体のプリセットを保存およびロードできます。
             br
@@ -2425,10 +2201,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | エフェクトのオートメーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトのオートメーション")
           p エフェクトパラメータは、次の方法で自動化できます。
           ul
             li
@@ -2450,24 +2223,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.8 シーケンスとアレンジ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプル再生モジュールまたは「ドラムサンプラー」としてのGeist2
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.8 シーケンスとアレンジ")
+        +section3("サンプル再生モジュールまたは「ドラムサンプラー」としてのGeist2")
           p
             | Geist2は、ホスト/ DAWのMIDIシーケンス機能を使用してGeist2プラグインのパッドをトリガーするサンプル再生エンジンとして使用できる
             br
             |     このような状況では、内部シーケンス機能を完全に無視できる
             br
             |     パターンが不要な場合、8つのエンジンすべてのパターン電源ボタンを無効にできる
-        h3.heading.switch
-          | Geist2の内部パターンシーケンスの使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Geist2の内部パターンシーケンスの使用")
           p
             | 別の作業方法は、Geist2内でそのパターンとグラフを使用してシーケンスすることです。
             br
@@ -2479,10 +2243,7 @@ html(lang="ja")
               | ステップベースのパラメーター自動化グラフは、変動、動き、実験効果を効率的に追加できる
 
 
-        h3.heading.switch
-          | Geist2のSongページ内でのパターン変更の配置
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Geist2のSongページ内でのパターン変更の配置")
           p
             | ソングページでは、パターンを線形タイムライン上の「ブロック」として整理できる
           ul
@@ -2509,14 +2270,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ハイブリッドアプローチ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Geistからパターンをエクスポートする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ハイブリッドアプローチ")
+        +section3("Geistからパターンをエクスポートする")
           p
             | Geist2でパターンを作成し、DAW /ホストのMIDIトラックにエクスポートできる
             br
@@ -2525,10 +2280,7 @@ html(lang="ja")
             |     パターンは、パターンメモリキーをホストの適切なMIDIトラックにドラッグすることでエクスポートされる
             br
             |     Geist2がホストからのMIDIノートによってトリガーされている間にパターンの再生を停止するには、関連するエンジンのパターン電源ボタンを無効にする
-        h3.heading.switch
-          | ホストからのパターンとシーンのトリガー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ホストからのパターンとシーンのトリガー")
           p
             | 前の方法に代わる方法は、DAW /ホストを「ソングシーケンサー」として効果的に使用すること
             br
@@ -2555,14 +2307,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.9 パターンの詳細
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンの詳細
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.9 パターンの詳細")
+        +section3("パターンの詳細")
           p
             | パターンとパターン記録は以前に導入されました。
             br
@@ -2734,14 +2480,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.10 グラフの概要
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | グラフの概要
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.10 グラフの概要")
+        +section3("グラフの概要")
           p
             | グラフは、各ステップの開始時にパラメーターに値を送信するステップ自動化シーケンスです。
             br
@@ -2769,10 +2509,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Geist2の重要なグラフタイプ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Geist2の重要なグラフタイプ")
 
           p
             | グラフは、サウンドデザインとパターンの動きに多くの可能性を提供しますが、Geist2のシーケンスのいくつかの基本的な側面においても重要です。
@@ -2808,10 +2545,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | グラフの種類の概要
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グラフの種類の概要")
           table
             tr
               td Velocity, Pan
@@ -2881,14 +2615,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | グラフイベントの作成
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | グラフ値の描画
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("グラフイベントの作成")
+        +section3("グラフ値の描画")
           ul
             li
               | グラフレーンをクリックしてドラッグし、値を「ペイント」するか、単一のステップで値をクリックします。
@@ -2900,10 +2628,7 @@ html(lang="ja")
               | グラフレーンを右クリックして、ステップの値をデフォルトに戻します。
             li
               | Altキーを押しながらクリックしてドラッグすると、同じ値の一連のグラフイベントが描画されます。
-        h3.heading.switch
-          | グラフ値をリアルタイムで記録する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グラフ値をリアルタイムで記録する")
           p
             | グラフデータはリアルタイムで記録できます。
             br
@@ -2915,14 +2640,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 追加グラフの編集機能
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Insert menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("追加グラフの編集機能")
+        +section3("Insert menu")
           p
             | [挿入]ドロップダウンメニューには、レーンに挿入する便利なグラフオートメーション図形が多数用意されています。
             br
@@ -3019,14 +2738,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.11 パターンで演奏する
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンで演奏する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.11 パターンで演奏する")
+        +section3("パターンで演奏する")
           p
             | Geist2は、パターンメモリキーに関連付けられたMIDIノートを再生することでパターンパフォーマンスを可能にします(画面上でクリックすることもできますが、MIDIキーを使用するとはるかに正確で再生可能な方法が提供されます)。
             | パターンを演奏するための最も一般的なMIDIノート入力方法はMIDIキーボードのキーであるため、このセクションではMIDIキーのパターンについて説明します。
@@ -3038,10 +2751,7 @@ html(lang="ja")
             |     個々のエンジンパターンをトリガーする代わりに、非常によく似た方法で使用されるシーンを使用することもできます。シーンの使用に関するガイドについては、次のセクションを参照してください。
 
 
-        h3.heading.switch
-          | Playback mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Playback mode")
           p
             | 各パターンは、再生方法の特定の側面を決定する再起動モードとゲート再生モードを備えています。
             br
@@ -3097,10 +2807,7 @@ html(lang="ja")
                     | キーが放されるまで再生を続けます。
 
 
-        h3.heading.switch
-          | エンジンのパターンシーケンスをオフにする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エンジンのパターンシーケンスをオフにする")
           p
             | エンジンのパターンが不要な場合、エンジンのシーケンス機能を無効にするには、パターンの電源ボタンを無効にします。
           p これが必要になる状況の例
@@ -3122,14 +2829,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.12 シーンで演奏する
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シーンで演奏する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.12 シーンで演奏する")
+        +section3("シーンで演奏する")
           p
             | シーンは、8つのエンジンすべての状態パターンを表す再生可能な「スナップショット」です。
             br
@@ -3142,10 +2843,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーンを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンを作成する")
 
 
           div.contentOperationBox
@@ -3185,10 +2883,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーンとパターンパワー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンとパターンパワー")
           p
             | シーンの作成時にいずれかのエンジンで選択したパターンが空白の場合、Geist2はシーンデータ内のこれらのエンジンのパターン電源ボタンを無効にします。
             br
@@ -3213,10 +2908,7 @@ html(lang="ja")
                 li.contentOperationOrderlist シーン情報ディスプレイには、エンジン2のみがアクティブになっています。
 
 
-        h3.heading.switch
-          | シーン再生時の振る舞い
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーン再生時の振る舞い")
           p
             | シーンは単に各エンジンの番号付きパターンを参照していることに注意してください。
             br
@@ -3254,14 +2946,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.13 パターンを曲にアレンジする
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンを曲にアレンジする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.13 パターンを曲にアレンジする")
+        +section3("パターンを曲にアレンジする")
           p
             | ソングページには、線形タイムラインに沿ってパターンを配置して「ソング」構造を形成するためのシーケンサーがあります。
             br
@@ -3281,10 +2967,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ソングモードで録音する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングモードで録音する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -3309,10 +2992,7 @@ html(lang="ja")
             | シーンは、すべてのエンジンのSongイベントを作成するのに便利です。
 
 
-        h3.heading.switch
-          | Recording retrospectively into the song
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Recording retrospectively into the song")
           p
             | レトロレコードのプロセスは非常に似ています。
           div
@@ -3342,14 +3022,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 1.14 MIDIとホストオートメーションの使用
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIとホストオートメーションの使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("1.14 MIDIとホストオートメーションの使用")
+        +section3("MIDIとホストオートメーションの使用")
           p
             | Learnシステムでは、1つ以上のGeist2コントロールを単一のMIDI CC(連続コントローラー)またはホストオートメーションパラメーターにマッピングできる
             br
@@ -3415,14 +3089,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | MIDI /オーディオのエクスポートとMIDI出力
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDI /オーディオのエクスポートとMIDI出力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDI /オーディオのエクスポートとMIDI出力")
+        +section3("MIDI /オーディオのエクスポートとMIDI出力")
           table
             tr
               td パターンをMIDIとしてエクスポートする
@@ -3506,14 +3174,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 2 Browser
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ブラウザの概要
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("2 Browser")
+        +section3("ブラウザの概要")
           p ブラウザは、Geist2にサウンドをロードする主な方法であり、次のセクションで紹介されています。
           ul
             li 初めてサウンドを読み込む
@@ -3527,10 +3189,7 @@ html(lang="ja")
           p
             | ファイルは、[ファイル]メニューを使用してロードすることもできます。
 
-        h3.heading.switch
-          | ブラウザの可視性と仕切り
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ブラウザの可視性と仕切り")
           p
             | ブラウザは、Geist2のTransMod変調に使用されるTransModパネルとインターフェース上のスペースを共有します。
             br
@@ -3551,10 +3210,7 @@ html(lang="ja")
               | ブラウザとインターフェイスの他の部分の間の境界線を左右にドラッグして、ブラウザ領域のサイズを変更したり非表示にしたりできます。または、仕切りをダブルクリックします。
 
 
-        h3.heading.switch
-          | ブラウザの可視性と仕切り
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ブラウザの可視性と仕切り")
           p
             | ブラウザは、Geist2のTransMod変調に使用されるTransModパネルとインターフェース上のスペースを共有します。
             br
@@ -3586,14 +3242,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 2.1 Browser Modes
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 自動ロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("2.1 Browser Modes")
+        +section3("自動ロード")
           p
             | [Auto load]ボタン(インターフェイスの[ロード]というラベルが付いている)がアクティブになっている場合、ブラウザーでファイルを選択すると、現在選択されているパッドまたはレイヤーにロードされます。
             br
@@ -3604,10 +3254,7 @@ html(lang="ja")
             | これは、パッドがロックされるか、別のパッドが選択されるか、自動ロードボタンが無効になるまで続く
 
 
-        h3.heading.switch
-          | 自動ロードの無効化
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("自動ロードの無効化")
           p
             | 自動ロードが無効になっている場合、次のいずれかの方法でサンプルをパッドレイヤーにロードする必要がある
           table
@@ -3628,28 +3275,19 @@ html(lang="ja")
                 br
                 | このプロセス中にALTキーを押して、パッドの次に利用可能なレイヤーにサンプルをロードします。
 
-        h3.heading.switch
-          | Auto play
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Auto play")
           p
             | [Auto play]ボタンが有効になっている場合、ブラウザでサンプルを選択すると、自動的にプレビューされる
             br
             | [Auto play]ボタンの右側にある[プレビュー再生/停止]ボタンをクリックすると、プレビュー再生を停止できる
 
 
-        h3.heading.switch
-          | サウンドを手動でプレビューする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドを手動でプレビューする")
           p
             | サンプルを再度プレビューするには、または[Auto play]ボタンが自動的に無効になっている場合は、[Preview play/stop]ボタンをクリックする
 
 
-        h3.heading.switch
-          | Slice
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Slice")
           p
             | [slice]ボタンをアクティブにして、サンプルを選択すると、[スライサー]パネルで開かれる
             br
@@ -3665,14 +3303,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ブラウザのナビゲーションとオプション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ナビゲーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ブラウザのナビゲーションとオプション")
+        +section3("ナビゲーション")
           table
             tr
               td Previous / Next file
@@ -3716,10 +3348,7 @@ html(lang="ja")
                 | OSファイルウィンドウからドラッグアンドドロップ
               td
                 | Finder(Mac)またはExplorer(Windows)からフォルダーをドラッグアンドドロップして、フォルダーの内容をGeist2ブラウザーに表示します。
-        h3.heading.switch
-          | Browser Options
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Browser Options")
           p
             | このメニューは多くの追加のブラウザ機能を提供します。
           table
@@ -3751,20 +3380,14 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ブラウザのサイドバー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ブラウザのサイドバー")
           p
             | ブラウザのサイドバーには、さまざまな場所およびブラウザユーティリティ機能へのクリック可能なショートカットがあります。
             br
             |     サイドバーの各タイプのアイテムを右クリックして、コンテキスト固有の追加機能を提供するコンテキストメニューを表示できます。
 
 
-        h3.heading.switch
-          | Main items
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Main items")
           table
             tr
               td Content
@@ -3807,10 +3430,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Files area
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Files area")
           p
             | ブラウザのこの領域には、現在選択されている場所に含まれるファイルが表示されます。
             br
@@ -3826,10 +3446,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Main controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Main controls")
           table
             tr
               td Files
@@ -3863,10 +3480,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Columns, View options and File types
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Columns, View options and File types")
           p
             | [file]リストの上にある列見出しバーを右クリックして、[表示オプション]メニューを表示します。
             br
@@ -3875,10 +3489,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | View
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("View")
           p デフォルトでは、ブラウザはGeist2に関連するすべての可能なタイプのファイルを表示するように設定されています
           p  [View]メニューには、これらの各ファイルタイプの表示/非表示を切り替える機能があります。
           table
@@ -3937,10 +3548,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Columns
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Columns")
           p
             | デフォルトでは、ファイルリストの各項目に名前(ファイル名)のみが表示されます。
             | このメニューを使用して、各項目のタイプ列とサイズ列を表示することもできます(現在アクティブになっている場合は非アクティブにします)。
@@ -3961,10 +3569,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Files context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Files context menu")
           p
             | ファイル領域を右クリックして、次の機能を提供するファイルコンテキストメニューを表示します。
           table
@@ -4001,10 +3606,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | GURU 1.5以降で保存されたGURUファイルのインポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("GURU 1.5以降で保存されたGURUファイルのインポート")
           p
             | Geist2は、GURU v1.5フォーマットキット、パターン、およびパターンバンクをブラウザからインポートできます。
             br
@@ -4038,14 +3640,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 2.4 Searches, Favourites and Shortlists
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Searches, Favourites and Shortlists
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("2.4 Searches, Favourites and Shortlists")
+        +section3("Searches, Favourites and Shortlists")
           table
             tr
               td Simple searches
@@ -4202,14 +3798,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 3 Slicing
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Slicing
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("3 Slicing")
+        +section3("Slicing")
           p
             | ブラウザの[スライス]ボタンがアクティブになったら、ブラウザでサンプル(WAV / AIFF / RX2)をクリックすると、スライサーパネルが表示されます。
             br
@@ -4222,10 +3812,7 @@ html(lang="ja")
             |       このセクションでは、スライサーパネルでループを開く方法について説明します。
             br
             |       この章の残りの部分では、スライサーパネルのコントロールとさまざまなスライスツールとモードのガイドを提供します。
-        h3.heading.switch
-          | スライスのための重要なブラウザコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライスのための重要なブラウザコントロール")
 
           table
             tr
@@ -4258,10 +3845,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スライサーでサンプルを開く他の方法
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライサーでサンプルを開く他の方法")
           table
             tr
               td
@@ -4283,14 +3867,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 3.1 スライサーパネル
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | スライサーのディスプレイとコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("3.1 スライサーパネル")
+        +section3("スライサーのディスプレイとコントロール")
           table
             tr
               td Waveform display
@@ -4368,10 +3946,7 @@ html(lang="ja")
                 br
                 |           パターンが抽出されると、必要なレイヤーに関する情報も抽出され、パターンのトラックの強制レイヤーグラフ値に保存されます。
 
-        h3.heading.switch
-          | セッションをスライスするためのその他の便利なコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セッションをスライスするためのその他の便利なコントロール")
           table
             tr
               td Undo
@@ -4405,14 +3980,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 3.2 スライスツールとモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | スライスツールとモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("3.2 スライスツールとモード")
+        +section3("スライスツールとモード")
           p
             | Geist2またはGeist Expanderアドオンで提供される工場出荷時のループはすべて、便宜上最適化されています。
             br
@@ -4420,10 +3989,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 一時的な検出モードの使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("一時的な検出モードの使用")
           p
             | トランジェントスライスモードでは、Geist2はオーディオファイルのトランジェントを検出するための可変感度コントロールを備えています。
             br
@@ -4469,10 +4035,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スライスを調整するための追加ツール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライスを調整するための追加ツール")
           table
             tr
               td Insert tool
@@ -4523,10 +4086,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Slice context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Slice context menu")
           p
             | スライスコンテキストメニューを使用すると、アクティブなスライスツールを切り替えるよりも便利な特定の機能にアクセスできます。
           table
@@ -4553,10 +4113,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 分割検出モードを使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("分割検出モードを使用する")
           p
             | Divide Detectionモードでは、SensitivityスライダーがDivisionsコントロールに置き換えられます
             br
@@ -4572,10 +4129,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 手動スライスおよびパターン抽出
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("手動スライスおよびパターン抽出")
           p
             | Geist2には、[Auto load]ボタンが無効になっている手動スライスおよびパターン抽出のための追加機能が含まれています。
             br
@@ -4592,10 +4146,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | [Manual Extraction]ボタン：オーディオ、パターン、オーディオ+ Ptn
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("[Manual Extraction]ボタン：オーディオ、パターン、オーディオ+ Ptn")
           p これら3つのボタンは、ブラウザで[自動読み込み]ボタンが無効になっている場合にのみ表示されます。
           table
             tr
@@ -4613,10 +4164,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Drag tool
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Drag tool")
           p
             | ドラッグツールは、スライスを手動でパッドまたはレイヤーにドラッグアンドドロップするために設計された特別なツールです。
             br
@@ -4634,10 +4182,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スライシングセッションの確認または破棄
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライシングセッションの確認または破棄")
           table
             tr
               td Done
@@ -4652,10 +4197,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スライス情報ファイル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライス情報ファイル")
           p
             | [done]ボタンをクリックしてスライシングセッションを確認すると、Geist2は、スライサーで処理されるサンプルとともに(スライス情報ファイル)(元のファイル名に.gsaファイル拡張子を使用)を保存します。
             br
@@ -4676,14 +4218,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 4 サンプラー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプラー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("4 サンプラー")
+        +section3("サンプラー")
           p  Geist2のサンプラー機能は、オーディオをパッドに直接録音する機能を提供するため、新しいサンプルの再生とシーケンスを可能な限り迅速に行うことができます。
           p
             | 外部信号をサンプリングしたり、Geist2のマスター出力(またはそのサブ出力のいずれか)を「リサンプリング」することができます。
@@ -4697,10 +4233,7 @@ html(lang="ja")
             |       サンプラーモードには、パッドの上にある[パッドモード]メニューからアクセスできます。
           p このメニューでサンプラーモードを選択すると、サンプラーコントロールが表示され、現在のエンジンで現在選択されているパッドに対してアクティブになります。
           p 次のセクションでは、Geist2のサンプラーコントロールの完全なガイドを提供します。
-        h3.heading.switch
-          | サンプラーコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプラーコントロール")
           table
             tr
               td Source
@@ -4859,14 +4392,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 5 パッドとレイヤー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パッドとレイヤー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("5 パッドとレイヤー")
+        +section3("パッドとレイヤー")
           p
             | 各Geist2エンジンには、最大64個のパッドが含まれています。
             br
@@ -4881,10 +4408,7 @@ html(lang="ja")
             | この章では、パッドとレイヤーの完全なリファレンスガイドを提供します。パッドエディターのパッドとレイヤーコントロール、およびパッドミキサーとレイヤーミキサーページのミキシング/エフェクト処理。
 
 
-        h3.heading.switch
-          | 編集するパッドまたはレイヤーの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("編集するパッドまたはレイヤーの選択")
           p
             | 「選択されたパッド」の概念は、パッドまたはそのレイヤーの編集に使用されます。
           ul
@@ -4902,14 +4426,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 5.1 パッドとパッドの管理
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パッドコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("5.1 パッドとパッドの管理")
+        +section3("パッドコントロール")
           table
             tr
               td Pad name
@@ -4929,10 +4447,7 @@ html(lang="ja")
                 | レベルメーターは、パッドが演奏されるたびに、パッドの出力振幅をリアルタイムで表示します。
 
 
-        h3.heading.switch
-          | Pad Options
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pad Options")
           p
             | [Pad Options]ボタンをクリックして、パッドに関連する追加のコントロールを表示します。
             br
@@ -4994,10 +4509,7 @@ html(lang="ja")
                   li 自動オーバーラップ速度グラフの25％設定を使用します
 
 
-        h3.heading.switch
-          | Pad context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pad context menu")
           p
             | パッドを右クリックして、パッドコンテキストメニューを表示します。
             br
@@ -5107,22 +4619,13 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 5.2 Layer controls
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Layer controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("5.2 Layer controls")
+        +section3("Layer controls")
           p レイヤーオプションは、パッドオプションコントロールがアクティブな場合、または状況に応じた編集エリア(パターン、ソング、シーン、マッピング、ミキサーページ)がディバイダーを使用してフルハイトに拡張されている場合を除き、Geist2で常に表示されます第1章
 
 
 
-        h3.heading.switch
-          | Layer selector
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Layer selector")
           p
             | このコントロールは、現在選択されているパッドのどのレイヤーがレイヤーコントロールによって表されるかを決定します。
             br
@@ -5146,10 +4649,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Layer editing parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Layer editing parameters")
           p
             | 波形表示の下のコントロールについては、次のいくつかのセクションで詳しく説明します。
           ul
@@ -5157,10 +4657,7 @@ html(lang="ja")
             li 再生、ループ、タイムストレッチコントロール
             li エンベロープコントロール波形表示
 
-        h3.heading.switch
-          | Waveform display
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Waveform display")
           p
             | 波形表示は、元のピッチでのレイヤーのサンプルを表します。
           table
@@ -5193,10 +4690,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Scroll/zoom controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Scroll/zoom controls")
           table
             tr
               td Scroll/zoom
@@ -5253,10 +4747,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Layer context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Layer context menu")
           p
             |レイヤーpセレクターの8つのレイヤーのいずれかを右クリックして、レイヤーコンテキストメニューを表示します。
             br
@@ -5299,15 +4790,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Setup controls
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Setup controls")
 
-        h3.heading.switch
-          | Playback mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Playback mode")
           p
             | 再生モードメニューは、再生中のレイヤーの反応を決定します。
             br
@@ -5342,10 +4827,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Choke mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Choke mode")
           p
             | チョークとは、あるレイヤーの再生を別のレイヤーで停止するプロセスです。
             br
@@ -5390,10 +4872,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Mix controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Mix controls")
           table
             tr
               td Gain, Pan
@@ -5420,10 +4899,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Tuning controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tuning controls")
           table
             tr
               td
@@ -5442,10 +4918,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Filter controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Filter controls")
           table
             tr
               td Active
@@ -5471,10 +4944,7 @@ html(lang="ja")
                 | 駆動量を大きくすると、共鳴の少ないざらざらした攻撃的なサウンドになります。
 
 
-        h3.heading.switch
-          | Algorithm
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Algorithm")
           table
             tr
               td Japan
@@ -5503,10 +4973,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Play controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Play controls")
           table
             tr
               td Predelay
@@ -5527,10 +4994,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Looping controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Looping controls")
           p
             | これらのコントロールは、再生モードがループに設定されている場合にのみ使用できます。
             br
@@ -5570,10 +5034,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Timestretch controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Timestretch controls")
           p
             | タイムストレッチのプロセスにより、サンプルのピッチをその長さに影響を与えずに変更することができます。逆もまた同様です。
             br
@@ -5610,10 +5071,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Envelope controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Envelope controls")
           p
             | Geist2の各レイヤーは、A(攻撃)、D(ディケイ)、H(ホールド)、S(サステイン)、R(リリース)ステージの2つのADHSRエンベロープを備えています。
             br
@@ -5631,10 +5089,7 @@ html(lang="ja")
             br
             |       エンベロープのアニメーションは、レイヤーの現在の再生(左を参照)およびトラックピッチの設定の影響を受けます。
 
-        h3.heading.switch
-          | Envelope visibility
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Envelope visibility")
           p
             | (オートズームコントロールの横にある)各エンベロープのAおよびF可視性ボタンは、波形表示の可視性を切り替えます。
             br
@@ -5644,10 +5099,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Using One-shot Playback mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Using One-shot Playback mode")
           p
             | プレーヤーの再生モードが1ショットに設定されている場合、トラックピッチおよび非トラック環境モード設定のエンベロープは、ADHRエンベロープとして効果的に機能します。
             br
@@ -5704,10 +5156,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Using Length Bound Playback mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Using Length Bound Playback mode")
           p
             | One Shot Length Bound Playbackモードを使用すると、レイヤーのエンベロープは特別なAHRモードに切り替えられ、常にサンプルの全長に合わせてスケーリングされます。
             br
@@ -5729,10 +5178,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Using Gated or Looping Playback modes
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Using Gated or Looping Playback modes")
           p
             | ゲーテッドおよびループ再生モードでは、EnvモードがTrack PitchまたはNon Trackedに設定されている場合、エンベロープはADHSRエンベロープとして機能します。
             br
@@ -5753,10 +5199,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Track Pitch
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Track Pitch")
           p
             | トラックピッチ設定を有効にすると、サンプルのピッチを変更するときにエンベロープ時間が比例してスケーリングされます
             br
@@ -5774,14 +5217,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 5.3 Pad Mixer
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Pad Mixer
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("5.3 Pad Mixer")
+        +section3("Pad Mixer")
           p
             | パッドミキサーを使用すると、現在選択されているエンジンのパッドをエフェクトでミックスおよび処理できます。
             br
@@ -5834,10 +5271,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pad channel controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pad channel controls")
           p
             | 各パッドの「チャンネル」には、以下のコントロールに加えて、ミュート、ソロ、パン、ゲインのコントロールがあります。
           table
@@ -5884,24 +5318,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 5.4 Layer Mixer
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Layer Mixer
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("5.4 Layer Mixer")
+        +section3("Layer Mixer")
           p
             | レイヤーミキサーを使用すると、現在選択されているパッド内の8つのレイヤーをエフェクトでミックスおよび処理できます。
             br
             |       レイヤーミキサーページボタンをクリックすると表示されます。
 
 
-        h3.heading.switch
-          | Layer 'channels'
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Layer 'channels'")
           p 左から右に並んだミキサーの「チャンネル」は、選択したパッドで利用可能な8つのレイヤーを表します。
           table
             tr
@@ -5938,10 +5363,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Layer Channel controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Layer Channel controls")
           p
             | ミキサーの各チャンネルのコントロールは、パッドミキサーのコントロールと同じように動作します。
           table
@@ -5963,14 +5385,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 6 エンジンとグローバルミキサー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エンジンとグローバルミキサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("6 エンジンとグローバルミキサー")
+        +section3("エンジンとグローバルミキサー")
           p
             | エンジンセレクターとグローバルミキサーホームページでは、Geist2の8つのエンジン、4つのAuxチャンネル、マスターチャンネルを制御できます。
           table
@@ -5992,14 +5408,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 6.1 Engine Selector
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Engine Selector
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("6.1 Engine Selector")
+        +section3("Engine Selector")
           p  Engine Selectorは、Geist2の8つのエンジンに関連する多くの機能を提供します。
           ul
             li 編集用に現在選択されているエンジンを指定および示します
@@ -6071,10 +5481,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Engine context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Engine context menu")
           p
             | エンジンセレクタボタンを右クリックして、エンジンコンテキストメニューを表示します。
             br
@@ -6121,23 +5528,14 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 6.2 Global Mixer
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Global Mixer
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("6.2 Global Mixer")
+        +section3("Global Mixer")
           p
             | グローバルミキサーページボタンをクリックして表示されるGeist2のグローバルミキサーページには、8つのエンジンすべてがチャネルとして表示され、4つのAuxバスチャネルとマスターチャネルが表示されます。
             br
             |       いくつかの違いはありますが、Pad MixerおよびLayer Mixerページと非常によく似たコントロールを提供します。
 
-        h3.heading.switch
-          | チャンネルを選択する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チャンネルを選択する")
           p エンジンチャネルは、次のいずれかの方法で選択できます。
           ul
             li グローバルミキサーページでエンジンチャネルをクリックします。
@@ -6155,10 +5553,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | チャンネルの複数選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チャンネルの複数選択")
           p 次の方法を使用して、[mixer]ページで複数のチャンネルを選択できます。
           ul
             li Shiftキーを押しながらクリックすると、2つのチャンネル間で連続した選択が作成されます
@@ -6170,10 +5565,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Engines
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Engines")
           p
             | パッドミキサーとレイヤーミキサーのチャンネルと同様に、各エンジンの「チャンネル」には、レベルメーターと出力セレクターに加えて、ミュート、ソロ、パン、ゲインのコントロールがあります。
             br
@@ -6206,10 +5598,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Aux channels
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Aux channels")
           p
             | 前述のすべてのチャンネルと同様に、各Auxチャンネルには、レベルメーターと出力セレクターに加えて、ミュート、ソロ、ゲインコントロールがあります。
             br
@@ -6245,10 +5634,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Master channel
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Master channel")
           p
             | マスターチャネルは、Geist2のプライマリステレオ出力を表し、8つのエンジンすべてのデフォルトのルーティング宛先です。
             br
@@ -6279,14 +5665,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Effects
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Effects
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Effects")
+        +section3("Effects")
           p
             | Geist2には、Global Mixer、Pad Mixer、Layer Mixerページ内のエフェクトスロットがあります。
             br
@@ -6295,10 +5675,7 @@ html(lang="ja")
             |       一般的なエフェクトスロットコントロールのガイドについては、次のセクションを参照してください。
 
 
-        h3.heading.switch
-          | 空のスロットにエフェクトデバイスをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("空のスロットにエフェクトデバイスをロードする")
           p
             | エフェクトスロットが空になったら、[+]ボタンをクリックして、使用可能なデバイスのメニューを表示します。
             br
@@ -6314,10 +5691,7 @@ html(lang="ja")
             li FX
             li Reverb
 
-        h3.heading.switch
-          | Device headers and common device controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Device headers and common device controls")
             table
               tr
                 td Active
@@ -6384,10 +5758,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Effect Chain controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Effect Chain controls")
           p エフェクトスロットの上にあるエフェクトチェーンコントロールは、6つのエフェクトスロットのチェーン全体にプリセットシステムを提供します。
           table
             tr
@@ -6410,10 +5781,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Re-ordering Effects slots
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Re-ordering Effects slots")
           p
             | FXチェーンでの位置を変更するには、デバイスヘッダーをクリックして左右にドラッグします。
 
@@ -6421,10 +5789,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Effects context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Effects context menu")
           p エフェクトデバイス内で右クリックすると、エフェクトのコンテキストメニューが表示されます。
           table
             tr
@@ -6445,14 +5810,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Effectsの種類
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Distortion
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Effectsの種類")
+        +section3("Distortion")
           table
             tr
               td Distortion
@@ -6587,10 +5946,7 @@ html(lang="ja")
                 |           モードコントロールは、内部オシレーターの波形をサイン、トライアングル、ノコギリ、およびスクエアシェイプの間で調整します。
 
 
-        h3.heading.switch
-          | ダイナミクス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ダイナミクス")
           table
             tr
               td Gain
@@ -6710,10 +6066,7 @@ html(lang="ja")
                 |           出力コントロールは、リミッター回路からの処理済み出力信号を減衰させます。
 
 
-        h3.heading.switch
-          | EQ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("EQ")
             table
               tr
                 td Parametric EQ
@@ -6774,10 +6127,7 @@ html(lang="ja")
                   br
                   |           量コントロールは、出力の前に信号に追加される高調波のレベルを調整します。
 
-        h3.heading.switch
-          | Filters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Filters")
             table
               tr
                 td Filter
@@ -6848,10 +6198,7 @@ html(lang="ja")
                   |           モードコントロールは、ローパス(0％の設定)、バンドパス(50％)、ハイパス(100％)のフィルター応答をブレンドします。
 
 
-        h3.heading.switch
-          | FX
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX")
             table
               tr
                 td Delay
@@ -7021,10 +6368,7 @@ html(lang="ja")
                   |           ピンポンボタンをアクティブにすると、ディレイラインはモノラルで動作し、左右の出力が交互に繰り返されます。
 
 
-        h3.heading.switch
-          | Reverb
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Reverb")
             table
               tr
                 td Breverb Hall
@@ -7148,14 +6492,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 8 TransMod modulation
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | TransMod modulation
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("8 TransMod modulation")
+        +section3("TransMod modulation")
           p
             | Geist2は、Strobe2、Etch、Bloom、Maulなどの他のFXpansion製品に見られるTransMod変調に類似した、広範なTransMod変調システムを備えています。
             br
@@ -7166,10 +6504,7 @@ html(lang="ja")
             |       TransMod変調の使用の概要については、第1章を参照してください。
 
 
-        h3.heading.switch
-          | TransMod sources and destinations
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TransMod sources and destinations")
           p
             | 音声レベルのポリフォニックソースには、レイヤーごとのエンベロープ、MIDI /パターンイベントベースのベロシティ値、ランダム値が含まれます。
             br
@@ -7182,10 +6517,7 @@ html(lang="ja")
             |       その他のソースには、4つのマクロコントロールといくつかのグローバルモノフォニックソース、主にMIDIコントローラーが含まれます。
             |       宛先には、Geist2のパッドエディターとミキサーセクションのほとんどのコントロールが含まれます。
 
-        h3.heading.switch
-          | TransMod panel
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TransMod panel")
           p
             | TransMod変調ソースはTransModパネルに表示されます
             br
@@ -7202,14 +6534,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 8.1 Using TransMod modulation
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Using TransMod modulation
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("8.1 Using TransMod modulation")
+        +section3("Using TransMod modulation")
           p
             | 第1章の例は、フィルターのカットオフパラメーターにフリーエンベロープを割り当てる方法を示しています。
             br
@@ -7235,10 +6561,7 @@ html(lang="ja")
           p
             | ただし、ソース出力が-1から0の間にある場合、引き出された量を初期パラメーター値から反対方向にミラーリングする負の変調が発生します。
 
-        h3.heading.switch
-          | Managing TransMod modulation
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Managing TransMod modulation")
           table
             tr
               td TransMod source indicator
@@ -7280,10 +6603,7 @@ html(lang="ja")
                   |       ALTキーを押さないと、既存の変調度は削除されません。
 
 
-        h3.heading.switch
-          | TransMod modulation sources
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TransMod modulation sources")
           table
             tr
               td Voice-level polyphonic TransMod sources
@@ -7312,10 +6632,7 @@ html(lang="ja")
                 | 上記のエンベロープと同様に、値は、MIDI /パターンイベントによってトリガーされたレイヤーの関連するエディター/ミキサー/エフェクトパラメーターに適用されます。
 
 
-        h3.heading.switch
-          | Global monophonic sources
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Global monophonic sources")
           p
             | 前述の音声レベルのソースとは異なり、他のすべてのTransModソースは「グローバルに」動作する
             br
@@ -7357,14 +6674,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 8.2 Assignable TransMod modulators
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Assignable TransMod modulators
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("8.2 Assignable TransMod modulators")
+        +section3("Assignable TransMod modulators")
             table
               tr
                 td LFO
@@ -7532,14 +6843,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 9 パターンとグラフ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンとグラフ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("9 パターンとグラフ")
+        +section3("パターンとグラフ")
           p
             | パターンとグラフは、第1章のこれらのセクションで紹介されています。
           ul
@@ -7563,10 +6868,7 @@ html(lang="ja")
                 | グラフは、パラメーターのステップ自動化シーケンスです。
 
 
-        h3.heading.switch
-          | 9.1 パターンメモリーキー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("9.1 パターンメモリーキー")
           p
             | インターフェイスのこのセクションは、現在選択されているエンジンで使用可能な24個のパターンを、パターンメモリキー(単にパターンキーとも呼ばれます)と呼ばれるクリック可能なボタンとして表します。
             br
@@ -7616,10 +6918,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pattern key context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pattern key context menu")
           p パターンメモリキーを右クリックして、さまざまなパターン管理機能を含むパターンコンテキストメニューを表示します。
 
           table
@@ -7712,14 +7011,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        |  9.2 Pattern editor
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Pattern editor
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2(" 9.2 Pattern editor")
+        +section3("Pattern editor")
           p
             | [パターン]ページには、現在選択されているパターンが表示され、プログラムや編集が可能です。
             br
@@ -7814,10 +7107,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pattern name
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pattern name")
 
           p
             | このフィールドは、現在選択されているパターンの名前を設定および表示します。
@@ -7829,10 +7119,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Steps
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Steps")
           p
             | Stepsコントロールは、パターンのステップ数を調整します。
             br
@@ -7901,10 +7188,7 @@ html(lang="ja")
                 |       これは、スライスされたループを再配置またはリミックスするための迅速な方法として意図されています。
 
 
-        h3.heading.switch
-          | Drag edits...
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Drag edits...")
           p
             | デフォルトでは、ペンツールまたはマルチツールを使用してイベントをクリック/上下にドラッグすると、速度が調整されます。
             br
@@ -7917,10 +7201,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Tempo Modifier
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tempo Modifier")
 
 
           p
@@ -7952,10 +7233,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Swing controls
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Swing controls")
           p
             | Geist2は、各エンジンのスイング(シンコペーションまたは「シャッフル」とも呼ばれる)を個別に制御する機能を備えています。
             br
@@ -8011,10 +7289,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Event context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Event context menu")
           p
             | Altキーを押しながらステップセルまたはイベント選択内を右クリックして、トラックコンテキストメニューを表示します。
             br
@@ -8052,10 +7327,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Track context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Track context menu")
           p
             | トラック名を右クリックして、トラックコンテキストメニューを表示します。
           table
@@ -8106,14 +7378,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 9.3 Pattern editing functions
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Pattern editing functions
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("9.3 Pattern editing functions")
+        +section3("Pattern editing functions")
 
           table
             tr
@@ -8188,14 +7454,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 9.4 Graphs
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Graphs
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("9.4 Graphs")
+        +section3("Graphs")
           p
             | グラフは、各ステップの開始時にパラメーターに値を送信するステップ自動化シーケンス
 
@@ -8279,10 +7539,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Filter... Graph types
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Filter... Graph types")
           p
             | 次のグラフタイプは、Pad Editor Layerコントロールの対応するFilterセクションコントロールに関連しています。
           table
@@ -8308,10 +7565,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Playback Graph types
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Playback Graph types")
           table
             tr
               td  Start point / Loop Start / Loop End
@@ -8345,10 +7599,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sends Graph types
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sends Graph types")
           table
             tr
               td Send 1-4
@@ -8427,10 +7678,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Graph context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Graph context menu")
           p
             | Altキーを押しながら、グラフレーンのステップを右クリックして、グラフのコンテキストメニューを表示します。
             br
@@ -8483,14 +7731,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 10 シーンとソングページ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シーンとソングページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("10 シーンとソングページ")
+        +section3("シーンとソングページ")
           p
             | シーンとソングページは、第1章のこれらのセクションで紹介されています。
           ol
@@ -8519,10 +7761,7 @@ html(lang="ja")
                 |           リアルタイムのソング録音については、第1章で説明しています。
                 br
                 |           この章では、ソングページのコントロールと編集機能について説明します。
-        h3.heading.switch
-          | シーンページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンページ")
           p
             | シーンは、8つのエンジンすべてで再生されるパターンのスナップショットです。これらのスナップショットは、ライブパフォーマンスのために、またはソングページに録音するために、リアルタイムでリコール/再生できます。
             br
@@ -8532,10 +7771,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーングループコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーングループコントロール")
           p
             | 96個のシーンスロットがあり、それぞれにシーンを含めることができます。
             br
@@ -8560,10 +7796,7 @@ html(lang="ja")
               td Group 6: G#4 to B5
 
 
-        h3.heading.switch
-          | シーンの作成とトリガー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンの作成とトリガー")
           table
             tr
               td
@@ -8607,10 +7840,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Start mode
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Start mode")
           p
             | Start mode設定は、シーンスロットまたは関連するMIDIノートが再生されるタイミングに関連して、シーンが開始するタイミングを決定します。
           p
@@ -8640,10 +7870,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーン名
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーン名")
           p
             | このテキストフィールドを使用すると、現在のシーンスロットの名前を変更できます。
             br
@@ -8651,10 +7878,7 @@ html(lang="ja")
             br
             |       名前はシーンスロットにも表示されます。
 
-        h3.heading.switch
-          | シーン情報
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーン情報")
           p
             | このセクションには、選択したシーンのコンテンツの概要が記載されています。
             br
@@ -8665,10 +7889,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーンとパターンパワー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンとパターンパワー")
           p
             | シーン内のエンジンのパターンを無効にするには、シーンを作成する前に[パターン]電源ボタンを無効にします。
             br
@@ -8682,10 +7903,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーンコンテキストメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーンコンテキストメニュー")
           table
             tr
               td Cut / Copy / Paste
@@ -8703,14 +7921,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 10.2 Song page
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Song page
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("10.2 Song page")
+        +section3("Song page")
           p
             | ソングページには、パターンをリニアタイムラインに配置できるように、パターンのシーケンサーが用意されています。
             | ソングページボタンをクリックすると表示されます。
@@ -8720,10 +7932,7 @@ html(lang="ja")
             |       パターンをトラックに直接描画するか、パターン/シーンのパフォーマンスをリアルタイムで記録するか、遡ってキャプチャすることができます。
 
 
-        h3.heading.switch
-          | 関連するトランスポート管理
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("関連するトランスポート管理")
 
             table
               tr
@@ -8790,10 +7999,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Tracks and parts
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tracks and parts")
             table
               tr
                 td Ruler
@@ -8890,10 +8096,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Song context menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Song context menu")
           p  ALTキーを押しながら右クリックすると、曲のコンテキストメニューを選択するか、曲のページの空の領域で呼び出すことができます。
           p パーツの貼り付け機能を除き、メニューのすべての機能を選択する必要があります。
           table
@@ -8970,14 +8173,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 10.3 ソングページ編集機能
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ソングページ編集機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("10.3 ソングページ編集機能")
+        +section3("ソングページ編集機能")
             table
               tr
                 td Adding a part
@@ -9046,14 +8243,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11 その他のコントロール、メニュー、コントロール、インジケーター
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | その他のコントロール、メニュー、コントロール、インジケーター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11 その他のコントロール、メニュー、コントロール、インジケーター")
+        +section3("その他のコントロール、メニュー、コントロール、インジケーター")
           p
             | この章では、Geist2インターフェースの多くの追加部分のリファレンスガイドを提供します。
             br
@@ -9099,14 +8290,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11.1 Transport and Status display
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Transport area
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11.1 Transport and Status display")
+        +section3("Transport area")
             table
               tr
                 td Play/Stop
@@ -9189,10 +8374,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Transport options menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Transport options menu")
           table
             tr
               td Follow playback cursor
@@ -9239,10 +8421,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Status display
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Status display")
             table
               tr
                 td Master Gain
@@ -9305,22 +8484,13 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11.2 File, Tools and Help menus
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | File menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11.2 File, Tools and Help menus")
+        +section3("File menu")
           p
             | このメニューでは、ブラウザの代わりにOSファイルの[開く]ダイアログを使用して、さまざまなファイルおよびプリセットタイプをGeist2にロードできます。
             br
             | 作業を保存するための機能も含まれています。
-        h3.heading.switch
-          | Loading functions
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Loading functions")
           table
             tr
               td Open Preset / Engine / Kit / Pad / Pattern Bank / Pattern / Pattern From MIDI
@@ -9340,10 +8510,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Saving functions
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Saving functions")
           p
             | [ファイル]メニューでは、現在のGeist2セッションのさまざまな要素をディスクに保存することもできます。
           table
@@ -9389,10 +8556,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Tools menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tools menu")
           table
             tr
               td Preferences
@@ -9439,10 +8603,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Help menu
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Help menu")
           table
             tr
               td About
@@ -9465,14 +8626,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11.3 オーディオのエクスポート
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オーディオのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11.3 オーディオのエクスポート")
+        +section3("オーディオのエクスポート")
             p
               | [tool]メニューの[オーディオとしてエクスポート]機能を使用して、[オーディオエクスポート]パネルを表示します。
               br
@@ -9548,14 +8703,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11.4 Mapping panel
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Mapping panel
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11.4 Mapping panel")
+        +section3("Mapping panel")
           p
             | マッピングパネルには、学習機能で作成されたGeist2コントロールへのMIDI CC /ホストオートメーションの割り当てを表示および管理する機能が含まれています。
             br
@@ -9564,10 +8713,7 @@ html(lang="ja")
             |       マッピングのセットは、[ファイル]メニューを使用して保存およびロードできる
 
 
-        h3.heading.switch
-          | マッピング表
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マッピング表")
           p
             | 既存の割り当ては、次の列見出しを持つ表に表示されます
           table
@@ -9644,10 +8790,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | その他のコントロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("その他のコントロール")
           table
             tr
               td Clear all
@@ -9676,10 +8819,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | マッピングパネルのコンテキストメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マッピングパネルのコンテキストメニュー")
           p
             | マッピングの任意の列を右クリックして、マッピングパネルのコンテキストメニューを表示します。
             br
@@ -9709,14 +8849,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 11.5 Preferences
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Preferences
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("11.5 Preferences")
+        +section3("Preferences")
           p
             | [Preferences]パネルには、Geist2の外観といくつかの機能面をカスタマイズするためのさまざまな方法が用意されています。
             br
@@ -9931,14 +9065,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 12 Geist2スタンドアロンアプリケーションの使用
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Geist2スタンドアロンアプリケーションの起動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("12 Geist2スタンドアロンアプリケーションの使用")
+        +section3("Geist2スタンドアロンアプリケーションの起動")
           p Geist2のスタンドアロンバージョンは、Geist2プラグインをロードする最小限のホストアプリケーション
           table
             tr
@@ -9958,10 +9086,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Audio preferences
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio preferences")
           | オーディオ設定は、メインOSメニューからアクセスできます。
           br
           |       Macでは、画面の上部(「Apple」メニューの隣)にあるGeist2メニュー項目をクリックし、「Preferences」サブメニューから「Open Audio Preferences 」を選択します。

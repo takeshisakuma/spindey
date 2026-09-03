@@ -1,20 +1,15 @@
 - var pagename='drumbrute|spindey.com'
 - var description='ArturiaのDrumbruteのマニュアルです。'
 - var keywords='brumbrute,arturia'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading drumbrute
     main.equipmentMain
-      h2.heading.switch
-        | 音色
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 音色の選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色")
+        +section3("音色の選択")
           p
             | ポーズ中に音色を選択する
           div.contentOperationBox
@@ -29,10 +24,7 @@ html(lang="ja")
                 li.contentOperationOrderlist
                   span.controllerButton Shift
                   | を押しながら任意のパッドをタップ
-        h3.heading.switch
-          | 音色
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音色")
           .tableScroll
             table
               tr
@@ -107,14 +99,8 @@ html(lang="ja")
                   span.controllerKnob Level
                   span.controllerKnob Pitch
                   span.controllerKnob Decay
-      h2.heading.switch
-        | 音量
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | マスター・ボリューム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音量")
+        +section3("マスター・ボリューム")
           p マスターアウト・レベルをコントロールする
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -123,10 +109,7 @@ html(lang="ja")
                 span.controllerKnob Master Volume
                 | を回す
           p ヘッドフォン・レベルには影響しない
-        h3.heading.switch
-          | トラック・ボリューム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラック・ボリューム")
           p 各トラックのアウト・レベルをコントロールする
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -135,24 +118,15 @@ html(lang="ja")
                 | 各インストゥルメントの
                 span.controllerKnob Level
                 | を回す
-        h3.heading.switch
-          | ヘッドフォン・ボリューム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ヘッドフォン・ボリューム")
           p ヘッドフォンのアウト・レベルをコントロールする
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist
                 span.controllerKnob Volume(リアパネル)
-      h2.heading.switch
-        | テンポ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | テンポの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("テンポ")
+        +section3("テンポの設定")
           p テンポはパターンごとに保存されるので、ソング内でも異なるテンポを含むことができる
           table
             tr
@@ -176,10 +150,7 @@ html(lang="ja")
                 | を押さずに
                 span.controllerKnob Rate/Fine
                 | を回す
-        h3.heading.switch
-          | グローバル BPM
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グローバル BPM")
           p すべてのパターンを同じテンポで演奏させる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -189,10 +160,7 @@ html(lang="ja")
                 | を押しながら
                 span.controllerButton 15
                 | を押す
-        h3.heading.switch
-          | タップテンポ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タップテンポ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -200,14 +168,8 @@ html(lang="ja")
                 | 希望するテンポで
                 span.controllerButton Tap Tempo
                 | を複数回タップする
-      h2.heading.switch
-        | メトロノーム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | メトロノームをオン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("メトロノーム")
+        +section3("メトロノームをオン")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -228,14 +190,8 @@ html(lang="ja")
                 |                    [選択したボタンが青色に点灯]
                 br
                 |                     タイミング値ボタンが点灯している間は、選択解除を行なうことも可能
-      h2.heading.switch
-        | バンク
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | バンクの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("バンク")
+        +section3("バンクの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -251,10 +207,7 @@ html(lang="ja")
                 | 、
                 span.controllerButton D
                 | のいずれかを押す
-        h3.heading.switch
-          | パターンのバンクの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのバンクの保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -263,10 +216,7 @@ html(lang="ja")
                 | を押しながら
                 span.controllerButton Bank
                 | を押す
-        h3.heading.switch
-          | バンクの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バンクの消去")
           p バンク内の16パターンすべてを消去
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -288,10 +238,7 @@ html(lang="ja")
                 |  or
                 span.controllerButton D
                 | で消去したいバンクを選択
-        h3.heading.switch
-          | バンクのコピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バンクのコピー")
           p 別のバンクに16個のパターンすべてをコピー
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -304,22 +251,13 @@ html(lang="ja")
                 span.controllerButton Bank
                 | をもう一度押す
               li.contentOperationOrderlist コピー先のバンクのステップ・ボタンを選択
-      h2.heading.switch
-        | パターン
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン")
+        +section3("パターンとは")
           p DrumBruteは、16パターンを4つのバンク、合計64パターンを使用することができる
           p パターンのデフォルトの長さは16ステップ
             br
             | 最長で64ステップまで設定可能
-        h3.heading.switch
-          | スポット・イレース
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スポット・イレース")
           p レコード・モードでパターンがループしている間、ノートを消去する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -327,10 +265,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton Erase
                 | を押したまま消去したい音が発音される時にそのパッドをタップ
-        h3.heading.switch
-          | ステップ入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ入力")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -350,10 +285,7 @@ html(lang="ja")
           p
             | インストゥルメント・トラック内の特定のステップのベロシティを素早く増やす
 
-        h3.heading.switch
-          | ステップ・リピート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・リピート")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -371,10 +303,7 @@ html(lang="ja")
                 br
                 | [パターンがそのポイントに次回達するとキックドラムが1ステップの間に2回鳴る]
           p ステップ・リピート機能は、レコード・モードでのみ使用可能
-        h3.heading.switch
-          | シフト・タイミング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シフト・タイミング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -407,10 +336,7 @@ html(lang="ja")
             | +
             span.controllerKnob Swing
             | オプションは、クオンタイズされていないインストゥルメント全体のデータを簡単にクオンタイズするオプション
-        h3.heading.switch
-          | パターンの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -423,10 +349,7 @@ html(lang="ja")
             | バンクを切り替えると、元のバンク内のパターンに行ったエディット内容は失われる
             br
             |  これはソング・モードに切り替えると発生する
-        h3.heading.switch
-          | パターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの選択")
           p
             | 選択中のバンク内のパターンを選択
             br
@@ -450,10 +373,7 @@ html(lang="ja")
             tr
               td 2
               td パターンの最終ステップまでプレーしてから変更
-        h3.heading.switch
-          | パターンのレコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのレコーディング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -467,10 +387,7 @@ html(lang="ja")
                 |                         DrumBruteがパターン内のそのポイントを再び通過すると、前回追加したものが聴こえる
               li.contentOperationOrderlist レコード・モードを終了するにはレコードを押す
           p ステップボタンを使用して、ステップ・モードで個々のイベントのオン/オフを切り替えることができる
-        h3.heading.switch
-          | パターンの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの消去")
           p バンク内のパターンの1つを消去
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -484,14 +401,8 @@ html(lang="ja")
                 br
                 | [選択されているパターンのステップ・ボタンが点滅]
               li.contentOperationOrderlist 「ステップ・ボタン」で消去したいパターンを選択
-      h2.heading.switch
-        | パターン(設定)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | クオンタイズ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン(設定)")
+        +section3("クオンタイズ")
           p  オンのとき、リアルタイムでレコーディングした場合、選択したタイムディビジョンに従ってノートがクオンタイズされる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -501,10 +412,7 @@ html(lang="ja")
                 | と
                 span.controllerButton ●
                 | を同時に押すとオン/オフの切り替え
-        h3.heading.switch
-          | タイムディビジョン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイムディビジョン")
           p  再生レートの設定
           table
             tr
@@ -546,10 +454,7 @@ html(lang="ja")
                 | を押しながら
                 span.controllerButton 5
               td 1/32
-        h3.heading.switch
-          | パターンフォロー・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンフォロー・モード")
           p 再生中にこのモードがオンになっていると、ステップ・グループのLEDが再生位置を追従する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -559,10 +464,7 @@ html(lang="ja")
                 | と
                 span.controllerButton »
                 | を同時に押すとオン/オフの切り替え
-        h3.heading.switch
-          | パターン・レングスを調整する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・レングスを調整する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -604,14 +506,8 @@ html(lang="ja")
                 | がそのステップ・グループにあることを意味する
 
 
-      h2.heading.switch
-        | パターン(コピー)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンの拡張(コピーして追加)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン(コピー)")
+        +section3("パターンの拡張(コピーして追加)")
           p  パターン・データを最大16ステップまでコピーして、既存のパターンの最後に貼り付ける
 
           div.contentOperationBox
@@ -630,10 +526,7 @@ html(lang="ja")
               td パターンが16ステップより短い場合
               td 全てのステップ数がコピーされ、シーケンスの長さは2倍になる
           p  最大で64ステップまで拡張可能
-        h3.heading.switch
-          | パターンコピー(パターン内)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンコピー(パターン内)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -648,10 +541,7 @@ html(lang="ja")
                 | 、そしてすべてのパッドが点滅する]
               li.contentOperationOrderlist コピー元のパッドを押す
               li.contentOperationOrderlist  コピー先のパッドを押す
-        h3.heading.switch
-          | パターンコピー(バンク内)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンコピー(バンク内)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -666,10 +556,7 @@ html(lang="ja")
                 span.controllerButton Ptrn
                 | を押す
               li.contentOperationOrderlist コピー先のパターンのステップ・ボタンを押す
-        h3.heading.switch
-          | パターンコピー(バンク間)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンコピー(バンク間)")
           p
             | バンクから別のバンクに1つのパターンをコピー可能
             br
@@ -698,14 +585,8 @@ html(lang="ja")
                 | を押す
                 br
                 | [約1秒間点滅し、プロセスが完了]
-      h2.heading.switch
-        | ソング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ソングとは?
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ソング")
+        +section3("ソングとは?")
           p  最大16パターンを組み合わせたソングを最大16保存可能
           p
             | パターンは4つのパターン・バンクの中から1つを選択
@@ -714,10 +595,7 @@ html(lang="ja")
             br
             |  ソングを再生するとソング内の各パターンのバンクとパターン番号が表示され、ステップ・ボタンが点滅して現在の位置を示す
           p ソングの終わりに達するとソングの先頭に戻り、停止、またはプレー/ポーズ・ボタンが押されるまで再生を続ける
-        h3.heading.switch
-          | ソングの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -729,10 +607,7 @@ html(lang="ja")
             | 他のステップ・ボタンは、ソングに含まれるパターンの数を表示するために使用される
             br
             |  DrumBruteの動作中、ソングからパターン・モード切替えたり、ソングを切り替えることが可能
-        h3.heading.switch
-          | ソングの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの作成")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -752,10 +627,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton ●
                 | を押す(ソングライティング・モードの解除)
-        h3.heading.switch
-          | ソングライティング・モードの終了
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングライティング・モードの終了")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -763,10 +635,7 @@ html(lang="ja")
                 | ソング・モード中に
                 span.controllerButton ●
                 | を押す
-        h3.heading.switch
-          | ソングの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -775,10 +644,7 @@ html(lang="ja")
                 | を押しながら、
                 span.controllerButton Song
                 | を押す
-        h3.heading.switch
-          | ソングの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの消去")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -788,14 +654,8 @@ html(lang="ja")
                 br
                 | [ソング、バンク、トラック、パッドが点滅]
               li.contentOperationOrderlist ステップ・ボタンを押して、消去するソングを選択
-      h2.heading.switch
-        | ミュート/ソロ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ミュート/ソロとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ミュート/ソロ")
+        +section3("ミュート/ソロとは")
           p
             span.controllerButton Mute
             | /
@@ -805,10 +665,7 @@ html(lang="ja")
             | 設定は電源を落とすとリセットされる
             br
             | ミュート・グループ、ソロ・グループともに1つしか持てない
-        h3.heading.switch
-          | グループの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グループの作成")
           p ソロ・モードに入る
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -833,10 +690,7 @@ html(lang="ja")
             | 共有チャンネル上のインストゥルメントを個別に、ミュート、またはソロにすることができる
             br
             |  そのチャンネルのインストゥルメントセレクト・ボタンを押すだけで他のインストゥルメントにアクセスできる
-        h3.heading.switch
-          | グループの解除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グループの解除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -847,14 +701,8 @@ html(lang="ja")
                 | /
                 span.controllerButton Solo
                 | を押す
-      h2.heading.switch
-        | パフォーマンス機能
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | アウトプット・フィルター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パフォーマンス機能")
+        +section3("アウトプット・フィルター")
           p 使用可能なフィルター・タイプ
           table
             tr
@@ -892,10 +740,7 @@ html(lang="ja")
           p フィルター・コントロールの動作や設定は、パターンに保存できない
           p フィルター・コントロールは常にアクティブ
           p ソングがループしたり、パターンがソング以内のバンクを移動しても効果は維持される
-        h3.heading.switch
-          | ローラー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ローラー")
           p ドラムロールをパターンに素早く入力する
           p
             | 複数のパッドを同時に押すと複数のインストゥルメントを同時にロールさせることができる
@@ -924,10 +769,7 @@ html(lang="ja")
           p パターンのタイムディビジョンが3連符の値に設定されている場合、ローラーは三連符の様々なディビジョンを再生。
           p ソングがループしたり、パターンがソング以内のバンクを移動しても効果は維持される
           p ローラーを使用している間、ソングはバックグラウンドで演奏を続けるので、タッチストリップを放すとルーパー/ローラーを使用しなかった場合の位置へジャンプする
-        h3.heading.switch
-          | ルーパー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ルーパー")
           p ルーパーは、個々のインストゥルメントにロールを入力する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -959,10 +801,7 @@ html(lang="ja")
           p ストリップを指に置いたままステップボタンの1つを押すとスタートポイントを変更することができる
           p ソングがループしたり、パターンがソング以内のバンクを移動しても効果は維持される
           p ルーパーを使用している間、ソングはバックグラウンドで演奏を続けるので、タッチストリップを放すとルーパー/ローラーを使用しなかった場合の位置へジャンプする
-        h3.heading.switch
-          | スウィング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スウィング")
           p パターンに“シャッフル”のフィーリングを加える
           table
             caption スウィングのカレントトラック・ボタン
@@ -994,10 +833,7 @@ html(lang="ja")
             | 機能はパターンに埋め込まれるので、これらのパターンを再生中の場合、 パターンを呼び出すと前に保存した値にリセットされる
             br
             |  再生を止め、リスタートしてもリセットされる
-        h3.heading.switch
-          | ランダムネス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ランダムネス")
           p パターンに予測不能性を加える
           p
             | 影響を受ける機能
@@ -1037,10 +873,7 @@ html(lang="ja")
             | 機能はパターンに埋め込まれるので、これらのパターンを再生中の場合、パターンを呼び出すと前に保存した値にリセットされる
             br
             |  再生を止め、リスタートしてもリセットされる
-        h3.heading.switch
-          | ポリリズム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ポリリズム")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1054,14 +887,8 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton Last Step
                 | を押したまま、希望する長さを表すステップ・ボタンを押す
-      h2.heading.switch
-        | シフトボタン・チャート
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シフトボタン・チャート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("シフトボタン・チャート")
+        +section3("シフトボタン・チャート")
           table
             tr
               td
@@ -1130,31 +957,19 @@ html(lang="ja")
               td
                 span.controllerButton Song
               td 最後に保存した状態に戻る
-      h2.heading.switch
-        | シンクロナイゼーション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シンクロナイゼーションとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("シンクロナイゼーション")
+        +section3("シンクロナイゼーションとは")
           p
             | シンク・ボタンを使用すると様々なシンク・オプションに切り替えることが可能
             br
             | 選択されている モードに白いLEDが点灯
           p パターン再生中は、シンク設定を変更することはできない
-        h3.heading.switch
-          | マスターとして使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マスターとして使用")
           p
             | INTボタンが点灯している時はマスタークロック
             br
             |  トランスポート・セクションは、内蔵シーケンサーをコントロールする
-        h3.heading.switch
-          | スレーブとして使用
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スレーブとして使用")
           p  DrumBruteは他の3つのシンクLEDの1つが点灯しているとき(USB、MIDI、CLK)、外部クロックのスレーブとして機能する
           p
             | DrumBruteがスレーブの場合:
@@ -1171,15 +986,9 @@ html(lang="ja")
               td 外部ソースが動作していない場合
               td 最後に受けたテンポで内部クロックによって動作する
           p DrumBruteは、外部ソースから受信したシンク・メッセージをUSB、MIDI、クロック出力に送る
-        h3.heading.switch
-          | クロックソース/ディスティネーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クロックソース/ディスティネーション")
           p  入出力可能な以前のクロックは、4分音符当たり24パルス(ppqn)、48ppqn、2ppqn(KORG)またはステップごとにシングルパルス
-        h3.heading.switch
-          | タッチストリップ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タッチストリップ")
           table
             tr
               th 値
@@ -1206,10 +1015,7 @@ html(lang="ja")
               td 100~127
               td 100を送信
           p  使用されるチャンネルは、DrumBruteのグローバルMIDIチャンネル
-        h3.heading.switch
-          | オールノートオフ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オールノートオフ")
           p オールノートオフ・コマンドを送信(すべてのノートオフとすべてのサウンドオフ・メッセージがMIDIポートにエコーされる)
           .contentOperationBox
             p.contentOperationCaption 操作

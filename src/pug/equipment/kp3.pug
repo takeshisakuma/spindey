@@ -1,6 +1,7 @@
 - var pagename='KAOSS PAD KP3+|spindey.com'
 - var description='KORGのKAOSS PAD KP3+のマニュアルです。'
 - var keywords='KAOSS PAD KP3+,KORG'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -8,14 +9,8 @@ html(lang="ja")
     h1.heading KAOSS PAD KP3+
     main.equipmentMain
 
-      h2.heading.switch
-        | 外部接続
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 接続の種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("外部接続")
+        +section3("接続の種類")
           table
             tr
               td ミキサーのライン入力端子に接続して使用
@@ -30,10 +25,7 @@ html(lang="ja")
                 br
                 | ミキサーのセンドレベルとリターンレベルで、エフェクトのかかり具合を調節する
 
-        h3.heading.switch
-          | 音声の入力ソースの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音声の入力ソースの選択")
           p エフェクトをかける機材を接続した入力端子をINPUT SELECTスイッチで選ぶ
           table
             tr
@@ -42,10 +34,7 @@ html(lang="ja")
             tr
               td LINE
               td ライン入力にエフェクトがかかる
-        h3.heading.switch
-          | 入力する音量を調節する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("入力する音量を調節する")
           table
             tr
               td 機材から直接入力の場合
@@ -53,24 +42,15 @@ html(lang="ja")
             tr
               td マイク端子を使用する場合
               td マイクの感度に合わせて、音声がひずまないようにMIC TRIMノブを調整する
-        h3.heading.switch
-          | ヘッドホンの音量を調節する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ヘッドホンの音量を調節する")
           p ヘッドホンを使用するときは、PHONES VOLUMEノブで音量を調整する
 
 
 
-      h2.heading.switch
-        | エフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("エフェクト")
 
 
-        h3.heading.switch
-          | プログラムを選ぶ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムを選ぶ")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -88,10 +68,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | エフェクトのかかり具合を調整する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトのかかり具合を調整する")
 
 
           div.contentOperationBox
@@ -105,20 +82,14 @@ html(lang="ja")
           p FX DEPTHノブでエフェクトのかかり具合を調節して使用するときは、CONNECTIONスイッチを DIRECTに設定する
 
 
-        h3.heading.switch
-          | タッチ・パッドを操作する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タッチ・パッドを操作する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist タッチ・パッドを指でこすったり、タッピング（軽く叩く）して、音色を操作する
 
 
-        h3.heading.switch
-          | ホールド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ホールド")
 
           p HOLDキーをオンにすると、タッチ・パッドから指を離す直前のエフェクトの音色が保持される
             br
@@ -126,26 +97,17 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ミュート機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ミュート機能")
           p MUTEキーを押している間は、入力している信号やサンプリング音、シンセ/ドラム音がカットされる
             br
             | ディレイやリバーブの残響音などエフェクト音のみを出力することができる
 
 
 
-        h3.heading.switch
-          | トランスフォーマー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トランスフォーマー")
           p ミュートのオン/オフを素早く繰り返すと、DJテクニックの1つである「トランスフォーマー」と同じように、入力された持続音でリズムを作り出すことができる
 
-        h3.heading.switch
-          | FX RELEASE機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX RELEASE機能")
           p タッチ・パッドから手を離した瞬間(エフェクトをオフにした瞬間)から、BPMテンポに同期したディレイ・エフェクトがかかり始め、徐々に減衰していく
             br
             | DistortionやDecimatorなど強烈な効果のエフェクトがかかった状態から、違和感無くスルーの状態に戻ることができる
@@ -156,10 +118,7 @@ html(lang="ja")
 
           p ディレイを使用したエフェクト・プログラムを選択しているときは、タッチ・パッドから手を離した瞬間、エフェクト・プログラム中のディレイ音が残り、FxRelease機能は動作しない
 
-        h3.heading.switch
-          | FX RELEASEの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX RELEASEの保存")
           p FX RELEASEの設定をプログラムごとに保存することができる
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -177,16 +136,10 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | エフェクトリスト
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("エフェクトリスト")
 
 
-        h3.heading.switch
-          | フィルター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルター")
           div.tableScroll
             table
               tr
@@ -328,10 +281,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | EQ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("EQ")
           div.tableScroll
             table
               tr
@@ -363,10 +313,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | モジュレーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーション")
           div.tableScroll
             table
               tr
@@ -480,10 +427,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | コンプレッサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンプレッサー")
           div.tableScroll
             table
               tr
@@ -513,10 +457,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | LFO
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFO")
           div.tableScroll
             table
               tr
@@ -732,10 +673,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ディレイ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ディレイ")
           div.tableScroll
             table
               tr
@@ -889,10 +827,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | リバーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リバーブ")
           div.tableScroll
             table
               tr
@@ -952,10 +887,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | グレイン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グレイン")
           div.tableScroll
             table
               tr
@@ -1009,10 +941,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ルーパー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ルーパー")
           div.tableScroll
             table
               tr
@@ -1131,10 +1060,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サンプル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプル")
           div.tableScroll
             table
               tr
@@ -1204,10 +1130,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | フェード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フェード")
           div.tableScroll
             table
               tr
@@ -1254,10 +1177,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ビート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ビート")
           div.tableScroll
             table
               tr
@@ -1317,10 +1237,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シンセ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シンセ")
           div.tableScroll
             table
               tr
@@ -1413,10 +1330,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ボコーダー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ボコーダー")
           div.tableScroll
             table
               tr
@@ -1461,26 +1375,17 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | パッド・モーション
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("パッド・モーション")
 
 
 
-        h3.heading.switch
-          | パッド・モーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド・モーション")
           p タッチ・パッドの操作を記録しPAD MOTIONキーを押すと、記録した操作を再生することができる
             br
             | 指の動きを再現するパッド・モーションは、PADLEDにより視覚的に軌跡を確認することができる
 
 
-        h3.heading.switch
-          | パッド・モーションの記録
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド・モーションの記録")
           p パッド・モーションの記録は、PAD MOTIONキーを押し続けている間の動作を記録する
 
           div.contentOperationBox
@@ -1503,10 +1408,7 @@ html(lang="ja")
                   | 記録を開始すると、以前の記録に上書きされる
 
 
-        h3.heading.switch
-          | パッド・モーションの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド・モーションの再生")
           p PAD MOTIONキーを押すとキーが点灯し、パッド・モーションがループ再生を開始する
             br
             | 記録した動きをPAD LEDで表示する
@@ -1514,30 +1416,18 @@ html(lang="ja")
             | 再度PAD MOTIONキーを押すと、キーが消灯し再生を終了する
 
 
-        h3.heading.switch
-          | リバース再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リバース再生")
           p SHIFTキーを押しながらPAD MOTION(REVERSE)キーを押すと、リバース・モーションとして、逆再生する
             br
             | 同じ操作で“逆再生”“正再生”→“逆再生”を繰り返す
 
 
-        h3.heading.switch
-          | パッド・モーションの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド・モーションの保存")
           p パッド・モーションを記録したときのプログラムをPROGRAM MEMORYに書き込むことによって、パッド・モーションを保存することができる
 
 
-      h2.heading.switch
-        | BPM
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | BPMを表示
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("BPM")
+        +section3("BPMを表示")
           p 電源投入時、BPMは120.0に設定されている
             br
             | プログラムが表示されている場合には、PROGRAM/BPMノブを押して、BPM表示に切り替えが必要
@@ -1545,10 +1435,7 @@ html(lang="ja")
             | クロックの設定が、外部同期になっているときは、表示が"Ext"になり、BPM値を設定することができない
 
 
-        h3.heading.switch
-          | BPMマニュアル設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BPMマニュアル設定")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1563,10 +1450,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | タップ・テンポ機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タップ・テンポ機能")
           p BPM値のわからない曲などで、曲のビートに合わせてキーを押し、BPM値を設定することができる
 
           div.contentOperationBox
@@ -1578,10 +1462,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オートBPM設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オートBPM設定")
           p 曲のビートを自動検出し、BPM値を設定することができる
             br
             | BPMが変化すると、値も同期して変化する
@@ -1594,10 +1475,7 @@ html(lang="ja")
                 li.contentOperationOrderlist AUTO BPMキーが点灯し、入力中の音声のBPMが自動検出される
 
 
-        h3.heading.switch
-          | オートBPMでBPMが検出できないとき
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オートBPMでBPMが検出できないとき")
 
           p TAP/RANGEキーを数回曲のビートに合わせて押すと、そのビートをガイドとしてBPMを自動検出する
             br
@@ -1610,10 +1488,7 @@ html(lang="ja")
             | 検出可能なBPMは80～160
 
 
-        h3.heading.switch
-          | オートBPMをオフにする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オートBPMをオフにする")
           p AUTO BPMキーを押して、キーを消灯する
            br
            | オートBPM機能がオフになり、現在のBPM値で固定になる
@@ -1621,10 +1496,7 @@ html(lang="ja")
           p オートBPMは明示的にオフにしなくても自動的にオフになる
 
 
-        h3.heading.switch
-          | MIDIシンク機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIシンク機能")
 
           p 外部MIDI機器からのMIDIタイミング・クロックに合わせてBPMを設定することができる
             br
@@ -1640,16 +1512,10 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | PROGRAM MEMORY
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("PROGRAM MEMORY")
 
 
-        h3.heading.switch
-          | PROGRAM MEMORYキーへ設定を保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PROGRAM MEMORYキーへ設定を保存")
           p PROGRAM MEMORY 1～8キーに、現在設定しているプログラムの状態を記憶する
             br
             | そのキーを押せば瞬時にその設定を呼び出すことができる
@@ -1674,10 +1540,7 @@ html(lang="ja")
             | 終了すると通常状態に戻る
 
 
-        h3.heading.switch
-          | PROGRAM MEMORYキーに保存した設定の呼び出し
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PROGRAM MEMORYキーに保存した設定の呼び出し")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1686,15 +1549,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サンプリング
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("サンプリング")
 
-        h3.heading.switch
-          | サンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプリング")
           p 入力音をサンプリングし、ループまたはワンショットのサンプルデータを記録し、保存することができる
             br
             | ループ・サンプルは、記録開始時のBPM値で、最大4小節(16BEAT、約13秒)分のサンプリングが可能
@@ -1704,10 +1561,7 @@ html(lang="ja")
             | ループ・サンプルとして指定できるBEAT長は、16、8、4、2、1BEAT
 
 
-        h3.heading.switch
-          | サンプリングする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプリングする")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1746,10 +1600,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サンプルの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの再生")
 
           p
             | ループ・サンプルの入ったキーを押すと、ループ再生開始
@@ -1776,10 +1627,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 拍子の頭を設定する(SAMPLE ALIGN機能)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("拍子の頭を設定する(SAMPLE ALIGN機能)")
           p この設定を行うと、サンプル再生の頭が拍子に揃えることができる
 
           p SHIFTキーを押しながら TAP/RANGE(ALIGN)キーを押したタイミングが、小節の頭として設定される
@@ -1787,17 +1635,11 @@ html(lang="ja")
             |拍の頭ではキーが緑点滅となる(4/4は固定 緑→赤→赤→赤)
 
 
-        h3.heading.switch
-          | サンプル再生レベルの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプル再生レベルの設定")
           p すべてのバンクのサンプル再生音量を変更する場合は、LEVELスライダーで調節する
 
 
-        h3.heading.switch
-          | バンク毎にレベルを調整するには
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バンク毎にレベルを調整するには")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1811,19 +1653,13 @@ html(lang="ja")
                 li.contentOperationOrderlist タッチ・パッドを触ると、その位置でバンクのサンプルの再生レベルを調整する
 
 
-        h3.heading.switch
-          | ループ・サンプルの再生設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ループ・サンプルの再生設定")
           p SHIFTキーを押しながらループ・サンプルが入っているSAMPLE BANKキーを押すと、そのループ・サンプルの再生に関する設定を行うことができる
             br
             | ワンショット・サンプルが入ったSAMPLE BANKキーを押しても、レベル設定以外のエディットはできない
 
 
-        h3.heading.switch
-          | スタートポイント設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スタートポイント設定")
           p サンプリングしたデータのスタートポイントを調整する
 
 
@@ -1839,10 +1675,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | スライス設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライス設定")
           p 録音したループ・サンプルの再生するパターンを設定できる
 
 
@@ -1863,10 +1696,7 @@ html(lang="ja")
             | これによって、4小節の頭2拍と最後の2拍のみの１小節ループ等など、オリジナルの長さのループを作り出すことができる
 
 
-        h3.heading.switch
-          | リサンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リサンプリング")
 
           p サンプリング音を含めた再生中の音をダイレクトに別なBANKにリサンプリングできる
            br
@@ -1890,14 +1720,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ファンクション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ファンクション設定の操作
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ファンクション")
+        +section3("ファンクション設定の操作")
 
 
 
@@ -1917,10 +1741,7 @@ html(lang="ja")
           p TAP/RANGEキーがオレンジで点灯しているときは、TAP/RANGEキーを押すと、前のページに戻ることができる
 
 
-        h3.heading.switch
-          | 各ファンクションについて
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("各ファンクションについて")
           table
             tr
               td [1] CARD
@@ -2030,14 +1851,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | SDカードを使う
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SDカードを使う
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("SDカードを使う")
+        +section3("SDカードを使う")
           p SDカードを使って、内部のデータをセーブしたり、ロードしたりすることができる
             br
             | また、パソコンで作成したサンプル(WAVファイル、AIFFファイル)を、KP3+にロードすることもできる
@@ -2056,10 +1871,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | カードの全容量を確認する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カードの全容量を確認する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -2068,10 +1880,7 @@ html(lang="ja")
                 li.contentOperationOrderlist PROGRAM/BPMノブを押すとカード全体の容量が表示される
           p SHIFTキーを押すと、通常の状態に戻る
 
-        h3.heading.switch
-          | カードの残り容量を確認する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カードの残り容量を確認する")
 
 
           div.contentOperationBox
@@ -2083,10 +1892,7 @@ html(lang="ja")
 
           p SHIFTキーを押すと、通常の状態に戻る
 
-        h3.heading.switch
-          | カードのフォーマット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カードのフォーマット")
           p フォーマットするとカードの内容はすべて失われる
           p カード操作で失敗した場合は“Err”(ERROR)表示が出る
 
@@ -2104,10 +1910,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | カードに保存する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カードに保存する")
 
           p カードへサンプル・データ、プログラムメモリー、すべての設定ファイルをセーブする
 
@@ -2157,10 +1960,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 保存したデータをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("保存したデータをロードする")
 
 
           div.contentOperationBox
@@ -2208,14 +2008,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | MIDI
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDI")
+        +section3("MIDIの設定")
           p 本機はエフェクターとして使用する他に、本機から送信するMIDIメッセージでシンセサイザーなどの外部MIDI機器のリアルタイム・コントローラーとして使用できる
             br
             | また、本機とMIDIシーケンサーを接続し、タッチ・パッドを操作することによって送信されるMIDIメッセージを記録することで、タッチ・パッドの操作を再現することができる
@@ -2233,10 +2027,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDIチャンネルの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIチャンネルの設定")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2255,10 +2046,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | コントロール・チェンジ・ナンバー、ノート・ナンバーを変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コントロール・チェンジ・ナンバー、ノート・ナンバーを変更する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -2280,10 +2068,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDIメッセージ・フィルターを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIメッセージ・フィルターを設定する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2312,10 +2097,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 送受信するメッセージ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("送受信するメッセージ")
           p 工場出荷時(EXT CTRLを除く*)には、以下のようなMIDIメッセージを送受信することができる
           table
             tr

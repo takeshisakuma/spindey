@@ -1,20 +1,15 @@
 - var pagename='KAOSS DJ|spindey.com'
 - var description='KORGのKAOSS DJのマニュアルです。'
 - var keywords='KAOSS DJ,KORG'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading KAOSS DJ
     main.equipmentMain
-      h2.heading.switch
-        | トラックの再生
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | トラックに曲をロードして再生する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("トラックの再生")
+        +section3("トラックに曲をロードして再生する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -25,14 +20,8 @@ html(lang="ja")
                 li.contentOperationOrderlist 「Load Aボタン」または「Load Bボタン」でトラックを各デッキにロード
                 li.contentOperationOrderlist 「Playボタン」でトラックを再生
 
-      h2.heading.switch
-        | MIX
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 音声を出力する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIX")
+        +section3("音声を出力する")
           p 2つのデッキの音量を調節してミックスする
 
           table
@@ -46,10 +35,7 @@ html(lang="ja")
               td スピーカーの音声レベルを調整
               td Masterノブ
 
-        h3.heading.switch
-          | モニター出力を調節する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モニター出力を調節する")
           table
             tr
               td A、Bデッキそれぞれのモニター出力をオン/オフ切り替え
@@ -61,10 +47,7 @@ html(lang="ja")
               td ヘッドホンの音量を調節
               td Headphoneノブ
 
-        h3.heading.switch
-          | レベル・メーターに表示するレベルを切り替える
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レベル・メーターに表示するレベルを切り替える")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -72,24 +55,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 曲のBPM
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Key Lock機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("曲のBPM")
+        +section3("Key Lock機能")
           p テンポを変えても音程が変わらなくする
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Shiftボタンを押しながらPlayボタンを押してKey LockのOn/Offを切り替える
 
-        h3.heading.switch
-          | 2つのデッキのBPMを自動的に合わせる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("2つのデッキのBPMを自動的に合わせる")
           p Sync機能を使ってテンポを合わせる
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -97,10 +71,7 @@ html(lang="ja")
                 li.contentOperationOrderlist Syncボタンを押して、2つのデッキの再生速度と拍を合わせる
 
 
-        h3.heading.switch
-          | BPMを大きく変化させる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BPMを大きく変化させる")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -115,10 +86,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | BPMを微調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BPMを微調整")
           p 2つのデッキの拍がずれているときは、タッチ・ホイールまたはタッチ・スライダーを使って拍のズレを修正
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -149,14 +117,8 @@ html(lang="ja")
               th タッチ・スライダー・モード・ボタン(無印のボタン)
               td LED を消灯させるとノーマル・モード
 
-      h2.heading.switch
-        | スクラッチ、サーチ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | スクラッチ、サーチ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("スクラッチ、サーチ")
+        +section3("スクラッチ、サーチ")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -173,10 +135,7 @@ html(lang="ja")
               th 右回り
               td 再生位置をすすめる
 
-        h3.heading.switch
-          | 曲の指定位置に移動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("曲の指定位置に移動")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -187,14 +146,8 @@ html(lang="ja")
                   | (タッチ・スライダーの長さがロードされている曲の全体の長さに対応)
 
 
-      h2.heading.switch
-        | CUE
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | CUE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("CUE")
+        +section3("CUE")
           p 頭出ししたい位置をあらかじめ設定しておき、呼び出してその位置から再生する
 
           div.contentOperationBox
@@ -206,10 +159,7 @@ html(lang="ja")
                   br
                   | Shiftボタンを押しながらCueボタンを押すと曲の先頭から再生
 
-        h3.heading.switch
-          | Hot.Cue
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Hot.Cue")
           p Hot Cueは1トラックにつき3か所まで設定できる
             br
             | Hot Cueを設定した位置から瞬時に再生
@@ -254,14 +204,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | LOOPを使う
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オート・ループ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("LOOPを使う")
+        +section3("オート・ループ")
           p 曲のビートに合わせて最適なループを作成
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -290,10 +234,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | マニュアル・ループ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マニュアル・ループ")
           p タッチ・スライダーを使って、自由にループを設定
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -313,14 +254,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | エフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Serato DJのエフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクト")
+        +section3("Serato DJのエフェクト")
           p タッチ・パッドでSerato DJのエフェクトをコントロール
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -335,10 +270,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | KAOSS DJのエフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("KAOSS DJのエフェクト")
           p KAOSS DJのエフェクトを、A、Bデッキをミックスした後にかけるマスター・エフェクトとして使う
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -359,14 +291,8 @@ html(lang="ja")
                 li.contentOperationOrderlist Shiftボタンを押しながらタッチ・パッドに触れ、指を左右に動かす
 
 
-      h2.heading.switch
-        | エフェクトのBPM
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エフェクトのBPMを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクトのBPM")
+        +section3("エフェクトのBPMを設定する")
           p ディレイなどのプログラムで使用されるテンポを設定
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -375,20 +301,14 @@ html(lang="ja")
                 li.contentOperationOrderlist プログラム/バリュー・ノブで値を変更することができる
 
 
-        h3.heading.switch
-          | タップ・テンポ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タップ・テンポ")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Tapボタンを押してディスプレイにBPMを表示した状態でTapボタンを数回叩くと、叩いた間隔でBPM値が設定される
 
 
-        h3.heading.switch
-          | オートBPM
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オートBPM")
           p オートBPM 曲のビートを自動検出し、BPM値を設定することができる
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -419,14 +339,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | スケール、キー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | スケール(音階)を設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("スケール、キー")
+        +section3("スケール(音階)を設定する")
           p シンセ・プログラムなどで タッチ・パッドを使って演奏するときに割りあてるスケール(音階)を設定
 
           div.contentOperationBox
@@ -442,10 +356,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | キー(主音)を設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("キー(主音)を設定する")
           p シンセ・プログラムなどで使うスケールの基準となる音の高さを設定する
 
           div.contentOperationBox
@@ -462,14 +373,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | EQ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | EQを使う
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("EQ")
+        +section3("EQを使う")
           p 各デッキの音質を調整
           table
             tr
@@ -492,14 +397,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サンプラー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプラー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプラー")
+        +section3("サンプラー")
           p タッチ・パッドでSerato DJのサンプラーをコントロール
 
           div.contentOperationBox
@@ -527,14 +426,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 起動モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オーディオレス・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("起動モード")
+        +section3("オーディオレス・モード")
           p 外部オーディオ・インターフェイスを使用したいとき
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -550,10 +443,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オーディオ・リターン・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオ・リターン・モード")
           p ミックス後のアウトプット音声を録音したいとき
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -567,14 +457,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | MIIDメッセージ一覧
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIIDメッセージ一覧
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIIDメッセージ一覧")
+        +section3("MIIDメッセージ一覧")
           div.tableScroll
             table
               tr
@@ -832,14 +716,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | エフェクト・プログラム・リスト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Filter
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクト・プログラム・リスト")
+        +section3("Filter")
           div.tableScroll
             table
               tr
@@ -955,10 +833,7 @@ html(lang="ja")
                 td x
                 td x
 
-        h3.heading.switch
-          | Modulation
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Modulation")
           div.tableScroll
             table
               tr
@@ -1072,10 +947,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Dynamics
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Dynamics")
           div.tableScroll
             table
               tr
@@ -1116,10 +988,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | LFO
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFO")
           div.tableScroll
             table
               tr
@@ -1287,10 +1156,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Delay
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Delay")
           div.tableScroll
             table
               tr
@@ -1400,10 +1266,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Reverb
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Reverb")
           div.tableScroll
             table
               tr
@@ -1462,10 +1325,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Grain
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Grain")
           div.tableScroll
             table
               tr
@@ -1504,10 +1364,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Looper
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Looper")
           div.tableScroll
             table
               tr
@@ -1708,10 +1565,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Lead
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Lead")
           div.tableScroll
             table
               tr
@@ -1806,10 +1660,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Acoustic
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Acoustic")
           div.tableScroll
             table
               tr
@@ -1840,10 +1691,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Bass
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bass")
           div.tableScroll
             table
               tr
@@ -1914,10 +1762,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Chord
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Chord")
           div.tableScroll
             table
               tr
@@ -1976,10 +1821,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sound Effect
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sound Effect")
           div.tableScroll
             table
               tr
@@ -2102,14 +1944,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | スケール・リスト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | キーがCのとき
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("スケール・リスト")
+        +section3("キーがCのとき")
           div.tableScroll
             table
               tr

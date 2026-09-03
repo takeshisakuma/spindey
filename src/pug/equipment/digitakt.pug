@@ -1,6 +1,7 @@
 - var pagename='Digitakt|spindey.com'
 - var description='ElektronのDigitaktのマニュアルです。'
 - var keywords='Digitakt,Elektron'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -11,10 +12,7 @@ html(lang="ja")
         | OS1.2
         span.swithCondition.contentClosed
       //-section.h2content.hide
-        h3.heading.switch
-          | OS1.2
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("OS1.2")
           p Step Recording Modeモード(シーケンサーにステップごとにノートやコードを入力できる)[RECORD] + [STOP]を押して、STEP RECORDINGモードに入る
             br
             | シーケンス内の定義済みポイントを提供するジャンプモード/機能
@@ -36,14 +34,8 @@ html(lang="ja")
             | 同期メニューのクロック送信および受信設定からトランスポートを分離
             br
             | USBオーディオのオーディオルーティングオプションを[設定]→ [オーディオルーティング]メニューに移動
-      h2.heading.switch
-        | ユーザーインターフェース
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 画面の移動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ユーザーインターフェース")
+        +section3("画面の移動")
           table
             tr
               th [UP]、[DOWN]、[LEFT]、[RIGHT]の矢印キー
@@ -57,10 +49,7 @@ html(lang="ja")
             tr
               th [NO]
               td 無効化、選択解除、1つまたは複数の手順を進めたり戻ったり
-        h3.heading.switch
-          | パラメータ編集
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメータ編集")
 
           table
             tr
@@ -100,10 +89,7 @@ html(lang="ja")
             tr
               th パターン内のオーディオトラック内の同じパラメーターを一括変更
               td [TRK]を押したままにしてパラメータ設定を変更する
-        h3.heading.switch
-          | クイックスクロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クイックスクロール")
           table
             tr
               th LEVEL/DATAノブ
@@ -115,10 +101,7 @@ html(lang="ja")
                 br
                 | [FUNC]キー+[DOWN]キー
               td カーソルが 1つのメニューページ分移動
-        h3.heading.switch
-          | NAMING画面
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("NAMING画面")
           p 名前付けの方法は、サンプル、サウンド、プロジェクトなどを保存する際の名前を付ける場合で共通
           table
             tr
@@ -141,14 +124,8 @@ html(lang="ja")
                 |                         [FUNC]を押したままにして 矢印キーを使用すると、挿入対象の文字がハイライトされる
                 br
                 |                         そこで、[FUNC] を放すと文字が追加される
-      h2.heading.switch
-        | プリセット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 工場出荷時プリセットの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プリセット")
+        +section3("工場出荷時プリセットの再生")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -165,14 +142,8 @@ html(lang="ja")
                 br
                 |                         [PTN]と[TRIG 3]を押してパターンA03を選択して同様に操作する
               li.contentOperationOrderlist 再生を停止するには[STOP]を押す
-      h2.heading.switch
-        | データ構成
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | プロジェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("データ構成")
+        +section3("プロジェクト")
           table
             tr
               th プロジェクト
@@ -189,10 +160,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パターン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン")
           table
             tr
               th パターン
@@ -229,10 +197,7 @@ html(lang="ja")
                   li トラックの長さと拍子記号
 
 
-        h3.heading.switch
-          | キット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("キット")
           table
             tr
               th キット
@@ -248,10 +213,7 @@ html(lang="ja")
                   li オーディオトラックのLEVEL設定
 
 
-        h3.heading.switch
-          | サウンド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンド")
           table
             tr
               th サウンド
@@ -284,10 +246,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サンプル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプル")
           table
             tr
               th サンプル
@@ -317,10 +276,7 @@ html(lang="ja")
                 br
                 | +Driveからサンプルを削除した場合は、サウンドやパターンには含まれなくなる
 
-        h3.heading.switch
-          | +Driveサウンドライブラリとサウンドプール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("+Driveサウンドライブラリとサウンドプール")
           table
             tr
               th +Driveサウンドライブラリ
@@ -343,14 +299,8 @@ html(lang="ja")
                 |                         保存できるサウンドは128個
                 br
                 |                         サウンドプールにサウンドをロードすると、サウンドをロックすることができる
-      h2.heading.switch
-        | テンポ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | BPM設定を変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("テンポ")
+        +section3("BPM設定を変更する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -366,41 +316,26 @@ html(lang="ja")
             tr
               th テンポを段階的に変化
               td 矢印キーの[UP]か[DOWN]
-        h3.heading.switch
-          | テンポの一時的変更(10%)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("テンポの一時的変更(10%)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist メインインターフェイス画面で[LEFT]か[RIGHT]矢印キーを押したままにする
               li.contentOperationOrderlist 元のテンポに戻すにはキーを放す
-        h3.heading.switch
-          | タップテンポ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タップテンポ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [FUNCTION]キーを押したまま一定のリズムで[TEMPO]キーをタップする
               li.contentOperationOrderlist 4回連続してタップすると、タップの平均のテンポが計算される
               li.contentOperationOrderlist タップし続けると、平均テンポも更新される
-        h3.heading.switch
-          | テンポの微調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("テンポの微調整")
           p
             | テンポの微調整は、ターンテーブルや外部音源にDigitaktを手動で同期する場合に非常に便利
             br
             |                 テンポの微調整を実行する場合、TEMPOメニューにする必要はない
-      h2.heading.switch
-        | コピー&ペースト、クリア
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | コピー&ペースト、クリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("コピー&ペースト、クリア")
+        +section3("コピー&ペースト、クリア")
           p
             | パターン、トラック、トラックページやトリガーはコピー＆ペースト、クリアできる
           p
@@ -409,10 +344,7 @@ html(lang="ja")
             |                 コピーコマンドを実行すると、以前にコピーされていた項目が新しくコピーされた項目に置き換わる
             br
             |                 例：トリガーとパターンを同時にコピーすることはできない
-        h3.heading.switch
-          | パラメーター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメーター")
           p ページごと
           table
             tr
@@ -449,10 +381,7 @@ html(lang="ja")
                 | [TRK]と[TRIG 1～16]でトラックを選択
                 br
                 |                         [TRIG][SRC][FLTR][AMP][LFO]のどれかを押しながら[Clear]を押してクリア
-        h3.heading.switch
-          | トリガー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー")
           p
             | トリガーのコピー&ペースト、クリア(パラメータロック設定含む)
             br
@@ -469,10 +398,7 @@ html(lang="ja")
             tr
               th トリガーのクリア
               td 1つまたは複数のトリガーを押したまま[CLEAR]を押す
-        h3.heading.switch
-          | ページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ページ")
           p
             | GRID RECORDINGモードを有効にする必要がある
             br
@@ -489,10 +415,7 @@ html(lang="ja")
             tr
               th トリガーのクリア
               td [PAGE]キーを押したまま[CLEAR]を押す
-        h3.heading.switch
-          | トラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラック")
           table
             tr
               th
@@ -504,10 +427,7 @@ html(lang="ja")
             tr
               th トラックのクリア
               td [FUNC]キーを押したまま[CLEAR]を押す
-        h3.heading.switch
-          | パターン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン")
           p
             | アクティブなパターンは、同じバンクの別の場所、または別のバンクにコピーできる
           p
@@ -526,10 +446,7 @@ html(lang="ja")
               td [FUNC]と[PLAY]を押す
           p
             | ペーストとクリアは、このキーの組み合わせをもう一度押すと取り消し
-        h3.heading.switch
-          | 1つまたは複数のパターン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("1つまたは複数のパターン")
           p 1つまたは複数のパターンを、アクティブなパターンを閉じずにコピー&ペースト、クリア
           table
             tr
@@ -557,10 +474,7 @@ html(lang="ja")
                 |                         4秒押しっぱなしにするとクリアされる
                 br
                 | (Cleared X pattern(s)と表示される)
-        h3.heading.switch
-          | サウンド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンド")
           p
             | すべてのパラメータ設定とサンプルを別のトラックにコピーする
           .contentOperationBox
@@ -569,24 +483,15 @@ html(lang="ja")
               li.contentOperationOrderlist [TRK]と[COPY]を押す
               li.contentOperationOrderlist [TRK]と[TRIG 1～8]でトラックを選択
               li.contentOperationOrderlist [TRK]と[PASTE] を押す
-      h2.heading.switch
-        | パターンレコーディングモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンレコーディングモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターンレコーディングモード")
+        +section3("パターンレコーディングモード")
           p
             | Digitaktには、パターンの作成時にトリガーの入力モードが2つある
             br
             |                 GRID RECORDINGモードとLIVE RECORDINGモード
             br
             |                 新しいパターンを作成するには、バンクのいずれかで空のパターンのスロットを選択する
-        h3.heading.switch
-          | GRID RECORDINGモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("GRID RECORDINGモード")
           p [TRIG]キーを使用してパターングリッドにトリガーを追加する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -629,10 +534,7 @@ html(lang="ja")
             | トラックのすべてのトリガーを、シーケンサーの前方または後方にシフトする
             br
             | GRID RECORDINGモードで、[FUNC]を押したまま[LEFT]か[RIGHT]矢印キーを押す
-        h3.heading.switch
-          | LIVE RECORDINGモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LIVE RECORDINGモード")
           p
             | LIVE RECORDINGモードは、トラックにトリガーを追加する2番目の方法
             br
@@ -664,14 +566,8 @@ html(lang="ja")
                 | レコーディングとシーケンサーの再生の両方を停止するには[STOP]を押す
                 br
                 |                         LIVE RECORDINGモードは終了し、シーケンサーの再生のみを続けるには[PLAY]を押す
-      h2.heading.switch
-        | 機能
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | METRONOMEメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("機能")
+        +section3("METRONOMEメニュー")
           p
             | METRONOMEメニューで、Digitakt内部のメトロノームを制御する
           .contentOperationBox
@@ -698,19 +594,10 @@ html(lang="ja")
             tr
               th VOL.
               td クリックのボリュームを制御する
-        h3.heading.switch
-          | スクリーンセーバー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スクリーンセーバー")
           p スクリーンセーバーは、60分間何も操作しないとスクリーンを消す
-      h2.heading.switch
-        | パターン
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン")
+        +section3("パターンの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -726,10 +613,7 @@ html(lang="ja")
             tr
               th パターンが空
               td [TRIG]キーが消灯
-        h3.heading.switch
-          | バンクとパターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バンクとパターンの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -759,10 +643,7 @@ html(lang="ja")
             |                 パターンの最後のステップが再生されると、新しいパターンが始まり、パターン位置が点滅しなくなる
             br
             |                 1つまたは複数のパターンを同時に、アクティブなパターンを閉じることなくコピー、クリア、 貼り付けできる
-        h3.heading.switch
-          | パターンのスケール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのスケール")
           p
             | パターンの長さとタイミングを変更する
             br
@@ -785,19 +666,13 @@ html(lang="ja")
               th [UP]と[DOWN]矢印キーの
               td 設定を変更
           p LEVEL/DATAノブを使用しても、同様の設定を変更することができる
-        h3.heading.switch
-          | パターンのスイング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのスイング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TEMPO]を押して、テンポ/スイングメニューにアクセス
               li.contentOperationOrderlist DATA ENTRYノブ Eを回して、SWING率を設定(50%～80%：デフォルトは50%)
-        h3.heading.switch
-          | パターン制御
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン制御")
           p
             | パターンに 16個以上のシーケンサーステップが含まれる場合、&lt;PATTERN PAGE&gt;のLEDで示される
             br
@@ -818,10 +693,7 @@ html(lang="ja")
             tr
               th 再生中にパターンを変更する
               td 現在再生中のパターンの最後に到達した後に、パターンが変更
-        h3.heading.switch
-          | チェーン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チェーン")
           p
             | チェーンは、複数のパターンで構成されるシーケンス
             br
@@ -858,10 +730,7 @@ html(lang="ja")
             | チェーンは、チェーンの最後のパターンが再生されるとループする
             br
             |                 新しいチェーンを作成した場合や新しいバンク/パターンを選択するとチェーンは削除される
-        h3.heading.switch
-          | パターン情報の一時保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン情報の一時保存")
           p
             | パターンは一時メモリスペースにすぐに保存することができ、このスペースからリロードすることができる
             br
@@ -875,10 +744,7 @@ html(lang="ja")
             | TEMPORARY SAVE PATTERNコマンドではパターンは完全には保存されず、別のプロジェクトをロードした場合、変更は失われる
             br
             |                 変更内容を完全に保存したい場合は、PATTERNメニューのSAVE TO PROJを使用する
-        h3.heading.switch
-          | パターン情報の一時保存からのリロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン情報の一時保存からのリロード")
           p アクティブなパターンのリロードを実行する(TEMPORARY RELOAD PATTERN)
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -889,14 +755,8 @@ html(lang="ja")
                 |                         最後に一時保存コマンドを使用した時に保存されたパターンがリロードされる
                 br
                 |                         一時保存されているパターンがない場合は、完全保存状態のパターンがリロードされる
-      h2.heading.switch
-        | トラック
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オーディオトラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("トラック")
+        +section3("オーディオトラック")
           p
             | Digitaktには、8つのオーディオトラックがある
             br
@@ -907,10 +767,7 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRK]キーを押して[TRIG 1～8]キーのいずれかを押す
-        h3.heading.switch
-          | トラックの編集
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラックの編集")
           table
             tr
               th TRIGページ
@@ -933,23 +790,14 @@ html(lang="ja")
             tr
               th LFO ページ
               td アクティブなトラックのLFOパラメータ
-      h2.heading.switch
-        | トリガー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | トリガーのクリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("トリガー")
+        +section3("トリガーのクリア")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 再生しながら[NO]と[TRIG]キー(複数可)を押し続ける
               li.contentOperationOrderlist パターン再生で順番がきたすべてのステップのキーが消去される
-        h3.heading.switch
-          | 複数トリガーのパラメーター変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("複数トリガーのパラメーター変更")
           p 任意のトリガー選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -960,10 +808,7 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRK]を押しながらパラメーターを操作する
-        h3.heading.switch
-          | トリガータイプ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガータイプ")
           p RECORDINGモードでは、ノートトリガーとロックトリガーの2種類のトリガーを入力できる
           p
             | ノートトリガーとロックトリガーの2種類のトリガーを使用できる
@@ -983,10 +828,7 @@ html(lang="ja")
             tr
               th 任意のトリガーが含まれないステップ
               td [TRIG]キーが消灯
-        h3.heading.switch
-          | MICRO TIMINGメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MICRO TIMINGメニュー")
           p
             | マイクロタイミングをノートトリガーに追加したり、ビートの前後に移動させたりする
             br
@@ -1000,10 +842,7 @@ html(lang="ja")
               li.contentOperationOrderlist [TRIG]キーを放してMICRO TIMINGメニューを終了する
               li.contentOperationOrderlist
                 | マイクロタイミング設定が、アクティブなパターンに保存される/li>
-        h3.heading.switch
-          | RETRIGメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("RETRIGメニュー")
           p
             | オーディオトラックのシーケンサーステップで、リトリガーをカスタマイズできる(リトリガー機能はMIDIトラックでは使用できない)
             br
@@ -1064,10 +903,7 @@ html(lang="ja")
                   tr
                     th 64
                     td 設定した長さで半分のベロシティでフェードインし、127は設定した長さでフルベロシティで完全にフェードインする
-        h3.heading.switch
-          | QUANTIZEメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("QUANTIZEメニュー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1090,10 +926,7 @@ html(lang="ja")
                 | すべてのトラックのすべてのマイクロタイミングのトリガーにリアルタイムで影響する
                 br
                 |                         クォンタイズ値が高いほど、すべてのマイクロタイミングトリガーがよりクォンタイズされる(0～127)
-        h3.heading.switch
-          | フィルモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルモード")
           p
             | ドラムフィルなどをパターンに入れて一時的な変化を付ける
           p フィルモード
@@ -1116,14 +949,8 @@ html(lang="ja")
                 |                         (GRID RECORDINGモードを有効にすることはできない)
                 br
                 |                         キーを押し続けている間、フィルモードが有効
-      h2.heading.switch
-        | ロック
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パラメータロック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ロック")
+        +section3("パラメータロック")
           p
             | パラメータロックにより、一意のパラメータ値をトリガーに付与できる
             br
@@ -1141,10 +968,7 @@ html(lang="ja")
             |                 ロックするトリガー数に関係なく、1つのパラメータが1つのロックパラメータとして数える
             br
             |                 例：フィルターのカットオフパラメータがすべてのシーケンサーステップでロックされている場合、これ以外に71個のパラメータをロックできる
-        h3.heading.switch
-          | パラメータロック(GRID RECORDINGモード)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメータロック(GRID RECORDINGモード)")
           p パラメータロック
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -1165,19 +989,13 @@ html(lang="ja")
                 |                         ロックトリガーを使用すると、ノートをトリガーせずにサウンドを変調できる
                 br
                 |                         ロックトリガーは、[TRIG]キーが黄色になる
-        h3.heading.switch
-          | パラメータロック(LIVE RECORDINGモード)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメータロック(LIVE RECORDINGモード)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist DATA ENTRYノブを回すか、CHROMATICモードで[TRIG]キーを押すと、パラメータロックがアクティブなトラックに入力される
               li.contentOperationOrderlist ノートトリガーはロックされ、ノートトリガーのないステップにロックトリガーが配置される
-        h3.heading.switch
-          | パラメータロック(パラメーター単位のクリア)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメータロック(パラメーター単位のクリア)")
           table
             tr
               th LIVE RECORDINGモード
@@ -1193,10 +1011,7 @@ html(lang="ja")
                 | [TRIG]を押したままロックされたパラメータのDATA ENTRYノブを押すとパラメータロックが単独で削除される
                 br
                 |                         ノートトリガー自体を削除してから再度入力すると、すべてのパラメータロックがトリガーから消去される
-        h3.heading.switch
-          | サウンドロック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドロック")
           p
             | トラックのサウンドを、個々のシーケンサーステップのサウンドプールにある別のサウンドに変更することができる
             br
@@ -1209,10 +1024,7 @@ html(lang="ja")
               li.contentOperationOrderlist ノートトリガーを割り当てるサウンドを選択し、[TRIG]キーを離す
               li.contentOperationOrderlist サウンドロックが含まれている[TRIG]キーが点滅する
               li.contentOperationOrderlist ノートトリガーの[TRIG]キーを押したままにすると、割り当てられているサウンドが表示される
-        h3.heading.switch
-          | 条件付きロック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("条件付きロック")
           p
             | TRIGページのCONDパラメータでトリガー条件を設定できる
             br
@@ -1301,14 +1113,8 @@ html(lang="ja")
             tr
               th 4:7
               td トリガー条件は、パターンの4回目の再生時に真になり、以降で真になるのは11回目、18回目などとなる
-      h2.heading.switch
-        | サウンド
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SOUND BROWSER
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サウンド")
+        +section3("SOUND BROWSER")
           p
             | SOUND BROWSERはサウンドのプレビューとロードに使用する
             br
@@ -1377,10 +1183,7 @@ html(lang="ja")
               th SEARCH
               td
                 | テキスト検索を行い、入力した文字列が名前と一致するまたは名前の一部であるすべてのサウンドを一覧表示する
-        h3.heading.switch
-          | SOUND MANAGER
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SOUND MANAGER")
           p
             | [FUNC]と[PATTERN MENU]を押して、IMPORT/EXPORTメニューを表示する
             br
@@ -1527,10 +1330,7 @@ html(lang="ja")
             |                 個々のサウンドを選択/選択解除するには、サウンドをハイライト表示して[YES]を押す
           p
             | •[FUNC]と[UP]/[DOWN]を押すと、サウンドリストを素早くスクロールできる
-        h3.heading.switch
-          | サウンドの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドの再生")
           p
             | アクティブなパターンの 8つのトラックのサウンドを再生するには[TRIG 1～8]キーを押す
             br
@@ -1541,10 +1341,7 @@ html(lang="ja")
             |                 各オーディオトラックに対応する MIDIチャンネルを MIDI CHANNELSメニューで割り当てられる
             br
             |                 外付けMIDI機器を使用して、CHROMATICモードの時にサウンドをクロマチックで再生できる
-        h3.heading.switch
-          | サウンドの編集
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドの編集")
           p
             | 編集するオーディオトラックを、[TRK]と[TRIG]キー 1～8のいずれかを押してアクティブにする
           p
@@ -1570,10 +1367,7 @@ html(lang="ja")
             tr
               th LFO
               td サウンドの LFOのパラメータを制御する
-        h3.heading.switch
-          | サウンドの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドの保存")
           p
             | サウンドのパラメータを編集した後で、+Driveに保存できる
           .contentOperationBox
@@ -1587,10 +1381,7 @@ html(lang="ja")
                 |                         サウンドを別のバンクに保存する場合は、[BANK]+[TRIG 9～16]を押してバンクを選択
               li.contentOperationOrderlist NAMING画面でサウンドの名前を指定し、[YES]を押す
               li.contentOperationOrderlist TAGS 画面で矢印キーと[YES]キーを使ってサウンドに適したタグを選択し、<SAVE>を選択して [YES] を押す
-        h3.heading.switch
-          | サンプルの割り当て
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの割り当て")
           p
             | プロジェクトにロードされた127個のサンプルを、任意のオーディオトラックのサウンドに割り当てられる
             br
@@ -1609,10 +1400,7 @@ html(lang="ja")
                 | サンプルを選択するには[YES]を押す
                 br
                 |                         サンプルを選択せずに一覧を閉じるにはDATA ENTRYノブ Dを押 すか[NO]を押す
-        h3.heading.switch
-          | サンプルの割り当て(クイック割り当て)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの割り当て(クイック割り当て)")
           p クイック割り当てを使って、サンプルをトラックやプロジェクトのサウンドプールにロードすることもできる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -1628,10 +1416,7 @@ html(lang="ja")
                 br
                 |                         サンプルは、約 10秒間プレビューできる
               li.contentOperationOrderlist サンプルをハイライトし、[YES]を押すと、トラックとプロジェクトのサウンドプールが直接ロードされる
-        h3.heading.switch
-          | サウンドプールへのサウンドの追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドプールへのサウンドの追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1641,14 +1426,8 @@ html(lang="ja")
               li.contentOperationOrderlist SOUND OPERATIONSメニューを開くには[RIGHT]を押す
               li.contentOperationOrderlist COPY TO ...を選択して[YES]を押す
               li.contentOperationOrderlist SOUND POOLを選択して[YES]を押す
-      h2.heading.switch
-        | サンプリング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SAMPLINGメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプリング")
+        +section3("SAMPLINGメニュー")
           p
             | 外部入力経由で、外部ソースからのオーディオをサンプリングすることができる
             br
@@ -1715,10 +1494,7 @@ html(lang="ja")
             tr
               th MON
               td Digitakt経由の受信オーディオをモニタリングするかしないかを選択する(NO / YES)
-        h3.heading.switch
-          | オーディオのサンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオのサンプリング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1753,10 +1529,7 @@ html(lang="ja")
                 | サンプルを割り当てるトラックを選択するには、[TRACK 1～8]を押す
                 br
                 |                         トラックにサンプルを割り当てない場合は[NO]を押す
-        h3.heading.switch
-          | ダイレクトサンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ダイレクトサンプリング")
           p
             | SAMPLINGメニューを使用せずにサンプリングを実行する
             br
@@ -1779,10 +1552,7 @@ html(lang="ja")
                 |                         サンプルのノーマライズ中は[SAMPLING]キーが暗赤色に点灯し、終了すると緑色に点灯する
                 br
                 |                         ダイレクトサンプリングプロセスを途中でキャンセルするには、どの段階でも[SAMPLING]と[NO]を押す
-        h3.heading.switch
-          | 外部入力からのサンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部入力からのサンプリング")
           p
             | Digitaktは、オーディオもサンプリングできる
             br
@@ -1817,14 +1587,8 @@ html(lang="ja")
               li.contentOperationOrderlist [YES]を押してサンプルを保存する
               li.contentOperationOrderlist サンプルの名前を付けて[YES]を再度押し、保存を確定する
               li.contentOperationOrderlist [TRACK 1～8]を押して、サンプルを割り当てるトラックを選択する
-      h2.heading.switch
-        | CHROMATICモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | CHROMATICモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("CHROMATICモード")
+        +section3("CHROMATICモード")
           p
             | アクティブなオーディオトラック(またはアクティブなMIDIトラックがある場合はセンドMIDIノート)の音をクロマチックで再生できる
             br
@@ -1860,14 +1624,8 @@ html(lang="ja")
                 br
                 |                         アクティブなトラックのサウンドが、再生可能なキーそれぞれで異なるピッチになる
               li.contentOperationOrderlist [FUNC]と[TRK]を押して CHROMATICモードを終了する
-      h2.heading.switch
-        | MUTEモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MUTEモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MUTEモード")
+        +section3("MUTEモード")
           p
             | このモードでは、シーケンサートラックのいずれかをミュートできる
             br
@@ -1906,14 +1664,8 @@ html(lang="ja")
               <td>アクティブなパターンのシーケンサーのトラックをミュートまたはミュート解除できる<br>
               [PTN]を押したまま[TRACK]キーを押すと、トラックをミュート/ミュート解除できる</td>
               </tr>
-      h2.heading.switch
-        | オーディオトラックのパラメータ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | TRIG PARAMETERSページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("オーディオトラックのパラメータ")
+        +section3("TRIG PARAMETERSページ")
           p
             | ノートがトリガーされたときのアクションを設定する
             br
@@ -1954,10 +1706,7 @@ html(lang="ja")
             tr
               th LFO.T
               td LFOトリガーでは、 LFOをトリガーするかどうかを制御する(ON、OFF)
-        h3.heading.switch
-          | SRCページ 1
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SRCページ 1")
           p
             | サンプルをトラックに割り当てると、シーケンサーで、または[TRIG]キーを押して手動でトリガーできる
             br
@@ -2059,10 +1808,7 @@ html(lang="ja")
             tr
               th FORWARD
               td サンプルは、トリガーされるたびに再生される
-        h3.heading.switch
-          | SRCページ 2
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SRCページ 2")
           p SRCページ 1と同じパラメータがあるが、パラメータがグラフィカルに表示される
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2071,10 +1817,7 @@ html(lang="ja")
                 | [SRC]キーを2回押す
                 br
                 |                         ([SRC]キーを長押しすると現在のパラメータを確認できる)
-        h3.heading.switch
-          | FLTRページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FLTRページ")
           p
             | FILTERページには、マルチモードフィルターと関連するエンベロープを制御するすべてのパラメータがある
           .contentOperationBox
@@ -2117,10 +1860,7 @@ html(lang="ja")
                 |                         ノブは二極性で、モデュレーション深さは正と負の両方を設定できる
                 br
                 |                         範囲(-64.00～63.00)
-        h3.heading.switch
-          | AMPページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("AMPページ")
           p アンプエンベロープ、オーバードライブ、エフェクトセンド、パニング、ボリュームのパラメータを制御する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2168,10 +1908,7 @@ html(lang="ja")
               td
                 | ボリュームは、サウンドの量を設定する
                 | このパラメータは、トラック全体のレベルには関係しない(0.00～ 127.00)
-        h3.heading.switch
-          | LFO ページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFO ページ")
           p
             | 低周波オシレーターは、オーディオトラックのSRC、FILTER、AMPページにあり、パラメータの調整に使用できる
             br
@@ -2380,14 +2117,8 @@ html(lang="ja")
                 td 1/256
                 td 1/512
                 td 1/1024
-      h2.heading.switch
-        | MIDIトラックのパラメータ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIノート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDIトラックのパラメータ")
+        +section3("MIDIノート")
           p
             | 一部の機能は、標準MIDIケーブルまたは USB 2.0 A-Bコネクタケーブルを使用して Digitaktに接続した外部MIDI機器(MIDIキーボードやコンピューターなど)からの MIDIノート値を送信することでトリガーできる
             br
@@ -2402,10 +2133,7 @@ html(lang="ja")
             |                 MIDIプログラムの変更メッセージ 0～127で、Digitaktのパターン 1～128(A01～H16)が選択される
             br
             |                 さらに、 MIDI CCおよび NRPNメッセージを送信して Digitaktのさまざまな機能を制御できる
-        h3.heading.switch
-          | MIDIトラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIトラック")
           p
             | MIDIトラックの機能は、オーディオトラックの機能とほぼ同じ
             br
@@ -2436,10 +2164,7 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRK]キーを押して[TRIG 9～16]キーのいずれかを押す
-        h3.heading.switch
-          | TRIG PARAMETERSページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TRIG PARAMETERSページ")
           p
             | ノートがトリガーされたときのアクションを設定する
             br
@@ -2489,10 +2214,7 @@ html(lang="ja")
             tr
               th LFO.T
               td LFOトリガーでは、LFOをトリガーするかどうかを制御する(ON、OFF)
-        h3.heading.switch
-          | SRC PAGE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SRC PAGE")
           p
             | MIDIトラックでデータの送信に使用される MIDIチャンネルを設定する
             br
@@ -2544,10 +2266,7 @@ html(lang="ja")
             tr
               th BC
               td  ブレスコントローラーで、 MIDIトラックで送信されたブレスコントロールのデータを制御する(OFF、0～127)
-        h3.heading.switch
-          | FLTR PAGE (CC VALUE)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FLTR PAGE (CC VALUE)")
           p
             | ここでは、8つの割り当て可能なCCコマンドの値を設定できる
             br
@@ -2564,20 +2283,14 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [FLTR]を押してFLTRページにアクセスする
-        h3.heading.switch
-          | VAL1～VAL8 CC
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("VAL1～VAL8 CC")
           p
             | 1～8の値で、AMP (CC SELECT)ページで指定されているCCコマンドに送信される値を制御する
             br
             |                 これらのパラメータのデフォルト値は OFF
             br
             |                 [TRIG]とDATA ENTRYノブを押して、パラメータを有効にしてから値を設定する(OFF、0～127)
-        h3.heading.switch
-          | AMP PAGE (CC SELECT)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("AMP PAGE (CC SELECT)")
           p
             | FLTR PAGE (CC VALUE)ページでパラメータにより値を制御する8つのCCコマンドを選択する
           .contentOperationBox
@@ -2585,18 +2298,12 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [AMP]を押してAMPページにアクセスする
               li.contentOperationOrderlist 対応するノブまたは[ENTER/YES]を押して、パラメータの変更を有効にする
-        h3.heading.switch
-          | SEL1～SEL8 CC
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SEL1～SEL8 CC")
           p
             | 1～8選択で、AMP PAGE 1 (CC VALUE)ページでパラメータにより御する CCコマンドを指定する
             br
             |                 選択可能な値は、標準 MIDIコントロール変更メッセージ(0～119)
-        h3.heading.switch
-          | LFOページ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFOページ")
           p
             | 低周波オシレーターを使用して、MIDIトラックの SRCおよび FLTRページにあるパラメータとやり取りできる
             br
@@ -2685,14 +2392,8 @@ html(lang="ja")
                 |                         負(反転)と正のモデュレーション深さを設定できる
                 br
                 |                         中央の設定は0.00で、モジュレーション深さなしに相当する(-64.00～63.00)
-      h2.heading.switch
-        | FXパラメータ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | FXパラメータの編集
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("FXパラメータ")
+        +section3("FXパラメータの編集")
           p
             | ディレイとリバーブはセンドエフェクトで、パターンレベルで設定される
             br
@@ -2719,10 +2420,7 @@ html(lang="ja")
             | FXパラメータ設定は、パターンの一部として保存される
             br
             |                 思ったような結果になったらパターンを保存し、独自の名前を付ける
-        h3.heading.switch
-          | DELAY
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DELAY")
           p 入力信号を受け取り、時間的に遅延させ、元の信号に再結合させる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2840,10 +2538,7 @@ html(lang="ja")
             tr
               th VOL
               td ミックスボリュームで、ディレイ出力信号のボリュームを調整する(0.00～127.00)
-        h3.heading.switch
-          | REVERB
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("REVERB")
           p
             | リバーブセンドエフェクトは、音の反響の持続性と環境特性を制御
             br
@@ -2888,10 +2583,7 @@ html(lang="ja")
             tr
               th VOL
               td ミックスボリュームで、リバーブ出力信号のボリュームを設定する(0.00～127.00)
-        h3.heading.switch
-          | MASTER PAGE 1(Compressorページ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MASTER PAGE 1(Compressorページ)")
           p
             | COMPRESSOR コンプレッサーマスターエフェクトは、小さい音に相対して大きな音のボリュームを下げることで、ダイナミックレンジを圧縮する
             br
@@ -2991,24 +2683,15 @@ html(lang="ja")
                   tr
                     th 127
                     td コンプレッサーをかけた信 号のみが渡される
-        h3.heading.switch
-          | MASTER PAGE 2(Mixerページ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MASTER PAGE 2(Mixerページ)")
           p
             | 8つのオーディオトラックのTRACK LEVELパラメータに簡単にアクセスできる(0～127)
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist  [FUNC]と[LFO]を2回押してMASTER PAGE 2にアクセスする
-      h2.heading.switch
-        | PATTERNメニュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | PATTERNメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("PATTERNメニュー")
+        +section3("PATTERNメニュー")
           p PATTERNメニューを使用して、パターンの管理を実行する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3024,15 +2707,9 @@ html(lang="ja")
             tr
               th [NO]を押す
               td メニューを終了する
-        h3.heading.switch
-          | PATTERN/RENAME
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/RENAME")
           p パターン名をリネームする
-        h3.heading.switch
-          | PATTERN/CLEAR
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/CLEAR")
           table
             tr
               th WHOLE PATTERN
@@ -3056,10 +2733,7 @@ html(lang="ja")
                 |                         サウンドは変更されない
                 br
                 |                         シーケンサー情報は、パターンがロード元の同じパターンスロットに保存されるまで消えない
-        h3.heading.switch
-          | PATTERN/SAVE TO PROJ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/SAVE TO PROJ")
           table
             tr
               th WHOLE PATTERN
@@ -3070,10 +2744,7 @@ html(lang="ja")
             tr
               th SEQUENCE DATA
               td アクティブなパターンのシーケンスデータを+Driveに保存する
-        h3.heading.switch
-          | PATTERN/RELOAD FROM PROJ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/RELOAD FROM PROJ")
           table
             tr
               th WHOLE PATTERN
@@ -3084,10 +2755,7 @@ html(lang="ja")
             tr
               th SEQUENCE DATA
               td アクティブなパターンのシーケンスデータを+Driveからリロードする
-        h3.heading.switch
-          | PATTERN/IMPORT/EXPORT
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/IMPORT/EXPORT")
           p
             | サウンドを管理する
           table
@@ -3112,10 +2780,7 @@ html(lang="ja")
             tr
               th MANAGE SOUNDS
               td SOUND MANAGERが表示される
-        h3.heading.switch
-          | PATTERN/AUDIO ROUTING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PATTERN/AUDIO ROUTING")
           table
             tr
               th USE GLOBAL SETTING
@@ -3126,24 +2791,15 @@ html(lang="ja")
             tr
               th SEND TO FX
               td 9/9
-      h2.heading.switch
-        | SETTINGSメニュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SETTINGSメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("SETTINGSメニュー")
+        +section3("SETTINGSメニュー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [GLOBAL SETTINGS]を押してSETTINGSメニューにアクセス
               li.contentOperationOrderlist LEVEL/DATA ノブの [UP]/[DOWN] を使用して一覧をスクロールする
               li.contentOperationOrderlist [YES]を押してハイライトしたメニューを開く
-        h3.heading.switch
-          | PROJECT/LOAD PROJECT
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PROJECT/LOAD PROJECT")
           p
             | LOAD PROJECTで、ロードするプロジェクトを選択するためのプロジェクト選択画面を開く
             br
@@ -3156,16 +2812,10 @@ html(lang="ja")
             |                 新しいプロジェクトをロードすると、作業中のプロジェクトが上書きされる
             br
             |                 別のプロジェクトを 読み込む前に、必ず作業中のプロジェクトを保存する
-        h3.heading.switch
-          | PROJECT/SAVE PROJECT AS
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PROJECT/SAVE PROJECT AS")
           p
             | アクティブなプロジェクトの保存先のスロットを選択するためのプロジェクト選択画面を開く
-        h3.heading.switch
-          | PROJECT/MANAGE PROJECTS
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PROJECT/MANAGE PROJECTS")
           p
             .contentOperationBox
               p.contentOperationCaption 操作
@@ -3205,10 +2855,7 @@ html(lang="ja")
                   | クリーンなプロジェクトで、空のファイルスロットを初期化する
                   br
                   |                             このオプションは空のプロジェクトスロットでのみ使用できる
-        h3.heading.switch
-          | SAMPLES
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES")
           p
             | サンプルを管理する
             br
@@ -3241,10 +2888,7 @@ html(lang="ja")
           p サンプルとディレクトリを区別するため、ディレクトリ終了行を含むすべてのディレクトリに ".."と、 行の一番最後に(D)が付いている
           p
             | +Driveでディレクトリをブラウズする場合、アクティブなプロジェクトの 127個のサンプルスロットのいずれかに割り当てられたサンプルには、スロット番号が表示される
-        h3.heading.switch
-          | SAMPLES/サンプルのロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/サンプルのロード")
           p 1つまたは複数のサンプルを、アクティブなプロジェクトの RAMメモリにロードする
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3283,10 +2927,7 @@ html(lang="ja")
               li.contentOperationOrderlist 左側にメニューが表示されるので、VIEW RVIEW RAMを選択して[YES]を押す
               li.contentOperationOrderlist 127個すべてのサンプルスロットを示す一覧が表示される
               li.contentOperationOrderlist この画面では、127個のサンプルを個別にロード解除するか、まとめてスロットを空にすることができる
-        h3.heading.switch
-          | SAMPLES/サンプルのロード解除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/サンプルのロード解除")
           p
             | 1つまたは複数のサンプルを、アクティブなプロジェクトの RAMメモリからロード解除することができる
           .contentOperationBox
@@ -3298,10 +2939,7 @@ html(lang="ja")
               li.contentOperationOrderlist [UP]/[DOWN]の矢印キーまたはLEVELノブを使用して一覧をスクロールする
               li.contentOperationOrderlist [YES]を押して個々のサンプルをチェックするか、[RIGHT]を押して右側のメニューを表示し、SELECT ALL を選択する
               li.contentOperationOrderlist 右側のメニューで、UNLOADを選択すると、チェックしたサンプルのスロットが空になる
-        h3.heading.switch
-          | SAMPLES/サンプルの置き換え
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/サンプルの置き換え")
           p  1つまたは複数のサンプルを、アクティブなプロジェクトの RAMメモリで置き換えることができる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3325,10 +2963,7 @@ html(lang="ja")
                 | 使用するサンプルに移動し、[YES]を押す
                 br
                 |                         +Driveライブラリのサンプルは、ハイライトして[FUNC]と[YES]を押すとプレビューできる
-        h3.heading.switch
-          | SAMPLES/サンプル名の変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/サンプル名の変更")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3340,10 +2975,7 @@ html(lang="ja")
                 | メニューは、画面の右側に表示される
               li.contentOperationOrderlist RENAMEを選択し、[YES]を押す
               li.contentOperationOrderlist NAMING画面でサンプルの名前を変更し、[YES]を押す
-        h3.heading.switch
-          | SAMPLES/サンプルの移動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/サンプルの移動")
           p  1つまたは複数のサンプルを、あるディレクトリから別のディレクトリに移動できる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3358,10 +2990,7 @@ html(lang="ja")
               li.contentOperationOrderlist [YES]を押し、サンプルの移動先のディレクトリに移動する
               li.contentOperationOrderlist [LEFT]矢印キーを押し、MOVE HEREをハイライトする
               li.contentOperationOrderlist [YES]を押すと、サンプルが移動する
-        h3.heading.switch
-          | SAMPLES/コンピュータからDigitaktへのサンプルの転送
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/コンピュータからDigitaktへのサンプルの転送")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3377,10 +3006,7 @@ html(lang="ja")
             |                 Transfer では、すべてのオーディオファイルが、Digitaktのネイティブオーディオ形式である 16 bit、48 kHz、モノラルオー ディオファイルに自動的に変換される
             br
             |                 サンプルを使用するには、作業中のプロジェクトにロードする必要がある
-        h3.heading.switch
-          | SAMPLES/新しい転送先ディレクトリの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/新しい転送先ディレクトリの作成")
           p
             | Digitaktでは、MIDI Sample Dump Standard(SDS)および Extended SDS経由でもサンプルを受信できる
             br
@@ -3422,10 +3048,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | SAMPLES/Digitaktからコンピュータへのサンプルの転送
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SAMPLES/Digitaktからコンピュータへのサンプルの転送")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3445,10 +3068,7 @@ html(lang="ja")
             |                 大きなデータを送受信する際は、USB設定を使用する
             br
             |                 • ファイルを Digitaktに転送しているときは、シーケンサーの再生は停止する
-        h3.heading.switch
-          | MIDI CONFIG/SYNC
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI CONFIG/SYNC")
           p
             | DigitaktでのMIDIクロックおよび転送コマンドの送受信方法を制御する
             br
@@ -3479,10 +3099,7 @@ html(lang="ja")
                 | パターンが変更された場合にプログラム変更メッセージを送信する
                 br
                 |                         プログラム変更メッセージを送信するMIDIチャンネルは、MIDI CHANNELSメニューで設定する
-        h3.heading.switch
-          | MIDI CONFIG/PORT CONFIG
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI CONFIG/PORT CONFIG")
           p
             | MIDIポート関連の設定
             br
@@ -3630,10 +3247,7 @@ html(lang="ja")
               tr
                 th RECEIVE CC/NRPN
                 td 有効な場合、外付けMIDI機器からCC/NRPNデー��を送信してDigitaktを制御できる
-        h3.heading.switch
-          | MIDI CONFIG/CHANNELS
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI CONFIG/CHANNELS")
           p
             | MIDIチャンネルの設定を行う
           table
@@ -3685,10 +3299,7 @@ html(lang="ja")
                 |                         AUTO 設定では、AUTO チャンネルを使用する
                 br
                 |                         MIDI SYNCメニューで、Digitakt からプログラム変更メッセージが送信されるようにする
-        h3.heading.switch
-          | SYSEX DUMP
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSEX DUMP")
           p
             | SYSEX DUMPメニューで、プロジェクト、パターン、サウンドデータを DigitaktのMIDI OUTポートまたは USB経由で送受信できる
           .contentOperationBox
@@ -3716,10 +3327,7 @@ html(lang="ja")
             br
             |                 外付け機器がコンピュータの場合、無料のSysExユーティリティC6(ElektronのWebサイトからダウンロード可能)を使用することを推奨
             br
-        h3.heading.switch
-          | SYSEX DUMP/SYSEX SEND
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSEX DUMP/SYSEX SEND")
           p
             | プロジェクト、パターン、サウンドを外部機器に送信できる
           .contentOperationBox
@@ -3739,10 +3347,7 @@ html(lang="ja")
             | 定期的にデータをバックアップすることが重要
             br
             |                 SysEx送信を開始する前に、受信機器が送信されるデータを待機中であることを確認する
-        h3.heading.switch
-          | SYSEX DUMP/SYSEX RECEIVE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSEX DUMP/SYSEX RECEIVE")
           p
             | プロジェクト、パターン、サウンドを外部機器から受信する
           .contentOperationBox
@@ -3768,10 +3373,7 @@ html(lang="ja")
                 |                         ANYWHEREオプションで、使用可能な最初の空きスロットにサウンドが保存される
                 br
                 |                         バンクの表示の右側に空きスロットの容量が表示される
-        h3.heading.switch
-          | AUDIO ROUTING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("AUDIO ROUTING")
           table
             tr
               th ROUTE TO MAIN
@@ -3779,10 +3381,7 @@ html(lang="ja")
             tr
               th SEND TO FX
               td 9/9
-        h3.heading.switch
-          | SYSTEM/USB CONFIG
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSTEM/USB CONFIG")
           table
             tr
               th OVERBRIDGE
@@ -3806,10 +3405,7 @@ html(lang="ja")
               th PRE/POST FADER
               td
                 | (PRE/POST))/td>
-        h3.heading.switch
-          | SYSTEM/OS UPGRADE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSTEM/OS UPGRADE")
           p
             | DigitaktのOSをアップグレードする場合
             br
@@ -3836,10 +3432,7 @@ html(lang="ja")
                 |                         プロセスが正常に完了すると、OSが更新され、本体が再起動する
                 br
                 |                         DigitaktのOSアップグレードを MIDIポート経由で受信する場合は、転送速度10xまでの Elektron TM-1 USB MIDI インターフェイスを使用する
-        h3.heading.switch
-          | SYSTEM/FORMAT+DRIVE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSTEM/FORMAT+DRIVE")
           p +Driveのすべての内容を消去する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3859,10 +3452,7 @@ html(lang="ja")
               td
                 | すべてのサンプルを消去する
                 br
-        h3.heading.switch
-          | SYSTEM/STORAGE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYSTEM/STORAGE")
           p
             | RAMか+Driveに格納されている内容の概要と、使用可能なメモリ容量を確認できる
             br
@@ -3874,14 +3464,8 @@ html(lang="ja")
               li 使用済、残りのサンプル時間量
               li RAMの使用量と空き
               li +Driveの使用量と空き
-      h2.heading.switch
-        | SCALEメニュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | SCALEメニュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("SCALEメニュー")
+        +section3("SCALEメニュー")
           p
             | パターンとトラックの長さとタイミングをこのメニューで設定する
           table
@@ -3897,10 +3481,7 @@ html(lang="ja")
               li.contentOperationOrderlist [FUNC]と[PAGE]を押して、[SCALE]メニューにアクセスする
               li.contentOperationOrderlist [FUNC]と[YES]を押して、この2つのSCALEモードを切り替える
               li.contentOperationOrderlist DATA ENTRYノブを使用して、各種設定を調整する
-        h3.heading.switch
-          | LENGTH PER PATTERNモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LENGTH PER PATTERNモード")
           p
             | デフォルトのモード
             br
@@ -3956,10 +3537,7 @@ html(lang="ja")
             tr
               th [TRIG]キー
               td パターンのステップ数を素早く変更できる
-        h3.heading.switch
-          | LENGTH PER TRACKモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LENGTH PER TRACKモード")
           p
             | このモードでは、パターンのトラックに個々の長さを割り当てることができる
             br
@@ -4002,23 +3580,14 @@ html(lang="ja")
                 br
                 | CH.LENパラメータでこの設定を上書きできる
                 br
-      h2.heading.switch
-        | STARTUPメニュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | STARTUPメニューへのアクセス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("STARTUPメニュー")
+        +section3("STARTUPメニューへのアクセス")
           p 他の選択肢を選択するには、対応する[TRIG]キーを押す
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [FUNC]キーを押しながら Digitaktの電源をオンにする
-        h3.heading.switch
-          | TEST MODE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("TEST MODE")
           p
             | Digitaktに発生した問題がハードウェアが原因である可能性がある場合に実行
           p
@@ -4030,10 +3599,7 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRIG 1]キーを押す
               li.contentOperationOrderlist [UP]と[DOWN]キーを使用して、テストログをスクロールできる
-        h3.heading.switch
-          | EMPTY RESET
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("EMPTY RESET")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4045,10 +3611,7 @@ html(lang="ja")
             tr
               th 削除されないもの
               td +Drive上のデータ
-        h3.heading.switch
-          | FACTORY RESET
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FACTORY RESET")
           table
             tr
               th アクティブなRAMプロジェクト(パターン、グローバルデータを含む)
@@ -4069,33 +3632,21 @@ html(lang="ja")
           p アクティブなプロジェクトを保存しておく場合は、+Driveのプロジェクトスロットの1より大きい数値のスロットに保存してから、工場出荷時リセットを実行する
 
 
-        h3.heading.switch
-          | OS UPGRADE
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("OS UPGRADE")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRIG 4]キーを押す
               li.contentOperationOrderlist 待機状態に入り、画面に“READY TO RECEIVE”と表示される
           p
-        h3.heading.switch
-          | EXIT
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("EXIT")
           p STARTUPメニューを終了する
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [TRIG 5]キーを押す
-      h2.heading.switch
-        | MIDIコントローラー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIコントローラー(GRID RECORDINGモード)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDIコントローラー")
+        +section3("MIDIコントローラー(GRID RECORDINGモード)")
           p
             | MIDIコントローラーで、GRID RECORDINGモードでNOTEやTRIG VELOCITYデータを入力できる
             br
@@ -4106,10 +3657,7 @@ html(lang="ja")
             |                 最初のノートで、トリガーのすべてのノートのTRIG VELOCITY値を設定する
             br
             |                 シーケンサーではAuto MIDIチャンネルでデータを受信し、アクティブなトラックに録音される
-        h3.heading.switch
-          | MIDIコント ローラー(LIVE RECORDINGモード)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIコント ローラー(LIVE RECORDINGモード)")
           p
             | MIDIコントローラーで、LIVE RECORDINGモードでNOTE、TRIG VELOCITY、TRIG LENGTHデータを入力できる
             br
@@ -4120,22 +3668,13 @@ html(lang="ja")
             |                 最初のノートで、トリガーのすべてのノートのTRIG VELOCITY値を設定する
             br
             |                 リリースした最後のノートで、トリガーのすべてのノートのTRIG LENGTHを設定する
-      h2.heading.switch
-        | クイックキー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | [FUNC]キーとの組み合わせ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("クイックキー")
+        +section3("[FUNC]キーとの組み合わせ")
           p
             | [FUNC]キーを他のキーと組み合わせて使用する場合、通常の操作では[FUNC]キーを押したまま2番目のキー を短く押す
             br
             |                 一部のキーの組み合わせでは、[FUNC]キーを押したまま2番目のキーを1秒間押すと、サブメニューにアクセスできる
-        h3.heading.switch
-          | 全般
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("全般")
           table
             tr
               th [FUNC]+[REC]
@@ -4155,10 +3694,7 @@ html(lang="ja")
                 | 貼り付けコマンドを実行
                 br
                 |                         実行内容は、コピーされた内容によって異なる
-        h3.heading.switch
-          | トラック /パターン /バンクの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラック /パターン /バンクの選択")
           table
             tr
               th [TRK]+[TRIG 1～8]キー
@@ -4172,10 +3708,7 @@ html(lang="ja")
             tr
               th [BANK]+[TRIG 9～16]キー
               td バンクを選択
-        h3.heading.switch
-          | 名前付け
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("名前付け")
           table
             tr
               th [FUNC]+ 矢印キー
@@ -4183,10 +3716,7 @@ html(lang="ja")
             tr
               th [FUNC]+[NO]
               td (NAMING画面)文字を消去
-        h3.heading.switch
-          | 保存とリロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("保存とリロード")
           table
             tr
               th [FUNC]+[GLOBAL SETTINGS]
@@ -4197,10 +3727,7 @@ html(lang="ja")
             tr
               th [FUNC]+[NO]
               td アクティブなパターンを一時的にリロード
-        h3.heading.switch
-          | 移動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("移動")
           table
             tr
               th [FUNC]+[RIGHT](SAMPLESメニュー)
@@ -4208,10 +3735,7 @@ html(lang="ja")
             tr
               th [FUNC]+[LEFT](SAMPLESメニュー)
               td ディレクトリを終了しディレクトリ階層を1つ上に戻す
-        h3.heading.switch
-          | メニューへのアクセス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メニューへのアクセス")
           table
             tr
               th [FUNC]+[PATTERN MENU]
@@ -4234,10 +3758,7 @@ html(lang="ja")
             tr
               th [FUNC]+[PAGE]
               td パターン/トラックのSCALEメニューを開く
-        h3.heading.switch
-          | シーケンサーの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンサーの設定")
           table
             tr
               th [FUNC]+[TEMPO]
@@ -4254,10 +3775,7 @@ html(lang="ja")
             tr
               th [TRIG]キー(押したまま)+[LEFT/RIGHT]
               td MICRO TIMINGメニューを開き、トリガーのマイクロタイミングを設定する(GRID RECORDINGモード時)
-        h3.heading.switch
-          | シーケンサーのレコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンサーのレコーディング")
           table
             tr
               th [REC]+[PLAY]
@@ -4271,18 +3789,12 @@ html(lang="ja")
             tr
               th [FUNC]+[PTN](長押し)
               td メトロノームのオン /オフを切り替え
-        h3.heading.switch
-          | ミュート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ミュート")
           table
             tr
               th [FUNC]+[TRIG]キー
               td 1つまたは複数のトラックをミュート /ミュート解除
-        h3.heading.switch
-          | モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モード")
           table
             tr
               th [FUNC]+[BANK]
@@ -4305,10 +3817,7 @@ html(lang="ja")
                 | フィルモードに固定
                 br
                 |                         フィルモードを解除するには、[PAGE]をもう一度押す
-        h3.heading.switch
-          | トラックのクリア /パターンのクリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラックのクリア /パターンのクリア")
           table
             tr
               th [FUNC]+[PLAY]
@@ -4316,10 +3825,7 @@ html(lang="ja")
             tr
               th [FUNC]+[PLAY]
               td (どのモードでもない場合または LIVE RECORDINGモード時)パターンをクリア
-        h3.heading.switch
-          | パラメータのリセット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パラメータのリセット")
           table
             tr
               th DATA ENTRYノブ+[NO]
@@ -4327,18 +3833,12 @@ html(lang="ja")
             tr
               th [PARAMETER]キー+[PLAY]
               td 選択したパラメータページのすべてのパラメータをデフォルト値にリセット
-        h3.heading.switch
-          | サンプルの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの選択")
           table
             tr
               th [FUNC]+[SRC]
               td SAMPLE SELECTパラメータを使用できる
-        h3.heading.switch
-          | ダイレクトサンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ダイレクトサンプリング")
           table
             tr
               th [SAMPLING]+[YES]
@@ -4354,14 +3854,8 @@ html(lang="ja")
               td  ダイレクトサンプリングプロセスでキャンセル
 
 
-      h2.heading.switch
-        | サンプルパック
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプルの転送
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプルパック")
+        +section3("サンプルの転送")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -4376,10 +3870,7 @@ html(lang="ja")
                   br
                   | 転送アプリケーションウィンドウの一番下で、Digitaktのターゲットフォルダーを変更できる(デフォルトは/ transfers-YYMMDD)
 
-        h3.heading.switch
-          | サンプルをDIGITAKTプロジェクトにロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルをDIGITAKTプロジェクトにロードする")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup

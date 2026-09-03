@@ -1,20 +1,15 @@
 - var pagename='micron|spindey.com'
 - var description='ALESISのmicronのマニュアルです。'
 - var keywords='ALESIS,micron'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading micron
     main.equipmentMain
-      h2.heading.switch
-        | 基本操作
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 基本操作
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("基本操作")
+        +section3("基本操作")
           table
             tr
               th コントローラー
@@ -80,14 +75,8 @@ html(lang="ja")
               td latch
               td
                 | オン：サステインペダルのように動作
-      h2.heading.switch
-        | Control knob circle
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Control knob circle
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Control knob circle")
+        +section3("Control knob circle")
           table
             tr
               th ボタン
@@ -117,24 +106,15 @@ html(lang="ja")
             tr
               td Config
               td 全体のトランスポーズ、鍵盤のベロシティカーブ、MIDI設定等を行う
-      h2.heading.switch
-        | Patterns
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Patterns")
+        +section3("パターンの再生")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [patterns] ボタンを押す
               li.contentOperationOrderlist コントロール・ノブを回して、エディットするパターンを選択
               li.contentOperationOrderlist どれか鍵盤を押さえて、パターンを再生
-        h3.heading.switch
-          | エディット前との比較
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディット前との比較")
           p パターンのエディット中は、オリジナル・バージョン(エディットする前の状態)に復帰することができる
           table
             tr
@@ -146,20 +126,14 @@ html(lang="ja")
             tr
               td 保存
               td [store] ボタンを押す
-        h3.heading.switch
-          | 編集されたpatternを最後に保存したものと比較する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("編集されたpatternを最後に保存したものと比較する")
           p
             | コントロールノブを押し、左に回して"Revert to stored～"の画面にスクロールさせる
             br
             | ここでコントロールノブ を押すとストアしている方を聴く事が出来る
             br
             | 更にディスプレイには"Unrevert to edited～"と表示されるので、ここでもう一度コントロールノブを押すとエディットしている方に戻ることが出来る
-        h3.heading.switch
-          | セットアップに追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップに追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -236,10 +210,7 @@ html(lang="ja")
                 | 新しいパートとしてパターンが追加される
                 br
                 |                         パート・パラメーターは初期値に設定される
-        h3.heading.switch
-          | 新しいセットアップを作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("新しいセットアップを作成")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -250,10 +221,7 @@ html(lang="ja")
             | パターン名の前に“ +”が付いた新しいセットアップ(例、"+Liner"や"+Bobbetty")が作成される
             br
             |                 既に同じ名称が存在する場合は、名称の後ろに数字(例、"+Liner2"や"+Bobbetty2")が付いた新しいセットアップが作成される
-        h3.heading.switch
-          | パターン・プログラムの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・プログラムの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -270,10 +238,7 @@ html(lang="ja")
                 br
                 | 求めているプログラムが見つかったら、 [programs]ボタンを押しながら [patterns], ボタンを押して、設定を完了する
 
-        h3.heading.switch
-          | 新規のpattern作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("新規のpattern作成")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -303,10 +268,7 @@ html(lang="ja")
             | [programs]ボタンを押したまま[patterns]ボタンを押す
             br
             | これによりprograms で選択していた音色がそのままパターンで使用されるプログラム(音色)として選択される
-        h3.heading.switch
-          | パターンの長さ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの長さ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -323,10 +285,7 @@ html(lang="ja")
                 | その後のパートで再生されるパターンが長くなる
                 br
                 |                         長くなった部分にはノートがないので、その部分では空のパターンを再生する
-        h3.heading.switch
-          | 1小節あたりのステップ数
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("1小節あたりのステップ数")
           p
             | 設定値：8、12、14、16、20、24、32、クオンタイズ無し
             br
@@ -346,10 +305,7 @@ html(lang="ja")
             tr
               td 変わった感じのパターンを作成したい場合
               td 14、20といった通常の音符で表せない数値にする
-        h3.heading.switch
-          | シーケンスとアルペジオの切り替え
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスとアルペジオの切り替え")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -371,10 +327,7 @@ html(lang="ja")
                 | 既にプログラムされてるメロディラインを、どれか１つの鍵盤を押さえるだけで、そのキーに対応したパターンで再生する
                 br
                 |                         押さえるキーを変更すると、異なるシーケンスに変わる
-        h3.heading.switch
-          | アルペジオの音域
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アルペジオの音域")
           p
             | キーボードで入力したノートから、上、下、あるいは上下にどのくらいの範囲でアルペジオを展開するかを設定する
             br
@@ -384,10 +337,7 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist エディットしたいパターンで、コントロール・ノブを押してエディット・モードに入る
               li.contentOperationOrderlist コントロール・ノブを回して、エディット・オプション「Span (arpeggios only)音域(アルペジオのみ)」を選択
-        h3.heading.switch
-          | アルペジオの生成順序
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アルペジオの生成順序")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -447,10 +397,7 @@ html(lang="ja")
                 | アルペジエーターは、基本的に押さえた鍵盤のノートを発音するが、このオプションを選択していると、1番最初に押さえた鍵盤のノートの1オクターブあるいはそれ以上のノートを、2番目のノートを発音する前に発音する
                 br
                 |                         2番目のノートも、3番目のノートを発音する前に同様の動作をするとい うように続いて行く
-        h3.heading.switch
-          | リアル・タイム・レコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リアル・タイム・レコーディング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -484,10 +431,7 @@ html(lang="ja")
             |                 この時、キーボードの演奏とスライダーやピッチ・ホイールの操作は、同時にレコーディングする必要は無く、まず、 キーボードの演奏をレコーディングして、その演奏を聴きながら、コントローラーの操作をレコーディングすれば良い
             br
             |                 また、クリア・コントローラー機能を使用すれば、コントローラーの情報だけを消してレコーディングし直すことも可能
-        h3.heading.switch
-          | ステップ・エディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・エディット")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -543,10 +487,7 @@ html(lang="ja")
                 | ノートの長さをエディットするには、そのステップにカーソルを移動して、実際にその長さの時間鍵盤を押さえる
                 br
                 | 長さの値を直接エディットすることはできませんが、ディスプレイの右上の表示で、おおよその長さを確認することができる
-        h3.heading.switch
-          | コントローラーをクリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コントローラーをクリア")
           p ライダーとピッチ・ホイールの操作データを、ノート・データに影響させること無く、パターンから消去
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -557,10 +498,7 @@ html(lang="ja")
           p
             | コントローラーの操作データに満足していない時に、そのデータだけを消去してやり直すのに便利
 
-        h3.heading.switch
-          | パターンをクリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンをクリア")
           p ノート・データとコントローラーの操作データを、基本的なパターン・パラメーターに影響を与えること無く、パターンから消去
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -568,10 +506,7 @@ html(lang="ja")
               li.contentOperationOrderlist エディットしたいパターンで、コントロール・ノブを押してエディット・モードに入る
               li.contentOperationOrderlist コントロール・ノブを回して、エディット・オプション「 Clear pattern～(パターンをクリアする)」を選択
               li.contentOperationOrderlist コントロール・ノブを押す
-        h3.heading.switch
-          | パターン名の入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン名の入力")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -594,20 +529,14 @@ html(lang="ja")
             tr
               td 大文字と小文字の切り替え
               td 同じ鍵盤を押す
-        h3.heading.switch
-          | パターンの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist エディットしたいパターンで、コントロール・ノブを押してエディット・モードに入る
               li.contentOperationOrderlist コントロール・ノブを回して、エディット・オプション「Delete pattern～(パターンの削除)」を選択
           p 実行する時に確認のプロンプトが表示される
-        h3.heading.switch
-          | コピーを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コピーを保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -625,10 +554,7 @@ html(lang="ja")
             | 新しいパターンを作成する場合は、まず、現在あるパターンの中から、ベースになるパターンを探してコピーを保存する
             br
             | コピーを保存しないとオリジナルのパターンに上書きをしてしまう
-        h3.heading.switch
-          | 変更したパターンを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("変更したパターンを保存")
           p 保存をしていないと、Micronの電源を切った時に、 変更したデータが失われる
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -652,22 +578,13 @@ html(lang="ja")
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist  復帰オプション(""Revert -> Stored～"")を使用する
-        h3.heading.switch
-          | パターンのエディットを終了する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのエディットを終了する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist コントロール・ノブを取り囲んでいるスイッチのどれか、あるいは [patterns] ボタンを押す
-      h2.heading.switch
-        | rhythms
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | リズムの演奏
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("rhythms")
+        +section3("リズムの演奏")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -679,23 +596,14 @@ html(lang="ja")
                 | tapボタンを叩く：リズムのスピードを変更
                 br
                 | tabボタンを押したままコントロールノブを回す：リズムのスピードを調整
-        h3.heading.switch
-          | リズムのエディットの終了
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズムのエディットの終了")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist コントロールノブを取り囲んでいるスイッチのどれか、or 「rythm」ボタンを押す
-        h3.heading.switch
-          | エディットする前との比較
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディットする前との比較")
           p コントロールノブで、エディット前とエディット中の状態を切り替えて比較できる
-        h3.heading.switch
-          | 編集されたrhythmを最後に保存したものと比較する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("編集されたrhythmを最後に保存したものと比較する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -704,10 +612,7 @@ html(lang="ja")
                 li.contentOperationOrderlist ディスプレイには"Unrevert to edited～"と表示されるので、ここでもう一度コントロールノブを押すとエディットしている方に戻る
 
 
-        h3.heading.switch
-          | 変更したリズムを保存する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("変更したリズムを保存する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -728,10 +633,7 @@ html(lang="ja")
             | いつでもパターンのエディット・モードに戻ることができる
             br
             | Micronは、他のリズムのエディットを開始しない限り、元のリズムの変更データを失うことはない
-        h3.heading.switch
-          | セットアップに追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップに追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -805,10 +707,7 @@ html(lang="ja")
                 | 新しいビートとしてリズムが追加される
                 br
                 |                         ビート・パラメーターは初期値に設定される
-        h3.heading.switch
-          | 新しいセットアップを作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("新しいセットアップを作成")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -818,10 +717,7 @@ html(lang="ja")
             | このオプションを選択してコントロール・ノブを押すと、リズム名の前に“ +”が付いた新しいセットアップが作成される
             br
             |                 既に同じ名称が存在する場合は、名称の後ろに数字が付いた新しいセットアップが作成される
-        h3.heading.switch
-          | 長さ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("長さ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -833,10 +729,7 @@ html(lang="ja")
             | 反対に、この値を現在のリズムの長さよりも大きな数値に設定してしまうと、その後のビートで再生されるリズムが長くなってしまう
             br
             | この時、長くなった部分にはノートがないので、その部分では空のリズムを再生することになる
-        h3.heading.switch
-          | 1小節あたりのステップ数
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("1小節あたりのステップ数")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -850,10 +743,7 @@ html(lang="ja")
             | 連譜やスウィング、シャッフル感が必要ない場合は、8、16、32 ステップを選択し、スウィングやシャッフル感を出したい場合は、12、24ステップを選択する
             br
             | あるいは、14、20といった通常の音符で表せない数値にすることで、変わった感じのパターンを作成することもできる
-        h3.heading.switch
-          | リアル・タイム・レコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リアル・タイム・レコーディング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -883,10 +773,7 @@ html(lang="ja")
             | レコーディングを終了したい場合は、コントロール・ノブを回すか、いずれのモード・ボタンを押す
             br
             | パターンを全部消去して始めからやり直したい場合は、リズムをレコーディング状態にして、コントロール・ノブを押したままにする
-        h3.heading.switch
-          | Drum A through Drum H
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Drum A through Drum H")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -978,10 +865,7 @@ html(lang="ja")
               td e
               td Remove～ (ドラムを削除する)
               td このオプションを選択していると、ドラムをリズムから削除する
-        h3.heading.switch
-          | リズムの追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズムの追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -989,10 +873,7 @@ html(lang="ja")
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Add～」を選択
           p
             | リズムにドラムを追加する
-        h3.heading.switch
-          | リズムをクリア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズムをクリア")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1000,10 +881,7 @@ html(lang="ja")
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Clear rhythm～ (リズムをクリアする)」を選択
           p
             | このオプションを選択していると、コントロール・ノブを押すことで、ノート・データとコントローラーの操作データを、基本的なリズム・パラメーターに影響を与えること無く、リズムから消去することができる
-        h3.heading.switch
-          | リズム名
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズム名")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1029,10 +907,7 @@ html(lang="ja")
               td 削除したい文字の１つ右にカーソルを移動して、コントロール・ノブを押したまま反時計回り(左)に回す
 
 
-        h3.heading.switch
-          | MIDI sysexを送信する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI sysexを送信する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1042,10 +917,7 @@ html(lang="ja")
             | このオプションを選択すると、Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、リズム・データを送信することができる
             br
             | これは、リズム・データをパソコンにバック・アップする、あるいは、そのデータをインターネットをこれは、リズム・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する、ということを意味する
-        h3.heading.switch
-          | syx バンドルを送信する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("syx バンドルを送信する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1053,10 +925,7 @@ html(lang="ja")
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Send syx bundle～(syx バンドルを送信する)」を選択
           p
             | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、リズムとそのパ ターンのプログラム・データを送信する
-        h3.heading.switch
-          | リズムの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズムの削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1066,10 +935,7 @@ html(lang="ja")
             | この機能を使用すれば、リズムを削除することができる
             br
             |                 このオプションは、実行する時に確認のプロンプトが表示される
-        h3.heading.switch
-          | コピーを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コピーを保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1089,14 +955,8 @@ html(lang="ja")
             |                 この時コピーを保存することを忘れないこと
             br
             |                 この作業を忘れると、オリジナルのリズムに上書きをしてしまうことになるので、注意が必要
-      h2.heading.switch
-        | Setups
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | セットアップの演奏
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Setups")
+        +section3("セットアップの演奏")
           p
             | セットアップは、いくつかのパートを、キーボード上にアサインした設定
             br
@@ -1116,28 +976,19 @@ html(lang="ja")
               td Beats
               td リズムとそれに関連するパラメーターから構成されている
           p
-        h3.heading.switch
-          | 変更したパターンを保存する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("変更したパターンを保存する")
           p
             | 保存をしていないと、Micronの電源を切った時に、 変更したデータが失われてしまう
             br
             |                 保存をしていなくても、他のモードに切り替えたり、プログラムやセットアップを閲覧するだけなら、変更データが失われることはない
             br
             |                 さらに、セットアップで、現在エディット中のパターンを使用すれば、その再生音には、エディットしている状態が反映されるので、実際に演奏する形態で確認することができる
-        h3.heading.switch
-          | セットアップのエディットを終了する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップのエディットを終了する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist コントロール・ノブを取り囲んでいるスイッチのどれか、あるいは [setups] ボタンを押す
-        h3.heading.switch
-          | セットアップをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップをエディットする")
           p
             | セットアップのエディットのオプション
             br
@@ -1172,20 +1023,14 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 編集されたsetupを最後に保存したものと比較する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("編集されたsetupを最後に保存したものと比較する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist コントロールノブを押し、左に回して"Revert to stored～"の画面にスクロールさせる
                 li.contentOperationOrderlist ここでコントロールノブを押すとストアしている方を聴く事が出来る
                 li.contentOperationOrderlist 更にディスプレイには"Unrevert to edited～"と表示されるので、ここでもう一度コントロールノブを押すとエディットしている方に戻ることが出来る
-        h3.heading.switch
-          | Parts(パート)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Parts(パート)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1369,10 +1214,7 @@ html(lang="ja")
               td o
               td Remove～(リムーブ)
               td パートを削除する
-        h3.heading.switch
-          | Use as (ユーズ・アズ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Use as (ユーズ・アズ)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1392,10 +1234,7 @@ html(lang="ja")
             |                 どのドラム・サウンドを使用するか決めたら、その音と入れ替える
             br
             |                 ユーズ・アズは、プログラムだけでなく、レベル、パン、エフェクト等の設定も付いてくるので、持ってきたドラムの音が、小さすぎたり大きすぎたりするようなことはなく、エフェクトに関しても、ドラム用のエフェクト設定になっている
-        h3.heading.switch
-          | 追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1409,10 +1248,7 @@ html(lang="ja")
             |                 追加機能を使用してパートを追加する場合は、必ず最後のパートの後ろに作成される
             br
             |                 最後のパートの後ろではない位置に、新しいパートを挿入したい場合は、スプリットかレイヤー機能を使用して、新しいパートを作成する
-        h3.heading.switch
-          | Beats(ビート)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Beats(ビート)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1517,10 +1353,7 @@ html(lang="ja")
               td i
               td Remove～
               td ビートを削除する場合は、リムーブを選択する
-        h3.heading.switch
-          | Add～(追加)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Add～(追加)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1534,10 +1367,7 @@ html(lang="ja")
             |                 追加機能を使用してパートを追加する場合は、必ず最後のビートの後ろに作成される
             br
             |                 最後のビートの後ろではない位置に、新しいビートを挿入したい場合は、スプリットかレイヤー機能を使用して、新しいビートを作成する
-        h3.heading.switch
-          | FX Balance, FX Type 1, FX Type 2
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX Balance, FX Type 1, FX Type 2")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1551,10 +1381,7 @@ html(lang="ja")
             |                 各パートの“FX mix” パラメーターがでエフェクターのレベルを調整できる
             br
             |                 “100% dry” に設定するとエフェクト効果が無い
-        h3.heading.switch
-          | Clear(クリア)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clear(クリア)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1564,10 +1391,7 @@ html(lang="ja")
             | このオプションを選択していると、コントロール・ノブを押すことで、パートとビートをセットアップから消去することができる
             br
             |                 セットアップ名を消去しない
-        h3.heading.switch
-          | Setup name(セットアップ名)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Setup name(セットアップ名)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1592,10 +1416,7 @@ html(lang="ja")
               td 文字を削除する
               td 削除したい文字の１つ右にカーソルを移動して、コントロール・ノブを押したまま反時計回り(左)に回す
 
-        h3.heading.switch
-          | Delete setup～(セットアップの削除)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Delete setup～(セットアップの削除)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1605,10 +1426,7 @@ html(lang="ja")
             | この機能を使用すれば、セットアップを削除する
             br
             |                 実行する時に確認のプロンプトが表示される
-        h3.heading.switch
-          | Store a copy～(コピーを保存する)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Store a copy～(コピーを保存する)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -1626,19 +1444,10 @@ html(lang="ja")
             | 新しいセットアップを作成する場合は、まず、現在あるセットアップの中から、ベースになるセットアップを探してコピーを保存する
             br
             | コピーを保存することを忘れるとオリジナルのセットアップ に上書きをしてしまう
-      h2.heading.switch
-        | Programs
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | プログラムとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Programs")
+        +section3("プログラムとは")
           p リード・サウンド、ベース、ドラム、パッド等のサウンドが納められている
-        h3.heading.switch
-          | Micronの音色作りについて
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Micronの音色作りについて")
           table
             tr
               td オシレーター
@@ -1684,10 +1493,7 @@ html(lang="ja")
                 | アウトプットでは、ドライブエフェクトを使って、コンプレッションやディストーションなどのダイナミクス系エフェクトをかけたり、音圧を加えたりできる
                 br
                 | その他、最終的な出力レベルを調整したり、共有エフェクトに送る信号の量を指定する
-        h3.heading.switch
-          | モジュレーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーション")
           p
             | Micronには12系統の変調経路が搭載されている
             br
@@ -1742,28 +1548,19 @@ html(lang="ja")
             |                 ・ “Env2” - the filter envelope.
             br
             |                 ・ “Env3” - pitch/modulation envelope.
-        h3.heading.switch
-          | プログラムの演奏
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムの演奏")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [programs]ボタンを押し、プログラムモードに入る
               li.contentOperationOrderlist コントロール・ノブを回し、異なるプログラムに切り替える
-        h3.heading.switch
-          | お気に入りに登録する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("お気に入りに登録する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 追加したいプログラムを見つけたら、まずコントロールノブを押す
               li.contentOperationOrderlist ディスプレイに"Add to faves～"と表示されるので、ここで更にもう一度コントロールノブを押す
-        h3.heading.switch
-          | エディット前との比較
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディット前との比較")
           p  1. Revert-to-Stored～ / Unrevert-to-Edited～ (エディットする前に復帰する / エディット中 の状態にする)
           p
             | プログラムのエディット中は、オリジナル・バージョン(エディットする前の状態)に復帰することができる
@@ -1775,10 +1572,7 @@ html(lang="ja")
             |                 コントロール・ノブを押すことで、エディット前とエディット後を比べることができる
             br
             |                 結果に満足したら、[store]ボタンを押してエディット内容を保存する
-        h3.heading.switch
-          | お気に入り
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("お気に入り")
           p 2. Add to Faves～ / Remove Fave～
           p
             | コントロールノブを押して、編集モードに入る
@@ -1788,10 +1582,7 @@ html(lang="ja")
             |                 “お気に入り”カテゴリの中からプログラムを削除したい場合、faves カテゴリの中から削除したいプログラムを選んで、コントロールノブを押して、編集モードに入る
             br
             |                 “Remove fave～” が表示され、ここでもう一度コントロールノブを押すとプログラムがリストから削除する
-        h3.heading.switch
-          | セットアップに追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップに追加")
           p 3. Send to Setup～ (セットアップに追加する)
           p
             | このオプションを選択している場合、コントロール・ノブを押すことで、現在選択しているプログラムを、[setups]モードで選択したセットアップのパートに入れることができる
@@ -1852,10 +1643,7 @@ html(lang="ja")
                 | 新しいパートとしてプログラムが追加される
                 br
                 |                         パート・パラメーターは初期値に設定される
-        h3.heading.switch
-          | 新しいセットアップを作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("新しいセットアップを作成")
           p 4. Start New Setup～(新しいセットアップを作成)
           p
             | このオプションを選択しておいてコントロール・ノブを押すと、パターン名の前に“ +”が付いた新しいセットアップ(例："+Liner”や“+Bobbetty")が作成される
@@ -1863,10 +1651,7 @@ html(lang="ja")
             |                 既に同じ名称が存在する場合は、名称の後ろに数字(例："+Repeater”や“+TranceTube")が付いた新しいセットアップが作成される
             br
             |                 新しいセットアップを作成したら自動的にセットアップモードへジャンプする([setups]ボタンが点灯する)
-        h3.heading.switch
-          | Voice parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Voice parameters")
           p 5. Voice parameters
           table
             tr
@@ -2048,10 +1833,7 @@ html(lang="ja")
                 |                         この場合は、FM Amount パラメーターを使って、ピッチを揺らす範囲を操作する
                 br
                 |                         このパラメーターを100%に設定すると、±6オクターブにわたってピッチを上下できる
-        h3.heading.switch
-          | Oscillator parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Oscillator parameters")
           p
             | 6. Oscillator parameters
           table
@@ -2121,10 +1903,7 @@ html(lang="ja")
                 |                         このパラメーターの値を0にすると、ピッチホイールを操作しても無効となります
                 br
                 |                         このパラメーターの値を最大の12に設定すると、ピッチホイールを操作したときに、オシレーターのピッチを1オクターブ上下させることが可能となる
-        h3.heading.switch
-          | Pre-filter mix parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pre-filter mix parameters")
           p 7. Pre-filter mix parameters
           p プリフィルターミックスとは、Micronのさまざまな音源をフィルターに入力する前に、レベルを調節する仮想ミキサー
           table
@@ -2255,10 +2034,7 @@ html(lang="ja")
                       | オクターブごとのエネルギーが均一なノイズで、動物の 唸り声や波の音に似ている
                       br
                       |                                     よりなめらかで耳にやさしい音色が特徴
-        h3.heading.switch
-          | Filter parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Filter parameters")
           p 8. Filter parameters
           p 各フィルターに下記のパラメーターがある
           table
@@ -2434,10 +2210,7 @@ html(lang="ja")
                       |                                     フィルタ ー1 の周波数を調節したり変調したりすると、フィルター2 も影響を受ける
                       br
                       |                                     このモードでは、フィルター2のFrequencyパラメーターを使って、フィルター1とのオフセット値を設定する
-        h3.heading.switch
-          | Post-filter mix parameters
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Post-filter mix parameters")
           p 9. Post-filter mix parameters
           table
             tr
@@ -2492,10 +2265,7 @@ html(lang="ja")
                 |                         フィルター1 の出力信号の極性を設定するパラメーター
                 br
                 |                         このパラメーターを使えば、フィルター2やプリフィルターからの信号とフィルター1の位相関係が変化し、さまざまな帯域にピークやノッチが生じる
-        h3.heading.switch
-          | Output
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Output")
           p 10. Output
           table
             tr
@@ -2600,10 +2370,7 @@ html(lang="ja")
                 | 可変範囲：エフェクトタイプに依存
                 br
                 |                         これらのパラメーターは、選択されたエフェクトタイプに応じて異なる
-        h3.heading.switch
-          |  FX1 Effects
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" FX1 Effects")
 
 
           p
@@ -2923,10 +2690,7 @@ html(lang="ja")
                 | アナリシスへの入力信号を、どれだけ出力信号にミックスするかを設定する
                 br
                 |                         可変範囲：0～100%
-        h3.heading.switch
-          |  FX2 Effects
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3(" FX2 Effects")
           p エフェクト2モジュールは、6種類のディレイとリバーブ・エフェクトを備いて、その中から1つを選択して使用することができる
           p
             | Mono Delay
@@ -3097,10 +2861,7 @@ html(lang="ja")
             |                 このリバーブは、ホール・リバーブとほとんど同じだが、シミュレートする部屋の大きさが、ホール・リバーブよりも小さくなる
             br
             |                 ルーム・リバーブのパラメーターは、ホール・リバーブやプレート・リバーブのパラメーターと同様
-        h3.heading.switch
-          | Envelopes
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Envelopes")
           p 11. Envelopes
           table
             tr
@@ -3228,10 +2989,7 @@ html(lang="ja")
                   tr
                     td off
                     td エンベロープはサスティンペダルの影響を受けない
-        h3.heading.switch
-          | LFOの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LFOの設定")
           p  12. Low Frequency Oscillator (LFO) settings
           table
             tr
@@ -3306,10 +3064,7 @@ html(lang="ja")
                       |                                     また、M1 Sliderの位置と は無関係にLFOで一定の変調を行いたいときは、このパラメーターの値を100%未満に設定する
                       br
                       |                                     このパラメータ ーの値を0に設定すると、M1 Sliderの操作とは無関係に、LFOの出力は常に最大値になる
-        h3.heading.switch
-          | S&Hの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("S&Hの設定")
           p 13. Sample-and-Hold (S&H) settings
           p
             | TempoSync, Rate, Resetの効果はLFO設定と一緒
@@ -3344,10 +3099,7 @@ html(lang="ja")
             | S&H Smoothingの値が高すぎると、サンプル＆ホールドが無効になる場合がある
             br
             |                 思うような効果が得られないときは、S&H Smoothingの値を低く設定する
-        h3.heading.switch
-          | Track (Tracking Generator)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Track (Tracking Generator)")
           p 14. Track (Tracking Generator)
           p
             | トラッキングジェネレーターは、モジュレーションマトリクス独自の機能
@@ -3382,10 +3134,7 @@ html(lang="ja")
                 | 可変範囲：－100%～＋100%
                 br
                 |                         入力信号が再編された後の出力レベルを設定する
-        h3.heading.switch
-          | Mod (Modulation Routing)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Mod (Modulation Routing)")
           p 15. Mod (Modulation Routing)
           p
             | モジュレーションマトリクスとは ボイスの全ての構成要素(エンベロープ、オシレーター、フィルターなど)を相互に影響させる機能のことで、より強力で表現力に富んだ演奏が可能となる
@@ -3423,16 +3172,10 @@ html(lang="ja")
             |                 “Dest.” を選んで、コントロールノブを二回押す(ダブル・クリック)とモジュレーションルートを削除することができる
             br
             |                 この オプションは、実行する時に確認のプロンプトが表示される
-        h3.heading.switch
-          | カテゴリ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("カテゴリ")
           p 16. Category (カテゴリ)
           |             Micronのプログラムカテゴリにプログラムを追加する
-        h3.heading.switch
-          | プログラム名
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラム名")
           p  17. Program name(プログラム名)
           p
             | プログラムは、アルファベット順に表示されるので、それをふまえてプログラム名を付けると後の操作が楽になる
@@ -3451,24 +3194,15 @@ html(lang="ja")
             tr
               td 文字を削除する
               td 削除したい文字の１つ右にカーソルを移動して、コントロール・ノブを押したまま反時計回り(左)に回す
-        h3.heading.switch
-          | リズムの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リズムの削除")
           p 18. Delete～ (リズムの削除)
           |             この機能を使用すれば、プログラムを削除することができる
           br
           |             このオプションは、実行する時に確認のプロンプトが表示される
-        h3.heading.switch
-          | MIDI sysexを送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI sysexを送信")
           p 19. Send MIDI sysex～ (MIDI sysexを送信する)
           p Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、プログラム・データを送信することができる
-        h3.heading.switch
-          | コピーを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コピーを保存")
           p  20. Store a copy～(コピーを保存する)
           p
             | 他のシンセサイザーと異なり、Micronは、決められた数のバンクを、プログラムやリズムの保存領域として持っているわけではない
@@ -3484,10 +3218,7 @@ html(lang="ja")
             |                 この時コピーを保存することを忘れないこと
             br
             |                 この作業を忘れると、オリジナルのプログラムに上書きをしてしまうことになるので、注意が必要
-        h3.heading.switch
-          | 変更したプログラムを保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("変更したプログラムを保存")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -3511,18 +3242,12 @@ html(lang="ja")
             br
             |                 Micronは、他のプログラ ムのエディットを開始しない限り、元のプログラムの変更データを失うことはない
             br
-        h3.heading.switch
-          | プログラムの編集を終了する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムの編集を終了する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist コントロール・ノブを取り囲んでいるスイッチのどれか、あるいは[programs]ボタンを押す
-        h3.heading.switch
-          | モジュレーションソース
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーションソース")
           table
             tr
               th 変調元
@@ -3653,10 +3378,7 @@ html(lang="ja")
             tr
               td CC 1...119
               td CC#1～119のMIDIメッセージ
-        h3.heading.switch
-          | モジュレーションデスティネーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーションデスティネーション")
           table
             tr
               th 変調先
@@ -3850,23 +3572,14 @@ html(lang="ja")
             tr
               td S/H Amp
               td  S&Hの出力レベル(S&Hが変調先に効果 を与える深さ)
-      h2.heading.switch
-        | Configuration
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | コンフィギュレーションモードに入る
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Configuration")
+        +section3("コンフィギュレーションモードに入る")
           p 全体のトランスポーズ、チューニング、鍵盤のベロシティー・カーブ、MIDI設定等を行う
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [config]ボタンを押す
-        h3.heading.switch
-          | コンフィギュレーション・パラメーター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンフィギュレーション・パラメーター")
           table
             tr
               td Contrast(LCDコントラスト)
@@ -3998,14 +3711,8 @@ html(lang="ja")
                 | コントロールノブを押すとMicronの全てのデータが MIDI 経由で送信する
                 br
                 |                         データのバックアップの為に便利
-      h2.heading.switch
-        | MIDI
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIでできること
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDI")
+        +section3("MIDIでできること")
           p
             | ● Micronを演奏した内容をシーケンサーやコンピューターに記録する
             br
@@ -4018,10 +3725,7 @@ html(lang="ja")
             |                 ● Micronを使って外部のシンセサイザーや音源モジュールを操作する
             br
             |                 ● 外部の鍵盤を使って Micronの音色を演奏する
-        h3.heading.switch
-          | MIDIの接続
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIの接続")
           table
             tr
               td [MIDI IN]端子
@@ -4035,30 +3739,21 @@ html(lang="ja")
             tr
               td [MIDI THRU]端子
               td [MIDI IN]端子で受信した信号をそのままエコー出力
-        h3.heading.switch
-          | コントローラーとして使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コントローラーとして使用する")
           p
             | このセットアップでは、Micronを使って外部のMIDI楽器(シンセサイザー、音源モジュール、ドラムマシンなど)を演奏する
             br
             |                 Micronの[MIDI OUT]端子と操作したい機器のMIDI IN端子をMIDIケーブルで接続する
             br
             |                 Micronをコントローラーとして使用するときは、鍵盤のローカルコントロールをオンにする
-        h3.heading.switch
-          | スレーブ機として使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スレーブ機として使用する")
           p
             | このセットアップでは、外部のキーボードを使って Micron のサウンドを演奏できる
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 外部コントローラーの MIDI OUT端子とMicronの[MIDI IN]端子をMIDIケーブルで接続
-        h3.heading.switch
-          | メッセージを通過させるスレーブ機として使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メッセージを通過させるスレーブ機として使用する")
           p
             | このセットアップでは、MIDIメッセージがIONを通過してその他の機器へと送られる
             br
@@ -4068,10 +3763,7 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist  1台目のMIDI OUT端子とMicronの[MIDI IN]端子を接続
               li.contentOperationOrderlist さらにもう1本のMIDIケーブルを使って Micronの[MIDI THRU]端子と3台目のMIDI IN端子を接続
-        h3.heading.switch
-          | シーケンス作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンス作成")
           p
             | MicronをMIDIシーケンサーまたはMIDIインターフェース付きのコンピューターと組み合わせて使用する
             br
@@ -4081,10 +3773,7 @@ html(lang="ja")
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist シーケンサー/コンピューターのMIDI OUT端子をMicronの[MIDI IN]端子と接続
               li.contentOperationOrderlist さらにもう1本 のMIDIケーブルを使ってMicronの[MIDI OUT]端子とシーケンサー/コンピューターのMIDI IN端子を接続
-        h3.heading.switch
-          | プログラム/リズム/パターン/セットアップをMIDI経由で送信する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラム/リズム/パターン/セットアップをMIDI経由で送信する")
           p
             | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、プログラム・データ、セットアップ・データ、パターン・データとリズム・データを送信することができる
           div.contentOperationBox
@@ -4092,10 +3781,7 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist [programs]、[setups]、[rhythms]、[patterns]モードの"Send Sysex"オプションや"Send SysEx Bundle" オプションを選んで送信する
 
-        h3.heading.switch
-          | プログラム/リズム/パターン/セットアップをMIDI経由で受信する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラム/リズム/パターン/セットアップをMIDI経由で受信する")
           p
             | SysExデータをMicronに受信させるには、特別なモードに切り替える必要はない
           .contentOperationBox
@@ -4104,10 +3790,7 @@ html(lang="ja")
               li.contentOperationOrderlist MIDIケーブルで外部MIDI機器のMIDI OUT端子とMicronの[MIDI IN]端子を接続
               li.contentOperationOrderlist SysExデータの送信を開始
               li.contentOperationOrderlist Micronのディスプレイに“Receiving…”と表示され、プログラム、セットアップなどのデータが読み込まれる
-        h3.heading.switch
-          | バンドル(bundle)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バンドル(bundle)")
           p リズム、セットアップやパターンをMIDI経由で送信する場合のオプション
           table
             tr
@@ -4117,10 +3800,7 @@ html(lang="ja")
               td Send MIDI sysex～
               td
                 | セットアップの各パート全てのプログラム名やリズム名が送信されているが、受け側のMicronにパートで使用されたプログラム・データが保存されてない場合は正しく再生が出来ない
-        h3.heading.switch
-          | Send MIDI sysex～(MIDI sysexを送信する)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Send MIDI sysex～(MIDI sysexを送信する)")
           p
             | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップ・デー タを送信することができる
             br
@@ -4132,10 +3812,7 @@ html(lang="ja")
               li.contentOperationOrderlist エディットしたいセットアップで、コントロールノブを押してエディットモードに入る
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Send MIDI sysex～(MIDI sysexを送信する)」を選択
 
-        h3.heading.switch
-          | Send syx bundle～(syx バンドルを送信する)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Send syx bundle～(syx バンドルを送信する)")
           p
             | Micronの(MIDI OUT)を介して、パソコンやMIDIデータ保存機器に、セットアップとそ のセットアップのプログラム、パターン、リズムを送信する
           .contentOperationBox
@@ -4144,10 +3821,7 @@ html(lang="ja")
               li.contentOperationOrderlist エディットしたいセットアップで、コントロールノブを押してエディットモードに入る
               li.contentOperationOrderlist コントロールノブを回して、エディットオプション「Send syx bundle～(syx バンドルを送信する)」を選択
 
-        h3.heading.switch
-          | 外部のMIDIシーケンサーからmicronの"program/setup/pattern/rhythm"を切り替える時に送る情報
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部のMIDIシーケンサーからmicronの\"program/setup/pattern/rhythm\"を切り替える時に送る情報")
           p
             br
             | 最初に、MIDI BankとProgram(Patch)Numberについての知識が必要
@@ -4205,10 +3879,7 @@ html(lang="ja")
             | ただし 他のモードからsetupモードへ一度入ってしまった場合、パッチチェンジで他のモードへは移動することは出来ない
             br
             |                 そうしたい場合は"Single-Channel"にセットする
-        h3.heading.switch
-          | Micronが使用しているMIDIチャンネルを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Micronが使用しているMIDIチャンネルを設定する")
           p
             | [config]ボタンを押し、"MIDI: Channel"パラメーターの画面のところまでスクロールさせる
             br
@@ -4219,36 +3890,24 @@ html(lang="ja")
             |                 これにより"MIDI: Channel"で設定したMIDIチャンネルがPart AのMIDIチャンネルに、Part Bはその次のMIDIチャンネルに、といった状態になる
             br
             |                 もしセットアップ全体において1つのチャンネルだけを使用したい場合は "MIDI:Setup mode"で "single-channel" を選ぶ
-        h3.heading.switch
-          | MIDI Program Change Messageを受信させる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI Program Change Messageを受信させる")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [config]ボタンを押し"MIDI: Pgm change"パラメーターの画面までスクロールさせる
               li.contentOperationOrderlist ここでの設定を"ON"にする
-        h3.heading.switch
-          | 外部からのMIDI clockに同期させる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部からのMIDI clockに同期させる")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [config]ボタンを押し"MIDI: Sync"パラメーターの画面までスクロールさせる
               li.contentOperationOrderlist ここでの設定を"ext MIDI sync"にする
-        h3.heading.switch
-          | パターンやリズムモードで発音している音(ノート情報)をMIDIで出力する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンやリズムモードで発音している音(ノート情報)をMIDIで出力する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [config]ボタンを押し、画面が"Kbd: Local control"のところで"off + sendpatterns"に設定
-        h3.heading.switch
-          | programに対して異なるMIDIチャンネルをアサインして外部シーケンサーからマルチパートで鳴らす
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("programに対して異なるMIDIチャンネルをアサインして外部シーケンサーからマルチパートで鳴らす")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4260,10 +3919,7 @@ html(lang="ja")
               li.contentOperationOrderlist "Add part B～"という画面になるまでコントロールノブを回した後、もう一度押す
               li.contentOperationOrderlist 用意したい全てのプログラムをセットし終えるまでPARTを追加し続ける
           p デフォルトの設定では「Part Aはch1、Part Bはch2」のような形式になっている
-        h3.heading.switch
-          | MIDI sysexを送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI sysexを送信")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4273,10 +3929,7 @@ html(lang="ja")
             | MIDI OUTを介して、パソコンやMIDIデータ保存機器に、パターン・データを送信することができる
             br
             |                 パターン・データをパソコンにバック・アップする、あるいは、そのデータをインターネットを介して他の人に送信する
-        h3.heading.switch
-          | syxバンドルを送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("syxバンドルを送信")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4284,24 +3937,15 @@ html(lang="ja")
               li.contentOperationOrderlist コントロール・ノブを回して、エディット・オプション「Send syx bundle～(syxバンドルを送信する)」を選択
           p
             | (MIDI OUT) を介して、パソコンやMIDIデータ保存機器に、パターンとそのパターンのプログラム・データを送信する
-      h2.heading.switch
-        | FAQ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | [store]ボタンが薄暗く点灯している意味
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("FAQ")
+        +section3("[store]ボタンが薄暗く点灯している意味")
           p
             | 他のモード上でまだストアされてないものが存在している場合
             br
             |                 例：Setupモードで[store]ボタンが薄暗く点灯している
             br
             |                 →setupは既に保存されているが、programやpatternモード上で変更後にまだ保存されてないものがある(エディットの途中のものがある
-        h3.heading.switch
-          | プログラムパラメーターをXYZノブにアサインする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムパラメーターをXYZノブにアサインする")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4310,18 +3954,12 @@ html(lang="ja")
                 br
                 |                         (もしくは前述の「Q2」の方法でアサインしたいパラメーターを見つける)
               li.contentOperationOrderlist コントロールノブを押したままアサインしたいノブ(X/Y/Z)を回す
-        h3.heading.switch
-          | セットアップの中でどの Partsでどのプログラムが使われているかを素早く見つける
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("セットアップの中でどの Partsでどのプログラムが使われているかを素早く見つける")
           p
             | [setups]ボタンを押したまま中央Ｃの鍵盤より右側にある"A(ラ)"(鍵盤上部のラベルには"voice"と表記)の鍵盤を押すとPart A、"B(シ)"の鍵盤を押すとPart Bに使われている音色といった感じですることが出来る
             br
             |                 同じようにBEATSなどは１オクターブ高い"A"がBEAT Aに該当する...といった感じ
-        h3.heading.switch
-          | キーボード上でスプリットやレイヤーをする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("キーボード上でスプリットやレイヤーをする")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4336,10 +3974,7 @@ html(lang="ja")
                 br
                 |                         それぞれのプログラムをスプリ ットする際には音域の上限下限を注意してセットする
               li.contentOperationOrderlist  更にいろいろ必要であればsetupにプログラムを送り続ける作業を繰り返す
-        h3.heading.switch
-          | Setup Part内のプログラムを変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Setup Part内のプログラムを変更する")
           p
             | パターンやリズムに対しても同様に行うことが出来る
           table
@@ -4359,14 +3994,8 @@ html(lang="ja")
                 br
                 | これによりエディット中、一番最後に確認していたPartに対してプログラムがセットされる
 
-      h2.heading.switch
-        | テンポ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | テンポを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("テンポ")
+        +section3("テンポを設定する")
           table
             tr
               th 方法A
@@ -4380,28 +4009,16 @@ html(lang="ja")
           p
             | micronはシーケンサーに入力されているテンポに追従する
 
-      h2.heading.switch
-        | ボコーダー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ボコーダー機能を使う
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ボコーダー")
+        +section3("ボコーダー機能を使う")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [programs]ボタンを押したまま"sfx"とラベルの書いてある位置の鍵盤を押す
               li.contentOperationOrderlist 「sfx」カテゴリーの最初の方にプログラムネームがアスタリスク(例えば「 *101 Vocoder 」)で始まるグループのプログラムを選択
               li.contentOperationOrderlist 「audio in left」ジャックにマイクを差し込み、キーボードを弾きながら歌う
-      h2.heading.switch
-        | 音色
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | bass
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色")
+        +section3("bass")
           table
             tr
               td AcidAndOilBass
@@ -4497,10 +4114,7 @@ html(lang="ja")
               td Vlad Bass
             tr
               td What's down?
-        h3.heading.switch
-          | lead
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("lead")
           table
             tr
               td Adrastea
@@ -4588,10 +4202,7 @@ html(lang="ja")
               td Wowza
             tr
               td Zippy the 5th
-        h3.heading.switch
-          | pad
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("pad")
           table
             tr
               td 16-PoleDeepPad
@@ -4847,10 +4458,7 @@ html(lang="ja")
               td What's that?
             tr
               td Whisper
-        h3.heading.switch
-          | string
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("string")
           table
             tr
               td AheadOfItsTime
@@ -4888,10 +4496,7 @@ html(lang="ja")
               td VelocityStrngs
             tr
               td Violacoder
-        h3.heading.switch
-          | brass
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("brass")
           table
             tr
               td ABitOffTheTop
@@ -4945,10 +4550,7 @@ html(lang="ja")
               td WowThat'sBrass
             tr
               td Zoik Brass
-        h3.heading.switch
-          | keys
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("keys")
           table
             tr
               td 60's Organ
@@ -5022,10 +4624,7 @@ html(lang="ja")
               td Vintage Piano
             tr
               td Zorgan
-        h3.heading.switch
-          | comp
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("comp")
           table
             tr
               td 1and2andComp
@@ -5253,10 +4852,7 @@ html(lang="ja")
                   td Whisker Comper
                 tr
                   td WontGetFooled
-        h3.heading.switch
-          | drum
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("drum")
           table
             tr
               td BD 808 Kick
@@ -5599,14 +5195,8 @@ html(lang="ja")
               td Windy City
             tr
               td X-Mod
-      h2.heading.switch
-        | ショートカット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | モードショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ショートカット")
+        +section3("モードショートカット")
           table
             tr
               th 操作
@@ -5662,10 +5252,7 @@ html(lang="ja")
             tr
               td [rhythms] ボタンを押したままの状態で、キーボードの１番高い(右の)鍵盤を押す
               td Clear rhythm
-        h3.heading.switch
-          | 白鍵
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("白鍵")
           p programsを押しながら白鍵盤を押すと、鍵盤上部(鍵盤と本体との境界・側面部)に印刷されている項目へのショートカットになる
           table
             tr
@@ -5737,24 +5324,15 @@ html(lang="ja")
             tr
               td programsを押したままC
               td mod
-      h2.heading.switch
-        | OS
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ソフトウェアのバージョンを確認する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("OS")
+        +section3("ソフトウェアのバージョンを確認する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist [setups]ボタンと[programs]ボタンを押しながら、Micron の電源を入れる
               li.contentOperationOrderlist ディスプレイに現在のソフトウェアのバージョンが表示される
               li.contentOperationOrderlist ディスプレイに“Ready to receive OS through MIDI..”と表示され、ソフトウェアアップグレードが出来る
-        h3.heading.switch
-          | ソフトウェアをMIDI経由で更新する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソフトウェアをMIDI経由で更新する")
           p
             | Micronのオペレーティングシステムは、MIDI経由で更新できる
             br
@@ -5768,14 +5346,8 @@ html(lang="ja")
               li.contentOperationOrderlist ディスプレイに現在のソフトウェアのバージョンが表示される
               li.contentOperationOrderlist ディスプレイに“Ready to receive OS through MIDI..”と表示される
               li.contentOperationOrderlist ".syx"ファイルを再生する
-      h2.heading.switch
-        | トラブル時
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オールノートオフ(ノートオフしなくなった場合に音を止める)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("トラブル時")
+        +section3("オールノートオフ(ノートオフしなくなった場合に音を止める)")
           p
             | オールノートオフのMIDIコマンドは、ホールド状態になった音を消音させるために使用する
             br
@@ -5786,10 +5358,7 @@ html(lang="ja")
               li.contentOperationOrderlist [programs]ボタンをダブルクリック
           p
             | 近い位置にある同型の丸型ボタンでも同様に止める事が出来る
-        h3.heading.switch
-          | クラッシュから復帰する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クラッシュから復帰する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5800,18 +5369,12 @@ html(lang="ja")
             | それでも正常に戻らないときは、[MIDI IN]端子からケーブルを抜き、もう一度電源のオン/オフ操作を行う
             br
             |                 外部MIDI機器から不正なMIDIデータを受信していたために問題が起きた場合は、これで正常に戻る
-        h3.heading.switch
-          | ファクトリリセット(出荷時の初期設定に戻す)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ファクトリリセット(出荷時の初期設定に戻す)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist  [setups]ボタン、[octave down]ボタンと[programs]ボタンを押しながら、Micronの電源を入れる
-        h3.heading.switch
-          | パターンをレコーディング中にミスしてしまった場合、全てクリアして最初からやり直す
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンをレコーディング中にミスしてしまった場合、全てクリアして最初からやり直す")
           p  "Clear Pattern～"の画面へ行くショ ートカット：[patterns]ボタンを押しながら鍵盤の最上部(Ｃ「ド」)を押す
           .contentOperationBox
             p.contentOperationCaption 操作

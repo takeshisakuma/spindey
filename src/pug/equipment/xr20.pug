@@ -1,20 +1,15 @@
 - var pagename='XR20|spindey.com'
 - var description='AKAIのXR20のマニュアルです。'
 - var keywords='XR20,AKAI'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading XR20
     main.equipmentMain
-      h2.heading.switch
-        | Drumset,1Shot samples
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Kick(000-106)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Drumset,1Shot samples")
+        +section3("Kick(000-106)")
           table
             tr
               td 000
@@ -337,10 +332,7 @@ html(lang="ja")
             tr
               td 106
               td kikWimpy
-        h3.heading.switch
-          | Snare(107-215)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Snare(107-215)")
           table
             tr
               td 107
@@ -669,10 +661,7 @@ html(lang="ja")
             tr
               td 215
               td snrZaper
-        h3.heading.switch
-          | Clap(216-249)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clap(216-249)")
           table
             tr
               td 216
@@ -776,10 +765,7 @@ html(lang="ja")
             tr
               td 249
               td ClpVintg
-        h3.heading.switch
-          | Stick(250-261)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Stick(250-261)")
           table
             tr
               td 250
@@ -817,10 +803,7 @@ html(lang="ja")
             tr
               td 261
               td stkStand
-        h3.heading.switch
-          | Rim shot(262-267)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Rim shot(262-267)")
           table
             tr
               td 262
@@ -840,10 +823,7 @@ html(lang="ja")
             tr
               td 267
               td rimWoody
-        h3.heading.switch
-          | Hi-hat(268-333)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Hi-hat(268-333)")
           table
             tr
               td 268
@@ -1043,10 +1023,7 @@ html(lang="ja")
             tr
               td 333
               td HhWildMd
-        h3.heading.switch
-          | Cymbal(334-356)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Cymbal(334-356)")
           table
             tr
               td 334
@@ -1117,10 +1094,7 @@ html(lang="ja")
             tr
               td 356
               td CymVintg
-        h3.heading.switch
-          | Ride cymbal(357-364)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Ride cymbal(357-364)")
           table
             tr
               td 357
@@ -1146,10 +1120,7 @@ html(lang="ja")
             tr
               td 364
               td RidNuJaz
-        h3.heading.switch
-          | Tm(365-414)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tm(365-414)")
           table
             tr
               td 365
@@ -1301,10 +1272,7 @@ html(lang="ja")
             tr
               td 414
               td TmTribMd
-        h3.heading.switch
-          | Rec(415-417)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Rec(415-417)")
           table
             tr
               td 415
@@ -1315,10 +1283,7 @@ html(lang="ja")
             tr
               td 417
               td RecNoise
-        h3.heading.switch
-          | Scratch(418-431)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Scratch(418-431)")
           table
             tr
               td 418
@@ -1362,10 +1327,7 @@ html(lang="ja")
             tr
               td 431
               td ScrVox
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 432
@@ -1391,10 +1353,7 @@ html(lang="ja")
             tr
               td 439
               td ELECTRO1
-        h3.heading.switch
-          | FX(440-496)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX(440-496)")
           table
             tr
               td 440
@@ -1567,10 +1526,7 @@ html(lang="ja")
             tr
               td 496
               td fxZappn
-        h3.heading.switch
-          | Galaxy(497-498)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Galaxy(497-498)")
           table
             tr
               td 497
@@ -1578,10 +1534,7 @@ html(lang="ja")
             tr
               td 498
               td GALAXY2
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 499
@@ -1610,10 +1563,7 @@ html(lang="ja")
             tr
               td 507
               td FLUTEHT5
-        h3.heading.switch
-          | Guitar(508-527)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Guitar(508-527)")
           table
             tr
               td 508
@@ -1675,10 +1625,7 @@ html(lang="ja")
             tr
               td 527
               td Guit Lic4
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 528
@@ -1761,10 +1708,7 @@ html(lang="ja")
             tr
               td 554
               td RAVIZAK
-        h3.heading.switch
-          | Rhodes Piano(555-568)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Rhodes Piano(555-568)")
           table
             tr
               td 555
@@ -1808,10 +1752,7 @@ html(lang="ja")
             tr
               td 568
               td Rhdsstg4
-        h3.heading.switch
-          | Sine(569-571)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sine(569-571)")
           table
             tr
               td 569
@@ -1822,10 +1763,7 @@ html(lang="ja")
             tr
               td 571
               td SINETONE
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 572
@@ -1851,10 +1789,7 @@ html(lang="ja")
             tr
               td 579
               td SYNPUNCH
-        h3.heading.switch
-          | UPRIGHT(580-581)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("UPRIGHT(580-581)")
           table
             tr
               td 580
@@ -1862,18 +1797,12 @@ html(lang="ja")
             tr
               td 581
               td UPRIGHT2
-        h3.heading.switch
-          | Wurlitzer(582)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Wurlitzer(582)")
           table
             tr
               td 582
               td WHURLIE
-        h3.heading.switch
-          | Vox(583-609)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Vox(583-609)")
           table
             tr
               td 583
@@ -1956,10 +1885,7 @@ html(lang="ja")
             tr
               td 609
               td VOXYEAYE
-        h3.heading.switch
-          | Agogo(610-613)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Agogo(610-613)")
           table
             tr
               td 610
@@ -1973,10 +1899,7 @@ html(lang="ja")
             tr
               td 613
               td AGOPR2
-        h3.heading.switch
-          | Block(614-617)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Block(614-617)")
           table
             tr
               td 614
@@ -1990,10 +1913,7 @@ html(lang="ja")
             tr
               td 617
               td BLKILL
-        h3.heading.switch
-          | Bongo(618-631)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bongo(618-631)")
           table
             tr
               td 618
@@ -2037,10 +1957,7 @@ html(lang="ja")
             tr
               td 631
               td BONGOTRI
-        h3.heading.switch
-          | Sample(632-636)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample(632-636)")
           table
             tr
               td 632
@@ -2057,10 +1974,7 @@ html(lang="ja")
             tr
               td 636
               td CLICK
-        h3.heading.switch
-          | Conga(637-651)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Conga(637-651)")
           table
             tr
               td 637
@@ -2107,10 +2021,7 @@ html(lang="ja")
             tr
               td 651
               td congalow
-        h3.heading.switch
-          | Cow bell(652-659)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Cow bell(652-659)")
           table
             tr
               td 652
@@ -2136,10 +2047,7 @@ html(lang="ja")
             tr
               td 659
               td COWPERCA
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 660
@@ -2192,26 +2100,17 @@ html(lang="ja")
             tr
               td 676
               td MarTree1
-        h3.heading.switch
-          | Metronome(677)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Metronome(677)")
           table
             tr
               td 677
               td Metrnome
-        h3.heading.switch
-          | Quika(678)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Quika(678)")
           table
             tr
               td 678
               td QUICA
-        h3.heading.switch
-          | Shaker(679-687)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Shaker(679-687)")
           table
             tr
               td 679
@@ -2240,10 +2139,7 @@ html(lang="ja")
             tr
               td 687
               td SHKNYZ
-        h3.heading.switch
-          | Sample
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample")
           table
             tr
               td 688
@@ -2254,10 +2150,7 @@ html(lang="ja")
             tr
               td 690
               td SNAPADD
-        h3.heading.switch
-          | Tambourine(691-698)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tambourine(691-698)")
           table
             tr
               td 691
@@ -2283,10 +2176,7 @@ html(lang="ja")
             tr
               td 698
               td tambSoft
-        h3.heading.switch
-          | Timpani(699-700)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Timpani(699-700)")
           table
             tr
               td 699
@@ -2294,10 +2184,7 @@ html(lang="ja")
             tr
               td 700
               td timplo
-        h3.heading.switch
-          | Tree(701-702)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tree(701-702)")
           table
             tr
               td 701
@@ -2305,10 +2192,7 @@ html(lang="ja")
             tr
               td 702
               td treeLong
-        h3.heading.switch
-          | Triangle(703-706)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Triangle(703-706)")
           table
             tr
               td 703
@@ -2322,10 +2206,7 @@ html(lang="ja")
             tr
               td 706
               td TriHat1
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 707
@@ -2348,18 +2229,12 @@ html(lang="ja")
             tr
               td 713
               td WoodBlak
-        h3.heading.switch
-          | Bell(714)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bell(714)")
           table
             tr
               td 714
               td Xmas
-        h3.heading.switch
-          | Bass(715-720)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bass(715-720)")
           table
             tr
               td 715
@@ -2379,14 +2254,8 @@ html(lang="ja")
             tr
               td 720
               td bassSlid
-      h2.heading.switch
-        | Synth samples
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Synth samples")
+        +section3("Samples")
           table
             tr
               td 721
@@ -2394,10 +2263,7 @@ html(lang="ja")
             tr
               td 722
               td HiString
-        h3.heading.switch
-          | Triangle wave(723-726)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Triangle wave(723-726)")
           table
             tr
               td 723
@@ -2411,10 +2277,7 @@ html(lang="ja")
             tr
               td 726
               td TriPop2
-        h3.heading.switch
-          | Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Samples")
           table
             tr
               td 727
@@ -2458,10 +2321,7 @@ html(lang="ja")
             tr
               td 740
               td ElecBas2
-        h3.heading.switch
-          | Electric Piano(741-742)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Electric Piano(741-742)")
           table
             tr
               td 741
@@ -2469,10 +2329,7 @@ html(lang="ja")
             tr
               td 742
               td EPiano2
-        h3.heading.switch
-          | Sample
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample")
           table
             tr
               td 743
@@ -2525,10 +2382,7 @@ html(lang="ja")
             tr
               td 759
               td MarcStr
-        h3.heading.switch
-          | MiniBass(760-768)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MiniBass(760-768)")
           table
             tr
               td 760
@@ -2557,18 +2411,12 @@ html(lang="ja")
             tr
               td 768
               td MiniBas9
-        h3.heading.switch
-          | Piano(769)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Piano(769)")
           table
             tr
               td 769
               td Piano
-        h3.heading.switch
-          | Pick bass(770-771)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pick bass(770-771)")
           table
             tr
               td 770
@@ -2576,18 +2424,12 @@ html(lang="ja")
             tr
               td 771
               td PickBas2
-        h3.heading.switch
-          | Pizacato(772)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pizacato(772)")
           table
             tr
               td 772
               td Pizacato
-        h3.heading.switch
-          | Saw wave(773-774)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Saw wave(773-774)")
           table
             tr
               td 773
@@ -2595,26 +2437,17 @@ html(lang="ja")
             tr
               td 774
               td SawLead4
-        h3.heading.switch
-          | Sine wave(775)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sine wave(775)")
           table
             tr
               td 775
               td SineBass
-        h3.heading.switch
-          | Slapbass(776)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Slapbass(776)")
           table
             tr
               td 776
               td SlapBass
-        h3.heading.switch
-          | Square wave(777-780)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Square wave(777-780)")
           table
             tr
               td 777
@@ -2628,18 +2461,12 @@ html(lang="ja")
             tr
               td 780
               td SquPop2
-        h3.heading.switch
-          | Sample
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample")
           table
             tr
               td 781
               td SwPikBas
-        h3.heading.switch
-          | Synth bass(782-783)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Synth bass(782-783)")
           table
             tr
               td 782
@@ -2647,22 +2474,13 @@ html(lang="ja")
             tr
               td 783
               td SynBass2
-        h3.heading.switch
-          | Triangel wave(784)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Triangel wave(784)")
           table
             tr
               td 784
               td TriBass
-      h2.heading.switch
-        | プリセット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サウンドのカテゴリーを選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プリセット")
+        +section3("サウンドのカテゴリーを選択")
           p
             span.controllerButton DRUM
             | ,
@@ -2690,10 +2508,7 @@ html(lang="ja")
             tr
               td 1SHOT
               td 選択されているドラム・セットのワンショット・サウンドが演奏される
-        h3.heading.switch
-          | Kits
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Kits")
           table
             tr
               td DRM000
@@ -2995,10 +2810,7 @@ html(lang="ja")
             tr
               td DRM099
               td 80S FUNK
-        h3.heading.switch
-          | SYNTH Samples
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYNTH Samples")
           table
             tr
               td SYN000
@@ -3192,14 +3004,8 @@ html(lang="ja")
             tr
               td SYN063
               td TriPop2
-      h2.heading.switch
-        | 演奏
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ミュート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("演奏")
+        +section3("ミュート")
           table
             tr
               td ミュート
@@ -3219,10 +3025,7 @@ html(lang="ja")
                 span.controllerButton PERC
                 span.controllerButton SYNTH
                 | を押す
-        h3.heading.switch
-          | ロール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ロール")
           p パッドのサウンドにロールをかけ音が連打する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3237,14 +3040,8 @@ html(lang="ja")
                 | を押す
               li.contentOperationOrderlist メニュー内のクオンタイズ設定/スイング設定で指定
           p ロールはパッドを押している間続く
-      h2.heading.switch
-        | レコード・セットアップ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | レコード・セットアップ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("レコード・セットアップ")
+        +section3("レコード・セットアップ")
           p クオンタイズ、スイング、パターンの長さ、拍子等のレコーディングに関する、様々な設定を行う
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3269,10 +3066,7 @@ html(lang="ja")
                 | 必要な変更が終わったら、もう一度
                 span.controllerButton RECORD SETUP
                 | を押すか、他のキーを押してレコード・セットアップを抜け出す
-        h3.heading.switch
-          | クォンタイズ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クォンタイズ")
           p クォンタイズの選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3297,10 +3091,7 @@ html(lang="ja")
             br
             |  リズムを刻む前に、希望する音符を選ぶ
           p クオンタイズの値はステップ・エディット・モードのステップの長さにも影響する
-        h3.heading.switch
-          | ゲート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ゲート")
           p 主にシンセ サウンドのステップ入力時、打ち込まれたノートの長さを決定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3310,10 +3101,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage GATE(PAGE 2)
           p 数値はパーセン テージによる指定
-        h3.heading.switch
-          | スウィング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スウィング")
           p
             | スウィングとは
             br
@@ -3332,10 +3120,7 @@ html(lang="ja")
                 | スウィング値の選択
                 br
                 | (1-54%、2-58%、3-62%、4~0=スウィングがオフ)
-        h3.heading.switch
-          | ビート(拍)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ビート(拍)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3356,10 +3141,7 @@ html(lang="ja")
                   span.controllerButton REC
                   | が点滅するので、押して設定変更
 
-        h3.heading.switch
-          | 「音符」単位の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("「音符」単位の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3382,10 +3164,7 @@ html(lang="ja")
                   span.controllerButton REC
                   | が点滅するので、そのまま押すことで設定変更になる
 
-        h3.heading.switch
-          | 録音するパターンの長さの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("録音するパターンの長さの設定")
           p  録音するパターンの長さの設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3407,23 +3186,14 @@ html(lang="ja")
                 li.contentOperationOrderlist 数値を変更すると[REC]」ボタンが点滅するので、そのまま
                   span.controllerButton REC
                   | を押すことで設定変更になる
-      h2.heading.switch
-        | パターン
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン")
+        +section3("パターン")
           p ドラム(DRUM)、ワンショット(ONE SHOT)、シンセ・サウンド(SYNTH)を使って作成されたビート
           p
             | パターンは数小節(4拍や16拍など)からなる短い演奏データ
             br
             |  XR20には、 100個のプリセット(PRESET)パターンと、自由に作成/編集が可能な100個のユーザー(USER)パターンが用意されている
-        h3.heading.switch
-          | パターンの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの種類")
           p
             | パターンのPRESETバンクとUSERバンクは
             span.controllerButton PRESET/USER
@@ -3442,10 +3212,7 @@ html(lang="ja")
             tr
               td ユーザー (USER)パターン
               td ユーザーが自由にプログラムやエディットしたオリジナルのパターンを100個まで保存可能
-        h3.heading.switch
-          | パターンの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの再生")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3476,10 +3243,7 @@ html(lang="ja")
                 span.controllerButton PLAY
                 | を押して、パターンを再生する
           p パターンは数小節 (XR20では”BEAT ビート=拍”という単位で表示)で構成されており、パターンの最後まできたところで自動的にループして繰り返し再生を続ける
-        h3.heading.switch
-          | パターンの停止
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの停止")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3487,10 +3251,7 @@ html(lang="ja")
                 span.controllerButton STOP
                 | を押す
           p シーケンスは先頭に戻る
-        h3.heading.switch
-          | Patterns Preset
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Patterns Preset")
           table
             tr
               td PRESET00
@@ -3792,10 +3553,7 @@ html(lang="ja")
             tr
               td PRESET99
               td KICKIT
-        h3.heading.switch
-          | パターンの追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3808,10 +3566,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton REC
                 | を押して追加を実行
-        h3.heading.switch
-          | リアルタイムレコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リアルタイムレコーディング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3867,10 +3622,7 @@ html(lang="ja")
                   span.controllerButton SYNTH
                   | を押して選択
                 li.contentOperationOrderlist ボタンを押すと、各パッドのサウンドが切り替わる
-        h3.heading.switch
-          | パターンのセーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのセーブ")
           p 選択されているパターンを、サブ・パターンと一緒に指定された番号に保存
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3890,10 +3642,7 @@ html(lang="ja")
                 span.controllerButton REC
                 | を押す
           p 保存先にあるデータは上書きされる
-        h3.heading.switch
-          | パターンの消法
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの消法")
           p
             span.controllerButton ERASE
             | を押したままにすると、ディスプレイに消去を確認するメッセージが表示されるので、そのまま消去を実行する場合は、(イレース・ボタンを押したまま)録音ボタンを押す
@@ -3905,10 +3654,7 @@ html(lang="ja")
             | 方法2.
             br
             | 選択したパターン内から、特定パート(DRUM/ISHOT/SYNTH)のデータだけ消去、あるいは、選択したパート(DRUM/ISHOT/SYNTH)のパッドイベント(ノート情報)だけを消去
-        h3.heading.switch
-          | 特定のパートの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("特定のパートの消去")
           p 例: 1SHOTパートだけ消去したい場合
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3952,10 +3698,7 @@ html(lang="ja")
             | 上記の作業行程により消去したあと、そのまま電源を落とし、再度電源を投入すると今消去したはずのパターンが消去されずに残る
             br
             |  これは操作のミスにより、あやまってパターンそのものを 消去してしまった場合に大変有効
-        h3.heading.switch
-          | 特定のパッドイベントの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("特定のパッドイベントの消去")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3988,10 +3731,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton ERASE
                 | を押したまま、パッドを押すと、そのパターン内のパッド6のパッドイベントがすべて消去される
-        h3.heading.switch
-          | パターン内にある特定のサウンドだけをリアル・タイムで消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン内にある特定のサウンドだけをリアル・タイムで消去")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4001,10 +3741,7 @@ html(lang="ja")
                 | を押しながら消去したいサウンドのパッドを押す
                 br
                 | [押している間、その音を消去することが出来る]
-        h3.heading.switch
-          | 音符
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音符")
           table
             tr
               td キーパッド
@@ -4066,10 +3803,7 @@ html(lang="ja")
               td OFF
               td クオンタイズ・オフ
               td
-        h3.heading.switch
-          | パターンのオフセットの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのオフセットの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4109,10 +3843,7 @@ html(lang="ja")
                   span.controllerButton REC
                   | を押して設定変更
 
-        h3.heading.switch
-          | パターンネームの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンネームの設定")
           p パターンの名前を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4121,14 +3852,8 @@ html(lang="ja")
                 span.controllerButton RECORD SETUP
               li.contentOperationOrderlist
                 span.controllerPage NAME(PAGE 11)
-      h2.heading.switch
-        | ステップ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ステップ・エディット(パターン)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ステップ")
+        +section3("ステップ・エディット(パターン)")
           p パターン中のミスを修正するのに使用
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4145,10 +3870,7 @@ html(lang="ja")
                 |  /
                 span.controllerButton PAGE&gt;
                 | を使用
-        h3.heading.switch
-          | ステップ・レコーディング(サブ・ビート)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・レコーディング(サブ・ビート)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4193,10 +3915,7 @@ html(lang="ja")
             | (クォンタイズ値はレコーディングを行ったときと同じ値にしておくと良い)
             br
             |  例：16分音符は24のサブ・ビートに分かれているので、クォンタイズの値を16分音符に設定しておけば、一度に24のサブ・ビート分だけ進むことになる
-        h3.heading.switch
-          | ステップの挿入
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップの挿入")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4225,10 +3944,7 @@ html(lang="ja")
                 | また、ステップが追加されたことにより、それに続くステップの番号が自動的に変わる
                 br
                 | (例: 以前のステップ05がステップ06に、ステップ06が07に変わる)
-        h3.heading.switch
-          | ステップの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップの削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4256,14 +3972,8 @@ html(lang="ja")
                 | と
                 span.controllerButton REC
                 | を押している間、ディスプレイに「STEP ERASED」と表示される
-      h2.heading.switch
-        | サブ・パターン
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サブ・パターンとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サブ・パターン")
+        +section3("サブ・パターンとは")
           p
             | パターンの中にある4つのシーケンス (メイン・パターンとフィル・パターン)
             br
@@ -4308,10 +4018,7 @@ html(lang="ja")
                 br
                 | AとB異なる2個のパターンをペアーにしている理由は、ライブ・パフォーマンスや即興演 奏をする際に、素早く異なるパターンを演奏するため
 
-        h3.heading.switch
-          | メイン・パターン(A/B)の再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メイン・パターン(A/B)の再生")
           p
             | メイン・パターン(A/B) の再生
             br
@@ -4331,10 +4038,7 @@ html(lang="ja")
           br
           | パターン演奏途中でボタンを押し、メインパターンが「A」 現在演奏中のメインパターン から「B」、もしくはその逆へ演奏が移行する際はボタンを押した瞬間に突然切り換わるのではなく、演奏データの終わり(ループの折り返し)まで再生したところで演奏が繋がるようにして切り替わる
           p
-        h3.heading.switch
-          | サブ・パターンのコピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サブ・パターンのコピー")
           p 選択されているサブ・パターンを指定したサブ・パターンにコピー
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4356,10 +4060,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton REC
                 | を押すと、コピーが実行される
-        h3.heading.switch
-          | メインパターンやフィルパターンの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メインパターンやフィルパターンの消去")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4417,10 +4118,7 @@ html(lang="ja")
                 span.controllerButton REC[DO IT]
                 | を押す
               li.contentOperationOrderlist 白紙状態のパターンが上書きセーブされ、次に電源を投入しても白紙の状態として読み込まれる
-        h3.heading.switch
-          | フィルの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルの再生")
           p メインパターン「A」、「B」、それぞれに対してのフィル・パターン(A用、B用フィル)がある
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4456,10 +4154,7 @@ html(lang="ja")
                 | から
                 span.controllerButton A
                 | へと切り変わらずに、そのまま 選択中のメインパターンを再生し続けることができる
-        h3.heading.switch
-          | フィルの追加
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルの追加")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4484,10 +4179,7 @@ html(lang="ja")
                 | ソングを演奏させて聴いてみる
                 br
                 |  入力したステップの位置までくると、フィルを演奏している間、ディスプレイに「FILL」と表示される
-        h3.heading.switch
-          | フィルの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルの削除")
           p  方法1
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4514,14 +4206,8 @@ html(lang="ja")
                 | を押す
                 br
                 |                     (ディスプレイの「拍サブ拍」の表示が「--」になる
-      h2.heading.switch
-        | パッド
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パッドのベロシティ感度設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パッド")
+        +section3("パッドのベロシティ感度設定")
           p パッドのベロシティ感度設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4543,10 +4229,7 @@ html(lang="ja")
                 | パッドを叩く強さに関係なく固定のベロシティが送信される
                 br
                 | 「8=強、1=弱」
-        h3.heading.switch
-          | LED設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("LED設定")
           p
             | 「OFF」にすることでパッドや
             span.controllerButton PLAY
@@ -4560,14 +4243,8 @@ html(lang="ja")
                 span.controllerButton SYSTEM SETUP
               li.contentOperationOrderlist
                 span.controllerPage LEDS(PAGE 12)
-      h2.heading.switch
-        | ボリューム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | セット内のインストゥルメント・ボリューム設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ボリューム")
+        +section3("セット内のインストゥルメント・ボリューム設定")
           p
             | ドラムセットセット内のインストゥルメント(DRUM/ISHOT/SYNTH)の音量を設定
             br
@@ -4579,10 +4256,7 @@ html(lang="ja")
                 span.controllerButton DRUM SET
               li.contentOperationOrderlist
                 span.controllerPage (PAGE 2)
-        h3.heading.switch
-          | パッドへ割り当てたサウンドのボリューム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドへ割り当てたサウンドのボリューム")
           p パッドへ割り当てたサウンドの音量を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4603,14 +4277,8 @@ html(lang="ja")
           span.controllerButton 1SHOT
           | 選択時のみ設定可能
           p
-      h2.heading.switch
-        | ドラムセット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ドラムセット・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ドラムセット")
+        +section3("ドラムセット・モード")
           p ドラム・サウンド/1ショット/シンセ・サウンドの選択、パッド・サウンドの選択、ボリューム、チューニング、パンニング等の設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4640,10 +4308,7 @@ html(lang="ja")
                 | ドラムセット・モードを終了するには、
                 span.controllerButton DRUM SET
                 | をもう一度押す
-        h3.heading.switch
-          | ドラムセット設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムセット設定")
           p ドラムセットを常にパターンに組み込まれたものを使うのかどうかを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4665,10 +4330,7 @@ html(lang="ja")
                 | どのパターンを選択しても選択中のドラムセットが適用される
                 br
                 |  一つのドラムセットで色々なパターンを演奏させたい時などに便利
-        h3.heading.switch
-          | ドラムセットの選択とオリジナルセットの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムセットの選択とオリジナルセットの作成")
           p
             | ドラムセットの選択とオリジナルセットの作成
             br
@@ -4780,10 +4442,7 @@ html(lang="ja")
             span.controllerButton SAVE/COPY
             | から手をを離す
           p ステップ9 [DRUM SET]ボタンを押して、ドラムセット・モードを終了
-        h3.heading.switch
-          | ドラムセットの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムセットの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4797,10 +4456,7 @@ html(lang="ja")
             |  ドラムセットの名前とドラムセット番号が表示される
             br
             |  また、[ORESET/USER]ボタンでプリセットとユーザーのバンクを切替可能
-        h3.heading.switch
-          | パッドへ割り当てるサウンドの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドへ割り当てるサウンドの設定")
           p パッドを押したときに鳴るサウンドを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4813,10 +4469,7 @@ html(lang="ja")
             | 該当するパッドを押すと画面にサウンド名とサウンド番号が(右上にはパッド番号も)表示されるので
             span.controllerKnob DATA
             | や数値ボタンを押して設定
-        h3.heading.switch
-          | アサインモード(トリガーモード)の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アサインモード(トリガーモード)の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4864,10 +4517,7 @@ html(lang="ja")
                 |  代表的な使用法としてはハイハットが挙げられる
                 br
                 |  クローズ・ハイハットを叩くとオープン・ハイ ハットが消えるといった使用方法が可能
-        h3.heading.switch
-          | アウトプットの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アウトプットの設定")
           p  パッドに割り当てられたサウンド、及びシンセサウンドの出力を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4888,10 +4538,7 @@ html(lang="ja")
             br
             span.controllerKnob DATA
             | や数値ボタンを押して設定(シンセ サウンドはパッド別ではなくサウンド全体の出力設定をする)
-        h3.heading.switch
-          | ドラムセットの名前
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムセットの名前")
           p ドラムセットの名前を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -4917,14 +4564,8 @@ html(lang="ja")
                   | /
                   span.controllerButton INC&gt;
                   | を押して設定
-      h2.heading.switch
-        | 音色変化
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色変化")
+        +section3("パン")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4932,10 +4573,7 @@ html(lang="ja")
                 span.controllerButton DRUM SET
               li.contentOperationOrderlist
                 span.controllerPage PANNING(PAGE 5)
-        h3.heading.switch
-          | チューニング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チューニング")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4944,10 +4582,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage TUNING(PAGE 6)
           p チューニングを半音単位(-12~ +12)で設定
-        h3.heading.switch
-          | アタック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アタック")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4959,10 +4594,7 @@ html(lang="ja")
             | 「00」で最も立ち上がりが速く、99で最も遅い立ち上がり
             br
             |  「SYNTH]のみ設定可能
-        h3.heading.switch
-          | ディケイ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ディケイ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4976,10 +4608,7 @@ html(lang="ja")
             |  「00」に設定することで、パッドを押し続けている間だけサウンドを発音させることが可能
             br
             |  「99」の状態はパッドを押し続けていなくてもサウンドは最後まで発音される
-        h3.heading.switch
-          | リリース
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リリース")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4991,10 +4620,7 @@ html(lang="ja")
             | 「00」では最も速く、「99」では0になるまで長い時間がかかる
             br
             |  [SYNTH]選択時のみ設定可能
-        h3.heading.switch
-          | フィルター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルター")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5006,14 +4632,8 @@ html(lang="ja")
             | 「00」で最も閉じた状態、 99では最も開いた状態
             br
             |  ドラムと1ショットサウンドはパッドごと、シンセはサウンド全体で共通
-      h2.heading.switch
-        | エフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクト")
+        +section3("エフェクト")
           p
             span.controllerButton EFFECT
             | を押して、エフェクト・メニューに入る
@@ -5048,10 +4668,7 @@ html(lang="ja")
             |  各インストゥルメントに対して、別々のリバーブタイプやEQ&コンプのタイプを設定できるわけではない
             br
             |  (ただし、それぞれのエフェクトの深さやON/OFFをインストゥルメント別やパッド別に設定可能)
-        h3.heading.switch
-          | リバーブの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リバーブの設定")
           p ドラムセットが使用するリバーブの種類とON/OFFの選択出
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5086,10 +4703,7 @@ html(lang="ja")
                   br
                   | 数値を大きくするとリバーブの効果が大きくなりエフェクトが深くかかる
 
-        h3.heading.switch
-          | リバーブの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リバーブの種類")
           table
             tr
               th REVERB TYPES
@@ -5141,10 +4755,7 @@ html(lang="ja")
               td WoodRM
             tr
               td WrmStudo
-        h3.heading.switch
-          | コンプとEQの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンプとEQの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5178,10 +4789,7 @@ html(lang="ja")
             | /
             span.controllerButton INC&gt;
             | を押して設定する
-        h3.heading.switch
-          | コンプとEQの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("コンプとEQの種類")
           table
             tr
               th COMPRESSION AND EQ TYPES
@@ -5217,14 +4825,8 @@ html(lang="ja")
               td  Roc2
             tr
               td Roc3
-      h2.heading.switch
-        | パターンプレイ・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンプレイ・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターンプレイ・モード")
+        +section3("パターンプレイ・モード")
           p 12個のパッドにパターンそのものを割り当て、パッドを叩くだけでそのパターンを再生させる
           p
             | ステップ1
@@ -5286,10 +4888,7 @@ html(lang="ja")
             |  キャンセルをしたい時は そのまま
             span.controllerButton SAVE/COPY
             | から手を離す
-        h3.heading.switch
-          | パターンプレイモードの演奏をソングにリアルタイム録音する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンプレイモードの演奏をソングにリアルタイム録音する")
           p パターンプレイモードの演奏をソングにリアルタイム録音する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5312,14 +4911,8 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton PATTERN/SONG
                 | を押してソングモードに入り、録音したソングを再生
-      h2.heading.switch
-        | ソング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ソング (SONG)とは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ソング")
+        +section3("ソング (SONG)とは")
           p パターンをつなぎ合わせて順番に演奏させる
           p
             | 通常の楽曲なら、イントロ、Aパート、Bパート、サビ、間奏、ブリッジ、エンディング等、各構成別に分けて1小節から8小節程のパターンを作り、それらを連結させてソングを作る
@@ -5330,10 +4923,7 @@ html(lang="ja")
             | 何番のパターンをどの順番で、どのメインパターン(A, B)を選択し、どのタイミングでフィル(FILL)を入れたか、 といった様な内容の全てを記録することが出来る
             br
             | 記録方法には「リアルタイム」でパターンを選択&再生しながら作成してゆく方法と、サウンドをひとつずつ打ち込んでいく「ステップ」入力の2種類がある
-        h3.heading.switch
-          | ソングの再生
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの再生")
           table
             tr
               td 停止している位置からシーケンスを再生
@@ -5371,20 +4961,14 @@ html(lang="ja")
                 span.controllerButton PAGE&gt;
                 | を押す
 
-        h3.heading.switch
-          | ソングの停止
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの停止")
           table
             tr
               td シーケンスを停止して先頭に戻る
               td
                 span.controllerButton STOP
                 | を押す
-        h3.heading.switch
-          | ソングのセーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングのセーブ")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -5404,10 +4988,7 @@ html(lang="ja")
                   span.controllerButton SAVE/COPY
                   | から手を放すとキャンセル)
 
-        h3.heading.switch
-          | ソングへ追加(パターン)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングへ追加(パターン)")
           p
             | 選択されているパターンとそのサブ・パターンを、指定選択されているソングに付け加える
             br
@@ -5426,10 +5007,7 @@ html(lang="ja")
                 li.contentOperationOrderlist
                   span.controllerButton REC
                   | を押して実行
-        h3.heading.switch
-          | ソングへ追加(ソング)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングへ追加(ソング)")
           p 現在選択中のソングを、指定先のソングの後ろへ付け足す
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -5451,10 +5029,7 @@ html(lang="ja")
                   | を押すと追加が実行される
 
           p 追加先のソング番号を現在選択中のソング番号に指定した場合、現在選択中のソング内容がそのまま後ろに付け足される
-        h3.heading.switch
-          | ソングの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングの消去")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -5481,10 +5056,7 @@ html(lang="ja")
             |  これは操作ミスにより、あやまってSONGを消去してしまった場合に有効
             br
             |  もし確実に消去し、データが入っていない白紙のソングを作成したい場合は、消去後にそのま ま同じソングナンバーに(他のソングにあやまって上書きしない様、注意を払って上書きセーブをする
-        h3.heading.switch
-          | ソングのリアルタイム入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングのリアルタイム入力")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5569,10 +5141,7 @@ html(lang="ja")
             | ディスプレイの2段目に表示されている数字は、現在のステップで選択されているパターン番号
             br
             | すぐ隣に表示されている「A, B, FILL」は選択されているパターンのサブ・パターン
-        h3.heading.switch
-          | ソングに名前をつける
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングに名前をつける")
 
 
           div.contentOperationBox
@@ -5605,10 +5174,7 @@ html(lang="ja")
 
 
           p ソングモードに入っていれば、ステップエディットモードの状態でもソングネームの入力モードに入ることが出来る
-        h3.heading.switch
-          | ソングのステップ入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングのステップ入力")
           p ソングのステップ入力 ステップによるパターンの入力
           p 1.ソング・モードを選択しこれから作成するソング番号を選ぶ
           p
@@ -5645,14 +5211,8 @@ html(lang="ja")
             | を押すか
             span.controllerButton REC
             | を押す
-      h2.heading.switch
-        | テンポ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | テンポに関する設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("テンポ")
+        +section3("テンポに関する設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5670,10 +5230,7 @@ html(lang="ja")
             tr
               td GLOBAL
               td どのパターンを選択しても設定した1つのテンポを使用し続けます。(ソングデータ内のテンポチェンジは反映される)
-        h3.heading.switch
-          | テンポ・イベントの挿入
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("テンポ・イベントの挿入")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5696,10 +5253,7 @@ html(lang="ja")
                 span.controllerButton TAP TEMPO
                 | から手を離すと決定
           |             -
-        h3.heading.switch
-          | テンポ・イベントの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("テンポ・イベントの削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5719,10 +5273,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton TAP TEMPO
                 | を押し続けたまま、ERASE]ボタンを押すと画面が「-BPM」になりテンポ・イベントは消去される
-        h3.heading.switch
-          | タップ・テンポ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タップ・テンポ")
           br
           | 操作1
           p
@@ -5747,24 +5298,15 @@ html(lang="ja")
                 |  /
                 span.controllerButton &lt;DEC
                 | ボタンを押してテンポを変更する
-      h2.heading.switch
-        | フットスイッチ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | フットスイッチとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("フットスイッチ")
+        +section3("フットスイッチとは")
           p
             | フットスイッチによるコントロール
             br
             |  フット・スイッチコントロール用に、2つのジャック([Start/Stop]と[Count/A/ B/Fil] )がある
             br
             |  フットスイッチは「オープン・タイプ」及び「クローズ・タイプ」の 2種類のフット・スイッチを使用することができ、電源投入時に自動で認識されるので、フット・スイッチは電源投入前に接続しておく
-        h3.heading.switch
-          | フットスイッチの操作
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フットスイッチの操作")
           table
             tr
               th 　
@@ -5800,14 +5342,8 @@ html(lang="ja")
               td ソング再生中のソング・ステップの延長
               td [Count/A/B/Fill]端子に接続したフット・スイッチを踏んだままにすることで、ステップにあるパターンの演奏を繰り返す
               td
-      h2.heading.switch
-        | システムセットアップ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | システム・セットアップ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("システムセットアップ")
+        +section3("システム・セットアップ")
           p MDオプション、ノート・アサイン、クロック設定、ディスプレイ の明るさ等のシステム設定や初期設定を行う
 
           div.contentOperationBox
@@ -5830,10 +5366,7 @@ html(lang="ja")
                   | で選択したページの設定値を変更
                 li.contentOperationOrderlist システム・セットアップ・ボタンを押してシステム・セットアップを終了
 
-        h3.heading.switch
-          | システムセットアップの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("システムセットアップの保存")
           p
             | システムセットアップ・モード内で
             span.controllerButton SAVE/COPY
@@ -5848,14 +5381,8 @@ html(lang="ja")
             br
             span.controllerButton SAVE/COPY
             | から手を離すとキャンセルになる
-      h2.heading.switch
-        | ディスプレイ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ディスプレイのバックライト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ディスプレイ")
+        +section3("ディスプレイのバックライト")
           p ディスプレイ・バックライト設定 ディスプレイのバックライトの明るさを10段階で調整
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5874,14 +5401,8 @@ html(lang="ja")
             tr
               td 0
               td バックライトを消す
-      h2.heading.switch
-        | MIDI
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | MIDIチャンネル設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("MIDI")
+        +section3("MIDIチャンネル設定")
           p XR20が受信するMIDIチャンネルを1~16、OMNI(全てのMIDI Ch)で設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5902,10 +5423,7 @@ html(lang="ja")
             |  初期設定ではドラムサウンド(DRUM)とワンショット(ISHOT) が「10」に、シンセサウンド(SYNTH)が「1」に設定されている
           p
             | XR20は、3つのインストゥルメント・レイヤーがあるが、この3つのパートに対して個別のチャンネルを設定することにより、3パートのマルチティンバー音源の様に使用する事が可能
-        h3.heading.switch
-          | MIDIノート受信設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIノート受信設定")
           .contentOperationBox
             p XR20のMIDIノート信号の受信方法を設定する
             p.contentOperationCaption 操作
@@ -5934,10 +5452,7 @@ html(lang="ja")
             tr
               td OFF
               td 発音しない
-        h3.heading.switch
-          | MIDIノート送信設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIノート送信設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5961,10 +5476,7 @@ html(lang="ja")
             |  XR20を単体のドラムマシーンとして使用し、かつXR20が外部システム同期のマスターになる場合
             br
             | このページの設定で3つのインストゥルメントの設定を「OFF」にし、更に PAGE6の「CLOCKOUT」を「ON」にすることで、XR20背面の[MIDI OUT端子からは、MIDI ノートを出力せずに、クロックのみを出力するようになる
-        h3.heading.switch
-          | パッドのMIDIノートナンバー設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドのMIDIノートナンバー設定")
           p パッドのMIDIノートナンバー設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5999,10 +5511,7 @@ html(lang="ja")
             | を押すと画面には「N/A」と表示される
           p
             | 注意 MIDIノートナンバーのパッドへの割り当てはXR20全体に対して作用する パターンごと、あるいはソングごとなどの保存はされない
-        h3.heading.switch
-          | 外部からのクロック受信設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部からのクロック受信設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6021,10 +5530,7 @@ html(lang="ja")
             tr
               td XR20をスレーブ同期させる
               td CLOCK OUTをOFF
-        h3.heading.switch
-          | 外部へのクロック送信設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部へのクロック送信設定")
           p  XR20に外部のDAWやシーケンサーを同期させる(マスターにする)設定を行う
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6040,10 +5546,7 @@ html(lang="ja")
             tr
               td XR20を同期のマスターとして使用する場合は
               td CLOCK INをOFF
-        h3.heading.switch
-          | MIDIスルーの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIスルーの設定")
           p
             | XR20の[MIDI IN 端子から入力されたMIDI情報(ノート、タイミングクロックなど)をXR20の [MDI OUT端子からそのまま出力(マージ/スルー)させるかどうかの設定を行う
           .contentOperationBox
@@ -6066,10 +5569,7 @@ html(lang="ja")
           p 例：XR20が同期のマスターとなり外部のシーケンサーやDAWをXR20のクロックによりコントロール、もしくは演奏などをさせている場合に、この設定を「ON」にする
           p
             | [MIDI IN]端子に外部MIDIキーボードを接続して演奏することでXR20の内部のサウンドや 外部MIDI機器側のサウンドを演奏するといったことも可能(勿論受信側のチャン ネル設定が適切な状態になっている事が条件)
-        h3.heading.switch
-          | プログラムチェンジによるドラムセットの切替
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムチェンジによるドラムセットの切替")
           p プログラムチェンジによるドラムセットの切替
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6127,10 +5627,7 @@ html(lang="ja")
               td 00-99
               td
                 | USER SYNTH KITS
-        h3.heading.switch
-          | マルチドラムセット・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マルチドラムセット・モード")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6174,10 +5671,7 @@ html(lang="ja")
             |  外部のMIDIコントローラーやシーケンサーの MIDI OUT端子からXR20の[MIDI IN」端子へ接続して発音させる
           p
             | マルチドラムセット・モード時に展開されているドラムセットマップは、XR20本 体のパターンやソングによって選択されているドラムセットとは別で存在している
-        h3.heading.switch
-          | MIDIパニック・メッセージ送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIパニック・メッセージ送信")
           p
             | 再生中のサウンドをすべて停止する
             br
@@ -6189,14 +5683,8 @@ html(lang="ja")
                 span.controllerButton STOP
                 | を素早く2回押す
           p XR20の内部音源とMDI OUT端子に接続されている外部MIDI機器に対して、MIDIパニック・メッセージを送信
-      h2.heading.switch
-        | バッテリー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | バッテリーレベルを表示
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("バッテリー")
+        +section3("バッテリーレベルを表示")
           p バッテリーレベルを表示
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6206,10 +5694,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage BATT LVL(PAGE 14)
           p アダプター使用時には「DC IN」と表示される
-        h3.heading.switch
-          | バッテリーレベル警告設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("バッテリーレベル警告設定")
           p バッテリーレベル警告設定 バッテリーレベルが警告表示される値を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6218,14 +5703,8 @@ html(lang="ja")
                 span.controllerButton SYSTEM SETUP
               li.contentOperationOrderlist
                 span.controllerPage LO BATT(PAGE 15)
-      h2.heading.switch
-        | メモリ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | メモリ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("メモリ")
+        +section3("メモリ")
           p  使用可能メモリの確認 XR20の使用可能なメモリ残量が表示される(全体量に対するパーセントで表わされる)
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6234,14 +5713,8 @@ html(lang="ja")
                 span.controllerButton SYSTEM SETUP
               li.contentOperationOrderlist
                 span.controllerPage MEM FREE(PAGE 16)
-      h2.heading.switch
-        | バックアップ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | XR20のデータをバックアップする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("バックアップ")
+        +section3("XR20のデータをバックアップする")
           p  XR20のソングとパターンのデータを、MIDIシステム・エクスクルーシブとして外部MIDIシーケンサーなどに送信
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6260,10 +5733,7 @@ html(lang="ja")
                 br
                 | 転送が終了するとXR20のディスプレイは送信前の状態の「SEND OUT MIDI?」に戻る
               li.contentOperationOrderlist 外部MIDIシーケンサーなど、記録側の録音を停止する
-        h3.heading.switch
-          | 保存されたデータをXR20へ送信する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("保存されたデータをXR20へ送信する")
           p  MIDIシステム・エクスクルーシブとして保存されたXR20のソングとパターンのデータを、外部MIDIシーケンサーからXR20へ送信
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6280,14 +5750,8 @@ html(lang="ja")
                 br
                 | 転送中、XR20のディスプレイには数値が表示され続ける
               li.contentOperationOrderlist  終了したらXR20のパワーを入れなおして終了
-      h2.heading.switch
-        | マルチドラムセット・モード時のドラムマップ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | DRUMSET00、DRUMSET010
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("マルチドラムセット・モード時のドラムマップ")
+        +section3("DRUMSET00、DRUMSET010")
           table
             tr
               th PAD#
@@ -6328,10 +5792,7 @@ html(lang="ja")
             tr
               td 12
               td 011
-        h3.heading.switch
-          | DRUMSET01、DRUMSET011
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET01、DRUMSET011")
           table
             tr
               th PAD#
@@ -6372,10 +5833,7 @@ html(lang="ja")
             tr
               td 12
               td 023
-        h3.heading.switch
-          | DRUMSET02、DRUMSET012
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET02、DRUMSET012")
           table
             tr
               th PAD#
@@ -6416,10 +5874,7 @@ html(lang="ja")
             tr
               td 12
               td 035
-        h3.heading.switch
-          | DRUMSET03、DRUMSET013
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET03、DRUMSET013")
           table
             tr
               th PAD#
@@ -6460,10 +5915,7 @@ html(lang="ja")
             tr
               td 12
               td 047
-        h3.heading.switch
-          | DRUMSET04、DRUMSET014
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET04、DRUMSET014")
           table
             tr
               th PAD#
@@ -6504,10 +5956,7 @@ html(lang="ja")
             tr
               td 12
               td 059
-        h3.heading.switch
-          | DRUMSET05、DRUMSET015
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET05、DRUMSET015")
           table
             tr
               th PAD#
@@ -6548,10 +5997,7 @@ html(lang="ja")
             tr
               td 12
               td 071
-        h3.heading.switch
-          | DRUMSET06、DRUMSET016
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET06、DRUMSET016")
           table
             tr
               th PAD#
@@ -6592,10 +6038,7 @@ html(lang="ja")
             tr
               td 12
               td 083
-        h3.heading.switch
-          | DRUMSET07、DRUMSET017
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET07、DRUMSET017")
           table
             tr
               th PAD#
@@ -6636,10 +6079,7 @@ html(lang="ja")
             tr
               td 12
               td 095
-        h3.heading.switch
-          | DRUMSET08、DRUMSET018
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET08、DRUMSET018")
           table
             tr
               th PAD#
@@ -6680,10 +6120,7 @@ html(lang="ja")
             tr
               td 12
               td 107
-        h3.heading.switch
-          | DRUMSET09、DRUMSET019
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DRUMSET09、DRUMSET019")
           table
             tr
               th PAD#
@@ -6724,14 +6161,8 @@ html(lang="ja")
             tr
               td 12
               td 119
-      h2.heading.switch
-        | パッド・ノートナンバー初期設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | DRUMS PAD
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パッド・ノートナンバー初期設定")
+        +section3("DRUMS PAD")
           table
             tr
               td PAD
@@ -6785,10 +6216,7 @@ html(lang="ja")
               td PAD12
               td 053
               td F2
-        h3.heading.switch
-          | 1-SHOT
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("1-SHOT")
           table
             tr
               td PAD
@@ -6842,10 +6270,7 @@ html(lang="ja")
               td PAD12
               td 080
               td G#4
-        h3.heading.switch
-          | STNTH
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("STNTH")
           table
             tr
               td PAD
@@ -6899,14 +6324,8 @@ html(lang="ja")
               td PAD12
               td 059
               td B2
-      h2.heading.switch
-        | メトロノーム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | メトロノーム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("メトロノーム")
+        +section3("メトロノーム")
           p メトロノームのオン/オフとリズム設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6935,14 +6354,8 @@ html(lang="ja")
                 | /
                 span.controllerButton INC&gt;
                 | または数字キーを使ってクリックのボリューム・レベルを適切な音量に調節
-      h2.heading.switch
-        | 制限事項
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 同時発音数
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("制限事項")
+        +section3("同時発音数")
           p
             | 32ボイスまで
             br

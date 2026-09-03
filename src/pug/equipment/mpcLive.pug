@@ -1,6 +1,7 @@
 - var pagename='MPC Live|spindey.com'
 - var description='AKAIのMPC Liveのマニュアルです。'
 - var keywords='MPC Live,AKAI'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -9,14 +10,8 @@ html(lang="ja")
     main.equipmentMain
 
 
-      h2.heading.switch
-        | ファイル構成
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ファイル構成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ファイル構成")
+        +section3("ファイル構成")
           table
             tr
               td Sequence
@@ -85,14 +80,8 @@ html(lang="ja")
               td オーディオ
 
 
-      h2.heading.switch
-        | ファイルブラウズ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ブラウザの表示
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ファイルブラウズ")
+        +section3("ブラウザの表示")
 
 
 
@@ -146,10 +135,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ブラウザでの移動
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ブラウザでの移動")
           table
             tr
               td フォルダレベルを1つ上に移動する
@@ -172,10 +158,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ファイルのロード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ファイルのロード")
           table
             tr
               td 選択したファイルをロードする
@@ -201,16 +184,10 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 選択したファイルやフォルダを削除する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("選択したファイルやフォルダを削除する")
           p ブラウザ画面で Shift キーを押しながら Delete File をタップする
 
-        h3.heading.switch
-          | オーディション機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディション機能")
           p 画面下の Play(▶アイコン)をタップして長押しする
 
           div.contentOperationBox
@@ -218,10 +195,7 @@ html(lang="ja")
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist 画面下の Play(▶アイコン)をタップして長押しする
 
-        h3.heading.switch
-          | オーディション機能の設定変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディション機能の設定変更")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -244,10 +218,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 現在のドライブの情報を表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("現在のドライブの情報を表示する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -255,14 +226,8 @@ html(lang="ja")
                 li.contentOperationOrderlist ドライブの情報が新しいウィンドウに表示される
                 li.contentOperationOrderlist OK をタップして前の画面に戻る
 
-      h2.heading.switch
-        | ロードしたサンプルをパッドにアサインする
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ロードしたサンプルをパッドにアサインする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ロードしたサンプルをパッドにアサインする")
+        +section3("ロードしたサンプルをパッドにアサインする")
           p ドラムキットのサンプルをサンプルプールにロードした後、Sample Assign タブを使用してキックドラムのサウンドをパッドにアサインする
 
           div.contentOperationBox
@@ -286,14 +251,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ドラムシーケンスの作成
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ドラムシーケンスの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ドラムシーケンスの作成")
+        +section3("ドラムシーケンスの作成")
 
 
           div.contentOperationBox
@@ -336,24 +295,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | データのセーブと名前の変更
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | プログラムの名前を変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("データのセーブと名前の変更")
+        +section3("プログラムの名前を変更する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist Main を押してメインモードに入る
                 li.contentOperationOrderlist 画面下部の Program セクションで、右端のカーソルアイコンをタップする
                 li.contentOperationOrderlist 表示されたバーチャルキーボードを使って新しい名前(例：Drums)を入力し、Do It をタップする
-        h3.heading.switch
-          | サンプルの名前を変更する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの名前を変更する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -372,10 +322,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プロジェクトを保存する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プロジェクトを保存する")
           p Menuを押して画面上部のディスクアイコンをタップするか、Shift+Browseを押してSaveウィンドウを開く
 
           table
@@ -444,14 +391,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ノートイベントのエディット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ノートイベントのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ノートイベントのエディット")
+        +section3("ノートイベントのエディット")
 
           p グリッドでは、シーケンスとして録音したノート(またはノートイベント)を確認することができる
 
@@ -562,14 +503,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サウンドのエディット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 基本的なサウンドのエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サウンドのエディット")
+        +section3("基本的なサウンドのエディット")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -602,10 +537,7 @@ html(lang="ja")
                 | リバーブをかけたいパッドを押して選択する
 
 
-        h3.heading.switch
-          | エフェクトを追加する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトを追加する")
 
 
           div.contentOperationBox
@@ -645,14 +577,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | メロディのあるトラックの作成
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 新しいトラックを選択する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("メロディのあるトラックの作成")
+        +section3("新しいトラックを選択する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -664,10 +590,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 新しいプログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("新しいプログラムを作成する")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -681,10 +604,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サウンドをロードしてエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サウンドをロードしてエディットする")
 
 
           div.contentOperationBox
@@ -707,10 +627,7 @@ html(lang="ja")
             | 他のパッドを使って、クロマチックにサンプルを再生することができる
 
 
-        h3.heading.switch
-          | レイヤーを追加して、ベロシティレンジを設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("レイヤーを追加して、ベロシティレンジを設定する")
           p 高いベロシティで再生したときに音の響きが異なるようにする
 
 
@@ -728,10 +645,7 @@ html(lang="ja")
                 li.contentOperationOrderlist パッドを押すと、低いベロシティ(0-80)はレイヤー 1 のサンプルのみをトリガーし、高いベロシティ(81-127)はレイヤー 2 のサンプルのみをトリガーする
 
 
-        h3.heading.switch
-          | 録音してエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("録音してエディットする")
 
           p 録音が終わったら、Filter セクションでサウンドを微調整してみる
 
@@ -747,10 +661,7 @@ html(lang="ja")
                   | サウンドのレベル特性をコントロールする
 
 
-        h3.heading.switch
-          | エフェクトを追加する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エフェクトを追加する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -776,14 +687,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | オーディオトラックのレコーディング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | オーディオトラックのレコーディングの準備
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("オーディオトラックのレコーディング")
+        +section3("オーディオトラックのレコーディングの準備")
 
 
           div.contentOperationBox
@@ -807,10 +712,7 @@ html(lang="ja")
                   br
                   | メーターレベルが表示されるので、それが最大レベルを超えないことを確認する
 
-        h3.heading.switch
-          | オーディオトラックのレコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオトラックのレコーディング")
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
@@ -831,14 +733,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ソング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ソングの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ソング")
+        +section3("ソングの作成")
 
 
 
@@ -901,10 +797,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ソングのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ソングのエクスポート")
           p 制作した楽曲をオーディオファイルとして共有するには、エクスポートを行う
 
           div.contentOperationBox
@@ -945,14 +838,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ステップシーケンサー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ステップシーケンサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ステップシーケンサー")
+        +section3("ステップシーケンサー")
 
 
 
@@ -1007,14 +894,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ドラムループとチョップモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ドラムループとチョップモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ドラムループとチョップモード")
+        +section3("ドラムループとチョップモード")
 
 
 
@@ -1054,10 +935,7 @@ html(lang="ja")
             | 各パッドを押すと、同じ番号のスライスが再生される
 
 
-        h3.heading.switch
-          | スライスをサンプルとして新しいプログラムを作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スライスをサンプルとして新しいプログラムを作成")
           p 対応するノートイベントを自動的に作成して、これらのスライスを順次再生するようにもできる
 
           div.contentOperationBox
@@ -1089,14 +967,8 @@ html(lang="ja")
           p 画面上部の TC/clock アイコンをタップすると、Timing Correct ウィンドウを使用してノートイベントが正確に一定の時間間隔になるようクォンタイズできる
 
 
-      h2.heading.switch
-        | ミュート
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パッドミュート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ミュート")
+        +section3("パッドミュート")
 
 
 
@@ -1119,10 +991,7 @@ html(lang="ja")
                   | 複数のパッドを同時にミュートすることもできる
 
 
-        h3.heading.switch
-          | トラック全体をミュートする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラック全体をミュートする")
 
           p トラックミュートモードに入るには、Menu を押してから Track Mute をタップする
 
@@ -1158,14 +1027,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サンプリング
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプリング")
+        +section3("サンプリング")
 
 
 
@@ -1199,10 +1062,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Keep or Discard Sampleウィンドウ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Keep or Discard Sampleウィンドウ")
           table
             tr
               td 新しいサンプルに名前を付ける
@@ -1241,14 +1101,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | サンプルエディット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプルエディット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプルエディット")
+        +section3("サンプルエディット")
           p 新しく録音したサンプルは、サンプルエディットモードを使ってエディットする必要がある
           p サンプルエディットモードに入るには、Menu(メニュー)を押し、Sample Edit(サンプルエディット)をタップする
           table
@@ -1281,10 +1135,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | サンプルに様々な処理を施す
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルに様々な処理を施す")
 
           p Process Sample ウィンドウを開くには、画面下部の Process をタップする
 
@@ -1305,14 +1156,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | XY パッドでオートメーションを記録する
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | XY パッドでオートメーションを記録する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("XY パッドでオートメーションを記録する")
+        +section3("XY パッドでオートメーションを記録する")
 
           p 様々なパラメーターを自動化することで動きやダイナミズムをシーケンスに付加することができる
 
@@ -1351,14 +1196,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | エフェクトリスト
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | エフェクトリスト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("エフェクトリスト")
+        +section3("エフェクトリスト")
 
           table
             tr
@@ -1507,14 +1346,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プログラム")
+        +section3("プログラム")
 
           p シーケンス内で作成した各トラックは、プログラムを介してルーティングされる
             br
@@ -1555,14 +1388,8 @@ html(lang="ja")
               td あなたのトラックの MIDI データをシンセのようなコントロール電圧(CV)を使用する外部 MIDIデバイスに送ることができる
 
 
-      h2.heading.switch
-        | Drum プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Drum プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Drum プログラム")
+        +section3("Drum プログラム")
 
 
 
@@ -1573,10 +1400,7 @@ html(lang="ja")
             | ドラムプログラムは、主にドラムパートを作成したり、パッドにサンプルを素早く簡単にアサインしたりするために使用する
 
 
-        h3.heading.switch
-          | ドラムプログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムプログラムを作成する")
 
 
           div.contentOperationBox
@@ -1614,10 +1438,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ドラムプログラムにサンプルをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ドラムプログラムにサンプルをロードする")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1649,10 +1470,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プログラムエディットモードでドラムプログラムのサンプルをアサインする方法1
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムエディットモードでドラムプログラムのサンプルをアサインする方法1")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1673,10 +1491,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プログラムエディットモードでドラムプログラムのサンプルをアサインする方法2
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムエディットモードでドラムプログラムのサンプルをアサインする方法2")
 
 
           div.contentOperationBox
@@ -1699,14 +1514,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Keygroup プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Keygroup プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Keygroup プログラム")
+        +section3("Keygroup プログラム")
           p キーグループプログラムは、1 つ以上のサンプルを使用し、サンプルのリストと、各サンプルの設定(ピッチチューニング、エフェクトなど)が含まれる
 
           p MIDI キーボードやパッドでサンプルをクロマチックに演奏するために使用される
@@ -1714,10 +1523,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | キーグループプログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("キーグループプログラムを作成する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1744,10 +1550,7 @@ html(lang="ja")
                 | 表示される仮想キーボードを使用して新しい名前を入力し、Do It をタップして確認するか、画面上部のグレーバーをタップしてキャンセルする
 
 
-        h3.heading.switch
-          | キーグループプログラムでサンプルを割り当てる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("キーグループプログラムでサンプルを割り当てる")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1787,14 +1590,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Clip プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Clip プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Clip プログラム")
+        +section3("Clip プログラム")
 
 
 
@@ -1814,10 +1611,7 @@ html(lang="ja")
             | 上で説明した 4 カラムのパッド構成はデフォルト設定なのでプログラムエディットモードを使用して、パッドのミュートグループの組み合わせは自由に変更することができる
 
 
-        h3.heading.switch
-          | クリッププログラムを作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クリッププログラムを作成")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1845,10 +1639,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | クリップをクリッププログラムに読み込む
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クリップをクリッププログラムに読み込む")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1877,10 +1668,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | クリッププログラムにクリップを割り当てる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("クリッププログラムにクリップを割り当てる")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1903,24 +1691,15 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Plugin プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Plugin プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Plugin プログラム")
+        +section3("Plugin プログラム")
 
           p プラグインプログラムには、トラックの MIDI データを送信するためのプラグインのインスタンスが含まれる
             br
             | これにより、複数トラックで同じプラグインのインスタンスを使用できる
 
 
-        h3.heading.switch
-          | プラグインプログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プラグインプログラムを作成する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1979,10 +1758,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プラグインプログラムを使用してトラックのボリュームとパンニングを調整する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プラグインプログラムを使用してトラックのボリュームとパンニングを調整する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2003,21 +1779,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | MIDI プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("MIDI プログラム")
 
-        h3.heading.switch
-          | MIDI プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI プログラム")
           p MIDI プログラムでは、トラックの MIDI データをシンセやドラムマシンのような外部 MIDI デバイスに送ることができる
 
-        h3.heading.switch
-          | MIDI プログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI プログラムを作成する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2047,10 +1814,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDI プログラムを使ってトラックのボリュームとパンニングを調整する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI プログラムを使ってトラックのボリュームとパンニングを調整する")
 
 
           div.contentOperationBox
@@ -2070,21 +1834,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | CV プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("CV プログラム")
 
-        h3.heading.switch
-          | CV プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("CV プログラム")
           p CV プログラムでは、コントロール電圧(CV)の信号を、CV を使用するシンセやドラムマシンなどの外部 MIDI デバイスに送ることができる
 
-        h3.heading.switch
-          | CV プログラムを作成する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("CV プログラムを作成する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2119,15 +1874,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | DrumSynth
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("DrumSynth")
 
-        h3.heading.switch
-          | DrumSynth を使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DrumSynth を使用する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -2154,10 +1903,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | DrumSynthの音の調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DrumSynthの音の調整")
 
 
           table
@@ -2319,10 +2065,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | DrumSynth：Multi
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DrumSynth：Multi")
 
           p 1つのプラグインからすべての DrumSynth サウンドにアクセスできる
             br
@@ -2447,16 +2190,10 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Menu/メニュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Menu/メニュー")
 
 
-        h3.heading.switch
-          | Save/セーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Save/セーブ")
 
 
           table
@@ -2506,15 +2243,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Preferences/環境設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Preferences/環境設定")
 
-        h3.heading.switch
-          | 環境設定を開く
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("環境設定を開く")
 
           table
             tr
@@ -2542,10 +2273,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Info/インフォメーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Info/インフォメーション")
           p 使用している MPC Liveの現在の情報が表示される
           ul
             li 現在のファームウェアバージョン
@@ -2557,10 +2285,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Wi-Fi
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Wi-Fi")
 
           p MPC Liveのワイヤレス接続方法を決定し、Ableton Live と Ableton Link 対応アプリケーションのビート、フェーズ、テンポをワイヤレスまたは有線ネットワーク上で同期させる Ableton Link を使用することができる
 
@@ -2608,10 +2333,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Ethernet
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Ethernet")
 
 
           p USB-to-Ethernet アダプターを使用して MPC Liveを有線ネットワークに接続する方法を決定する
@@ -2631,10 +2353,7 @@ html(lang="ja")
               td IP Address、Subnet Mask、Gateway、DNS をタップして値を入力する
 
 
-        h3.heading.switch
-          | Bluetooth
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bluetooth")
           p MPC Liveの Bluetooth 接続がどのように動作するかを決定する
             br
             | Bluetooth MIDI コントローラや Bluetooth コンピュータキーボードを使用できる
@@ -2671,10 +2390,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sequencer/シーケンサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sequencer/シーケンサー")
 
           p グリッドビューとステップシーケンサーでのシーケンサーの動作を決定する
 
@@ -2771,10 +2487,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sync/同期
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sync/同期")
           p MPC Liveが接続された USB および MIDI デバイスとどのように同期するかを設定する
 
           table
@@ -2833,10 +2546,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Hardware/ハードウェア
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Hardware/ハードウェア")
 
           p MPC Liveのパッドとタッチスクリーンの動作を決定する
 
@@ -2911,10 +2621,7 @@ html(lang="ja")
                 | コントローラーモードで使用している場合、この設定はホストコンピュータの現在時刻で上書きされる
 
 
-        h3.heading.switch
-          | Project Defaults/プロジェクトの基本設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Project Defaults/プロジェクトの基本設定")
 
 
           p 作成する新規プロジェクトのさまざまなデフォルト値を決定する
@@ -2986,10 +2693,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プロジェクトのロード/セーブ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プロジェクトのロード/セーブ")
 
 
           p プロジェクトを自動的に保存するかどうか(どのように保存するか)を決定する
@@ -3018,10 +2722,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Record/Export(レコーディング/エクスポートの設定)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Record/Export(レコーディング/エクスポートの設定)")
 
           p レコーディングとエクスポート/書き出しの設定を行う
 
@@ -3086,10 +2787,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | General/ジェネラル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("General/ジェネラル")
 
           p ハードウェアおよびオペレーティングシステムでの他の機能の動作方法を決定する
 
@@ -3243,10 +2941,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Splice
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Splice")
           p Splice プラットフォームとの統合を制御する
 
 
@@ -3254,10 +2949,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Sync/同期
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sync/同期")
 
 
 
@@ -3273,10 +2965,7 @@ html(lang="ja")
             | これらのタイプのタイミング情報を受信するには、MPC Liveがネットワークに接続されている必要がある
 
 
-        h3.heading.switch
-          | Mode/モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Mode/モード")
 
 
           p アイコンをタップすると、スタンドアローンモードとコントローラモードに切り替えることができる
@@ -3299,15 +2988,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | System Resources/システムリソース
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("System Resources/システムリソース")
 
-        h3.heading.switch
-          | System Resources/システムリソース
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("System Resources/システムリソース")
 
           p このウィンドウのインジケータには、現在の使用状況の統計情報が表示される
 
@@ -3325,34 +3008,22 @@ html(lang="ja")
               td Drives
               td ドライブインジケータは、検出された外部ストレージデバイス、または MPC 内部ドライブの空き容量を表示する
 
-        h3.heading.switch
-          | プロジェクトからサンプルを削除する(RAM の空き容量を増やす)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プロジェクトからサンプルを削除する(RAM の空き容量を増やす)")
           p Purge をタップする
             br
             | 表示された画面で、Unused Samples をタップしてプロジェクトから未使用のサンプルをすべて削除し、All Samples をタップしてプロジェクトからすべてのサンプル(すべてのプログラム、シーケンス、オーディオまたは MIDI トラック)を削除するか、「キャンセル」をタップして前の画面に戻る
 
 
-        h3.heading.switch
-          | System Resources ウィンドウを閉じる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("System Resources ウィンドウを閉じる")
           p OK、右上隅の X、またはウィンドウ外の任意の場所をタップする
 
 
 
 
 
-      h2.heading.switch
-        | エラー対応
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("エラー対応")
 
-        h3.heading.switch
-          | メモリ不足
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メモリ不足")
 
 
 
@@ -3379,10 +3050,7 @@ html(lang="ja")
                     li 一度コントローラーモードに入って、再度スタンドアローンモードに入る
 
 
-        h3.heading.switch
-          | サンプルをプロジェクトに読みこめない場合
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルをプロジェクトに読みこめない場合")
 
           p プロジェクトに読み込むサンプルは非圧縮オーディオファイルに自動的変換されるため、外部ストレージデバイスよりも多くの容量を使用する可能性がある
             br
@@ -3405,16 +3073,10 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Time
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Time")
 
 
-        h3.heading.switch
-          | Time Counter/Locate(タイムカウンター/ロケート)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Time Counter/Locate(タイムカウンター/ロケート)")
 
           p ほとんどのモードで、画面上部に時間カウンターがある
             br
@@ -3474,10 +3136,7 @@ html(lang="ja")
                 | (オートレコードセレクターがパンチインに設定されている場合)
 
 
-        h3.heading.switch
-          | タイムマーカー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイムマーカー")
 
           p タイムマーカーを設定することで、連続した正確な場所に自動的にジャンプすることができる
             br
@@ -3495,10 +3154,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Timing Correct/TC/タイミングコレクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Timing Correct/TC/タイミングコレクト")
 
 
 
@@ -3603,10 +3259,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | タイムコレクション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイムコレクション")
           table
             tr
               td タイムコレクションの対象範囲を設定する
@@ -3628,10 +3281,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | メトロノーム(Click/Metro)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("メトロノーム(Click/Metro)")
           p Click/Metro ウィンドウには、メトロノーム(クリックトラック)に関するすべての設定が含まれている
 
           table
@@ -3723,24 +3373,15 @@ html(lang="ja")
                 p (Out 7/8 は搭載さていないが、MPCX との互換性を保つために表示されている)
 
 
-      h2.heading.switch
-        | Automation/オートメーション
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Automation/オートメーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Automation/オートメーション")
+        +section3("Automation/オートメーション")
 
           p プログラムやオーディオトラックのオートメーションを「written/書き込み」「read/読み込み」「無効」のいずれかに設定できる
             br
             | これは、グローバルに、または個々のプログラムとオーディオトラックに対して行うことができる
 
 
-        h3.heading.switch
-          | グローバル/Global
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("グローバル/Global")
 
 
           p いくつかのモードでは、右上にグローバルオートメーションを制御するボタンがある
@@ -3782,10 +3423,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プログラム & オーディオトラック/Programs & Audio Tracks
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラム & オーディオトラック/Programs & Audio Tracks")
 
 
 
@@ -3824,16 +3462,10 @@ html(lang="ja")
                       br
                       |(オートメーション可能なパラメータに Q-Link ノブが割り当てられている場合は、記録中に誤って触れないよう注意)
 
-      h2.heading.switch
-        | 16 Level/16 レベル
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("16 Level/16 レベル")
 
 
-        h3.heading.switch
-          | 16 Level/16 レベル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("16 Level/16 レベル")
 
 
           p MPC Liveの 16 Level ボタンを押して、16 Level を有効または無効にする
@@ -3882,16 +3514,10 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Erase/消去
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Erase/消去")
 
 
-        h3.heading.switch
-          | Erase/消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Erase/消去")
 
           p 消去機能は、特定のシーケンスのトラックの全部または一部を消去する機能
 
@@ -3952,26 +3578,17 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Effects/エフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Effects/エフェクト")
 
 
-        h3.heading.switch
-          | Effects/エフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Effects/エフェクト")
 
           p パッド、キーグループ、オーディオトラック、プログラム、サブミックス、マスターアウトプットに、インサートエフェクトとセンド/リターンエフェクトを使用して、様々なエフェクトを使用できる
 
 
 
 
-        h3.heading.switch
-          | Overview / 概要
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Overview / 概要")
 
 
           p プログラムでは、各パッドまたはキーグループに最大 4 つのインサートエフェクトを適用することができる
@@ -4129,18 +3746,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Insert Effects / インサートエフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Insert Effects / インサートエフェクト")
 
 
 
 
-        h3.heading.switch
-          | Pads / パッド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pads / パッド")
 
 
 
@@ -4202,10 +3813,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Keygroups / キーグループ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Keygroups / キーグループ")
 
 
 
@@ -4283,10 +3891,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Audio Tracks / オーディオトラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio Tracks / オーディオトラック")
 
 
 
@@ -4323,10 +3928,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Programs / プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Programs / プログラム")
 
           p 各プログラムに最大 4 つのインサートエフェクトをロードすることができる
             br
@@ -4395,10 +3997,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Submixes / サブミックス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Submixes / サブミックス")
 
 
 
@@ -4426,10 +4025,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Masters / マスター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Masters / マスター")
 
 
 
@@ -4466,18 +4062,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Send/Return Effects / センド/リターンエフェクト
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Send/Return Effects / センド/リターンエフェクト")
 
 
 
 
-        h3.heading.switch
-          | Send/Return Effects / センド/リターンエフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Send/Return Effects / センド/リターンエフェクト")
 
 
 
@@ -4536,10 +4126,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pads / パッド
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pads / パッド")
 
           p パッドのセンドレベルは、プログラムエディットモードまたはパッドミキサーで設定することができる
 
@@ -4575,10 +4162,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Keygroups / キーグループ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Keygroups / キーグループ")
 
 
 
@@ -4613,10 +4197,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Audio Tracks / オーディオトラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio Tracks / オーディオトラック")
 
 
           p オーディオトラックのセンドレベルは、チャンネルミキサーでのみ設定することができる
@@ -4637,10 +4218,7 @@ html(lang="ja")
                   br
                   | 画面上のパッドをダブルタップするとスライダーが拡大表示され、細かい調整できる
 
-        h3.heading.switch
-          | プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラム")
 
 
           p プログラムのセンドレベルはチャンネルミキサーでのみ設定することができる
@@ -4663,10 +4241,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Submixes / サブミックス
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Submixes / サブミックス")
 
 
 
@@ -4689,18 +4264,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Audio Mixdown / オーディオ・ミックスダウン
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Audio Mixdown / オーディオ・ミックスダウン")
 
 
 
 
-        h3.heading.switch
-          | Audio Mixdown / オーディオ・ミックスダウン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio Mixdown / オーディオ・ミックスダウン")
 
 
 
@@ -4812,18 +4381,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Standalone vs. Controller Mode / スタンドアロンとコントローラモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Standalone vs. Controller Mode / スタンドアロンとコントローラモード")
 
 
 
 
-        h3.heading.switch
-          | Standalone vs. Controller Mode / スタンドアロンとコントローラモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Standalone vs. Controller Mode / スタンドアロンとコントローラモード")
 
 
 
@@ -4908,18 +4471,12 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Modes / モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Modes / モード")
 
 
 
 
-        h3.heading.switch
-          | Modes / モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Modes / モード")
 
           p MPC Liveでは、モードを選択できるメニューページがある
 
@@ -4969,17 +4526,11 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Main Mode / メインモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Main Mode / メインモード")
 
 
 
-        h3.heading.switch
-          | Main Mode / メインモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Main Mode / メインモード")
           p メインモードでは、最もよく使用される機能の概要を確認できる
             br
             | メインモードに入るには、以下のいずれかの操作を行う
@@ -4992,10 +4543,7 @@ html(lang="ja")
 
           p Project フィールドには、現在のプロジェクトの名前が表示される
 
-        h3.heading.switch
-          | プロジェクトウィンドウを表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プロジェクトウィンドウを表示する")
 
 
           p Project フィールドをタップすると利用可能なプログラム、シーケンス、サンプルのリストが表示される
@@ -5084,10 +4632,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | チャンネルストリップ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チャンネルストリップ")
 
           p タッチスクリーンの左端のチャンネルストリップをコントロールする 2 つの小さなアイコン
           table
@@ -5166,10 +4711,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | プログラムのチャンネルストリップを表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムのチャンネルストリップを表示する")
           p ドラムプログラム、キーグループプログラム、クリッププログラム、プラグインプログラムを使用しているときに、プログラムのチャンネルストリップを表示する
           table
             tr
@@ -5245,10 +4787,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDI トラックを使用中にトラックのチャンネルストリップを表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI トラックを使用中にトラックのチャンネルストリップを表示する")
 
           p MIDI トラックを使用中にトラックのチャンネルストリップを表示する
           table
@@ -5298,10 +4837,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | MIDI トラックを使用中にトラックのチャンネルストリップを表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI トラックを使用中にトラックのチャンネルストリップを表示する")
           p オーディオトラックを使用しているときに、トラックのチャンネルストリップを表示する
 
           table
@@ -5396,10 +4932,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | マスターチャンネルストリップを表示する場合
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マスターチャンネルストリップを表示する場合")
           table
             tr
               td 最初のフィールド
@@ -5440,17 +4973,11 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Sequence Section / シーケンス セクション
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Sequence Section / シーケンス セクション")
 
 
 
-        h3.heading.switch
-          | Sequence Section / シーケンス セクション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sequence Section / シーケンス セクション")
 
 
 
@@ -5490,10 +5017,7 @@ html(lang="ja")
               td シーケンス全体の移調(半音単位)を設定
               td Transpose フィールドを使用
 
-        h3.heading.switch
-          | シーケンスをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスをエディットする")
 
 
           p セクション右端にある鉛筆アイコンをタップしシーケンスエディット/コピーウィンドウを開く
@@ -5509,10 +5033,7 @@ html(lang="ja")
               td タッチスクリーン上部をタップして表示されるバーチャルキーボードを使用する
 
 
-        h3.heading.switch
-          | Erase 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Erase 機能")
 
 
 
@@ -5567,10 +5088,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Clear 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clear 機能")
 
 
           p シーケンスからすべてのイベントを消去して、すべての設定をリセットする
@@ -5588,10 +5106,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Transpose 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Transpose 機能")
 
           p シーケンス内のトラックにある一連のイベントをトランスポーズする
             br
@@ -5649,10 +5164,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Bounce to Sample 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bounce to Sample 機能")
 
           p シーケンス(すべてのトラック)をオーディオサンプルとしてレンダリングし、プロジェクトのサンプルプールに保存する
             br
@@ -5679,10 +5191,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Delete Bars 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Delete Bars 機能")
           p 小節単位でシーケンスを削除する
 
           table
@@ -5708,10 +5217,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Insert Bars機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Insert Bars機能")
 
           p 指定したポイントのシーケンスに空白の小節を追加する
 
@@ -5744,28 +5250,19 @@ html(lang="ja")
               td キャンセルしてメインモードに戻る
               td Cancel をタップする
 
-        h3.heading.switch
-          | Half Length 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Half Length 機能")
 
           p シーケンスの長さを半分にする
 
 
 
-        h3.heading.switch
-          | Double Length 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Double Length 機能")
           p すべてのイベントをシーケンスの後ろにコピーし、シーケンスを倍にする
 
 
 
 
-        h3.heading.switch
-          | Copy Sequence 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Copy Sequence 機能")
 
 
           p あるシーケンスの内容を別のシーケンスにコピーする
@@ -5795,10 +5292,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Copy Bars 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Copy Bars 機能")
 
 
           p ある範囲の小節をシーケンスからコピーし、指定したポイントの小節に追加する
@@ -5846,10 +5340,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Copy Events 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Copy Events 機能")
 
 
           p シーケンスのイベントの範囲をコピーし、指定されたポイントで別のイベントに追加する
@@ -5948,10 +5439,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Save Current Sequence 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Save Current Sequence 機能")
 
 
           p 外部ストレージデバイスまたは MPC Live の内部ドライブに現在のシーケンスを保存する
@@ -6010,17 +5498,11 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Track Section / トラック
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Track Section / トラック")
 
 
 
-        h3.heading.switch
-          | Track Section / トラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Track Section / トラック")
 
           p 現在のトラック、プログラムタイプ、およびその情報が表示される
             ul
@@ -6035,10 +5517,7 @@ html(lang="ja")
               td セクション右端のカーソルアイコンをタップし、表示されるバーチャルキーボードを使用する
 
 
-        h3.heading.switch
-          | MIDI トラックを使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI トラックを使用する")
           p MIDI トラックを使用中に、プログラムセレクターは、トラックがルーティングされているプログラムの種
           table
             tr
@@ -6092,10 +5571,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オーディオトラックを使用する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオトラックを使用する")
           table
             tr
               td オーディオ録音
@@ -6123,10 +5599,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | トラックをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トラックをエディットする")
 
           p セクション右端の鉛筆アイコンをタップしてトラックエディットウィンドウを開く
 
@@ -6142,10 +5615,7 @@ html(lang="ja")
               td タッチスクリーン上部をタップし、表示されるバーチャルキーボードを使用する
 
 
-        h3.heading.switch
-          | Clear 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clear 機能")
 
           p トラックからすべてのイベントを消去し、すべての設定をリセットする
           table
@@ -6157,10 +5627,7 @@ html(lang="ja")
               td Cancel をタップする
 
 
-        h3.heading.switch
-          | Explode 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Explode 機能")
 
 
 
@@ -6171,10 +5638,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Double -Speed Events 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Double -Speed Events 機能")
 
           p トラック上のすべてのノートイベントの長さと、グリッドに打ち込まれた間隔を半分にする
             br
@@ -6184,10 +5648,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Half -Speed Events 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Half -Speed Events 機能")
 
           p トラック上のすべてのノートイベントの長さと、グリッドに打ち込まれた間隔を2 倍にする
             br
@@ -6195,10 +5656,7 @@ html(lang="ja")
             br
             | ノート自体のテンポ/ピッチには影響しない
 
-        h3.heading.switch
-          | Copy Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Copy Track 機能")
 
 
           p 選択したトラックの内容を別のトラックにコピーすることができる
@@ -6222,10 +5680,7 @@ html(lang="ja")
               td Cancel をタップする
 
 
-        h3.heading.switch
-          | Split Events 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Split Events 機能")
 
           p ノートイベントを分割して新しいリズムやパターンを作成できる
 
@@ -6250,10 +5705,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Pitch Quantize 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Pitch Quantize 機能")
           p ノートイベントの音程を特定のスケールに強制的に変換する
 
           table
@@ -6291,10 +5743,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Humanize 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Humanize 機能")
 
 
           p MIDI ノートイベントのタイミング、長さ、ベロシティにランダム化を適用する
@@ -6347,10 +5796,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Generate Random Events 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Generate Random Events 機能")
           p MIDI トラック上にランダ ムでメロディックなフレーズやドラムパターンを作成する
 
           table
@@ -6473,10 +5919,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Bounce to Sample 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bounce to Sample 機能")
 
 
 
@@ -6506,10 +5949,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Bounce to Audio Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Bounce to Audio Track 機能")
 
 
 
@@ -6533,10 +5973,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Export as Pattern 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Export as Pattern 機能")
 
 
           p トラック(現在選択されているシーケンスのみ)をパターン(.mpcpattern)として外部ストレージデバイス、または MPC の内部ドライブに保存する
@@ -6607,10 +6044,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Delete 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Delete 機能")
 
 
           p オーディオトラック全体を消去する
@@ -6628,20 +6062,14 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Clear Regions 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clear Regions 機能")
           p トラック自体を消去せずにオーディオトラックからすべてのリージョンを消去する
 
 
 
 
 
-        h3.heading.switch
-          | Reset Channel Strip 機能：
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Reset Channel Strip 機能：")
 
           ul
             li すべてのインサートエフェクトスロットをクリアする
@@ -6657,10 +6085,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Copy Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Copy Track 機能")
 
 
 
@@ -6707,10 +6132,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Save Current Channel Strip 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Save Current Channel Strip 機能")
 
 
 
@@ -6768,15 +6190,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Program Section / プログラム
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Program Section / プログラム")
 
-        h3.heading.switch
-          | Program Section / プログラム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Program Section / プログラム")
 
           p Program セクションには現在選択しているプログラムが表示されるが、Track セクションで選択されているプログラムのタイプによって表示が異なる
 
@@ -6921,15 +6337,9 @@ html(lang="ja")
               td プログラムがベロシティ値の送信に使用する CV ポートを選択する
 
 
-      h2.heading.switch
-        | プログラムをエディットする
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("プログラムをエディットする")
 
-        h3.heading.switch
-          | プログラムをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プログラムをエディットする")
 
 
           table
@@ -6948,10 +6358,7 @@ html(lang="ja")
               td プログラム名をエディットする
               td タッチスクリーン上部をタップして表示されるバーチャルキーボードを使用する
 
-        h3.heading.switch
-          | Delete 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Delete 機能")
 
 
           p トラックからすべてのイベントを消去し、設定をすべてリセットする
@@ -6967,10 +6374,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Duplicate 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Duplicate 機能")
 
 
           p 同一のプログラムを新たに作成する
@@ -6979,10 +6383,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Duplicate to Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Duplicate to Track 機能")
 
 
           p 新しいトラックを作ると同時にプログラムを複製する
@@ -6991,10 +6392,7 @@ html(lang="ja")
             br
             | 新しいトラック名には Track と番号が付加される(例：Track 06)
 
-        h3.heading.switch
-          | Duplicate to Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Duplicate to Track 機能")
 
 
           p プログラム(現在選択しているシーケンスの)を使用しているすべてのトラックをオーディオサンプルとしてレンダリングし、プロジェクトのサンプルプールに保存する
@@ -7014,10 +6412,7 @@ html(lang="ja")
               td Cancel をタップする
 
 
-        h3.heading.switch
-          | Duplicate to Track 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Duplicate to Track 機能")
 
 
 
@@ -7038,10 +6433,7 @@ html(lang="ja")
               td Cancel をタップする
 
 
-        h3.heading.switch
-          | Flatten Pad 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Flatten Pad 機能")
 
 
 
@@ -7076,10 +6468,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Save Current Program または Save Current Sample 機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Save Current Program または Save Current Sample 機能")
 
 
 
@@ -7137,15 +6526,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Audio Edit Mode / オーディオエディットモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Audio Edit Mode / オーディオエディットモード")
 
-        h3.heading.switch
-          | Audio Edit Mode / オーディオエディットモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio Edit Mode / オーディオエディットモード")
 
 
 
@@ -7175,10 +6558,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オーディオエディットモード(またはメインモード)で録音する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオエディットモード(またはメインモード)で録音する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -7239,10 +6619,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | エディットツール
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディットツール")
 
 
           p タッチスクリーンの上部には、トラック名、シーケンスとタイミングの情報、エディットツールが表示される
@@ -7255,10 +6632,7 @@ html(lang="ja")
               td シーケンスの長さを設定
               td Bars フィールドを使用
 
-        h3.heading.switch
-          | マーキーモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マーキーモード")
 
           p マーキーアイコンをタップして選択する
 
@@ -7280,10 +6654,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 選択モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("選択モード")
 
           p 矢印アイコンをタップして選択する
 
@@ -7304,10 +6675,7 @@ html(lang="ja")
               td トラックリージョン(または複数の選択されたトラックリージョン)を短くしたり長くしたりする
               td リージョンの端をタップしてドラッグ
 
-        h3.heading.switch
-          | 描画モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("描画モード")
 
           p 鉛筆アイコンをタップして選択する
 
@@ -7327,10 +6695,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 消去モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("消去モード")
 
           p 消しゴムアイコンをタップして選択する
 
@@ -7343,10 +6708,7 @@ html(lang="ja")
               td そのトラックリージョンをタップ
 
 
-        h3.heading.switch
-          | 分割モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("分割モード")
 
           p ハサミアイコンをタップして選択する
 
@@ -7364,10 +6726,7 @@ html(lang="ja")
               td 選択の解除
               td 選択したトラックリージョンをダブルタップ
 
-        h3.heading.switch
-          | ミュートモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ミュートモード")
 
           p ミュートアイコンをタップして選択する
 
@@ -7385,10 +6744,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ナビゲーションモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ナビゲーションモード")
 
           p 虫眼鏡アイコンをタップして選択する
 
@@ -7407,10 +6763,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Settings ウィンドウ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Settings ウィンドウ")
 
           p オーディオエディットモードの設定を行うことができる
           p Settingsを表示するには、歯車のアイコンをタップする
@@ -7481,10 +6834,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オーディオトラックを使用しているときに、トラックのチャンネルストリップを表示する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオトラックを使用しているときに、トラックのチャンネルストリップを表示する")
 
           table
             tr
@@ -7540,10 +6890,7 @@ html(lang="ja")
                   td モニター音は一切聞こえない
 
 
-        h3.heading.switch
-          | 3つの状態を切り替える
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("3つの状態を切り替える")
           p トラックオートメーションボタンをタップすると、3 つの状態が切り替わる
           table
             tr
@@ -7589,10 +6936,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | マスターチャンネルストリップを表示するとき
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マスターチャンネルストリップを表示するとき")
           table
             tr
               td 最初のフィールド
@@ -7617,10 +6961,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 選択したオーディオトラックリージョンをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("選択したオーディオトラックリージョンをエディットする")
 
 
           p エディット中にオーディオトラックだけ聞きたい場合、トラックチャンネルストリップの Solo ボタンを使ってソロにします。
@@ -7685,10 +7026,7 @@ html(lang="ja")
               td Mute をタップする
 
 
-        h3.heading.switch
-          | Warp
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Warp")
 
 
           p ピッチを変更せずに選択したトラックリージョンを長くまたは短くする
@@ -7749,15 +7087,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | Track View / トラックビュー
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Track View / トラックビュー")
 
-        h3.heading.switch
-          | Track View / トラックビュー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Track View / トラックビュー")
 
 
 
@@ -7809,10 +7141,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | Settings ウィンドウ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Settings ウィンドウ")
           p 特定のトラックビュー設定を設定することができる
             br
             | 設定を表示するには、歯車のアイコンをタップする
@@ -7841,10 +7170,7 @@ html(lang="ja")
                   li 画面のメイン部分にあるトラックをタ
 
 
-        h3.heading.switch
-          | MIDI Tracks / MIDI トラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDI Tracks / MIDI トラック")
 
 
 
@@ -7917,10 +7243,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | オーディオトラック
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オーディオトラック")
 
           p プロジェクト内のすべてのオーディオトラックは、トラックビューの下半分にまとめて表示される
 
@@ -7984,25 +7307,16 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ステップシーケンサー
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("ステップシーケンサー")
 
-        h3.heading.switch
-          | ステップシーケンサー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップシーケンサー")
           p パッドをステップボタンとして使用して、従来のステップシーケンサースタイルの入力、またはエディットしたりすることができる
             br
             | オーディオトラックではなく、MIDI トラックでのみ使用可能
             br
             | オートメーションを作成したりエディットしたりすることもできる
 
-        h3.heading.switch
-          | ステップシーケンサーに入る
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップシーケンサーに入る")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -8051,10 +7365,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンスのステップを入力または削除する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスのステップを入力または削除する")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -8088,10 +7399,7 @@ html(lang="ja")
                   | または、Pad Bank ボタン A と B を使用して切り替える
 
 
-        h3.heading.switch
-          | ステップのベロシティを調整する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップのベロシティを調整する")
           p 以下のいずれかの操作を行う
           ul
             li ステップのベロシティバーのどこかをタップします。ベロシティバー上の任意の場所をタップする
@@ -8199,15 +7507,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | XYFX Mode / XYFX モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("XYFX Mode / XYFX モード")
 
-        h3.heading.switch
-          | XYFX Mode / XYFX モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("XYFX Mode / XYFX モード")
 
           p タッチスクリーンを XY パッドに変え、各軸はエフェクトパラメーターの範囲を表す
             br
@@ -8218,10 +7520,7 @@ html(lang="ja")
             | XYFX は、このモードを使用する前にプログラムにロードする必要のあるインサートエフェクトの名前
 
 
-        h3.heading.switch
-          | XYFX モードに入る
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("XYFX モードに入る")
           p Menu を押して、XYFX をタップ
           p 最初にこのモードをプロジェクトに入ると、XYFX をプログラムにロードするように指示されることがある
             br
@@ -8289,15 +7588,9 @@ html(lang="ja")
                 | これは使用するエフェクトによって異なる
 
 
-      h2.heading.switch
-        | Sample Edit Mode / サンプルエディットモード
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("Sample Edit Mode / サンプルエディットモード")
 
-        h3.heading.switch
-          | Sample Edit Mode / サンプルエディットモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample Edit Mode / サンプルエディットモード")
           p さまざまな機能を使ってサンプルをエディットすることができる
           table
             tr
@@ -8391,10 +7684,7 @@ html(lang="ja")
             li Program Mode
 
 
-        h3.heading.switch
-          | Settings / 設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Settings / 設定")
           p Settings ウィンドウでは、特定のサンプルエディットモードの設定を行うことができる
           table
             tr

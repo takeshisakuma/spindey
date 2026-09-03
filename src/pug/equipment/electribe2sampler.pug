@@ -2,20 +2,15 @@
 - var description='KORGのELECTRIBE2 SAMPLERのマニュアルです。'
 - var keywords='ELECTRIBE2,SAMPLER,KORG'
 
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
   body
     h1.heading electribe2 sampler
     main.equipmentMain
-      h2.heading.switch
-        | 音色
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Analog(No.1~16)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色")
+        +section3("Analog(No.1~16)")
           table
             tr
               td No.
@@ -102,10 +97,7 @@ html(lang="ja")
               td  REZ NOISE
               td
               td
-        h3.heading.switch
-          | Audio In(No.17~18)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Audio In(No.17~18)")
           table
             tr
               td No.
@@ -122,10 +114,7 @@ html(lang="ja")
               td Audio In St
               td
               td ○
-        h3.heading.switch
-          | Kick(No.19~55)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Kick(No.19~55)")
           table
             tr
               td No.
@@ -317,10 +306,7 @@ html(lang="ja")
               td Chip
               td
               td
-        h3.heading.switch
-          | Snare(No.56~99)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Snare(No.56~99)")
           table
             tr
               td No.
@@ -547,10 +533,7 @@ html(lang="ja")
               td Rim&Spring
               td
               td
-        h3.heading.switch
-          | Clap(No.100~111)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Clap(No.100~111)")
           table
             tr
               td No.
@@ -617,10 +600,7 @@ html(lang="ja")
               td FingerSnap
               td
               td
-        h3.heading.switch
-          | HiHat(No.112~148)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("HiHat(No.112~148)")
           table
             tr
               td No.
@@ -812,10 +792,7 @@ html(lang="ja")
               td Flap ST
               td
               td ○
-        h3.heading.switch
-          | Cymbal(No.149~156)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Cymbal(No.149~156)")
           table
             tr
               td No.
@@ -862,10 +839,7 @@ html(lang="ja")
               td Ride Zed
               td
               td
-        h3.heading.switch
-          | Hits(No.157~189)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Hits(No.157~189)")
           table
             tr
               td No.
@@ -1037,10 +1011,7 @@ html(lang="ja")
               td Synth 2
               td
               td
-        h3.heading.switch
-          | Shots(No.190~233)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Shots(No.190~233)")
           table
             tr
               td No.
@@ -1267,10 +1238,7 @@ html(lang="ja")
               td ShakuHachi 2
               td
               td
-        h3.heading.switch
-          | Voice(No.234~264)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Voice(No.234~264)")
           table
             tr
               td No.
@@ -1432,10 +1400,7 @@ html(lang="ja")
               td Mad Laugh
               td
               td
-        h3.heading.switch
-          | SE(No.265~271)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SE(No.265~271)")
           table
             tr
               td No.
@@ -1477,10 +1442,7 @@ html(lang="ja")
               td Shotgun
               td
               td
-        h3.heading.switch
-          | FX(No.272~301)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FX(No.272~301)")
           table
             tr
               td No.
@@ -1637,10 +1599,7 @@ html(lang="ja")
               td Glitch 4
               td
               td
-        h3.heading.switch
-          | Tom(No.302~311)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Tom(No.302~311)")
           table
             tr
               td No.
@@ -1697,10 +1656,7 @@ html(lang="ja")
               td STD Hi
               td
               td
-        h3.heading.switch
-          | Perc.(No.312~342)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Perc.(No.312~342)")
           table
             tr
               td No.
@@ -1862,10 +1818,7 @@ html(lang="ja")
               td ChanChiki Mt
               td
               td
-        h3.heading.switch
-          | Phrase(No.343~357)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Phrase(No.343~357)")
           table
             tr
               td No.
@@ -1947,10 +1900,7 @@ html(lang="ja")
               td Wah E.Gtr/91
               td
               td
-        h3.heading.switch
-          | Loop(No.358~390)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Loop(No.358~390)")
           table
             tr
               td No.
@@ -2122,10 +2072,7 @@ html(lang="ja")
               td Nutta/128
               td ○
               td
-        h3.heading.switch
-          | PCM (No.391~421)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PCM (No.391~421)")
           table
             tr
               td No.
@@ -2287,34 +2234,22 @@ html(lang="ja")
               td DoorPhone
               td
               td
-      h2.heading.switch
-        | 音量
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 音量の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音量")
+        +section3("音量の設定")
           p Line Out端子や、ヘッドホン端子から出力される音量を調節
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist
                 span.controllerKnob Volume
-        h3.heading.switch
-          | 入力レベルの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("入力レベルの設定")
           p Audio In端子からの入力音の入力レベルを調節
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist
                 span.controllerKnob Input Level
-        h3.heading.switch
-          | AUDIO IN THRU
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("AUDIO IN THRU")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2330,14 +2265,8 @@ html(lang="ja")
             tr
               td On
               td Audio In端子からの入力音をAudio Out L/R端子とヘッドホン端子に出力する
-      h2.heading.switch
-        | BPM
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | BPMの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("BPM")
+        +section3("BPMの設定")
           p パターンやゲート・アルペジエーターのテンポを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2354,10 +2283,7 @@ html(lang="ja")
                 span.controllerPage BPM
               li.contentOperationOrderlist
                 span.controllerKnob Value
-        h3.heading.switch
-          | BPMの固定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BPMの固定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2377,14 +2303,8 @@ html(lang="ja")
                 | 現在のテンポ設定を固定
                 br
                 | 異なるテンポのパターンに変更した時にもテンポは変更されない
-      h2.heading.switch
-        | ステップ(編集)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ステップ・ナンバー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ステップ(編集)")
+        +section3("ステップ・ナンバー")
           p エディットするステップを選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2416,10 +2336,7 @@ html(lang="ja")
                 span.controllerKnob Value
                 | を回す
 
-        h3.heading.switch
-          | 音程
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音程")
           p ターゲット・ステップのノート・ナンバーを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2451,10 +2368,7 @@ html(lang="ja")
             | トリガーがオフのステップのノート・ナンバーを変更してもトリガー をオンにするまでは発音しない
 
 
-        h3.heading.switch
-          | ゲート・タイム
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ゲート・タイム")
           p ステップ単位のゲート・タイムの長さ
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2485,10 +2399,7 @@ html(lang="ja")
                 span.controllerKnob Value
                 | を回す
 
-        h3.heading.switch
-          | 発音の強さ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("発音の強さ")
           p 発音の強さを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2500,10 +2411,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage VELOCITY
           p 設定値[001...127]
-        h3.heading.switch
-          | OSC EDIT MOTION
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("OSC EDIT MOTION")
           p モーション・シーケンス情報中のOSC Editを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2515,14 +2423,8 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage OSC EDIT MOTION
           p 設定値[Off, 000...127]
-      h2.heading.switch
-        | パート(編集)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パートとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パート(編集)")
+        +section3("パートとは")
           p
             | 音色とリズムまたはフレーズ、エフェクトのオン/オフ、モーション・シーケンス等で構成されたパターンを作るための最小単位
             br
@@ -2533,10 +2435,7 @@ html(lang="ja")
             span.controllerButton >
             | を押すと、現在選択中のパートの設定を確認可能
 
-        h3.heading.switch
-          | パートの音の確認
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの音の確認")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2545,10 +2444,7 @@ html(lang="ja")
                 | をオン
               li.contentOperationOrderlist 「トリガー・パッド」を押し、そのパートの音色を確認可能
           p プリセットパターンではパッドの上半分がシンセ・下半分がドラムに設定されている
-        h3.heading.switch
-          | パートの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2566,10 +2462,7 @@ html(lang="ja")
                 | (発音せずに直接パート選択可能)
                 br
                 | [選択しているパートのトリガー・パッドが青色に点灯]
-        h3.heading.switch
-          | 音色の変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("音色の変更")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2577,10 +2470,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerKnob Sample
                 | で選択
-        h3.heading.switch
-          | パートのミュート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのミュート")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2594,10 +2484,7 @@ html(lang="ja")
             tr
               td ミュート解除
               td パートのトリガー・パッドを押して点灯させる
-        h3.heading.switch
-          | パートのソロ演奏
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのソロ演奏")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2607,10 +2494,7 @@ html(lang="ja")
                 span.controllerButton PartMute
               li.contentOperationOrderlist  任意のパートを選択
               li.contentOperationOrderlist ソロ再生される(複数のパートを同時にソロ再生することも可能)
-        h3.heading.switch
-          | パートの消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの消去")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2618,10 +2502,7 @@ html(lang="ja")
                 span.controllerButton Part Erase
               li.contentOperationOrderlist  再生中に消去したいパートの「トリガー・パッド」
               li.contentOperationOrderlist トリガー・パッドを押している間、選択したパートのノート情報が消去される
-        h3.heading.switch
-          | パートのコピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのコピー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2638,10 +2519,7 @@ html(lang="ja")
             | 任意のパターンのパートの音色とシーケンス・データ(モーション・シー ケンスも含む)を他のパートにコピーすることが可能
             br
             |  コピー後にモーション・シーケンスが24個を超える場合は、モー ション・シーケンスはコピーされない
-        h3.heading.switch
-          | パートの音色のコピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの音色のコピー")
           p  任意のパターンのパートの音色だけを他のパートにコピー
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2653,10 +2531,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage COPY PART SOUND
           p ステップ情報やモーション・シーケンスはコピーされない
-        h3.heading.switch
-          | パートのシーケンス・データの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのシーケンス・データの削除")
           p  選んだパートのシーケンス・データを削除
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2672,14 +2547,8 @@ html(lang="ja")
             li トリガー
             li ノート・ナンバー
             li ゲート・タイム
-      h2.heading.switch
-        | パート(設定)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パートのステップ数の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パート(設定)")
+        +section3("パートのステップ数の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2694,10 +2563,7 @@ html(lang="ja")
             |  Beatが8Tri、16Triの場合は、ステップ数は最大で12になる
             br
             |  Step Jump機能を使うとき、ラスト・ステップよりも大きいステップのトリガー・パッドには次の小節のステップが1から順番に登録される
-        h3.heading.switch
-          | パートのグルーヴ機能
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのグルーヴ機能")
           p 規則正しいパートのシーケンス・データに、代表的な楽器の奏法や曲のノリなどを再現するようなグルーブ感を与える
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2794,10 +2660,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage GROOVE TYPE
           p 設定値[0...127]
-        h3.heading.switch
-          | パートの同時発音タイプの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの同時発音タイプの選択")
           p 選択しているパートの同時発音のタイプを選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2841,10 +2704,7 @@ html(lang="ja")
                 | 最大ボイス数は4音
                 br
                 | トリガー・パッドを押して発音させるごとに、EGをリトリガー
-        h3.heading.switch
-          | パートの発音優先順位の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートの発音優先順位の設定")
           p  選択しているパートの発音優先順位を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2866,10 +2726,7 @@ html(lang="ja")
                 |                             音が重なってきた時に、新しい音を発音する際に消音されにくくする
                 br
                 |                         複数パートをHighに設定すると効果が薄れる
-        h3.heading.switch
-          | パートのトリガー・パッドのベロシティの有効/無効
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのトリガー・パッドのベロシティの有効/無効")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2884,10 +2741,7 @@ html(lang="ja")
             tr
               td  On
               td トリガー・パッドのベロシティを有効
-        h3.heading.switch
-          | パートのスケール、キー変更への追従設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのスケール、キー変更への追従設定")
           p SCALEとKEYを変更したときに、追従するかしないか
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2898,24 +2752,15 @@ html(lang="ja")
                 span.controllerPage SCALE MODE
           p 設定値[Off, On]
           p Onにしてからパートの演奏を録音する
-      h2.heading.switch
-        | パターン(編集)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン(編集)")
+        +section3("パターンとは")
           p
             | 16のパートで作るフレーズを組み合わせて、一区切りの演奏に仕上げたもの
             br
             |  最大250のパターンを保存可能
             br
             | 1つのパターンは16のパートとマスター・エフェクトから成り立っている
-        h3.heading.switch
-          | パターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2929,10 +2774,7 @@ html(lang="ja")
             | を数回押すと パターン選択画面が表示される
             br
             | パターンは再生中にも変更することができる
-        h3.heading.switch
-          | パターンの再生/停止
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの再生/停止")
           p 再生
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -2950,10 +2792,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton ■
                 | を押す
-        h3.heading.switch
-          | パターンの上書き保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの上書き保存")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -2972,10 +2811,7 @@ html(lang="ja")
             | メモリーへの保存実行中(
             span.controllerButton Write
             | 点灯中)に電源を切るとデータが破壊される恐れがある
-        h3.heading.switch
-          | パターンのコピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのコピー")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3008,10 +2844,7 @@ html(lang="ja")
                 span.controllerButton Exit
                 br
                 | 保存終了後、保存先のパターン番号が選択される
-        h3.heading.switch
-          | パターンの初期化
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの初期化")
           p
             | 現在選ばれているパターンのすべてのデータを初期化
             br
@@ -3025,14 +2858,8 @@ html(lang="ja")
                 span.controllerPage DATA UTILITY
               li.contentOperationOrderlist
                 span.controllerPage INITIALIZE PATTERN
-      h2.heading.switch
-        | パターン(設定)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンのBPMの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン(設定)")
+        +section3("パターンのBPMの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3055,10 +2882,7 @@ html(lang="ja")
           p
             span.controllerButton Tap
             | をタップするとタップテンポ機能でタップしたテンポからBPMを設定できる
-        h3.heading.switch
-          | パターンのSWINGの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのSWINGの設定")
           p
             |  偶数番目のステップの発音タイミングをパーセント(%)単位でずらして、シャッフル効果を加える
           .contentOperationBox
@@ -3075,10 +2899,7 @@ html(lang="ja")
             li Last Stepが奇数になっている
             li シーケンサー制御をするMFXタイプ(Seq Reverse、Seq Doubler、Odd Stepper、Even Stepper)を使っている
 
-        h3.heading.switch
-          | パターンのビートの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのビートの設定")
           p パターンのビート(拍子)を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3088,10 +2909,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage BEAT
           p 設定値[16, 32, 8Tri, 16Tri]
-        h3.heading.switch
-          | パターンの長さの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの長さの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3101,10 +2919,7 @@ html(lang="ja")
                 span.controllerPage LENGTH
           p 設定値[1...4]
           p 8Tri、16Triに設定した場合、Step Jump機能のトリガーパッド13～16は、次の小節のステップ1～4が登録される
-        h3.heading.switch
-          | パターンの音量の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンの音量の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3113,10 +2928,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage PATTERN LEVEL
           p 設定値[0...127]
-        h3.heading.switch
-          | パターンのキーの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのキーの設定")
           p SCALEで選択したスケールの基準になる音の高さを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3126,10 +2938,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage KEY
           p 設定値[C...B]
-        h3.heading.switch
-          | パターンのスケールの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのスケールの設定")
           p
             | タッチ・パッド、トリガー・パッドに割り当てるスケール(音階)を設定
             br
@@ -3143,10 +2952,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage SCALE
           p 設定値[Chromatic...Octave]
-        h3.heading.switch
-          | スケールの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("スケールの種類")
           p Key Cの場合
           .tableScroll
             table
@@ -3690,10 +3496,7 @@ html(lang="ja")
                 td
                 td
                 td
-        h3.heading.switch
-          | 和音の厚みの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("和音の厚みの設定")
           p 「コード・スケール・モードでトリガー・パッドを叩いたときの、和音の厚みをコントロール
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3704,10 +3507,7 @@ html(lang="ja")
                 span.controllerPage CHORD SET
           p 設定値[1...5]
           p  範囲は、選択しているスケールによって変わる
-        h3.heading.switch
-          | パッド13と14の同時発音設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド13と14の同時発音設定")
           p
             | 2つのパートのトリガー動作をオルタネート(切り替え)動作に設定
             br
@@ -3720,10 +3520,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage ALTERNATE 13-14
           p  設定値[Off, On]
-        h3.heading.switch
-          | パッド15と16の同時発音設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッド15と16の同時発音設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3732,10 +3529,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage ALTERNATE 15-16
           p  設定値 [Off, On]
-        h3.heading.switch
-          | パターン・チェンジの制限
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・チェンジの制限")
           p
             | パターン選択画面での
             span.controllerKnob Value
@@ -3762,14 +3556,8 @@ html(lang="ja")
                 | を押しながら
                 span.controllerKnob Value
                 | を操作するとパターンが変更
-      h2.heading.switch
-        | パターン(インポート/エクスポート)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターンのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パターン(インポート/エクスポート)")
+        +section3("パターンのエクスポート")
           p 現在選ばれているパターンをメモリー・カードに書き出す
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3788,10 +3576,7 @@ html(lang="ja")
             | エディット中のパターンの場合、
             span.controllerButton Write
             | を押して保存する前でも、エディットしたパターンの状態が書き出される
-        h3.heading.switch
-          | 全パターンのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("全パターンのエクスポート")
           p すべてのパターンとグローバル・パラメーターを1つのファイルにまとめてメモリー・カードに書き出す
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3806,10 +3591,7 @@ html(lang="ja")
             | 書き出されるファイルはメモリー・カードのKORG/electribe sampler/electribe_sampler_ allpattern.e2sallpat
             br
             | すでに同名のファイルが存在する場合は上書きされる
-        h3.heading.switch
-          | パターンのインポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのインポート")
           p EXPORT PATTERNで書き出したパターン・ファイル(.e2spatファイル)を読み込む
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3820,10 +3602,7 @@ html(lang="ja")
                 span.controllerPage DATA UTILITY
               li.contentOperationOrderlist
                 span.controllerPage IMPORT PATTERN
-        h3.heading.switch
-          | 全パターンのインポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("全パターンのインポート")
           p EXPORT ALL PATTERNで書き出したすべてのパターンとグローバル・パラメーターを記録した.e2sallpatファイルをメモリー・カードから読み込む
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3834,10 +3613,7 @@ html(lang="ja")
                 span.controllerPage DATA UTILITY
               li.contentOperationOrderlist
                 span.controllerPage IMPORT ALL PATTERN
-        h3.heading.switch
-          | パターンのエクスポート(オーディオ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンのエクスポート(オーディオ)")
           p 現在選ばれているパターンをWAVファイルとしてメモリー・カードに書き出す
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3850,14 +3626,8 @@ html(lang="ja")
                 span.controllerPage EXPORT AUDIO
               li.contentOperationOrderlist 書き出すファイルの形式(WAVファイルのみ、または Ableton Live Set)を選択
           p 書き出し先はメモリー・カードのKORG/electribe sampler/[パターン番号]_[パターン名]　Project/Audioフォルダ
-      h2.heading.switch
-        | ソング(パターン・チェイン)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 次に再生するパターンの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ソング(パターン・チェイン)")
+        +section3("次に再生するパターンの選択")
           p 選択中のパターンを再生した後、自動的に選択し再生するパターンを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3872,10 +3642,7 @@ html(lang="ja")
             | “Off”に設定するとパターン・チェンジを行わない
           p パターンチェインは、パターンに対して設定する
           p チェイン機能を使用する場合は、グローバル・パラメーターの CHAIN MODE をOnにする
-        h3.heading.switch
-          | パターンを何回繰り返すかの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンを何回繰り返すかの設定")
           p 選択中のパターンを何回繰り返して再生してから、CHAIN TOで設定したパターンを再生し始めるかを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3889,10 +3656,7 @@ html(lang="ja")
             | パターンに対して設定する
             br
             |             CHAIN TOをOffに設定した場合：CHAIN REPEATは無効
-        h3.heading.switch
-          | パターンチェインのエクスポート(オーディオ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターンチェインのエクスポート(オーディオ)")
           p 現在選ばれているパターンを先頭に、CHAIN TOで設定したパターンの順番で、パターンごとに各パートのWAVファイルとしてメモリー・カードに書き出し
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3911,10 +3675,7 @@ html(lang="ja")
             | Chain Toで終わりがない設定をしている場合は、チェインに含まれるすべての種類のパターンをそれぞれ1つずつ、WAVファイルとして出力
             br
             |              例：1→2→1→2→1...と繰り返す場合 パターン1とパターン2がそれぞれ1ループ再生分のWAVファイルとして書き出される
-        h3.heading.switch
-          | パターン・チェインのオン/オフ設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・チェインのオン/オフ設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -3934,14 +3695,8 @@ html(lang="ja")
             tr
               td On
               td  チェイン機能のオンを設定
-      h2.heading.switch
-        | 音色変化(パート)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ノブの動作設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色変化(パート)")
+        +section3("ノブの動作設定")
           p ノブの位置と、実際のパラメーターの値が一致していないときの動作を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -3968,10 +3723,7 @@ html(lang="ja")
             tr
               td Value Scale
               td ノブを回すと、パラメーターの値が操作方向と同じ 方向へ相対的に増減する
-        h3.heading.switch
-          | サンプル
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプル")
           p ノコギリ波、矩形波、ノイズ、PCMなどの波形を選んだり、波形の音程などを調節
           table
             tr
@@ -3995,10 +3747,7 @@ html(lang="ja")
                 | 波形のタイプによって効果が異なる
                 br
                 | サンプルをオシレーターに選んだ場合、再生開始ポイントの調整と 再生方向の変更の調整ができる
-        h3.heading.switch
-          | フィルター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フィルター")
           p フィルターは、オシレーターの周波数成分を削ったり強調したりすることで、音色(音の明暗など)を調節するときに使用
           table
             tr
@@ -4034,10 +3783,7 @@ html(lang="ja")
                 | バンドパス・フィルターに設定
                 br
                 | 繰り返し押すとフィルターの種類を変更可能
-        h3.heading.switch
-          | モジュレーション
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーション")
           p  LFOやEGで音色に時間的な変化を与える
           table
             tr
@@ -4052,10 +3798,7 @@ html(lang="ja")
               td
                 span.controllerKnob Speed
               td モジュレーションのスピードを調節
-        h3.heading.switch
-          | モジュレーションの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モジュレーションの種類")
           .tableScroll
             table
               tr
@@ -4569,10 +4312,7 @@ html(lang="ja")
                 td  IFX Edit
                 td ×
                 td ×
-        h3.heading.switch
-          | アンプ/エンベロープ・ジェネレーター
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("アンプ/エンベロープ・ジェネレーター")
           p  音量、定位を調整するアンプ、時間的変化を与えるエンベロープ・ジェネレーター(EG)、マスター・エフェクト・センドを設定
           table
             tr
@@ -4618,14 +4358,8 @@ html(lang="ja")
                 | で設定したEGに従って変化する
                 br
                 | オフのときは、EGに従わない設定になる(シンセ・インストはゲート再生、ドラム・SEはワンショット再生)
-      h2.heading.switch
-        | 音色変化(エフェクト)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | マスター・エフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("音色変化(エフェクト)")
+        +section3("マスター・エフェクト")
           p 1つのパターンに対して1つだけ設定可能
           p パターン側の設定
           .contentOperationBox
@@ -4654,10 +4388,7 @@ html(lang="ja")
                 span.controllerButton Master Fx
                 | をオンにする
               li.contentOperationOrderlist 「タッチ・パッド」に触り、マスター・エフェクトの効果をかける
-        h3.heading.switch
-          | マスター・エフェクトの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("マスター・エフェクトの種類")
           table
             tr
               td No.
@@ -4791,10 +4522,7 @@ html(lang="ja")
               td 32
               td Auto Pan
               td ○
-        h3.heading.switch
-          | インサート・エフェクト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("インサート・エフェクト")
           p サウンドに歪みやうねりなどのさまざまな音響効果を加えるときに使用
           table
             tr
@@ -4816,10 +4544,7 @@ html(lang="ja")
                 br
                 |                         オフ：インサート・エフェクトを使用しない
           p インサート・エフェクトではXYパッドが使えない
-        h3.heading.switch
-          | インサート・エフェクトの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("インサート・エフェクトの種類")
           table
             thead
               tr
@@ -4944,14 +4669,8 @@ html(lang="ja")
               tr
                 td  38
                 td Slicer
-      h2.heading.switch
-        | プレイ(トリガーパッド)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | トリガー・パッドを叩いたときの動作の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プレイ(トリガーパッド)")
+        +section3("トリガー・パッドを叩いたときの動作の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -4974,10 +4693,7 @@ html(lang="ja")
             tr
               td Seq Play
               td トリガー・パッドを押している間、パートに記録されているシーケンスを演奏
-        h3.heading.switch
-          | トリガー・パッドの感度設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー・パッドの感度設定")
           p トリガー・パッドのベロシティ(叩いた強さ)による音量や音色の変化の仕方を選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5011,10 +4727,7 @@ html(lang="ja")
             tr
               td Const96
               td 常にベロシティ値が96になる
-        h3.heading.switch
-          | トリガー・パッドでメロディ入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー・パッドでメロディ入力")
           p
             | 16個のトリガー・パッドを鍵盤に見立てて、スケール／キーの設定に沿った音階を演奏できる
             br
@@ -5079,10 +4792,7 @@ html(lang="ja")
               td 下から2番目のオクターブに移動
               td 下から3番目のオクターブに移動
               td 1オクターブ上げる
-        h3.heading.switch
-          | トリガー・パッドでステップ入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー・パッドでステップ入力")
           p
             | 16個のトリガー・パッドを、16ステップに見立ててステップ入力可能
             br
@@ -5132,10 +4842,7 @@ html(lang="ja")
               td 17〜32ステップ
               td 33〜48ステップ
               td 49〜64ステップ
-        h3.heading.switch
-          | トリガー・パッドでコード入力
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー・パッドでコード入力")
           p トリガー・パッドを押すと、スケール/キーの設定に沿ったコード音が演奏可能
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5171,14 +4878,8 @@ html(lang="ja")
               td 下から2番目のオクターブに移動
               td 下から3番目のオクターブに移動
               td 1オクターブ上げる
-      h2.heading.switch
-        | プレイ(ステップ・ジャンプ)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Step Jump
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プレイ(ステップ・ジャンプ)")
+        +section3("Step Jump")
           p そのステップに瞬時に移動
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5211,14 +4912,8 @@ html(lang="ja")
               td 17〜32ステップを選択中
               td 33〜48ステップを選択中
               td 49〜64ステップを選択中
-      h2.heading.switch
-        | プレイ(タッチ・パッド)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | タッチ・パッドで演奏する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プレイ(タッチ・パッド)")
+        +section3("タッチ・パッドで演奏する")
           ul
             li ゲート・アルペジエーター
             li タッチ・スケール機能を使った演奏
@@ -5277,10 +4972,7 @@ html(lang="ja")
             | をオンにするとステップ・ボタンで音域を変更可能
             br
             |  選択したパートの設定によっては、音程が変わらない場合がある
-        h3.heading.switch
-          | タッチ・パッドに割り当てる音域の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タッチ・パッドに割り当てる音域の設定")
           p
             | タッチ・スケール時にタッチ・パッドに割り当てられる音域を設定
             br
@@ -5297,10 +4989,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage TOUCH SCALE RANGE
           p 設定値[1 Oct, 2 Oct, 3 Oct, 4 Oct]
-        h3.heading.switch
-          | タッチ・パッドの操作範囲の校正
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タッチ・パッドの操作範囲の校正")
           p ディスプレイに表示される手順にしたがって、タッチ・パッドの左下と右上の端に触れて、操作可能範囲を設定する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5311,10 +5000,7 @@ html(lang="ja")
                 span.controllerPage GLOBAL PARAMETER
               li.contentOperationOrderlist
                 span.controllerPage XY CALIBRATION
-        h3.heading.switch
-          | ゲート・アルペジエーターを使う
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ゲート・アルペジエーターを使う")
           p
             | 選択したパートの音を設定したテンポやリズムに合わせて自動的に演奏
             br
@@ -5341,10 +5027,7 @@ html(lang="ja")
             tr
               td Y軸
               td 発音の長さを操作
-        h3.heading.switch
-          | ゲート・アルペジエーターのパターン・タイプの選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ゲート・アルペジエーターのパターン・タイプの選択")
           p ゲート・アルペジエーターのパターン・タイプを選ぶ
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5354,22 +5037,13 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage GATE ARP
           p 設定値[1...50]
-      h2.heading.switch
-        | プレイ(パターン・セット)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パターン・セットとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("プレイ(パターン・セット)")
+        +section3("パターン・セットとは")
           p
             | パターン・セットとはトリガー・パッド にパターンを登録し、簡単にパターンを切り替えられるようにする機能
             br
             | 演奏中に好きなパターンを次々に切り替えることができる
-        h3.heading.switch
-          | トリガー・パッドにパターンを登録
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("トリガー・パッドにパターンを登録")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5383,10 +5057,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerButton Pattern Set
                 | を押しながら登録したいトリガー・パッドを押す
-        h3.heading.switch
-          | パターン・セットで演奏
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・セットで演奏")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5396,10 +5067,7 @@ html(lang="ja")
               li.contentOperationOrderlist  「ステップ・ボタン」の1～4で、演奏したいパターンが登録されているグループを選択
               li.contentOperationOrderlist 「トリガー・パッド」で、それぞれのパッドに登録されたパターンを再生
           p 次に再生したいパターンを選択する時に、「ステップ・ボタン」でパターンが登録されているグループを選択可能
-        h3.heading.switch
-          | パターン・セットのエクスポート(オーディオ)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パターン・セットのエクスポート(オーディオ)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5431,14 +5099,8 @@ html(lang="ja")
             | 書き出し先はメモリー・カードの KORG/electribe sampler/ PatternSetProject/Audioフォルダ
             br
             | 書き出すパターン・セットの範囲が広いと書き出す時間が長くなる場合がある
-      h2.heading.switch
-        | レコーディング(リアルタイム)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | メトロノームの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("レコーディング(リアルタイム)")
+        +section3("メトロノームの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5471,10 +5133,7 @@ html(lang="ja")
             | リアルタイム・レコーディングでパターンを作成する場合に便利
             br
             | 4分音符のタイミングで発音する
-        h3.heading.switch
-          | リアルタイム・レコーディング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リアルタイム・レコーディング")
           p トリガー・パッドやタッチ・パッドを使って演奏した音を録音
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5498,10 +5157,7 @@ html(lang="ja")
               td
                 span.controllerButton Play/Pause
                 | を押す
-        h3.heading.switch
-          | 演奏しながらイレース
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("演奏しながらイレース")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5510,19 +5166,10 @@ html(lang="ja")
                 span.controllerButton Part Erase
                 | を押ながらトリガー・パッドを押す
               li.contentOperationOrderlist その間選択しているパートの発音を消すことが可能
-      h2.heading.switch
-        | レコーディング(モーション・シーケンス)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | モーション・シーケンスとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("レコーディング(モーション・シーケンス)")
+        +section3("モーション・シーケンスとは")
           p ノブやボタンによる音色変化を記録、再生する
-        h3.heading.switch
-          | モーション・シーケンスが可能なノブ、ボタン
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モーション・シーケンスが可能なノブ、ボタン")
           ul
             li Sample Edit、Pitch
             li Filter Cutoff、Resonance、EG Int
@@ -5530,10 +5177,7 @@ html(lang="ja")
             li Amp/EG Level、Pan、Attack、Decay/Release
             li IFX Edit、IFX On 、MFX Send
             li Master Fx On、Master Fx X、Master Fx Y
-        h3.heading.switch
-          | モーション・シーケンスを追加録音する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モーション・シーケンスを追加録音する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5568,10 +5212,7 @@ html(lang="ja")
             | 続けて記録したい場合は、再度
             span.controllerButton ●
             | を押す
-        h3.heading.switch
-          | モーション・シーケンスの削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モーション・シーケンスの削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5581,10 +5222,7 @@ html(lang="ja")
                 span.controllerPage PART UTILITY
               li.contentOperationOrderlist
                 span.controllerPage CLEAR MOTION
-        h3.heading.switch
-          | モーション・シーケンスの削除(マスター・エフェクト)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("モーション・シーケンスの削除(マスター・エフェクト)")
           p   パターンに記録したマスター・エフェクトのモーション・シーケンスを消去
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5593,10 +5231,7 @@ html(lang="ja")
                 span.controllerButton Menu/Enter
               li.contentOperationOrderlist
                 span.controllerPage CLEAR MFX MOTION
-        h3.heading.switch
-          | パートのモーション・シーケンスの動作の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パートのモーション・シーケンスの動作の設定")
           p 選択しているパートのモーション・シーケンスの動作を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5616,19 +5251,10 @@ html(lang="ja")
               td Trigger Hold
               td そのパートの発音のタイミングで、モーション・ シーケンスの値を保持して発音する
           p MFXのモーション・シーケンスはSmoothになる
-      h2.heading.switch
-        | レコーディング(イベント・レコーダー)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | イベント・レコーダーとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("レコーディング(イベント・レコーダー)")
+        +section3("イベント・レコーダーとは")
           p いくつかのパターンを使った演奏や、演奏中にノブやトリガー・パッドなどの操作を行った演奏などを記録可能
-        h3.heading.switch
-          | 記録する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("記録する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5666,10 +5292,7 @@ html(lang="ja")
             | 記録すると、KORG/electribe samplerフォルダにe_[番号].e2sevというファイルを書き出す
             br
             | ファイルの最大数は100
-        h3.heading.switch
-          | 再生する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("再生する")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5695,14 +5318,8 @@ html(lang="ja")
             | 再生中は、他の操作をすることはできない
             br
             | CLOCK MODEがInternalのときに使用可能
-      h2.heading.switch
-        | サンプリング(オーディオ・イン)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプリングの準備
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプリング(オーディオ・イン)")
+        +section3("サンプリングの準備")
           p Audio In端子にサンプリングしたい音を再生するオーディオ機器を接続する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5711,10 +5328,7 @@ html(lang="ja")
               li.contentOperationOrderlist オーディオ機器を再生する
               li.contentOperationOrderlist
                 | 接続した機器の出力レベルが、最大値のときでもピーク・アイコン (CLIP)が点灯しないように、外部機器の出力レベル、またはelectribe2 samplerのInput Levelノブを回して調節する
-        h3.heading.switch
-          | サンプリング・モードの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプリング・モードの設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5743,10 +5357,7 @@ html(lang="ja")
                 span.controllerButton >
                 | を押すと、サンプリングが可能な時間が表示される
           p ステレオ・サンプリングを行う場合は、残り時間がMonoの場合の半分の時間が表示される
-        h3.heading.switch
-          | サンプリングの実行
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプリングの実行")
           p
             span.controllerButton Play/Pause
             | でサンプリング開始
@@ -5800,14 +5411,8 @@ html(lang="ja")
             |  ユーザー・サンプルを残しておきたい場合は、電源を切る前にDATAユーティリティ・メニューのEXPORT ALL SAMPLEまたはExport SAMPLEでメモリー・カードに書き出す必要がある
             br
           p ステレオ・サンプルは、奇数パートに割り当てた場合はステレオ再生、偶数パートに割り当てた場合はMono Mixで再生される
-      h2.heading.switch
-        | サンプリング(リサンプリング)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | リサンプリングの準備
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプリング(リサンプリング)")
+        +section3("リサンプリングの準備")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5835,10 +5440,7 @@ html(lang="ja")
                 span.controllerButton >
                 | を押して、サンプリング・ソースを設定
               li.contentOperationOrderlist ダイヤルを回して“Resampling”に設定
-        h3.heading.switch
-          | リサンプリングを行う
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("リサンプリングを行う")
           p 以下の2通りのリサンプリングが実行可能
           table
             tr
@@ -5880,14 +5482,8 @@ html(lang="ja")
               td リサンプリングした音を保存しない
           p
             | リサンプリングしたサンプルにひずみが発生した場合、プレイ・レベルを“Normal”に設定すると解消できる場合がある
-      h2.heading.switch
-        | サンプル(編集)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプルをエディットする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプル(編集)")
+        +section3("サンプルをエディットする")
           p サンプルの編集、加工を行う
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5912,10 +5508,7 @@ html(lang="ja")
             |             サンプルの編集時は Filter、Modulation、Amp/EG、 Insert FXの各セクションは無効になる
             br
             | サンプルの編集時のVoice AssignはMono 2になる
-        h3.heading.switch
-          | エディットしたサンプルの保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("エディットしたサンプルの保存")
           p
             | 各項目の編集を行った後に
             span.controllerButton Write
@@ -5935,10 +5528,7 @@ html(lang="ja")
             |                 または
             span.controllerPage Export SAMPLE
             |                 でメモリー・カードに書き出す
-        h3.heading.switch
-          | サンプルを選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルを選択")
           p エディットするサンプルを選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -5949,10 +5539,7 @@ html(lang="ja")
                 span.controllerPage SAMPLE EDIT
               li.contentOperationOrderlist
                 span.controllerPage SELECT SAMPLE
-        h3.heading.switch
-          | サンプルの名前を変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの名前を変更")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5962,10 +5549,7 @@ html(lang="ja")
                 span.controllerPage SAMPLE EDIT
               li.contentOperationOrderlist
                 span.controllerPage RENAME
-        h3.heading.switch
-          | 再生開始位置の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("再生開始位置の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5975,10 +5559,7 @@ html(lang="ja")
                 span.controllerPage SAMPLE EDIT
               li.contentOperationOrderlist
                 span.controllerPage START POINT
-        h3.heading.switch
-          | 再生終了位置の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("再生終了位置の設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -5988,10 +5569,7 @@ html(lang="ja")
                 span.controllerPage SAMPLE EDIT
               li.contentOperationOrderlist
                 span.controllerPage END POINT
-        h3.heading.switch
-          | ループ開始位置の設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ループ開始位置の設定")
           p
             | ループの開始位置を設定
             br
@@ -6007,10 +5585,7 @@ html(lang="ja")
                 span.controllerPage SAMPLE EDIT
               li.contentOperationOrderlist
                 span.controllerPage LOOP START POINT
-        h3.heading.switch
-          | サンプルの音程を調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの音程を調整")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6021,10 +5596,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage SAMPLE TUNE
           p 設定値[-63...+63]
-        h3.heading.switch
-          | サンプルの再生レベルを変更
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルの再生レベルを変更")
           p サンプルの再生レベルを変更
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6040,10 +5612,7 @@ html(lang="ja")
             | リサンプリングしたサンプルは、録音時の音量を再現するために自動的に“+12dB”に設定される
             br
             |  プレイ・レベルを +12dB に設定すると音が歪みやすくなる場合がある
-        h3.heading.switch
-          | サンプルを削除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルを削除")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6059,24 +5628,15 @@ html(lang="ja")
             | を実行し、再起動時に読み込むことでサンプリング時間を増やすことができる
             br
             |             プリセット・サンプルやユーザー・サンプルを削除しても、サンプリング時間が増えない場合、デフラグが必要
-      h2.heading.switch
-        | サンプル(タイム・スライス)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | タイム・スライスとは
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプル(タイム・スライス)")
+        +section3("タイム・スライスとは")
           p
             | リズム・フレーズのようにアタックがはっきりとしているサンプルを音符ごとに分割し、ステップに割り当てて使用できる
             br
             |                タイム・スライスしたサンプルを各ステップに並べることで、BPMを変更しても自然な演奏をすることができる
             br
             |                分割されたサンプルを1つずつ、ワンショット・サンプルとして各パートにアサインすることも可能
-        h3.heading.switch
-          | タイム・スライス・サンプルの作成
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイム・スライス・サンプルの作成")
           p ビートに合わせてサンプルを分割
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6147,10 +5707,7 @@ html(lang="ja")
             | タイム・スライスを行ったサンプルは、実行前のサンプル全体を再生することができなくなる
             br
             |                 タイム・スライスしたサンプルをパターンで使用するとき、のビート設定がパターンと異なる場合、タイム・スライスが割り振られるステップが変化する
-        h3.heading.switch
-          | タイム・スライス・サンプルの使用(サンプル全体)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイム・スライス・サンプルの使用(サンプル全体)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6164,10 +5721,7 @@ html(lang="ja")
             | ステップ全体をOnにすると、指定の位置で分割されたサンプルが連続で再生される
             br
             | ステップをOn/Offにするなど、編集することもできる
-        h3.heading.switch
-          | タイム・スライス・サンプルの使用(ワンショット・サンプル)
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイム・スライス・サンプルの使用(ワンショット・サンプル)")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6179,10 +5733,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerKnob Oscillator
                 | を回すと、 [サンプル番号]-01など、分割されたサンプルを選択可能
-        h3.heading.switch
-          | タイム・スライスの解除
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("タイム・スライスの解除")
           p サンプルの分割を取り消す
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6202,14 +5753,8 @@ html(lang="ja")
               td キャンセル
               td
                 span.controllerButton Exit
-      h2.heading.switch
-        | サンプル(インポート/エクスポート)
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | サンプルのインポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("サンプル(インポート/エクスポート)")
+        +section3("サンプルのインポート")
           p メモリー・カードからWAVファイル、または EXPORT ALL SAMPLE で出力したe2sSample.all ファイルを読み込む
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6224,10 +5769,7 @@ html(lang="ja")
             | EXPORT SAMPLEしたWAVファイルには、タイム・ スライス情報などの編集情報が保存されている
             br
             | 波形編集アプリケーションなどでサンプルのエディットを行うと、編集情報が削除され、IMPORT SAMPLEで読み込んでも編集情報を読み取ることはできない
-        h3.heading.switch
-          | サンプルのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプルのエクスポート")
           p 選択中のサンプルをメモリー・カードにWAVファイルとして書き出す
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6238,10 +5780,7 @@ html(lang="ja")
                 span.controllerPage DATA UTILITY
               li.contentOperationOrderlist
                 span.controllerPage EXPORT SAMPLE
-        h3.heading.switch
-          | 全サンプルのエクスポート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("全サンプルのエクスポート")
           p
             | すべてのプリセット・サンプルとユーザー・サンプルを1つのファイルにまとめてメモリー・カードにKORG/electribe sampler/Sample/ e2sSample.allファイルを書き出す
           .contentOperationBox
@@ -6266,14 +5805,8 @@ html(lang="ja")
             | 電源オン時の動作
             br
             |  書き出したファイルは、電源を入れ直したときに自動的に読み込まれ、すべてのサンプルの状態を復帰可能
-      h2.heading.switch
-        | 外部連携用設定
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | グローバルMIDIチャンネルの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("外部連携用設定")
+        +section3("グローバルMIDIチャンネルの設定")
           p
             | MIDIチャンネルはプログラム・チェンジ、システム・エクスクルーシブ・メッセージなどの送受信を行うときに、接続しているMIDI機器のMIDIチャンネルと合わせる
           .contentOperationBox
@@ -6286,10 +5819,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage GLOBAL MIDI CH.
           p 設定値[01...16]
-        h3.heading.switch
-          | 外部機器との同期演奏時のマスター設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("外部機器との同期演奏時のマスター設定")
           p
             | MIDIやSyncの信号に同期して使用するときに設定
             br
@@ -6333,10 +5863,7 @@ html(lang="ja")
             | 外部機器を基準クロックにすると、electribe2 samplerのシーケンサーやその他テンポに同期するよう設定されたもの(Delay Timeなど)を外部機器と同期させることができる
             br
             |  優先順位はExternal USB＞External MIDI＞External Sync
-        h3.heading.switch
-          | MIDIメッセージの受信可否設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIメッセージの受信可否設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6360,10 +5887,7 @@ html(lang="ja")
             | midiチャンネルは固定なのでマスター側で送るチャンネルを合わせる必要がある
             br
             |                 チャンネル1を受けるのがパート1、MIDIチャンネル２を受けるのはパート2・・・)
-        h3.heading.switch
-          | MIDIメッセージの送信可否設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MIDIメッセージの送信可否設定")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6383,10 +5907,7 @@ html(lang="ja")
             tr
               td Short + Program
               td ショート・メッセージに加えて、プログラム・チェ ンジ・メッセージも送信しない
-        h3.heading.switch
-          | SYNC POLARITY
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYNC POLARITY")
           p  Sync端子に接続した機器と同期して演奏をするときに、Syncのトリガー信号の極性を設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6398,10 +5919,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage SYNC POLARITY
           p 設定値[Hi, Lo]
-        h3.heading.switch
-          | SYNC UNIT
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SYNC UNIT")
           p Sync In端子で受信した同期信号に対し、ステップを進める周期と Sync Out端子から出力する同期信号の周期を設定する
           table
             tr
@@ -6416,14 +5934,8 @@ html(lang="ja")
                 | Sync信号が入力されると、2ステップずつ進む
                 br
                 | 2 ステップごとにSync信号を出力
-      h2.heading.switch
-        | 本体のアップデート、初期化
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 本体内のユーザー・データの初期化
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("本体のアップデート、初期化")
+        +section3("本体内のユーザー・データの初期化")
           p
             | 今まで作成したデータや設定をすべて消去して、工場出荷時の状態に戻す
             br
@@ -6438,10 +5950,7 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage FACTORY RESET
           p 初期化中は電源を切らない
-        h3.heading.switch
-          | 本体のアップデート
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("本体のアップデート")
           p electribe2 samplerのシステム・ソフトウェアを更新する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6454,14 +5963,8 @@ html(lang="ja")
                 span.controllerPage DATA UTILITY
               li.contentOperationOrderlist
                 span.controllerPage SOFTWARE UPDATE
-      h2.heading.switch
-        | ディスプレイ
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | LCDコントラストの調節
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ディスプレイ")
+        +section3("LCDコントラストの調節")
           p  ディスプレイの文字の濃さを設定
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6473,22 +5976,13 @@ html(lang="ja")
               li.contentOperationOrderlist
                 span.controllerPage LCD CONTRAST
           p 設定値[1...25]
-      h2.heading.switch
-        | 電源
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 電源のオン/オフ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("電源")
+        +section3("電源のオン/オフ")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
               li.contentOperationOrderlist 電源ボタン
-        h3.heading.switch
-          | 電池の種類を設定する
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("電池の種類を設定する")
           p 使用する電池の種類に合わせて設定する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6506,10 +6000,7 @@ html(lang="ja")
             tr
               td Alkali
               td アルカリ乾電池を使用するとき
-        h3.heading.switch
-          | 電池を長持ちさせる
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("電池を長持ちさせる")
           p
             | パワー・セーブ・モードの有効、無効を設定
             br
@@ -6536,10 +6027,7 @@ html(lang="ja")
                 | 電池使用時は有効
                 br
                 | ACアダプターを使用しているときは無効
-        h3.heading.switch
-          | オート・パワー・オフ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("オート・パワー・オフ")
           p ノブ、ボタンを約4時間操作しないと自動で電源を切る
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6565,19 +6053,10 @@ html(lang="ja")
                 | ボタンやノブ、トリガー・パッドなどを操作しない時間が4時間を過ぎると、自動的に電源が切れる
                 br
                 | パターンを連続して再生している場合でも、一定時間まったく操作しないときは、自動的に電源が切れる
-      h2.heading.switch
-        | メモリー・カード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | メモリー・カード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("メモリー・カード")
+        +section3("メモリー・カード")
           p 各設定の状態とデータを保存し、それをロードすることによって保存した状態を再現可能
-        h3.heading.switch
-          | フォーマット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("フォーマット")
           p electribeでメモリー・カードを初期化し、必要なフォルダーを生成する
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6592,10 +6071,7 @@ html(lang="ja")
             | フォーマットするとメモリー・カードの内容はすべて消える
             br
             | 作業中は絶対に電源を切ったりメモリー・カードを抜かない
-        h3.heading.switch
-          | インポート元の選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("インポート元の選択")
           .contentOperationBox
             p.contentOperationCaption 操作
             ul.contentOperationOrderlistGroup
@@ -6613,10 +6089,7 @@ html(lang="ja")
               td Sync In
               td Sync In端子 からのデータ入力
           br
-        h3.heading.switch
-          | デフラグ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("デフラグ")
           p ユーザー・サンプリング時間を開放
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6624,10 +6097,7 @@ html(lang="ja")
               li.contentOperationOrderlist 不要なサンプルを削除
               li.contentOperationOrderlist EXPORT ALL SAMPLEを実行
               li.contentOperationOrderlist 再起動
-        h3.heading.switch
-          | 書き出しファイル形式の選択
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("書き出しファイル形式の選択")
           p 書き出すファイル形式を選択
           .contentOperationBox
             p.contentOperationCaption 操作
@@ -6656,14 +6126,8 @@ html(lang="ja")
             tr
               td Lite.alsファイル
               td いずれかのステップのトリガーがオンとして記録されているパート が9個以上ある場合に書き出される
-      h2.heading.switch
-        | ショート・カット
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ショート・カット・リスト
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ショート・カット")
+        +section3("ショート・カット・リスト")
           p
             span.controllerButton Shift
             | を押しながらノブやボタンを操作した場合の機能
@@ -6878,14 +6342,8 @@ html(lang="ja")
               td
                 span.controllerPage METRONOME
                 | を表示
-      h2.heading.switch
-        | スペック
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 同時発音数
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("スペック")
+        +section3("同時発音数")
           p
             | Oscによっては、1音で2音分の発音数を消費するものがある
             br
@@ -6895,28 +6353,16 @@ html(lang="ja")
             |  ディレイの音も発音数としてカウントされる
             br
             |  monoのパートで和音を鳴らそうとすると一番高い音だけが発音
-        h3.heading.switch
-          | サンプリング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("サンプリング")
           p
             | ユーザー・サンプル数：最大499個
             br
             |                 サンプルの長さ：合計約270秒(モノラル換算)
-      h2.heading.switch
-        | Link
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | Korg Official
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("Link")
+        +section3("Korg Official")
           p
             a(href="https://www.korg.com/jp/products/dj/electribe_sampler/" target="_blank") electribe sampler
-        h3.heading.switch
-          | Sample Manage for Electribe Sampler
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("Sample Manage for Electribe Sampler")
           p
             a(href="http://www.appification.de/ElectribeSampleManager/" target="_blank") for Windows
           p
@@ -6925,13 +6371,7 @@ html(lang="ja")
             | EXPORT ALL SAMPLEしたファイル「e2sSample.all」を編集可能
             br
             | プリセット領域も編集可能
-      h2.heading.switch
-        | 制限事項
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | 小節コピー
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("制限事項")
+        +section3("小節コピー")
           p 同じパターン内の他の小節へのコピー機能が無い
     include ../_include/_footer.pug

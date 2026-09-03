@@ -1,6 +1,7 @@
 - var pagename='Trigger Finger Pro|spindey.com'
 - var description='M-AUDIOのTrigger Finger Proのマニュアルです。'
 - var keywords='Trigger Finger Pro,M-AUDIO'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -8,14 +9,8 @@ html(lang="ja")
     h1.heading Trigger Finger Pro
     main.equipmentMain
 
-      h2.heading.switch
-        | モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | モードの種類
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("モード")
+        +section3("モードの種類")
           .tableScroll
             table
               tr
@@ -44,24 +39,15 @@ html(lang="ja")
                 td SEQUENCE
                 td シーケンサの各設定
 
-      h2.heading.switch
-        | パフォーマンス・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パフォーマンス・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パフォーマンス・モード")
+        +section3("パフォーマンス・モード")
           ul
             li パッド演奏
             li ノブやフェーダの調整
             li 編集を伴わない操作一般
 
 
-        h3.heading.switch
-          | プリセットをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("プリセットをロードする")
 
 
           div.contentOperationBox
@@ -171,10 +157,7 @@ html(lang="ja")
               td DEFAULT
 
 
-        h3.heading.switch
-          | シーケンスをロードする
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスをロードする")
 
 
           div.contentOperationBox
@@ -236,10 +219,7 @@ html(lang="ja")
               td 16
               td Empty
 
-        h3.heading.switch
-          | 設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("設定")
 
 
           div.contentOperationBox
@@ -314,14 +294,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | パッド・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | パッド・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("パッド・モード")
+        +section3("パッド・モード")
           p パッド・モードで行える設定
           ul
             li 各パッドのMIDI ノートナンバー
@@ -355,10 +329,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | PADモードのMAPPING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PADモードのMAPPING")
 
 
           div.contentOperationBox
@@ -386,10 +357,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | PADモードのEDIT PADS
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("PADモードのEDIT PADS")
 
 
           div.contentOperationBox
@@ -446,14 +414,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | コントロール・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | コントロール・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("コントロール・モード")
+        +section3("コントロール・モード")
           p ノブやフェーダ、ボタンについての設定を行う
           p コントロール・モードで行える設定
           ul
@@ -464,10 +426,7 @@ html(lang="ja")
             li ノブやフェーダ、ボタンと接続されているソフトウエアとの通信プロトコルの設定(MIDI、Mackie Control、HUI、Arsenal)
 
 
-        h3.heading.switch
-          | KNOBSのMAPPING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("KNOBSのMAPPING")
 
 
           div.contentOperationBox
@@ -496,10 +455,7 @@ html(lang="ja")
             p 「TOGGLE ALL」のファンクション・ボタンで4つを一括で変更できる
 
 
-        h3.heading.switch
-          | FADERSのMAPPING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FADERSのMAPPING")
 
 
           div.contentOperationBox
@@ -527,10 +483,7 @@ html(lang="ja")
                 td 4つ目のノブで切替
             p 「TOGGLE ALL」のファンクション・ボタンで4つを一括で変更できる
 
-        h3.heading.switch
-          | BUTTONSのMAPPING
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BUTTONSのMAPPING")
 
 
           div.contentOperationBox
@@ -559,10 +512,7 @@ html(lang="ja")
             p 「TOGGLE ALL」のファンクション・ボタンで4つを一括で変更できる
 
 
-        h3.heading.switch
-          | BUTTONSのEDIT CONTROLS
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("BUTTONSのEDIT CONTROLS")
 
 
           div.contentOperationBox
@@ -611,10 +561,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ADVANCED
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ADVANCED")
 
 
           div.contentOperationBox
@@ -630,14 +577,8 @@ html(lang="ja")
                 td CURSORS
                 td Mackie/HUI
 
-      h2.heading.switch
-        | シーケンス・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シーケンス・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("シーケンス・モード")
+        +section3("シーケンス・モード")
           p シーケンサについての設定を行う
 
           p シーケンス・モードで行える設定
@@ -680,10 +621,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | EDIT VELOCITY
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("EDIT VELOCITY")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -735,30 +673,21 @@ html(lang="ja")
               td 全PADの全ステップのnoteをクリア
               td 3番目のファンクションボタン
 
-        h3.heading.switch
-          | シーケンスの無効化
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスの無効化")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist 「ENABLE ALL」(PAGE2/2の1番目)のファンクションボタンを押す
 
-        h3.heading.switch
-          | シーケンス全体の消去
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンス全体の消去")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
               ul.contentOperationOrderlistGroup
                 li.contentOperationOrderlist 「CLEAR ALL」(PAGE2/2の2番目)のファンクションボタンを押す
 
-        h3.heading.switch
-          | シーケンスの切替
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスの切替")
           p Trigger Finger Proは16個のシーケンススロットが用意されている
             br
             | プレイ中にこのスロットを自由に切り替えることが出来る
@@ -771,10 +700,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンスデータの切替設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンスデータの切替設定")
           table
             tr
               th 項目
@@ -804,10 +730,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ネクスト・シーケンス・モード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ネクスト・シーケンス・モード")
           p シーケンスを連続再生できる
 
           div.contentOperationBox
@@ -820,14 +743,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | セレクト・モード
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | セレクト・モードに入る
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("セレクト・モード")
+        +section3("セレクト・モードに入る")
           p シーケンス以外のモードでも、一時的にシーケンスモードになる
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -837,10 +754,7 @@ html(lang="ja")
                   | (「SELECT」ボタンを押している間のみSELECTモード)
 
 
-        h3.heading.switch
-          | ステップ・スイッチによるショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・スイッチによるショートカット")
           P 「SELECT」ボタンを押しながら各ステップ・スイッチを押す
           table
             tr
@@ -890,10 +804,7 @@ html(lang="ja")
           p ※TIME DIVISION(音符分割)は、シーケンスの再生とROLLのどちらにも影響する
 
 
-        h3.heading.switch
-          | 現在のBARのオン/オフをステップ・スイッチに表示
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("現在のBARのオン/オフをステップ・スイッチに表示")
 
 
           div.contentOperationBox
@@ -903,14 +814,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | モード共通
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | テンポ調整
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("モード共通")
+        +section3("テンポ調整")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -919,10 +824,7 @@ html(lang="ja")
                   br
                   | (何回押した平均かは、「PREFES」の「TAP AVERAGE」で指定)
 
-        h3.heading.switch
-          | 保存
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("保存")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -949,10 +851,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | 自動演奏、録音
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("自動演奏、録音")
           table
             tr
               td 「PLAY」ボタン
@@ -970,10 +869,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | DAWにメッセージ送信
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("DAWにメッセージ送信")
           p 接続しているDAW にメッセージ送信(Mackie Control/HUI)
 
 
@@ -984,10 +880,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ノブ、フェーダ、ボタンのバンクを切替
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ノブ、フェーダ、ボタンのバンクを切替")
 
 
 
@@ -998,10 +891,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ROLL
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ROLL")
           p ROLLがオンの状態でパッドを押し続けると、設定されているTIME DIVISIONに従ってROLLされる
 
           div.contentOperationBox
@@ -1012,10 +902,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | FIXED
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("FIXED")
           p 「FIXED」ボタンをONにしておくと、VELOCITYを固定してパッド叩ける(FIX VELで指定した値)
 
           div.contentOperationBox
@@ -1025,10 +912,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 任意のパッドを押す
 
 
-        h3.heading.switch
-          | MUTEモード
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("MUTEモード")
 
           div.contentOperationBox
             p.contentOperationCaption 操作
@@ -1039,10 +923,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | SOLO
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("SOLO")
 
 
           div.contentOperationBox
@@ -1053,10 +934,7 @@ html(lang="ja")
                 li.contentOperationOrderlist 3つ目のファンクション・ボタン(UN-SOLO ALL)を押すと、すべてのパッドのソロを解除
 
 
-        h3.heading.switch
-          | パッドを使ったショートカット
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドを使ったショートカット")
           p 「PAD BANK」ボタンを押しながら特定のパッドを押すとショートカット
           table
             tr
@@ -1105,10 +983,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | パッドのバンク切替
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("パッドのバンク切替")
 
 
           div.contentOperationBox
@@ -1122,14 +997,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | ステップシーケンサー
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | ステップ・スイッチ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("ステップシーケンサー")
+        +section3("ステップ・スイッチ")
           table
             tr
               th 押し方
@@ -1143,10 +1012,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ステップ・インジケータ
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ステップ・インジケータ")
           table
             tr
               th LEDの色色

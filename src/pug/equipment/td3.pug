@@ -1,6 +1,7 @@
 - var pagename='TD-3|spindey.com'
 - var description='Behringer TD-3のマニュアルです。'
 - var keywords='TD-3,Behringer'
+include ../_include/_section.pug
 doctype html
 html(lang="ja")
   include ../_include/_head.pug
@@ -10,15 +11,9 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | コントローラー
-        span.swithCondition.contentClosed
-      section.h2content.hide
+      +section2("コントローラー")
 
-        h3.heading.switch
-          | シンセサイザー部
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シンセサイザー部")
           .tableScroll
             table
               tr
@@ -63,10 +58,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | ディストーション部
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("ディストーション部")
           p ディストーションスイッチがオンの時のみ有効
           .tableScroll
             table
@@ -128,10 +120,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | シーケンサー部
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("シーケンサー部")
           .tableScroll
             table
               tr
@@ -207,14 +196,8 @@ html(lang="ja")
 
 
 
-      h2.heading.switch
-        | 操作
-        span.swithCondition.contentClosed
-      section.h2content.hide
-        h3.heading.switch
-          | シンク、クロックタイプの設定
-          span.swithCondition.contentClosed
-        section.h3content.hide
+      +section2("操作")
+        +section3("シンク、クロックタイプの設定")
 
 
 
@@ -267,10 +250,7 @@ html(lang="ja")
 
 
 
-        h3.heading.switch
-          | チューニング
-          span.swithCondition.contentClosed
-        section.h3content.hide
+        +section3("チューニング")
 
 
           div.contentOperationBox

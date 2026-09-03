@@ -1,0 +1,15 @@
+//- クリックで開閉する見出しとその本文。
+//- 見出し内の span を JS が拾って開閉状態のアイコンを切り替える。
+mixin section2(title)
+  h2.heading.switch
+    | !{title}
+    span.swithCondition.contentClosed
+  section.h2content.hide
+    block
+
+mixin section3(title)
+  h3.heading.switch
+    | !{title}
+    span.swithCondition.contentClosed
+  section.h3content.hide
+    block
