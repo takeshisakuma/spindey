@@ -1,19 +1,17 @@
 @charset "UTF-8";
 
-@import "_normalize.scss";
+@use "normalize";
 
-@import "_base.scss";
+@use "base";
 
-@import "_header.scss";
-@import "_footer.scss";
+@use "footer";
 
-@import "_heading.scss";
-@import "_top.scss";
-@import "_equipment.scss";
-@import "_button.scss";
-@import "_operationbox.scss";
-@import "_switch.scss";
-@import "_table.scss";
-@import "_loading.scss";
-@import "_gotop.scss";
-@import "_list.scss";
+@use "top";
+@use "equipment";
+@use "button";
+@use "operationbox";
+@use "switch";
+@use "table";
+@use "loading";
+@use "gotop";
+@use "list";

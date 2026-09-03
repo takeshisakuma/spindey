@@ -1,7 +1,22 @@
 {
-  "extends": ["stylelint-prettier/recommended"],
-  "plugins": ["stylelint-order"],
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "order/properties-alphabetical-order": true
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/scss/_normalize.scss"
+      ],
+      "rules": {
+        "font-family-no-duplicate-names": null
+      }
+    }
+  ]
 }
